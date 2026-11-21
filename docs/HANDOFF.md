@@ -12,7 +12,8 @@ Last updated: 2026-11-21. Read this first when picking up work on the site.
 
 ## Site layout
 
-- `index.html`: the single page (hero, featured project, project directory, About, footer).
+- `index.html`: the single page (hero, featured project, project directory, About, List your app, footer).
+- **List your app** (`#list`): a mailto button to `listings@remadebyai.com` with a prefilled subject and form-style body (app name, website, what it replaces, open source, maker, description). The About section's "Suggest a project" points to it. The address must exist in Microsoft 365 (shared mailbox or alias) before this goes live.
 - The featured block is rendered by `directory.js` from the `projects.json` entry with `"featured": true`. Its extra fields are `tagline`, `featureText`, `featureLinkText` and `featureArt` (the id suffix of a `<template id="art-...">` in `index.html`; `inbox` is the InCloseMail mock). The featured project also stays in the directory grid.
 - `projects.json`: the directory's project list. `directory.js` renders the cards from it and runs search and filters.
 - `styles.css`: all styles. Dark theme, green accent `#c2ff94`.
@@ -32,10 +33,11 @@ Last updated: 2026-11-21. Read this first when picking up work on the site.
 
 ## Open items
 
-- Email lockdown: only emukey.com should receive mail. desktopwiki.com, inclosemail.com and remadebyai.com still had Microsoft 365 MX records; the owner is removing them from M365 and adding null MX, `v=spf1 -all`, DMARC `p=reject` and empty DKIM. Recheck DNS once they say it's done.
+- Email: all four domains (emukey.com, desktopwiki.com, inclosemail.com, remadebyai.com) are healthy in one Microsoft 365 tenant. emukey.com is the only user; the others are shared mailboxes. Do not suggest removing domains or null MX (the earlier lockdown advice was withdrawn). Pending on the owner's side: at NameSilo, set the `_dmarc` TXT for desktopwiki.com and inclosemail.com to `v=DMARC1; p=none` (dropping `rua`) to stop DMARC report mail. Recheck once they say it's saved.
+- Not pushed yet: f8cbe00 (featured project from projects.json) and 703e584 (contact todo). `main` on the PC is 2 ahead of origin; push only on the owner's "Commit and push".
 - After the next push, check the link preview with a sharing debugger (for example LinkedIn Post Inspector or opengraph.xyz).
 
 ## Ideas
 
-- **Contact / "list your app" (to do, owner request 2026-11-21):** the site needs a way for people to contact us, mainly so app makers can ask to have their app listed. Don't use a remadebyai.com mailbox, because only emukey.com should receive email. Options: a mailto to an emukey.com address, a hosted form service (e.g. Formspree), or a GitHub issue template on the repo.
+- **Contact / "list your app" (built locally 2026-11-21, not committed yet; see Site layout):** the site needs a way for people to contact us, mainly so app makers can ask to have their app listed. Options: a mailto to an emukey.com address or a remadebyai.com shared mailbox (M365 receives mail for that domain), a hosted form service (e.g. Formspree), or a GitHub issue template on the repo.
 - More projects in the directory.
