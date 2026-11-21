@@ -149,7 +149,22 @@ footer { border-top: 1px solid var(--line); background: #0d1310; }
 .list-app-action { display: grid; justify-items: start; gap: 10px; }
 .list-app-address { color: var(--muted); font-size: .9rem; }
 .list-app-address a { color: var(--green); }
-@media (max-width: 760px) { .list-app-box { grid-template-columns: 1fr; } }
+/* List your app form (shown by contact.js only when the forms Worker is configured). */
+.list-form { grid-column: 1 / -1; padding-top: clamp(20px, 3vw, 32px); border-top: 1px solid #2c4235; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 20px; }
+.form-grid label { display: grid; gap: 6px; color: var(--muted); font-size: .9rem; font-weight: 600; }
+.form-grid .wide { grid-column: 1 / -1; }
+.form-grid .optional { font-weight: 400; opacity: .8; }
+.form-grid input, .form-grid textarea { width: 100%; padding: 10px 12px; border: 1px solid #354b3d; border-radius: 8px; background: #0c120e; color: var(--ink); font: inherit; font-size: 1rem; }
+.form-grid textarea { resize: vertical; min-height: 7rem; }
+.form-grid input:focus, .form-grid textarea:focus { border-color: var(--green); outline: none; }
+.form-grid [aria-invalid="true"] { border-color: #ff9a8a; }
+.form-grid .trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; margin-top: 18px; }
+.form-status { margin-top: 12px; min-height: 1.5em; color: var(--muted); }
+.form-status.ok { color: var(--green); }
+.form-status.error { color: #ff9a8a; }
+@media (max-width: 760px) { .list-app-box { grid-template-columns: 1fr; } .form-grid { grid-template-columns: 1fr; } }
 
 /* ---------- Directory structure (build.js pages) ---------- */
 .card { position: relative; }

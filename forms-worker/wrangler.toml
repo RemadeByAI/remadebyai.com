@@ -1,0 +1,22 @@
+# Cloudflare Worker that receives the "List your app" form on remadebyai.com
+# and emails it to listings@remadebyai.com, sent from enclosemail.com.
+# Setup steps: forms-worker/README.md
+name = "remadebyai-forms"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+
+# Served at https://forms.enclosemail.com (enclosemail.com is on Cloudflare).
+routes = [{ pattern = "forms.enclosemail.com", custom_domain = true }]
+
+# Cloudflare Email Routing: the sender must be on a zone with Email Routing on
+# (enclosemail.com) and the recipient must be a verified destination address.
+[[send_email]]
+name = "MAILER"
+destination_address = "listings@remadebyai.com"
+
+[vars]
+FROM_ADDRESS = "forms@enclosemail.com"
+FROM_NAME = "RemadeByAI forms"
+TO_ADDRESS = "listings@remadebyai.com"
+ALLOWED_ORIGINS = "https://remadebyai.com,https://www.remadebyai.com"
+# TURNSTILE_SECRET is a secret: npx wrangler secret put TURNSTILE_SECRET

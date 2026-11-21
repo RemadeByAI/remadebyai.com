@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Builds the static pages of remadebyai.com from projects.json.
-// Run it from this folder after any change to projects.json, partials/, styles.css or directory.js:
+// Run it from this folder after any change to projects.json, partials/, styles.css, directory.js or contact.js:
 //   node build.js
 // It needs only Node.js (18 or newer) and no packages. It checks projects.json first and stops with a
 // clear message if an entry is wrong, then rewrites:
@@ -288,7 +288,7 @@ function filterOptions(categories, apps) {
 // ---------- run ----------
 function main() {
   const apps = load();
-  ASSET_VERSION = { css: hash('styles.css'), js: hash('directory.js') };
+  ASSET_VERSION = { css: hash('styles.css'), js: hash('directory.js'), contact: hash('contact.js') };
   const categories = categoriesOf(apps);
   const newest = [...apps].sort(byNewest);
   const az = [...apps].sort(byName);
@@ -320,7 +320,7 @@ ${foot}`);
   }));
 
   let home = read('index.html');
-  home = replaceRegion(home, 'assets', `  <link rel="stylesheet" href="/styles.css?v=${ASSET_VERSION.css}">\n  <script src="/directory.js?v=${ASSET_VERSION.js}" defer></script>`);
+  home = replaceRegion(home, 'assets', `  <link rel="stylesheet" href="/styles.css?v=${ASSET_VERSION.css}">\n  <script src="/directory.js?v=${ASSET_VERSION.js}" defer></script>\n  <script src="/contact.js?v=${ASSET_VERSION.contact}" defer></script>`);
   home = replaceRegion(home, 'featured', featured(apps.find(a => a.featured)));
   home = replaceRegion(home, 'new', cardGrid(newest.slice(0, NEW_ON_HOME)));
   home = replaceRegion(home, 'categories', categoryChips(categories));
