@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "name": "InCloseMail",
+      "group": "emukey",
+      "owner": "EmuKey LLC",
+      "alternative": "Alternative to Microsoft Outlook",
+      "description": "Desktop email for personal inboxes and Microsoft 365 business accounts.",
+      "category": "Email",
+      "url": "https://inclosemail.com/",
+      "linkText": "Visit site",
+      "icon": "✉",
+      "tile": ""
+    },
+    {
+      "name": "DesktopWiki",
+      "group": "emukey",
+      "owner": "EmuKey LLC",
+      "alternative": "Alternative to self-hosted Confluence",
+      "description": "A wiki for internal docs and team knowledge, with a free single-user tier.",
+      "category": "Documentation",
+      "url": "https://desktopwiki.com/",
+      "linkText": "Visit site",
+      "icon": "▤",
+      "tile": "wiki"
+    },
+    {
+      "name": "macshot",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to the macOS screenshot tool",
+      "description": "Capture, annotate, and record your screen. Includes scrolling capture and text recognition.",
+      "category": "Screen capture",
+      "url": "https://github.com/sw33tLie/macshot",
+      "linkText": "GitHub",
+      "icon": "⛶",
+      "tile": "capture"
+    },
+    {
+      "name": "Locode",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Lovable and v0",
+      "description": "Build React web apps from prompts using local Ollama models on an Apple Silicon Mac.",
+      "category": "Developer tools",
+      "url": "https://github.com/locode-dev/locode",
+      "linkText": "GitHub",
+      "icon": "</>",
+      "tile": "code"
+    },
+    {
+      "name": "Glance",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Claude Artifacts",
+      "description": "Host and share previews of pages built by coding agents like Claude Code, Codex, and Cursor.",
+      "category": "Developer tools",
+      "url": "https://github.com/plivo-labs/glance",
+      "linkText": "GitHub",
+      "icon": "▣",
+      "tile": "glance"
+    }
+  ]
+}

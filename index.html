@@ -6,7 +6,20 @@
   <meta name="theme-color" content="#090d0b">
   <meta name="description" content="Discover AI-assisted apps and independent alternatives to familiar software. A project from EmuKey LLC.">
   <title>RemadeByAI — Familiar software. Rebuilt with AI.</title>
-  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://remadebyai.com/">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RemadeByAI">
+  <meta property="og:title" content="RemadeByAI: Familiar software. Rebuilt with AI.">
+  <meta property="og:description" content="Discover AI-assisted apps and independent alternatives to familiar software. A project from EmuKey LLC.">
+  <meta property="og:url" content="https://remadebyai.com/">
+  <meta property="og:image" content="https://remadebyai.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="RemadeByAI logo with the tagline Familiar software. Rebuilt with AI.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
   <script src="directory.js" defer></script>
 </head>
@@ -64,42 +77,27 @@
       </div>
       <span class="count" role="status"></span>
     </div>
-    <div class="cards">
-      <article class="card" data-group="emukey">
-        <div class="card-top"><span class="tile" aria-hidden="true">✉</span><small>EmuKey LLC</small></div>
-        <h3>InCloseMail</h3><p class="alternative">Alternative to Microsoft Outlook</p>
-        <p>Desktop email for personal inboxes and Microsoft 365 business accounts.</p>
-        <div class="card-bottom"><span>Email</span><a href="https://inclosemail.com/" aria-label="Visit InCloseMail">Visit site</a></div>
-      </article>
-      <article class="card" data-group="emukey">
-        <div class="card-top"><span class="tile wiki" aria-hidden="true">▤</span><small>EmuKey LLC</small></div>
-        <h3>DesktopWiki</h3><p class="alternative">Alternative to self-hosted Confluence</p>
-        <p>A wiki for internal docs and team knowledge, with a free single-user tier.</p>
-        <div class="card-bottom"><span>Documentation</span><a href="https://desktopwiki.com/" aria-label="Visit DesktopWiki">Visit site</a></div>
-      </article>
-      <article class="card" data-group="open">
-        <div class="card-top"><span class="tile capture" aria-hidden="true">⛶</span><small>Open source</small></div>
-        <h3>macshot</h3><p class="alternative">Alternative to the macOS screenshot tool</p>
-        <p>Capture, annotate, and record your screen. Includes scrolling capture and text recognition.</p>
-        <div class="card-bottom"><span>Screen capture</span><a href="https://github.com/sw33tLie/macshot" aria-label="View macshot on GitHub">GitHub</a></div>
-      </article>
-      <article class="card" data-group="open">
-        <div class="card-top"><span class="tile code" aria-hidden="true">&lt;/&gt;</span><small>Open source</small></div>
-        <h3>Locode</h3><p class="alternative">Alternative to Lovable and v0</p>
-        <p>Build React web apps from prompts using local Ollama models on an Apple Silicon Mac.</p>
-        <div class="card-bottom"><span>Developer tools</span><a href="https://github.com/locode-dev/locode" aria-label="View Locode on GitHub">GitHub</a></div>
-      </article>
-      <article class="card" data-group="open">
-        <div class="card-top"><span class="tile glance" aria-hidden="true">▣</span><small>Open source</small></div>
-        <h3>Glance</h3><p class="alternative">Alternative to Claude Artifacts</p>
-        <p>Host and share previews of pages built by coding agents like Claude Code, Codex, and Cursor.</p>
-        <div class="card-bottom"><span>Developer tools</span><a href="https://github.com/plivo-labs/glance" aria-label="View Glance on GitHub">GitHub</a></div>
-      </article>
+    <div class="cards" aria-live="polite">
+      <noscript><p class="load-error">Turn on JavaScript to browse the project list.</p></noscript>
     </div>
     <div class="empty" hidden><strong>No matching projects</strong><p>Try a different search or reset the filters.</p><button class="button" type="button" id="reset">Reset filters</button></div>
   </section>
+  <section class="wrap about" id="about" aria-labelledby="about-title">
+    <p class="section-label">✦ About</p>
+    <div class="about-grid">
+      <div>
+        <h2 id="about-title">Everyday tools, rebuilt around how people work.</h2>
+        <p class="lede">RemadeByAI is a showcase from EmuKey LLC. It collects practical software that takes a familiar tool and rebuilds it with AI as part of how it gets made.</p>
+      </div>
+      <dl class="about-points">
+        <div><dt>What you'll find</dt><dd>EmuKey's own apps, like InCloseMail and DesktopWiki, alongside open-source projects worth a look.</dd></div>
+        <div><dt>How projects are chosen</dt><dd>Each listing is a working alternative to software you probably already use. Open-source picks are made by their own developers, not by EmuKey.</dd></div>
+        <div><dt>Suggest a project</dt><dd>Know something that belongs here? Get in touch through <a href="https://emukey.com/">emukey.com</a>.</dd></div>
+      </dl>
+    </div>
+  </section>
 </main>
-<footer id="about">
+<footer>
   <div class="wrap foot"><a class="brand" href="#top">RemadeBy<em>AI</em></a><p>A software directory from <a href="https://emukey.com/">EmuKey LLC</a>.</p></div>
 </footer>
 </body>
