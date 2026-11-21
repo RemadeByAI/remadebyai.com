@@ -24,7 +24,7 @@ What `build.js` writes (never edit these by hand; they are rebuilt from scratch 
 Other files:
 - `directory.js`: only search and filters on the home page "All apps" list (group buttons, category and platform dropdowns). The cards are plain HTML, so the list works without JavaScript and no longer fetches `projects.json`. Links like `/?q=email` or `/?category=productivity` open pre-filtered.
 - `partials/art-<name>.html`: artwork for the featured block, chosen by the featured entry's `featureArt` (`inbox` is the InCloseMail mock).
-- `styles.css`: all styles. Dark theme, green accent `#c2ff94`. Tile colours: `wiki`, `capture`, `code`, `glance`, `voice`, `bar`, or empty for green.
+- `styles.css`: all styles. Layout scales to wide screens (added 2026-11-21): `.wrap` grows to 150rem, the root font size steps up at 1800/2300/3000px wide, and `.cards` is an auto-fill grid (17rem minimum), so 1080p shows 6 columns, 1440p 7 and 4K 8. Dark theme, green accent `#c2ff94`. Tile colours: `wiki`, `capture`, `code`, `glance`, `voice`, `bar`, or empty for green.
 - **List your app** (`#list` on the home page): mailto to `listings@remadebyai.com` with a prefilled form-style body.
 - Icons: `favicon.ico`, `assets/favicon-32.png`, `assets/apple-touch-icon.png`; link preview `assets/og-image.png` (1200x630). `assets/mark.svg` header mark, `assets/circuit.svg` hero art.
 - Pages use root links (`/styles.css`, `/apps/...`), so preview with a local server at the folder root (`python -m http.server 8000`), not by opening the file.
@@ -55,6 +55,8 @@ Only state facts that have been checked. Leave unknown fields out; the page hide
 - After the next push, check the link preview with a sharing debugger (for example LinkedIn Post Inspector or opengraph.xyz).
 
 ## Ideas
+
+- **Contact form (owner todo, 2026-11-21, later):** add a form on the site so visitors don't have to use email. The owner has two domains on Cloudflare for this: enclosemail.com and desktopwiki.net. Plan: send form submissions from enclosemail.com to contact points such as listings@remadebyai.com. Likely build: a Cloudflare Worker that receives the form and sends the mail (Cloudflare Email Routing / send_email), with Turnstile for spam protection. Keep the mailto as a fallback.
 
 - **Contact / "list your app" (live 2026-11-21 as d725de8; see Site layout):** the site needs a way for people to contact us, mainly so app makers can ask to have their app listed. Options: a mailto to an emukey.com address or a remadebyai.com shared mailbox (M365 receives mail for that domain), a hosted form service (e.g. Formspree), or a GitHub issue template on the repo.
 - Fill in platforms, licence, maker and "built with AI" details for the existing listings (only verified facts), and add screenshots under `assets/apps/<slug>/`.
