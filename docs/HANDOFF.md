@@ -1,9 +1,11 @@
 # Handoff notes
 
-Last updated: 2026-11-21 (directory rework; 5 hunt picks added). Read this first when picking up work on the site.
+Last updated: 2026-11-21 (live at 2c52a37: 12 apps in 9 categories, page per app, wide-screen layout). Read this first when picking up work on the site.
 
 ## Where things are
 
+- **How to work (since 2026-11-21):** do site work in a cloud session on the attached repo. Cloud sessions can commit and push to GitHub directly, so a "Commit and push" button tap is enough. PC-based Remote Control sessions can't push on a button tap.
+- **PC copy is stale:** `C:\dev\remadebyaI\remadebyai-website` has uncommitted edits identical to 2c52a37. Before any local work there, run `git checkout -- . && git pull`.
 - **Local source:** `C:\dev\remadebyaI\remadebyai-website` on the PC "Dennis".
 - **Repo:** https://github.com/RemadeByAI/remadebyai.com (public, branch `main`).
 - **Hosting:** GitHub Pages from `main` at the repo root, custom domain `remadebyai.com` (see `CNAME`). DNS A records point to GitHub Pages (185.199.108-111.153).
@@ -46,6 +48,7 @@ Only state facts that have been checked. Leave unknown fields out; the page hide
 ## Working rules
 
 - Nothing is pushed or published without the owner's explicit OK ("Commit and push" / "Go live" buttons). Going live is never implied.
+- In cloud sessions, work on the session's `claude/...` branch and merge to `main` only after the owner taps "Go live".
 - On the PC, `gh` defaults to the DennisBaker account, which is not in the RemadeByAI org. The org account is dpb1999. Switching accounts (`gh auth switch --user dpb1999`) needs the owner's own typed OK.
 
 ## Open items
