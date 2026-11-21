@@ -31,7 +31,7 @@
   </div>
 </header>
 <main id="main">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"macshot","description":"Capture, annotate, and record your screen. Includes scrolling capture and text recognition.","applicationCategory":"Screen capture","url":"https://github.com/sw33tLie/macshot"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"macshot","description":"Capture, annotate, and record your screen. Includes scrolling capture and text recognition.","applicationCategory":"Screen capture","url":"https://github.com/sw33tLie/macshot","operatingSystem":"macOS","license":"GPL-3.0","author":{"@type":"Organization","name":"sw33tLie"}}</script>
 <div class="wrap app-page">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/categories/screen-capture/">Screen capture</a> / <span>macshot</span></nav>
   <section class="app-hero" aria-labelledby="app-title">
@@ -40,21 +40,29 @@
       <h1 id="app-title">macshot</h1>
       <p class="lede">Alternative to the macOS screenshot tool</p>
       <p class="app-summary">Capture, annotate, and record your screen. Includes scrolling capture and text recognition.</p>
-      <div class="app-actions"><a class="button primary" href="https://github.com/sw33tLie/macshot">GitHub</a></div>
+      <div class="app-actions"><a class="button primary" href="https://github.com/sw33tLie/macshot/releases/latest">Download</a><a class="button" href="https://github.com/sw33tLie/macshot">GitHub</a></div>
     </div>
     <dl class="facts">
       <div><dt>Category</dt><dd><a href="/categories/screen-capture/">Screen capture</a></dd></div>
       <div><dt>Replaces</dt><dd>the macOS screenshot tool</dd></div>
+      <div><dt>Platforms</dt><dd>macOS</dd></div>
+      <div><dt>Licence</dt><dd>GPL-3.0</dd></div>
       <div><dt>Price</dt><dd>Free</dd></div>
+      <div><dt>Made by</dt><dd>sw33tLie</dd></div>
       <div><dt>Source code</dt><dd><a href="https://github.com/sw33tLie/macshot">github.com/sw33tLie/macshot</a></dd></div>
       <div><dt>Listed</dt><dd>November 21, 2026</dd></div>
     </dl>
   </section>
+  <section class="app-section" aria-labelledby="about-app-title"><h2 id="about-app-title">About macshot</h2><div class="prose"><p>macshot lives in the Mac menu bar. One hotkey freezes the screen so you can select a region, mark it up with arrows, text, shapes, numbered markers or blur, and copy it straight to the clipboard.</p>
+<p>It also records the screen as MP4 or GIF with system audio and microphone, stitches scrolling captures into one tall image, reads text with OCR, can auto-redact emails, phone numbers and card numbers, and uploads to Google Drive, imgbb or any S3-compatible storage. It is a native Swift and AppKit app, also installable with Homebrew (brew install --cask macshot).</p></div></section>
   
-  
+  <section class="app-section" aria-labelledby="shots-title">
+    <h2 id="shots-title">Screenshots</h2>
+    <div class="shots"><figure><a href="/assets/apps/macshot/1.webp"><img src="/assets/apps/macshot/1.webp" alt="macshot annotating a capture with arrows, numbered markers, text and measurements over a colourful background" loading="lazy"></a><figcaption>Capture and annotate</figcaption></figure><figure><a href="/assets/apps/macshot/2.webp"><img src="/assets/apps/macshot/2.webp" alt="The macshot Studio video editor with background, zoom and caption controls and a timeline" loading="lazy"></a><figcaption>Studio video editor</figcaption></figure></div>
+  </section>
   <section class="app-section" aria-labelledby="built-title">
     <h2 id="built-title">How it was built with AI</h2>
-    <div class="prose"><p class="muted">We haven't confirmed how macshot was built yet. If you made it, <a href="/#list">tell us how AI was part of it</a>.</p></div>
+    <div class="prose"><p>The macshot repo includes CLAUDE.md and AGENTS.md instruction files for AI coding agents, and its commit history shows AI help: 37 of its 1,052 commits (checked 2026-11-21) are co-authored by Claude and 5 by Cursor. Most of the code is credited to its developer, sw33tLie.</p></div>
   </section>
   <section class="app-section" aria-labelledby="review-title">
     <h2 id="review-title">Our review</h2>

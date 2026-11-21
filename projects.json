@@ -44,7 +44,27 @@
       "tile": "capture",
       "added": "2026-11-21",
       "source": "https://github.com/sw33tLie/macshot",
-      "price": "Free"
+      "price": "Free",
+      "download": "https://github.com/sw33tLie/macshot/releases/latest",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "GPL-3.0",
+      "maker": "sw33tLie",
+      "longDescription": "macshot lives in the Mac menu bar. One hotkey freezes the screen so you can select a region, mark it up with arrows, text, shapes, numbered markers or blur, and copy it straight to the clipboard.\n\nIt also records the screen as MP4 or GIF with system audio and microphone, stitches scrolling captures into one tall image, reads text with OCR, can auto-redact emails, phone numbers and card numbers, and uploads to Google Drive, imgbb or any S3-compatible storage. It is a native Swift and AppKit app, also installable with Homebrew (brew install --cask macshot).",
+      "builtWithAI": "The macshot repo includes CLAUDE.md and AGENTS.md instruction files for AI coding agents, and its commit history shows AI help: 37 of its 1,052 commits (checked 2026-11-21) are co-authored by Claude and 5 by Cursor. Most of the code is credited to its developer, sw33tLie.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/macshot/1.webp",
+          "alt": "macshot annotating a capture with arrows, numbered markers, text and measurements over a colourful background",
+          "caption": "Capture and annotate"
+        },
+        {
+          "src": "/assets/apps/macshot/2.webp",
+          "alt": "The macshot Studio video editor with background, zoom and caption controls and a timeline",
+          "caption": "Studio video editor"
+        }
+      ]
     },
     {
       "name": "Locode",
@@ -59,7 +79,14 @@
       "tile": "code",
       "added": "2026-11-21",
       "source": "https://github.com/locode-dev/locode",
-      "price": "Free"
+      "price": "Free",
+      "download": "https://github.com/locode-dev/locode/releases/latest",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "MIT",
+      "maker": "Syed Shadman Akbar",
+      "longDescription": "Describe an app in plain English and Locode generates a complete React, Tailwind and Vite project, tests it with Playwright, fixes errors and lets you keep refining it with follow-up prompts. Everything runs on your own machine through Ollama, so there are no API keys or subscriptions.\n\nThe ready-made download is a DMG for Apple Silicon Macs. It can also be run from source with Python and Node."
     },
     {
       "name": "Glance",
@@ -74,7 +101,14 @@
       "tile": "glance",
       "added": "2026-11-21",
       "source": "https://github.com/plivo-labs/glance",
-      "price": "Free"
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "maker": "Plivo",
+      "longDescription": "Glance lets a coding agent publish a page, dashboard or app to a live URL with one command (glance deploy). You leave comments on the page in the browser, much like in a Google Doc, and the agent reads them and fixes the page.\n\nYou host it yourself on Cloudflare's free tier. It works with Claude Code, Cursor, Codex, Cline, Aider or any agent that can run a shell command, every link needs a login, and optional Slack notifications tell you about new comments.",
+      "builtWithAI": "Glance's commit history shows it was built mostly with Claude: 206 of its 251 commits (checked 2026-11-21) are co-authored by Claude models."
     },
     {
       "name": "FreeFlow",
@@ -89,8 +123,15 @@
       "tile": "voice",
       "added": "2026-11-21",
       "source": "https://github.com/zachlatta/freeflow",
-      "builtWithAI": "The FreeFlow README describes the app as \"100% vibe coded\": it was written by prompting an AI coding assistant rather than by hand.",
-      "price": "Free"
+      "builtWithAI": "Zach Latta's original README (February 2026) said he \"vibe-coded\" FreeFlow over a weekend. The project keeps an AGENTS.md file for AI coding agents, and 97 of its 511 commits (checked 2026-11-21) are co-authored by Claude.",
+      "price": "Free",
+      "download": "https://github.com/zachlatta/freeflow/releases/latest/download/FreeFlow.dmg",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "MIT",
+      "maker": "Zach Latta",
+      "longDescription": "Hold the Fn key, talk, and FreeFlow types what you said into whatever text field you are in. It cleans up filler words and spelling using nearby app context and your own vocabulary list, and Edit Mode can rewrite selected text from a spoken instruction such as \"make this shorter\".\n\nIt uses a free Groq API key by default, or any OpenAI-compatible provider including local models through Ollama or LM Studio. There is no FreeFlow server. It works on Apple Silicon and Intel Macs."
     },
     {
       "name": "Open Source Barware",
@@ -129,7 +170,20 @@
       "license": "MIT or Apache-2.0",
       "price": "Free",
       "maker": "ArtCraft",
-      "builtWithAI": "Built largely with Claude: madrobot.blog counted 3,876 of 5,031 commits across ArtCraft's Adobe-clone repos co-authored by Claude Opus 5.5."
+      "builtWithAI": "Built largely with Claude: madrobot.blog counted 3,876 of 5,031 commits across ArtCraft's Adobe-clone repos co-authored by Claude Opus 5.5.",
+      "download": "https://getartcraft.com/apps/photocraft",
+      "screenshots": [
+        {
+          "src": "/assets/apps/photocraft/1.webp",
+          "alt": "PhotoCraft editing Hokusai's The Great Wave, with type layers, adjustment layers and the Curves editor",
+          "caption": "Layers, adjustments and Curves"
+        },
+        {
+          "src": "/assets/apps/photocraft/2.webp",
+          "alt": "The Layer Style dialog editing an Outer Glow on a type layer over the Earthrise photograph",
+          "caption": "Layer styles"
+        }
+      ]
     },
     {
       "name": "PdfCraft",
@@ -153,7 +207,20 @@
       "license": "MIT or Apache-2.0",
       "price": "Free",
       "maker": "ArtCraft",
-      "builtWithAI": "Part of ArtCraft's Claude-built suite; the repo carries CLAUDE.md and AGENTS.md."
+      "builtWithAI": "Part of ArtCraft's Claude-built suite; the repo carries CLAUDE.md and AGENTS.md.",
+      "download": "https://getartcraft.com/apps/pdfcraft",
+      "screenshots": [
+        {
+          "src": "/assets/apps/pdfcraft/1.webp",
+          "alt": "PdfCraft with a cover page open, the All tools panel on the left and threaded comments on the right",
+          "caption": "Tools and comments"
+        },
+        {
+          "src": "/assets/apps/pdfcraft/2.webp",
+          "alt": "Two facing pages in Read mode with the dark theme",
+          "caption": "Read mode, dark theme"
+        }
+      ]
     },
     {
       "name": "WordCraft",
@@ -177,7 +244,20 @@
       "license": "MIT or Apache-2.0",
       "price": "Free",
       "maker": "ArtCraft",
-      "builtWithAI": "Part of ArtCraft's Claude-built suite; XDA lists it as a vibe-coded Word replacement."
+      "builtWithAI": "Part of ArtCraft's Claude-built suite; XDA lists it as a vibe-coded Word replacement.",
+      "download": "https://getartcraft.com/apps/wordcraft",
+      "screenshots": [
+        {
+          "src": "/assets/apps/wordcraft/1.webp",
+          "alt": "WordCraft with the Home ribbon tab over a two-page document, the Navigation pane and the Styles gallery",
+          "caption": "Ribbon, styles and navigation"
+        },
+        {
+          "src": "/assets/apps/wordcraft/2.webp",
+          "alt": "The Review tab with Track Changes on, showing an insertion, a deletion and comment balloons",
+          "caption": "Track changes and comments"
+        }
+      ]
     },
     {
       "name": "GridCraft",
@@ -201,7 +281,20 @@
       "license": "MIT or Apache-2.0",
       "price": "Free",
       "maker": "ArtCraft",
-      "builtWithAI": "Part of ArtCraft's Claude-built suite; the repo carries CLAUDE.md and AGENTS.md."
+      "builtWithAI": "Part of ArtCraft's Claude-built suite; the repo carries CLAUDE.md and AGENTS.md.",
+      "download": "https://getartcraft.com/apps/gridcraft",
+      "screenshots": [
+        {
+          "src": "/assets/apps/gridcraft/1.webp",
+          "alt": "GridCraft showing a quarterly sales table with data bars and sparklines next to column and pie charts",
+          "caption": "Tables, sparklines and charts"
+        },
+        {
+          "src": "/assets/apps/gridcraft/2.webp",
+          "alt": "A pivot table summarising revenue by region and product, with the Pivot Table Fields pane open",
+          "caption": "Pivot tables"
+        }
+      ]
     },
     {
       "name": "micasa",
@@ -223,7 +316,20 @@
       ],
       "license": "Apache-2.0 or MIT",
       "price": "Free",
-      "builtWithAI": "README: \"Developed with AI coding agents (Claude, Claude Code).\""
+      "builtWithAI": "README: \"Developed with AI coding agents (Claude, Claude Code).\"",
+      "download": "https://github.com/micasa-dev/micasa/releases/latest",
+      "screenshots": [
+        {
+          "src": "/assets/apps/micasa/1.webp",
+          "alt": "micasa's Projects table in the terminal, listing home projects with status, budget and dates",
+          "caption": "Projects"
+        },
+        {
+          "src": "/assets/apps/micasa/2.webp",
+          "alt": "micasa's house overview, listing incidents, overdue and upcoming maintenance and expiring items",
+          "caption": "House overview"
+        }
+      ]
     }
   ]
 }
