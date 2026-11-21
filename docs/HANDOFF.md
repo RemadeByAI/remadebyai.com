@@ -19,6 +19,11 @@ Last updated: 2026-11-21. Read this first when picking up work on the site.
 - `assets/og-image.png` (1200x630): link preview image used by the Open Graph and Twitter tags.
 - `assets/mark.svg`: small star mark in the header. `assets/circuit.svg`: background art.
 
+## Cache busting
+
+- `index.html` loads `styles.css?v=YYYYMMDD` and `directory.js?v=YYYYMMDD`. Bump the date in both whenever either file changes, so returning visitors don't get a stale script or stylesheet.
+- `directory.js` fetches `projects.json` with `cache: 'no-cache'`, so list edits show up right away.
+
 ## Working rules
 
 - Nothing is pushed or published without the owner's explicit OK ("Commit and push" / "Go live" buttons). Going live is never implied.

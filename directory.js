@@ -54,7 +54,7 @@ function updateProjects() {
 
 async function init() {
   try {
-    const response = await fetch('projects.json');
+    const response = await fetch('projects.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error('HTTP ' + response.status);
     const data = await response.json();
     projects = data.projects.map(renderCard);
