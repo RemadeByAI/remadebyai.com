@@ -1,5 +1,6 @@
-// Renders the project cards from projects.json, then wires up search and filters.
+// Renders the featured project and the project cards from projects.json, then wires up search and filters.
 // To add a project, add an entry to projects.json. No HTML changes needed.
+// To feature a project, set "featured": true on its entry (one at a time).
 const searchLabel = document.querySelector('.search');
 const searchInput = searchLabel.querySelector('input');
 const filters = document.querySelector('.filters');
@@ -7,6 +8,7 @@ const buttons = [...filters.querySelectorAll('button')];
 const cardList = document.querySelector('.cards');
 const count = document.querySelector('.count');
 const empty = document.querySelector('.empty');
+const featuredSection = document.querySelector('#featured');
 let projects = [];
 let selected = 'all';
 
@@ -36,6 +38,22 @@ function renderCard(project) {
   return card;
 }
 
+function renderFeature(project) {
+  const copy = el('div', 'feature-copy');
+  const tile = el('span', ['tile', project.tile].filter(Boolean).join(' '), project.icon);
+  tile.setAttribute('aria-hidden', 'true');
+  const title = el('h2', '', project.name);
+  title.id = 'featured-title';
+  const link = el('a', 'button primary', project.featureLinkText || 'Visit ' + project.name);
+  link.href = project.url;
+  copy.append(tile, title, el('p', 'lede', project.tagline || project.alternative), el('p', '', project.featureText || project.description), link, el('small', 'owner', 'By ' + project.owner));
+
+  const parts = [copy];
+  const art = project.featureArt && document.querySelector('#art-' + project.featureArt);
+  if (art) parts.push(art.content.cloneNode(true));
+  featuredSection.querySelector('.feature').replaceChildren(...parts);
+}
+
 function updateProjects() {
   const terms = searchInput.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
   let visible = 0;
@@ -57,10 +75,14 @@ async function init() {
     const response = await fetch('projects.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error('HTTP ' + response.status);
     const data = await response.json();
+    const featured = data.projects.find(project => project.featured);
+    if (featured) renderFeature(featured);
+    else featuredSection.hidden = true;
     projects = data.projects.map(renderCard);
     cardList.replaceChildren(...projects);
   } catch (error) {
     cardList.replaceChildren(el('p', 'load-error', 'Projects could not be loaded. Please refresh the page.'));
+    featuredSection.hidden = true;
     console.error('projects.json failed to load', error);
     return;
   }

@@ -21,7 +21,7 @@
   <meta property="og:image:alt" content="RemadeByAI logo with the tagline Familiar software. Rebuilt with AI.">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css?v=20261121">
-  <script src="directory.js?v=20261121" defer></script>
+  <script src="directory.js?v=20261121b" defer></script>
 </head>
 <body id="top">
 <a class="skip" href="#directory">Skip to projects</a>
@@ -43,14 +43,10 @@
   <section class="wrap" id="featured" aria-labelledby="featured-title">
     <p class="section-label">✦ Featured project</p>
     <article class="feature">
-      <div class="feature-copy">
-        <span class="tile" aria-hidden="true">✉</span>
-        <h2 id="featured-title">InCloseMail</h2>
-        <p class="lede">An Outlook alternative built for the desktop.</p>
-        <p>Use it with personal inboxes and Microsoft 365 business accounts. Free for personal email, with paid plans for business accounts.</p>
-        <a class="button primary" href="https://inclosemail.com/">Visit InCloseMail</a>
-        <small class="owner">By EmuKey LLC</small>
-      </div>
+      <noscript><div class="feature-copy"><p class="load-error">Turn on JavaScript to see the featured project.</p></div></noscript>
+    </article>
+    <!-- Artwork for the featured block. directory.js picks one by the featured entry's "featureArt" value in projects.json. -->
+    <template id="art-inbox">
       <figure class="inbox-art">
         <div class="mail-window" aria-hidden="true">
           <div class="window-bar"><span>● ● ●</span><b>InCloseMail</b></div>
@@ -62,7 +58,7 @@
         </div>
         <figcaption>Illustrative inbox</figcaption>
       </figure>
-    </article>
+    </template>
   </section>
   <section class="wrap directory" id="directory" aria-labelledby="directory-title">
     <div class="directory-top">

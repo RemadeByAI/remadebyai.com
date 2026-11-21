@@ -12,7 +12,8 @@ Last updated: 2026-11-21. Read this first when picking up work on the site.
 
 ## Site layout
 
-- `index.html`: the single page (hero, featured InCloseMail, project directory, About, footer).
+- `index.html`: the single page (hero, featured project, project directory, About, footer).
+- The featured block is rendered by `directory.js` from the `projects.json` entry with `"featured": true`. Its extra fields are `tagline`, `featureText`, `featureLinkText` and `featureArt` (the id suffix of a `<template id="art-...">` in `index.html`; `inbox` is the InCloseMail mock). The featured project also stays in the directory grid.
 - `projects.json`: the directory's project list. `directory.js` renders the cards from it and runs search and filters.
 - `styles.css`: all styles. Dark theme, green accent `#c2ff94`.
 - `favicon.ico`, `assets/favicon-32.png`, `assets/apple-touch-icon.png`: browser and home-screen icons.
@@ -21,7 +22,7 @@ Last updated: 2026-11-21. Read this first when picking up work on the site.
 
 ## Cache busting
 
-- `index.html` loads `styles.css?v=YYYYMMDD` and `directory.js?v=YYYYMMDD`. Bump the date in both whenever either file changes, so returning visitors don't get a stale script or stylesheet.
+- `index.html` loads `styles.css?v=YYYYMMDD` and `directory.js?v=YYYYMMDD`. Bump a file's tag whenever that file changes, so returning visitors don't get a stale script or stylesheet. For a second change on the same day, add a letter (`20261121b`).
 - `directory.js` fetches `projects.json` with `cache: 'no-cache'`, so list edits show up right away.
 
 ## Working rules
@@ -36,5 +37,4 @@ Last updated: 2026-11-21. Read this first when picking up work on the site.
 
 ## Ideas
 
-- Featured project is still hardcoded in `index.html`; it could move into `projects.json` with a `featured` flag.
 - More projects in the directory.

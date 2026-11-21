@@ -10,7 +10,12 @@
       "url": "https://inclosemail.com/",
       "linkText": "Visit site",
       "icon": "✉",
-      "tile": ""
+      "tile": "",
+      "featured": true,
+      "tagline": "An Outlook alternative built for the desktop.",
+      "featureText": "Use it with personal inboxes and Microsoft 365 business accounts. Free for personal email, with paid plans for business accounts.",
+      "featureLinkText": "Visit InCloseMail",
+      "featureArt": "inbox"
     },
     {
       "name": "DesktopWiki",
