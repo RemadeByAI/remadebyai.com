@@ -1,6 +1,6 @@
 # Handoff notes
 
-Last updated: 2026-11-21 (directory rework). Read this first when picking up work on the site.
+Last updated: 2026-11-21 (directory rework; 5 hunt picks added). Read this first when picking up work on the site.
 
 ## Where things are
 
@@ -59,4 +59,4 @@ Only state facts that have been checked. Leave unknown fields out; the page hide
 - **Contact / "list your app" (live 2026-11-21 as d725de8; see Site layout):** the site needs a way for people to contact us, mainly so app makers can ask to have their app listed. Options: a mailto to an emukey.com address or a remadebyai.com shared mailbox (M365 receives mail for that domain), a hosted form service (e.g. Formspree), or a GitHub issue template on the repo.
 - Fill in platforms, licence, maker and "built with AI" details for the existing listings (only verified facts), and add screenshots under `assets/apps/<slug>/`.
 - Later, as the list grows: pagination or "load more" on the home A to Z list, platform pages (`/platforms/windows/`), and a reviews index page.
-- More projects in the directory. Added 2026-11-21: FreeFlow (Wispr Flow alternative) and Open Source Barware. open-cleanmymac (github.com/p-raj/open-cleanmymac) was left out because it has no stated license; revisit if it adds one.
+- More projects in the directory. Added 2026-11-21: FreeFlow (Wispr Flow alternative) and Open Source Barware. open-cleanmymac (github.com/p-raj/open-cleanmymac) was left out because it has no stated license; revisit if it adds one. Added 2026-11-21 from the app hunt: PhotoCraft (Graphics), PdfCraft, WordCraft and GridCraft (new Office category) and micasa (new Home category), giving 12 apps in 9 categories.

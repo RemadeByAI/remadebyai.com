@@ -106,6 +106,124 @@
       "added": "2026-11-21",
       "license": "GPL-3.0",
       "price": "Free"
+    },
+    {
+      "name": "PhotoCraft",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Adobe Photoshop",
+      "description": "A free photo editor for Windows, Mac, Linux and the web, from the ArtCraft suite. Early alpha.",
+      "category": "Graphics",
+      "url": "https://getartcraft.com/apps/photocraft",
+      "linkText": "Visit site",
+      "icon": "◐",
+      "tile": "glance",
+      "added": "2026-11-21",
+      "source": "https://github.com/storytold/photocraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "builtWithAI": "Built largely with Claude: madrobot.blog counted 3,876 of 5,031 commits across ArtCraft's Adobe-clone repos co-authored by Claude Opus 5.5."
+    },
+    {
+      "name": "PdfCraft",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Adobe Acrobat",
+      "description": "Read, edit and work with PDFs on Windows, Mac, Linux and the web, from the ArtCraft suite. Early alpha.",
+      "category": "Office",
+      "url": "https://github.com/storytold/pdfcraft",
+      "linkText": "GitHub",
+      "icon": "▧",
+      "tile": "bar",
+      "added": "2026-11-21",
+      "source": "https://github.com/storytold/pdfcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "builtWithAI": "Part of ArtCraft's Claude-built suite; the repo carries CLAUDE.md and AGENTS.md."
+    },
+    {
+      "name": "WordCraft",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Microsoft Word",
+      "description": "A word processor that opens .docx files, for Windows, Mac, Linux and the web, from the ArtCraft suite. In development.",
+      "category": "Office",
+      "url": "https://github.com/storytold/wordcraft",
+      "linkText": "GitHub",
+      "icon": "¶",
+      "tile": "wiki",
+      "added": "2026-11-21",
+      "source": "https://github.com/storytold/wordcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "builtWithAI": "Part of ArtCraft's Claude-built suite; XDA lists it as a vibe-coded Word replacement."
+    },
+    {
+      "name": "GridCraft",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Microsoft Excel",
+      "description": "A spreadsheet that works with .xlsx files, for Windows, Mac, Linux and the web, from the ArtCraft suite. Alpha.",
+      "category": "Office",
+      "url": "https://github.com/storytold/gridcraft",
+      "linkText": "GitHub",
+      "icon": "▦",
+      "tile": "code",
+      "added": "2026-11-21",
+      "source": "https://github.com/storytold/gridcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "builtWithAI": "Part of ArtCraft's Claude-built suite; the repo carries CLAUDE.md and AGENTS.md."
+    },
+    {
+      "name": "micasa",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to home-maintenance spreadsheets",
+      "description": "Track home projects, maintenance schedules, appliances and vendor quotes from the terminal on Windows, Mac or Linux.",
+      "category": "Home",
+      "url": "https://github.com/micasa-dev/micasa",
+      "linkText": "GitHub",
+      "icon": "⌂",
+      "tile": "capture",
+      "added": "2026-11-21",
+      "source": "https://github.com/micasa-dev/micasa",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "Apache-2.0 or MIT",
+      "price": "Free",
+      "builtWithAI": "README: \"Developed with AI coding agents (Claude, Claude Code).\""
     }
   ]
 }
