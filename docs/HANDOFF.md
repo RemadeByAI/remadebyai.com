@@ -37,4 +37,5 @@ Last updated: 2026-11-21. Read this first when picking up work on the site.
 
 ## Ideas
 
+- **Contact / "list your app" (to do, owner request 2026-11-21):** the site needs a way for people to contact us, mainly so app makers can ask to have their app listed. Don't use a remadebyai.com mailbox, because only emukey.com should receive email. Options: a mailto to an emukey.com address, a hosted form service (e.g. Formspree), or a GitHub issue template on the repo.
 - More projects in the directory.
