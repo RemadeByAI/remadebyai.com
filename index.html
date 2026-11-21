@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d0b">
+  <meta name="description" content="Discover AI-assisted apps and independent alternatives to familiar software. A project from EmuKey LLC.">
+  <title>RemadeByAI — Familiar software. Rebuilt with AI.</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="directory.js" defer></script>
+</head>
+<body id="top">
+<a class="skip" href="#directory">Skip to projects</a>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="35" height="35"><span>RemadeBy<em>AI</em><small>.com</small></span></a>
+    <nav aria-label="Main navigation"><a href="#featured">Featured</a><a href="#directory">Projects</a><a href="#about">About</a></nav>
+    <a class="company" href="https://emukey.com/">EmuKey LLC</a>
+  </div>
+</header>
+<main>
+  <section class="wrap hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <h1 id="hero-title">Familiar software.<br><em>Rebuilt with AI.</em></h1>
+      <p>Discover AI-assisted apps and independent alternatives to the software you use every day.</p>
+      <a class="button primary" href="#directory">Explore projects</a>
+    </div>
+  </section>
+  <section class="wrap" id="featured" aria-labelledby="featured-title">
+    <p class="section-label">✦ Featured project</p>
+    <article class="feature">
+      <div class="feature-copy">
+        <span class="tile" aria-hidden="true">✉</span>
+        <h2 id="featured-title">InCloseMail</h2>
+        <p class="lede">An Outlook alternative built for the desktop.</p>
+        <p>Use it with personal inboxes and Microsoft 365 business accounts. Free for personal email, with paid plans for business accounts.</p>
+        <a class="button primary" href="https://inclosemail.com/">Visit InCloseMail</a>
+        <small class="owner">By EmuKey LLC</small>
+      </div>
+      <figure class="inbox-art">
+        <div class="mail-window" aria-hidden="true">
+          <div class="window-bar"><span>● ● ●</span><b>InCloseMail</b></div>
+          <div class="window-body">
+            <div class="mock-nav"><b class="compose">+ New message</b><b>Inbox</b><span>Sent</span><span>Drafts</span><span>Archive</span></div>
+            <div class="mock-list"><b>Inbox</b><p>Jamie Park<small>Project notes</small></p><p>Alex Morgan<small>Friday plans</small></p><p>Sam Rivera<small>Shared files</small></p></div>
+            <div class="mock-reading"><small>Inbox</small><b>Project notes</b><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        <figcaption>Illustrative inbox</figcaption>
+      </figure>
+    </article>
+  </section>
+  <section class="wrap directory" id="directory" aria-labelledby="directory-title">
+    <div class="directory-top">
+      <div><h2 id="directory-title">Explore projects</h2><p>Browse EmuKey apps and independent open-source picks.</p></div>
+      <label class="search" hidden><span class="visually-hidden">Search projects</span><input type="search" placeholder="Search projects"></label>
+    </div>
+    <div class="filters" hidden>
+      <div class="filter-group" role="group" aria-label="Filter projects">
+        <button type="button" data-filter="all" aria-pressed="true">All projects</button>
+        <button type="button" data-filter="emukey" aria-pressed="false">EmuKey apps</button>
+        <button type="button" data-filter="open" aria-pressed="false">Open source</button>
+      </div>
+      <span class="count" role="status"></span>
+    </div>
+    <div class="cards">
+      <article class="card" data-group="emukey">
+        <div class="card-top"><span class="tile" aria-hidden="true">✉</span><small>EmuKey LLC</small></div>
+        <h3>InCloseMail</h3><p class="alternative">Alternative to Microsoft Outlook</p>
+        <p>Desktop email for personal inboxes and Microsoft 365 business accounts.</p>
+        <div class="card-bottom"><span>Email</span><a href="https://inclosemail.com/" aria-label="Visit InCloseMail">Visit site</a></div>
+      </article>
+      <article class="card" data-group="emukey">
+        <div class="card-top"><span class="tile wiki" aria-hidden="true">▤</span><small>EmuKey LLC</small></div>
+        <h3>DesktopWiki</h3><p class="alternative">Alternative to self-hosted Confluence</p>
+        <p>A wiki for internal docs and team knowledge, with a free single-user tier.</p>
+        <div class="card-bottom"><span>Documentation</span><a href="https://desktopwiki.com/" aria-label="Visit DesktopWiki">Visit site</a></div>
+      </article>
+      <article class="card" data-group="open">
+        <div class="card-top"><span class="tile capture" aria-hidden="true">⛶</span><small>Open source</small></div>
+        <h3>macshot</h3><p class="alternative">Alternative to the macOS screenshot tool</p>
+        <p>Capture, annotate, and record your screen. Includes scrolling capture and text recognition.</p>
+        <div class="card-bottom"><span>Screen capture</span><a href="https://github.com/sw33tLie/macshot" aria-label="View macshot on GitHub">GitHub</a></div>
+      </article>
+      <article class="card" data-group="open">
+        <div class="card-top"><span class="tile code" aria-hidden="true">&lt;/&gt;</span><small>Open source</small></div>
+        <h3>Locode</h3><p class="alternative">Alternative to Lovable and v0</p>
+        <p>Build React web apps from prompts using local Ollama models on an Apple Silicon Mac.</p>
+        <div class="card-bottom"><span>Developer tools</span><a href="https://github.com/locode-dev/locode" aria-label="View Locode on GitHub">GitHub</a></div>
+      </article>
+      <article class="card" data-group="open">
+        <div class="card-top"><span class="tile glance" aria-hidden="true">▣</span><small>Open source</small></div>
+        <h3>Glance</h3><p class="alternative">Alternative to Claude Artifacts</p>
+        <p>Host and share previews of pages built by coding agents like Claude Code, Codex, and Cursor.</p>
+        <div class="card-bottom"><span>Developer tools</span><a href="https://github.com/plivo-labs/glance" aria-label="View Glance on GitHub">GitHub</a></div>
+      </article>
+    </div>
+    <div class="empty" hidden><strong>No matching projects</strong><p>Try a different search or reset the filters.</p><button class="button" type="button" id="reset">Reset filters</button></div>
+  </section>
+</main>
+<footer id="about">
+  <div class="wrap foot"><a class="brand" href="#top">RemadeBy<em>AI</em></a><p>A software directory from <a href="https://emukey.com/">EmuKey LLC</a>.</p></div>
+</footer>
+</body>
+</html>
