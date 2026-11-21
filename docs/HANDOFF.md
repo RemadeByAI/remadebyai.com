@@ -33,11 +33,11 @@ Last updated: 2026-11-21. Read this first when picking up work on the site.
 
 ## Open items
 
-- Email: all four domains (emukey.com, desktopwiki.com, inclosemail.com, remadebyai.com) are healthy in one Microsoft 365 tenant. emukey.com is the only user; the others are shared mailboxes. Do not suggest removing domains or null MX (the earlier lockdown advice was withdrawn). Pending on the owner's side: at NameSilo, set the `_dmarc` TXT for desktopwiki.com and inclosemail.com to `v=DMARC1; p=none` (dropping `rua`) to stop DMARC report mail. Recheck once they say it's saved.
-- Not pushed yet: f8cbe00 (featured project from projects.json) and 703e584 (contact todo). `main` on the PC is 2 ahead of origin; push only on the owner's "Commit and push".
+- Email: all four domains (emukey.com, desktopwiki.com, inclosemail.com, remadebyai.com) are healthy in one Microsoft 365 tenant. emukey.com is the only user; the others are shared mailboxes. Do not suggest removing domains or null MX. DMARC (checked 2026-11-21): desktopwiki, inclosemail and remadebyai are `v=DMARC1; p=none`; emukey.com keeps `rua=mailto:dmarc@emukey.com`. Only safe tightening later: p=none -> quarantine.
+- listings@remadebyai.com (used by the List your app button) must exist in Microsoft 365 as a shared mailbox or alias; owner to set up.
 - After the next push, check the link preview with a sharing debugger (for example LinkedIn Post Inspector or opengraph.xyz).
 
 ## Ideas
 
-- **Contact / "list your app" (built locally 2026-11-21, not committed yet; see Site layout):** the site needs a way for people to contact us, mainly so app makers can ask to have their app listed. Options: a mailto to an emukey.com address or a remadebyai.com shared mailbox (M365 receives mail for that domain), a hosted form service (e.g. Formspree), or a GitHub issue template on the repo.
+- **Contact / "list your app" (live 2026-11-21 as d725de8; see Site layout):** the site needs a way for people to contact us, mainly so app makers can ask to have their app listed. Options: a mailto to an emukey.com address or a remadebyai.com shared mailbox (M365 receives mail for that domain), a hosted form service (e.g. Formspree), or a GitHub issue template on the repo.
 - More projects in the directory.
