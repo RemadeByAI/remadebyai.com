@@ -1,107 +1,57 @@
-// Renders the featured project and the project cards from projects.json, then wires up search and filters.
-// To add a project, add an entry to projects.json. No HTML changes needed.
-// To feature a project, set "featured": true on its entry (one at a time).
+// Search and filters for the "All apps" list on the home page.
+// The cards themselves are plain HTML written by build.js from projects.json, so the list works without JavaScript;
+// this script only hides and shows them. To add an app, edit projects.json and run "node build.js".
 const searchLabel = document.querySelector('.search');
 const searchInput = searchLabel.querySelector('input');
 const filters = document.querySelector('.filters');
-const buttons = [...filters.querySelectorAll('button')];
-const cardList = document.querySelector('.cards');
-const count = document.querySelector('.count');
+const groupButtons = [...filters.querySelectorAll('button[data-group]')];
+const selects = [...filters.querySelectorAll('select[data-filter]')];
+const cards = [...document.querySelectorAll('#all-apps .card')];
+const count = filters.querySelector('.count');
 const empty = document.querySelector('.empty');
-const featuredSection = document.querySelector('#featured');
-let projects = [];
-let selected = 'all';
+let group = 'all';
 
-function el(tag, className, text) {
-  const node = document.createElement(tag);
-  if (className) node.className = className;
-  if (text !== undefined) node.textContent = text;
-  return node;
+function selectValue(name) {
+  const select = selects.find(s => s.dataset.filter === name);
+  return select ? select.value : '';
 }
 
-function renderCard(project) {
-  const card = el('article', 'card');
-  card.dataset.group = project.group;
-
-  const top = el('div', 'card-top');
-  const tile = el('span', ['tile', project.tile].filter(Boolean).join(' '), project.icon);
-  tile.setAttribute('aria-hidden', 'true');
-  top.append(tile, el('small', '', project.owner));
-
-  const bottom = el('div', 'card-bottom');
-  const link = el('a', '', project.linkText);
-  link.href = project.url;
-  link.setAttribute('aria-label', (project.linkText === 'GitHub' ? 'View ' + project.name + ' on GitHub' : 'Visit ' + project.name));
-  bottom.append(el('span', '', project.category), link);
-
-  card.append(top, el('h3', '', project.name), el('p', 'alternative', project.alternative), el('p', '', project.description), bottom);
-  return card;
-}
-
-function renderFeature(project) {
-  const copy = el('div', 'feature-copy');
-  const tile = el('span', ['tile', project.tile].filter(Boolean).join(' '), project.icon);
-  tile.setAttribute('aria-hidden', 'true');
-  const title = el('h2', '', project.name);
-  title.id = 'featured-title';
-  const link = el('a', 'button primary', project.featureLinkText || 'Visit ' + project.name);
-  link.href = project.url;
-  copy.append(tile, title, el('p', 'lede', project.tagline || project.alternative), el('p', '', project.featureText || project.description), link, el('small', 'owner', 'By ' + project.owner));
-
-  const parts = [copy];
-  const art = project.featureArt && document.querySelector('#art-' + project.featureArt);
-  if (art) parts.push(art.content.cloneNode(true));
-  featuredSection.querySelector('.feature').replaceChildren(...parts);
-}
-
-function updateProjects() {
+function update() {
   const terms = searchInput.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+  const category = selectValue('category');
+  const platform = selectValue('platform');
   let visible = 0;
-  for (const project of projects) {
-    const matchesFilter = selected === 'all' || project.dataset.group === selected;
-    const searchableText = project.textContent.toLowerCase();
-    project.hidden = !(matchesFilter && terms.every(term => searchableText.includes(term)));
-    if (!project.hidden) visible += 1;
+  for (const card of cards) {
+    const show = (group === 'all' || card.dataset.group === group)
+      && (!category || card.dataset.category === category)
+      && (!platform || card.dataset.platforms.split('|').includes(platform))
+      && terms.every(term => card.dataset.search.includes(term));
+    card.hidden = !show;
+    if (show) visible += 1;
   }
-  for (const button of buttons) {
-    button.setAttribute('aria-pressed', String(button.dataset.filter === selected));
-  }
-  count.textContent = visible === 1 ? '1 project' : visible + ' projects';
+  for (const button of groupButtons) button.setAttribute('aria-pressed', String(button.dataset.group === group));
+  count.textContent = visible === 1 ? '1 app' : visible + ' apps';
   empty.hidden = visible > 0;
 }
 
-async function init() {
-  try {
-    const response = await fetch('projects.json', { cache: 'no-cache' });
-    if (!response.ok) throw new Error('HTTP ' + response.status);
-    const data = await response.json();
-    const featured = data.projects.find(project => project.featured);
-    if (featured) renderFeature(featured);
-    else featuredSection.hidden = true;
-    projects = data.projects.map(renderCard);
-    cardList.replaceChildren(...projects);
-  } catch (error) {
-    cardList.replaceChildren(el('p', 'load-error', 'Projects could not be loaded. Please refresh the page.'));
-    featuredSection.hidden = true;
-    console.error('projects.json failed to load', error);
-    return;
-  }
-  for (const button of buttons) {
-    button.addEventListener('click', () => {
-      selected = button.dataset.filter;
-      updateProjects();
-    });
-  }
-  searchInput.addEventListener('input', updateProjects);
-  document.querySelector('#reset').addEventListener('click', () => {
-    selected = 'all';
-    searchInput.value = '';
-    updateProjects();
-    searchInput.focus();
-  });
-  searchLabel.hidden = false;
-  filters.hidden = false;
-  updateProjects();
+for (const button of groupButtons) {
+  button.addEventListener('click', () => { group = button.dataset.group; update(); });
 }
+for (const select of selects) select.addEventListener('change', update);
+searchInput.addEventListener('input', update);
+document.querySelector('#reset').addEventListener('click', () => {
+  group = 'all';
+  searchInput.value = '';
+  for (const select of selects) select.value = '';
+  update();
+  searchInput.focus();
+});
 
-init();
+// A link like /?q=email or /?category=productivity opens the list already filtered.
+const params = new URLSearchParams(location.search);
+if (params.get('q')) searchInput.value = params.get('q');
+for (const select of selects) if (params.get(select.dataset.filter)) select.value = params.get(select.dataset.filter);
+
+searchLabel.hidden = false;
+filters.hidden = false;
+update();

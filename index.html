@@ -4,31 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#090d0b">
-  <meta name="description" content="Discover AI-assisted apps and independent alternatives to familiar software. A project from EmuKey LLC.">
+  <meta name="description" content="Discover AI-built apps and independent alternatives to familiar software. A project from EmuKey LLC.">
   <title>RemadeByAI — Familiar software. Rebuilt with AI.</title>
   <link rel="canonical" href="https://remadebyai.com/">
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="RemadeByAI">
   <meta property="og:title" content="RemadeByAI: Familiar software. Rebuilt with AI.">
-  <meta property="og:description" content="Discover AI-assisted apps and independent alternatives to familiar software. A project from EmuKey LLC.">
+  <meta property="og:description" content="Discover AI-built apps and independent alternatives to familiar software. A project from EmuKey LLC.">
   <meta property="og:url" content="https://remadebyai.com/">
   <meta property="og:image" content="https://remadebyai.com/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="RemadeByAI logo with the tagline Familiar software. Rebuilt with AI.">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="styles.css?v=20261121b">
-  <script src="directory.js?v=20261121b" defer></script>
+<!-- Hand-edited page. The regions between build markers are written by build.js: run "node build.js" after changing projects.json. -->
+<!-- build:assets -->
+  <link rel="stylesheet" href="/styles.css?v=f5a9ec9723">
+  <script src="/directory.js?v=c6a5cbe046" defer></script>
+<!-- /build:assets -->
 </head>
 <body id="top">
-<a class="skip" href="#directory">Skip to projects</a>
+<a class="skip" href="#directory">Skip to apps</a>
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="35" height="35"><span>RemadeBy<em>AI</em><small>.com</small></span></a>
-    <nav aria-label="Main navigation"><a href="#featured">Featured</a><a href="#directory">Projects</a><a href="#about">About</a><a href="#list">List your app</a></nav>
+    <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="35" height="35"><span>RemadeBy<em>AI</em><small>.com</small></span></a>
+    <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/new/">New</a><a href="#directory">All apps</a><a href="#about">About</a><a href="#list">List your app</a></nav>
     <a class="company" href="https://emukey.com/">EmuKey LLC</a>
   </div>
 </header>
@@ -36,59 +39,184 @@
   <section class="wrap hero" aria-labelledby="hero-title">
     <div class="hero-copy">
       <h1 id="hero-title">Familiar software.<br><em>Rebuilt with AI.</em></h1>
-      <p>Discover AI-assisted apps and independent alternatives to the software you use every day.</p>
-      <a class="button primary" href="#directory">Explore projects</a>
+      <p>Discover AI-built apps and independent alternatives to the software you use every day.</p>
+      <a class="button primary" href="#directory">Explore apps</a>
     </div>
   </section>
-  <section class="wrap" id="featured" aria-labelledby="featured-title">
+<!-- build:featured -->
+<section class="wrap" id="featured" aria-labelledby="featured-title">
     <p class="section-label">✦ Featured project</p>
     <article class="feature">
-      <noscript><div class="feature-copy"><p class="load-error">Turn on JavaScript to see the featured project.</p></div></noscript>
-    </article>
-    <!-- Artwork for the featured block. directory.js picks one by the featured entry's "featureArt" value in projects.json. -->
-    <template id="art-inbox">
+      <div class="feature-copy">
+        <span class="tile" aria-hidden="true">✉</span>
+        <h2 id="featured-title">InCloseMail</h2>
+        <p class="lede">An Outlook alternative built for the desktop.</p>
+        <p>Use it with personal inboxes and Microsoft 365 business accounts. Free for personal email, with paid plans for business accounts.</p>
+        <div class="feature-actions"><a class="button primary" href="https://inclosemail.com/">Visit InCloseMail</a><a class="button" href="/apps/inclosemail/">Details</a></div>
+        <small class="owner">By EmuKey LLC</small>
+      </div>
       <figure class="inbox-art">
-        <div class="mail-window" aria-hidden="true">
-          <div class="window-bar"><span>● ● ●</span><b>InCloseMail</b></div>
-          <div class="window-body">
-            <div class="mock-nav"><b class="compose">+ New message</b><b>Inbox</b><span>Sent</span><span>Drafts</span><span>Archive</span></div>
-            <div class="mock-list"><b>Inbox</b><p>Jamie Park<small>Project notes</small></p><p>Alex Morgan<small>Friday plans</small></p><p>Sam Rivera<small>Shared files</small></p></div>
-            <div class="mock-reading"><small>Inbox</small><b>Project notes</b><i></i><i></i><i></i><i></i></div>
-          </div>
-        </div>
-        <figcaption>Illustrative inbox</figcaption>
-      </figure>
-    </template>
+  <div class="mail-window" aria-hidden="true">
+    <div class="window-bar"><span>● ● ●</span><b>InCloseMail</b></div>
+    <div class="window-body">
+      <div class="mock-nav"><b class="compose">+ New message</b><b>Inbox</b><span>Sent</span><span>Drafts</span><span>Archive</span></div>
+      <div class="mock-list"><b>Inbox</b><p>Jamie Park<small>Project notes</small></p><p>Alex Morgan<small>Friday plans</small></p><p>Sam Rivera<small>Shared files</small></p></div>
+      <div class="mock-reading"><small>Inbox</small><b>Project notes</b><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+  <figcaption>Illustrative inbox</figcaption>
+</figure>
+    </article>
+  </section>
+<!-- /build:featured -->
+  <section class="wrap home-block" id="new" aria-labelledby="new-title">
+    <div class="block-head"><h2 id="new-title">New arrivals</h2><a href="/new/">See all new apps →</a></div>
+<!-- build:new -->
+<div class="cards">
+<article class="card" data-group="open" data-category="business" data-platforms="" data-search="open source barware alternative to paid bar inventory software local-first bar inventory software for counting stock and tracking usage, licensed gplv3. business open source gpl-3.0">
+  <div class="card-top"><span class="tile bar" aria-hidden="true">▥</span><small>Open source</small></div>
+  <h3><a class="card-link" href="/apps/open-source-barware/">Open Source Barware</a></h3>
+  <p class="alternative">Alternative to paid bar inventory software</p>
+  <p>Local-first bar inventory software for counting stock and tracking usage, licensed GPLv3.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/business/">Business</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="productivity" data-platforms="" data-search="freeflow alternative to wispr flow free voice dictation for your computer. speak and it types for you, with no monthly subscription. productivity open source">
+  <div class="card-top"><span class="tile voice" aria-hidden="true">🎙</span><small>Open source</small></div>
+  <h3><a class="card-link" href="/apps/freeflow/">FreeFlow</a></h3>
+  <p class="alternative">Alternative to Wispr Flow</p>
+  <p>Free voice dictation for your computer. Speak and it types for you, with no monthly subscription.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/productivity/">Productivity</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="developer-tools" data-platforms="" data-search="glance alternative to claude artifacts host and share previews of pages built by coding agents like claude code, codex, and cursor. developer tools open source">
+  <div class="card-top"><span class="tile glance" aria-hidden="true">▣</span><small>Open source</small></div>
+  <h3><a class="card-link" href="/apps/glance/">Glance</a></h3>
+  <p class="alternative">Alternative to Claude Artifacts</p>
+  <p>Host and share previews of pages built by coding agents like Claude Code, Codex, and Cursor.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/developer-tools/">Developer tools</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="developer-tools" data-platforms="" data-search="locode alternative to lovable and v0 build react web apps from prompts using local ollama models on an apple silicon mac. developer tools open source">
+  <div class="card-top"><span class="tile code" aria-hidden="true">&lt;/&gt;</span><small>Open source</small></div>
+  <h3><a class="card-link" href="/apps/locode/">Locode</a></h3>
+  <p class="alternative">Alternative to Lovable and v0</p>
+  <p>Build React web apps from prompts using local Ollama models on an Apple Silicon Mac.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/developer-tools/">Developer tools</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="screen-capture" data-platforms="" data-search="macshot alternative to the macos screenshot tool capture, annotate, and record your screen. includes scrolling capture and text recognition. screen capture open source">
+  <div class="card-top"><span class="tile capture" aria-hidden="true">⛶</span><small>Open source</small></div>
+  <h3><a class="card-link" href="/apps/macshot/">macshot</a></h3>
+  <p class="alternative">Alternative to the macOS screenshot tool</p>
+  <p>Capture, annotate, and record your screen. Includes scrolling capture and text recognition.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/screen-capture/">Screen capture</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="emukey" data-category="documentation" data-platforms="" data-search="desktopwiki alternative to self-hosted confluence a wiki for internal docs and team knowledge, with a free single-user tier. documentation emukey llc">
+  <div class="card-top"><span class="tile wiki" aria-hidden="true">▤</span><small>EmuKey LLC</small></div>
+  <h3><a class="card-link" href="/apps/desktopwiki/">DesktopWiki</a></h3>
+  <p class="alternative">Alternative to self-hosted Confluence</p>
+  <p>A wiki for internal docs and team knowledge, with a free single-user tier.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/documentation/">Documentation</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+</div>
+<!-- /build:new -->
+  </section>
+  <section class="wrap home-block" id="categories" aria-labelledby="categories-title">
+    <div class="block-head"><h2 id="categories-title">Browse by category</h2><a href="/categories/">All categories →</a></div>
+<!-- build:categories -->
+<ul class="category-list">
+  <li><a href="/categories/business/"><span>Business</span><small>1</small></a></li>
+  <li><a href="/categories/developer-tools/"><span>Developer tools</span><small>2</small></a></li>
+  <li><a href="/categories/documentation/"><span>Documentation</span><small>1</small></a></li>
+  <li><a href="/categories/email/"><span>Email</span><small>1</small></a></li>
+  <li><a href="/categories/productivity/"><span>Productivity</span><small>1</small></a></li>
+  <li><a href="/categories/screen-capture/"><span>Screen capture</span><small>1</small></a></li>
+</ul>
+<!-- /build:categories -->
   </section>
   <section class="wrap directory" id="directory" aria-labelledby="directory-title">
     <div class="directory-top">
-      <div><h2 id="directory-title">Explore projects</h2><p>Browse EmuKey apps and independent open-source picks.</p></div>
-      <label class="search" hidden><span class="visually-hidden">Search projects</span><input type="search" placeholder="Search projects"></label>
+      <div><h2 id="directory-title">All apps</h2><p>EmuKey apps and independent open-source picks, A to Z.</p></div>
+      <label class="search" hidden><span class="visually-hidden">Search apps</span><input type="search" placeholder="Search apps"></label>
     </div>
     <div class="filters" hidden>
-      <div class="filter-group" role="group" aria-label="Filter projects">
-        <button type="button" data-filter="all" aria-pressed="true">All projects</button>
-        <button type="button" data-filter="emukey" aria-pressed="false">EmuKey apps</button>
-        <button type="button" data-filter="open" aria-pressed="false">Open source</button>
+      <div class="filter-group" role="group" aria-label="Filter apps">
+        <button type="button" data-group="all" aria-pressed="true">All apps</button>
+        <button type="button" data-group="emukey" aria-pressed="false">EmuKey apps</button>
+        <button type="button" data-group="open" aria-pressed="false">Open source</button>
+<!-- build:filters -->
+<label class="select"><span class="visually-hidden">Category</span><select data-filter="category"><option value="">All categories</option><option value="business">Business</option><option value="developer-tools">Developer tools</option><option value="documentation">Documentation</option><option value="email">Email</option><option value="productivity">Productivity</option><option value="screen-capture">Screen capture</option></select></label>
+<!-- /build:filters -->
       </div>
-      <span class="count" role="status"></span>
+      <span class="count" role="status">
+<!-- build:count -->
+7 apps
+<!-- /build:count -->
+      </span>
     </div>
-    <div class="cards" aria-live="polite">
-      <noscript><p class="load-error">Turn on JavaScript to browse the project list.</p></noscript>
+    <div class="cards" id="all-apps">
+<!-- build:cards -->
+<article class="card" data-group="emukey" data-category="documentation" data-platforms="" data-search="desktopwiki alternative to self-hosted confluence a wiki for internal docs and team knowledge, with a free single-user tier. documentation emukey llc">
+  <div class="card-top"><span class="tile wiki" aria-hidden="true">▤</span><small>EmuKey LLC</small></div>
+  <h3><a class="card-link" href="/apps/desktopwiki/">DesktopWiki</a></h3>
+  <p class="alternative">Alternative to self-hosted Confluence</p>
+  <p>A wiki for internal docs and team knowledge, with a free single-user tier.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/documentation/">Documentation</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="productivity" data-platforms="" data-search="freeflow alternative to wispr flow free voice dictation for your computer. speak and it types for you, with no monthly subscription. productivity open source">
+  <div class="card-top"><span class="tile voice" aria-hidden="true">🎙</span><small>Open source</small></div>
+  <h3><a class="card-link" href="/apps/freeflow/">FreeFlow</a></h3>
+  <p class="alternative">Alternative to Wispr Flow</p>
+  <p>Free voice dictation for your computer. Speak and it types for you, with no monthly subscription.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/productivity/">Productivity</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="developer-tools" data-platforms="" data-search="glance alternative to claude artifacts host and share previews of pages built by coding agents like claude code, codex, and cursor. developer tools open source">
+  <div class="card-top"><span class="tile glance" aria-hidden="true">▣</span><small>Open source</small></div>
+  <h3><a class="card-link" href="/apps/glance/">Glance</a></h3>
+  <p class="alternative">Alternative to Claude Artifacts</p>
+  <p>Host and share previews of pages built by coding agents like Claude Code, Codex, and Cursor.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/developer-tools/">Developer tools</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="emukey" data-category="email" data-platforms="" data-search="inclosemail alternative to microsoft outlook desktop email for personal inboxes and microsoft 365 business accounts. email emukey llc">
+  <div class="card-top"><span class="tile" aria-hidden="true">✉</span><small>EmuKey LLC</small></div>
+  <h3><a class="card-link" href="/apps/inclosemail/">InCloseMail</a></h3>
+  <p class="alternative">Alternative to Microsoft Outlook</p>
+  <p>Desktop email for personal inboxes and Microsoft 365 business accounts.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/email/">Email</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="developer-tools" data-platforms="" data-search="locode alternative to lovable and v0 build react web apps from prompts using local ollama models on an apple silicon mac. developer tools open source">
+  <div class="card-top"><span class="tile code" aria-hidden="true">&lt;/&gt;</span><small>Open source</small></div>
+  <h3><a class="card-link" href="/apps/locode/">Locode</a></h3>
+  <p class="alternative">Alternative to Lovable and v0</p>
+  <p>Build React web apps from prompts using local Ollama models on an Apple Silicon Mac.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/developer-tools/">Developer tools</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="screen-capture" data-platforms="" data-search="macshot alternative to the macos screenshot tool capture, annotate, and record your screen. includes scrolling capture and text recognition. screen capture open source">
+  <div class="card-top"><span class="tile capture" aria-hidden="true">⛶</span><small>Open source</small></div>
+  <h3><a class="card-link" href="/apps/macshot/">macshot</a></h3>
+  <p class="alternative">Alternative to the macOS screenshot tool</p>
+  <p>Capture, annotate, and record your screen. Includes scrolling capture and text recognition.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/screen-capture/">Screen capture</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="business" data-platforms="" data-search="open source barware alternative to paid bar inventory software local-first bar inventory software for counting stock and tracking usage, licensed gplv3. business open source gpl-3.0">
+  <div class="card-top"><span class="tile bar" aria-hidden="true">▥</span><small>Open source</small></div>
+  <h3><a class="card-link" href="/apps/open-source-barware/">Open Source Barware</a></h3>
+  <p class="alternative">Alternative to paid bar inventory software</p>
+  <p>Local-first bar inventory software for counting stock and tracking usage, licensed GPLv3.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/business/">Business</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<!-- /build:cards -->
     </div>
-    <div class="empty" hidden><strong>No matching projects</strong><p>Try a different search or reset the filters.</p><button class="button" type="button" id="reset">Reset filters</button></div>
+    <div class="empty" hidden><strong>No matching apps</strong><p>Try a different search or reset the filters.</p><button class="button" type="button" id="reset">Reset filters</button></div>
   </section>
   <section class="wrap about" id="about" aria-labelledby="about-title">
     <p class="section-label">✦ About</p>
     <div class="about-grid">
       <div>
         <h2 id="about-title">Everyday tools, rebuilt around how people work.</h2>
-        <p class="lede">RemadeByAI is a showcase from EmuKey LLC. It collects practical software that takes a familiar tool and rebuilds it with AI as part of how it gets made.</p>
+        <p class="lede">RemadeByAI is a directory from EmuKey LLC. It collects practical software that takes a familiar tool and rebuilds it with AI as part of how it gets made.</p>
       </div>
       <dl class="about-points">
-        <div><dt>What you'll find</dt><dd>EmuKey's own apps, like InCloseMail and DesktopWiki, alongside open-source projects worth a look.</dd></div>
-        <div><dt>How projects are chosen</dt><dd>Each listing is a working alternative to software you probably already use. Open-source picks are made by their own developers, not by EmuKey.</dd></div>
-        <div><dt>Suggest a project</dt><dd>Know something that belongs here? See <a href="#list">List your app</a> below.</dd></div>
+        <div><dt>What you'll find</dt><dd>EmuKey's own apps, like InCloseMail and DesktopWiki, alongside open-source projects worth a look. Each app has its own page with what it replaces, where it runs, its licence and how AI helped build it.</dd></div>
+        <div><dt>How apps are chosen</dt><dd>Each listing is a working alternative to software you probably already use. Open-source picks are made by their own developers, not by EmuKey.</dd></div>
+        <div><dt>Suggest an app</dt><dd>Know something that belongs here? See <a href="#list">List your app</a> below.</dd></div>
       </dl>
     </div>
   </section>
@@ -107,7 +235,7 @@
   </section>
 </main>
 <footer>
-  <div class="wrap foot"><a class="brand" href="#top">RemadeBy<em>AI</em></a><p>A software directory from <a href="https://emukey.com/">EmuKey LLC</a>.</p></div>
+  <div class="wrap foot"><a class="brand" href="/">RemadeBy<em>AI</em></a><p>A software directory from <a href="https://emukey.com/">EmuKey LLC</a>.</p></div>
 </footer>
 </body>
 </html>

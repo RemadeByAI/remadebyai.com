@@ -1,6 +1,6 @@
 # Handoff notes
 
-Last updated: 2026-11-21. Read this first when picking up work on the site.
+Last updated: 2026-11-21 (directory rework). Read this first when picking up work on the site.
 
 ## Where things are
 
@@ -10,21 +10,38 @@ Last updated: 2026-11-21. Read this first when picking up work on the site.
 - **HTTPS:** Enforce HTTPS is on for remadebyai.com and desktopwiki.com. On 2026-11-21, http:// and www. both redirected to the https:// apex address.
 - **Brand icon:** `C:\dev\remadebyaI\remadebyai-icon.png` (1254x1254). The original has transparent patches inside the dark panel; the site's icons were made from a cleaned copy (`assets/icon-512.png`).
 
-## Site layout
+## Site layout (directory structure, built 2026-11-21)
 
-- `index.html`: the single page (hero, featured project, project directory, About, List your app, footer).
-- **List your app** (`#list`): a mailto button to `listings@remadebyai.com` with a prefilled subject and form-style body (app name, website, what it replaces, open source, maker, description). The About section's "Suggest a project" points to it. The address must exist in Microsoft 365 (shared mailbox or alias) before this goes live.
-- The featured block is rendered by `directory.js` from the `projects.json` entry with `"featured": true`. Its extra fields are `tagline`, `featureText`, `featureLinkText` and `featureArt` (the id suffix of a `<template id="art-...">` in `index.html`; `inbox` is the InCloseMail mock). The featured project also stays in the directory grid.
-- `projects.json`: the directory's project list. `directory.js` renders the cards from it and runs search and filters.
-- `styles.css`: all styles. Dark theme, green accent `#c2ff94`.
-- `favicon.ico`, `assets/favicon-32.png`, `assets/apple-touch-icon.png`: browser and home-screen icons.
-- `assets/og-image.png` (1200x630): link preview image used by the Open Graph and Twitter tags.
-- `assets/mark.svg`: small star mark in the header. `assets/circuit.svg`: background art.
+The site is a static app directory generated from one data file. **Add or change apps in `projects.json`, then run `node build.js`** (Node 18+, no packages) and commit everything it changed. The build checks the data first and refuses to build if an entry is wrong (missing field, bad date, duplicate slug, missing screenshot file).
+
+What `build.js` writes (never edit these by hand; they are rebuilt from scratch each run):
+- `apps/<slug>/index.html`: one page per app (facts table, download/site buttons, screenshots, "How it was built with AI", "Our review", more in the same category, schema.org SoftwareApplication data).
+- `categories/index.html` and `categories/<slug>/index.html`: category list and one page per category (A to Z).
+- `new/index.html`: every app, newest first.
+- `sitemap.xml` and `robots.txt`.
+- `index.html`: only the regions between `<!-- build:NAME -->` and `<!-- /build:NAME -->` markers (asset links, featured block, new arrivals, categories, filter dropdowns, the full A to Z card list, count). Everything else in `index.html` (hero, About, List your app) is hand-edited.
+
+Other files:
+- `directory.js`: only search and filters on the home page "All apps" list (group buttons, category and platform dropdowns). The cards are plain HTML, so the list works without JavaScript and no longer fetches `projects.json`. Links like `/?q=email` or `/?category=productivity` open pre-filtered.
+- `partials/art-<name>.html`: artwork for the featured block, chosen by the featured entry's `featureArt` (`inbox` is the InCloseMail mock).
+- `styles.css`: all styles. Dark theme, green accent `#c2ff94`. Tile colours: `wiki`, `capture`, `code`, `glance`, `voice`, `bar`, or empty for green.
+- **List your app** (`#list` on the home page): mailto to `listings@remadebyai.com` with a prefilled form-style body.
+- Icons: `favicon.ico`, `assets/favicon-32.png`, `assets/apple-touch-icon.png`; link preview `assets/og-image.png` (1200x630). `assets/mark.svg` header mark, `assets/circuit.svg` hero art.
+- Pages use root links (`/styles.css`, `/apps/...`), so preview with a local server at the folder root (`python -m http.server 8000`), not by opening the file.
+
+### projects.json fields
+
+Required: `name`, `group` (`emukey` or `open`), `owner`, `alternative` ("Alternative to X"), `description` (one or two sentences), `category`, `url`, `added` (YYYY-MM-DD, drives New arrivals).
+
+Optional: `slug` (default from name), `icon`, `tile`, `linkText`, `download` (direct download or releases page; adds a Download button), `source` (repo link), `platforms` (any of Windows, macOS, Linux, Web, iOS, Android), `license` (e.g. MIT, GPL-3.0, Proprietary), `price` (Free, Freemium, Paid), `maker` (who makes it), `longDescription` (paragraphs separated by a blank line), `screenshots` (list of `{ "src": "/assets/apps/<slug>/1.png", "alt": "...", "caption": "..." }`), `builtWithAI` (how AI was used, with the source of that claim), `review` (`{ "date", "body", "verdict", "version", "author" }`).
+
+Featured (one entry only): `featured: true`, plus `tagline`, `featureText`, `featureLinkText`, `featureArt`.
+
+Only state facts that have been checked. Leave unknown fields out; the page hides them.
 
 ## Cache busting
 
-- `index.html` loads `styles.css?v=YYYYMMDD` and `directory.js?v=YYYYMMDD`. Bump a file's tag whenever that file changes, so returning visitors don't get a stale script or stylesheet. For a second change on the same day, add a letter (`20261121b`).
-- `directory.js` fetches `projects.json` with `cache: 'no-cache'`, so list edits show up right away.
+- `build.js` adds a content hash to the `styles.css` and `directory.js` links on every page (`?v=<hash>`), so there is nothing to bump by hand. Just rebuild after changing either file.
 
 ## Working rules
 
@@ -40,4 +57,6 @@ Last updated: 2026-11-21. Read this first when picking up work on the site.
 ## Ideas
 
 - **Contact / "list your app" (live 2026-11-21 as d725de8; see Site layout):** the site needs a way for people to contact us, mainly so app makers can ask to have their app listed. Options: a mailto to an emukey.com address or a remadebyai.com shared mailbox (M365 receives mail for that domain), a hosted form service (e.g. Formspree), or a GitHub issue template on the repo.
-- More projects in the directory.
+- Fill in platforms, licence, maker and "built with AI" details for the existing listings (only verified facts), and add screenshots under `assets/apps/<slug>/`.
+- Later, as the list grows: pagination or "load more" on the home A to Z list, platform pages (`/platforms/windows/`), and a reviews index page.
+- More projects in the directory. Added 2026-11-21: FreeFlow (Wispr Flow alternative) and Open Source Barware. open-cleanmymac (github.com/p-raj/open-cleanmymac) was left out because it has no stated license; revisit if it adds one.

@@ -148,3 +148,65 @@ footer { border-top: 1px solid var(--line); background: #0d1310; }
 .list-app-address { color: var(--muted); font-size: .9rem; }
 .list-app-address a { color: var(--green); }
 @media (max-width: 760px) { .list-app-box { grid-template-columns: 1fr; } }
+
+/* ---------- Directory structure (build.js pages) ---------- */
+.card { position: relative; }
+.card-link::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.card-link:hover { color: var(--green); }
+.card-bottom .card-category { position: relative; z-index: 1; padding: 0; border: 0; color: var(--muted); font-size: .84rem; font-weight: 400; }
+.card-bottom .card-category:hover { background: none; color: var(--green); }
+.card-more { color: var(--green); font-size: .88rem; font-weight: 700; }
+.voice { background: #2b2235; color: #d9b8ff; }
+.bar { background: #35261c; color: #f5c39a; }
+.home-block { padding-top: 56px; }
+.block-head { display: flex; align-items: baseline; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+.block-head h2 { font-size: clamp(1.8rem, 3.2vw, 2.5rem); font-weight: 800; letter-spacing: -.055em; }
+.block-head a { color: var(--green); font-size: .93rem; font-weight: 650; }
+.category-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; margin: 18px 0 0; padding: 0; list-style: none; }
+.category-list a { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 52px; padding: 0 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); font-weight: 650; }
+.category-list a:hover { border-color: #547359; color: var(--green); }
+.category-list small { min-width: 28px; padding: 2px 8px; border-radius: 20px; background: #1c2b20; color: var(--muted); font: .78rem var(--mono); text-align: center; }
+.select select { min-height: 38px; padding: 0 30px 0 13px; border: 1px solid #354b3d; border-radius: 24px; background: #121a15; color: var(--muted); font: inherit; font-size: .88rem; cursor: pointer; }
+.feature-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 19px; }
+.feature .feature-actions .button { margin-top: 0; }
+.muted { color: var(--muted); }
+.muted a, .prose a, .page-intro a, .facts a { color: var(--green); }
+
+/* List pages: categories, a category, new arrivals */
+.list-page { padding-block: 44px 70px; }
+.page-title { font-size: clamp(2.3rem, 5vw, 3.8rem); font-weight: 800; letter-spacing: -.065em; line-height: 1.05; }
+.page-intro { margin-top: 10px; color: var(--muted); font-size: 1.05rem; }
+.list-page .cards, .list-page .category-list { margin-top: 26px; }
+
+/* App page */
+.app-page { padding-block: 30px 70px; }
+.crumbs { display: block; color: var(--muted); font-size: .88rem; }
+.crumbs a:hover { color: var(--green); }
+.crumbs span { color: var(--ink); }
+.app-hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: clamp(24px, 5vw, 56px); margin-top: 18px; padding: clamp(25px, 4.3vw, 49px); border: 1px solid #395546; border-radius: 19px; background: linear-gradient(120deg, #142219, #111813 60%); }
+.app-title-row { display: flex; align-items: center; gap: 12px; }
+.app-title-row .owner { margin: 0; }
+.app-hero h1 { margin-top: 14px; font-size: clamp(2.5rem, 5.5vw, 4.2rem); }
+.app-hero .lede { margin-top: 10px; color: #c6e8c4; font-size: 1.15rem; font-weight: 650; }
+.app-summary { margin-top: 8px; color: var(--muted); font-size: 1.05rem; }
+.app-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.facts { display: grid; align-content: start; gap: 0; margin: 0; }
+.facts div { display: grid; grid-template-columns: 110px 1fr; gap: 10px; padding-block: 10px; border-bottom: 1px solid var(--line); }
+.facts div:last-child { border-bottom: 0; }
+.facts dt { color: var(--green); font: 500 .78rem/1.9 var(--mono); text-transform: uppercase; }
+.facts dd { margin: 0; overflow-wrap: anywhere; }
+.app-section { margin-top: 44px; }
+.app-section > h2 { font-size: clamp(1.6rem, 2.8vw, 2.1rem); font-weight: 800; letter-spacing: -.05em; }
+.app-section .cards { margin-top: 16px; }
+.prose { max-width: 720px; margin-top: 12px; }
+.prose p + p { margin-top: 12px; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-top: 16px; }
+.shots figure { position: relative; }
+.shots img { display: block; width: 100%; border: 1px solid var(--line); border-radius: 12px; }
+.shots figcaption { position: static; margin-top: 6px; }
+.review { max-width: 760px; margin-top: 14px; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+.review p + p { margin-top: 10px; }
+.review-verdict { color: var(--green); font-size: 1.15rem; font-weight: 700; }
+.review-meta { color: var(--muted); font: .78rem var(--mono); }
+.app-section > .muted { margin-top: 12px; }
+@media (max-width: 760px) { .app-hero { grid-template-columns: 1fr; } }

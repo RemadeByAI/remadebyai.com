@@ -15,7 +15,8 @@
       "tagline": "An Outlook alternative built for the desktop.",
       "featureText": "Use it with personal inboxes and Microsoft 365 business accounts. Free for personal email, with paid plans for business accounts.",
       "featureLinkText": "Visit InCloseMail",
-      "featureArt": "inbox"
+      "featureArt": "inbox",
+      "added": "2026-11-21"
     },
     {
       "name": "DesktopWiki",
@@ -27,7 +28,8 @@
       "url": "https://desktopwiki.com/",
       "linkText": "Visit site",
       "icon": "▤",
-      "tile": "wiki"
+      "tile": "wiki",
+      "added": "2026-11-21"
     },
     {
       "name": "macshot",
@@ -39,7 +41,10 @@
       "url": "https://github.com/sw33tLie/macshot",
       "linkText": "GitHub",
       "icon": "⛶",
-      "tile": "capture"
+      "tile": "capture",
+      "added": "2026-11-21",
+      "source": "https://github.com/sw33tLie/macshot",
+      "price": "Free"
     },
     {
       "name": "Locode",
@@ -51,7 +56,10 @@
       "url": "https://github.com/locode-dev/locode",
       "linkText": "GitHub",
       "icon": "</>",
-      "tile": "code"
+      "tile": "code",
+      "added": "2026-11-21",
+      "source": "https://github.com/locode-dev/locode",
+      "price": "Free"
     },
     {
       "name": "Glance",
@@ -63,7 +71,41 @@
       "url": "https://github.com/plivo-labs/glance",
       "linkText": "GitHub",
       "icon": "▣",
-      "tile": "glance"
+      "tile": "glance",
+      "added": "2026-11-21",
+      "source": "https://github.com/plivo-labs/glance",
+      "price": "Free"
+    },
+    {
+      "name": "FreeFlow",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Wispr Flow",
+      "description": "Free voice dictation for your computer. Speak and it types for you, with no monthly subscription.",
+      "category": "Productivity",
+      "url": "https://github.com/zachlatta/freeflow",
+      "linkText": "GitHub",
+      "icon": "🎙",
+      "tile": "voice",
+      "added": "2026-11-21",
+      "source": "https://github.com/zachlatta/freeflow",
+      "builtWithAI": "The FreeFlow README describes the app as \"100% vibe coded\": it was written by prompting an AI coding assistant rather than by hand.",
+      "price": "Free"
+    },
+    {
+      "name": "Open Source Barware",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to paid bar inventory software",
+      "description": "Local-first bar inventory software for counting stock and tracking usage, licensed GPLv3.",
+      "category": "Business",
+      "url": "https://opensourcebarware.com/",
+      "linkText": "Visit site",
+      "icon": "▥",
+      "tile": "bar",
+      "added": "2026-11-21",
+      "license": "GPL-3.0",
+      "price": "Free"
     }
   ]
 }
