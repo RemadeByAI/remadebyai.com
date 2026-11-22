@@ -164,7 +164,6 @@ function header() {
       <ul class="site-search-results" id="site-search-results" role="listbox" aria-label="Matching apps" hidden></ul>
     </form>
     <button class="theme-toggle" type="button" aria-label="Switch to light mode"><span class="to-light"><span class="icon" aria-hidden="true">☀\uFE0E</span><span class="label">Light mode</span></span><span class="to-dark"><span class="icon" aria-hidden="true">☾</span><span class="label">Dark mode</span></span></button>
-    <a class="company" href="https://emukey.com/">EmuKey LLC</a>
   </div>
 </header>`;
 }
