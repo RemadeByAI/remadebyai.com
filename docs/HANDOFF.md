@@ -22,6 +22,7 @@ What `build.js` writes (never edit these by hand; they are rebuilt from scratch 
 - `new/index.html`: every app, newest first.
 - `apps/index.html` (**All apps**, since 2026-11-22): the full A to Z list with search and filters (directory.js). It used to be on the home page.
 - `about/index.html` and `list/index.html`: the About and List your app pages, wrapped from the hand-edited `partials/about.html` and `partials/list.html` (the contact form lives in `partials/list.html`; contact.js loads only there).
+- `badge/index.html` (2026-11-22): the "Listed on RemadeByAI" badge page, with an app picker (`?app=<slug>` preselects) and copy-paste Markdown (dark, light) and an HTML `<picture>` snippet that follows GitHub light/dark mode. Each app page ends with a small collapsed "Made X? Add a badge to your README" box with that app's snippets (`badgeBox()` in build.js). The badge images are hand-made SVGs in `assets/badge/listed-dark.svg` and `listed-light.svg` (172x28); keep those URLs stable, since makers' READMEs point at them. Copy buttons are handled in site.js. Makers are never contacted about it.
 - `sitemap.xml` and `robots.txt`.
 - `search.json`: the header search index.
 - `index.html`: only the regions between `<!-- build:NAME -->` and `<!-- /build:NAME -->` markers (asset links, header, stats line, featured block, one row of new arrivals, category tiles, app count, footer). Everything else (hero, the two link cards at the bottom, the redirect script) is hand-edited.
