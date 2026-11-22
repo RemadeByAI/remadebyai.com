@@ -13,8 +13,11 @@
   <url><loc>https://remadebyai.com/categories/documentation/</loc></url>
   <url><loc>https://remadebyai.com/categories/email/</loc></url>
   <url><loc>https://remadebyai.com/categories/graphics/</loc></url>
+  <url><loc>https://remadebyai.com/categories/health-and-fitness/</loc></url>
   <url><loc>https://remadebyai.com/categories/home/</loc></url>
+  <url><loc>https://remadebyai.com/categories/maps-and-gis/</loc></url>
   <url><loc>https://remadebyai.com/categories/messaging/</loc></url>
+  <url><loc>https://remadebyai.com/categories/networking/</loc></url>
   <url><loc>https://remadebyai.com/categories/office/</loc></url>
   <url><loc>https://remadebyai.com/categories/productivity/</loc></url>
   <url><loc>https://remadebyai.com/categories/reading/</loc></url>
@@ -58,4 +61,12 @@
   <url><loc>https://remadebyai.com/apps/inbox-zero/</loc></url>
   <url><loc>https://remadebyai.com/apps/openseo/</loc></url>
   <url><loc>https://remadebyai.com/apps/voicebox/</loc></url>
+  <url><loc>https://remadebyai.com/apps/opengym/</loc></url>
+  <url><loc>https://remadebyai.com/apps/solidcraft/</loc></url>
+  <url><loc>https://remadebyai.com/apps/mister-download-manager/</loc></url>
+  <url><loc>https://remadebyai.com/apps/geolibre/</loc></url>
+  <url><loc>https://remadebyai.com/apps/rustgis/</loc></url>
+  <url><loc>https://remadebyai.com/apps/rackula/</loc></url>
+  <url><loc>https://remadebyai.com/apps/solomd/</loc></url>
+  <url><loc>https://remadebyai.com/apps/telltaledns/</loc></url>
 </urlset>

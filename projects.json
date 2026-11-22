@@ -1281,6 +1281,273 @@
           "caption": "Stories with several voices"
         }
       ]
+    },
+    {
+      "name": "openGym",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Strong and Hevy",
+      "description": "A gym and body-weight tracker you host yourself: plan routines, log every set and watch your progress, synced across your phone and laptop.",
+      "category": "Health and fitness",
+      "url": "https://opengym.ch",
+      "linkText": "Visit site",
+      "icon": "✦",
+      "tile": "",
+      "added": "2026-11-22",
+      "source": "https://github.com/DuarteSantos8/openGym",
+      "download": "https://github.com/DuarteSantos8/openGym/releases/latest",
+      "platforms": [
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "maker": "Duarte Santos and contributors",
+      "longDescription": "Plan a routine for each weekday (or a rotation) from a library of over 5,600 exercises with animated demos and a body map, or start from one of four ready-made plans. During a workout, weights are filled in from last time, a rest timer runs between sets and personal records are spotted as you go. It handles supersets, drop sets, timed and cardio exercises, and works out plate math from the plates your gym has.\n\nYou run it on your own server with one docker compose command; it installs to the home screen, works offline and signs in with passkeys. There is an Android APK, an iPhone and Apple Watch app, and a live demo in the browser. No account on anyone else's server, no subscription, no ads.",
+      "builtWithAI": "The README says a large share of the code, tests and documentation is drafted in Claude Code sessions, and the repo has a CLAUDE.md file. Checked 2026-11-22: 376 of 3,810 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/opengym/1.webp",
+          "alt": "openGym on two iPhones showing the stats screen and today's workout",
+          "caption": "Stats and today's workout"
+        }
+      ]
+    },
+    {
+      "name": "SolidCraft",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to SolidWorks and Fusion 360",
+      "description": "A free parametric 3D CAD app: sketch, constrain and build solids on a feature timeline, then change a dimension and watch the model rebuild. For Windows, Mac, Linux and the web.",
+      "category": "3D and CAD",
+      "url": "https://solidcraft.io",
+      "linkText": "Visit site",
+      "icon": "⬢",
+      "tile": "code",
+      "added": "2026-11-22",
+      "source": "https://github.com/tangency-labs/solidcraft",
+      "download": "https://github.com/tangency-labs/solidcraft/releases/latest",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "license": "Apache-2.0",
+      "price": "Free",
+      "maker": "Tangency Labs",
+      "longDescription": "SolidCraft has sketches with its own constraint solver, and extrude, revolve, sweep, loft, fillet, chamfer, shell, holes, threads and patterns on an editable timeline. It also does parameters and configurations, assemblies with joints and motion studies, and sheet metal with flat patterns. It opens and saves STEP, IGES, 3MF, STL, OBJ and glTF.\n\nIts README calls it early but usable for simple parts. There are installers for Windows, Mac (signed and notarized) and Linux (AppImage, Snap and more), and a version that runs in the browser. A command-line tool and MCP server run the same commands.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 5,347 of 10,549 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/solidcraft/1.webp",
+          "alt": "SolidCraft with a finished Raspberry Pi 4 case model, the feature browser and the timeline",
+          "caption": "A Raspberry Pi case, start to finish"
+        },
+        {
+          "src": "/assets/apps/solidcraft/2.webp",
+          "alt": "A smooth freeform surface modelled in SolidCraft",
+          "caption": "Freeform surface"
+        }
+      ]
+    },
+    {
+      "name": "Mister Download Manager",
+      "slug": "mister-download-manager",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Internet Download Manager",
+      "description": "A free download manager with the familiar IDM-style window, faster downloads, a browser extension, video grabbing and torrents. For Windows and Linux, with an experimental Mac version.",
+      "category": "Utilities",
+      "url": "https://misterdownloadmanager.com",
+      "linkText": "Visit site",
+      "icon": "⇩",
+      "tile": "bar",
+      "added": "2026-11-22",
+      "source": "https://github.com/anefzaoui/misterdownloadmanager",
+      "download": "https://github.com/anefzaoui/misterdownloadmanager/releases/latest",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "maker": "Ahmed Nefzaoui and contributors",
+      "longDescription": "The toolbar, categories, download list, progress window and browser button are where IDM users expect them. A browser extension for Chrome, Edge, Brave, Opera, Vivaldi and Firefox hands downloads to the app, it can save videos from web pages, and it opens magnet links and .torrent files. It comes in 86 languages, with no ads, trial or sign-up.\n\nWindows builds come as an installer or a portable zip for x64, ARM64 and 32-bit. Linux packages cover Ubuntu, Debian, Fedora, Arch and more; the Mac version is marked experimental.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 412 of 682 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/mister-download-manager/1.webp",
+          "alt": "Mister Download Manager's main window on Windows with categories and a list of downloads",
+          "caption": "Main window"
+        },
+        {
+          "src": "/assets/apps/mister-download-manager/2.webp",
+          "alt": "Mister Download Manager running on Linux",
+          "caption": "On Linux"
+        }
+      ]
+    },
+    {
+      "name": "GeoLibre",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to ArcGIS and QGIS",
+      "description": "A free, lightweight GIS for viewing and analyzing map data, with over 1,000 processing tools that run right in your browser. On the web, Windows, Mac, Linux, iPhone and Android.",
+      "category": "Maps and GIS",
+      "url": "https://geolibre.app",
+      "linkText": "Visit site",
+      "icon": "◎",
+      "tile": "glance",
+      "added": "2026-11-22",
+      "source": "https://github.com/opengeos/GeoLibre",
+      "download": "https://geolibre.app/downloads/",
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Qiusheng Wu (opengeos) and contributors",
+      "longDescription": "GeoLibre opens geospatial data and keeps it on your machine. Its 1,000+ geoprocessing tools (terrain, hydrology, LiDAR, remote sensing and vector analysis) run in WebAssembly with no server, and a project can be shown with MapLibre, Mapbox, CesiumJS or the ArcGIS Maps SDK, even side by side.\n\nThe full app runs in the browser at web.geolibre.app, and there are desktop installers, the Microsoft Store and Mac App Store, iPhone and Android apps, and Python and R packages for notebooks.",
+      "builtWithAI": "The README says GeoLibre is \"primarily built with Claude Opus 5.5\", working under human direction and review. Checked 2026-11-22: 88 of 2,297 commits carry a Claude co-author line.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/geolibre/1.webp",
+          "alt": "GeoLibre Desktop with a globe view, the Layers pane and the attribute table",
+          "caption": "GeoLibre Desktop"
+        }
+      ]
+    },
+    {
+      "name": "RustGIS",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to QGIS",
+      "description": "A fast, free GIS written in Rust for mapping, analyzing and sharing map data, with a familiar ribbon, an attribute table and undo for every change. Native on Windows, Mac and Linux, and in the browser.",
+      "category": "Maps and GIS",
+      "url": "https://rustgis.app",
+      "linkText": "Visit site",
+      "icon": "◈",
+      "tile": "glance",
+      "added": "2026-11-22",
+      "source": "https://github.com/opengeos/RustGIS",
+      "download": "https://github.com/opengeos/RustGIS/releases/latest",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "license": "Apache-2.0",
+      "price": "Free",
+      "maker": "Qiusheng Wu (opengeos) and contributors",
+      "longDescription": "RustGIS is one native program drawn on the GPU, with no runtime to install. The ribbon follows the order of the work (Home, Data, Style, Edit, Analyze, View, Publish), with Layers and Browser panes and an attribute table. It includes more than 1,000 GeoLibre and Whitebox tools for terrain, hydrology, LiDAR and remote sensing, and sandboxed plugins.\n\nEvery button is a command you can script from the command line or ask the optional AI assistant to run. The same app runs in the browser at web.rustgis.app and on phones and tablets for field work.",
+      "builtWithAI": "The README says RustGIS is \"primarily built with Claude Opus 5.5\", working under human direction and review. Checked 2026-11-22: 423 of 1,806 commits are co-authored by Claude."
+    },
+    {
+      "name": "Rackula",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Visio rack diagrams",
+      "description": "A drag-and-drop rack layout designer with real device images, for planning and documenting server, network and AV racks. Runs in the browser or self-hosted.",
+      "category": "Networking",
+      "url": "https://racku.la",
+      "linkText": "Open app",
+      "icon": "☰",
+      "tile": "code",
+      "added": "2026-11-22",
+      "source": "https://github.com/RackulaLives/Rackula",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Gareth Evans",
+      "longDescription": "Drag devices into a rack from a hardware library that uses real front and rear images from the NetBox device-type library. Export layouts to PNG, PDF or SVG for runbooks and change requests, or share them by link or QR code. It handles bayed racks for AV installs and works on a phone in the field.\n\nUse it at racku.la, or host it yourself with Docker, a Proxmox container or on bare metal, with optional saved layouts and sign-in through local accounts or OIDC.",
+      "builtWithAI": "The README has a \"Built With Claude\" section: \"I told it what to build and then said 'no, not like that' a lot.\" Checked 2026-11-22: 1,241 of 2,198 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/rackula/1.webp",
+          "alt": "Rackula with a rack's front and rear views filled with real device images and the device library on the left",
+          "caption": "Front and rear rack views"
+        }
+      ]
+    },
+    {
+      "name": "SoloMD",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Typora",
+      "description": "A calm, local-first Markdown editor with Typora-style live writing, linked notes, encrypted sync and export to PDF, Word, EPUB and more. For Mac, Windows, Linux, iPhone and Android.",
+      "category": "Productivity",
+      "url": "https://solomd.app",
+      "linkText": "Visit site",
+      "icon": "✎",
+      "tile": "wiki",
+      "added": "2026-11-22",
+      "source": "https://github.com/zhitongblog/solomd",
+      "download": "https://github.com/zhitongblog/solomd/releases/latest",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "longDescription": "Write in pure WYSIWYG, live preview or split view, with focus and typewriter modes, Vim mode, math and Mermaid diagrams. Notes stay as .md files in a plain folder, with wikilinks and backlinks, and each folder can sync encrypted through iCloud Drive, OneDrive, WebDAV, S3 or Git. One export window writes PDF, Word, HTML, EPUB, LaTeX, ODT, RTF and plain text.\n\nIt is a small app (about 14 MB on Windows), free and MIT-licensed, with no account or subscription. Optional AI features work with local models such as Ollama or your own API keys.",
+      "builtWithAI": "The README says SoloMD is \"written, tested and released almost entirely by Claude Code\", under a human maintainer, and that Claude also answers its issues. Checked 2026-11-22: 937 of 1,454 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/solomd/1.webp",
+          "alt": "SoloMD editing a travel itinerary note with a checklist, a table and a code block",
+          "caption": "Writing a note"
+        }
+      ]
+    },
+    {
+      "name": "TelltaleDNS",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Pi-hole",
+      "description": "A small, fast DNS server and ad blocker for your home network that shows which device asked for what and why each answer was given. Runs on a Raspberry Pi or any Linux machine.",
+      "category": "Networking",
+      "url": "https://paimonsoror.github.io/telltaledns/",
+      "linkText": "Visit site",
+      "icon": "⚑",
+      "tile": "capture",
+      "added": "2026-11-22",
+      "source": "https://github.com/paimonsoror/telltaledns",
+      "download": "https://github.com/paimonsoror/telltaledns/releases/latest",
+      "platforms": [
+        "Linux"
+      ],
+      "license": "Apache-2.0 or MIT",
+      "price": "Free",
+      "longDescription": "Every query in the log is tied to a named device and explained. Set blocklists, schedules, safe search and blocked services per device or group, and preview what a change would have done to yesterday's traffic before saving it. It supports encrypted DNS (DoT, DoH, DoQ) both ways, DNSSEC and full recursion.\n\nIt is one static binary of about 13 MB that idles at around 14 MB of memory, for amd64, arm64 and 32-bit Pi OS. Install it with a script on any systemd Linux box or run it in Docker; a Pi and Kubernetes nodes can share one config.",
+      "builtWithAI": "The README has a \"Built with Claude\" section saying it is developed with Claude Code from the repo's specification, under the maintainer's direction. Checked 2026-11-22: 755 of 768 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/telltaledns/1.webp",
+          "alt": "TelltaleDNS dashboard in dark mode with queries, block rate, a traffic chart and top domains and clients",
+          "caption": "Dashboard"
+        },
+        {
+          "src": "/assets/apps/telltaledns/2.webp",
+          "alt": "TelltaleDNS dashboard in light mode",
+          "caption": "Light mode"
+        }
+      ]
     }
   ]
 }
