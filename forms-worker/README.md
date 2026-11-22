@@ -13,6 +13,17 @@ The site side is `contact.js` plus the `#list-form` form in `index.html`. The fo
 stays hidden, and the email button stays the only way in, until the form's
 `data-endpoint` and `data-sitekey` attributes are both filled in.
 
+## Current setup (2026-11-22)
+
+Done in the Cloudflare dashboard (account Cloudflare@inclosemail.com):
+- Email Routing was already on for enclosemail.com (it also serves the InCloseMail feedback Workers).
+- Turnstile widget "RemadeByAI list your app form", hostname remadebyai.com, Managed. Site key `0x4AAAAAAGMW_dR9wSC3lXnE` (public, set in index.html).
+- Worker `remadebyai-forms` deployed from the dashboard editor (single-file build of `src/`), with the `MAILER` Email Service binding and the four plain-text vars from `wrangler.toml`. Custom domain `forms.enclosemail.com`. Also on remadebyai-forms.silent-math-ce11.workers.dev.
+- `listings@remadebyai.com` added as an Email Routing destination address; stays Pending until someone clicks the link Cloudflare emails to it.
+- Owner adds the `TURNSTILE_SECRET` secret by hand (Worker > Settings > Variables and secrets > Add > Secret).
+
+Redeploying with `npx wrangler deploy` from this folder also works; it uses the same names.
+
 ## One-time Cloudflare setup
 
 1. **Email Routing on enclosemail.com:** Cloudflare dashboard > enclosemail.com >
