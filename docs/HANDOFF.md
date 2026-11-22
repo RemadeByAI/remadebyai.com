@@ -1,6 +1,6 @@
 # Handoff notes
 
-Last updated: 2026-11-22 (calmer home page on branch claude/project-thread-i1a5w3, built on top of the search/filters branch, not live yet; site search, filters and analytics added on branch claude/project-thread-6aw7f0, not live yet; featured slot rotates between InCloseMail and DesktopWiki; live at fa6995d: 23 apps in 11 categories; ArtCraft sweep live at 4061f1c: 28 apps in 12 categories). Read this first when picking up work on the site.
+Last updated: 2026-11-22 (calmer home page and site search, filters and analytics both LIVE as 1825a9b after the owner tapped Go live; 36 apps in 16 categories; featured slot rotates between InCloseMail and DesktopWiki; live at fa6995d: 23 apps in 11 categories; ArtCraft sweep live at 4061f1c: 28 apps in 12 categories). Read this first when picking up work on the site.
 
 ## Where things are
 
