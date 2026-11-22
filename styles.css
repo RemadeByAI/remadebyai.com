@@ -287,5 +287,6 @@ footer { border-top: 1px solid var(--line); background: #0d1310; }
 .foot { align-items: start; padding-block: 30px; }
 .foot-about { display: grid; gap: 6px; }
 .foot-about p { text-wrap: pretty; }
+.foot-about .foot-note { color: inherit; font-style: italic; }
 .foot-links { display: flex; flex-wrap: wrap; gap: 6px 20px; }
 .foot-links a { color: var(--ink); font-weight: 600; }

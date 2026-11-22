@@ -161,7 +161,7 @@ function header() {
 }
 const footer = () => `<footer>
   <div class="wrap foot">
-    <div class="foot-about"><a class="brand" href="/">RemadeBy<em>AI</em></a><p>Familiar software, rebuilt with AI. A software directory from <a href="https://emukey.com/">EmuKey LLC</a>.</p></div>
+    <div class="foot-about"><a class="brand" href="/">RemadeBy<em>AI</em></a><p>Familiar software, rebuilt with AI. <em class="foot-note">(A software directory from <a href="https://emukey.com/">EmuKey LLC</a>.)</em></p></div>
     <nav class="foot-links" aria-label="Footer"><a href="/apps/">All apps</a><a href="/new/">New arrivals</a><a href="/categories/">Categories</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
   </div>
 </footer>`;
