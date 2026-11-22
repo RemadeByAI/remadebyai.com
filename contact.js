@@ -1,7 +1,7 @@
 // "List your app" form on the List your app page (/list/, from partials/list.html). The form stays hidden (and the email
 // button stays the only way in) until the form has both data-endpoint
 // (the forms Worker URL) and data-sitekey (the Cloudflare Turnstile site key).
-// When configured, a "Fill in the form" button opens it; it starts collapsed.
+// When configured, the form starts open (the page is just for this); a "Hide the form" button collapses it.
 // The Worker lives in forms-worker/; setup steps are in forms-worker/README.md.
 (() => {
   const form = document.getElementById('list-form');
@@ -17,7 +17,7 @@
   let widgetId = null;
   let turnstileLoading = false;
 
-  // Collapsed by default: a toggle button opens and closes the form.
+  // Open by default: a toggle button closes and reopens the form.
   const action = document.querySelector('.list-app-action');
   const emailButton = action && action.querySelector('.button.primary');
   if (emailButton) { emailButton.classList.remove('primary'); emailButton.textContent = 'Or email us instead'; }
@@ -41,18 +41,20 @@
     document.head.appendChild(script);
   }
 
-  function setOpen(open) {
+  // quiet: open without moving the cursor or scrolling (used on page load, so the header search keeps focus).
+  function setOpen(open, quiet) {
     form.hidden = !open;
     toggle.setAttribute('aria-expanded', String(open));
     toggle.querySelector('.form-toggle-label').textContent = open ? 'Hide the form' : 'Fill in the form';
     if (open) {
       loadTurnstile();
+      if (quiet) return;
       form.querySelector('input[name="name"]').focus({ preventScroll: true });
       form.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
   }
   toggle.addEventListener('click', () => setOpen(form.hidden));
-  if (location.hash === '#list-form') setOpen(true);
+  setOpen(true, location.hash !== '#list-form');
 
   function say(text, kind) {
     status.textContent = text;
