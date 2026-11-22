@@ -285,6 +285,6 @@ footer { border-top: 1px solid var(--line); background: #0d1310; }
 /* Footer with links to every main page */
 .foot { align-items: start; padding-block: 30px; }
 .foot-about { display: grid; gap: 6px; }
-.foot-about p { max-width: 28rem; }
+.foot-about p { text-wrap: pretty; }
 .foot-links { display: flex; flex-wrap: wrap; gap: 6px 20px; }
 .foot-links a { color: var(--ink); font-weight: 600; }
