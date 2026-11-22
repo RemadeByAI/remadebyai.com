@@ -3471,6 +3471,326 @@
           "caption": "Block selection with Alt+Shift+arrows"
         }
       ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Concat",
+      "slug": "concat",
+      "alternative": "Alternative to CapCut, Adobe Premiere Pro",
+      "description": "A free, local video editor for Windows, macOS, Linux, Android and iOS with auto-captions, voice isolation, background removal, keyframes and 4K export. No watermark, no account.",
+      "category": "Video",
+      "url": "https://concat.standalones.org/",
+      "linkText": "Visit site",
+      "icon": "▶",
+      "tile": "",
+      "source": "https://github.com/jub0t/Concat",
+      "download": "https://github.com/jub0t/Concat/releases/latest",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "maker": "Jareer (jub0t)",
+      "longDescription": "Concat covers what most edits need: multi-track cutting, titles and shapes, more than 100 effects and transitions, speed ramps, keyframes with a curve editor, masks, chroma key, stabilizing and voiceover with one-switch voice cleanup. It exports H.264, HEVC and AV1 up to 4K 60 using your computer's own encoder.\n\nThe AI parts (auto-captions, voice isolation, text-to-speech and cutouts) download once and then run offline on your machine, so your footage never leaves your disk. It is good for TikTok, Reels, Shorts and YouTube videos. The iOS build is sideloaded.",
+      "builtWithAI": "Claude is credited on most of the history: 1,106 of 1,632 commits carry a Co-authored-by: Claude trailer (counted 2026-11-22).",
+      "screenshots": [
+        {
+          "src": "/assets/apps/concat/1.webp",
+          "alt": "Concat's editor with a preview window, media bin and multi-track timeline",
+          "caption": "The editor"
+        }
+      ],
+      "keywords": [
+        "video editor",
+        "capcut",
+        "premiere"
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "OpenTV",
+      "slug": "opentv",
+      "alternative": "Alternative to TiviMate, IPTV Smarters",
+      "description": "A free, open-source IPTV player for Android TV, Fire TV, phones and tablets, with a TV guide, recording to USB or NAS, catch-up and profiles. No account, no subscription.",
+      "category": "TV",
+      "url": "https://opentvproject.github.io/opentv/",
+      "linkText": "Visit site",
+      "icon": "▣",
+      "tile": "",
+      "source": "https://github.com/opentvproject/opentv",
+      "download": "https://github.com/opentvproject/opentv/releases/latest",
+      "platforms": [
+        "Android"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "maker": "The OpenTV project",
+      "longDescription": "OpenTV plays live TV from your own provider's Xtream Codes login or M3U playlist; it does not come with any channels. It has an XMLTV guide that survives restarts, DVR recording to the box, a USB drive or a NAS with series links, catch-up where your provider offers it, reminders, movies and series with resume, favourites, picture-in-picture and a parental PIN.\n\nIt was written from scratch so that it can't vanish the way paid \"lifetime\" IPTV apps sometimes do: the source is public and anyone can keep it going. Favourites and watch history sync between your own devices with no server in the middle. One APK works on TVs, phones and tablets, and it is built for a remote.",
+      "builtWithAI": "The README's \"How it was built\" section says OpenTV was written with Claude, with Claude doing the bulk of the drafting, wiring and debugging under the maintainer's direction.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/opentv/1.webp",
+          "alt": "OpenTV's live TV guide with a programme grid and live preview",
+          "caption": "TV guide"
+        },
+        {
+          "src": "/assets/apps/opentv/2.webp",
+          "alt": "OpenTV's movies screen with posters",
+          "caption": "Movies and series"
+        }
+      ],
+      "keywords": [
+        "iptv",
+        "m3u",
+        "xtream",
+        "tivimate"
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "AppGrid for Plasma",
+      "slug": "appgrid",
+      "alternative": "Alternative to KDE Kickoff, macOS Launchpad",
+      "description": "A full-screen grid app launcher for the KDE Plasma 6 desktop on Linux, with fast search, categories, favourites and KRunner results, like Launchpad on a Mac.",
+      "category": "Utilities",
+      "url": "https://appgrid.xarbit.dev/",
+      "linkText": "Visit site",
+      "icon": "▦",
+      "tile": "",
+      "source": "https://github.com/xarbit/plasma6-applet-appgrid",
+      "platforms": [
+        "Linux"
+      ],
+      "license": "GPL-2.0",
+      "price": "Free",
+      "maker": "Jason Scurtu",
+      "longDescription": "AppGrid replaces Plasma's Kickoff and Kicker menus with a centered grid of your apps, or a panel popup that uses the same grid. Search finds apps and KRunner results as you type, and you can sort by category, pin favourites and change the look in its settings.\n\nIt is packaged by its maker for Arch (AUR), Ubuntu 25.10+ (PPA) and Fedora (Copr), with a universal package for immutable distros such as Bazzite and SteamOS and a Nix flake. After installing, right-click the panel launcher and pick Show Alternatives.",
+      "builtWithAI": "The README says: \"This project is developed with Claude Code as an AI pair programmer.\" The maker adds that it is context-engineered and reviewed, not vibe-coded.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/appgrid/1.webp",
+          "alt": "AppGrid showing a grid of app icons with a search box in dark mode",
+          "caption": "The app grid"
+        },
+        {
+          "src": "/assets/apps/appgrid/2.webp",
+          "alt": "AppGrid in compact mode",
+          "caption": "Compact mode"
+        }
+      ],
+      "keywords": [
+        "launcher",
+        "kde",
+        "plasma",
+        "launchpad",
+        "start menu"
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Tab Out",
+      "slug": "tab-out",
+      "alternative": "Alternative to OneTab, Toby",
+      "description": "A Chrome extension that turns your new tab page into a dashboard of every open tab, grouped by site, so you can jump to one or close a whole group at once.",
+      "category": "Productivity",
+      "url": "https://github.com/zarazhangrui/tab-out",
+      "linkText": "Get it on GitHub",
+      "icon": "⧉",
+      "tile": "",
+      "source": "https://github.com/zarazhangrui/tab-out",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Zara Zhang",
+      "longDescription": "Tab Out shows your open tabs on a clean grid, grouped by domain, with homepages such as Gmail, YouTube and GitHub pulled into their own group. It flags duplicate tabs, lets you click a tab to jump straight to it in any window, and has a save-for-later list. Closing a group plays a swoosh with confetti.\n\nEverything stays on your computer: no server, no account and no outside calls. You install it in Chrome as an unpacked extension (Developer mode, Load unpacked), or ask a coding agent to set it up for you.",
+      "builtWithAI": "79 of its 97 commits are co-authored by Claude (counted 2026-11-22).",
+      "keywords": [
+        "tabs",
+        "chrome extension",
+        "new tab",
+        "onetab"
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Ink Away",
+      "slug": "ink-away",
+      "alternative": "Alternative to Kindle Scribe and reMarkable notebooks",
+      "description": "A drawing, handwritten notes and book annotation add-on for KOReader on Kindle, Kobo and Android e-readers, with pen pressure, palm rejection and PDF export.",
+      "category": "Reading",
+      "url": "https://github.com/EmirErtorer/ink-away.koplugin",
+      "linkText": "Get it on GitHub",
+      "icon": "✎",
+      "tile": "",
+      "source": "https://github.com/EmirErtorer/ink-away.koplugin",
+      "download": "https://github.com/EmirErtorer/ink-away.koplugin/releases/latest",
+      "platforms": [
+        "Android"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Emir Ertorer",
+      "longDescription": "Ink Away adds a pen to KOReader, the free e-book reader that runs on jailbroken Kindles, Kobos and Android. You can draw with many pens (fineliner, fountain, pencil, watercolor and smudge) on up to five layers, keep notebooks on lined, grid or planner pages with handwriting turned into text, and write on any book KOReader opens, with the ink following its words when you change the font size.\n\nBooks you have written on can be exported as PDFs that keep your ink and searchable text. It needs a stylus-capable reader; palm rejection needs KOReader 2026.07 or newer. Install it by copying the folder into KOReader's plugins directory.",
+      "builtWithAI": "The README says: \"Its code is written with Claude Code, an AI coding assistant, with me directing every change\", backed by about 4,000 automated checks.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/ink-away/1.webp",
+          "alt": "Ink Away's library of folders, notebooks and drawings on an e-reader",
+          "caption": "Library"
+        },
+        {
+          "src": "/assets/apps/ink-away/2.webp",
+          "alt": "Ink Away's pen case with pressure pens, watercolor and smudge",
+          "caption": "Pens"
+        }
+      ],
+      "keywords": [
+        "koreader",
+        "kindle",
+        "kobo",
+        "e-ink",
+        "handwriting",
+        "notes"
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "ROM Librarian",
+      "slug": "rom-librarian",
+      "alternative": "Alternative to clrmamepro, RomVault",
+      "description": "A desktop app for tidying retro game ROM collections: batch rename with No-Intro DATs, compress to ZIP or 7z, convert disc images to CHD and keep EmulationStation lists in sync.",
+      "category": "Utilities",
+      "url": "https://github.com/Roboall93/ROM-Librarian",
+      "linkText": "Get it on GitHub",
+      "icon": "▤",
+      "tile": "",
+      "source": "https://github.com/Roboall93/ROM-Librarian",
+      "download": "https://github.com/Roboall93/ROM-Librarian/releases/latest",
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Robot Wizard (Roboall93)",
+      "longDescription": "ROM Librarian has tabs for each cleanup job. Rename uses regular expressions and presets to strip region and dump tags, with a live preview and undo. DAT Rename matches files (even inside ZIPs) against No-Intro DAT files by CRC32, MD5 and SHA1. Compression batch-packs or unpacks ZIP and 7z, and Conversion turns CUE/BIN and ISO disc images into compressed CHD files for MAME and RetroArch.\n\nRenames also update EmulationStation/RetroPie gamelist.xml files and the CUE sheets that point at BIN files. The Windows build is a portable zip with no Python needed; Linux runs it from source and has a command-line mode. It is for organizing games you own.",
+      "builtWithAI": "The README says it was built with Claude Code by Anthropic, and 30 of its 37 commits are co-authored by Claude (counted 2026-11-22).",
+      "keywords": [
+        "rom manager",
+        "retropie",
+        "emulationstation",
+        "chd",
+        "no-intro"
+      ]
+    },
+    {
+      "group": "indie",
+      "owner": "Independent",
+      "added": "2026-11-22",
+      "name": "Emberwick",
+      "slug": "emberwick",
+      "alternative": "Original fantasy RPG",
+      "description": "A top-down 3D fantasy role-playing game in the browser with a story, companions, quests and a built-in level editor. Free to play, nothing to install.",
+      "category": "Games",
+      "url": "https://simonw.github.io/emberwick/v11/emberwick.html",
+      "linkText": "Play now",
+      "icon": "⚔",
+      "tile": "code",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "Simon Willison",
+      "longDescription": "Emberwick is an original fantasy adventure: explore a 3D world from above, talk to characters, take on quests with companions and follow its plot. It also has a level editor. It runs in a desktop browser.\n\nIts maker wrote about building it, and about how much better AI-made games got in October 2026, on his blog at simonwillison.net.",
+      "builtWithAI": "Simon Willison built it in the Claude chat app and wrote that everything in the game, \"the graphics, the plot, the characters, the music, the dialog\", came from the model (simonwillison.net, 2026-10-28).",
+      "keywords": [
+        "rpg",
+        "fantasy",
+        "simon willison"
+      ]
+    },
+    {
+      "group": "indie",
+      "owner": "Independent",
+      "added": "2026-11-22",
+      "name": "Quarter Sun Cove",
+      "slug": "quarter-sun-cove",
+      "alternative": "Original cozy farming game",
+      "description": "A cozy isometric farming game in the browser: grow pumpkins, tend your farm and meet a town of animal characters. Free to play, nothing to install.",
+      "category": "Games",
+      "url": "https://simonw.github.io/pumpkin-farmer/",
+      "linkText": "Play now",
+      "icon": "❀",
+      "tile": "code",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "Simon Willison",
+      "longDescription": "Quarter Sun Cove (first called Pumpkin Farmer) is a relaxed farming sim seen from an isometric view. You plant and grow pumpkins and get to know the animal characters who live around the cove. Its maker set out to make something original rather than an imitation of an existing farming game.\n\nThe written spec it was built from is published on GitHub, and the story of how it was made is on simonwillison.net.",
+      "builtWithAI": "Simon Willison wrote that he had Claude Opus 5.5 work for nearly two days building it from his spec (simonwillison.net, 2026-10-28).",
+      "keywords": [
+        "farming",
+        "cozy",
+        "pumpkin farmer",
+        "simon willison"
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Starfall",
+      "slug": "starfall",
+      "alternative": "Inspired by Homeworld",
+      "description": "A 3D space real-time strategy game in the browser: build and command fleets from scouts to a two-kilometre mothership in full 3D, against a computer opponent.",
+      "category": "Games",
+      "url": "https://e01.ai/starfall/",
+      "linkText": "Play now",
+      "icon": "✦",
+      "tile": "code",
+      "source": "https://github.com/e01-ai/starfall",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Mike Luan (e01.ai)",
+      "longDescription": "Starfall has thirteen ship classes, true 3D movement with a move disc for setting altitude, formations, stances and control groups, plus production, research, resource harvesting and an AI opponent. Every hull, planet, nebula and effect is generated in code at runtime, so there are no image files at all; the only bought-in assets are free (CC0) sounds and music.\n\nIt is an original game in the style of the classic 3D space strategy games, not a copy: it uses none of their art, sound, code or names. It needs a desktop browser with WebGL 2.",
+      "builtWithAI": "The README says it was written by Claude Opus 5 driving a multi-agent workflow from a single prompt (published in the repo), for about $633 of API use.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/starfall/1.webp",
+          "alt": "A fleet battle in Starfall with ships firing near a planet",
+          "caption": "Fleet engagement"
+        }
+      ],
+      "keywords": [
+        "rts",
+        "space",
+        "homeworld",
+        "strategy"
+      ]
     }
   ]
 }
