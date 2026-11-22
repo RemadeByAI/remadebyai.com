@@ -19,7 +19,8 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="/styles.css?v=ada056d605">
+  <link rel="stylesheet" href="/styles.css?v=b852e10dfb">
+  <script src="/site.js?v=4bc86db0c0" defer></script>
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -27,6 +28,10 @@
   <div class="wrap nav">
     <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="35" height="35"><span>RemadeBy<em>AI</em><small>.com</small></span></a>
     <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/new/">New</a><a href="/#directory">All apps</a><a href="/#about">About</a><a href="/#list">List your app</a></nav>
+    <form class="site-search" action="/" method="get" role="search">
+      <label><span class="visually-hidden">Search all apps</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
+      <ul class="site-search-results" id="site-search-results" role="listbox" aria-label="Matching apps" hidden></ul>
+    </form>
     <a class="company" href="https://emukey.com/">EmuKey LLC</a>
   </div>
 </header>
@@ -40,7 +45,7 @@
       <h1 id="app-title">ArtCraft Launcher</h1>
       <p class="lede">Alternative to the Adobe Creative Cloud desktop app</p>
       <p class="app-summary">A free launcher that installs, updates and opens every ArtCraft app in one window, for Windows, Mac, Linux, FreeBSD and the web. Early alpha.</p>
-      <div class="app-actions"><a class="button primary" href="https://github.com/storytold/craft-launcher/releases/latest">Download</a><a class="button" href="https://github.com/storytold/craft-launcher">View on GitHub</a></div>
+      <div class="app-actions"><a class="button primary" href="https://github.com/storytold/craft-launcher/releases/latest" data-track="download" data-app="artcraft-launcher">Download</a><a class="button" href="https://github.com/storytold/craft-launcher" data-track="site" data-app="artcraft-launcher">View on GitHub</a></div>
     </div>
     <dl class="facts">
       <div><dt>Category</dt><dd><a href="/categories/utilities/">Utilities</a></dd></div>
@@ -49,7 +54,7 @@
       <div><dt>Licence</dt><dd>MIT or Apache-2.0</dd></div>
       <div><dt>Price</dt><dd>Free</dd></div>
       <div><dt>Made by</dt><dd>ArtCraft</dd></div>
-      <div><dt>Source code</dt><dd><a href="https://github.com/storytold/craft-launcher">github.com/storytold/craft-launcher</a></dd></div>
+      <div><dt>Source code</dt><dd><a href="https://github.com/storytold/craft-launcher" data-track="source" data-app="artcraft-launcher">github.com/storytold/craft-launcher</a></dd></div>
       <div><dt>Listed</dt><dd>November 22, 2026</dd></div>
     </dl>
   </section>
@@ -72,14 +77,14 @@
   <section class="app-section" aria-labelledby="related-title">
     <h2 id="related-title">More in Utilities</h2>
     <div class="cards">
-<article class="card" data-group="open" data-category="utilities" data-platforms="macOS" data-search="supercmd alternative to raycast a keyboard launcher for the mac that runs raycast extensions and adds dictation, read-aloud, clipboard history, snippets and window tiling. utilities open source macos mit (v1)">
+<article class="card" data-group="open" data-category="utilities" data-platform="macOS" data-price="Free|Paid" data-licence="MIT" data-search="supercmd alternative to raycast a keyboard launcher for the mac that runs raycast extensions and adds dictation, read-aloud, clipboard history, snippets and window tiling. utilities open source supercmd labs (shobhit bhosure) macos mit (v1) free (v1); v2 is a one-time $19.99">
   <div class="card-top"><span class="tile code" aria-hidden="true">⌘</span><small>Open source</small></div>
   <h3><a class="card-link" href="/apps/supercmd/">SuperCmd</a></h3>
   <p class="alternative">Alternative to Raycast</p>
   <p>A keyboard launcher for the Mac that runs Raycast extensions and adds dictation, read-aloud, clipboard history, snippets and window tiling.</p>
   <div class="card-bottom"><a class="card-category" href="/categories/utilities/">Utilities</a><span class="card-more" aria-hidden="true">Details →</span></div>
 </article>
-<article class="card" data-group="open" data-category="utilities" data-platforms="macOS" data-search="sanebar alternative to bartender a free menu bar manager for the mac that hides the icons you don't need, with a searchable icon panel and touch id lock. utilities open source macos mit">
+<article class="card" data-group="open" data-category="utilities" data-platform="macOS" data-price="Free" data-licence="MIT" data-search="sanebar alternative to bartender a free menu bar manager for the mac that hides the icons you don't need, with a searchable icon panel and touch id lock. utilities open source saneapps macos mit free">
   <div class="card-top"><span class="tile bar" aria-hidden="true">☰</span><small>Open source</small></div>
   <h3><a class="card-link" href="/apps/sanebar/">SaneBar</a></h3>
   <p class="alternative">Alternative to Bartender</p>

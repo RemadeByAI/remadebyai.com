@@ -19,7 +19,8 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="/styles.css?v=ada056d605">
+  <link rel="stylesheet" href="/styles.css?v=b852e10dfb">
+  <script src="/site.js?v=4bc86db0c0" defer></script>
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -27,6 +28,10 @@
   <div class="wrap nav">
     <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="35" height="35"><span>RemadeBy<em>AI</em><small>.com</small></span></a>
     <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/new/">New</a><a href="/#directory">All apps</a><a href="/#about">About</a><a href="/#list">List your app</a></nav>
+    <form class="site-search" action="/" method="get" role="search">
+      <label><span class="visually-hidden">Search all apps</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
+      <ul class="site-search-results" id="site-search-results" role="listbox" aria-label="Matching apps" hidden></ul>
+    </form>
     <a class="company" href="https://emukey.com/">EmuKey LLC</a>
   </div>
 </header>
@@ -40,7 +45,7 @@
       <h1 id="app-title">Voicebox</h1>
       <p class="lede">Alternative to ElevenLabs and Wispr Flow</p>
       <p class="app-summary">A local AI voice studio: clone a voice from a few seconds of audio, generate speech in 23 languages, and dictate into any app with a hotkey. Everything runs on your own computer.</p>
-      <div class="app-actions"><a class="button primary" href="https://github.com/jamiepine/voicebox/releases/latest">Download</a><a class="button" href="https://voicebox.sh">Visit site</a></div>
+      <div class="app-actions"><a class="button primary" href="https://github.com/jamiepine/voicebox/releases/latest" data-track="download" data-app="voicebox">Download</a><a class="button" href="https://voicebox.sh" data-track="site" data-app="voicebox">Visit site</a></div>
     </div>
     <dl class="facts">
       <div><dt>Category</dt><dd><a href="/categories/audio/">Audio</a></dd></div>
@@ -49,7 +54,7 @@
       <div><dt>Licence</dt><dd>MIT</dd></div>
       <div><dt>Price</dt><dd>Free</dd></div>
       <div><dt>Made by</dt><dd>Jamie Pine and contributors</dd></div>
-      <div><dt>Source code</dt><dd><a href="https://github.com/jamiepine/voicebox">github.com/jamiepine/voicebox</a></dd></div>
+      <div><dt>Source code</dt><dd><a href="https://github.com/jamiepine/voicebox" data-track="source" data-app="voicebox">github.com/jamiepine/voicebox</a></dd></div>
       <div><dt>Listed</dt><dd>November 22, 2026</dd></div>
     </dl>
   </section>

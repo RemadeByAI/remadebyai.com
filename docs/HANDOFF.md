@@ -1,6 +1,6 @@
 # Handoff notes
 
-Last updated: 2026-11-22 (featured slot rotates between InCloseMail and DesktopWiki; live at fa6995d: 23 apps in 11 categories; ArtCraft sweep live at 4061f1c: 28 apps in 12 categories). Read this first when picking up work on the site.
+Last updated: 2026-11-22 (site search, filters and analytics added on branch claude/project-thread-6aw7f0, not live yet; featured slot rotates between InCloseMail and DesktopWiki; live at fa6995d: 23 apps in 11 categories; ArtCraft sweep live at 4061f1c: 28 apps in 12 categories). Read this first when picking up work on the site.
 
 ## Where things are
 
@@ -21,10 +21,13 @@ What `build.js` writes (never edit these by hand; they are rebuilt from scratch 
 - `categories/index.html` and `categories/<slug>/index.html`: category list and one page per category (A to Z).
 - `new/index.html`: every app, newest first.
 - `sitemap.xml` and `robots.txt`.
-- `index.html`: only the regions between `<!-- build:NAME -->` and `<!-- /build:NAME -->` markers (asset links, featured block, new arrivals, categories, filter dropdowns, the full A to Z card list, count). Everything else in `index.html` (hero, About, List your app) is hand-edited.
+- `search.json`: the header search index.
+- `index.html`: only the regions between `<!-- build:NAME -->` and `<!-- /build:NAME -->` markers (asset links, header, featured block, new arrivals, categories, filter dropdowns, the full A to Z card list, count). Everything else in `index.html` (hero, About, List your app) is hand-edited.
 
 Other files:
-- `directory.js`: only search and filters on the home page "All apps" list (group buttons, category and platform dropdowns). The cards are plain HTML, so the list works without JavaScript and no longer fetches `projects.json`. Links like `/?q=email` or `/?category=productivity` open pre-filtered.
+- `site.js` (every page, added 2026-11-22): the **header search box** and **click counting**. The box suggests up to 7 apps as you type, from `search.json` (written by the build: name, what it replaces, category, maker, platforms, price, licence, description), ranked name > replaces > maker/category > the rest. Enter or "See all" opens the home list filtered (`/?q=...`); without JavaScript the box is a plain GET form to `/` that does the same. Links with `data-track` (Download, Visit site, Source code, featured button) send an anonymous beacon to the clicks Worker when `ANALYTICS.clicksEndpoint` is set.
+- `directory.js`: search and filters on the home page "All apps" list: group buttons (All / EmuKey apps / Open source) and dropdowns for category, platform, price (Free, Freemium, Paid) and licence (MIT, Apache-2.0, GPL-3.0, AGPL-3.0, Unlicense, Closed source). Each `select[data-filter=NAME]` matches the card's `data-NAME` list, so a new filter only needs build.js changes. Price and licence values are derived from the free-text `price`/`license` fields by `priceTags()`/`licenceTags()` in build.js (SuperCmd counts as Free and Paid; dual licences count under both; no licence and no source = Closed source). The current filters are kept in the address bar, so links like `/?q=email`, `/?category=productivity`, `/?platform=Linux&price=Free` or `/?group=open&licence=MIT` open pre-filtered and scroll to the list.
+- **Analytics** (`ANALYTICS` in build.js): `cloudflareToken` adds the Cloudflare Web Analytics beacon to every page (visitors, page views, referrers, countries, devices; no cookies, no banner needed; works on GitHub Pages because it's a JS beacon). `clicksEndpoint` turns on outbound click counting via the Worker in `clicks-worker/` (Workers KV; stats page at `/stats?key=STATS_KEY`). Either left empty = left out of the pages. The owner keeps **one Cloudflare account per app**, so both belong in a RemadeByAI Cloudflare account, not the InCloseMail or DesktopWiki ones. (The contact form Worker `remadebyai-forms` currently runs in the InCloseMail account.)
 - `partials/art-<name>.html`: artwork for the featured block, chosen by the featured entry's `featureArt` (`inbox` is the InCloseMail mock, `wiki` the DesktopWiki mock).
 - `styles.css`: all styles. Layout scales to wide screens (added 2026-11-21): `.wrap` grows to 150rem, the root font size steps up at 1800/2300/3000px wide, and `.cards` is an auto-fill grid (17rem minimum), so 1080p shows 6 columns, 1440p 7 and 4K 8. Dark theme, green accent `#c2ff94`. Tile colours: `wiki`, `capture`, `code`, `glance`, `voice`, `bar`, or empty for green.
 - **List your app** (`#list` on the home page): mailto to `listings@remadebyai.com` with a prefilled form-style body.
@@ -43,7 +46,7 @@ Only state facts that have been checked. Leave unknown fields out; the page hide
 
 ## Cache busting
 
-- `build.js` adds a content hash to the `styles.css` and `directory.js` links on every page (`?v=<hash>`), so there is nothing to bump by hand. Just rebuild after changing either file.
+- `build.js` adds a content hash to the `styles.css`, `site.js`, `directory.js` and `contact.js` links on every page (`?v=<hash>`), so there is nothing to bump by hand. Just rebuild after changing either file.
 
 ## Working rules
 

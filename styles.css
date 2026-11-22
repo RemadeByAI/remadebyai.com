@@ -32,6 +32,20 @@ em { color: var(--green); font-style: normal; }
 nav { display: flex; gap: clamp(14px, 3vw, 34px); color: var(--muted); font-size: .94rem; }
 nav a:hover, footer a:hover, .company:hover { color: var(--green); }
 .company { color: var(--muted); font: .83rem var(--mono); white-space: nowrap; }
+/* Header search (site.js) */
+.site-search { position: relative; flex: 0 1 19rem; min-width: 12rem; margin-left: auto; }
+.site-search input { width: 100%; min-height: 40px; padding: 0 12px 0 34px; border: 1px solid #354b3d; border-radius: 20px; background: #121a15 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23acbcb0' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='7' cy='7' r='5'/%3E%3Cpath d='m11 11 3.5 3.5'/%3E%3C/svg%3E") 12px center no-repeat; color: var(--ink); font-size: .9rem; }
+.site-search input::placeholder { color: var(--muted); }
+.site-search input:focus { border-color: #597e4f; outline: none; }
+.site-search-results { position: absolute; z-index: 20; top: calc(100% + 6px); right: 0; width: max(100%, 24rem); max-width: calc(100vw - 30px); margin: 0; padding: 6px; list-style: none; border: 1px solid #3b5141; border-radius: 12px; background: #111813; box-shadow: 0 14px 34px #000a; }
+.site-search-results a { display: grid; gap: 1px; padding: 8px 10px; border-radius: 8px; }
+.site-search-results strong { font-weight: 700; }
+.site-search-results span { color: var(--muted); font-size: .84rem; }
+.site-search-results li[aria-selected="true"] a, .site-search-results a:hover { background: #1c2b20; }
+.site-search-results li[aria-selected="true"] strong, .site-search-results a:hover strong { color: var(--green); }
+.site-search-results .all { margin-top: 4px; padding-top: 4px; border-top: 1px solid var(--line); }
+.site-search-results .all span { color: var(--green); }
+@media (max-width: 1100px) { .company { display: none; } }
 .hero {
   display: flex; align-items: center; min-height: 421px; margin-block: 34px 42px;
   border: 1px solid var(--line); border-radius: 23px; overflow: hidden;
@@ -120,6 +134,8 @@ footer { border-top: 1px solid var(--line); background: #0d1310; }
   .wrap { width: calc(100% - 30px); }
   .nav { flex-wrap: wrap; gap: 8px 17px; padding-block: 12px; }
   nav { order: 3; width: 100%; }
+  .site-search { order: 4; flex-basis: 100%; margin-left: 0; }
+  .site-search-results { left: 0; width: 100%; max-width: none; }
   .hero { min-height: 377px; margin-block: 19px 29px; background-image: linear-gradient(90deg, #0c150ff2, #0c150f9e), url(assets/circuit.svg); }
   .hero-copy { padding-block: 43px; }
   .feature { grid-template-columns: 1fr; }

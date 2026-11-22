@@ -1,0 +1,13 @@
+# Cloudflare Worker that counts Download / Visit site / Source code clicks on remadebyai.com.
+# Setup steps: clicks-worker/README.md
+name = "remadebyai-clicks"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+
+[[kv_namespaces]]
+binding = "CLICKS"
+id = "<KV namespace id>"
+
+[vars]
+ALLOWED_ORIGINS = "https://remadebyai.com,https://www.remadebyai.com"
+# STATS_KEY is a secret (any long random string): npx wrangler secret put STATS_KEY

@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 // Builds the static pages of remadebyai.com from projects.json.
-// Run it from this folder after any change to projects.json, partials/, styles.css, directory.js or contact.js:
+// Run it from this folder after any change to projects.json, partials/, styles.css, site.js, directory.js or contact.js:
 //   node build.js
 // It needs only Node.js (18 or newer) and no packages. It checks projects.json first and stops with a
 // clear message if an entry is wrong, then rewrites:
-//   index.html (between the <!-- build:NAME --> markers only), apps/, categories/, new/, sitemap.xml
+//   index.html (between the <!-- build:NAME --> markers only), apps/, categories/, new/, search.json, sitemap.xml
 // Never edit the generated folders by hand; edit projects.json and run the build again.
 
 'use strict';
@@ -18,6 +18,33 @@ const NEW_ON_HOME = 6;
 const GROUPS = { emukey: 'EmuKey app', open: 'Open source' };
 const PLATFORMS = ['Windows', 'macOS', 'Linux', 'Web', 'iOS', 'Android'];
 const GENERATED_DIRS = ['apps', 'categories', 'new'];
+
+// Analytics. Both are optional: leave a value empty and that part is left out of every page.
+// - cloudflareToken: the Cloudflare Web Analytics site token for remadebyai.com (page views, visitors,
+//   referrers). Found in Cloudflare > Analytics & Logs > Web Analytics > remadebyai.com > Manage site.
+// - clicksEndpoint: the clicks Worker (clicks-worker/) that counts Download, Visit site and Source code
+//   button clicks per app. Cloudflare Web Analytics can't count clicks on links that leave the site.
+const ANALYTICS = {
+  cloudflareToken: '',
+  clicksEndpoint: '',
+};
+
+// Filter values used by the home page filters and the search index.
+const PRICES = ['Free', 'Freemium', 'Paid'];
+const LICENCES = ['MIT', 'Apache-2.0', 'GPL-3.0', 'AGPL-3.0', 'Unlicense'];
+const CLOSED = 'Closed source';
+function priceTags(app) {
+  const text = String(app.price || '');
+  const tags = [];
+  if (/freemium/i.test(text)) tags.push('Freemium');
+  else if (/\bfree\b/i.test(text)) tags.push('Free');
+  if (/\bpaid\b|\$|€|£|one-time|subscription/i.test(text)) tags.push('Paid');
+  return tags;
+}
+function licenceTags(app) {
+  const tags = LICENCES.filter(l => new RegExp(`(^|[^A-Za-z])${l.replace(/[.-]/g, '\\$&')}([^A-Za-z0-9]|$)`).test(app.license || ''));
+  return tags.length ? tags : (app.source ? [] : [CLOSED]);
+}
 
 // ---------- helpers ----------
 const read = file => fs.readFileSync(path.join(ROOT, file), 'utf8');
@@ -98,18 +125,33 @@ function head({ title, description, canonical, ogType = 'website' }) {
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="/styles.css?v=${ASSET_VERSION.css}">
+${siteAssets()}
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
 ${header()}
 <main id="main">`;
 }
+// Stylesheet, the site-wide search script and the analytics beacon, shared by every page.
+function siteAssets() {
+  const lines = [
+    `  <link rel="stylesheet" href="/styles.css?v=${ASSET_VERSION.css}">`,
+    `  <script src="/site.js?v=${ASSET_VERSION.site}" defer></script>`,
+  ];
+  if (ANALYTICS.cloudflareToken) {
+    lines.push(`  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='${JSON.stringify({ token: ANALYTICS.cloudflareToken })}'></script>`);
+  }
+  return lines.join('\n');
+}
 function header() {
   return `<header>
   <div class="wrap nav">
     <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="35" height="35"><span>RemadeBy<em>AI</em><small>.com</small></span></a>
     <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/new/">New</a><a href="/#directory">All apps</a><a href="/#about">About</a><a href="/#list">List your app</a></nav>
+    <form class="site-search" action="/" method="get" role="search"${ANALYTICS.clicksEndpoint ? ` data-clicks="${esc(ANALYTICS.clicksEndpoint)}"` : ''}>
+      <label><span class="visually-hidden">Search all apps</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
+      <ul class="site-search-results" id="site-search-results" role="listbox" aria-label="Matching apps" hidden></ul>
+    </form>
     <a class="company" href="https://emukey.com/">EmuKey LLC</a>
   </div>
 </header>`;
@@ -131,9 +173,10 @@ function externalLabel(app) {
 
 // One card. data-* attributes feed the search and filters in directory.js.
 function card(app) {
-  const search = [app.name, app.alternative, app.description, app.category, app.owner, ...(app.platforms || []), app.license]
+  const search = [app.name, app.alternative, app.description, app.category, app.owner, app.maker, ...(app.platforms || []), app.license, app.price]
     .filter(Boolean).join(' ').toLowerCase();
-  return `<article class="card" data-group="${esc(app.group)}" data-category="${esc(app.categorySlug)}" data-platforms="${esc((app.platforms || []).join('|'))}" data-search="${esc(search)}">
+  const list = values => esc(values.join('|'));
+  return `<article class="card" data-group="${esc(app.group)}" data-category="${esc(app.categorySlug)}" data-platform="${list(app.platforms || [])}" data-price="${list(priceTags(app))}" data-licence="${list(licenceTags(app))}" data-search="${esc(search)}">
   <div class="card-top">${tile(app)}<small>${esc(app.owner)}</small></div>
   <h3><a class="card-link" href="/apps/${app.slug}/">${esc(app.name)}</a></h3>
   <p class="alternative">${esc(app.alternative)}</p>
@@ -165,13 +208,14 @@ function appPage(app, all) {
     ['Licence', esc(app.license)],
     ['Price', esc(app.price)],
     ['Made by', esc(app.maker || (app.group === 'emukey' ? app.owner : ''))],
-    ['Source code', app.source ? `<a href="${esc(app.source)}">${esc(app.source.replace(/^https?:\/\/(www\.)?/, ''))}</a>` : ''],
+    ['Source code', app.source ? `<a href="${esc(app.source)}" data-track="source" data-app="${app.slug}">${esc(app.source.replace(/^https?:\/\/(www\.)?/, ''))}</a>` : ''],
     ['Listed', esc(formatDate(app.added))],
   ].filter(([, value]) => value);
 
   const actions = [];
-  if (app.download) actions.push(`<a class="button primary" href="${esc(app.download)}">Download</a>`);
-  actions.push(`<a class="button${app.download ? '' : ' primary'}" href="${esc(app.url)}">${esc(externalLabel(app))}</a>`);
+  const track = kind => ` data-track="${kind}" data-app="${app.slug}"`;
+  if (app.download) actions.push(`<a class="button primary" href="${esc(app.download)}"${track('download')}>Download</a>`);
+  actions.push(`<a class="button${app.download ? '' : ' primary'}" href="${esc(app.url)}"${track('site')}>${esc(externalLabel(app))}</a>`);
 
   const shots = (app.screenshots || []).length ? `
   <section class="app-section" aria-labelledby="shots-title">
@@ -271,7 +315,7 @@ function featured(apps) {
         <h2 id="featured-${app.slug}">${esc(app.name)}</h2>
         <p class="lede">${esc(app.tagline || app.alternative)}</p>
         <p>${esc(app.featureText || app.description)}</p>
-        <div class="feature-actions"><a class="button primary" href="${esc(app.url)}">${esc(app.featureLinkText || 'Visit ' + app.name)}</a><a class="button" href="/apps/${app.slug}/">Details</a></div>
+        <div class="feature-actions"><a class="button primary" href="${esc(app.url)}" data-track="featured" data-app="${app.slug}">${esc(app.featureLinkText || 'Visit ' + app.name)}</a><a class="button" href="/apps/${app.slug}/">Details</a></div>
         <small class="owner">By ${esc(app.owner)}</small>
       </div>
       ${art}
@@ -289,13 +333,30 @@ function filterOptions(categories, apps) {
   const platforms = PLATFORMS.filter(p => apps.some(a => (a.platforms || []).includes(p)));
   const cat = `<label class="select"><span class="visually-hidden">Category</span><select data-filter="category"><option value="">All categories</option>${categories.map(c => `<option value="${c.slug}">${esc(c.name)}</option>`).join('')}</select></label>`;
   const plat = platforms.length ? `<label class="select"><span class="visually-hidden">Platform</span><select data-filter="platform"><option value="">Any platform</option>${platforms.map(p => `<option>${p}</option>`).join('')}</select></label>` : '';
-  return cat + plat;
+  const used = (tagger, order) => order.filter(v => apps.some(a => tagger(a).includes(v)));
+  const select = (name, label, any, values) => values.length
+    ? `<label class="select"><span class="visually-hidden">${label}</span><select data-filter="${name}"><option value="">${any}</option>${values.map(v => `<option>${esc(v)}</option>`).join('')}</select></label>`
+    : '';
+  const price = select('price', 'Price', 'Any price', used(priceTags, PRICES));
+  const licence = select('licence', 'Licence', 'Any licence', used(licenceTags, [...LICENCES, CLOSED]));
+  return cat + plat + price + licence;
+}
+
+// The index the header search box uses on every page (site.js). Short keys keep it small.
+function searchIndex(apps) {
+  return JSON.stringify({
+    apps: [...apps].sort(byName).map(a => ({
+      n: a.name, u: `/apps/${a.slug}/`, r: a.alternative.replace(/^Alternative to\s*/i, ''),
+      c: a.category, m: a.maker || a.owner, p: a.platforms || [], d: a.description,
+      $: priceTags(a), l: licenceTags(a), o: a.group === 'open',
+    })),
+  });
 }
 
 // ---------- run ----------
 function main() {
   const apps = load();
-  ASSET_VERSION = { css: hash('styles.css'), js: hash('directory.js'), contact: hash('contact.js') };
+  ASSET_VERSION = { css: hash('styles.css'), js: hash('directory.js'), contact: hash('contact.js'), site: hash('site.js') };
   const categories = categoriesOf(apps);
   const newest = [...apps].sort(byNewest);
   const az = [...apps].sort(byName);
@@ -327,7 +388,8 @@ ${foot}`);
   }));
 
   let home = read('index.html');
-  home = replaceRegion(home, 'assets', `  <link rel="stylesheet" href="/styles.css?v=${ASSET_VERSION.css}">\n  <script src="/directory.js?v=${ASSET_VERSION.js}" defer></script>\n  <script src="/contact.js?v=${ASSET_VERSION.contact}" defer></script>`);
+  home = replaceRegion(home, 'assets', `${siteAssets()}\n  <script src="/directory.js?v=${ASSET_VERSION.js}" defer></script>\n  <script src="/contact.js?v=${ASSET_VERSION.contact}" defer></script>`);
+  home = replaceRegion(home, 'header', header());
   home = replaceRegion(home, 'featured', featured(apps.filter(a => a.featured)));
   home = replaceRegion(home, 'new', cardGrid(newest.slice(0, NEW_ON_HOME)));
   home = replaceRegion(home, 'categories', categoryChips(categories));
@@ -335,6 +397,7 @@ ${foot}`);
   home = replaceRegion(home, 'cards', az.map(card).join('\n'));
   home = replaceRegion(home, 'count', `${apps.length} apps`);
   write('index.html', home);
+  write('search.json', searchIndex(apps));
 
   const urls = ['/', '/categories/', '/new/', ...categories.map(c => `/categories/${c.slug}/`), ...apps.map(a => `/apps/${a.slug}/`)];
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>

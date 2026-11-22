@@ -19,7 +19,8 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="/styles.css?v=ada056d605">
+  <link rel="stylesheet" href="/styles.css?v=b852e10dfb">
+  <script src="/site.js?v=4bc86db0c0" defer></script>
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -27,6 +28,10 @@
   <div class="wrap nav">
     <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="35" height="35"><span>RemadeBy<em>AI</em><small>.com</small></span></a>
     <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/new/">New</a><a href="/#directory">All apps</a><a href="/#about">About</a><a href="/#list">List your app</a></nav>
+    <form class="site-search" action="/" method="get" role="search">
+      <label><span class="visually-hidden">Search all apps</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
+      <ul class="site-search-results" id="site-search-results" role="listbox" aria-label="Matching apps" hidden></ul>
+    </form>
     <a class="company" href="https://emukey.com/">EmuKey LLC</a>
   </div>
 </header>
@@ -40,7 +45,7 @@
       <h1 id="app-title">OpenTodo</h1>
       <p class="lede">Alternative to Todoist</p>
       <p class="app-summary">A free, self-hosted to-do app with plain-language quick add, time blocking and shared lists, on the web, iPhone and Android.</p>
-      <div class="app-actions"><a class="button primary" href="https://github.com/OpenTodoApp/OpenTodo/releases/latest">Download</a><a class="button" href="https://open-todo.app">Visit site</a></div>
+      <div class="app-actions"><a class="button primary" href="https://github.com/OpenTodoApp/OpenTodo/releases/latest" data-track="download" data-app="opentodo">Download</a><a class="button" href="https://open-todo.app" data-track="site" data-app="opentodo">Visit site</a></div>
     </div>
     <dl class="facts">
       <div><dt>Category</dt><dd><a href="/categories/productivity/">Productivity</a></dd></div>
@@ -49,7 +54,7 @@
       <div><dt>Licence</dt><dd>AGPL-3.0</dd></div>
       <div><dt>Price</dt><dd>Free</dd></div>
       <div><dt>Made by</dt><dd>Raffaele Pizzari (pixari) and contributors</dd></div>
-      <div><dt>Source code</dt><dd><a href="https://github.com/OpenTodoApp/OpenTodo">github.com/OpenTodoApp/OpenTodo</a></dd></div>
+      <div><dt>Source code</dt><dd><a href="https://github.com/OpenTodoApp/OpenTodo" data-track="source" data-app="opentodo">github.com/OpenTodoApp/OpenTodo</a></dd></div>
       <div><dt>Listed</dt><dd>November 22, 2026</dd></div>
     </dl>
   </section>
@@ -72,21 +77,21 @@
   <section class="app-section" aria-labelledby="related-title">
     <h2 id="related-title">More in Productivity</h2>
     <div class="cards">
-<article class="card" data-group="open" data-category="productivity" data-platforms="Windows|Linux|macOS" data-search="ferrite alternative to typora a fast, native text editor for markdown, json, yaml and toml with a live rendered view, split view, mermaid diagrams and pdf export, for windows and linux (mac experimental). productivity open source windows linux macos mit">
+<article class="card" data-group="open" data-category="productivity" data-platform="Windows|Linux|macOS" data-price="Free" data-licence="MIT" data-search="ferrite alternative to typora a fast, native text editor for markdown, json, yaml and toml with a live rendered view, split view, mermaid diagrams and pdf export, for windows and linux (mac experimental). productivity open source ola prøis windows linux macos mit free">
   <div class="card-top"><span class="tile" aria-hidden="true">¶</span><small>Open source</small></div>
   <h3><a class="card-link" href="/apps/ferrite/">Ferrite</a></h3>
   <p class="alternative">Alternative to Typora</p>
   <p>A fast, native text editor for Markdown, JSON, YAML and TOML with a live rendered view, split view, Mermaid diagrams and PDF export, for Windows and Linux (Mac experimental).</p>
   <div class="card-bottom"><a class="card-category" href="/categories/productivity/">Productivity</a><span class="card-more" aria-hidden="true">Details →</span></div>
 </article>
-<article class="card" data-group="open" data-category="productivity" data-platforms="Windows|macOS|Linux" data-search="mindzj alternative to obsidian a free, offline note-taking app that keeps notes as markdown files, with wiki links, mind maps, plugins and built-in ai, for windows, mac and linux. productivity open source windows macos linux agpl-3.0 (commercial licence also offered)">
+<article class="card" data-group="open" data-category="productivity" data-platform="Windows|macOS|Linux" data-price="Free" data-licence="AGPL-3.0" data-search="mindzj alternative to obsidian a free, offline note-taking app that keeps notes as markdown files, with wiki links, mind maps, plugins and built-in ai, for windows, mac and linux. productivity open source superjohn windows macos linux agpl-3.0 (commercial licence also offered) free">
   <div class="card-top"><span class="tile wiki" aria-hidden="true">✎</span><small>Open source</small></div>
   <h3><a class="card-link" href="/apps/mindzj/">MindZJ</a></h3>
   <p class="alternative">Alternative to Obsidian</p>
   <p>A free, offline note-taking app that keeps notes as Markdown files, with wiki links, mind maps, plugins and built-in AI, for Windows, Mac and Linux.</p>
   <div class="card-bottom"><a class="card-category" href="/categories/productivity/">Productivity</a><span class="card-more" aria-hidden="true">Details →</span></div>
 </article>
-<article class="card" data-group="open" data-category="productivity" data-platforms="macOS" data-search="freeflow alternative to wispr flow free voice dictation for your computer. speak and it types for you, with no monthly subscription. productivity open source macos mit">
+<article class="card" data-group="open" data-category="productivity" data-platform="macOS" data-price="Free" data-licence="MIT" data-search="freeflow alternative to wispr flow free voice dictation for your computer. speak and it types for you, with no monthly subscription. productivity open source zach latta macos mit free">
   <div class="card-top"><span class="tile voice" aria-hidden="true">🎙</span><small>Open source</small></div>
   <h3><a class="card-link" href="/apps/freeflow/">FreeFlow</a></h3>
   <p class="alternative">Alternative to Wispr Flow</p>
