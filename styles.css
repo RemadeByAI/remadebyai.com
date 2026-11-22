@@ -161,6 +161,16 @@ footer { border-top: 1px solid var(--line); background: #0d1310; }
 .form-grid [aria-invalid="true"] { border-color: #ff9a8a; }
 .form-grid .trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .form-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; margin-top: 18px; }
+.form-toggle { gap: 8px; }
+.form-toggle .chevron { display: inline-block; transition: transform .2s; }
+.form-toggle[aria-expanded="true"] .chevron { transform: rotate(180deg); }
+.list-form .button.is-sending { opacity: .85; cursor: progress; gap: 10px; }
+.spinner { width: 1em; height: 1em; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; animation: spin .7s linear infinite; }
+.form-progress { position: relative; height: 4px; margin-top: 14px; overflow: hidden; border-radius: 4px; background: #23352a; }
+.form-progress span { position: absolute; top: 0; bottom: 0; width: 35%; border-radius: 4px; background: var(--green); animation: slide 1.1s ease-in-out infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes slide { from { left: -35%; } to { left: 100%; } }
+@media (prefers-reduced-motion: reduce) { .spinner, .form-progress span { animation-duration: 3s; } .form-toggle .chevron { transition: none; } }
 .form-status { margin-top: 12px; min-height: 1.5em; color: var(--muted); }
 .form-status.ok { color: var(--green); }
 .form-status.error { color: #ff9a8a; }
