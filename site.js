@@ -1,10 +1,11 @@
-// Loaded on every page of remadebyai.com. Two jobs:
+// Loaded on every page of remadebyai.com. Three jobs (plus the screenshot viewer):
 // 1. The search box in the header: suggests matching apps as you type, from /search.json (written by
 //    build.js). Enter shows every match in the All apps list (/apps/?q=...). Without JavaScript the box is a
 //    plain form that opens /apps/?q=..., which directory.js filters.
 // 2. Click counting: links with data-track (Download, Visit site, Source code, featured buttons) send a
 //    small anonymous ping to the clicks Worker named in the header form's data-clicks attribute. No
 //    cookies, nothing about the visitor; just which app, which button and which page. Set in build.js.
+// 3. The light/dark mode button in the header (last block).
 (() => {
   const form = document.querySelector('.site-search');
   if (!form) return;
@@ -211,4 +212,26 @@
     startX = null;
     if (Math.abs(dx) > 50) show(current + (dx < 0 ? 1 : -1));
   });
+})();
+
+// Light/dark mode button in the header. The <head> script (build.js siteAssets) has already applied the
+// saved choice; this flips html[data-theme], saves it under localStorage "theme" and keeps the
+// color-scheme and theme-color metas in step. Dark is the default.
+(() => {
+  const root = document.documentElement;
+  const metaScheme = document.querySelector('meta[name="color-scheme"]');
+  const metaColor = document.querySelector('meta[name="theme-color"]');
+  const label = theme => theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode';
+  const apply = theme => {
+    root.setAttribute('data-theme', theme);
+    if (metaScheme) metaScheme.content = theme;
+    if (metaColor) metaColor.content = theme === 'light' ? '#f5f8f3' : '#090d0b';
+    document.querySelectorAll('.theme-toggle').forEach(b => b.setAttribute('aria-label', label(theme)));
+  };
+  apply(root.getAttribute('data-theme') === 'light' ? 'light' : 'dark');
+  document.querySelectorAll('.theme-toggle').forEach(button => button.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    apply(next);
+    try { localStorage.setItem('theme', next); } catch (e) { /* private mode: still switches for this page */ }
+  }));
 })();

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1130 440">
+<defs>
+  <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0v22" fill="none" stroke="#3d8a35" stroke-opacity=".14"/></pattern>
+  <radialGradient id="fade"><stop stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></radialGradient>
+  <mask id="edge"><ellipse cx="820" cy="219" rx="420" ry="300" fill="url(#fade)"/></mask>
+  <radialGradient id="board"><stop stop-color="#dcefd9"/><stop offset="1" stop-color="#f1f8ee"/></radialGradient>
+  <linearGradient id="chip" x2="100%" y2="100%"><stop stop-color="#cfe6cf"/><stop offset="1" stop-color="#eef6ec"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5"/></filter>
+  <path id="star" d="M0-46C4-18 18-4 46 0 18 4 4 18 0 46-4 18-18 4-46 0-18-4-4-18 0-46Z"/>
+</defs>
+<path fill="url(#board)" d="M0 0h1130v440H0z"/>
+<g mask="url(#edge)">
+  <path fill="url(#grid)" d="M0 0h1130v440H0z"/>
+  <g transform="translate(820 225) rotate(-24) skewX(15)">
+    <g fill="none" stroke="#3f8f3a" stroke-width="1.5">
+      <path opacity=".5" d="M-105-57h-55l-32-32h-91m180 45h-36l-41-40h-55m132 55h-53l-29-29h-165m247 44h-95l-45 44h-92m232-29h-69l-63 60h-126m258-43h-52l-121 113m173-55h-34l-58 56h-78m170-44h-22l-43 43m171-191h35l45-45h87m-167 59h65l36-36h64m-165 52h94l40-41h68M105 4h54l46 44h115m-215-28h39l53 52h206m-298-39h20l57 56h88m-165-41 58 57h190M-59-103v-43l-38-37v-40m53 120v-54l-25-25v-19m40 98v-81l-20-20m37 101v-46l26-26v-62m9 134v-43l42-42v-50m-25 135v-26l48-49v-60m-30 135v-13l62-62v-45M-57 103v43l-46 47v44m61-134v62l-24 24v48m41-134v83l-16 16v35m32-134v55l38 37v42m-23-134v38l52 53v43m-36-134v24l62 62v43m-47-129v13l73 73"/>
+      <path opacity=".9" d="M-104-43h-50l-29-29h-108m187 90h-46l-50 51h-103m408-84h61l48-48h113M105 33h38l51 52h119M-27-104v-53l-46-45M42 104v39l57 56v35"/>
+    </g>
+    <g fill="#4a9a2c"><circle cx="-291" cy="-72" r="3"/><circle cx="-303" cy="69" r="3"/><circle cx="327" cy="-63" r="3"/><circle cx="313" cy="85" r="3"/><circle cx="99" cy="234" r="3"/><circle cx="-73" cy="-202" r="3"/></g>
+    <rect x="-104" y="-104" width="208" height="208" rx="20" fill="#3a8a3e" opacity=".55" filter="url(#glow)"/>
+    <rect x="-102" y="-106" width="204" height="204" rx="17" fill="#e7f2e4" stroke="#8fb898" stroke-width="3"/>
+    <rect x="-91" y="-96" width="182" height="182" rx="13" fill="url(#chip)" stroke="#46962f" stroke-width="1.5"/>
+    <rect x="-78" y="-83" width="156" height="156" rx="9" fill="none" stroke="#3c8f33" stroke-opacity=".37"/>
+    <use href="#star" fill="#4f9e2c" filter="url(#glow)" opacity=".75"/><use href="#star" fill="#5aa632"/>
+  </g>
+</g>
+</svg>

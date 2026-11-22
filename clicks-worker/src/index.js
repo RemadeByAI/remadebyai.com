@@ -81,11 +81,18 @@ async function stats(url, env) {
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const cells = o => KINDS.map(k => `<td>${o[k] || ''}</td>`).join('') + `<td><b>${sum(o)}</b></td>`;
   const head = KINDS.map(k => `<th>${k}</th>`).join('') + '<th>all</th>';
-  const html = `<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>RemadeByAI clicks</title>
-<style>body{font:15px system-ui;margin:24px;background:#090d0b;color:#eff8ef}table{border-collapse:collapse}th,td{padding:5px 10px;border-bottom:1px solid #28392d;text-align:right}th:first-child,td:first-child{text-align:left}th{color:#c2ff94;font-weight:600}.g{color:#acbcb0}a{color:#c2ff94}</style>
-<h1>Outbound clicks</h1><p class="g">Button clicks that leave remadebyai.com. Last 30 days from ${since} (UTC), and all time.</p>
+  // Light/dark mode (2026-11-22): dark by default, the button top right switches, the choice is kept in
+  // this page's localStorage "theme" (the same key and look as remadebyai.com's header button).
+  const html = `<!doctype html><html lang="en" data-theme="dark"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><meta name="color-scheme" content="dark"><meta name="darkreader-lock"><title>RemadeByAI clicks</title>
+<script>(function(){var t='dark';try{if(localStorage.getItem('theme')==='light')t='light'}catch(e){}document.documentElement.setAttribute('data-theme',t);if(t==='light')document.querySelector('meta[name="color-scheme"]').content='light'})()</script>
+<style>:root{--bg:#090d0b;--ink:#eff8ef;--muted:#acbcb0;--line:#28392d;--green:#c2ff94;--btn:#3b5141}[data-theme=light]{--bg:#f5f8f3;--ink:#142019;--muted:#4d5f52;--line:#d3dfd4;--green:#2f7a1c;--btn:#b9cbbd}
+html{background:var(--bg)}body{font:15px system-ui;margin:24px;background:var(--bg);color:var(--ink)}table{border-collapse:collapse}th,td{padding:5px 10px;border-bottom:1px solid var(--line);text-align:right}th:first-child,td:first-child{text-align:left}th{color:var(--green);font-weight:600}.g{color:var(--muted)}a{color:var(--green)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.theme-toggle{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 12px;border:1px solid var(--btn);border-radius:6px;background:transparent;color:var(--muted);cursor:pointer;font:inherit;font-size:14px}.theme-toggle:hover{border-color:var(--green);color:var(--green)}[data-theme=dark] .to-dark,[data-theme=light] .to-light{display:none}</style>
+<div class="top"><h1>Outbound clicks</h1><button class="theme-toggle" type="button" aria-label="Switch to light or dark mode"><span class="to-light">\u2600\uFE0E Light mode</span><span class="to-dark">\u263E Dark mode</span></button></div>
+<p class="g">Button clicks that leave remadebyai.com. Last 30 days from ${since} (UTC), and all time.</p>
 <table><tr><th rowspan="2">App</th><th colspan="${KINDS.length + 1}">Last 30 days</th><th colspan="${KINDS.length + 1}">All time</th></tr><tr>${head}${head}</tr>
 ${list.map(r => `<tr><td><a href="https://remadebyai.com/apps/${esc(r.app)}/">${esc(r.app)}</a></td>${cells(r.last30)}${cells(r.total)}</tr>`).join('\n') || '<tr><td colspan="11" class="g">No clicks yet.</td></tr>'}
-</table>`;
+</table>
+<script>document.querySelector('.theme-toggle').addEventListener('click',function(){var d=document.documentElement,t=d.getAttribute('data-theme')==='light'?'dark':'light';d.setAttribute('data-theme',t);document.querySelector('meta[name="color-scheme"]').content=t;try{localStorage.setItem('theme',t)}catch(e){}})</script>`;
   return new Response(html, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' } });
 }

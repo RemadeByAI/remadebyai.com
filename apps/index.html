@@ -21,8 +21,9 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="/styles.css?v=4d87ca5199">
-  <script src="/site.js?v=a7b610e99f" defer></script>
+  <script>(function(){var t='dark';try{if(localStorage.getItem('theme')==='light')t='light'}catch(e){}var d=document.documentElement;d.setAttribute('data-theme',t);if(t==='light'){var m=document.querySelector('meta[name="color-scheme"]');if(m)m.content='light';m=document.querySelector('meta[name="theme-color"]');if(m)m.content='#f5f8f3'}})();</script>
+  <link rel="stylesheet" href="/styles.css?v=f5fd2c4173">
+  <script src="/site.js?v=1ee7d98aa6" defer></script>
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"0f5ef649282441df8c6138452124737d"}'></script>
   <script src="/directory.js?v=9eb279b3ae" defer></script>
 </head>
@@ -36,6 +37,7 @@
       <label><span class="visually-hidden">Search all apps</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
       <ul class="site-search-results" id="site-search-results" role="listbox" aria-label="Matching apps" hidden></ul>
     </form>
+    <button class="theme-toggle" type="button" aria-label="Switch to light mode"><span class="to-light"><span class="icon" aria-hidden="true">☀︎</span><span class="label">Light mode</span></span><span class="to-dark"><span class="icon" aria-hidden="true">☾</span><span class="label">Dark mode</span></span></button>
     <a class="company" href="https://emukey.com/" target="_blank" rel="noopener">EmuKey LLC</a>
   </div>
 </header>
