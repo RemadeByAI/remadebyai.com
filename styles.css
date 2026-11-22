@@ -314,6 +314,27 @@ html.viewer-open { overflow: hidden; }
   .viewer { padding-bottom: 80px; }
   .viewer-frame img { max-height: calc(100dvh - 56px - 76px - 40px); }
 }
+/* "Listed on RemadeByAI" badge: the small box at the bottom of app pages and the /badge/ page. */
+.badge-box { max-width: 760px; margin-top: 44px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.badge-box summary { padding: 12px 16px; color: var(--muted); cursor: pointer; font-size: .92rem; }
+.badge-box summary:hover, .badge-box[open] summary { color: var(--green); }
+.badge-body { padding: 2px 16px 16px; }
+.badge-body > .muted { margin-top: 12px; font-size: .9rem; }
+.badge-previews { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 4px; }
+.badge-previews img, .badge-samples img { display: block; max-width: 100%; height: auto; }
+.snippet { max-width: 760px; margin-top: 12px; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.snippet-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 6px 8px 6px 12px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+.snippet pre { margin: 0; padding: 10px 12px; overflow-x: auto; background: var(--bg); font: .8rem/1.5 var(--mono); white-space: pre-wrap; word-break: break-all; }
+.copy { min-height: 28px; padding: 0 10px; border: 1px solid #3b5141; border-radius: 6px; background: transparent; color: var(--green); cursor: pointer; font-size: .8rem; font-weight: 700; }
+.copy:hover { border-color: var(--green); }
+.badge-samples { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 22px; }
+.badge-samples figure { display: grid; justify-items: center; gap: 8px; padding: 22px 28px 12px; border: 1px solid var(--line); border-radius: 12px; background: #0d1117; }
+.badge-samples .light-sample { background: #ffffff; }
+.badge-samples img { width: 258px; }
+.badge-samples figcaption, html[data-theme="light"] .badge-samples figcaption { position: static; color: #8b949e; font: .8rem "Segoe UI", system-ui, sans-serif; }
+.badge-pick { display: inline-grid; gap: 4px; margin-top: 14px; }
+.badge-pick span { color: var(--muted); font-size: .85rem; }
+.badge-page code { font-family: var(--mono); font-size: .88em; }
 /* ---------- Light / dark mode (2026-11-22) ----------
    Dark is the default. A tiny script at the top of every page's <head> sets html[data-theme] from
    localStorage "theme" (same key as InCloseMail and DesktopWiki) before anything paints; the header
@@ -379,6 +400,8 @@ html[data-theme="light"] footer { background: #edf3ea; }
 html[data-theme="light"] .list-app-box, html[data-theme="light"] .app-hero, html[data-theme="light"] .cta-card { border-color: #bcd3c0; background: linear-gradient(120deg, #e9f4e5, #fff 60%); }
 html[data-theme="light"] .cta-card:hover { border-color: var(--green); }
 html[data-theme="light"] .list-form { border-color: var(--line); }
+html[data-theme="light"] .copy { border-color: #b9cbbd; }
+html[data-theme="light"] .badge-samples figure { border-color: #c9d8cc; }
 html[data-theme="light"] .form-progress { background: #dbe8d7; }
 html[data-theme="light"] .form-grid [aria-invalid="true"] { border-color: #c0392b; }
 html[data-theme="light"] .form-status.error { color: #b3261e; }

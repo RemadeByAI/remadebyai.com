@@ -250,3 +250,13 @@
     try { localStorage.setItem('theme', next); } catch (e) { /* private mode: still switches for this page */ }
   }));
 })();
+
+// Copy buttons next to code snippets (the README badge code on app pages and /badge/).
+document.addEventListener('click', function (e) {
+  var btn = e.target.closest && e.target.closest('[data-copy]');
+  if (!btn) return;
+  var code = btn.closest('.snippet').querySelector('code');
+  var done = function () { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 1600); };
+  if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(code.textContent).then(done, function () {});
+  else { var r = document.createRange(); r.selectNodeContents(code); var sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); try { document.execCommand('copy'); done(); } catch (err) {} }
+});

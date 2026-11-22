@@ -5,7 +5,7 @@
 // It needs only Node.js (18 or newer) and no packages. It checks projects.json first and stops with a
 // clear message if an entry is wrong, then rewrites:
 //   index.html (between the <!-- build:NAME --> markers only), apps/ (incl. the All apps list), categories/, new/,
-//   about/ and list/ (from partials/), search.json, sitemap.xml
+//   about/ and list/ (from partials/), badge/, search.json, sitemap.xml
 // Never edit the generated folders by hand; edit projects.json and run the build again.
 
 'use strict';
@@ -18,7 +18,7 @@ const SITE = 'https://remadebyai.com';
 const NEW_ON_HOME = 6;
 const GROUPS = { emukey: 'EmuKey app', open: 'Open source', indie: 'Independent' }; // indie = closed source, not by EmuKey
 const PLATFORMS = ['Windows', 'macOS', 'Linux', 'Web', 'iOS', 'Android'];
-const GENERATED_DIRS = ['apps', 'categories', 'new', 'about', 'list'];
+const GENERATED_DIRS = ['apps', 'categories', 'new', 'about', 'list', 'badge'];
 
 // Analytics. Both are optional: leave a value empty and that part is left out of every page.
 // - cloudflareToken: the Cloudflare Web Analytics site token for remadebyai.com (page views, visitors,
@@ -301,7 +301,85 @@ ${facts.map(([k, v]) => `      <div><dt>${k}</dt><dd>${v}</dd></div>`).join('\n'
     ${review}
   </section>
   ${relatedHtml}
+  ${badgeBox(app)}
 </div>
+${foot}`;
+}
+
+// ---------- "Listed on RemadeByAI" badge ----------
+// Makers can put a small badge in their README that links to their app page. The two SVGs are hand-made
+// files in assets/badge/ (dark and light). badgeSnippets() gives the copy-paste code for one app page.
+const BADGE = { dark: `${SITE}/assets/badge/listed-dark.svg`, light: `${SITE}/assets/badge/listed-light.svg`, alt: 'Listed on RemadeByAI' };
+function badgeSnippets(slug) {
+  const page = `${SITE}/apps/${slug}/`;
+  return {
+    dark: `[![${BADGE.alt}](${BADGE.dark})](${page})`,
+    light: `[![${BADGE.alt}](${BADGE.light})](${page})`,
+    auto: `<a href="${page}"><picture><source media="(prefers-color-scheme: light)" srcset="${BADGE.light}"><img alt="${BADGE.alt}" src="${BADGE.dark}" height="28"></picture></a>`,
+  };
+}
+const snippetBox = (label, code, attrs = '') =>
+  `<div class="snippet"><div class="snippet-head"><span>${label}</span><button class="copy" type="button" data-copy>Copy</button></div><pre><code${attrs}>${esc(code)}</code></pre></div>`;
+function badgeBox(app) {
+  const s = badgeSnippets(app.slug);
+  return `
+  <details class="badge-box">
+    <summary>Made ${esc(app.name)}? Add a “Listed on RemadeByAI” badge to your README</summary>
+    <div class="badge-body">
+      <p class="badge-previews"><img src="/assets/badge/listed-dark.svg" alt="${BADGE.alt} (dark)" width="172" height="28"> <img src="/assets/badge/listed-light.svg" alt="${BADGE.alt} (light)" width="172" height="28"></p>
+      ${snippetBox('Markdown, dark badge', s.dark)}
+      ${snippetBox('Markdown, light badge', s.light)}
+      <p class="muted">Want it to follow the reader's light or dark mode on GitHub? See <a href="/badge/?app=${app.slug}">the badge page</a>.</p>
+    </div>
+  </details>`;
+}
+function badgePage(apps) {
+  const sorted = [...apps].sort(byName);
+  const first = sorted[0];
+  const s = badgeSnippets(first.slug);
+  return `${head({ title: 'Listed on RemadeByAI badge | RemadeByAI', description: 'A small badge for the README of any app listed on RemadeByAI, linking back to its page.', canonical: '/badge/' })}
+<div class="wrap list-page badge-page">
+  <p class="section-label">✦ Badge</p>
+  <h1 class="page-title">Listed on RemadeByAI</h1>
+  <p class="page-intro">If your app is listed here, you're welcome to show it. Add this small badge to your README or website. It links to your app's page on RemadeByAI. Using it is optional and free.</p>
+  <div class="badge-samples">
+    <figure><img src="/assets/badge/listed-dark.svg" alt="${BADGE.alt} (dark)" width="172" height="28"><figcaption>Dark</figcaption></figure>
+    <figure class="light-sample"><img src="/assets/badge/listed-light.svg" alt="${BADGE.alt} (light)" width="172" height="28"><figcaption>Light</figcaption></figure>
+  </div>
+  <section class="app-section" aria-labelledby="badge-code-title">
+    <h2 id="badge-code-title">Get the code</h2>
+    <label class="select badge-pick"><span>Your app</span><select id="badge-app" data-site="${SITE}">
+${sorted.map(a => `      <option value="${a.slug}"${a === first ? ' selected' : ''}>${esc(a.name)}</option>`).join('\n')}
+    </select></label>
+    ${snippetBox('Markdown, dark badge (for most READMEs)', s.dark, ' data-badge="dark"')}
+    ${snippetBox('Markdown, light badge', s.light, ' data-badge="light"')}
+    ${snippetBox('HTML that follows GitHub light/dark mode', s.auto, ' data-badge="auto"')}
+    <p class="muted">Every app page also has its own code under “Add a badge to your README”. Not listed yet? <a href="/list/">List your app</a>.</p>
+  </section>
+  <section class="app-section" aria-labelledby="badge-rules-title">
+    <h2 id="badge-rules-title">A few notes</h2>
+    <div class="prose">
+      <p>Link the badge to your own app's page, so readers land on your listing. The images are served from remadebyai.com at <code>/assets/badge/listed-dark.svg</code> and <code>/assets/badge/listed-light.svg</code>; please don't change their colours or wording.</p>
+      <p>The badge means your app is listed in the RemadeByAI directory. It isn't a review, a rating or an endorsement.</p>
+    </div>
+  </section>
+</div>
+<script>
+// Swap the app in the snippets when another one is picked (?app=slug preselects it).
+(function () {
+  var pick = document.getElementById('badge-app'); if (!pick) return;
+  var site = pick.dataset.site, first = ${JSON.stringify(first.slug)};
+  var wanted = new URLSearchParams(location.search).get('app');
+  if (wanted && pick.querySelector('option[value="' + CSS.escape(wanted) + '"]')) pick.value = wanted;
+  function update() {
+    document.querySelectorAll('code[data-badge]').forEach(function (c) {
+      c.textContent = c.textContent.split('/apps/' + (c.dataset.slug || first) + '/').join('/apps/' + pick.value + '/');
+      c.dataset.slug = pick.value;
+    });
+  }
+  pick.addEventListener('change', update); update();
+})();
+</script>
 ${foot}`;
 }
 
@@ -449,6 +527,7 @@ ${foot}`);
   write('apps/index.html', allAppsPage(apps, categories));
   write('about/index.html', partialPage({ canonical: '/about/', title: 'About | RemadeByAI', partial: 'about.html',
     description: 'RemadeByAI is a directory from EmuKey LLC of practical software that rebuilds familiar tools with AI.' }));
+  write('badge/index.html', badgePage(apps));
   write('list/index.html', partialPage({ canonical: '/list/', title: 'List your app | RemadeByAI', partial: 'list.html',
     description: 'Made a working alternative to familiar software with AI? Ask to have it listed on RemadeByAI.',
     scripts: `\n  <script src="/contact.js?v=${ASSET_VERSION.contact}" defer></script>` }));
@@ -465,7 +544,7 @@ ${foot}`);
   write('index.html', home);
   write('search.json', searchIndex(apps));
 
-  const urls = ['/', '/apps/', '/categories/', '/new/', '/about/', '/list/', ...categories.map(c => `/categories/${c.slug}/`), ...apps.map(a => `/apps/${a.slug}/`)];
+  const urls = ['/', '/apps/', '/categories/', '/new/', '/about/', '/list/', '/badge/', ...categories.map(c => `/categories/${c.slug}/`), ...apps.map(a => `/apps/${a.slug}/`)];
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u => `  <url><loc>${SITE}${u}</loc></url>`).join('\n')}
