@@ -3473,6 +3473,37 @@
       ]
     },
     {
+      "name": "Pic2Sheet",
+      "group": "indie",
+      "owner": "Ning Xue",
+      "alternative": "Alternative to Microsoft Lens and Excel's Data from Picture",
+      "description": "Turns photos and PDFs of receipts, invoices and bank statements into Excel or CSV files, re-adding every total from its line items and flagging rows that don't tie out.",
+      "category": "Finance",
+      "url": "https://pic2sheet.com/",
+      "linkText": "Visit site",
+      "icon": "▦",
+      "tile": "",
+      "added": "2026-11-22",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Freemium",
+      "license": "Proprietary",
+      "maker": "Ning Xue",
+      "longDescription": "Upload up to 100 pages at once and get one combined workbook plus a sheet per document. Line items and totals are re-added and checked, rows that don't add up are flagged and linked back to the original photo, and every export includes a one-page proof. Bank statement balances are reconciled against the statement.\n\nIt reads receipts and invoices in English and Chinese, and exports CSV files that QuickBooks and Xero can import (there is no direct account connection). Uploads and results are deleted automatically after 7 days.\n\nPricing is pay-per-use credits with no subscription: 20 free credits to start, then $9 for 1,000 or $49 for 10,000. One credit is one image or PDF page, and credits never expire.",
+      "builtWithAI": "The maker, solo developer Ning Xue, says in their listing request to RemadeByAI that Pic2Sheet was built by a solo developer with AI. The app's own site doesn't say how it was built.",
+      "keywords": [
+        "receipt",
+        "invoice",
+        "bank statement",
+        "ocr",
+        "excel",
+        "quickbooks",
+        "xero",
+        "bookkeeping"
+      ]
+    },
+    {
       "group": "open",
       "owner": "Open source",
       "added": "2026-11-22",
