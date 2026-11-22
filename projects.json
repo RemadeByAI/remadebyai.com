@@ -3390,6 +3390,87 @@
           "caption": "Layout inspector"
         }
       ]
+    },
+    {
+      "name": "BigText",
+      "slug": "bigtext",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to UltraEdit, EmEditor",
+      "description": "A fast text editor for huge files and everyday editing, with dark mode, column mode, find in files, hex view and file compare, for Windows, Linux and macOS.",
+      "category": "Developer tools",
+      "url": "https://erkinbek.github.io/bigtext/",
+      "linkText": "Visit site",
+      "icon": "Tx",
+      "tile": "",
+      "added": "2026-11-22",
+      "source": "https://github.com/Erkinbek/bigtext",
+      "download": "https://github.com/Erkinbek/bigtext/releases/latest",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Erkin Pardayev",
+      "longDescription": "BigText describes itself as a free alternative to EmEditor and UltraEdit. It opens very large files (the maker claims 50 GB in under 50 ms using about 100 MB of memory) and searches them with regular expressions at gigabytes per second.\n\nFor day-to-day work it has tabs, multiple cursors, column and block selection (Alt+drag or Shift+Alt+arrows) with a column editor, find in files, a hex view, streaming file compare, syntax highlighting and a folder sidebar with quick open (Ctrl+P). Dark, light and high-contrast themes follow your system setting. Windows gets an installer and a portable zip, and it is also on Scoop.",
+      "builtWithAI": "All 222 commits in the repository are co-authored by Claude (counted 2026-11-22).",
+      "screenshots": [
+        {
+          "src": "/assets/apps/bigtext/1.webp",
+          "alt": "BigText in dark mode showing a 10 GB log file with line numbers and file statistics",
+          "caption": "A 10 GB log file opened in dark mode"
+        },
+        {
+          "src": "/assets/apps/bigtext/2.webp",
+          "alt": "BigText with a regular-expression search across a huge log file and a results panel listing matches",
+          "caption": "Regex search with a results panel"
+        }
+      ]
+    },
+    {
+      "name": "Fresh",
+      "slug": "fresh",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Sublime Text, Notepad++",
+      "description": "A fast, easy text editor with menus, tabs, multiple cursors, block selection and themes. Runs in the terminal or as Fresh Desktop on Windows, macOS and Linux.",
+      "category": "Developer tools",
+      "url": "https://getfresh.dev/",
+      "linkText": "Visit site",
+      "icon": "Fr",
+      "tile": "",
+      "added": "2026-11-22",
+      "source": "https://github.com/sinelaw/fresh",
+      "download": "https://github.com/sinelaw/fresh/releases/latest",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "maker": "Noam Lewis",
+      "longDescription": "Fresh is built to feel like a normal desktop editor: a menu bar, mouse support, familiar shortcuts, a file explorer, tabs and split views, and a command palette. It opens multi-gigabyte files quickly and has multiple cursors, block (column) selection, project-wide search and replace, code folding, language servers and a theme editor with dark themes.\n\nIt started as a terminal editor and still runs there, and Fresh Desktop wraps it in its own window with installers for Windows, macOS and Linux. On Windows you can also install it with winget install fresh-editor.",
+      "builtWithAI": "Claude is credited on thousands of commits: 3,557 of 9,346 carry a Co-authored-by: Claude trailer (counted 2026-11-22).",
+      "screenshots": [
+        {
+          "src": "/assets/apps/fresh/1.webp",
+          "alt": "Fresh with a file explorer on the left and Rust code open in a tab",
+          "caption": "File explorer and tabs"
+        },
+        {
+          "src": "/assets/apps/fresh/2.webp",
+          "alt": "Fresh with split views and the command palette open",
+          "caption": "Split view and command palette"
+        },
+        {
+          "src": "/assets/apps/fresh/3.webp",
+          "alt": "Fresh selecting a column of numbers with block selection",
+          "caption": "Block selection with Alt+Shift+arrows"
+        }
+      ]
     }
   ]
 }
