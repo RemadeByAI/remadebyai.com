@@ -1,9 +1,10 @@
-// Search and filters for the "All apps" list on the home page.
+// Search and filters for the "All apps" list at /apps/ (written by build.js).
 // The cards themselves are plain HTML written by build.js from projects.json, so the list works without JavaScript;
 // this script only hides and shows them. To add an app, edit projects.json and run "node build.js".
 // Each <select data-filter="NAME"> matches the card's data-NAME attribute (a "|"-separated list).
 // The current search and filters are kept in the address bar, so a filtered list can be shared:
-//   /?q=email  /?category=productivity  /?platform=Linux&price=Free  /?group=open&licence=MIT
+//   /apps/?q=email  /apps/?category=productivity  /apps/?platform=Linux&price=Free  /apps/?group=open&licence=MIT
+// Old home-page links (/?q=...) are sent here by a small script in index.html.
 const searchLabel = document.querySelector('.search');
 const searchInput = searchLabel.querySelector('input');
 const filters = document.querySelector('.filters');
@@ -38,7 +39,7 @@ function saveToUrl(active) {
   if (group !== 'all') params.set('group', group);
   for (const [name, value] of active) params.set(name, value);
   const query = params.toString();
-  history.replaceState(null, '', (query ? `/?${query}` : '/') + location.hash);
+  history.replaceState(null, '', location.pathname + (query ? `?${query}` : '') + location.hash);
 }
 
 for (const button of groupButtons) {
@@ -54,14 +55,14 @@ document.querySelector('#reset').addEventListener('click', () => {
   searchInput.focus();
 });
 
-// The header search box (site.js) calls this on the home page instead of reloading it.
+// The header search box (site.js) calls this on /apps/ instead of reloading the page.
 window.rbaShowSearch = query => {
   searchInput.value = query;
   update();
   document.getElementById('directory').scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
 
-// A link like /?q=email or /?category=productivity opens the list already filtered.
+// A link like /apps/?q=email or /apps/?category=productivity opens the list already filtered.
 const params = new URLSearchParams(location.search);
 let fromLink = false;
 if (params.get('q')) { searchInput.value = params.get('q'); fromLink = true; }
@@ -74,4 +75,3 @@ for (const select of selects) {
 searchLabel.hidden = false;
 filters.hidden = false;
 update({ keepUrl: true });
-if (fromLink && !location.hash) document.getElementById('directory').scrollIntoView({ block: 'start' });

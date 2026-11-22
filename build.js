@@ -4,7 +4,8 @@
 //   node build.js
 // It needs only Node.js (18 or newer) and no packages. It checks projects.json first and stops with a
 // clear message if an entry is wrong, then rewrites:
-//   index.html (between the <!-- build:NAME --> markers only), apps/, categories/, new/, search.json, sitemap.xml
+//   index.html (between the <!-- build:NAME --> markers only), apps/ (incl. the All apps list), categories/, new/,
+//   about/ and list/ (from partials/), search.json, sitemap.xml
 // Never edit the generated folders by hand; edit projects.json and run the build again.
 
 'use strict';
@@ -17,7 +18,7 @@ const SITE = 'https://remadebyai.com';
 const NEW_ON_HOME = 6;
 const GROUPS = { emukey: 'EmuKey app', open: 'Open source' };
 const PLATFORMS = ['Windows', 'macOS', 'Linux', 'Web', 'iOS', 'Android'];
-const GENERATED_DIRS = ['apps', 'categories', 'new'];
+const GENERATED_DIRS = ['apps', 'categories', 'new', 'about', 'list'];
 
 // Analytics. Both are optional: leave a value empty and that part is left out of every page.
 // - cloudflareToken: the Cloudflare Web Analytics site token for remadebyai.com (page views, visitors,
@@ -103,7 +104,7 @@ const byName = (a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base
 
 // ---------- shared pieces ----------
 let ASSET_VERSION = {};
-function head({ title, description, canonical, ogType = 'website' }) {
+function head({ title, description, canonical, ogType = 'website', scripts = '' }) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -125,7 +126,7 @@ function head({ title, description, canonical, ogType = 'website' }) {
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-${siteAssets()}
+${siteAssets()}${scripts}
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -147,8 +148,8 @@ function header() {
   return `<header>
   <div class="wrap nav">
     <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="35" height="35"><span>RemadeBy<em>AI</em><small>.com</small></span></a>
-    <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/new/">New</a><a href="/#directory">All apps</a><a href="/#about">About</a><a href="/#list">List your app</a></nav>
-    <form class="site-search" action="/" method="get" role="search"${ANALYTICS.clicksEndpoint ? ` data-clicks="${esc(ANALYTICS.clicksEndpoint)}"` : ''}>
+    <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/new/">New</a><a href="/apps/">All apps</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
+    <form class="site-search" action="/apps/" method="get" role="search"${ANALYTICS.clicksEndpoint ? ` data-clicks="${esc(ANALYTICS.clicksEndpoint)}"` : ''}>
       <label><span class="visually-hidden">Search all apps</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
       <ul class="site-search-results" id="site-search-results" role="listbox" aria-label="Matching apps" hidden></ul>
     </form>
@@ -156,10 +157,14 @@ function header() {
   </div>
 </header>`;
 }
+const footer = () => `<footer>
+  <div class="wrap foot">
+    <div class="foot-about"><a class="brand" href="/">RemadeBy<em>AI</em></a><p>Familiar software, rebuilt with AI. A software directory from <a href="https://emukey.com/">EmuKey LLC</a>.</p></div>
+    <nav class="foot-links" aria-label="Footer"><a href="/apps/">All apps</a><a href="/new/">New arrivals</a><a href="/categories/">Categories</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
+  </div>
+</footer>`;
 const foot = `</main>
-<footer>
-  <div class="wrap foot"><a class="brand" href="/">RemadeBy<em>AI</em></a><p>A software directory from <a href="https://emukey.com/">EmuKey LLC</a>.</p></div>
-</footer>
+${footer()}
 </body>
 </html>
 `;
@@ -197,6 +202,14 @@ function categoriesOf(apps) {
 function categoryChips(categories) {
   return `<ul class="category-list">\n${categories.map(c =>
     `  <li><a href="/categories/${c.slug}/"><span>${esc(c.name)}</span><small>${c.apps.length}</small></a></li>`).join('\n')}\n</ul>`;
+}
+// Home page tiles: the category, how many apps it has and the first few by name.
+function categoryTiles(categories) {
+  return `<ul class="category-tiles">\n${categories.map(c => {
+    const names = [...c.apps].sort(byName).map(a => a.name);
+    const sample = names.slice(0, 3).join(', ') + (names.length > 3 ? ' and more' : '');
+    return `  <li><a href="/categories/${c.slug}/">${tile(c.apps[0])}<span class="cat-name">${esc(c.name)}</span><small>${c.apps.length} ${c.apps.length === 1 ? 'app' : 'apps'}</small><span class="cat-sample">${esc(sample)}</span></a></li>`;
+  }).join('\n')}\n</ul>`;
 }
 
 // ---------- pages ----------
@@ -297,7 +310,7 @@ ${foot}`;
 function replaceRegion(html, name, content) {
   const re = new RegExp(`(<!-- build:${name} -->)[\\s\\S]*?(<!-- /build:${name} -->)`);
   if (!re.test(html)) { console.error(`index.html is missing the <!-- build:${name} --> markers.`); process.exit(1); }
-  return html.replace(re, `$1\n${content}\n$2`);
+  return html.replace(re, (_, open, close) => `${open}\n${content}\n${close}`);
 }
 // Every entry with "featured": true takes a turn: all are rendered, the first is shown
 // without JavaScript, and a tiny inline script shows one at random on each page load.
@@ -342,6 +355,40 @@ function filterOptions(categories, apps) {
   return cat + plat + price + licence;
 }
 
+// All apps (/apps/): the full A to Z list with search and filters (directory.js). Kept off the home page.
+function allAppsPage(apps, categories) {
+  const az = [...apps].sort(byName);
+  return `${head({ title: 'All apps | RemadeByAI', description: 'Every AI-built app and alternative to familiar software on RemadeByAI, A to Z, with search and filters.', canonical: '/apps/',
+    scripts: `\n  <script src="/directory.js?v=${ASSET_VERSION.js}" defer></script>` })}
+<section class="wrap directory list-page" id="directory" aria-labelledby="directory-title">
+  <p class="section-label">✦ All apps</p>
+  <div class="directory-top">
+    <div><h1 class="page-title" id="directory-title">All apps</h1><p>EmuKey apps and independent open-source picks, A to Z. <a href="/categories/">Browse by category</a> or see what's <a href="/new/">new</a>.</p></div>
+    <label class="search" hidden><span class="visually-hidden">Search apps</span><input type="search" placeholder="Filter this list"></label>
+  </div>
+  <div class="filters" hidden>
+    <div class="filter-group" role="group" aria-label="Filter apps">
+      <button type="button" data-group="all" aria-pressed="true">All apps</button>
+      <button type="button" data-group="emukey" aria-pressed="false">EmuKey apps</button>
+      <button type="button" data-group="open" aria-pressed="false">Open source</button>
+      ${filterOptions(categories, apps)}
+    </div>
+    <span class="count" role="status">${apps.length} apps</span>
+  </div>
+  <div class="cards" id="all-apps">
+${az.map(card).join('\n')}
+  </div>
+  <div class="empty" hidden><strong>No matching apps</strong><p>Try a different search or reset the filters.</p><button class="button" type="button" id="reset">Reset filters</button></div>
+</section>
+${foot}`;
+}
+// About (/about/) and List your app (/list/): hand-edited bodies in partials/, wrapped in the site shell.
+function partialPage({ canonical, title, description, partial, scripts = '' }) {
+  return `${head({ title, description, canonical, scripts })}
+${read(`partials/${partial}`).trim()}
+${foot}`;
+}
+
 // The index the header search box uses on every page (site.js). Short keys keep it small.
 function searchIndex(apps) {
   return JSON.stringify({
@@ -359,7 +406,6 @@ function main() {
   ASSET_VERSION = { css: hash('styles.css'), js: hash('directory.js'), contact: hash('contact.js'), site: hash('site.js') };
   const categories = categoriesOf(apps);
   const newest = [...apps].sort(byNewest);
-  const az = [...apps].sort(byName);
 
   for (const dir of GENERATED_DIRS) fs.rmSync(path.join(ROOT, dir), { recursive: true, force: true });
 
@@ -387,19 +433,26 @@ ${foot}`);
     apps: newest,
   }));
 
+  write('apps/index.html', allAppsPage(apps, categories));
+  write('about/index.html', partialPage({ canonical: '/about/', title: 'About | RemadeByAI', partial: 'about.html',
+    description: 'RemadeByAI is a directory from EmuKey LLC of practical software that rebuilds familiar tools with AI.' }));
+  write('list/index.html', partialPage({ canonical: '/list/', title: 'List your app | RemadeByAI', partial: 'list.html',
+    description: 'Made a working alternative to familiar software with AI? Ask to have it listed on RemadeByAI.',
+    scripts: `\n  <script src="/contact.js?v=${ASSET_VERSION.contact}" defer></script>` }));
+
   let home = read('index.html');
-  home = replaceRegion(home, 'assets', `${siteAssets()}\n  <script src="/directory.js?v=${ASSET_VERSION.js}" defer></script>\n  <script src="/contact.js?v=${ASSET_VERSION.contact}" defer></script>`);
+  home = replaceRegion(home, 'assets', siteAssets());
   home = replaceRegion(home, 'header', header());
+  home = replaceRegion(home, 'stats', `${apps.length} apps in ${categories.length} categories`);
   home = replaceRegion(home, 'featured', featured(apps.filter(a => a.featured)));
   home = replaceRegion(home, 'new', cardGrid(newest.slice(0, NEW_ON_HOME)));
-  home = replaceRegion(home, 'categories', categoryChips(categories));
-  home = replaceRegion(home, 'filters', filterOptions(categories, apps));
-  home = replaceRegion(home, 'cards', az.map(card).join('\n'));
-  home = replaceRegion(home, 'count', `${apps.length} apps`);
+  home = replaceRegion(home, 'categories', categoryTiles(categories));
+  home = replaceRegion(home, 'count', `${apps.length}`);
+  home = replaceRegion(home, 'footer', footer());
   write('index.html', home);
   write('search.json', searchIndex(apps));
 
-  const urls = ['/', '/categories/', '/new/', ...categories.map(c => `/categories/${c.slug}/`), ...apps.map(a => `/apps/${a.slug}/`)];
+  const urls = ['/', '/apps/', '/categories/', '/new/', '/about/', '/list/', ...categories.map(c => `/categories/${c.slug}/`), ...apps.map(a => `/apps/${a.slug}/`)];
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u => `  <url><loc>${SITE}${u}</loc></url>`).join('\n')}

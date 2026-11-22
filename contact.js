@@ -1,5 +1,5 @@
-// "List your app" form on the home page. The form stays hidden (and the email
-// button stays the only way in) until index.html's form has both data-endpoint
+// "List your app" form on the List your app page (/list/, from partials/list.html). The form stays hidden (and the email
+// button stays the only way in) until the form has both data-endpoint
 // (the forms Worker URL) and data-sitekey (the Cloudflare Turnstile site key).
 // When configured, a "Fill in the form" button opens it; it starts collapsed.
 // The Worker lives in forms-worker/; setup steps are in forms-worker/README.md.

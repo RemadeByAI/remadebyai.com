@@ -1,0 +1,34 @@
+<!-- Hand-edited body of /list/. build.js wraps it in the site header and footer: run "node build.js" after editing. -->
+<section class="wrap list-app page-section" id="list" aria-labelledby="list-title">
+    <div class="list-app-box">
+      <div>
+        <p class="section-label">✦ List your app</p>
+        <h1 class="page-title" id="list-title">Made something that belongs here?</h1>
+        <p>If you build a working alternative to familiar software, with AI as part of how it gets made, send it our way. Tell us what it is, what it replaces and where to find it. We read every request and reply when we add a listing.</p>
+      </div>
+      <div class="list-app-action">
+        <a class="button primary" href="mailto:listings@remadebyai.com?subject=List%20my%20app%20on%20RemadeByAI&body=App%20name%3A%0AWebsite%3A%0AWhat%20familiar%20software%20it%20replaces%3A%0AOpen%20source%3F%20%28repo%20link%20if%20yes%29%3A%0AWho%20makes%20it%3A%0AOne%20or%20two%20sentences%20about%20it%3A%0A">Email us about your app</a>
+        <p class="list-app-address">or write to <a href="mailto:listings@remadebyai.com">listings@remadebyai.com</a></p>
+      </div>
+      <!-- List your app form. Hidden until both data-endpoint (the forms Worker) and data-sitekey (Turnstile) are set; see forms-worker/README.md. -->
+      <form class="list-form" id="list-form" data-endpoint="https://forms.enclosemail.com/submit" data-sitekey="0x4AAAAAAGMW_dR9wSC3lXnE" hidden novalidate>
+        <div class="form-grid">
+          <label><span>Your name</span><input name="name" autocomplete="name" required maxlength="100"></label>
+          <label><span>Your email</span><input name="email" type="email" autocomplete="email" required maxlength="200"></label>
+          <label><span>App name</span><input name="app_name" required maxlength="100"></label>
+          <label><span>Website or download link</span><input name="app_url" type="url" required maxlength="500" placeholder="https://"></label>
+          <label><span>What familiar software it replaces</span><input name="replaces" required maxlength="200" placeholder="e.g. Microsoft Word"></label>
+          <label><span>Who makes it <span class="optional">(optional)</span></span><input name="maker" maxlength="200"></label>
+          <label class="wide"><span>Source code, if open source <span class="optional">(optional)</span></span><input name="source" type="url" maxlength="500" placeholder="https://github.com/..."></label>
+          <label class="wide"><span>About the app, and how AI was part of building it</span><textarea name="about" rows="5" required maxlength="4000"></textarea></label>
+          <label class="trap" aria-hidden="true">Leave this empty<input name="company_website" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <div class="form-foot">
+          <div class="turnstile"></div>
+          <button class="button primary" type="submit">Send request</button>
+        </div>
+        <div class="form-progress" hidden><span></span></div>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>

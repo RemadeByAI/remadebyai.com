@@ -1,7 +1,7 @@
 // Loaded on every page of remadebyai.com. Two jobs:
 // 1. The search box in the header: suggests matching apps as you type, from /search.json (written by
-//    build.js). Enter shows every match in the home page list (/?q=...). Without JavaScript the box is a
-//    plain form that opens /?q=..., which directory.js filters.
+//    build.js). Enter shows every match in the All apps list (/apps/?q=...). Without JavaScript the box is a
+//    plain form that opens /apps/?q=..., which directory.js filters.
 // 2. Click counting: links with data-track (Download, Visit site, Source code, featured buttons) send a
 //    small anonymous ping to the clicks Worker named in the header form's data-clicks attribute. No
 //    cookies, nothing about the visitor; just which app, which button and which page. Set in build.js.
@@ -46,7 +46,7 @@
   }
 
   const escape = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  const allUrl = query => `/?q=${encodeURIComponent(query)}#directory`;
+  const allUrl = query => `/apps/?q=${encodeURIComponent(query)}`;
 
   function render() {
     const query = input.value.trim();
@@ -80,7 +80,7 @@
   }
   function showAll(query) {
     close();
-    if (window.rbaShowSearch && location.pathname === '/') window.rbaShowSearch(query);
+    if (window.rbaShowSearch && location.pathname === '/apps/') window.rbaShowSearch(query);
     else location.href = allUrl(query);
   }
 
