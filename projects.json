@@ -35,7 +35,8 @@
           "alt": "The same InCloseMail Inbox in Dark Mode",
           "caption": "Dark Mode"
         }
-      ]
+      ],
+      "builtWithAI": "Built largely with Claude Opus 5.5."
     },
     {
       "name": "DesktopWiki",
@@ -68,7 +69,8 @@
           "alt": "The same DesktopWiki page in dark mode",
           "caption": "Dark mode"
         }
-      ]
+      ],
+      "builtWithAI": "Built largely with Claude Opus 5.5."
     },
     {
       "name": "macshot",
