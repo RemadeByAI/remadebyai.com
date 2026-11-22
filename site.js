@@ -119,3 +119,89 @@
     document.addEventListener('auxclick', count, { capture: true }); // middle-click opens a new tab
   }
 })();
+
+// Screenshot viewer on app pages. Clicking a screenshot opens it large in a dialog with a close (X) button.
+// Esc, the X, or a click on the dark area around the picture closes it; left/right arrow keys (or the
+// on-screen arrows, or a swipe on phones) move between screenshots. Focus goes back to the thumbnail.
+// Without JavaScript the thumbnails are plain links to the image file.
+(() => {
+  const links = [...document.querySelectorAll('.shots a')];
+  if (!links.length || typeof HTMLDialogElement !== 'function') return;
+
+  const dialog = document.createElement('dialog');
+  dialog.className = 'viewer';
+  dialog.setAttribute('aria-label', 'Screenshot');
+  dialog.innerHTML = `
+    <button type="button" class="viewer-close" aria-label="Close screenshot" title="Close (Esc)">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+    </button>
+    <figure class="viewer-frame">
+      <img alt="">
+      <figcaption></figcaption>
+    </figure>
+    <button type="button" class="viewer-nav viewer-prev" aria-label="Previous screenshot">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button type="button" class="viewer-nav viewer-next" aria-label="Next screenshot">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>`;
+  document.body.append(dialog);
+
+  const img = dialog.querySelector('img');
+  const caption = dialog.querySelector('figcaption');
+  const prev = dialog.querySelector('.viewer-prev');
+  const next = dialog.querySelector('.viewer-next');
+  const many = links.length > 1;
+  prev.hidden = next.hidden = !many;
+  let current = 0;
+
+  function show(i) {
+    current = (i + links.length) % links.length;
+    const link = links[current];
+    const thumb = link.querySelector('img');
+    const text = link.closest('figure')?.querySelector('figcaption')?.textContent.trim() || '';
+    img.src = link.href;
+    img.alt = thumb ? thumb.alt : '';
+    caption.textContent = many ? `${text}${text ? ' · ' : ''}${current + 1} of ${links.length}` : text;
+    caption.hidden = !caption.textContent;
+  }
+  function open(i) {
+    show(i);
+    if (!dialog.open) dialog.showModal();
+    document.documentElement.classList.add('viewer-open');
+    dialog.querySelector('.viewer-close').focus();
+  }
+
+  links.forEach((link, i) => link.addEventListener('click', event => {
+    if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return; // new tab still works
+    event.preventDefault();
+    open(i);
+  }));
+  dialog.querySelector('.viewer-close').addEventListener('click', () => dialog.close());
+  prev.addEventListener('click', () => show(current - 1));
+  next.addEventListener('click', () => show(current + 1));
+  // Anything that isn't the picture or a button counts as the backdrop.
+  dialog.addEventListener('click', event => {
+    if (!event.target.closest('img, button')) dialog.close();
+  });
+  dialog.addEventListener('keydown', event => {
+    if (!many) return;
+    if (event.key === 'ArrowLeft') { event.preventDefault(); show(current - 1); }
+    else if (event.key === 'ArrowRight') { event.preventDefault(); show(current + 1); }
+  });
+  dialog.addEventListener('close', () => {
+    document.documentElement.classList.remove('viewer-open');
+    img.removeAttribute('src');
+    links[current].focus();
+  });
+
+  // Swipe left/right on touch screens.
+  let startX = null;
+  dialog.addEventListener('touchstart', event => { startX = event.touches.length === 1 ? event.touches[0].clientX : null; }, { passive: true });
+  dialog.addEventListener('touchend', event => {
+    if (startX === null || !many) return;
+    const dx = event.changedTouches[0].clientX - startX;
+    startX = null;
+    if (Math.abs(dx) > 50) show(current + (dx < 0 ? 1 : -1));
+  });
+})();

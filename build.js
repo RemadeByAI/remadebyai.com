@@ -58,10 +58,16 @@ const paragraphs = text => String(text || '').split(/\n\s*\n/).map(p => p.trim()
   .map(p => `<p>${esc(p)}</p>`).join('\n');
 const formatDate = iso => new Date(iso + 'T12:00:00Z')
   .toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+// Links to other sites always open in a new tab, so a visitor never leaves remadebyai.com by accident.
+// Applied to every page the build writes; links that already say where to open are left alone.
+const externalInNewTab = html => html.replace(/<a\b([^>]*?)\bhref="(https?:\/\/[^"]*)"([^>]*)>/g, (tag, before, href, after) => {
+  if (/^https?:\/\/(www\.)?remadebyai\.com(\/|$)/i.test(href) || /\btarget=/.test(before + after)) return tag;
+  return `<a${before}href="${href}"${after} target="_blank" rel="noopener">`;
+});
 function write(file, content) {
   const full = path.join(ROOT, file);
   fs.mkdirSync(path.dirname(full), { recursive: true });
-  fs.writeFileSync(full, content);
+  fs.writeFileSync(full, file.endsWith('.html') ? externalInNewTab(content) : content);
 }
 
 // ---------- load and check the data ----------
