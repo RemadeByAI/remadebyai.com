@@ -378,6 +378,417 @@
           "caption": "House overview"
         }
       ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit site",
+      "added": "2026-11-22",
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "url": "https://getartcraft.com/apps/filmcraft",
+      "download": "https://getartcraft.com/apps/filmcraft",
+      "source": "https://github.com/storytold/filmcraft",
+      "name": "FilmCraft",
+      "slug": "filmcraft",
+      "alternative": "Alternative to Adobe Premiere Pro",
+      "description": "A free non-linear video editor with colour and sound tools for Windows, Mac, Linux and the web, from the ArtCraft suite. Alpha.",
+      "category": "Video",
+      "icon": "▶",
+      "tile": "voice",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "longDescription": "FilmCraft is a timeline video editor written in Rust: bins, source and program monitors, multi-track editing, a Color workspace with scopes, and audio mixing with loudness meters. It imports most common video formats and uses hardware decoding on each platform.\n\nEvery action is also a command that its CLI and MCP server can run, so an AI agent can cut, grade and export a project the same way a person does. The project calls itself alpha.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,456 of 4,203 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. XDA and MakeUseOf report that ArtCraft's maker, Brandon Thomas, built the suite with Claude Opus 5.5.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/filmcraft/1.webp",
+          "alt": "FilmCraft in the Color workspace with an Apollo 11 documentary in the Program monitor and Effect Controls open",
+          "caption": "Color workspace"
+        },
+        {
+          "src": "/assets/apps/filmcraft/2.webp",
+          "alt": "FilmCraft grading a scene from Charade (1963) with the waveform and vectorscope beside the Program monitor",
+          "caption": "Scopes and grading"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit site",
+      "added": "2026-11-22",
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "url": "https://getartcraft.com/apps/effectcraft",
+      "download": "https://getartcraft.com/apps/effectcraft",
+      "source": "https://github.com/storytold/effectcraft",
+      "name": "EffectCraft",
+      "slug": "effectcraft",
+      "alternative": "Alternative to Adobe After Effects",
+      "description": "A free motion graphics and visual effects compositor for Windows, Mac, Linux and the web, from the ArtCraft suite. Alpha.",
+      "category": "Video",
+      "icon": "✶",
+      "tile": "voice",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "longDescription": "EffectCraft is a compositor with compositions, layers, keyframes, a graph editor, more than 300 effects, layer styles, expressions, 3D cameras and lights, and a render queue that exports ProRes, HEVC, AV1, WebM, image sequences and GIF.\n\nIts README says macOS is the most tested platform and that Linux and Windows users have hit basic interaction bugs. The project calls itself alpha.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,963 of 5,432 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. XDA (Nov 2026) says it was \"built in 10 days, mostly by AI agents\" using Claude Opus 5.5.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/effectcraft/1.webp",
+          "alt": "EffectCraft's main window with a demo composition, the Project panel, a timeline of text and shape layers and the Properties panel",
+          "caption": "Compositions and timeline"
+        },
+        {
+          "src": "/assets/apps/effectcraft/2.webp",
+          "alt": "EffectCraft's 3D showcase: intersecting cards lit by a spot light with soft shadows on a gridded floor",
+          "caption": "3D cameras and lights"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit site",
+      "added": "2026-11-22",
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "url": "https://getartcraft.com/apps/lightcraft",
+      "download": "https://getartcraft.com/apps/lightcraft",
+      "source": "https://github.com/storytold/lightcraft",
+      "name": "LightCraft",
+      "slug": "lightcraft",
+      "alternative": "Alternative to Adobe Lightroom",
+      "description": "A free photo library and raw developer for Windows, Mac, Linux and the web, from the ArtCraft suite. Alpha.",
+      "category": "Graphics",
+      "icon": "◑",
+      "tile": "glance",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "longDescription": "LightCraft keeps a non-destructive photo library and develops raw files with light, tone curve, colour grading and effects panels, plus before and after views. Your photos stay on your own computer.\n\nIt also ships a CLI and an MCP server so AI agents can drive edits. The project calls itself alpha.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 2,519 of 5,633 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. XDA and MakeUseOf report that ArtCraft's maker built the suite with Claude Opus 5.5.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/lightcraft/1.webp",
+          "alt": "LightCraft's Edit view with Ansel Adams' The Tetons and the Snake River in the loupe and the Light panel open",
+          "caption": "Edit view"
+        },
+        {
+          "src": "/assets/apps/lightcraft/2.webp",
+          "alt": "Colour grading wheels next to Dorothea Lange's Migrant Mother, toned warm like a print",
+          "caption": "Colour grading"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit site",
+      "added": "2026-11-22",
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "url": "https://getartcraft.com/apps/vectorcraft",
+      "download": "https://getartcraft.com/apps/vectorcraft",
+      "source": "https://github.com/storytold/vectorcraft",
+      "name": "VectorCraft",
+      "slug": "vectorcraft",
+      "alternative": "Alternative to Adobe Illustrator",
+      "description": "A free vector illustration app for Windows, Mac, Linux, FreeBSD and the web, from the ArtCraft suite. In active development.",
+      "category": "Graphics",
+      "icon": "✒",
+      "tile": "glance",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "longDescription": "VectorCraft covers artboards, Bézier pen and direct selection tools, Pathfinder, live blends, clipping groups, appearance effects such as glows, and 3D Revolve.\n\nLike the rest of the suite it has a CLI and an MCP server, so Claude and other agents can draw, edit and export artwork.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,700 of 19,412 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. XDA reports that ArtCraft's maker built the suite with Claude Opus 5.5.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/vectorcraft/1.webp",
+          "alt": "VectorCraft editing a neon poster, with the Appearance panel showing a live Outer Glow",
+          "caption": "Appearance and type"
+        },
+        {
+          "src": "/assets/apps/vectorcraft/2.webp",
+          "alt": "A still life of a vase, bowl, sphere and bottle made with 3D Revolve, with the Revolve dialog open",
+          "caption": "3D Revolve"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit site",
+      "added": "2026-11-22",
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "url": "https://getartcraft.com/apps/figcraft",
+      "download": "https://getartcraft.com/apps/figcraft",
+      "source": "https://github.com/storytold/figcraft",
+      "name": "FigCraft",
+      "slug": "figcraft",
+      "alternative": "Alternative to Figma",
+      "description": "A free interface design and prototyping app that works offline on Windows, Mac, Linux, FreeBSD and the web, from the ArtCraft suite. Early alpha.",
+      "category": "Graphics",
+      "icon": "◇",
+      "tile": "glance",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "longDescription": "FigCraft has frames, auto layout, components and variants, vector networks, styles, variables and click-through prototypes in a native app that opens instantly and works offline. It has a first preview of live multiplayer sessions hosted from the app or your own server.\n\nIts README is frank about the gaps: it estimates it is about 49% of the way to replacing proprietary tools, opens .fig files only on a best-effort basis, and has no accounts or cloud yet.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,237 of 4,674 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/figcraft/1.webp",
+          "alt": "FigCraft in its dark theme editing three phone screens of a hiking app, with the layers panel showing auto layout",
+          "caption": "Design canvas"
+        },
+        {
+          "src": "/assets/apps/figcraft/2.webp",
+          "alt": "Four onboarding screens in the Prototype tab joined by connection curves",
+          "caption": "Prototyping"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit site",
+      "added": "2026-11-22",
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "url": "https://getartcraft.com/apps/deckcraft",
+      "download": "https://getartcraft.com/apps/deckcraft",
+      "source": "https://github.com/storytold/deckcraft",
+      "name": "DeckCraft",
+      "slug": "deckcraft",
+      "alternative": "Alternative to Microsoft PowerPoint",
+      "description": "A free presentation app that opens and saves .pptx files, for Windows, Mac, Linux, FreeBSD and the web, from the ArtCraft suite. Alpha.",
+      "category": "Office",
+      "icon": "▤",
+      "tile": "",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "longDescription": "DeckCraft builds decks with themes, layouts, shapes, pictures, tables, charts, transitions and animations, opens and saves .pptx files, imports older .ppt files, and presents full screen.\n\nIts README says it covers 84% of the features it tracks against the app it replaces, and that it is in alpha heading for beta.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 554 of 2,278 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. MakeUseOf (Oct 2026) reports the office apps were built with Claude Opus 5.5.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/deckcraft/1.webp",
+          "alt": "DeckCraft editing a slide, with the ribbon, slide thumbnails, a process diagram, notes and status bar",
+          "caption": "Slide editor"
+        },
+        {
+          "src": "/assets/apps/deckcraft/2.webp",
+          "alt": "DeckCraft's Slide Sorter view with transitions under each slide",
+          "caption": "Slide Sorter"
+        }
+      ]
+    },
+    {
+      "name": "Davit",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Docker Desktop",
+      "description": "A native Mac app for running and managing Linux containers on Apple silicon, built on Apple's own container platform.",
+      "category": "Developer tools",
+      "url": "https://davit.app",
+      "linkText": "Visit site",
+      "icon": "⚓",
+      "tile": "code",
+      "added": "2026-11-22",
+      "source": "https://github.com/wouterdebie/davit",
+      "download": "https://github.com/wouterdebie/davit/releases/latest",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Wouter de Bie",
+      "longDescription": "Davit is a SwiftUI app for Apple's container platform, which runs each Linux container as a lightweight VM. It has a dashboard, container lists with live CPU and memory, logs, stats charts, a file browser and terminal for each container, image pulls and builds, volumes, networks, local DNS and Compose file import.\n\nIt needs an Apple silicon Mac with macOS 15 or newer, and installs Apple's container platform for you on first launch if it is missing. It is also available through Homebrew (brew install wouterdebie/tap/davit).",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 135 of its 147 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/davit/1.webp",
+          "alt": "Davit's Containers list with live CPU, memory and IP for each container",
+          "caption": "Containers"
+        },
+        {
+          "src": "/assets/apps/davit/2.webp",
+          "alt": "Davit's Stats tab for one container, with live CPU and memory charts",
+          "caption": "Live stats"
+        }
+      ]
+    },
+    {
+      "name": "OpenTodo",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Todoist",
+      "description": "A free, self-hosted to-do app with plain-language quick add, time blocking and shared lists, on the web, iPhone and Android.",
+      "category": "Productivity",
+      "url": "https://open-todo.app",
+      "linkText": "Visit site",
+      "icon": "✓",
+      "tile": "",
+      "added": "2026-11-22",
+      "source": "https://github.com/OpenTodoApp/OpenTodo",
+      "download": "https://github.com/OpenTodoApp/OpenTodo/releases/latest",
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "maker": "Raffaele Pizzari (pixari) and contributors",
+      "longDescription": "Type a task the way you say it (\"Call Sarah next Wed 3pm #work p1\") and OpenTodo sets the date, project and priority. Today shows what is due, you can drag tasks onto a day or week calendar to block out time, and Focus runs a Pomodoro or countdown timer that logs time to the task. Lists can be shared with family or a team, and it works offline.\n\nYou run the server yourself (Docker, a single binary for Windows, Mac or Linux, Unraid, Home Assistant and more) or rent a hosted copy from PikaPods. There is an iPhone and iPad app in the App Store and an Android APK. Everything is free, with no paid tier.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 3,283 of 3,771 commits are authored or co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/opentodo/1.webp",
+          "alt": "OpenTodo's Day calendar with timed tasks as blocks sized by their estimate",
+          "caption": "Plan the day"
+        },
+        {
+          "src": "/assets/apps/opentodo/2.webp",
+          "alt": "OpenTodo's Focus screen with one task and a large timer",
+          "caption": "Focus timer"
+        }
+      ]
+    },
+    {
+      "name": "SaneBar",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Bartender",
+      "description": "A free menu bar manager for the Mac that hides the icons you don't need, with a searchable icon panel and Touch ID lock.",
+      "category": "Utilities",
+      "url": "https://sanebar.com",
+      "linkText": "Visit site",
+      "icon": "☰",
+      "tile": "bar",
+      "added": "2026-11-22",
+      "source": "https://github.com/sane-apps/SaneBar",
+      "download": "https://sanebar.com",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "SaneApps",
+      "longDescription": "SaneBar hides menu bar icons you don't need right now and keeps the important ones visible. Hidden apps open from an Icon Panel you can search, or from a second menu bar. It adds Touch ID lock, smart triggers and profiles. All former Pro features are now free.\n\nIt needs an Apple silicon Mac running macOS 14 to 26. On macOS 27 it can't hide icons and points you to the system's own menu bar settings instead. The project is now community-maintained. Also available with Homebrew (brew install --cask sane-apps/tap/sanebar).",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 371 of 1,063 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/sanebar/1.webp",
+          "alt": "SaneBar's second menu bar showing hidden menu bar icons in a row",
+          "caption": "Second menu bar"
+        },
+        {
+          "src": "/assets/apps/sanebar/2.webp",
+          "alt": "SaneBar's Icon Panel listing hidden menu bar apps with search",
+          "caption": "Icon Panel"
+        }
+      ]
+    },
+    {
+      "name": "SuperCmd",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Raycast",
+      "description": "A keyboard launcher for the Mac that runs Raycast extensions and adds dictation, read-aloud, clipboard history, snippets and window tiling.",
+      "category": "Utilities",
+      "url": "https://supercmd.sh",
+      "linkText": "Visit site",
+      "icon": "⌘",
+      "tile": "code",
+      "added": "2026-11-22",
+      "source": "https://github.com/SuperCmdLabs/SuperCmd",
+      "download": "https://github.com/SuperCmdLabs/SuperCmd/releases/latest",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "MIT (v1)",
+      "price": "Free (v1); v2 is a one-time $19.99",
+      "maker": "SuperCmd Labs (Shobhit Bhosure)",
+      "longDescription": "SuperCmd opens from one shortcut and runs existing Raycast extensions without changes, and can import a Raycast backup. It also has hold-to-speak dictation, read-aloud for selected text, AI chat with the provider of your choice, clipboard history, snippet expansion, quick links, notes, a drawing canvas, file search and 24 window-tiling commands.\n\nThe open-source v1 on GitHub is free under the MIT licence. Its website sells a newer v2 for a one-time $19.99 (covers 3 Macs, 7-day free trial).",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 55 of 763 commits in the v1 repo are co-authored by Claude, the repo has a CLAUDE.md file, and its Product Hunt page lists Claude Code among the tools it was built with.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/supercmd/1.webp",
+          "alt": "The SuperCmd launcher with its search box and pinned commands such as Clipboard History, Notes and Snippets",
+          "caption": "Launcher"
+        }
+      ]
+    },
+    {
+      "name": "MindZJ",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Obsidian",
+      "description": "A free, offline note-taking app that keeps notes as Markdown files, with wiki links, mind maps, plugins and built-in AI, for Windows, Mac and Linux.",
+      "category": "Productivity",
+      "url": "https://github.com/zjok/mindzj",
+      "linkText": "GitHub",
+      "icon": "✎",
+      "tile": "wiki",
+      "added": "2026-11-22",
+      "source": "https://github.com/zjok/mindzj",
+      "download": "https://github.com/zjok/mindzj/releases",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "AGPL-3.0 (commercial licence also offered)",
+      "price": "Free",
+      "maker": "SuperJohn",
+      "longDescription": "MindZJ stores every note as a plain .md file in a folder on your own disk. It has live preview, source and reading modes, [[wiki links]] with backlinks, full-text search, a command palette, tabs and splits, math, Mermaid diagrams, snapshots of every edit, and a built-in mind-map editor.\n\nAI is optional: it can use Ollama offline, or Claude and OpenAI with your own key. Plugins run in a sandbox and follow an Obsidian-compatible API. It is built on Tauri, so the installer is about 10 MB.",
+      "builtWithAI": "The maker says so: \"I used AI vibe coding to build a fully free, open-source, and offline-first note-taking workspace: MindZJ\" (dev.to launch post).",
+      "screenshots": [
+        {
+          "src": "/assets/apps/mindzj/1.webp",
+          "alt": "MindZJ's main window with the file tree, a Markdown note in live preview and the outline",
+          "caption": "Main window"
+        },
+        {
+          "src": "/assets/apps/mindzj/2.webp",
+          "alt": "MindZJ's built-in mind-map editor with a root node and branches, beside the file tree",
+          "caption": "Mind maps"
+        }
+      ]
     }
   ]
 }
