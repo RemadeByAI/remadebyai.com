@@ -1,5 +1,5 @@
 // Loaded on every page of remadebyai.com. Three jobs (plus the screenshot viewer):
-// 1. The search box in the header: suggests matching apps as you type, from /search.json (written by
+// 1. The search box in the header (focused on page load on computers with a mouse): suggests matching apps as you type, from /search.json (written by
 //    build.js). Enter shows every match in the All apps list (/apps/?q=...). Without JavaScript the box is a
 //    plain form that opens /apps/?q=..., which directory.js filters.
 // 2. Click counting: links with data-track (Download, Visit site, Source code, featured buttons) send a
@@ -85,7 +85,8 @@
     else location.href = allUrl(query);
   }
 
-  input.addEventListener('focus', () => { load(); if (input.value.trim()) load().then(render); });
+  let quietFocus = false; // true while the page itself focuses the box on load (see below)
+  input.addEventListener('focus', () => { load(); if (input.value.trim() && !quietFocus) load().then(render); });
   input.addEventListener('input', () => { load().then(render); });
   input.addEventListener('keydown', event => {
     if (event.key === 'ArrowDown') { event.preventDefault(); highlight(active + 1); }
@@ -105,6 +106,20 @@
   });
   document.addEventListener('click', event => { if (!form.contains(event.target)) close(); });
   form.addEventListener('focusout', () => setTimeout(() => { if (!form.contains(document.activeElement)) close(); }, 150));
+
+  // Put the text cursor in the box when a page opens, so visitors can just start typing. Only on
+  // computers with a mouse (on phones and tablets it would pop up the on-screen keyboard), never when
+  // the address has a #section to jump to or the visitor has already clicked or tabbed somewhere,
+  // and without scrolling the page. The suggestions list stays closed until they type.
+  const autofocus = () => {
+    if (location.hash || !matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    if (document.activeElement && document.activeElement !== document.body) return;
+    quietFocus = true;
+    input.focus({ preventScroll: true });
+    quietFocus = false;
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', autofocus, { once: true });
+  else autofocus();
 
   // Click counting.
   const endpoint = form.dataset.clicks;
