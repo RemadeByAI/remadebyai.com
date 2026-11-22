@@ -991,6 +991,296 @@
         }
       ],
       "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 68 of 502 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files."
+    },
+    {
+      "name": "Clean Your TV",
+      "slug": "clean-your-tv",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to the stock Google TV home screen",
+      "description": "Strips the ads, tracking and preloaded bloat from an Android TV or Google TV over Wi-Fi and swaps in a clean, Apple TV-style home screen. No root, nothing uninstalled, and one command undoes it all.",
+      "category": "TV",
+      "url": "https://cleanyour.tv",
+      "linkText": "Visit site",
+      "icon": "▣",
+      "tile": "glance",
+      "added": "2026-11-22",
+      "source": "https://github.com/Gathin23/cleanyourtv",
+      "platforms": [
+        "Android"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Gathin and 200+ contributors",
+      "longDescription": "Android TVs have the same debug bridge as Android phones. Clean Your TV uses it over Wi-Fi to back up your settings, switch off the maker's telemetry, ad services, sponsored rows and preloaded apps (switched off, not deleted), and install a small native launcher as the home screen. Its lists cover 504 TV models from 138 brands.\n\nThe usual way to run it is to hand the project's prompt to a coding assistant such as Claude Code, Codex or Gemini CLI on a computer on the same Wi-Fi; it finds the bloat on your TV and asks before touching anything you might use. You can also run the same steps by hand. There is no app-store app and no prebuilt APK. Samsung, LG, Roku, Vizio and Hisense VIDAA TVs are not supported.\n\nIt started on 17 October 2026 as a before-and-after post of the maker's parents' TV that reached 8.6M views. It was the #1 trending repository on GitHub for the week of 19 to 25 October and had about 60,000 stars by late November, with coverage in TechCrunch, TechRadar, Tom's Guide, Android Authority, XDA and hundreds more.",
+      "builtWithAI": "The maker says the first TV was \"cleaned up by Claude Code over Wi-Fi\", and the project is designed to be run by a coding assistant. Checked 2026-11-22 in the repo's commit history: 1,136 of 6,869 commits are co-authored by Claude, and the repo has an AGENTS.md file.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/clean-your-tv/1.webp",
+          "alt": "The Clean Your TV launcher with a large Netflix tile focused above a row of streaming apps",
+          "caption": "The new home screen"
+        },
+        {
+          "src": "/assets/apps/clean-your-tv/2.webp",
+          "alt": "A project card listing 504 TV models, 138 brands and 31 languages, press logos, and a before-and-after of a Google TV home screen",
+          "caption": "Before and after"
+        }
+      ]
+    },
+    {
+      "name": "Free My TV",
+      "slug": "free-my-tv",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to the stock Google TV, LG and Samsung home screens",
+      "description": "A fast, ad-free home screen for Google TV, Android TV, LG webOS and Samsung Tizen TVs, with your own apps up front, trending picks from them, weather and a screensaver. One button brings the factory home screen back.",
+      "category": "TV",
+      "url": "https://freemytv.io",
+      "linkText": "Visit site",
+      "icon": "▶",
+      "tile": "capture",
+      "added": "2026-11-22",
+      "source": "https://github.com/simbasjungles/free-my-tv",
+      "download": "https://github.com/simbasjungles/free-my-tv/releases/latest",
+      "platforms": [
+        "Android"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Simba and contributors",
+      "longDescription": "Free My TV replaces the TV's home screen with a glass shelf of the streaming apps you use, with no sponsored rows or autoplaying promos. Every hour it picks a few trending titles, only from apps you already have, and it can show Continue Watching, the weather, live crypto prices, your HDMI inputs and what's playing. It switches between light and dark at your city's sunset.\n\nOn Google TV and Android TV you install it with adb from the ready APK, or ask a coding assistant (Claude Code, Codex or Antigravity) to build and install it for you. LG and Samsung TVs get their own builds. Nothing is uninstalled and there is no root.",
+      "builtWithAI": "The README says \"Built with Claude Code\" and the app is made to be adapted by AI through its CLAUDE.md. Checked 2026-11-22 in the repo's commit history: 579 of 803 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/free-my-tv/1.webp",
+          "alt": "The Free My TV home screen with three trending picks above a shelf of streaming apps",
+          "caption": "Trending picks from your own apps"
+        }
+      ]
+    },
+    {
+      "name": "Readest",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Kindle and Apple Books",
+      "description": "A modern ebook reader for EPUB, PDF, MOBI, AZW3, FB2 and comics, with highlights and notes, text-to-speech, translation and sync across all your devices. On Mac, Windows, Linux, iPhone, Android and the web.",
+      "category": "Reading",
+      "url": "https://readest.com",
+      "linkText": "Visit site",
+      "icon": "❦",
+      "tile": "wiki",
+      "added": "2026-11-22",
+      "source": "https://github.com/readest/readest",
+      "download": "https://readest.com",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Freemium",
+      "maker": "Huang Xin (Bilingify LLC) and contributors",
+      "longDescription": "Readest is a rewrite of the Foliate reader that runs everywhere. It reads EPUB, PDF, MOBI, KF8 (AZW3), FB2, CBZ, TXT, HTML and Markdown, in scrolling or page view, with highlights, bookmarks and notes, dictionary and Wikipedia lookup, full-text search, split-screen parallel reading and read-along narration. It connects to OPDS and Calibre libraries and can sync progress with KOReader devices.\n\nIt is in the App Store, Google Play and Flathub, with downloads for Windows and Linux and a web version. The app is free; optional Plus ($4.99 a month) and Pro ($9.99 a month) plans add more cloud sync storage, more AI translations and DeepL Pro.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,520 of 3,891 commits are co-authored by Claude, every month since March 2026, nearly all by the lead developer.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/readest/1.webp",
+          "alt": "Readest showing a book with highlighted passages and an annotation toolbar",
+          "caption": "Highlights and notes"
+        },
+        {
+          "src": "/assets/apps/readest/2.webp",
+          "alt": "Readest in dark mode with the theme picker open",
+          "caption": "Themes"
+        }
+      ]
+    },
+    {
+      "name": "Bitchat",
+      "slug": "bitchat",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to WhatsApp",
+      "description": "Jack Dorsey's peer-to-peer messenger that works without the internet over a Bluetooth mesh, and over Nostr relays when you are online. No accounts, no phone numbers, no servers.",
+      "category": "Messaging",
+      "url": "https://bitchat.free",
+      "linkText": "Visit site",
+      "icon": "✉",
+      "tile": "code",
+      "added": "2026-11-22",
+      "source": "https://github.com/permissionlesstech/bitchat",
+      "download": "https://apps.apple.com/us/app/bitchat-mesh/id6748219622",
+      "platforms": [
+        "iOS",
+        "macOS",
+        "Android"
+      ],
+      "license": "Unlicense (iOS and Mac), GPL-3.0 (Android)",
+      "price": "Free",
+      "maker": "Jack Dorsey and contributors (permissionlesstech)",
+      "longDescription": "Nearby phones relay messages to each other over Bluetooth Low Energy, up to seven hops, so a group can keep chatting at a protest, a festival or after a disaster with no signal. When you are online it reaches further through Nostr relays, including location channels for your block, neighbourhood or city. Private messages are end-to-end encrypted with the Noise protocol, and a triple tap wipes everything.\n\nThe iPhone and Mac app is in the App Store, and the Android app is on Google Play and GitHub. It launched in July 2025 and has had wide press coverage; Dorsey has said it had no external security review at launch.",
+      "builtWithAI": "Business Insider (July 2025) reported that Dorsey built it as a weekend project with Block's AI coding agent Goose (\"It worked within a day\"). Checked 2026-11-22 in the commit history: 201 of 1,088 commits in the iOS and Mac repo and 53 of 986 in the Android repo are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/bitchat/1.webp",
+          "alt": "A Bitchat mesh conversation between four nearby people with a photo, voice messages and text",
+          "caption": "Offline mesh chat"
+        },
+        {
+          "src": "/assets/apps/bitchat/2.webp",
+          "alt": "Bitchat's globe for picking a geohash location channel",
+          "caption": "Location channels"
+        }
+      ]
+    },
+    {
+      "name": "Ferrite",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Typora",
+      "description": "A fast, native text editor for Markdown, JSON, YAML and TOML with a live rendered view, split view, Mermaid diagrams and PDF export, for Windows and Linux (Mac experimental).",
+      "category": "Productivity",
+      "url": "https://getferrite.dev",
+      "linkText": "Visit site",
+      "icon": "¶",
+      "tile": "",
+      "added": "2026-11-22",
+      "source": "https://github.com/OlaProeis/Ferrite",
+      "download": "https://github.com/OlaProeis/Ferrite/releases/latest",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Ola Prøis",
+      "longDescription": "Ferrite is written in Rust with egui, so it starts fast and stays light even on very large files. You can edit the raw text, the rendered page or both side by side, with scroll sync, Mermaid diagrams, multi-cursor editing, code folding, CSV cell editing, spell check, Zen mode and export to PDF or themed HTML. It keeps your files' encoding and line endings.\n\nWindows builds are signed. The app is developed and tested on Windows and Linux; the Mac build is not notarized and is described as experimental.",
+      "builtWithAI": "The README says: \"This project is 100% AI-generated code. All Rust code, documentation, and configuration was written by Claude (Anthropic) via Cursor.\" The maker publishes the prompts and handover documents used to build it.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/ferrite/1.webp",
+          "alt": "Ferrite in split view with Markdown source on the left and the rendered page with a Mermaid flowchart on the right",
+          "caption": "Split view with a Mermaid diagram"
+        },
+        {
+          "src": "/assets/apps/ferrite/2.webp",
+          "alt": "Ferrite's raw editor in dark mode with a file tree and outline",
+          "caption": "Raw editor"
+        }
+      ]
+    },
+    {
+      "name": "Inbox Zero",
+      "slug": "inbox-zero",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Superhuman and Fyxer",
+      "description": "An AI email assistant for Gmail and Outlook that sorts your inbox, pre-drafts replies in your style and bulk-unsubscribes, plus a fast email client. Self-host it free or use the hosted service.",
+      "category": "Email",
+      "url": "https://www.getinboxzero.com",
+      "linkText": "Visit site",
+      "icon": "✓",
+      "tile": "capture",
+      "added": "2026-11-22",
+      "source": "https://github.com/elie222/inbox-zero",
+      "platforms": [
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Freemium",
+      "maker": "Elie Steinbock and contributors",
+      "longDescription": "The assistant works in the background on your Gmail or Outlook account. You tell it in plain English how to handle mail, and it labels and files messages, drafts replies in your tone, tracks what you still need to answer, blocks cold emails, bulk-archives and unsubscribes, briefs you before meetings and saves attachments to Google Drive or OneDrive. You can also chat with it from Slack or Telegram.\n\nThe separate email client has a split inbox and all your accounts in one place, on the web and desktop, with iPhone and Android apps. You can self-host it with Docker or use the hosted version at getinboxzero.com.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,250 of 12,016 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/inbox-zero/1.webp",
+          "alt": "Inbox Zero's assistant settings with plain-English rules for handling incoming email",
+          "caption": "Rules in plain English"
+        },
+        {
+          "src": "/assets/apps/inbox-zero/2.webp",
+          "alt": "The Inbox Zero email client with a list of messages",
+          "caption": "Email client"
+        }
+      ]
+    },
+    {
+      "name": "OpenSEO",
+      "slug": "openseo",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Semrush and Ahrefs",
+      "description": "A pay-as-you-go SEO tool for keyword research, rank tracking, competitor and backlink analysis, site audits and AI visibility, with an MCP server so AI agents can use your data.",
+      "category": "Business",
+      "url": "https://openseo.so",
+      "linkText": "Visit site",
+      "icon": "↗",
+      "tile": "glance",
+      "added": "2026-11-22",
+      "source": "https://github.com/every-app/open-seo",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Freemium",
+      "maker": "Ben Senescu (EveryApp) and contributors",
+      "longDescription": "OpenSEO covers the main SEO jobs without a big monthly subscription: keyword research, rank tracking, competitor insights, backlinks, site audits and tracking how AI assistants mention you. Instead of a flat fee you bring your own DataForSEO API key and pay only for the data you use.\n\nYou can self-host it with Docker, on Cloudflare or through EveryApp, or use the hosted version, which you can try free and which has a $10 a month subscription. Its MCP server and agent skills let Claude Code, ChatGPT, Codex and other agents work with your SEO data.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 141 of 1,153 commits are co-authored by Claude, and the repo has an AGENTS.md file. The README invites users to \"fork and vibe code your own custom tool.\"",
+      "screenshots": [
+        {
+          "src": "/assets/apps/openseo/1.webp",
+          "alt": "OpenSEO's domain overview with traffic and backlink charts",
+          "caption": "Domain overview"
+        },
+        {
+          "src": "/assets/apps/openseo/2.webp",
+          "alt": "A keyword research chart of 300 keyword ideas by difficulty and monthly searches",
+          "caption": "Keyword research"
+        }
+      ]
+    },
+    {
+      "name": "Voicebox",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to ElevenLabs and Wispr Flow",
+      "description": "A local AI voice studio: clone a voice from a few seconds of audio, generate speech in 23 languages, and dictate into any app with a hotkey. Everything runs on your own computer.",
+      "category": "Audio",
+      "url": "https://voicebox.sh",
+      "linkText": "Visit site",
+      "icon": "◉",
+      "tile": "voice",
+      "added": "2026-11-22",
+      "source": "https://github.com/jamiepine/voicebox",
+      "download": "https://github.com/jamiepine/voicebox/releases/latest",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Jamie Pine and contributors",
+      "longDescription": "Voicebox covers both halves of voice: speech out, like ElevenLabs, and dictation in, like Wispr Flow. It has eight text-to-speech engines, zero-shot voice cloning and 50+ preset voices, effects such as pitch, reverb and compression, and no length limit. A global hotkey transcribes your speech with Whisper and pastes it into whatever you are typing in. Its MCP server lets AI agents such as Claude Code or Cursor speak to you in a voice you choose.\n\nModels and voice data never leave your machine. There are installers for Apple silicon and Intel Macs and for Windows; Linux users build from source.",
+      "builtWithAI": "The README says Voicebox \"is built and maintained with Capy\", an AI agent tool: \"its agents do the engineering, directed by Jamie\" (voicebox.sh/built-with-capy). Checked 2026-11-22: 68 of 813 commits are also co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/voicebox/1.webp",
+          "alt": "The Voicebox studio with voice profiles and a generated speech waveform",
+          "caption": "Voice studio"
+        },
+        {
+          "src": "/assets/apps/voicebox/2.webp",
+          "alt": "Voicebox's story editor with clips from several voices on a timeline",
+          "caption": "Stories with several voices"
+        }
+      ]
     }
   ]
 }
