@@ -111,6 +111,8 @@ function head({ title, description, canonical, ogType = 'website', scripts = '' 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#090d0b">
+  <meta name="color-scheme" content="dark">
+  <meta name="darkreader-lock">
   <meta name="description" content="${esc(description)}">
   <title>${esc(title)}</title>
   <link rel="canonical" href="${SITE}${canonical}">
