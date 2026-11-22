@@ -16,7 +16,26 @@
       "featureText": "Use it with personal inboxes and Microsoft 365 business accounts. Free for personal email, with paid plans for business accounts.",
       "featureLinkText": "Visit InCloseMail",
       "featureArt": "inbox",
-      "added": "2026-11-21"
+      "added": "2026-11-21",
+      "download": "https://inclosemail.com/download.html",
+      "platforms": [
+        "Windows"
+      ],
+      "price": "Freemium",
+      "maker": "EmuKey LLC",
+      "longDescription": "InCloseMail was checked against classic Outlook screen by screen: the ribbon, folder pane, reading pane and To-Do Bar, Outlook's keyboard shortcuts and right-click menus, .pst import and export, rules and Quick Steps, calendar, people and tasks, shared mailboxes and Microsoft 365 Groups.\n\nIt adds things Outlook doesn't have: AI agents such as Claude can read and draft mail in the mailboxes you choose, Clean Up My Inbox sorts thousands of messages into groups you can act on at once, you can change any keyboard shortcut, and it keeps working offline during a Microsoft 365 outage.\n\nIt is free forever for Outlook.com, Hotmail, Live and other personal Microsoft accounts. Microsoft 365 work accounts will cost $3 per user per month ($36 a year) after the beta, and are free during it. It runs on 64-bit Windows 10 (version 1809 or later) and Windows 11.",
+      "screenshots": [
+        {
+          "src": "https://inclosemail.com/screenshot.png",
+          "alt": "InCloseMail showing an Inbox with the ribbon, the folder list with several accounts and shared mailboxes, the message list and the reading pane",
+          "caption": "Inbox with shared mailboxes"
+        },
+        {
+          "src": "https://inclosemail.com/screenshot-dark.png",
+          "alt": "The same InCloseMail Inbox in Dark Mode",
+          "caption": "Dark Mode"
+        }
+      ]
     },
     {
       "name": "DesktopWiki",
@@ -29,7 +48,27 @@
       "linkText": "Visit site",
       "icon": "▤",
       "tile": "wiki",
-      "added": "2026-11-21"
+      "added": "2026-11-21",
+      "download": "https://desktopwiki.com/download.html",
+      "platforms": [
+        "Windows",
+        "Web"
+      ],
+      "price": "Freemium",
+      "maker": "EmuKey LLC",
+      "longDescription": "DesktopWiki gives a family or small team spaces, a page tree and a visual editor, the way classic team wikis work, plus a password manager for everyone's logins. You install it on one Windows PC, and everyone else opens it in a browser on a phone or another computer.\n\nThere is no server, database or cloud account to set up: the whole wiki lives in one file you can back up by copying it. It can import from Confluence and can be opened up for use away from home.\n\nIt is free for one person. Family (up to 6 people) is $49 a year, Team (up to 18) $99 and Business (up to 60) $199, on sale after the beta, with every feature in every plan. The host PC needs 64-bit Windows 10 (version 1809 or later) or Windows 11.",
+      "screenshots": [
+        {
+          "src": "https://desktopwiki.com/features/img/wiki-light.png",
+          "alt": "DesktopWiki in a browser: the Household space's page tree and a page about the furnace with a warning panel and a table of service visits",
+          "caption": "A household page"
+        },
+        {
+          "src": "https://desktopwiki.com/features/img/wiki-dark.png",
+          "alt": "The same DesktopWiki page in dark mode",
+          "caption": "Dark mode"
+        }
+      ]
     },
     {
       "name": "macshot",
@@ -146,7 +185,16 @@
       "tile": "bar",
       "added": "2026-11-21",
       "license": "GPL-3.0",
-      "price": "Free"
+      "price": "Free",
+      "download": "https://opensourcebarware.com/download",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "maker": "Richard B. Jamison",
+      "source": "https://github.com/RichardBJamison/open-source-barware",
+      "longDescription": "Walk your shelves and say what you see (\"Tito's, half. Jameson, full.\") and Open Source Barware builds the count sheet, prices every bottle and tells you what's short and what to reorder. Import last week's sales from your POS and it flags bottles that came up short.\n\nIt runs on your own Mac or Windows laptop, works without internet or AI (AI is optional, for reading invoice photos), counts in English or Spanish and can run several locations. There is a sample bar to try in the browser. It is free with no paid tier, under GPLv3.",
+      "builtWithAI": "The maker says AI is what let people from the bar trade build the tool themselves. The GitHub repo keeps CLAUDE.md and AGENTS.md files for AI coding agents, and 56 of its 249 commits (checked 2026-11-22) are co-authored by Claude."
     },
     {
       "name": "PhotoCraft",
