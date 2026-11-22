@@ -107,13 +107,20 @@
 
   // Click counting.
   const endpoint = form.dataset.clicks;
-  if (endpoint && navigator.sendBeacon) {
+  // Sent with fetch(keepalive), not navigator.sendBeacon: some privacy extensions block every
+  // sendBeacon ("ping") request, which silently dropped all clicks. sendBeacon is only a fallback.
+  if (endpoint) {
+    const send = body => {
+      try {
+        fetch(endpoint, { method: 'POST', body, keepalive: true, mode: 'cors', credentials: 'omit', headers: { 'Content-Type': 'text/plain' } })
+          .catch(() => { try { navigator.sendBeacon && navigator.sendBeacon(endpoint, new Blob([body], { type: 'text/plain' })); } catch { /* ignore */ } });
+      } catch { /* never block the link */ }
+    };
     const count = event => {
       if (event.type === 'auxclick' && event.button !== 1) return;
       const link = event.target.closest('a[data-track]');
       if (!link) return;
-      const body = JSON.stringify({ app: link.dataset.app || '', kind: link.dataset.track, page: location.pathname });
-      try { navigator.sendBeacon(endpoint, new Blob([body], { type: 'text/plain' })); } catch { /* never block the link */ }
+      send(JSON.stringify({ app: link.dataset.app || '', kind: link.dataset.track, page: location.pathname }));
     };
     document.addEventListener('click', count, { capture: true });
     document.addEventListener('auxclick', count, { capture: true }); // middle-click opens a new tab
