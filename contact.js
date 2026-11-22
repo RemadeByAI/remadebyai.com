@@ -69,6 +69,31 @@
     if (progress) progress.hidden = !sending;
   }
 
+  // After a successful send, swap the fields for a clear "we got it" panel, so nobody
+  // wonders whether it worked and sends the same request again.
+  const fields = [...form.children].filter(el => el !== status);
+  const sent = document.createElement('div');
+  sent.className = 'form-sent';
+  sent.hidden = true;
+  sent.setAttribute('tabindex', '-1');
+  sent.innerHTML = '<p class="form-sent-title">✓ Got it, thanks!</p>' +
+    '<p class="form-sent-text"></p>' +
+    '<button type="button" class="button form-sent-again">List another app</button>';
+  form.appendChild(sent);
+  function showSent(appName) {
+    sent.querySelector('.form-sent-text').textContent =
+      `Your request${appName ? ` for ${appName}` : ''} reached us. There's no need to send it again. We read every request and reply when we add a listing.`;
+    fields.forEach(el => { el.hidden = true; });
+    sent.hidden = false;
+    sent.focus({ preventScroll: true });
+    sent.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  sent.querySelector('.form-sent-again').addEventListener('click', () => {
+    sent.hidden = true;
+    fields.forEach(el => { el.hidden = el.classList.contains('form-progress'); });
+    form.querySelector('input[name="name"]').focus();
+  });
+
   form.addEventListener('submit', async event => {
     event.preventDefault();
     if (button.disabled) return;
@@ -95,8 +120,10 @@
       const res = await fetch(endpoint, { method: 'POST', body: data });
       const out = await res.json().catch(() => ({}));
       if (res.ok && out.ok) {
+        const appName = (data.get('app_name') || '').toString().trim();
         form.reset();
-        say('Thanks! Your request is on its way. We reply to every request when we add a listing.', 'ok');
+        say('');
+        showSent(appName);
       } else {
         say(out.error || 'Something went wrong. Please email listings@remadebyai.com instead.', 'error');
       }
