@@ -1839,6 +1839,121 @@
           "caption": "A win and a streak reward"
         }
       ]
+    },
+    {
+      "name": "Claude of Tanks",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by World of Tanks",
+      "description": "Armored combat in your browser on desktop or phone: 311 real-world tanks modelled in code, 33 destructible battlefields and 14 battle modes, solo against bots or with friends in a room.",
+      "category": "Games",
+      "url": "https://cot.kevinliu.studio/",
+      "linkText": "Play now",
+      "icon": "◈",
+      "tile": "capture",
+      "added": "2026-11-22",
+      "source": "https://github.com/Kevin-Liu-01/Claude-of-Tanks",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Kevin B. Liu",
+      "longDescription": "Shells travel, armor has real geometry, modules break, buildings fall and wrecks stay. Modes include Standard Battle, Capture the Flag, Frontline Assault with a six-operation campaign, Endless Horde co-op, Gun Game and more, plus a practice range. Up to eight phones can join one couch battle from a QR code on the big screen.\n\nYou can also watch bot battles, ride along in any tank, inspect any vehicle's armor and internals in the Tank Gallery, or stage scenes and capture video in Scene Studio. It works with mouse and keyboard, controllers or touch, in English and Simplified Chinese. All vehicle models and battlefields are the maker's own.",
+      "builtWithAI": "The README says the game was built end to end with Claude and Codex assisting in research, vehicle authoring, simulation, networking, design, testing and deployment, directed by its creator. Checked 2026-11-22: 18,303 of 22,489 commits (81%) are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/claude-of-tanks/1.webp",
+          "alt": "A T-90MS tank in digital camouflage firing across grass at Saltwind Narrows",
+          "caption": "Saltwind Narrows"
+        },
+        {
+          "src": "/assets/apps/claude-of-tanks/2.webp",
+          "alt": "A Leopard 2A4M in white camouflage firing along a dirt track on Monsoon Ridge",
+          "caption": "Monsoon Ridge"
+        }
+      ]
+    },
+    {
+      "name": "Tower of Time",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by tower defense games",
+      "description": "A tower defense game where you can rewind time: build turrets, manage energy, and when the waves break through, roll the clock back and try a new plan. Free to play in your browser.",
+      "category": "Games",
+      "url": "https://m4v3k.itch.io/tower-of-time",
+      "linkText": "Play now",
+      "icon": "⧗",
+      "tile": "glance",
+      "added": "2026-11-22",
+      "source": "https://github.com/maciej-trebacz/tower-of-time-game",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Maciej Trebacz",
+      "longDescription": "Made for Beginner's Jam Summer 2025. Choose from basic turrets, sniper towers, slowdown towers and splash damage towers, and spend energy both on building and on rewinding. It plays with keyboard or gamepad.",
+      "builtWithAI": "The README calls it a vibe coding proof of concept: about 95% of the code was written by AI, using Augment Code and Cursor with Claude Sonnet 4 as the main model (plus some OpenAI o3 and Claude Opus 4). The prompts are published in the repo.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/tower-of-time/1.webp",
+          "alt": "Tower of Time gameplay with towers defending against waves of enemies",
+          "caption": "Defending the base"
+        }
+      ]
+    },
+    {
+      "name": "Game Master Claude",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by tabletop role-playing games",
+      "description": "Turns Claude Code into a persistent game master for text role-playing campaigns, with lasting memory, real dice rolls and a world that keeps moving between sessions.",
+      "category": "Games",
+      "url": "https://github.com/Sstobo/Claude-Code-Game-Master",
+      "linkText": "View on GitHub",
+      "icon": "⚀",
+      "tile": "wiki",
+      "added": "2026-11-22",
+      "source": "https://github.com/Sstobo/Claude-Code-Game-Master",
+      "platforms": [
+        "macOS",
+        "Linux"
+      ],
+      "license": "CC BY-NC-SA 4.0",
+      "price": "Free",
+      "maker": "Sean Stobo",
+      "longDescription": "Start a new world with /new-game, where a questionnaire shapes a custom setting and ruleset, or import a PDF of a book you own and step into it. The harness keeps a campaign journal, a custom rulebook and a living world, and Claude narrates, rolls the dice and runs the table.\n\nYou need Claude Code. The install script sets up everything on macOS and Linux.",
+      "builtWithAI": "Built for Claude Code and largely with it. Checked 2026-11-22: 104 of 176 commits are co-authored by Claude."
+    },
+    {
+      "name": "Sakura Fantasy",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by relaxing exploration games",
+      "description": "A boat journey down a Japanese river valley in any season and at any hour, rendered live in your browser: cherry trees, a drum bridge, a pagoda village, a bamboo gorge and a tunnel of torii.",
+      "category": "Games",
+      "url": "https://sakura.billpwchan.art/",
+      "linkText": "Play now",
+      "icon": "❀",
+      "tile": "",
+      "added": "2026-11-22",
+      "source": "https://github.com/billpwchan/sakura-fantasy",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Bill Chan",
+      "longDescription": "You sit in a reed-roofed river boat while a boatman sculls you downstream, then the season turns and the journey begins again. Watch, or take the camera and stop to look around. It uses three.js and WebGL 2 with no game engine, and was featured in Ruan Yifeng's weekly and the Codrops Creative Hub. From the maker of Neon Zenith.",
+      "builtWithAI": "The README says it was built with Claude Code: the maker set the direction and reviewed every pass, and the model wrote the code, the shaders, the Blender asset scripts and the audio build.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/sakura-fantasy/1.webp",
+          "alt": "A reed-roofed boat under cherry trees at dawn, its lantern lit",
+          "caption": "Dawn under the cherry trees"
+        }
+      ]
     }
   ]
 }
