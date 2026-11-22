@@ -1881,7 +1881,9 @@
       ],
       "keywords": [
         "pokemon",
-        "creature collector"
+        "creature collector",
+        "gacha",
+        "collector"
       ]
     },
     {
@@ -2214,6 +2216,131 @@
         "soccer",
         "premier league",
         "fantasy football"
+      ]
+    },
+    {
+      "name": "Sprout Quest",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by cozy mobile action RPGs",
+      "description": "A cute action RPG for your phone's browser: fight with a sword, chop trees, mine crystal, craft armour and take on the Emberwyrm boss.",
+      "category": "Games",
+      "url": "https://aibengineering.github.io/sprout-quest/",
+      "linkText": "Play now",
+      "icon": "✿",
+      "tile": "glance",
+      "added": "2026-11-22",
+      "source": "https://github.com/aibengineering/sprout-quest",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "aibengineering",
+      "longDescription": "Best played on a phone held upright. Every armour piece changes how your hero looks, and axes and picks level up with you. The repo has no licence file, so the source is viewable but not openly licensed.",
+      "builtWithAI": "The README says Sprout Quest was built entirely by Claude Opus 5.5 in Claude Code, starting on the model's release day: the code, the Blender art pipeline, every 3D model, the tests and CI. A human plays it and gives feedback; no code or art was written by hand. Checked 2026-11-22: 232 of 310 commits are co-authored by Claude.",
+      "keywords": [
+        "rpg",
+        "mobile rpg",
+        "crafting"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/sprout-quest/1.webp",
+          "alt": "Chopping an oak tree in Sprout Quest",
+          "caption": "Chopping wood"
+        }
+      ]
+    },
+    {
+      "name": "Idle Tactics: Ascension",
+      "slug": "idle-tactics-ascension",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by idle auto-battler RPGs",
+      "description": "A pixel-art idle auto-battler in your browser: pick a Knight, Lancer or Swordsman, let the fights run, and gamble shards at the forge for better gear. Winner of the VibeBlitz game jam.",
+      "category": "Games",
+      "url": "https://idletactics.xyz/",
+      "linkText": "Play now",
+      "icon": "⚔",
+      "tile": "bar",
+      "added": "2026-11-22",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "H4rd",
+      "longDescription": "It took first place out of 72 entries in VibeBlitz, a four-week game jam for AI-built games run by vibecode.game (Yield Guild Games) with Animoca Brands' Minds. It is single player and built in Unity for the web.",
+      "builtWithAI": "Its vibecode.game listing says it was built with Claude and a Minds AI agent (Mister.code). IT Brief covered its jam win.",
+      "keywords": [
+        "idle rpg",
+        "auto battler",
+        "afk",
+        "gacha"
+      ]
+    },
+    {
+      "name": "The Lost Storm",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by Diablo-style action RPGs",
+      "description": "A free isometric action RPG in your browser on a computer or phone: loot with rarities and affixes, a skill tree, bosses, a ladder and a shared hideout with chat and trading.",
+      "category": "Games",
+      "url": "https://theloststorm.com/",
+      "linkText": "Play now",
+      "icon": "☇",
+      "tile": "code",
+      "added": "2026-11-22",
+      "source": "https://github.com/marginsystems/the-lost-storm",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Margin Systems",
+      "longDescription": "You wake in a white mist with a worn journal and walk out into a hall under a night storm. The game is in alpha: the Hall of Time, a hideout with a trader, an auctioneer and a stash, and a boss lair are in. No install or account is needed. It is built with Three.js and TypeScript, with no game engine.",
+      "builtWithAI": "The maker says on the three.js forum that it was built with AI coding agents, with every change going through a reviewed pull request.",
+      "keywords": [
+        "diablo",
+        "arpg",
+        "path of exile",
+        "loot"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/the-lost-storm/1.webp",
+          "alt": "The Hideout at the fire in The Lost Storm",
+          "caption": "The Hideout"
+        },
+        {
+          "src": "/assets/apps/the-lost-storm/2.webp",
+          "alt": "The skill tree in The Lost Storm",
+          "caption": "The skill tree"
+        }
+      ]
+    },
+    {
+      "name": "Escape from the Depths",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by idle roguelites",
+      "description": "An idle survival roguelite in your browser: pick a dwarf, elf, wizard or ranger, dive deeper each run and carry relics between runs.",
+      "category": "Games",
+      "url": "https://escape-from-the-depths.netlify.app/",
+      "linkText": "Play now",
+      "icon": "⛏",
+      "tile": "wiki",
+      "added": "2026-11-22",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "R2games",
+      "longDescription": "A single-player entry from the VibeBlitz game jam. The art, music and sound were made by hand.",
+      "builtWithAI": "The maker's jam listing says Claude did the implementation (engine code, sprite and audio integration, animation and debugging) and a Minds AI agent helped with design, while art, music and sound were made by hand.",
+      "keywords": [
+        "idle rpg",
+        "roguelite",
+        "roguelike"
       ]
     }
   ]
