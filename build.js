@@ -144,6 +144,8 @@ ${header()}
 // Stylesheet, the site-wide search script and the analytics beacon, shared by every page.
 function siteAssets() {
   const lines = [
+    // Light/dark mode: runs before the page paints. Dark unless the visitor chose light (key shared with InCloseMail and DesktopWiki).
+    `  <script>(function(){var t='dark';try{if(localStorage.getItem('theme')==='light')t='light'}catch(e){}var d=document.documentElement;d.setAttribute('data-theme',t);if(t==='light'){var m=document.querySelector('meta[name="color-scheme"]');if(m)m.content='light';m=document.querySelector('meta[name="theme-color"]');if(m)m.content='#f5f8f3'}})();</script>`,
     `  <link rel="stylesheet" href="/styles.css?v=${ASSET_VERSION.css}">`,
     `  <script src="/site.js?v=${ASSET_VERSION.site}" defer></script>`,
   ];
@@ -161,6 +163,7 @@ function header() {
       <label><span class="visually-hidden">Search all apps</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
       <ul class="site-search-results" id="site-search-results" role="listbox" aria-label="Matching apps" hidden></ul>
     </form>
+    <button class="theme-toggle" type="button" aria-label="Switch to light mode"><span class="to-light"><span class="icon" aria-hidden="true">☀\uFE0E</span><span class="label">Light mode</span></span><span class="to-dark"><span class="icon" aria-hidden="true">☾</span><span class="label">Dark mode</span></span></button>
     <a class="company" href="https://emukey.com/">EmuKey LLC</a>
   </div>
 </header>`;
