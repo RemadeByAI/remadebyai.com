@@ -6,7 +6,7 @@ compatibility_date = "2026-11-01"
 
 [[kv_namespaces]]
 binding = "CLICKS"
-id = "<KV namespace id>"
+id = "d879c0c85f7d440887a8bc0f24ce156a"
 
 [vars]
 ALLOWED_ORIGINS = "https://remadebyai.com,https://www.remadebyai.com"

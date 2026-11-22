@@ -25,8 +25,8 @@ const GENERATED_DIRS = ['apps', 'categories', 'new'];
 // - clicksEndpoint: the clicks Worker (clicks-worker/) that counts Download, Visit site and Source code
 //   button clicks per app. Cloudflare Web Analytics can't count clicks on links that leave the site.
 const ANALYTICS = {
-  cloudflareToken: '',
-  clicksEndpoint: '',
+  cloudflareToken: '0f5ef649282441df8c6138452124737d',
+  clicksEndpoint: 'https://remadebyai-clicks.remadebyai.workers.dev/click',
 };
 
 // Filter values used by the home page filters and the search index.
