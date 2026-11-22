@@ -1,6 +1,6 @@
 # Handoff notes
 
-Last updated: 2026-11-21 (live at 2c52a37: 12 apps in 9 categories, page per app, wide-screen layout). Read this first when picking up work on the site.
+Last updated: 2026-11-22 (live at 4328a65: 12 apps in 9 categories, filled-in listings, List your app form). Read this first when picking up work on the site.
 
 ## Where things are
 
@@ -54,12 +54,12 @@ Only state facts that have been checked. Leave unknown fields out; the page hide
 ## Open items
 
 - Email: all four domains (emukey.com, desktopwiki.com, inclosemail.com, remadebyai.com) are healthy in one Microsoft 365 tenant. emukey.com is the only user; the others are shared mailboxes. Do not suggest removing domains or null MX. DMARC (checked 2026-11-21): desktopwiki, inclosemail and remadebyai are `v=DMARC1; p=none`; emukey.com keeps `rua=mailto:dmarc@emukey.com`. Only safe tightening later: p=none -> quarantine.
-- listings@remadebyai.com (used by the List your app button) must exist in Microsoft 365 as a shared mailbox or alias; owner to set up.
+- listings@remadebyai.com exists and is a verified Cloudflare Email Routing destination (2026-11-22).
 - After the next push, check the link preview with a sharing debugger (for example LinkedIn Post Inspector or opengraph.xyz).
 
 ## Ideas
 
-- **Contact form (built 2026-11-21, not switched on yet):** code is in `forms-worker/` (Cloudflare Worker) and `contact.js` + `#list-form` in `index.html`. The form stays hidden until its `data-endpoint` and `data-sitekey` are set. Setup steps: `forms-worker/README.md`. Waiting on: listings@remadebyai.com in M365, Email Routing on enclosemail.com, a Turnstile widget, and deploying the Worker.
+- **Contact form (live 2026-11-22 as 4328a65):** the List your app section has a form (`contact.js` + `#list-form` in `index.html`) that posts to the Cloudflare Worker `remadebyai-forms` at https://forms.enclosemail.com/submit, which checks Turnstile and emails listings@remadebyai.com from forms@enclosemail.com. Code and setup notes: `forms-worker/`. The mailto button stays as a fallback.
 - **Contact form (original plan):** add a form on the site so visitors don't have to use email. The owner has two domains on Cloudflare for this: enclosemail.com and desktopwiki.net. Plan: send form submissions from enclosemail.com to contact points such as listings@remadebyai.com. Likely build: a Cloudflare Worker that receives the form and sends the mail (Cloudflare Email Routing / send_email), with Turnstile for spam protection. Keep the mailto as a fallback.
 
 - **Contact / "list your app" (live 2026-11-21 as d725de8; see Site layout):** the site needs a way for people to contact us, mainly so app makers can ask to have their app listed. Options: a mailto to an emukey.com address or a remadebyai.com shared mailbox (M365 receives mail for that domain), a hosted form service (e.g. Formspree), or a GitHub issue template on the repo.
