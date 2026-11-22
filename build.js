@@ -227,7 +227,8 @@ function categoryTiles(categories) {
 function appPage(app, all) {
   const facts = [
     ['Category', `<a href="/categories/${app.categorySlug}/">${esc(app.category)}</a>`],
-    ['Replaces', esc(app.alternative.replace(/^Alternative to\s*/i, ''))],
+    // Games say "Inspired by X" instead of "Alternative to X"; the facts row follows suit.
+    [/^Inspired by\s/i.test(app.alternative) ? 'Inspired by' : 'Replaces', esc(app.alternative.replace(/^(Alternative to|Inspired by)\s*/i, ''))],
     ['Platforms', esc((app.platforms || []).join(', '))],
     ['Licence', esc(app.license)],
     ['Price', esc(app.price)],
@@ -404,7 +405,8 @@ ${foot}`;
 function searchIndex(apps) {
   return JSON.stringify({
     apps: [...apps].sort(byName).map(a => ({
-      n: a.name, u: `/apps/${a.slug}/`, r: a.alternative.replace(/^Alternative to\s*/i, ''),
+      n: a.name, u: `/apps/${a.slug}/`, r: a.alternative.replace(/^(Alternative to|Inspired by)\s*/i, ''),
+      ...(/^Inspired by\s/i.test(a.alternative) ? { i: 1 } : {}),
       c: a.category, m: a.maker || a.owner, p: a.platforms || [], d: a.description,
       $: priceTags(a), l: licenceTags(a), o: a.group === 'open',
     })),

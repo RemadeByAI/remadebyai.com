@@ -1548,6 +1548,297 @@
           "caption": "Light mode"
         }
       ]
+    },
+    {
+      "name": "World of ClaudeCraft",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by classic MMORPGs",
+      "description": "A complete classic-style online role-playing game you can play free in your browser or in desktop and phone apps: nine classes, quests, dungeons, raids and ranked PvP in one shared world.",
+      "category": "Games",
+      "url": "https://worldofclaudecraft.com/",
+      "linkText": "Play now",
+      "icon": "⚔",
+      "tile": "glance",
+      "added": "2026-11-22",
+      "source": "https://github.com/levy-street/world-of-claudecraft",
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "longDescription": "Climb from Eastbrook Vale through marshes and mountains to level-cap frontiers, with talent trees, instanced dungeons with a Heroic tier, world bosses, a ten-player raid and procedural rift portals for the endgame. There are mounts, ten crafts fed by four gathering trades, a player market, guilds, a dungeon finder and 1v1 and 2v2 arena ladders.\n\nTerrain, water, weather and towns are generated in code at runtime, and the game is translated into 22 languages. You can host your own world with one command, or train AI agents to play it through a headless Gym interface.\n\nThe game has an optional crypto token ($WOC) for cosmetic extras and wallet flair. The makers say it never sells power, and you can play without it.",
+      "builtWithAI": "Checked 2026-11-22: 8,457 of the repo's 22,795 commits (37%) are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/world-of-claudecraft/1.webp",
+          "alt": "A mounted guild gathering on a road in World of ClaudeCraft",
+          "caption": "A guild muster on the road"
+        },
+        {
+          "src": "/assets/apps/world-of-claudecraft/2.webp",
+          "alt": "Spell effects in a torch-lit dungeon hall",
+          "caption": "A dungeon fight"
+        }
+      ]
+    },
+    {
+      "name": "Legends of Future Past",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by 1990s online text adventures",
+      "description": "An award-winning 1992 online text adventure from CompuServe, lost when it shut down in 1999 and rebuilt by its original creator from the surviving game scripts. Free to play in your browser.",
+      "category": "Games",
+      "url": "https://lofp.metavert.io",
+      "linkText": "Play now",
+      "icon": "❦",
+      "tile": "wiki",
+      "added": "2026-11-22",
+      "source": "https://github.com/metavert-io/lofp",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Jon Radoff",
+      "longDescription": "Legends of Future Past was one of the first commercial online multiplayer games, a text world (a MUD) set in the Shattered Realms of Andor with eight races, five schools of magic, psionic combat and over two thousand rooms. Computer Gaming World gave it a Special Award for Artistic Excellence in 1993.\n\nThe original engine's source code was lost, but former Game Masters had kept the script files that define every room, item, monster and quest. The new engine runs those original scripts, so the world is the real one. The server is free to play, and you can host your own copy.",
+      "builtWithAI": "Jon Radoff, who made the original game in 1992, says in the README that he used Claude Code to reconstruct it from the old script files, manuals and captured play sessions, in a weekend of agentic engineering. Checked 2026-11-22: all 120 commits are co-authored by Claude."
+    },
+    {
+      "name": "Voidstruck",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by space exploration games",
+      "description": "A whole procedural galaxy in one 299 kB web page: fly, land on planets and walk them, mine, trade and find your way back to Earth, with a story that has three endings.",
+      "category": "Games",
+      "url": "https://voidstruck.com/",
+      "linkText": "Play now",
+      "icon": "✺",
+      "tile": "voice",
+      "added": "2026-11-22",
+      "source": "https://github.com/vitaminclaude/voidstruck",
+      "platforms": [
+        "Web"
+      ],
+      "license": "PolyForm Strict 1.0.0 (source available)",
+      "price": "Free",
+      "maker": "Vitamax",
+      "longDescription": "A jump drive test goes wrong and throws you 2,500 light years from home. Every star, planet, moon and name is worked out from a seed as you arrive, and you can fly down through the clouds, land and walk among plants and animals. Build bases that earn while you travel, trade for upgrades and fight or flee raiders.\n\nThere are no images, models or sound files: the pictures are WebGPU shaders and the ten-piece soundtrack is synthesised in the browser. It is best in a current Chrome or Edge on a desktop with a mouse and keyboard, and the single file also works offline.",
+      "builtWithAI": "The maker says in the README: \"I didn't write the code. Claude wrote all of it in Claude Code, over about four days and 170 commits.\" The maker supplied the idea, the story and the choices of look and music.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/voidstruck/1.webp",
+          "alt": "A spaceship close to a black hole in Voidstruck",
+          "caption": "Close to a black hole"
+        },
+        {
+          "src": "/assets/apps/voidstruck/2.webp",
+          "alt": "Sunrise over a living planet with plants",
+          "caption": "Sunrise over a living world"
+        }
+      ]
+    },
+    {
+      "name": "Long Wind",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by wuxia action games",
+      "description": "A real-time sword-fighting action game in the browser: one swordsman, three chapters across a golden steppe, a rainy bamboo forest and a lantern-lit river town, each with a boss.",
+      "category": "Games",
+      "url": "https://jbang2004.github.io/long-wind/",
+      "linkText": "Play now",
+      "icon": "⚚",
+      "tile": "bar",
+      "added": "2026-11-22",
+      "source": "https://github.com/jbang2004/long-wind",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "jbang2004",
+      "longDescription": "Combat has light and heavy combos, blocking and perfect parries, dodges, stance breaks and finishers, sword waves and lock-on, against archers, shield bearers, spearmen and assassins. It is built with three.js and WebGL and needs no install. The README is in Chinese with an English summary.",
+      "builtWithAI": "The README says every line of code was written by Claude Opus 5.5 in Claude Code, with the first playable version done in about a day. The maker described what they wanted in Chinese, played and gave feedback; the design, code, debugging, tests and tuning were done by the AI. Character models came from Tripo AI and motion from Mixamo.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/long-wind/1.webp",
+          "alt": "A swordsman on a golden steppe at dusk",
+          "caption": "Chapter one: the steppe"
+        },
+        {
+          "src": "/assets/apps/long-wind/2.webp",
+          "alt": "A river town street lit by lanterns at night",
+          "caption": "Chapter three: the lantern-lit town"
+        }
+      ]
+    },
+    {
+      "name": "Neon Zenith",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by cyberpunk flying games",
+      "description": "Fly a hover car out of a rainy Hong Kong night market and up through a neon city of 9,373 buildings, chasing medal time trials and hidden data shards, right in your browser.",
+      "category": "Games",
+      "url": "https://zenith.billpwchan.art/",
+      "linkText": "Play now",
+      "icon": "✈",
+      "tile": "code",
+      "added": "2026-11-22",
+      "source": "https://github.com/billpwchan/neon-zenith",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Bill Chan",
+      "longDescription": "On the street the car hovers a hand's width off the road; in the air it holds altitude through five lanes of sky traffic up to a spire 1,418 metres high. There are four time trials with medals, 31 hidden data shards, a city map and a radio. Rain, lightning and a score that builds with speed are all made at runtime.\n\nIt runs on three.js with WebGPU and a WebGL2 fallback, and works with keyboard, gamepad or touch, with a lighter mode for phones.",
+      "builtWithAI": "The README says it was built over a weekend in October 2026 with Claude Code running Claude Opus 5.5: the maker set the direction and reviewed every pass, and the model wrote the code, the shaders and the Blender pipelines.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/neon-zenith/1.webp",
+          "alt": "Temple Street at night in the rain with neon signs reflected on the road",
+          "caption": "Temple Street in the rain"
+        },
+        {
+          "src": "/assets/apps/neon-zenith/2.webp",
+          "alt": "The night market street in Neon Zenith",
+          "caption": "The night market"
+        }
+      ]
+    },
+    {
+      "name": "Quasar Saz",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by arcade action games",
+      "description": "A cosmic musical arcade game about an alien who fights corrupted sound with a stringed saz, over six stages and a boss. Its \"designer\" is a dog whose keystrokes Claude Code turned into a game.",
+      "category": "Games",
+      "url": "https://github.com/cleak/quasar-saz",
+      "linkText": "View on GitHub",
+      "icon": "♫",
+      "tile": "voice",
+      "added": "2026-11-22",
+      "source": "https://github.com/cleak/quasar-saz",
+      "download": "https://github.com/cleak/quasar-saz/releases/tag/v1.1",
+      "platforms": [
+        "Windows"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Caleb Leak (and Momo the dog)",
+      "longDescription": "Momo, a two-year-old cavapoo, typed on a keyboard, and Claude Code was told to treat every mashed key as an intentional design instruction. The result is a complete Godot game that no human designed. Version 1.1 adds some human bug fixes and usability changes; version 1.0 is the game exactly as it came out, bugs included.\n\nAll graphics are drawn in code and all audio is synthesised from waveforms, with no image or sound files.",
+      "builtWithAI": "The README says Claude Code wrote all the code, drew all the graphics, synthesised all the audio and tested everything, with guardrail tools from the maker. Checked 2026-11-22: all 17 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/quasar-saz/1.webp",
+          "alt": "Zara the alien battles the Dissonance King in a cosmic sound dimension",
+          "caption": "The boss fight"
+        }
+      ]
+    },
+    {
+      "name": "Backroad Rally",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by art of rally",
+      "description": "A small top-down rally game with a diorama look for the browser: five cars from four eras, six stages, five times of day with rain and snow, and a short career against ghost rivals.",
+      "category": "Games",
+      "url": "https://jason-c-dev.github.io/backroad-rally/",
+      "linkText": "Play now",
+      "icon": "⚑",
+      "tile": "bar",
+      "added": "2026-11-22",
+      "source": "https://github.com/jason-c-dev/backroad-rally",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "jason-c-dev",
+      "longDescription": "A free, non-commercial demo made in eleven vertical slices with three.js and Rapier physics. You race point-to-point stages against nine simulated rivals, who also run as ghosts. The maker links to art of rally, the game that inspired it.",
+      "builtWithAI": "The README says Claude Code with Claude Opus 5.5 wrote almost all of the game, first as a desktop version in Unreal Engine 5 in about four days, then as this web port. One developer gave the ideas, made the decisions and played every build. Checked 2026-11-22: 42 of 79 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/backroad-rally/1.webp",
+          "alt": "A rally car sliding through a forest at sunset with dust behind it",
+          "caption": "A slide through the forest"
+        },
+        {
+          "src": "/assets/apps/backroad-rally/2.webp",
+          "alt": "A lakeside meadow stage at sunset",
+          "caption": "The lakeside stage"
+        }
+      ]
+    },
+    {
+      "name": "Bash Fighter",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by Super Smash Bros.",
+      "description": "A free platform fighter for the browser built for chaotic 20-player free-for-all matches, on phone or desktop, with bots filling empty seats and invite links for friends.",
+      "category": "Games",
+      "url": "https://bashfighter.com/",
+      "linkText": "Play now",
+      "icon": "✊",
+      "tile": "capture",
+      "added": "2026-11-22",
+      "source": "https://github.com/Bash-Entertainment/bash-fighter",
+      "platforms": [
+        "Web"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "maker": "Bash Entertainment",
+      "longDescription": "The main mode is Last Fighter Standing, a battle royale for up to 20 players where the arena shrinks as the field thins. Timed Brawl and Stocks modes share the same simulation. There are no accounts: Play with a friend puts a code in the address bar, and anyone with the link joins, or watches.\n\nThe makers say the project is early but live, with a server-authoritative match server running in production.",
+      "builtWithAI": "The README says day-to-day development, including most of the code and the project's posts elsewhere, is done by an AI agent working on the owner's behalf, and that pull requests and issues are reviewed by that agent.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/bash-fighter/1.webp",
+          "alt": "A Bash Fighter match with many fighters, each with a name and damage percent",
+          "caption": "A Timed Brawl on the live server"
+        }
+      ]
+    },
+    {
+      "name": "Spinlings",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by creature-collecting card games",
+      "description": "A creature card game that lives inside Claude Code: while Claude works, wild pixel creatures appear above the prompt and your team of three battles them. Win, and you might catch one.",
+      "category": "Games",
+      "url": "https://spinlings.dev",
+      "linkText": "Visit site",
+      "icon": "✿",
+      "tile": "",
+      "added": "2026-11-22",
+      "source": "https://github.com/416rehman/spinlings",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "416rehman",
+      "longDescription": "Every card is one of a kind, with its own look, genes and traits, and you can fuse, trade and duel them. Battles play themselves; press 1 when a special fires for a Perfect hit. Generated rivals and a wandering trader fill in when no other player is around, and you can play entirely offline.\n\nInstall it as a Claude Code plugin (two commands, or ask Claude to install it), then run /spin. Nothing is for sale, and cards have no cash value. You need Claude Code to play.",
+      "builtWithAI": "Made for Claude Code and with it. Checked 2026-11-22: 18 of 78 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/spinlings/1.webp",
+          "alt": "A Spinlings duel shown above the prompt in Claude Desktop",
+          "caption": "A duel above the prompt"
+        },
+        {
+          "src": "/assets/apps/spinlings/2.webp",
+          "alt": "A duel win and streak reward in Claude Desktop",
+          "caption": "A win and a streak reward"
+        }
+      ]
     }
   ]
 }

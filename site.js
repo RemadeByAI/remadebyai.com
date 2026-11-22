@@ -54,7 +54,7 @@
     if (!query) return close();
     const found = search(query);
     const shown = found.slice(0, 7);
-    items = shown.map(app => ({ url: app.u, html: `<strong>${escape(app.n)}</strong><span>Replaces ${escape(app.r)} · ${escape(app.c)}</span>` }));
+    items = shown.map(app => ({ url: app.u, html: `<strong>${escape(app.n)}</strong><span>${app.i ? 'Inspired by' : 'Replaces'} ${escape(app.r)} · ${escape(app.c)}</span>` }));
     items.push({
       url: allUrl(query), all: true,
       html: found.length ? `<span>See all ${found.length} ${found.length === 1 ? 'match' : 'matches'} in the app list →</span>` : `<span>No apps match "${escape(query)}"</span>`,
