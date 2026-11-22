@@ -2838,6 +2838,232 @@
           "caption": "Retro theme"
         }
       ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Haben",
+      "alternative": "Alternative to Lexware Office (lexoffice) and sevDesk",
+      "description": "Self-hosted bookkeeping for German freelancers and small businesses: e-invoices, receipts, bank matching, EÜR or balance sheet, and tax filings straight to ELSTER. In German.",
+      "category": "Finance",
+      "url": "https://haben.app/",
+      "linkText": "Visit site",
+      "icon": "€",
+      "tile": "",
+      "source": "https://github.com/Speicherstadt/haben",
+      "platforms": [
+        "Web"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "maker": "Tristan Teufel",
+      "longDescription": "Haben covers the path from receipt to tax office: write invoices (including ZUGFeRD and XRechnung e-invoices), collect receipts, match bank payments, and check and send VAT returns. It does EÜR or full balance sheets with E-Bilanz, and is built for the GoBD rules with locked bookings and an audit log.\n\nYou run it on your own Linux server with Docker or Podman. It can import invoices, receipts and contacts from Lexware Office or sevDesk and recalculates past years so you can compare before cancelling. AI features are optional and can use a model on your own server.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,023 of 1,199 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/haben/1.webp",
+          "alt": "Haben's overview page with figures for the year",
+          "caption": "Overview"
+        },
+        {
+          "src": "/assets/apps/haben/2.webp",
+          "alt": "Writing an invoice in Haben",
+          "caption": "Invoice"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "GiroCrab",
+      "alternative": "Alternative to StarMoney and MoneyMoney",
+      "description": "A free, private banking app for Mac, Linux and (in beta) iPhone and iPad that connects to German banks over FinTS and keeps your data in an encrypted vault on your device. In German.",
+      "category": "Finance",
+      "url": "https://github.com/GiroCrab/GiroCrab",
+      "linkText": "GitHub",
+      "icon": "§",
+      "tile": "glance",
+      "source": "https://github.com/GiroCrab/GiroCrab",
+      "download": "https://github.com/GiroCrab/GiroCrab/releases/latest",
+      "platforms": [
+        "macOS",
+        "Linux",
+        "iOS"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "longDescription": "GiroCrab is a native SwiftUI app on a Rust core. It connects directly to banks (FinTS/HBCI, PSD2 and many dedicated connectors), sorts transactions into a category tree with rules and merchant recognition, shows savings plans and loan repayments, and sends transfers including instant SEPA payments. Data stays in an AES-256 encrypted SQLCipher vault on your device.\n\nThe Mac app is the main version, there are Linux packages, and the iPhone and iPad app is in TestFlight beta. The project is about two weeks old and moving fast.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 845 of 1,495 commits are co-authored by Claude. The README invites people to contribute features using Claude Code, Codex or Cursor with the repo's CLAUDE.md.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/girocrab/1.webp",
+          "alt": "GiroCrab's account overview with balances, categories and transactions",
+          "caption": "Overview"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Muximux",
+      "alternative": "Alternative to Organizr and Heimdall",
+      "description": "A self-hosted homelab dashboard that opens your apps inside it, with a built-in proxy that makes apps like Plex work in a frame. One binary, one port, one YAML file.",
+      "category": "Networking",
+      "url": "https://github.com/mescon/Muximux",
+      "linkText": "GitHub",
+      "icon": "▦",
+      "tile": "code",
+      "source": "https://github.com/mescon/Muximux",
+      "download": "https://github.com/mescon/Muximux/releases/latest",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "license": "GPL-2.0",
+      "price": "Free",
+      "maker": "mescon",
+      "longDescription": "Muximux is for people who spend the day inside their self-hosted apps: click Sonarr or Plex and it opens in the dashboard, so you never leave it. Most self-hosted apps refuse to load in a frame; Muximux's embedding proxy rewrites headers and paths so they work. It has split view, themes, a command palette and an onboarding wizard.\n\nVersion 3 is a ground-up rewrite in Go with the web interface built into one binary. It needs no database, and all settings live in one YAML file you can copy to move your setup.",
+      "builtWithAI": "The README has an AI disclosure: \"Muximux is developed with significant AI assistance (Claude Code). All code is reviewed, tested, and approved by the maintainer before shipping.\"",
+      "screenshots": [
+        {
+          "src": "/assets/apps/muximux/1.webp",
+          "alt": "Muximux dashboard in dark mode with app tiles",
+          "caption": "Dashboard"
+        },
+        {
+          "src": "/assets/apps/muximux/2.webp",
+          "alt": "Muximux dashboard in light mode",
+          "caption": "Light mode"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "VibeNVR",
+      "alternative": "Alternative to Blue Iris",
+      "description": "A self-hosted video surveillance system for IP cameras: recording, motion detection and one event timeline across all your cameras, in 10 languages.",
+      "category": "Home",
+      "url": "https://vibenvr.org",
+      "linkText": "Visit site",
+      "icon": "◉",
+      "tile": "capture",
+      "source": "https://github.com/spupuz/VibeNVR",
+      "download": "https://github.com/spupuz/VibeNVR/releases/latest",
+      "platforms": [
+        "Linux"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Alessandro Belloni",
+      "longDescription": "VibeNVR manages IP cameras, continuous and motion-triggered recordings, motion detection (OpenCV, ONVIF camera events or AI detection), camera groups and a unified event timeline, with notifications and MQTT. It has role-based access control and authenticated media.\n\nIt runs in Docker containers on a Linux machine. It sends anonymous usage statistics by default, which you can turn off.",
+      "builtWithAI": "The README says: \"This is a Vibe Coding Project. Extensive testing has been performed to ensure stability.\"",
+      "screenshots": [
+        {
+          "src": "/assets/apps/vibenvr/1.webp",
+          "alt": "VibeNVR's dashboard with camera tiles and recent events",
+          "caption": "Dashboard"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Prismarr",
+      "alternative": "Alternative to Organizr for media servers",
+      "description": "One modern dashboard for your self-hosted media stack: Radarr, Sonarr, Prowlarr, Seerr, your download clients and Plex activity in a single interface.",
+      "category": "Media server",
+      "url": "https://github.com/Shoshuo/Prismarr",
+      "linkText": "GitHub",
+      "icon": "◇",
+      "tile": "",
+      "source": "https://github.com/Shoshuo/Prismarr",
+      "platforms": [
+        "Web"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "maker": "Joshua Bethoule-Voisin",
+      "longDescription": "Prismarr sits beside Radarr and Sonarr rather than replacing them. It shows their libraries (several instances side by side), a merged release calendar with iCal export, pending Seerr requests, service health, downloads from qBittorrent, Deluge, Transmission, SABnzbd or NZBGet, one search box for movies, series and people, and optional Plex activity from Tautulli.\n\nIt ships as one Docker container with SQLite inside; the first launch asks for a language and an admin account.",
+      "builtWithAI": "The README credits Claude Code (Anthropic) with helping the developer move faster. Checked 2026-11-22: 91 of 495 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/prismarr/1.webp",
+          "alt": "Prismarr's dashboard with a spotlight, upcoming releases and service health",
+          "caption": "Dashboard"
+        },
+        {
+          "src": "/assets/apps/prismarr/2.webp",
+          "alt": "Prismarr's Discover page",
+          "caption": "Discover"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Meerkat CRM",
+      "slug": "meerkat-crm",
+      "alternative": "Alternative to Monica",
+      "description": "A self-hosted personal CRM to keep track of the people in your life: birthdays, relationships, notes, activities and reminders, with phone contact sync.",
+      "category": "Productivity",
+      "url": "https://meerkatcrm.github.io/meerkat-crm/",
+      "linkText": "Visit site",
+      "icon": "☺",
+      "tile": "wiki",
+      "source": "https://github.com/meerkatcrm/meerkat-crm",
+      "download": "https://github.com/meerkatcrm/meerkat-crm/releases/latest",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "fredericbnr and contributors",
+      "longDescription": "Meerkat CRM is a digital address book that reminds you of birthdays and helps you remember things like dietary habits. Group contacts into circles, record relationships and job history, keep a timeline of notes and activities, and see your contacts as a network graph. A built-in CardDAV server syncs both ways with your phone's contacts.\n\nIt runs on your own server, and there is a live demo.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 270 of 1,242 commits are co-authored by Claude, and the README says the repository uses Claude Code itself.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/meerkat-crm/1.webp",
+          "alt": "Meerkat CRM's contacts page suggesting possible duplicate contacts to merge",
+          "caption": "Finding duplicate contacts"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Minilytics",
+      "alternative": "Alternative to DataFast and Baremetrics",
+      "description": "Revenue-first web analytics for your own websites: see where visitors came from, what they did and which source made you money. Runs on Cloudflare's free plan.",
+      "category": "Business",
+      "url": "https://minilytics.app",
+      "linkText": "Visit site",
+      "icon": "↗",
+      "tile": "glance",
+      "source": "https://github.com/surendrapandar/minilytics",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Surendra Pandar",
+      "longDescription": "Minilytics shows visitors, revenue, conversion rate and revenue per visitor, with charts by hour, day, week or month. It breaks down traffic by channel, referrer, campaign, country and device, tracks pages, outbound clicks, goals and funnels, and links each paying customer to the visits that led there. A live globe shows who is on your site right now.\n\nEach person deploys their own copy to their own free Cloudflare account, so the data stays with you.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 39 of 40 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/minilytics/1.webp",
+          "alt": "Minilytics dashboard with visitors and revenue chart",
+          "caption": "Dashboard"
+        }
+      ]
     }
   ]
 }
