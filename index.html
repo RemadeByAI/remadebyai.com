@@ -45,12 +45,12 @@
     </div>
   </section>
 <!-- build:featured -->
-<section class="wrap" id="featured" aria-labelledby="featured-title">
+<section class="wrap" id="featured" aria-label="Featured project">
     <p class="section-label">✦ Featured project</p>
-    <article class="feature">
+    <article class="feature" data-feature aria-labelledby="featured-inclosemail">
       <div class="feature-copy">
         <span class="tile" aria-hidden="true">✉</span>
-        <h2 id="featured-title">InCloseMail</h2>
+        <h2 id="featured-inclosemail">InCloseMail</h2>
         <p class="lede">An Outlook alternative built for the desktop.</p>
         <p>Use it with personal inboxes and Microsoft 365 business accounts. Free for personal email, with paid plans for business accounts.</p>
         <div class="feature-actions"><a class="button primary" href="https://inclosemail.com/">Visit InCloseMail</a><a class="button" href="/apps/inclosemail/">Details</a></div>
@@ -68,6 +68,28 @@
   <figcaption>Illustrative inbox</figcaption>
 </figure>
     </article>
+    <article class="feature" data-feature hidden aria-labelledby="featured-desktopwiki">
+      <div class="feature-copy">
+        <span class="tile wiki" aria-hidden="true">▤</span>
+        <h2 id="featured-desktopwiki">DesktopWiki</h2>
+        <p class="lede">A team wiki that runs on your own PC.</p>
+        <p>Spaces, a page tree and a visual editor, plus a password manager, with no server or cloud account to set up. Free for one person, with paid plans for families and teams.</p>
+        <div class="feature-actions"><a class="button primary" href="https://desktopwiki.com/">Visit DesktopWiki</a><a class="button" href="/apps/desktopwiki/">Details</a></div>
+        <small class="owner">By EmuKey LLC</small>
+      </div>
+      <figure class="inbox-art">
+  <div class="mail-window" aria-hidden="true">
+    <div class="window-bar"><span>● ● ●</span><b>DesktopWiki</b></div>
+    <div class="window-body">
+      <div class="mock-nav"><b class="compose">+ New page</b><b>Household</b><span>Recipes</span><span>Travel</span><span>Passwords</span></div>
+      <div class="mock-list"><b>Household</b><p>Furnace<small>Service visits</small></p><p>Appliances<small>Manuals, warranties</small></p><p>Garden<small>Planting notes</small></p></div>
+      <div class="mock-reading"><small>Household</small><b>Furnace</b><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+  <figcaption>Illustrative wiki</figcaption>
+</figure>
+    </article>
+    <script>(function(){var f=document.querySelectorAll('#featured [data-feature]'),n=Math.floor(Math.random()*f.length);for(var i=0;i<f.length;i++)f[i].hidden=i!==n;})();</script>
   </section>
 <!-- /build:featured -->
   <section class="wrap home-block" id="new" aria-labelledby="new-title">

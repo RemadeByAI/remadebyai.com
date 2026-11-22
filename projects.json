@@ -49,6 +49,11 @@
       "linkText": "Visit site",
       "icon": "▤",
       "tile": "wiki",
+      "featured": true,
+      "tagline": "A team wiki that runs on your own PC.",
+      "featureText": "Spaces, a page tree and a visual editor, plus a password manager, with no server or cloud account to set up. Free for one person, with paid plans for families and teams.",
+      "featureLinkText": "Visit DesktopWiki",
+      "featureArt": "wiki",
       "added": "2026-11-21",
       "download": "https://desktopwiki.com/download.html",
       "platforms": [

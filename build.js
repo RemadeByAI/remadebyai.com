@@ -63,7 +63,6 @@ function load() {
     slugs.add(slug);
     return { ...app, slug, order: index, categorySlug: slugify(app.category || '') };
   });
-  if (data.projects.filter(app => app.featured).length > 1) problems.push('Only one project can have "featured": true.');
   if (problems.length) {
     console.error('projects.json has problems, nothing was built:\n  - ' + problems.join('\n  - '));
     process.exit(1);
@@ -256,26 +255,34 @@ function replaceRegion(html, name, content) {
   if (!re.test(html)) { console.error(`index.html is missing the <!-- build:${name} --> markers.`); process.exit(1); }
   return html.replace(re, `$1\n${content}\n$2`);
 }
-function featured(app) {
-  if (!app) return '';
-  let art = '';
-  if (app.featureArt) {
-    const file = path.join(ROOT, 'partials', `art-${app.featureArt}.html`);
-    if (fs.existsSync(file)) art = fs.readFileSync(file, 'utf8').trim();
-  }
-  return `<section class="wrap" id="featured" aria-labelledby="featured-title">
-    <p class="section-label">✦ Featured project</p>
-    <article class="feature">
+// Every entry with "featured": true takes a turn: all are rendered, the first is shown
+// without JavaScript, and a tiny inline script shows one at random on each page load.
+function featured(apps) {
+  if (!apps.length) return '';
+  const articles = apps.map((app, i) => {
+    let art = '';
+    if (app.featureArt) {
+      const file = path.join(ROOT, 'partials', `art-${app.featureArt}.html`);
+      if (fs.existsSync(file)) art = fs.readFileSync(file, 'utf8').trim();
+    }
+    return `<article class="feature" data-feature${i ? ' hidden' : ''} aria-labelledby="featured-${app.slug}">
       <div class="feature-copy">
         ${tile(app)}
-        <h2 id="featured-title">${esc(app.name)}</h2>
+        <h2 id="featured-${app.slug}">${esc(app.name)}</h2>
         <p class="lede">${esc(app.tagline || app.alternative)}</p>
         <p>${esc(app.featureText || app.description)}</p>
         <div class="feature-actions"><a class="button primary" href="${esc(app.url)}">${esc(app.featureLinkText || 'Visit ' + app.name)}</a><a class="button" href="/apps/${app.slug}/">Details</a></div>
         <small class="owner">By ${esc(app.owner)}</small>
       </div>
       ${art}
-    </article>
+    </article>`;
+  }).join('\n    ');
+  const pick = apps.length > 1
+    ? `\n    <script>(function(){var f=document.querySelectorAll('#featured [data-feature]'),n=Math.floor(Math.random()*f.length);for(var i=0;i<f.length;i++)f[i].hidden=i!==n;})();</script>`
+    : '';
+  return `<section class="wrap" id="featured" aria-label="Featured project">
+    <p class="section-label">✦ Featured project</p>
+    ${articles}${pick}
   </section>`;
 }
 function filterOptions(categories, apps) {
@@ -321,7 +328,7 @@ ${foot}`);
 
   let home = read('index.html');
   home = replaceRegion(home, 'assets', `  <link rel="stylesheet" href="/styles.css?v=${ASSET_VERSION.css}">\n  <script src="/directory.js?v=${ASSET_VERSION.js}" defer></script>\n  <script src="/contact.js?v=${ASSET_VERSION.contact}" defer></script>`);
-  home = replaceRegion(home, 'featured', featured(apps.find(a => a.featured)));
+  home = replaceRegion(home, 'featured', featured(apps.filter(a => a.featured)));
   home = replaceRegion(home, 'new', cardGrid(newest.slice(0, NEW_ON_HOME)));
   home = replaceRegion(home, 'categories', categoryChips(categories));
   home = replaceRegion(home, 'filters', filterOptions(categories, apps));

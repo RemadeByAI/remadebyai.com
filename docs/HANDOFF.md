@@ -1,6 +1,6 @@
 # Handoff notes
 
-Last updated: 2026-11-22 (live at fa6995d: 23 apps in 11 categories; ArtCraft sweep live at 4061f1c: 28 apps in 12 categories). Read this first when picking up work on the site.
+Last updated: 2026-11-22 (featured slot rotates between InCloseMail and DesktopWiki; live at fa6995d: 23 apps in 11 categories; ArtCraft sweep live at 4061f1c: 28 apps in 12 categories). Read this first when picking up work on the site.
 
 ## Where things are
 
@@ -25,7 +25,7 @@ What `build.js` writes (never edit these by hand; they are rebuilt from scratch 
 
 Other files:
 - `directory.js`: only search and filters on the home page "All apps" list (group buttons, category and platform dropdowns). The cards are plain HTML, so the list works without JavaScript and no longer fetches `projects.json`. Links like `/?q=email` or `/?category=productivity` open pre-filtered.
-- `partials/art-<name>.html`: artwork for the featured block, chosen by the featured entry's `featureArt` (`inbox` is the InCloseMail mock).
+- `partials/art-<name>.html`: artwork for the featured block, chosen by the featured entry's `featureArt` (`inbox` is the InCloseMail mock, `wiki` the DesktopWiki mock).
 - `styles.css`: all styles. Layout scales to wide screens (added 2026-11-21): `.wrap` grows to 150rem, the root font size steps up at 1800/2300/3000px wide, and `.cards` is an auto-fill grid (17rem minimum), so 1080p shows 6 columns, 1440p 7 and 4K 8. Dark theme, green accent `#c2ff94`. Tile colours: `wiki`, `capture`, `code`, `glance`, `voice`, `bar`, or empty for green.
 - **List your app** (`#list` on the home page): mailto to `listings@remadebyai.com` with a prefilled form-style body.
 - Icons: `favicon.ico`, `assets/favicon-32.png`, `assets/apple-touch-icon.png`; link preview `assets/og-image.png` (1200x630). `assets/mark.svg` header mark, `assets/circuit.svg` hero art.
@@ -37,7 +37,7 @@ Required: `name`, `group` (`emukey` or `open`), `owner`, `alternative` ("Alterna
 
 Optional: `slug` (default from name), `icon`, `tile`, `linkText`, `download` (direct download or releases page; adds a Download button), `source` (repo link), `platforms` (any of Windows, macOS, Linux, Web, iOS, Android), `license` (e.g. MIT, GPL-3.0, Proprietary), `price` (Free, Freemium, Paid), `maker` (who makes it), `longDescription` (paragraphs separated by a blank line), `screenshots` (list of `{ "src": "/assets/apps/<slug>/1.png", "alt": "...", "caption": "..." }`), `builtWithAI` (how AI was used, with the source of that claim), `review` (`{ "date", "body", "verdict", "version", "author" }`).
 
-Featured (one entry only): `featured: true`, plus `tagline`, `featureText`, `featureLinkText`, `featureArt`.
+Featured: `featured: true`, plus `tagline`, `featureText`, `featureLinkText`, `featureArt`. More than one entry can be featured (since 2026-11-22: InCloseMail and DesktopWiki). The build renders all of them in the featured block, and a small inline script shows one at random on each page load. Without JavaScript the first featured entry in `projects.json` shows.
 
 Only state facts that have been checked. Leave unknown fields out; the page hides them.
 
