@@ -3120,6 +3120,276 @@
         "story",
         "satire"
       ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "dumbtv",
+      "alternative": "Alternative to the Fire TV home screen",
+      "description": "Takes the ads, tracking and clutter out of a Fire TV over ADB with no root, and adds its own clean home screen. Your apps and HDMI inputs stay, and every step can be undone.",
+      "category": "TV",
+      "url": "https://dumbtv.org",
+      "linkText": "Visit site",
+      "icon": "▢",
+      "tile": "glance",
+      "source": "https://github.com/humblemuzzu/dumbtv",
+      "download": "https://github.com/humblemuzzu/dumbtv/releases/latest",
+      "platforms": [
+        "Android"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Muzammil and contributors",
+      "longDescription": "It started when the maker's Fire TV Edition set was down to 129 MB of free memory, mostly taken by apps that started on their own and Amazon services that report what you watch. dumbtv turns those off over ADB from a computer, without rooting, and installs an open-source launcher that shows the time, your apps and your HDMI inputs.\n\nOwners of about twenty other Fire TVs and sticks have run it and reported back. Each change is recorded so it can be undone.",
+      "builtWithAI": "The maker says they asked a coding agent to clean up their TV over ADB and published the result. Checked 2026-11-22: 78 of 436 commits are co-authored by Claude. TechRadar and XDA covered it as part of people vibe-coding their smart TVs.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/dumbtv/1.webp",
+          "alt": "dumbtv's home screen on a Fire TV with the time, a few apps and HDMI inputs",
+          "caption": "Home screen"
+        },
+        {
+          "src": "/assets/apps/dumbtv/2.webp",
+          "alt": "dumbtv's home screen with more apps in a grid",
+          "caption": "App grid"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Haven for Android",
+      "slug": "haven-android",
+      "alternative": "Alternative to Termius",
+      "description": "A free remote-access workspace for Android: SSH, Mosh, VNC, RDP and SFTP connections, a local Linux shell, file sharing and more in one app.",
+      "category": "Networking",
+      "url": "https://glasshaven.github.io/Haven/",
+      "linkText": "Visit site",
+      "icon": "⌨",
+      "tile": "code",
+      "source": "https://github.com/GlassHaven/Haven",
+      "download": "https://github.com/GlassHaven/Haven/releases/latest",
+      "platforms": [
+        "Android"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "maker": "GlassOnTin",
+      "longDescription": "Haven gathers terminal and remote-desktop tools on an Android phone or tablet: SSH and Mosh, VNC, RDP and SPICE desktops, SFTP and SMB file access, cloud storage, email, a local Linux shell and even a full Linux kernel in user mode, plus mesh networking. The terminal and screens can be made translucent over your wallpaper.",
+      "builtWithAI": "The README opens with: \"Haven is an interesting vibe coding experiment. Let's see what comes out of it.\" The repo is maintained with Claude Code skills (.claude/skills). Checked 2026-11-22: 17 of 3,420 commits carry a Claude co-author line.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/haven-android/1.webp",
+          "alt": "Haven's terminal on an Android phone",
+          "caption": "Terminal"
+        },
+        {
+          "src": "/assets/apps/haven-android/2.webp",
+          "alt": "Haven's list of saved connections",
+          "caption": "Connections"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Tesserae",
+      "alternative": "Alternative to TRMNL",
+      "description": "A self-hosted dashboard companion for e-ink displays: design tile-based dashboards in a browser and push them to one or more panels over MQTT or HTTP.",
+      "category": "Home",
+      "url": "https://tesserae.ink",
+      "linkText": "Visit site",
+      "icon": "▧",
+      "tile": "wiki",
+      "source": "https://github.com/dmellok/tesserae",
+      "download": "https://github.com/dmellok/tesserae/releases/latest",
+      "platforms": [
+        "Web"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "maker": "Kayden D'Mello and contributors",
+      "longDescription": "Compose dashboards from tiles (calendars, weather, photos, Home Assistant data and more) in the browser. Tesserae renders each frame on the server and sends it to e-ink panels of different sizes, so one server can run many displays around the house.",
+      "builtWithAI": "The README says: \"Built with AI assistance (Claude Code).\" Checked 2026-11-22: 913 of 2,553 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/tesserae/1.webp",
+          "alt": "Several e-ink panels on a shelf showing Tesserae dashboards",
+          "caption": "Panels on a shelf"
+        },
+        {
+          "src": "/assets/apps/tesserae/2.webp",
+          "alt": "A family calendar and photo dashboard on e-ink panels",
+          "caption": "Family dashboard"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Absorb",
+      "slug": "absorb",
+      "alternative": "Alternative to the Audible app",
+      "description": "A modern audiobook and podcast player for your own Audiobookshelf server, with a card-based player, offline downloads and chapters, on Android and iPhone.",
+      "category": "Reading",
+      "url": "https://github.com/pounat/absorb",
+      "linkText": "GitHub",
+      "icon": "♫",
+      "tile": "voice",
+      "source": "https://github.com/pounat/absorb",
+      "download": "https://github.com/pounat/absorb/releases/latest",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "maker": "Barnabas",
+      "longDescription": "Absorb connects to a self-hosted Audiobookshelf server. Full-screen \"Absorbing\" cards replace the usual player screen, books can be downloaded for offline listening, and chaptered podcasts show their full descriptions.",
+      "builtWithAI": "The README says: \"Absorb is developed by a human with AI assistance (mostly Claude Code) helping write, refactor, and review code.\"",
+      "screenshots": [
+        {
+          "src": "/assets/apps/absorb/1.webp",
+          "alt": "Absorb's player card with a book cover and playback controls",
+          "caption": "Now playing"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "FluentTaskScheduler",
+      "alternative": "Alternative to Windows Task Scheduler",
+      "description": "A modern, easier front end for Windows Task Scheduler built with WinUI 3, with a dashboard, run history and quick actions for creating automation tasks.",
+      "category": "Utilities",
+      "url": "https://github.com/TRGamer-tech/FluentTaskScheduler",
+      "linkText": "GitHub",
+      "icon": "⏲",
+      "tile": "bar",
+      "source": "https://github.com/TRGamer-tech/FluentTaskScheduler",
+      "download": "https://github.com/TRGamer-tech/FluentTaskScheduler/releases/latest",
+      "platforms": [
+        "Windows"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "TRGamer-Tech",
+      "longDescription": "FluentTaskScheduler wraps the Windows Task Scheduler in Microsoft's Fluent design. It lists scheduled tasks by folder, shows a dashboard with run history and a heatmap of when tasks run, and has quick actions to create and edit tasks. It uses the real Windows Task Scheduler, so tasks keep working without the app.",
+      "builtWithAI": "The README carries an AI development disclaimer: \"This application was developed primarily with the assistance of Artificial Intelligence.\"",
+      "screenshots": [
+        {
+          "src": "/assets/apps/fluenttaskscheduler/1.webp",
+          "alt": "FluentTaskScheduler's dashboard with run statistics and a heatmap",
+          "caption": "Dashboard"
+        },
+        {
+          "src": "/assets/apps/fluenttaskscheduler/2.webp",
+          "alt": "FluentTaskScheduler's list of scheduled tasks",
+          "caption": "Scheduled tasks"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Bramble",
+      "alternative": "Alternative to 1Password",
+      "description": "A password manager with no server and no account: your vault stays on your devices and syncs between them peer-to-peer, end-to-end encrypted. Browser, desktop and phone apps.",
+      "category": "Passwords",
+      "url": "https://bramble.sh",
+      "linkText": "Visit site",
+      "icon": "❦",
+      "tile": "",
+      "source": "https://github.com/bramble-sh/bramble",
+      "platforms": [
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "maker": "flythenimbus",
+      "longDescription": "Bramble runs as a browser extension for Firefox and Chromium browsers, a desktop app for Mac and Linux with a quick-access panel, sync hub and scheduled backups, and iPhone and Android apps with system autofill, biometric unlock and passkeys. All of them share one Rust encryption core, and devices sync directly with each other, so your vault is never stored on a server.",
+      "builtWithAI": "The README says: \"Parts of Bramble were written with AI assistance (Claude Opus), but every line was directed, reviewed, and shaped by a software engineer with over a decade of experience.\"",
+      "screenshots": [
+        {
+          "src": "/assets/apps/bramble/1.webp",
+          "alt": "Bramble's vault with logins, cards and notes",
+          "caption": "Vault"
+        },
+        {
+          "src": "/assets/apps/bramble/2.webp",
+          "alt": "Bramble offering saved logins to fill in a sign-in page",
+          "caption": "Autofill"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "KoShelf",
+      "alternative": "Alternative to Goodreads reading stats",
+      "description": "A reading companion for KOReader: browse your library, highlights, notes and reading statistics from a web dashboard, and read EPUBs right in the browser.",
+      "category": "Reading",
+      "url": "https://github.com/paviro/KoShelf",
+      "linkText": "GitHub",
+      "icon": "▤",
+      "tile": "wiki",
+      "source": "https://github.com/paviro/KoShelf",
+      "download": "https://github.com/paviro/KoShelf/releases/latest",
+      "platforms": [
+        "Web"
+      ],
+      "license": "EUPL-1.2",
+      "price": "Free",
+      "maker": "Paul-Vincent Roll",
+      "longDescription": "KoShelf reads the data KOReader keeps about your books and comics and turns it into a web library: currently reading, finished and unread, with highlights, notes and ratings on each book, reading time and pages, and activity heatmaps. It can write edits back to KOReader and has a built-in reader for EPUB, FB2, MOBI and CBZ.",
+      "builtWithAI": "The README says it \"was built for personal use and relies heavily on AI-generated code.\""
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Oh My Android",
+      "slug": "oh-my-android",
+      "alternative": "Alternative to adb commands and Android Studio's device tools",
+      "description": "A free Mac app that docks beside the Android Emulator and tests your app in dark mode, big fonts, RTL, TalkBack and more with one click each, no adb commands.",
+      "category": "Developer tools",
+      "url": "https://royan.se/work/oh-my-android/",
+      "linkText": "Visit site",
+      "icon": "◑",
+      "tile": "code",
+      "source": "https://github.com/ateymoori/oh-my-android",
+      "download": "https://github.com/ateymoori/oh-my-android/releases/latest",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Royan AB (AmirHossein Teymoori)",
+      "longDescription": "Oh My Android has 48 always-visible test actions: dark mode, font and display size, language and RTL, TalkBack, layout bounds, animations, network speed, GPS, and fake calls and texts. A layout inspector shows sizes and gaps in dp for any app and can overlay a Figma export. You can read SharedPreferences and SQLite, clear data, open deep links and install APKs by dragging. It works with real phones too.\n\nIt is a native SwiftUI app for Apple silicon Macs on macOS 26 or newer, installed with Homebrew or a signed download.",
+      "builtWithAI": "The README says: \"Most commits are co-authored with Claude Code, as the history shows.\" Checked 2026-11-22: 26 of 31 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/oh-my-android/1.webp",
+          "alt": "Oh My Android's panel of test actions beside the emulator",
+          "caption": "Test actions"
+        },
+        {
+          "src": "/assets/apps/oh-my-android/2.webp",
+          "alt": "Oh My Android's layout inspector with TalkBack order",
+          "caption": "Layout inspector"
+        }
+      ]
     }
   ]
 }
