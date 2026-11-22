@@ -2342,6 +2342,502 @@
         "roguelite",
         "roguelike"
       ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Haven",
+      "slug": "haven-chat",
+      "alternative": "Alternative to Discord",
+      "description": "A private Discord-style chat you run on your own machine: channels, voice, file sharing and screen sharing, with no cloud, no company account and no paid tier.",
+      "category": "Messaging",
+      "url": "https://haven-app.com",
+      "linkText": "Visit site",
+      "icon": "⬡",
+      "tile": "voice",
+      "source": "https://github.com/ancsemi/Haven",
+      "download": "https://github.com/ancsemi/Haven/releases/latest",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "maker": "ancsemi",
+      "longDescription": "One person runs the server and everyone else joins with a code. Messages, files and voice stay on that machine. It runs in Docker with one command, or on Windows from a zip and a double-click, and on Linux or Mac with a start script. Friends join from the browser.\n\nThe README says a group of friends needs about 100 MB of memory and almost no processor time, and it comes with themes, voice channels and screen sharing.",
+      "builtWithAI": "The README says: \"Haven is built with AI. I'm not a professional programmer.\" The code \"was written by AI coding tools (mainly Claude Code) working from my direction.\"",
+      "screenshots": [
+        {
+          "src": "/assets/apps/haven-chat/1.webp",
+          "alt": "Haven's welcome screen with the channel list and member sidebar",
+          "caption": "Welcome screen"
+        },
+        {
+          "src": "/assets/apps/haven-chat/2.webp",
+          "alt": "Haven sharing a screen in a voice channel beside the chat",
+          "caption": "Screen sharing"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Nota",
+      "alternative": "Alternative to Ableton Live and GarageBand",
+      "description": "A free music studio with an arrangement timeline, a clip-launching grid, about 35 built-in instruments and effects, and VST3 support. For Mac, Windows and Linux.",
+      "category": "Audio",
+      "url": "https://nota-daw.github.io/nota-site/",
+      "linkText": "Visit site",
+      "icon": "♪",
+      "tile": "voice",
+      "source": "https://github.com/nota-daw/nota",
+      "download": "https://github.com/nota-daw/nota/releases/latest",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "maker": "Egor Khindikaynen and contributors",
+      "longDescription": "Nota has a linear Arrangement timeline and a clip-launching Session grid, with material moving freely between them, plus a Modular view for patching modulation by cable. It ships with subtractive, wavetable, FM, granular and physical-modelling synths, a drum machine, and EQs, compressors, reverbs and delays.\n\nIt loads VST3 plugins everywhere and Audio Units on Mac, and popular free plugins install in one click. Your phone can act as a controller over Wi-Fi or USB by scanning a QR code. No subscription, no account, no feature tiers.",
+      "builtWithAI": "The README says Nota started as a personal project and that \"most of the code was written with AI.\" Checked 2026-11-22: 25 of 508 commits carry a Claude co-author line.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/nota/1.webp",
+          "alt": "Nota's Arrangement view with coloured tracks and the device rack",
+          "caption": "Arrangement"
+        },
+        {
+          "src": "/assets/apps/nota/2.webp",
+          "alt": "Nota's piano roll editing notes",
+          "caption": "Piano roll"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Arrmada",
+      "alternative": "Alternative to Sonarr, Radarr and Overseerr",
+      "description": "One self-hosted app for your media server: it finds and organises movies, TV, books and audiobooks, takes requests from your household and keeps Plex or Jellyfin tidy.",
+      "category": "Media server",
+      "url": "https://github.com/tristenlammi/Arrmada",
+      "linkText": "GitHub",
+      "icon": "⚓",
+      "tile": "",
+      "source": "https://github.com/tristenlammi/Arrmada",
+      "platforms": [
+        "Linux"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Tristen Lammi",
+      "longDescription": "Arrmada replaces the usual stack of separate apps with one database and one web page. It handles movies and TV the way Radarr and Sonarr do (and can import their libraries), tracks ebook and audiobook series, lets family and friends request titles Overseerr-style, fetches or extracts subtitles, and can re-encode wasteful video to HEVC or AV1 overnight.\n\nIt runs on a Linux server with Docker Compose (including Unraid) and connects to Plex and Jellyfin. The README calls it early days (v0.x) and suggests keeping backups.",
+      "builtWithAI": "The README says Arrmada \"is written with heavy AI assistance (Claude)\". Checked 2026-11-22: 1,952 of 2,186 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/arrmada/1.webp",
+          "alt": "Arrmada's Discover page with requests and recommendations",
+          "caption": "Discover"
+        },
+        {
+          "src": "/assets/apps/arrmada/2.webp",
+          "alt": "Arrmada's page for a TV series with seasons and episodes",
+          "caption": "Series details"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Opensidian",
+      "alternative": "Alternative to Obsidian",
+      "description": "A free, non-profit Markdown notes app that opens your existing Obsidian vaults, with graphs, canvas and community plugins. For Linux and Mac.",
+      "category": "Productivity",
+      "url": "https://www.opensidian.org",
+      "linkText": "Visit site",
+      "icon": "◆",
+      "tile": "wiki",
+      "source": "https://github.com/jpzk/opensidian",
+      "download": "https://github.com/jpzk/opensidian/releases/latest",
+      "platforms": [
+        "Linux",
+        "macOS"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "maker": "jpzk",
+      "longDescription": "Opensidian is a clean-room remake of Obsidian's behaviour built with Rust and Tauri: it works with the same vault folders, and has a graph view, canvas, themes and community plugins. It is not affiliated with Obsidian and contains none of its code.\n\nLinux builds come as AppImage, Flatpak, RPM and DEB, and there are Mac builds for Apple silicon and Intel. The project describes itself as under heavy development.",
+      "builtWithAI": "The README says Opensidian \"was built predominantly with AI models. Nearly all of the code, the design docs, and this README were written by Claude\" under one human maintainer."
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Hearth for webOS",
+      "slug": "hearth",
+      "alternative": "Alternative to the LG TV home screen",
+      "description": "A fast, calm home screen for LG TVs running webOS 3 and newer: a clock with the weather, your apps and inputs in one row, and a plain, photo or slideshow background.",
+      "category": "TV",
+      "url": "https://github.com/rudra-avatar/Hearth",
+      "linkText": "GitHub",
+      "icon": "⌂",
+      "tile": "glance",
+      "source": "https://github.com/rudra-avatar/Hearth",
+      "download": "https://github.com/rudra-avatar/Hearth/releases/latest",
+      "license": "MIT",
+      "price": "Free",
+      "maker": "rudra-avatar",
+      "longDescription": "Hearth replaces LG's busy home screen with something quiet: the time, date and weather, your apps and TV inputs along the bottom, and a background that is OLED black, a picture or a slideshow of your own photos. It starts almost instantly and everything is adjustable from the remote.\n\nIt installs as a normal webOS app and works on webOS 3 up to the newest versions. The README explains ways to open it automatically, with or without a rooted TV.",
+      "builtWithAI": "The README credits: \"Developed with Claude (Anthropic). Claude wrote and tested most of the code and the machine-made translations; the maintainer directed it and tried it on real LG TVs.\" Checked 2026-11-22: 31 of 67 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/hearth/1.webp",
+          "alt": "Hearth on a TV with the clock, date and a row of app icons on a starry background",
+          "caption": "Home screen"
+        },
+        {
+          "src": "/assets/apps/hearth/2.webp",
+          "alt": "Hearth with a photo of clouds over mountains as the background",
+          "caption": "Photo background"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "neomd",
+      "alternative": "Alternative to Neomutt and HEY",
+      "description": "A keyboard-first email app for the terminal: write in Neovim, read as Markdown, screen new senders HEY-style and process your inbox once.",
+      "category": "Email",
+      "url": "https://neomd.ssp.sh",
+      "linkText": "Visit site",
+      "icon": "✉",
+      "tile": "code",
+      "source": "https://github.com/ssp-data/neomd",
+      "download": "https://github.com/ssp-data/neomd/releases/latest",
+      "platforms": [
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Simon Späti",
+      "longDescription": "neomd is built for speed: everything is a shortcut away, with Vim motions to move around. Emails are written in Neovim and rendered from Markdown, unknown senders go to a screener first (like HEY), and a GTD-style flow helps you handle each email once. It supports IMAP and SMTP accounts, server-side tags, private notes on emails and OS keyring passwords.\n\nIt runs in a terminal on Mac and Linux, with a package on the Arch AUR.",
+      "builtWithAI": "The README says: \"This TUI is mostly vibe-coded in the sense that all code is written with Claude Code, but guided by very detailed instructions.\" Checked 2026-11-22: 66 of 415 commits carry a Claude co-author line.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/neomd/1.webp",
+          "alt": "neomd's inbox list in a terminal",
+          "caption": "Inbox"
+        },
+        {
+          "src": "/assets/apps/neomd/2.webp",
+          "alt": "Reading an email rendered as Markdown in neomd",
+          "caption": "Reading an email"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Minecraft Server Manager",
+      "alternative": "Alternative to Pterodactyl and Multicraft",
+      "description": "A free, self-hosted control panel for Minecraft servers running in Docker: create servers with a wizard, manage players, mods, backups and schedules, and use the live console.",
+      "category": "Utilities",
+      "url": "https://minecraft-server-manager.com/",
+      "linkText": "Visit site",
+      "icon": "▣",
+      "tile": "",
+      "source": "https://github.com/anefzaoui/minecraft-server-manager",
+      "download": "https://github.com/anefzaoui/minecraft-server-manager/releases/latest",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Ahmed Nefzaoui and contributors",
+      "longDescription": "It manages Minecraft servers built on the popular itzg/docker-minecraft-server image and aims to match commercial panels such as Pterodactyl, Multicraft and AMP in polish. It covers modpacks, worlds, backups, schedules, chat, the console and resource monitoring.\n\nEverything runs on your own machine with no paid services, and the whole panel is one folder you can copy to move it.",
+      "builtWithAI": "The README says: \"most of the code is written with Claude Code, and every feature is designed, reviewed and tested by a human.\" Checked 2026-11-22: 253 of 418 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/minecraft-server-manager/1.webp",
+          "alt": "Minecraft Server Manager's dashboard with servers, memory and player counts",
+          "caption": "Dashboard"
+        },
+        {
+          "src": "/assets/apps/minecraft-server-manager/2.webp",
+          "alt": "A server's live console in Minecraft Server Manager",
+          "caption": "Server console"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "BrainRotGuard",
+      "slug": "brainrotguard",
+      "alternative": "Alternative to YouTube Kids",
+      "description": "A YouTube approval system for kids: your child searches and requests videos on a tablet, and you approve or deny each one from your phone through Telegram.",
+      "category": "Family",
+      "url": "https://github.com/GHJJ123/brainrotguard",
+      "linkText": "GitHub",
+      "icon": "☺",
+      "tile": "glance",
+      "source": "https://github.com/GHJJ123/brainrotguard",
+      "download": "https://github.com/GHJJ123/brainrotguard/releases/latest",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "longDescription": "Kids get a simple web page on their tablet to search YouTube and ask for videos. Each request sends you a Telegram message with the thumbnail, title, channel and length, and you tap Approve or Deny. Approved videos play without ads, YouTube accounts, recommendations or autoplay.\n\nYou run the server at home (Docker is the usual way), and lock the tablet to the app with Family Link or Screen Time. It works on any device with a browser.",
+      "builtWithAI": "The maker writes in the README: \"I built this entirely with Claude (Anthropic's AI). I described what I wanted, Claude wrote the code.\" Checked 2026-11-22: 247 of 291 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/brainrotguard/1.webp",
+          "alt": "BrainRotGuard's kid search page and the parent's Telegram approval messages",
+          "caption": "Kid view and parent approvals"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Prism",
+      "alternative": "Alternative to Skylight Calendar",
+      "description": "A self-hosted family display for the wall, tablet and phone: shared calendars, chores with points, meals, shopping lists and a photo slideshow, with no subscription.",
+      "category": "Family",
+      "url": "https://sandydargoport.github.io/prism/",
+      "linkText": "Visit site",
+      "icon": "△",
+      "tile": "",
+      "source": "https://github.com/sandydargoport/prism",
+      "download": "https://github.com/sandydargoport/prism/releases/latest",
+      "platforms": [
+        "Web"
+      ],
+      "license": "PolyForm Noncommercial 1.0.0",
+      "price": "Free",
+      "maker": "sandydargoport",
+      "longDescription": "Prism shows Google, iCloud and iCal calendars on a screen you already own, with chores and reminders whose points add up to a reward a kid picked, shared shopping lists with a barcode scanner, recipes, and your photos when the house is quiet.\n\nIt runs on a Raspberry Pi 4 or newer, in Docker, or as a Home Assistant add-on, with PIN sign-in and no accounts. It is free for non-commercial use.",
+      "builtWithAI": "The README says: \"Built with Claude Code.\" Checked 2026-11-22: 17 of 1,722 commits carry a Claude co-author line.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/prism/1.webp",
+          "alt": "Prism on a wall display with the time, weather and the family's day over a sunset photo",
+          "caption": "Wall display"
+        },
+        {
+          "src": "/assets/apps/prism/2.webp",
+          "alt": "Prism on a phone with the day's plans and chores",
+          "caption": "On a phone"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "MoePeek",
+      "alternative": "Alternative to Bob and the DeepL pop-up",
+      "description": "A lightweight Mac menu bar translator: select text in any app and get a translation in a floating panel, or translate a screenshot, the clipboard or typed text.",
+      "category": "Translation",
+      "url": "https://github.com/cosZone/MoePeek",
+      "linkText": "GitHub",
+      "icon": "文",
+      "tile": "voice",
+      "source": "https://github.com/cosZone/MoePeek",
+      "download": "https://github.com/cosZone/MoePeek/releases/latest",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "maker": "yusixian (cosZone)",
+      "longDescription": "MoePeek is a native Swift app of about 5 MB. It translates selected text, a captured screen region (OCR), the clipboard or manual input, and can show several services side by side: Google, Bing and Youdao for free, DeepL and others with an API key, AI models including local Ollama and LM Studio, and Apple's on-device translation on macOS 15 and newer.",
+      "builtWithAI": "The README calls MoePeek \"a personal, AI vibe-coded side project\". Checked 2026-11-22: 31 of 196 commits carry a Claude co-author line.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/moepeek/1.webp",
+          "alt": "MoePeek's settings and its floating translation panel",
+          "caption": "Translation panel"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "SkySend",
+      "alternative": "Alternative to WeTransfer",
+      "description": "End-to-end encrypted file and note sharing you can host yourself: files are encrypted in the browser, links can expire or burn after reading, and no accounts are needed.",
+      "category": "File sharing",
+      "url": "https://skysend.app",
+      "linkText": "Visit site",
+      "icon": "➤",
+      "tile": "capture",
+      "source": "https://github.com/Skyfay/SkySend",
+      "platforms": [
+        "Web"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "maker": "Skyfay (Manu)",
+      "longDescription": "Everything is encrypted with AES-256-GCM in the browser before it leaves the device, and the key travels in the part of the share link that browsers never send to the server. You can share files, whole folders, and notes with text, passwords, code or SSH keys, set expiry times and download limits, add a password, or send someone an upload link.\n\nIt runs as one Docker container with SQLite, stores files locally or in any S3-compatible bucket, and has a command-line tool. You can host your own or use a public instance. It was inspired by Mozilla Send and PrivateBin.",
+      "builtWithAI": "The README says the project was designed and directed by a human system engineer and that \"the code is written by AI coding agents that follow those specifications\", with every feature tested.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/skysend/1.webp",
+          "alt": "SkySend's banner showing the upload page on desktop and a request on a phone",
+          "caption": "Share anything"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "DBackup",
+      "alternative": "Alternative to hosted database backup services",
+      "description": "Self-hosted backup automation for databases and files: scheduled, encrypted, compressed backups to the storage you choose, with restores in a few clicks.",
+      "category": "Backup",
+      "url": "https://dbackup.app",
+      "linkText": "Visit site",
+      "icon": "⭳",
+      "tile": "code",
+      "source": "https://github.com/Skyfay/DBackup",
+      "platforms": [
+        "Web"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "maker": "Skyfay (Manu)",
+      "longDescription": "DBackup backs up 10 kinds of database (MySQL, PostgreSQL, SQL Server, MongoDB, Redis, Firebird and more, directly or over SSH) together with the files that belong to them, then sends them to 13 kinds of storage such as S3, cloud drives, SFTP, SMB and WebDAV. It does incremental backups with daily, weekly, monthly and yearly retention, and can restore a whole database or a single file.\n\nIt runs as one Docker container. Backups are standard dumps and TAR archives encrypted with AES-256-GCM, and a Recovery Kit decrypts them without DBackup. It has SSO, permissions, 2FA, passkeys and an audit log for teams.",
+      "builtWithAI": "The README says the project was designed and directed by a human system engineer and that \"the code is written by AI coding agents that follow those specifications\", with every feature tested.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/dbackup/1.webp",
+          "alt": "DBackup's banner showing its dashboard on desktop and phone",
+          "caption": "Dashboard"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "Cinephage",
+      "alternative": "Alternative to Sonarr, Radarr and Overseerr",
+      "description": "Self-hosted media management in one app: movies, TV, subtitles, indexers, discovery lists and live TV in a single interface instead of a stack of separate services.",
+      "category": "Media server",
+      "url": "https://github.com/Cinephage/Cinephage",
+      "linkText": "GitHub",
+      "icon": "▶",
+      "tile": "",
+      "source": "https://github.com/Cinephage/Cinephage",
+      "platforms": [
+        "Web"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "maker": "Cinephage contributors",
+      "longDescription": "Cinephage brings together what usually takes Radarr, Sonarr, Prowlarr, Bazarr and Overseerr: monitoring and managing movies and TV series, indexers, subtitles from several providers, and discovery and smart lists. It also manages live TV and IPTV channels. Everything shares one SQLite database and one web interface that works on desktop and mobile.",
+      "builtWithAI": "The README says: \"This project was built with AI assistance. As a solo developer learning as I go, AI helps bridge the gap between ambition and experience.\"",
+      "screenshots": [
+        {
+          "src": "/assets/apps/cinephage/1.webp",
+          "alt": "Cinephage's dashboard with recently added movies and TV",
+          "caption": "Dashboard"
+        },
+        {
+          "src": "/assets/apps/cinephage/2.webp",
+          "alt": "Cinephage's Discover page with posters and streaming-service filters",
+          "caption": "Discover"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "HelixScreen",
+      "alternative": "Alternative to KlipperScreen",
+      "description": "A fast touchscreen interface for Klipper 3D printers, with a customizable dashboard, bed mesh views, input shaper graphs, multi-material support and print history.",
+      "category": "3D printing",
+      "url": "https://helixscreen.org",
+      "linkText": "Visit site",
+      "icon": "⬣",
+      "tile": "code",
+      "source": "https://github.com/prestonbrown/helixscreen",
+      "download": "https://github.com/prestonbrown/helixscreen/releases/latest",
+      "platforms": [
+        "Linux"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "maker": "Preston Brown and contributors",
+      "longDescription": "HelixScreen puts the features that are usually stuck in a browser tab on your printer's screen: a dashboard you can arrange with 40+ widgets, bed mesh visualization, input shaper graphs, print history, and 11 multi-material systems.\n\nIt is light enough to run on the printer's own board or a spare Raspberry Pi, or as a remote screen on another device pointed at the printer's Moonraker. Version 1.0 supports nine printer platforms in nine languages.",
+      "builtWithAI": "The README says: \"AI-Assisted Development: Built with Claude Code by Anthropic.\" Checked 2026-11-22: 251 commits carry a Claude co-author line.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/helixscreen/1.webp",
+          "alt": "HelixScreen's home panel with the printer, temperatures and the last print",
+          "caption": "Home panel"
+        },
+        {
+          "src": "/assets/apps/helixscreen/2.webp",
+          "alt": "HelixScreen showing a 3D bed mesh map",
+          "caption": "Bed mesh"
+        }
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-22",
+      "name": "mctl",
+      "alternative": "Alternative to spacecraft tracking sites",
+      "description": "A retro mission-control display that tracks the ISS, Dragon capsules, Hubble, JWST and more: orbit map, ground track, pass predictions and live ISS telemetry.",
+      "category": "Science and space",
+      "url": "https://github.com/LiamDroog/mctl",
+      "linkText": "GitHub",
+      "icon": "✴",
+      "tile": "code",
+      "source": "https://github.com/LiamDroog/mctl",
+      "platforms": [
+        "Linux"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "maker": "Liam Droog",
+      "longDescription": "mctl follows the ISS and the Dragons that visit it, Hubble, JWST, Roman, Tiangong, the Voyagers and New Horizons, and is styled like a flight control room monitor: a 3D orbit map, ground track, sky plot, pass predictions, a maneuver planner and live ISS telemetry. It has seven themes, from green phosphor to Teletext.\n\nIt is written in Rust and tested on Kubuntu and a Raspberry Pi 3B+, with a low-resolution mode for feeding an old CRT.",
+      "builtWithAI": "The maker writes in the README: \"most of the code was written with Claude, Rust is not my expertise.\" Checked 2026-11-22: 22 of 42 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/mctl/1.webp",
+          "alt": "mctl's master page in green phosphor with the orbit map and telemetry",
+          "caption": "Master page"
+        },
+        {
+          "src": "/assets/apps/mctl/2.webp",
+          "alt": "mctl in the amber retro theme",
+          "caption": "Retro theme"
+        }
+      ]
     }
   ]
 }
