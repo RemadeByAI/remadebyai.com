@@ -1585,6 +1585,13 @@
           "alt": "Spell effects in a torch-lit dungeon hall",
           "caption": "A dungeon fight"
         }
+      ],
+      "keywords": [
+        "wow",
+        "world of warcraft",
+        "warcraft",
+        "mmo",
+        "mmorpg"
       ]
     },
     {
@@ -1607,7 +1614,12 @@
       "price": "Free",
       "maker": "Jon Radoff",
       "longDescription": "Legends of Future Past was one of the first commercial online multiplayer games, a text world (a MUD) set in the Shattered Realms of Andor with eight races, five schools of magic, psionic combat and over two thousand rooms. Computer Gaming World gave it a Special Award for Artistic Excellence in 1993.\n\nThe original engine's source code was lost, but former Game Masters had kept the script files that define every room, item, monster and quest. The new engine runs those original scripts, so the world is the real one. The server is free to play, and you can host your own copy.",
-      "builtWithAI": "Jon Radoff, who made the original game in 1992, says in the README that he used Claude Code to reconstruct it from the old script files, manuals and captured play sessions, in a weekend of agentic engineering. Checked 2026-11-22: all 120 commits are co-authored by Claude."
+      "builtWithAI": "Jon Radoff, who made the original game in 1992, says in the README that he used Claude Code to reconstruct it from the old script files, manuals and captured play sessions, in a weekend of agentic engineering. Checked 2026-11-22: all 120 commits are co-authored by Claude.",
+      "keywords": [
+        "mud",
+        "text adventure",
+        "compuserve"
+      ]
     },
     {
       "name": "Voidstruck",
@@ -1641,6 +1653,11 @@
           "alt": "Sunrise over a living planet with plants",
           "caption": "Sunrise over a living world"
         }
+      ],
+      "keywords": [
+        "no man's sky",
+        "elite",
+        "space"
       ]
     },
     {
@@ -1675,6 +1692,11 @@
           "alt": "A river town street lit by lanterns at night",
           "caption": "Chapter three: the lantern-lit town"
         }
+      ],
+      "keywords": [
+        "wuxia",
+        "sword",
+        "kung fu"
       ]
     },
     {
@@ -1709,6 +1731,10 @@
           "alt": "The night market street in Neon Zenith",
           "caption": "The night market"
         }
+      ],
+      "keywords": [
+        "cyberpunk",
+        "flying car"
       ]
     },
     {
@@ -1739,6 +1765,10 @@
           "alt": "Zara the alien battles the Dissonance King in a cosmic sound dimension",
           "caption": "The boss fight"
         }
+      ],
+      "keywords": [
+        "shooter",
+        "bullet hell"
       ]
     },
     {
@@ -1773,6 +1803,10 @@
           "alt": "A lakeside meadow stage at sunset",
           "caption": "The lakeside stage"
         }
+      ],
+      "keywords": [
+        "art of rally",
+        "racing"
       ]
     },
     {
@@ -1802,6 +1836,12 @@
           "alt": "A Bash Fighter match with many fighters, each with a name and damage percent",
           "caption": "A Timed Brawl on the live server"
         }
+      ],
+      "keywords": [
+        "smash",
+        "smash bros",
+        "super smash bros",
+        "fighting game"
       ]
     },
     {
@@ -1838,6 +1878,10 @@
           "alt": "A duel win and streak reward in Claude Desktop",
           "caption": "A win and a streak reward"
         }
+      ],
+      "keywords": [
+        "pokemon",
+        "creature collector"
       ]
     },
     {
@@ -1872,6 +1916,11 @@
           "alt": "A Leopard 2A4M in white camouflage firing along a dirt track on Monsoon Ridge",
           "caption": "Monsoon Ridge"
         }
+      ],
+      "keywords": [
+        "wot",
+        "world of tanks",
+        "tanks"
       ]
     },
     {
@@ -1901,6 +1950,10 @@
           "alt": "Tower of Time gameplay with towers defending against waves of enemies",
           "caption": "Defending the base"
         }
+      ],
+      "keywords": [
+        "tower defense",
+        "td"
       ]
     },
     {
@@ -1924,7 +1977,13 @@
       "price": "Free",
       "maker": "Sean Stobo",
       "longDescription": "Start a new world with /new-game, where a questionnaire shapes a custom setting and ruleset, or import a PDF of a book you own and step into it. The harness keeps a campaign journal, a custom rulebook and a living world, and Claude narrates, rolls the dice and runs the table.\n\nYou need Claude Code. The install script sets up everything on macOS and Linux.",
-      "builtWithAI": "Built for Claude Code and largely with it. Checked 2026-11-22: 104 of 176 commits are co-authored by Claude."
+      "builtWithAI": "Built for Claude Code and largely with it. Checked 2026-11-22: 104 of 176 commits are co-authored by Claude.",
+      "keywords": [
+        "dnd",
+        "d&d",
+        "dungeons and dragons",
+        "tabletop rpg"
+      ]
     },
     {
       "name": "Sakura Fantasy",
@@ -1953,6 +2012,10 @@
           "alt": "A reed-roofed boat under cherry trees at dawn, its lantern lit",
           "caption": "Dawn under the cherry trees"
         }
+      ],
+      "keywords": [
+        "boat",
+        "relaxing"
       ]
     }
   ]

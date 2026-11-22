@@ -19,14 +19,14 @@
   const load = () => loading || (loading = fetch('/search.json')
     .then(r => r.json()).then(data => { index = data.apps; }).catch(() => { loading = null; }));
 
-  // Every word has to match somewhere; matches in the name count most, then what it replaces, maker, category.
+  // Every word has to match somewhere; matches in the name count most, then search keywords (k, e.g. "wow"), what it replaces, maker, category.
   function search(query) {
     const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
     if (!terms.length || !index) return [];
     const results = [];
     for (const app of index) {
       const fields = [
-        [app.n, 100], [app.r, 45], [app.m, 30], [app.c, 30],
+        [app.n, 100], [app.k || '', 60], [app.r, 45], [app.m, 30], [app.c, 30],
         [[...app.p, ...app.$, ...app.l, app.o ? 'open source' : ''].join(' '), 15], [app.d, 8],
       ].map(([text, weight]) => [String(text).toLowerCase(), weight]);
       let score = 0;

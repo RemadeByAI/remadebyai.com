@@ -189,7 +189,7 @@ function externalLabel(app) {
 
 // One card. data-* attributes feed the search and filters in directory.js.
 function card(app) {
-  const search = [app.name, app.alternative, app.description, app.category, app.owner, app.maker, ...(app.platforms || []), app.license, app.price]
+  const search = [app.name, app.alternative, app.description, app.category, app.owner, app.maker, ...(app.platforms || []), app.license, app.price, ...(app.keywords || [])]
     .filter(Boolean).join(' ').toLowerCase();
   const list = values => esc(values.join('|'));
   return `<article class="card" data-group="${esc(app.group)}" data-category="${esc(app.categorySlug)}" data-platform="${list(app.platforms || [])}" data-price="${list(priceTags(app))}" data-licence="${list(licenceTags(app))}" data-search="${esc(search)}">
@@ -407,6 +407,7 @@ function searchIndex(apps) {
     apps: [...apps].sort(byName).map(a => ({
       n: a.name, u: `/apps/${a.slug}/`, r: a.alternative.replace(/^(Alternative to|Inspired by)\s*/i, ''),
       ...(/^Inspired by\s/i.test(a.alternative) ? { i: 1 } : {}),
+      ...(a.keywords ? { k: a.keywords.join(' ') } : {}),
       c: a.category, m: a.maker || a.owner, p: a.platforms || [], d: a.description,
       $: priceTags(a), l: licenceTags(a), o: a.group === 'open',
     })),
