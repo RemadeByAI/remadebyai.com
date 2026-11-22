@@ -2017,6 +2017,204 @@
         "boat",
         "relaxing"
       ]
+    },
+    {
+      "name": "Tidewater",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by fishing games",
+      "description": "An island fishing game in your browser: cast from the pier, the beach or your own boat, fight the fish, sell your catch and buy better gear, on a real-time tropical island and ocean.",
+      "category": "Games",
+      "url": "https://dgreenheck.github.io/tidewater/",
+      "linkText": "Play now",
+      "icon": "⚓",
+      "tile": "glance",
+      "added": "2026-11-22",
+      "source": "https://github.com/dgreenheck/tidewater",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Daniel Greenheck",
+      "longDescription": "Bites depend on the water, the depth and the time of day, across 18 Caribbean species. Keep the line tension in the green band while the fish runs, then log its length and weight. Joe's fish stand buys your catch and Marta's chandlery sells line, reels, rods, fuel, a fish finder and floodlights for night fishing. You can swim the reef and watch a humpback breach.\n\nIt runs directly on WebGPU with its own small rendering engine and needs a recent Chrome, Edge or Safari and a capable graphics card. The first load can take a minute while shaders compile. Progress is saved in the browser.",
+      "builtWithAI": "Built with Claude Code and Claude Opus 5.5. Checked 2026-11-22: all 48 commits are co-authored by Claude.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/tidewater/1.webp",
+          "alt": "Fishing off the pier at golden hour",
+          "caption": "The pier at golden hour"
+        },
+        {
+          "src": "/assets/apps/tidewater/2.webp",
+          "alt": "The beach in the late afternoon",
+          "caption": "The beach"
+        }
+      ],
+      "keywords": [
+        "fishing"
+      ]
+    },
+    {
+      "name": "A Game About Capybaras Delivering Food",
+      "slug": "capybaras-delivering-food",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by cozy delivery games",
+      "description": "A cozy multiplayer open world where you ride a scooter around a European-style city as a capybara delivering food orders, alone or with friends. Winner of Cursor Vibe Jam 2026.",
+      "category": "Games",
+      "url": "https://capybara-vibejam26.leocoout.dev/",
+      "linkText": "Play now",
+      "icon": "✦",
+      "tile": "bar",
+      "added": "2026-11-22",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "leocoout",
+      "longDescription": "Made in about two weeks by a solo iOS developer for Cursor Vibe Jam 2026, where it won and took home $25,000. Multiplayer runs over WebSockets on Cloudflare. It was covered by Wccftech and Mac Observer.",
+      "builtWithAI": "The maker says the game was entirely vibe-coded, running two or three Claude Code sessions at once, each on a different part of the code (reported by Wccftech and Mac Observer). The 3D city map was finished by hand in an editor.",
+      "keywords": [
+        "capybara",
+        "delivery",
+        "vibe jam"
+      ]
+    },
+    {
+      "name": "Fable Flight",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by flight simulators",
+      "description": "An open-world flight simulator written in Rust, with real-world weather and live air traffic. Download the launcher and fly.",
+      "category": "Games",
+      "url": "https://github.com/Rolandjg/fableflight",
+      "linkText": "View on GitHub",
+      "icon": "✈",
+      "tile": "glance",
+      "added": "2026-11-22",
+      "source": "https://github.com/Rolandjg/fableflight",
+      "download": "https://github.com/Rolandjg/fableflight/releases/latest",
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Rolandjg",
+      "longDescription": "Download the latest release, unpack it and run the launcher. It also ships an optional AI copilot bridge, so an AI assistant can talk to the simulator while you fly. You can build it yourself with Rust 1.85 or later.",
+      "builtWithAI": "The README says it was \"Created with Claude Fable 5.2, Opus 5.5 and other AI's\". Checked 2026-11-22: 157 of 385 commits are co-authored by Claude.",
+      "keywords": [
+        "flight sim",
+        "flight simulator",
+        "msfs",
+        "microsoft flight simulator"
+      ]
+    },
+    {
+      "name": "Battle Drones",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by Command & Conquer",
+      "description": "A phone-friendly real-time strategy game where two armies of flying and ground drones fight for territory and resources. Play skirmishes against the computer or duel a friend online.",
+      "category": "Games",
+      "url": "https://simonw.github.io/battledrones/",
+      "linkText": "Play now",
+      "icon": "⌖",
+      "tile": "code",
+      "added": "2026-11-22",
+      "source": "https://github.com/simonw/battledrones",
+      "platforms": [
+        "Web"
+      ],
+      "license": "Apache-2.0",
+      "price": "Free",
+      "maker": "Simon Willison",
+      "longDescription": "Pick a map and mutators on the Skirmish tab, or tap Duel a friend online and send the invite link to play phone to phone. The site also has replays of AI models playing each other. Its maker wrote about how it was built on his blog, simonwillison.net.",
+      "builtWithAI": "Simon Willison describes it as a vibe coded RTS, built mainly with Claude Opus 5.5 (Fable 5 in early versions); most of the README is written by Claude. Checked 2026-11-22: 286 of 346 commits are co-authored by Claude.",
+      "keywords": [
+        "rts",
+        "command and conquer",
+        "c&c",
+        "drones"
+      ]
+    },
+    {
+      "name": "Tennis Tycoon",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by sports management games",
+      "description": "A tennis club management game made by a retired pro player: pick coaches for young players, repair courts or hire scouts, and balance training surfaces before tournaments.",
+      "category": "Games",
+      "url": "https://apps.apple.com/us/app/tennis-tycoon/id6759981855",
+      "linkText": "App Store",
+      "icon": "◎",
+      "tile": "voice",
+      "added": "2026-11-22",
+      "platforms": [
+        "iOS"
+      ],
+      "price": "Paid",
+      "maker": "Iain Atkinson",
+      "longDescription": "$2.99 on the App Store, with optional in-app purchases that aren't needed to progress and no ads or waiting timers. Its maker had no development experience before this game. An Android version is planned.",
+      "builtWithAI": "MobileGamer.biz reports that Iain Atkinson, a retired tennis pro, made the game entirely with Claude Code, and that it wouldn't exist without it.",
+      "keywords": [
+        "tennis",
+        "management"
+      ]
+    },
+    {
+      "name": "Void Balls",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by roguelite arcade games",
+      "description": "A neon roguelite built by one developer and AI in ten days, with upgrade cards. Play free in your browser, or buy the Windows version.",
+      "category": "Games",
+      "url": "https://loopedingames.itch.io/void-balls",
+      "linkText": "Play on itch.io",
+      "icon": "◉",
+      "tile": "",
+      "added": "2026-11-22",
+      "platforms": [
+        "Web",
+        "Windows"
+      ],
+      "price": "Freemium",
+      "maker": "Loopedin Games",
+      "longDescription": "Version 0.1.0 has 15 upgrade cards and a locked seven-colour neon look. It is built in Unity and still in development.",
+      "builtWithAI": "The maker's launch devlog says Claude Code (Opus) wrote all of the roughly 29,000 lines of C#, reviewed by a human, using Unity MCP. Sprites were generated through Replicate and audio with ElevenLabs.",
+      "keywords": [
+        "roguelite",
+        "roguelike"
+      ]
+    },
+    {
+      "name": "38-0-0",
+      "slug": "38-0-0",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by 82-0 and football draft games",
+      "description": "A football draft game: pick players from randomly chosen Premier League teams and seasons and try to build a side that goes a perfect 38 wins, 0 draws, 0 losses. It reached No. 1 in the UK App Store free games chart.",
+      "category": "Games",
+      "url": "https://38-0-0.com",
+      "linkText": "Visit site",
+      "icon": "⚽",
+      "tile": "capture",
+      "added": "2026-11-22",
+      "platforms": [
+        "Web",
+        "iOS"
+      ],
+      "price": "Freemium",
+      "maker": "Deniz Sancar",
+      "longDescription": "After each draft the game reveals whether your team made Europe or won the league and cups. An international mode drafts from past World Cup teams. It was inspired by the basketball draft game 82-0.\n\nIt is free with ads between rounds, and a one-time $9.99 purchase removes them. In June 2026 it passed Fortnite to No. 1 in the UK App Store free games chart, with about 100,000 downloads and 1.8 million website visitors in its first week. The game uses the names of real Premier League clubs and players.",
+      "builtWithAI": "MobileGamer.biz reports that Deniz Sancar, who has no software engineering background, built the web version overnight with Claude Code and used the same tool to make the iPhone app.",
+      "keywords": [
+        "football",
+        "soccer",
+        "premier league",
+        "fantasy football"
+      ]
     }
   ]
 }

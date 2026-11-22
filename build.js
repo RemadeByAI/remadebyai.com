@@ -16,7 +16,7 @@ const crypto = require('crypto');
 const ROOT = __dirname;
 const SITE = 'https://remadebyai.com';
 const NEW_ON_HOME = 6;
-const GROUPS = { emukey: 'EmuKey app', open: 'Open source' };
+const GROUPS = { emukey: 'EmuKey app', open: 'Open source', indie: 'Independent' }; // indie = closed source, not by EmuKey
 const PLATFORMS = ['Windows', 'macOS', 'Linux', 'Web', 'iOS', 'Android'];
 const GENERATED_DIRS = ['apps', 'categories', 'new', 'about', 'list'];
 
