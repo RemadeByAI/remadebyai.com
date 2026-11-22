@@ -220,7 +220,7 @@
       "license": "MIT or Apache-2.0",
       "price": "Free",
       "maker": "ArtCraft",
-      "builtWithAI": "Built largely with Claude: madrobot.blog counted 3,876 of 5,031 commits across ArtCraft's Adobe-clone repos co-authored by Claude Opus 5.5.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 5,282 of 15,280 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. madrobot.blog counted 3,876 of 5,031 commits across ArtCraft's Adobe-clone repos co-authored by Claude Opus 5.5.",
       "download": "https://getartcraft.com/apps/photocraft",
       "screenshots": [
         {
@@ -257,7 +257,7 @@
       "license": "MIT or Apache-2.0",
       "price": "Free",
       "maker": "ArtCraft",
-      "builtWithAI": "Part of ArtCraft's Claude-built suite; the repo carries CLAUDE.md and AGENTS.md.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 2,641 of 6,706 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files.",
       "download": "https://getartcraft.com/apps/pdfcraft",
       "screenshots": [
         {
@@ -294,7 +294,7 @@
       "license": "MIT or Apache-2.0",
       "price": "Free",
       "maker": "ArtCraft",
-      "builtWithAI": "Part of ArtCraft's Claude-built suite; XDA lists it as a vibe-coded Word replacement.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,674 of 3,580 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. XDA lists it as a vibe-coded Word replacement.",
       "download": "https://getartcraft.com/apps/wordcraft",
       "screenshots": [
         {
@@ -331,7 +331,7 @@
       "license": "MIT or Apache-2.0",
       "price": "Free",
       "maker": "ArtCraft",
-      "builtWithAI": "Part of ArtCraft's Claude-built suite; the repo carries CLAUDE.md and AGENTS.md.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 736 of 3,375 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files.",
       "download": "https://getartcraft.com/apps/gridcraft",
       "screenshots": [
         {
@@ -406,7 +406,7 @@
         "Web"
       ],
       "longDescription": "FilmCraft is a timeline video editor written in Rust: bins, source and program monitors, multi-track editing, a Color workspace with scopes, and audio mixing with loudness meters. It imports most common video formats and uses hardware decoding on each platform.\n\nEvery action is also a command that its CLI and MCP server can run, so an AI agent can cut, grade and export a project the same way a person does. The project calls itself alpha.",
-      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,456 of 4,203 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. XDA and MakeUseOf report that ArtCraft's maker, Brandon Thomas, built the suite with Claude Opus 5.5.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,431 of 4,204 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. XDA and MakeUseOf report that ArtCraft's maker, Brandon Thomas, built the suite with Claude Opus 5.5.",
       "screenshots": [
         {
           "src": "/assets/apps/filmcraft/1.webp",
@@ -445,7 +445,7 @@
         "Web"
       ],
       "longDescription": "EffectCraft is a compositor with compositions, layers, keyframes, a graph editor, more than 300 effects, layer styles, expressions, 3D cameras and lights, and a render queue that exports ProRes, HEVC, AV1, WebM, image sequences and GIF.\n\nIts README says macOS is the most tested platform and that Linux and Windows users have hit basic interaction bugs. The project calls itself alpha.",
-      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,963 of 5,432 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. XDA (Nov 2026) says it was \"built in 10 days, mostly by AI agents\" using Claude Opus 5.5.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,660 of 5,432 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. XDA (Nov 2026) says it was \"built in 10 days, mostly by AI agents\" using Claude Opus 5.5.",
       "screenshots": [
         {
           "src": "/assets/apps/effectcraft/1.webp",
@@ -484,7 +484,7 @@
         "Web"
       ],
       "longDescription": "LightCraft keeps a non-destructive photo library and develops raw files with light, tone curve, colour grading and effects panels, plus before and after views. Your photos stay on your own computer.\n\nIt also ships a CLI and an MCP server so AI agents can drive edits. The project calls itself alpha.",
-      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 2,519 of 5,633 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. XDA and MakeUseOf report that ArtCraft's maker built the suite with Claude Opus 5.5.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 2,088 of 5,633 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. XDA and MakeUseOf report that ArtCraft's maker built the suite with Claude Opus 5.5.",
       "screenshots": [
         {
           "src": "/assets/apps/lightcraft/1.webp",
@@ -523,7 +523,7 @@
         "Web"
       ],
       "longDescription": "VectorCraft covers artboards, Bézier pen and direct selection tools, Pathfinder, live blends, clipping groups, appearance effects such as glows, and 3D Revolve.\n\nLike the rest of the suite it has a CLI and an MCP server, so Claude and other agents can draw, edit and export artwork.",
-      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,700 of 19,412 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. XDA reports that ArtCraft's maker built the suite with Claude Opus 5.5.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,685 of 19,412 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. XDA reports that ArtCraft's maker built the suite with Claude Opus 5.5.",
       "screenshots": [
         {
           "src": "/assets/apps/vectorcraft/1.webp",
@@ -562,7 +562,7 @@
         "Web"
       ],
       "longDescription": "FigCraft has frames, auto layout, components and variants, vector networks, styles, variables and click-through prototypes in a native app that opens instantly and works offline. It has a first preview of live multiplayer sessions hosted from the app or your own server.\n\nIts README is frank about the gaps: it estimates it is about 49% of the way to replacing proprietary tools, opens .fig files only on a best-effort basis, and has no accounts or cloud yet.",
-      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,237 of 4,674 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,210 of 4,674 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files.",
       "screenshots": [
         {
           "src": "/assets/apps/figcraft/1.webp",
@@ -601,7 +601,7 @@
         "Web"
       ],
       "longDescription": "DeckCraft builds decks with themes, layouts, shapes, pictures, tables, charts, transitions and animations, opens and saves .pptx files, imports older .ppt files, and presents full screen.\n\nIts README says it covers 84% of the features it tracks against the app it replaces, and that it is in alpha heading for beta.",
-      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 554 of 2,278 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. MakeUseOf (Oct 2026) reports the office apps were built with Claude Opus 5.5.",
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 533 of 2,278 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files. MakeUseOf (Oct 2026) reports the office apps were built with Claude Opus 5.5.",
       "screenshots": [
         {
           "src": "/assets/apps/deckcraft/1.webp",
@@ -791,6 +791,201 @@
           "caption": "Mind maps"
         }
       ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit site",
+      "added": "2026-11-22",
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "name": "CADCraft",
+      "slug": "cadcraft",
+      "alternative": "Alternative to AutoCAD",
+      "description": "A free 2D and 3D CAD app with the command line, snaps, layers and dimensions drafters know, reading and writing DXF and DWG, for Windows, Mac, Linux, FreeBSD and the web, from the ArtCraft suite. Early development.",
+      "category": "3D and CAD",
+      "icon": "⌖",
+      "tile": "code",
+      "url": "https://getartcraft.com/apps/cadcraft",
+      "download": "https://github.com/storytold/cadcraft/releases/latest",
+      "source": "https://github.com/storytold/cadcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "longDescription": "CADCraft follows the classic drafting workflow: type a command such as LINE, click points or enter coordinates, and use object snaps, polar tracking, ortho, grips and right-click to repeat. It has layers, hatches, blocks with attributes, every DIM command with dimension styles, multileaders, tables and paper-space layouts.\n\nIt reads and writes DXF natively (R12 through 2018) and opens and saves DWG (R13 through 2018) through the open-source acadrust library, with SVG and PNG export. Its README calls it \"in early, fast development\"; release builds (v0.8.0 on 2026-11-22) are code-signed for Windows and macOS.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/cadcraft/1.webp",
+          "alt": "CADCraft with an apartment floor plan open: hatched walls, windows, door swings, room labels, a room schedule table and dimensions, with tool sets, layers, properties and the command line",
+          "caption": "Apartment floor plan"
+        },
+        {
+          "src": "/assets/apps/cadcraft/2.webp",
+          "alt": "CADCraft with a mounting bracket part drawing: front view with bolt holes, a hatched section view, notes and a title block",
+          "caption": "Part drawing with section view"
+        }
+      ],
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 923 of 2,251 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files."
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit site",
+      "added": "2026-11-22",
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "name": "DesignCraft",
+      "slug": "designcraft",
+      "alternative": "Alternative to Adobe InDesign",
+      "description": "A free page layout and desktop publishing app with threaded text, styles and parent pages, IDML and INDD import, and PDF and EPUB export, for Windows, Mac, Linux and the web, from the ArtCraft suite.",
+      "category": "Graphics",
+      "icon": "❡",
+      "tile": "wiki",
+      "url": "https://getartcraft.com/apps/designcraft",
+      "download": "https://getartcraft.com/apps/designcraft",
+      "source": "https://github.com/storytold/designcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "longDescription": "DesignCraft lays out magazines, books and flyers with spreads and parent pages, threaded text frames, paragraph and character styles, tables, text wrap and a baseline grid. Its paragraph composer uses the Knuth-Plass algorithm with hyphenation and optical margin alignment, and line breaks match on screen and in PDF.\n\nIt imports and exports IDML, imports INDD files through the maker's own indd-utils library, and exports PNG, PDF (PDF/X-4, PDF/A-2b), EPUB and editable .pptx. No subscription, licence server or telemetry.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/designcraft/1.webp",
+          "alt": "DesignCraft showing a magazine spread with a threaded three-column story selected and the Control and Properties panels",
+          "caption": "Magazine spread with threaded text"
+        },
+        {
+          "src": "/assets/apps/designcraft/2.webp",
+          "alt": "A magazine cover made in DesignCraft: layered purple hills under a pale sun with a white serif headline",
+          "caption": "A cover from the sample magazine"
+        }
+      ],
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,350 of 5,610 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files."
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "View on GitHub",
+      "added": "2026-11-22",
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "name": "ArtCraft Launcher",
+      "slug": "artcraft-launcher",
+      "alternative": "Alternative to the Adobe Creative Cloud desktop app",
+      "description": "A free launcher that installs, updates and opens every ArtCraft app in one window, for Windows, Mac, Linux, FreeBSD and the web. Early alpha.",
+      "category": "Utilities",
+      "icon": "✦",
+      "tile": "glance",
+      "url": "https://github.com/storytold/craft-launcher",
+      "download": "https://github.com/storytold/craft-launcher/releases/latest",
+      "source": "https://github.com/storytold/craft-launcher",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "longDescription": "Each ArtCraft app ships its own builds for every platform. The launcher lists the whole suite (PhotoCraft, LightCraft, FilmCraft, DesignCraft, VectorCraft, PdfCraft, EffectCraft, AniCraft, WordCraft, DeckCraft, GridCraft, CADCraft, SoundCraft, FigCraft, TextureCraft, MaterialCraft and more), shows which ones you have, picks the right installer for your system, checks it against the release's SHA-256 checksums and tells you when an update is out.\n\nIt is a small native app that can sit in the menu bar or system tray, and the Windows installer needs no admin rights. Its README marks it early alpha.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/artcraft-launcher/1.webp",
+          "alt": "ArtCraft Launcher in the dark grid view: a card for each Craft app with its icon, status, version, release date and an Install or Open button",
+          "caption": "Grid view"
+        },
+        {
+          "src": "/assets/apps/artcraft-launcher/2.webp",
+          "alt": "ArtCraft Launcher in the light table view with each app's status, installed and latest versions and release date",
+          "caption": "Table view"
+        }
+      ],
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 206 of 653 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files."
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit site",
+      "added": "2026-11-22",
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "name": "TextureCraft",
+      "slug": "texturecraft",
+      "alternative": "Alternative to Adobe Substance 3D Painter",
+      "description": "A free 3D texture painting app with layers, masks, smart materials and GPU mesh-map baking, for Windows, Mac, Linux, FreeBSD and the web, from the ArtCraft suite. In active development.",
+      "category": "3D and CAD",
+      "icon": "◈",
+      "tile": "capture",
+      "url": "https://getartcraft.com/apps/texturecraft",
+      "download": "https://getartcraft.com/apps/texturecraft",
+      "source": "https://github.com/storytold/texturecraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "longDescription": "TextureCraft paints PBR materials straight onto 3D models in a layer stack with masks, generators and smart materials. Brush strokes flow across UV seams, mesh maps bake on the GPU, and a path-traced Rendering mode previews the result.\n\nIt imports glTF/GLB, FBX, COLLADA, USD, Alembic, OBJ, PLY and STL, and exports textures as PNG, JPEG, TGA, TIFF, EXR, HDR and more at 8, 16 or 32 bits with UDIM tiles. Materials from MaterialCraft can be sent straight to its shelf. Its README (2026-11-01) estimates about 93% of a texture artist's daily workflow works end to end.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/texturecraft/1.webp",
+          "alt": "The TextureCraft workspace with the material library, the 3D viewport and 2D UV view of a portable TV, and the layer stack",
+          "caption": "Painting workspace"
+        },
+        {
+          "src": "/assets/apps/texturecraft/2.webp",
+          "alt": "TextureCraft's Bake mode with texture sets, mesh map bakers and bake parameters",
+          "caption": "Baking mesh maps"
+        }
+      ],
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 141 of 1,114 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files."
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit site",
+      "added": "2026-11-22",
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "maker": "ArtCraft",
+      "name": "MaterialCraft",
+      "slug": "materialcraft",
+      "alternative": "Alternative to Adobe Substance 3D Designer",
+      "description": "A free node-based procedural material designer with live 2D and 3D previews and tileable texture export, for Windows, Mac, Linux, FreeBSD and the web, from the ArtCraft suite. In active development.",
+      "category": "3D and CAD",
+      "icon": "⬡",
+      "tile": "bar",
+      "url": "https://getartcraft.com/apps/materialcraft",
+      "download": "https://getartcraft.com/apps/materialcraft",
+      "source": "https://github.com/storytold/materialcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "longDescription": "MaterialCraft builds procedural materials in a node graph with live thumbnails, a 3D view and a 2D view. Noises and patterns tile seamlessly at any resolution, and only the nodes downstream of an edit are re-cooked.\n\nIt saves native .sbs projects and exports base color, normal, roughness, metallic, height and ambient occlusion maps as PNG, JPEG, TGA, EXR, HDR and more. File, Send to TextureCraft puts a material on TextureCraft's shelf with its inputs still live. It is the youngest of these apps, and its README lists node behaviour and SBS save and load as the current focus.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/materialcraft/1.webp",
+          "alt": "The MaterialCraft workspace with a brick wall material as a node graph, a 3D view of a rounded cube in red brick and a 2D view",
+          "caption": "Node graph with 3D and 2D views"
+        },
+        {
+          "src": "/assets/apps/materialcraft/2.webp",
+          "alt": "A wood planks material graph shown on a rounded cube and in the 2D view",
+          "caption": "Wood planks material"
+        }
+      ],
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 68 of 502 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files."
     }
   ]
 }
