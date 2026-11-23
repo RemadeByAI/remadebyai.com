@@ -92,6 +92,15 @@ function load() {
       }
     }
     if (app.review && (!app.review.date || !app.review.body)) problems.push(`${where}: a review needs "date" and "body".`);
+    if (app.whatPeopleSay) {
+      const w = app.whatPeopleSay;
+      if (!w.checked || !/^\d{4}-\d{2}-\d{2}$/.test(w.checked)) problems.push(`${where}: whatPeopleSay needs "checked" like 2026-11-23.`);
+      if (!w.summary) problems.push(`${where}: whatPeopleSay needs a "summary".`);
+      for (const src of w.sources || []) {
+        if (!src.url || !/^https?:\/\//.test(src.url) || !src.site) problems.push(`${where}: each whatPeopleSay source needs "site" and an http(s) "url".`);
+        if (src.quote && src.quote.split(/\s+/).length > 40) problems.push(`${where}: keep whatPeopleSay quotes short (40 words max).`);
+      }
+    }
     const slug = app.slug || slugify(app.name || '');
     if (slugs.has(slug)) problems.push(`${where}: slug "${slug}" is used twice. Give one of them its own "slug".`);
     slugs.add(slug);
@@ -259,6 +268,8 @@ function appPage(app, all) {
       <p class="review-meta">Reviewed ${esc(formatDate(app.review.date))}${app.review.version ? ` · version ${esc(app.review.version)}` : ''}${app.review.author ? ` · by ${esc(app.review.author)}` : ''}</p>
     </div>` : `<p class="muted">We haven't reviewed ${esc(app.name)} yet.</p>`;
 
+  const buzz = whatPeopleSay(app);
+
   const related = all.filter(a => a.categorySlug === app.categorySlug && a.slug !== app.slug).sort(byNewest).slice(0, 3);
   const relatedHtml = related.length ? `
   <section class="app-section" aria-labelledby="related-title">
@@ -296,6 +307,7 @@ ${facts.map(([k, v]) => `      <div><dt>${k}</dt><dd>${v}</dd></div>`).join('\n'
     <h2 id="built-title">How it was built with AI</h2>
     <div class="prose">${built}</div>
   </section>
+  ${buzz}
   <section class="app-section" aria-labelledby="review-title">
     <h2 id="review-title">Our review</h2>
     ${review}
@@ -304,6 +316,42 @@ ${facts.map(([k, v]) => `      <div><dt>${k}</dt><dd>${v}</dd></div>`).join('\n'
   ${badgeBox(app)}
 </div>
 ${foot}`;
+}
+
+// ---------- "What people say" (compiled from public discussion) ----------
+// Our own summary of what others say about an app, with short attributed quotes and links to the
+// full threads/reviews. Never paste whole reviews. Apps without a whatPeopleSay entry show nothing.
+function whatPeopleSay(app) {
+  const w = app.whatPeopleSay;
+  if (!w) return '';
+  const list = (title, items, cls) => items && items.length
+    ? `<div class="buzz-col ${cls}"><h3>${title}</h3><ul>${items.map(i => `<li>${esc(i)}</li>`).join('')}</ul></div>` : '';
+  const sources = (w.sources || []).map(src => {
+    const by = [src.who ? esc(src.who) : '', esc(src.site)].filter(Boolean).join(' on ');
+    const extra = [src.date ? esc(formatMonth(src.date)) : '', src.points ? esc(src.points) : ''].filter(Boolean).join(' · ');
+    return `<li class="buzz-source">
+        ${src.quote ? `<blockquote>&ldquo;${esc(src.quote)}&rdquo;</blockquote>` : ''}
+        <p><a href="${esc(src.url)}">${esc(src.title || src.site)}</a> <span class="buzz-by">${by}${extra ? ` · ${extra}` : ''}</span></p>
+      </li>`;
+  }).join('');
+  const n = (w.sources || []).length;
+  return `
+  <section class="app-section" aria-labelledby="buzz-title">
+    <h2 id="buzz-title">What people say</h2>
+    <div class="buzz">
+      <div class="prose">${paragraphs(w.summary)}</div>
+      ${(w.praise || []).length || (w.complaints || []).length ? `<div class="buzz-cols">${list('People like', w.praise, 'good')}${list('Common complaints', w.complaints, 'bad')}</div>` : ''}
+      ${n ? `<h3 class="buzz-sources-title">Where people said it</h3><ul class="buzz-sources">${sources}</ul>` : ''}
+      <p class="review-meta">Compiled by RemadeByAI from ${n ? `${n} public source${n === 1 ? '' : 's'}` : 'public discussion'}, checked ${esc(formatDate(w.checked))}. Quotes are short excerpts; follow the links for the full context.</p>
+    </div>
+  </section>`;
+}
+
+function formatMonth(d) {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(d)) return formatDate(d);
+  const m = /^(\d{4})-(\d{2})$/.exec(d);
+  if (!m) return d;
+  return new Date(Date.UTC(+m[1], +m[2] - 1, 1)).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
 }
 
 // ---------- "Listed on RemadeByAI" badge ----------

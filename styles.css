@@ -255,6 +255,23 @@ footer { border-top: 1px solid var(--line); background: #0d1310; }
 .review p + p { margin-top: 10px; }
 .review-verdict { color: var(--green); font-size: 1.15rem; font-weight: 700; }
 .review-meta { color: var(--muted); font: .78rem var(--mono); }
+/* "What people say": compiled from public discussion */
+.buzz { max-width: 960px; margin-top: 14px; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+.buzz .prose p + p { margin-top: 10px; }
+.buzz h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+.buzz-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 14px 28px; margin-top: 18px; }
+.buzz-col ul { list-style: none; padding: 0; margin: 0; }
+.buzz-col li { position: relative; padding-left: 1.4em; margin-top: 6px; }
+.buzz-col li::before { position: absolute; left: 0; font-weight: 700; }
+.buzz-col.good li::before { content: "+"; color: var(--green); }
+.buzz-col.bad li::before { content: "\2212"; color: #ff9b8a; }
+.buzz-sources-title { margin-top: 22px; }
+.buzz-sources { list-style: none; padding: 0; margin: 0 0 16px; display: grid; gap: 12px; }
+.buzz-source { padding: 12px 14px; border-left: 3px solid var(--line); background: color-mix(in srgb, var(--panel) 70%, transparent); border-radius: 0 10px 10px 0; }
+.buzz-source blockquote { margin: 0 0 6px; font-style: italic; }
+.buzz-source p { margin: 0; font-size: .92rem; overflow-wrap: anywhere; }
+.buzz-source a { color: var(--green); text-decoration: underline; text-underline-offset: 2px; }
+.buzz-by { color: var(--muted); }
 .app-section > .muted { margin-top: 12px; }
 @media (max-width: 760px) { .app-hero { grid-template-columns: 1fr; } }
 /* Calmer home page (2026-11-22): hero, featured, a row of new arrivals, category tiles, two links out.
@@ -414,3 +431,5 @@ html[data-theme="light"] .viewer, html[data-theme="light"] .viewer::backdrop { b
   html[data-theme="light"] .hero { background-image: linear-gradient(90deg, #f4faf1f2, #f4faf1b0), url(assets/circuit-light.svg); }
   html[data-theme="light"] .inbox-art { border-color: #c9d8cc; }
 }
+html[data-theme="light"] .buzz-col.bad li::before { color: #c0392b; }
+html[data-theme="light"] .buzz-col.good li::before { color: #2e7d32; }

@@ -1096,7 +1096,73 @@
           "alt": "Readest in dark mode with the theme picker open",
           "caption": "Themes"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Most readers who write about Readest like it a lot. They call it one of the best cross-platform ebook readers, praising the clean look, detailed font and layout controls, a big free feature set with no ads, and progress sync that also works with KOReader and Calibre. Reviewers note rough edges: occasional slow loading or crashes, text-to-speech glitches (especially with PDFs), and desktop quirks such as a click turning the page. A newer group of critics dislikes the AI features and feels development favours quantity over polish; the developer disputes that.\n\nIt scores well where it's rated (4.5 on the App Store, 4.6 on AlternativeTo), but Hacker News has said little about it.",
+        "praise": [
+          "Clean, modern design with very detailed font and layout controls",
+          "Generous free features (highlights, notes, search, parallel reading), no ads",
+          "Truly cross-platform, with sync that works alongside KOReader and Calibre",
+          "Actively developed, and the developer responds to reports"
+        ],
+        "complaints": [
+          "Occasional slow loading, with some crash reports",
+          "Text-to-speech glitches, like skipped lines in PDFs",
+          "Desktop quirks, such as clicks turning the page or a forgotten window size",
+          "Free AI and translation are capped, and some see the AI features as bloat"
+        ],
+        "sources": [
+          {
+            "title": "Readest: A Modern Ebook Reader Application with Cross-Platform Sync and Advanced Tools",
+            "site": "Reddit r/ereader",
+            "url": "https://www.reddit.com/r/ereader/comments/1i1b56d/",
+            "date": "2025-01-14",
+            "quote": "it is the best epub/mobi book reader I have ever used",
+            "who": "IwuvNikoNiko",
+            "points": "85 comments"
+          },
+          {
+            "title": "Readest Could Be My New Favorite eBook Reader App on Linux",
+            "site": "It's FOSS",
+            "url": "https://itsfoss.com/news/readest-app/",
+            "date": "2025-09-16",
+            "quote": "I hated that on Readest, whenever I left-clicked on a page, it would change the page.",
+            "who": "Sourav Rudra"
+          },
+          {
+            "title": "Readest ebook reader review",
+            "site": "Make Tech Easier",
+            "url": "https://maketecheasier.com/readest-ebook-reader/",
+            "date": "2025-10-11",
+            "quote": "an incredible amount of features for free",
+            "who": "Crystal Crowder"
+          },
+          {
+            "title": "Readest - eBook Reader",
+            "site": "Apple App Store",
+            "url": "https://apps.apple.com/us/app/id6738622779",
+            "points": "4.5 out of 5 from 214 ratings"
+          },
+          {
+            "title": "Readest reviews",
+            "site": "AlternativeTo",
+            "url": "https://alternativeto.net/software/readest/about/",
+            "date": "2026-09-04",
+            "quote": "There are a lot of good ideas here, but it suffers from the quantity-over-quality issue",
+            "who": "Roby718"
+          },
+          {
+            "title": "Show HN: Beautiful ePub reader for all platforms",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=42558313",
+            "date": "2024-12-31",
+            "quote": "This looks nice, but is anyone really demanding AI powered summaries?",
+            "who": "Finnucane",
+            "points": "12 points"
+          }
+        ]
+      }
     },
     {
       "name": "Bitchat",
@@ -1208,7 +1274,63 @@
           "alt": "The Inbox Zero email client with a list of messages",
           "caption": "Email client"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "There's less independent user discussion of Inbox Zero than its GitHub popularity suggests. The main real conversation is its December 2023 Show HN thread; most of the rest is Product Hunt launch comments and short review-site ratings. People like writing email rules in plain English, the pre-drafted replies, and how fast bulk unsubscribe clears an old inbox, and they value that it's open source and can be self-hosted. The biggest worry, on both Hacker News and Product Hunt, is privacy: handing a whole inbox to a cloud AI model makes many people uneasy (the maker's answer is to self-host). Later reviews add that the hosted plan is fairly pricey per user and self-hosting takes real effort.\n\nRatings are high (4.8 on Product Hunt, 5.0 on G2) but come from only a handful of reviews.",
+        "praise": [
+          "Plain-English AI rules and pre-drafted replies stand out",
+          "Bulk unsubscribe and archive clear years-old inboxes in a few clicks",
+          "Open source and free to self-host, which reassures privacy-minded users",
+          "The developer ships fixes and features quickly"
+        ],
+        "complaints": [
+          "Privacy: many are uneasy sending a whole inbox to a third-party AI model",
+          "The hosted plan is fairly expensive per user, with only a short trial",
+          "Self-hosting takes real effort (hosting, API keys, upgrades)",
+          "Early versions were Gmail-only (Outlook came later)"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: Inbox Zero – open-source email assistant",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=38809770",
+            "date": "2023-12-29",
+            "quote": "Handing my whole personal inbox over to OpenAI seems insane.",
+            "who": "bytethis",
+            "points": "167 points, 143 comments"
+          },
+          {
+            "title": "Same Show HN thread: a fan of the rules feature",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=38809770",
+            "date": "2023-12-30",
+            "quote": "The AI-powered rules thing is revolutionary.",
+            "who": "_xnmw"
+          },
+          {
+            "title": "Inbox Zero reviews",
+            "site": "Product Hunt",
+            "url": "https://www.producthunt.com/products/inbox-zero-2/reviews",
+            "quote": "My 20yr old inbox is finally clean with just a few clicks!",
+            "who": "David Kanzen",
+            "points": "4.8 out of 5 from 14 reviews"
+          },
+          {
+            "title": "Inbox Zero Review 2026",
+            "site": "AISOTools",
+            "url": "https://aisotools.com/blog/inbox-zero-review-2026",
+            "date": "2026-08",
+            "quote": "Pre-drafted replies are the feature that changes the daily experience"
+          },
+          {
+            "title": "Inbox Zero Reviews",
+            "site": "G2",
+            "url": "https://www.g2.com/products/inbox-zero/reviews",
+            "points": "5.0 out of 5 from 8 reviews"
+          }
+        ]
+      }
     },
     {
       "name": "OpenSEO",
@@ -1280,7 +1402,67 @@
           "alt": "Voicebox's story editor with clips from several voices on a timeline",
           "caption": "Stories with several voices"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Most of what's written about Voicebox is enthusiastic: people see it as a free, local-first alternative to ElevenLabs, and like that voice samples never leave their own computer and that several speech engines sit behind one tidy app. Hands-on criticism comes mostly from GitHub issues: early Windows builds didn't use the GPU, first-run guidance was thin, and the open-issue list is long. It also needs a fairly strong machine. Independent tests of its quality against ElevenLabs are still scarce.\n\nHacker News coverage is light (mostly passing recommendations), and we couldn't check Reddit for this round-up.",
+        "praise": [
+          "Runs fully on your own computer: no per-character billing, no rate limits, private voice data",
+          "Several speech engines, voice cloning and dictation in one app",
+          "Free and MIT-licensed, with extras like a multi-speaker story editor and an MCP server for AI agents",
+          "Polished interface and well-thought-out dictation"
+        ],
+        "complaints": [
+          "Early Windows installers didn't use the GPU unless you built from source",
+          "Bugs and thin onboarding reported, with a large issue backlog",
+          "Hardware-hungry: multi-GB model downloads, about 8 GB VRAM or 16 GB unified memory recommended",
+          "Features vary by engine, and speed/quality claims aren't independently tested"
+        ],
+        "sources": [
+          {
+            "title": "Voicebox: Local voice studio (review)",
+            "site": "Local AI Master",
+            "url": "https://localaimaster.com/blog/voicebox-local-voice-studio",
+            "date": "2026-09-13",
+            "quote": "Install it if you want both halves of the voice loop and you have at least 8 GB of VRAM or 16 GB of unified memory.",
+            "who": "Barsha Mohapatra"
+          },
+          {
+            "title": "Voicebox: The open-source AI voice studio that just hit 28k stars",
+            "site": "DEV Community",
+            "url": "https://dev.to/hiroki-ii-ai/voicebox-the-open-source-ai-voice-studio-that-just-hit-28k-stars-77g",
+            "date": "2026-05-26",
+            "quote": "Cloud convenience is real, but voice data is biometric data",
+            "who": "HIROKI II"
+          },
+          {
+            "title": "Issue #192: no GPU in the Windows installer",
+            "site": "GitHub issues",
+            "url": "https://github.com/jamiepine/voicebox/issues/192",
+            "date": "2026-02-24",
+            "quote": "Still no GPU in the .exe windows installable. (uses gpu normally if compiled from source)",
+            "who": "ltcdatagonza",
+            "points": "10 reactions"
+          },
+          {
+            "title": "Issue #108: missing instructions",
+            "site": "GitHub issues",
+            "url": "https://github.com/jamiepine/voicebox/issues/108",
+            "date": "2026-02-19",
+            "quote": "there are no instructions on how to use it—no step-by-step for the software.",
+            "who": "netpirax-cell",
+            "points": "17 reactions"
+          },
+          {
+            "title": "Comment in a thread about Microsoft VibeVoice",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=47934764",
+            "date": "2026-04-28",
+            "quote": "Locally maybe https://voicebox.sh/ Elevenlabs in the cloud.",
+            "who": "yreg"
+          }
+        ]
+      }
     },
     {
       "name": "openGym",
@@ -3470,7 +3652,67 @@
           "alt": "Fresh selecting a column of numbers with block selection",
           "caption": "Block selection with Alt+Shift+arrows"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage of Fresh is small but friendly: one well-received Show HN thread (December 2025), a few Linux news reviews and some blog posts. People keep saying it's easy to pick up, especially for anyone used to VS Code or nano, with smooth multiple cursors, a command palette, working mouse support and a fast feel, even on very large files. The criticism is about early Windows mouse bugs, a large dependency list and binary size, and some doubt about whether another terminal editor is needed next to micro and Helix. It's also not yet in most Linux distros' official repositories, so installing takes a few more steps.\n\nWe couldn't check Reddit for this round-up.",
+        "praise": [
+          "Easy to start with: no modal editing, familiar to VS Code and nano users",
+          "Unusually smooth multiple cursors for a terminal editor",
+          "Command palette, file browser and mouse support work well",
+          "Fast and responsive, even with huge files"
+        ],
+        "complaints": [
+          "Early mouse bugs on Windows (text selection in Windows 11)",
+          "Lots of dependencies and a large binary for a terminal editor",
+          "Not yet in most distros' official repositories, such as Debian",
+          "Some doubt that another terminal editor is needed next to micro, Helix and Kakoune"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: Fresh – A new terminal editor built in Rust",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=46135067",
+            "date": "2025-12-03",
+            "quote": "Installed it and out of the box this is the best new TUI editor I've tried, probably ever.",
+            "who": "20after4",
+            "points": "187 points"
+          },
+          {
+            "title": "Easier Than Nano! Fresh is a 'Fresh' New Rust-based Terminal Editor for Linux",
+            "site": "It's FOSS",
+            "url": "https://itsfoss.com/fresh-terminal-text-editor/",
+            "date": "2025-12-17",
+            "quote": "Mouse navigation works well for interacting with the text and the interface.",
+            "who": "Sourav Rudra"
+          },
+          {
+            "title": "Fresh Adds an Easy-to-use and Powerful Text Editor to the Linux Terminal",
+            "site": "MakeTechEasier",
+            "url": "https://maketecheasier.com/fresh-text-editor-linux-terminal/",
+            "date": "2026-01-10",
+            "quote": "if you have spent ten years mastering Vim, then Fresh may not be for you.",
+            "who": "Haroon Javed"
+          },
+          {
+            "title": "Same Show HN thread: a Windows bug report",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=46135067",
+            "date": "2025-12-03",
+            "quote": "On Windows 11 the mouse only moves to the start of a line, cannot select text at all",
+            "who": "Sn0wCoder"
+          },
+          {
+            "title": "$100 to a Debian Developer who can get Fresh Editor into Trixie",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=48347180",
+            "date": "2026-05-31",
+            "quote": "This is because Fresh is easier to learn quickly than vim & emacs",
+            "who": "jph",
+            "points": "29 points"
+          }
+        ]
+      }
     },
     {
       "name": "Pic2Sheet",
