@@ -837,7 +837,38 @@
           "alt": "EffectCraft's 3D showcase: intersecting cards lit by a spot light with soft shadows on a gridded floor",
           "caption": "3D cameras and lights"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage is thin: two blog write-ups and no community discussion of the app itself. An Italian tech blogger tested the command-line renderer and found that rendering, expressions and Lottie export mostly worked. He calls it the most ambitious app in the suite and a real option on Linux, but not for anyone who has to deliver complex After Effects projects. A second review praises the large effects catalogue and the automation features, but says it is not yet an After Effects replacement.",
+        "praise": [
+          "Very ambitious feature set with hundreds of effects",
+          "Command-line rendering and Lottie export work in testing",
+          "A real option for motion graphics on Linux"
+        ],
+        "complaints": [
+          "Cannot open After Effects .aep projects or use Adobe plug-ins",
+          "Still alpha and not ready to replace After Effects",
+          "Some effects lost on Lottie export"
+        ],
+        "sources": [
+          {
+            "title": "EffectCraft guide to the free After Effects alternative in Rust",
+            "site": "pasqualepillitteri.it",
+            "url": "https://pasqualepillitteri.it/en/news/23653/effectcraft-free-after-effects-alternative-rust",
+            "date": "2026-10-14",
+            "quote": "Anyone on Linux, meanwhile, already has a concrete reason to install it.",
+            "who": "Pasquale Pillitteri"
+          },
+          {
+            "title": "EffectCraft Review 2026: The Free After Effects Alternative With 306 Effects and AI Automation",
+            "site": "aiidelist.com",
+            "url": "https://aiidelist.com/blog/effectcraft-review",
+            "date": "2026-10-13",
+            "quote": "Not yet as an After Effects replacement."
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -876,7 +907,72 @@
           "alt": "Colour grading wheels next to Dorothea Lange's Migrant Mother, toned warm like a print",
           "caption": "Colour grading"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "LightCraft drew more first-hand comments than most ArtCraft apps, mainly on Hacker News and the pixls.us photography forum, and opinion is split. Hobbyists say it works and feels familiar to Lightroom users, and one praised its support for Lightroom presets. Others found it slow and glitchy on raw files, said its sliders behave badly, and judged it well behind darktable and RapidRAW. Most comments come from quick tests of an early alpha.",
+        "praise": [
+          "Interface feels familiar to Lightroom users",
+          "Good enough for some hobby photographers already",
+          "Can use Lightroom presets"
+        ],
+        "complaints": [
+          "Slow and glitchy when processing raw files",
+          "Editing controls such as exposure feel crude",
+          "Some raw formats, such as Olympus/OM System, are not handled",
+          "Seen as less polished than darktable or RapidRAW"
+        ],
+        "sources": [
+          {
+            "title": "The whole host of photo editors that have just landed",
+            "site": "discuss.pixls.us",
+            "url": "https://discuss.pixls.us/t/the-whole-host-of-photo-editors-that-have-just-landed/61124",
+            "date": "2026-10-07",
+            "quote": "LightCraft feels very much vibe-coded, and seems to lack QA in my opinion",
+            "who": "thumper"
+          },
+          {
+            "title": "Comment on \"An open-source, clean-room reimplementation of Microsoft Word in pure Rust\"",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50050752",
+            "date": "2026-10-12",
+            "quote": "LightCraft is already working pretty well for a photography hobbyist like me.",
+            "who": "hootz"
+          },
+          {
+            "title": "Comment on \"An open-source, clean-room reimplementation of Microsoft Word in pure Rust\"",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50050905",
+            "date": "2026-10-12",
+            "quote": "It seems to be struggling with processing them compared to older software, it's kinda slow and glitchy.",
+            "who": "hootz"
+          },
+          {
+            "title": "Comment on \"Open-Source Rust Alternatives to Adobe Apps\"",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50004576",
+            "date": "2026-10-08",
+            "quote": "It worked fine and the UI is very similar to Lightroom.",
+            "who": "fai5a1"
+          },
+          {
+            "title": "Hacker News comment",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50068894",
+            "date": "2026-10-13",
+            "quote": "LightCraft's exposure slider doesn't even work well. Blows everything out.",
+            "who": "sdcfgy"
+          },
+          {
+            "title": "Hacker News comment",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50488212",
+            "date": "2026-11-13",
+            "quote": "Well, PhotoCraft and LightCraft are completely unable to deal with RAW files from Olympus/OM Systems cameras.",
+            "who": "CWuestefeld"
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -1027,7 +1123,46 @@
           "alt": "DeckCraft's Slide Sorter view with transitions under each slide",
           "caption": "Slide Sorter"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage is thin. One Italian tech blogger wrote a guide based on the project's own docs, and he praises how openly it is developed. He also warns that compatibility with real-world .pptx files is unproven, so anyone who gets decks from other people should wait. On Hacker News one user said it works very well for their PDF export workflow. A consultancy guide recommends keeping it to pilot projects for now.",
+        "praise": [
+          "Development happens in the open with an active issue tracker",
+          "Works well for at least one user's PDF export workflow",
+          "Free alternative to PowerPoint across many platforms"
+        ],
+        "complaints": [
+          "Compatibility with real-world .pptx files is unverified",
+          "SmartArt, macros, and legacy .ppt files are not properly supported",
+          "Still alpha, so best kept to trials"
+        ],
+        "sources": [
+          {
+            "title": "DeckCraft guide: free PowerPoint alternative in Rust",
+            "site": "pasqualepillitteri.it",
+            "url": "https://pasqualepillitteri.it/en/news/23288/deckcraft-guide-free-powerpoint-alternative-rust",
+            "date": "2026-10-13",
+            "quote": "Anyone who receives .pptx files from others should wait.",
+            "who": "Pasquale Pillitteri"
+          },
+          {
+            "title": "Comment on \"An open-source, clean-room reimplementation of Microsoft Word in pure Rust\"",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50052553",
+            "date": "2026-10-12",
+            "quote": "Works very well for wordcraft and deckcraft.",
+            "who": "spwa4"
+          },
+          {
+            "title": "DeckCraft explained",
+            "site": "Layer3Labs",
+            "url": "https://www.layer3labs.io/guides/deckcraft-explained",
+            "date": "2026-10-15",
+            "quote": "Until then, keep DeckCraft to pilots."
+          }
+        ]
+      }
     },
     {
       "name": "Davit",
@@ -1171,7 +1306,46 @@
           "alt": "SaneBar's Icon Panel listing hidden menu bar apps with search",
           "caption": "Icon Panel"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage is thin. German Apple site ifun.de presented SaneBar as a full menu bar manager, highlighted its Touch ID lock, and suggested buying the paid version to support the developer. User comments are few and mostly critical: one AlternativeTo user was put off by the macOS Sequoia requirement, and a Hacker News commenter said no menu bar manager, SaneBar included, worked reliably after macOS Tahoe.",
+        "praise": [
+          "Full-featured menu bar manager",
+          "Touch ID lock for hidden icons stands out"
+        ],
+        "complaints": [
+          "Needs a recent macOS version",
+          "Reported as unreliable after the macOS Tahoe menu bar changes",
+          "Very few detailed reviews"
+        ],
+        "sources": [
+          {
+            "title": "Menüleisten-Management mit TighterMenubar und SaneBar",
+            "site": "ifun.de",
+            "url": "https://www.ifun.de/menueleisten-management-mit-tightermenubar-und-sanebar-273129/",
+            "date": "2026-01-23",
+            "quote": "SaneBar wirbt dagegen als vollwertiger Menüleisten-Manager um die Gunst der Nutzer.",
+            "who": "Chris"
+          },
+          {
+            "title": "Comment on \"Tailscale's new macOS home\"",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=47621019",
+            "date": "2026-04-02",
+            "quote": "Ice, Sanebar, Bartender,... none of them work reliably.",
+            "who": "Kovah"
+          },
+          {
+            "title": "SaneBar on AlternativeTo",
+            "site": "AlternativeTo",
+            "url": "https://alternativeto.net/software/sanebar/about",
+            "date": "2026-01-11",
+            "quote": "Unfortunately it requires Sequoia and there seem to be no option for earlier OS versions.",
+            "who": "freakqnc"
+          }
+        ]
+      }
     },
     {
       "name": "SuperCmd",
@@ -1276,7 +1450,40 @@
           "alt": "MindZJ's built-in mind-map editor with a root node and branches, beside the file tree",
           "caption": "Mind maps"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage is thin and split. A personal tech blog gave an enthusiastic overview of the app's light footprint, offline AI support and command-line tools, but it reads largely like a summary of the README. The author's launch post on the French site LinuxFr was voted down heavily, and commenters criticised the vibe-coded code base, dependencies committed to the repository and star counts they felt overstated the project's quality.",
+        "praise": [
+          "Small, native app that is lighter than Electron-based note tools",
+          "Local AI through Ollama and a command-line tool for managing notes",
+          "Free and open alternative to Obsidian with Markdown files on disk"
+        ],
+        "complaints": [
+          "Seen as heavily AI-generated, which raises doubts about code quality and maintenance",
+          "Dependencies committed to the repository and other signs of rushed engineering",
+          "No built-in sync; users must rely on git, Syncthing or similar"
+        ],
+        "sources": [
+          {
+            "title": "À la recherche d'une alternative libre à Notion ou Obsidian : j'ai créé MindZJ (OSS) via Vibe coding",
+            "site": "LinuxFr.org",
+            "url": "https://linuxfr.org/users/superjohn/journaux/a-la-recherche-d-une-alternative-libre-a-notion-ou-obsidian-j-ai-cree-mindzj-oss-via-vibe-coding",
+            "date": "2026-04-22",
+            "quote": "Qui a la connaissance intime du logiciel, si son principal auteur l'a en grande partie déléguée à un outil ?",
+            "who": "mrlem",
+            "points": "score -47"
+          },
+          {
+            "title": "MindZJ: The AI-Native, CLI-First Note-Taking App That's Everything Obsidian Wasn't",
+            "site": "The Menon Lab",
+            "url": "https://themenonlab.blog/blog/mindzj-ai-native-cli-note-taking-ollama-offline",
+            "date": "2026-04-20",
+            "quote": "MindZJ is what that design looks like when rebuilt from scratch with AI as a core assumption, not an add-on.",
+            "who": "Prahlad G. Menon"
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -1354,7 +1561,40 @@
           "caption": "A cover from the sample magazine"
         }
       ],
-      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,350 of 5,610 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files."
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 1,350 of 5,610 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files.",
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage is thin but includes one real hands-on test. An Italian tech blogger tried version 0.8.0 on a Mac. Rendering, PDF/X-4 export, IDML round-trips and mail merge all worked, though he found an Italian hyphenation problem in that build and says .indd support is still unproven. A Hacker News user said it works fine and behaves well, with some things a little different from InDesign.",
+        "praise": [
+          "Fast rendering and working PDF export in a hands-on test",
+          "IDML files round-trip cleanly with its own documents",
+          "Runs as a portable app and behaves well"
+        ],
+        "complaints": [
+          "Opening real InDesign .indd files is still unproven",
+          "IDML compatibility only shown with files it created itself",
+          "Some behaviour differs from InDesign"
+        ],
+        "sources": [
+          {
+            "title": "DesignCraft guide to the free InDesign alternative in Rust",
+            "site": "pasqualepillitteri.it",
+            "url": "https://pasqualepillitteri.it/en/news/23923/designcraft-free-indesign-alternative-rust-guide",
+            "date": "2026-10-14",
+            "quote": "It proves that the write-read cycle is consistent with itself, not that InDesign opens the file the same way.",
+            "who": "Pasquale Pillitteri"
+          },
+          {
+            "title": "Comment on \"Open-Source Rust Alternatives to Adobe Apps\"",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50004632",
+            "date": "2026-10-08",
+            "quote": "DesignCraft is also a portable app. It works fine, behaves really good. Some things are a little different.",
+            "who": "sixtyj",
+            "points": "36 points (thread)"
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -2202,7 +2442,49 @@
           "alt": "openGym on two iPhones showing the stats screen and today's workout",
           "caption": "Stats and today's workout"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Users are very positive: it averages 4.9 out of 5 on the App Store, and reviewers on AlternativeTo and the self-hosting blog noted.lol praise it as free, ad-free and in your control, with a good exercise library, rest timer and progress tracking. Complaints are minor: the app occasionally closes between exercises, there is no alert when a rest period ends, and running your own server takes upkeep. One reviewer points out it was built heavily with AI.",
+        "praise": [
+          "Free with no ads or subscription",
+          "Large exercise library, previous weights pre-filled, built-in rest timer and progress charts",
+          "Self-hosting keeps workout data on your own server"
+        ],
+        "complaints": [
+          "App can close when moving between exercises on iPhone",
+          "No vibration or sound when a rest period ends",
+          "Self-hosting means running and updating your own server",
+          "Built heavily with AI, which some users dislike"
+        ],
+        "sources": [
+          {
+            "title": "openGym: Workout Tracker",
+            "site": "Apple App Store",
+            "url": "https://apps.apple.com/us/app/opengym-workout-tracker/id6822275400",
+            "quote": "The app is wonderful and works very well; plus, it's free and has no ads.",
+            "who": "Netocabral",
+            "points": "4.9 out of 5 from 45 ratings"
+          },
+          {
+            "title": "openGym reviews",
+            "site": "AlternativeTo",
+            "url": "https://alternativeto.net/software/opengym/about/",
+            "date": "2026-10-11",
+            "quote": "And being able to self-host it and keep control of my training data is a big plus.",
+            "who": "Viktor Korobov",
+            "points": "29 likes"
+          },
+          {
+            "title": "openGym Is a Self-Hosted Fitness Tracker for Your Workouts",
+            "site": "noted.lol",
+            "url": "https://noted.lol/opengym/",
+            "date": "2026-11-04",
+            "quote": "It's refreshing to come across something that applies the same self-hosting philosophy to an everyday activity.",
+            "who": "Jeremy"
+          }
+        ]
+      }
     },
     {
       "name": "SolidCraft",
@@ -2429,7 +2711,38 @@
       "price": "Free",
       "maker": "Qiusheng Wu (opengeos) and contributors",
       "longDescription": "RustGIS is one native program drawn on the GPU, with no runtime to install. The ribbon follows the order of the work (Home, Data, Style, Edit, Analyze, View, Publish), with Layers and Browser panes and an attribute table. It includes more than 1,000 GeoLibre and Whitebox tools for terrain, hydrology, LiDAR and remote sensing, and sandboxed plugins.\n\nEvery button is a command you can script from the command line or ask the optional AI assistant to run. The same app runs in the browser at web.rustgis.app and on phones and tablets for field work.",
-      "builtWithAI": "The README says RustGIS is \"primarily built with Claude Opus 5.5\", working under human direction and review. Checked 2026-11-22: 423 of 1,806 commits are co-authored by Claude."
+      "builtWithAI": "The README says RustGIS is \"primarily built with Claude Opus 5.5\", working under human direction and review. Checked 2026-11-22: 423 of 1,806 commits are co-authored by Claude.",
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Two tech sites covered RustGIS shortly after its first releases. Both like the small single download, the browser version and the built-in AI assistant, and It's FOSS notes the ribbon interface will feel familiar to office-suite users. The caveats are that it is very young, not proven at scale, and that QGIS still leads for professional cartography and Python plugin workflows. Coverage is thin and mostly descriptive rather than long-term hands-on testing.",
+        "praise": [
+          "Small single download that also runs in a browser tab",
+          "Familiar ribbon interface and a plain-language AI assistant that helps newcomers",
+          "AI and scripting built in from the start rather than bolted on"
+        ],
+        "complaints": [
+          "Very new and not yet tested in production at scale",
+          "Far smaller plugin ecosystem than QGIS",
+          "Some formats need extra tools such as ogr2ogr installed"
+        ],
+        "sources": [
+          {
+            "title": "RustGIS is a Desktop GIS Tool That Also Runs in a Browser",
+            "site": "It's FOSS",
+            "url": "https://itsfoss.com/rustgis-open-source-gis-tool/",
+            "date": "2026-10-13",
+            "quote": "The tool's ribbon-based interface will be familiar to you if you have used a modern office suite recently.",
+            "who": "Sourav Rudra"
+          },
+          {
+            "title": "RustGIS v0.2.0: open-source GIS with an MCP server",
+            "site": "byteiota",
+            "url": "https://byteiota.com/rustgis-v020-open-source-gis-mcp-server/",
+            "date": "2026-10-17",
+            "quote": "The project has 1,200+ GitHub stars and real momentum, but it has not been production-battle-tested at scale."
+          }
+        ]
+      }
     },
     {
       "name": "Rackula",
@@ -2458,7 +2771,52 @@
           "alt": "Rackula with a rack's front and rear views filled with real device images and the device library on the left",
           "caption": "Front and rear rack views"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Write-ups from homelab and tech sites describe Rackula as a quick, intuitive and free way to plan a rack visually, with realistic device images, front and back views, and easy sharing by URL. Reviewers like that it takes less setup and thought than building rack diagrams by hand in general diagram tools. The main caveats are that it is a visualization tool rather than full data-center management software, that its login system was still unfinished for shared deployments, and that the device library has gaps. Coverage is mostly short articles and one editorial review rather than long-term user reports.",
+        "praise": [
+          "Free, open source and quick to start using",
+          "Intuitive drag-and-drop planning with realistic device images and front and back views",
+          "Easy export and sharing, including by URL",
+          "Less effort than drawing racks by hand in general diagram tools"
+        ],
+        "complaints": [
+          "Only a visualization tool, not full data-center management software",
+          "Login system was unfinished for shared team deployments",
+          "Device library has gaps for some homelab hardware, and there is no mobile support"
+        ],
+        "sources": [
+          {
+            "title": "Rackula review",
+            "site": "unsubbed.co",
+            "url": "https://unsubbed.pages.dev/tools/rackula/",
+            "date": "2026-04-20",
+            "quote": "Rackula wins on setup time and cognitive overhead.",
+            "who": "Ivan Protsko"
+          },
+          {
+            "title": "Great Little Software: Rackula",
+            "site": "DEV Community",
+            "url": "https://dev.to/valeriavg/great-little-software-rackula-1pa1",
+            "quote": "I'm sure that there's more to it, but I do think that the effort placed into Rackula was well worth it.",
+            "who": "valeriavg"
+          },
+          {
+            "title": "Rackula, an online tool for designing server rack layouts",
+            "site": "GIGAZINE",
+            "url": "https://gigazine.net/gsc_news/en/20260222-rackula/",
+            "date": "2026-02-22",
+            "quote": "It also has a wide range of functions, so if you're interested in server rack layout design, be sure to give it a try.",
+            "who": "log1c_sh"
+          },
+          {
+            "title": "Rackula - The open source server rack designer for your homelab",
+            "site": "Korben",
+            "url": "https://korben.info/en/rackula-open-source-server-rack-designer-homelab.html"
+          }
+        ]
+      }
     },
     {
       "name": "SoloMD",
@@ -3274,7 +3632,58 @@
         "capybara",
         "delivery",
         "vibe jam"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Players who rated the game on the VibeReview site are very positive, giving it 4.6 out of 5 across 88 reviews, but almost all comments are one or two words, many in Portuguese, praising it as fun and full of detail. Blog round-ups list it among the best AI-built browser games and single out its developer write-up as worth reading. Coverage is thin on actual critique: most press stories focus on the $25,000 Vibe Jam win and the AI-built code rather than on how the game plays.",
+        "praise": [
+          "Players call it fun and say the gameplay loop is good",
+          "Lots of small details and a full music playlist",
+          "Cozy capybara scooter premise with multiplayer",
+          "Developer write-up seen as a useful making-of story"
+        ],
+        "complaints": [
+          "Few detailed reviews yet; most player comments are one-word ratings",
+          "Press coverage is about the AI build and prize, not the game itself"
+        ],
+        "sources": [
+          {
+            "title": "A Game About Capybaras Delivering Food",
+            "site": "VibeReview",
+            "url": "https://vibereview-one.vercel.app/games/a-game-about-capybaras-delivering-food-4a6cf359",
+            "date": "2026-08",
+            "quote": "jogaçoo, muitos detalhes o loop de gameplay é muito bom.",
+            "who": "finthy",
+            "points": "4.6 out of 5 from 88 reviews"
+          },
+          {
+            "title": "6 AI-built browser games and procedural 3D experiments",
+            "site": "dsgnbyhl.com",
+            "url": "https://dsgnbyhl.com/en/blog/ai-built-browser-games/",
+            "date": "2026-11-10",
+            "quote": "The making-of is the reason I would send a developer here first.",
+            "who": "Henry Lõiv"
+          },
+          {
+            "title": "The Best AI Vibe Coded Games To Play Right Now",
+            "site": "Nilo",
+            "url": "https://nilo.io/articles/best-ai-vibe-coded-games",
+            "date": "2026-04-26",
+            "quote": "You ride capybaras on scooters through a cozy city, stacking fruit orders while racing friends in multiplayer.",
+            "who": "Nuno Leiria"
+          },
+          {
+            "title": "iOS Developer Wins $25,000 After Building Entire Game With Claude Code in Two Weeks",
+            "site": "The Mac Observer",
+            "url": "https://www.macobserver.com/news/ios-developer-wins-25000-after-building-entire-game-with-claude-code-in-two-weeks/"
+          },
+          {
+            "title": "An iOS Developer Vibe-Coded A Capybara Food Delivery Game Using Claude Code and Won $25,000 In Prize Money",
+            "site": "Wccftech",
+            "url": "https://wccftech.com/ios-developer-made-capybara-game-using-vibe-coding-and-won-25000/"
+          }
+        ]
+      }
     },
     {
       "name": "Fable Flight",
@@ -3690,7 +4099,37 @@
           "alt": "Haven sharing a screen in a voice channel beside the chat",
           "caption": "Screen sharing"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage is thin and enthusiastic. A Cloudron forum maintainer called it the open-source Discord alternative people recommend and liked that it works as a mobile web app, and a tech blog praised that it is free with no paid tiers while giving you full control of your data. Neither source reports long-term hands-on use, and no real criticism turned up.",
+        "praise": [
+          "Free forever, with no premium tiers or locked features",
+          "Full control of your data on your own machine",
+          "Works as a mobile web app, avoiding app store tracking"
+        ],
+        "complaints": [
+          "Few detailed hands-on reviews yet"
+        ],
+        "sources": [
+          {
+            "title": "Haven: open source Discord alternative, Slack alternative",
+            "site": "Cloudron Forum",
+            "url": "https://forum.cloudron.io/topic/15662/haven-open-source-discord-alternative-slack-alternative",
+            "date": "2026-06-30",
+            "quote": "Seems to be the best open-source alternative to Discord that people recommend.",
+            "who": "marcusquinn"
+          },
+          {
+            "title": "Haven is a FREE full-featured private chat server you host yourself",
+            "site": "Techigar",
+            "url": "https://techigar.com/haven-is-full-featured-private-chat-server-you-host/",
+            "date": "2026-03-05",
+            "quote": "The insane part is that it's free “forever,” with no premium tiers, no locked features and no subscription services.",
+            "who": "Briley Kenney"
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -4078,7 +4517,47 @@
           "alt": "Cinephage's Discover page with posters and streaming-service filters",
           "caption": "Discover"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage is limited to self-hosting blogs and the Servers@Home community, and is mostly positive about the idea of replacing Radarr, Sonarr, Prowlarr and Bazarr with one database, one interface and one configuration. Writers say the code is solid for such a complex domain. The main caveats are that it is still a work in progress with rough edges, that monitoring is marked experimental, and that a single monolithic app may not isolate failures as well as separate services.",
+        "praise": [
+          "One app, database and configuration instead of a stack of separate services",
+          "Code quality seen as solid for a complex domain",
+          "Light footprint, with streaming options for watching right away"
+        ],
+        "complaints": [
+          "Work in progress with rough edges; monitoring is experimental",
+          "All-in-one design may scale and isolate faults less well than separate tools",
+          "Few long-term hands-on reviews so far"
+        ],
+        "sources": [
+          {
+            "title": "Cinephage: consolidating self-hosted media management into one TypeScript app",
+            "site": "ramdi.fr",
+            "url": "https://ramdi.fr/github-stars/cinephage-consolidating-self-hosted-media-management-into-one-typescript-app/",
+            "date": "2026-05-04",
+            "quote": "The tradeoff is that Cinephage might not scale or isolate faults as well as a microservices-based approach.",
+            "who": "Noureddine RAMDI"
+          },
+          {
+            "title": "Cinephage",
+            "site": "Servers@Home Wiki",
+            "url": "https://wiki.serversatho.me/cinephage",
+            "quote": "Cinephage is currently a work in progress. Early adopters are welcome, but expect some rough edges."
+          },
+          {
+            "title": "Cinephage: The All-in-One App",
+            "site": "Servers@Home (Patreon)",
+            "url": "https://www.patreon.com/serversathome/posts/cinephage-all-in-150415696"
+          },
+          {
+            "title": "Selfhosting Cinephage on a Netcup VPS: cheap, fast, and centralized media management",
+            "site": "netcup.best",
+            "url": "https://netcup.best/blog/hosting-cinephage-for-cheap-on-the-netcup/"
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -4212,7 +4691,43 @@
           "alt": "GiroCrab's account overview with balances, categories and transactions",
           "caption": "Overview"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "German Mac press and forum users are mostly positive. They like that it is free, keeps data locally and imports from MoneyMoney smoothly, and forum testers say development moves fast, with reported security issues fixed within hours. Caveats include an early development stage, banks or security procedures that do not work yet, and some readers questioning how much of the project is AI-generated.",
+        "praise": [
+          "Free, local and open source, with no subscription or tracking",
+          "Built-in migration assistant; the MoneyMoney import works well",
+          "Very responsive developers who fix reported issues quickly"
+        ],
+        "complaints": [
+          "Early stage: users should check their bank is supported first",
+          "Some banks and older HBCI security procedures cannot be set up yet",
+          "Some readers suspect it is largely vibe-coded"
+        ],
+        "sources": [
+          {
+            "title": "Banking-Apps für den Mac: GiroCrab und neun weitere Alternativen",
+            "site": "iFun.de",
+            "url": "https://www.ifun.de/banking-apps-fuer-den-mac-girocrab-und-neun-weitere-alternativen-294619/",
+            "date": "2026-11-10",
+            "quote": "Besonders praktisch ist der integrierte Umzugsassistent.",
+            "who": "Nicolas"
+          },
+          {
+            "title": "GiroCrab: eine OpenSource-Alternative für MoneyMoney",
+            "site": "MacUser.de forum",
+            "url": "https://www.macuser.de/threads/girocrab-eine-opensource-alternative-fur-moneymoney.972345/",
+            "quote": "bin recht angetan von dem, was in den wenigen Tagen/Wochen bereits erreicht wurde.",
+            "who": "jteschner"
+          },
+          {
+            "title": "GiroCrab: Diese kostenlose Banking-App könnte einen Blick wert sein",
+            "site": "mobiFlip.de",
+            "url": "https://www.mobiflip.de/girocrab-diese-kostenlose-banking-app-koennte-einen-blick-wert-sein/"
+          }
+        ]
+      }
     },
     {
       "group": "open",

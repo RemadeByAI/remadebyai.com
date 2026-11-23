@@ -53,7 +53,8 @@ const esc = value => String(value ?? '')
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const slugify = text => String(text).toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
   .replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-const hash = file => crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT, file))).digest('hex').slice(0, 10);
+// Line endings are normalised so a Windows checkout (CRLF) gives the same hash as the repo (LF).
+const hash = file => crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT, file), 'utf8').replace(/\r\n/g, '\n')).digest('hex').slice(0, 10);
 const paragraphs = text => String(text || '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean)
   .map(p => `<p>${esc(p)}</p>`).join('\n');
 const formatDate = iso => new Date(iso + 'T12:00:00Z')

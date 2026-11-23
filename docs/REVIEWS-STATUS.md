@@ -1,6 +1,6 @@
 # "What people say" status
 
-Updated 2026-11-23 03:09 Central. The feature is the `whatPeopleSay` field in projects.json (see docs/HANDOFF.md). It's the top priority for the next session: finish the apps listed under "Partly checked" and "Not researched yet".
+Updated 2026-11-23 3:31 AM Central. The feature is the `whatPeopleSay` field in projects.json (see docs/HANDOFF.md). All 118 apps in scope have now been researched; only the two under "Partly checked" are left, and both need a source cloud and PC sessions cannot read (Reddit, X, a 403 forum).
 
 **Limit:** a Claude session can read about 100 web pages per hour (WebFetch, shared by every agent). Run 2 research agents per hour, each capped at 40 fetches. reddit.com is blocked.
 **How:** each agent follows `docs/reviews/PROMPT.md` for one list of apps (`docs/reviews/in-N.txt`) and writes JSON (slug -> entry, or null when there's no real coverage). Merge into projects.json with `"checked": "YYYY-MM-DD"`, run `node build.js`, and keep quotes short and verbatim. Apps with no real coverage get NO section.
@@ -49,10 +49,22 @@ Updated 2026-11-23 03:09 Central. The feature is the `whatPeopleSay` field in pr
 - Starfall
 - SetShot
 
-## Done on the branch, waiting for Go live (0)
-- none
+## Done on branch reviews/finish-what-people-say, waiting for Go live (13)
+- LightCraft
+- DeckCraft
+- DesignCraft
+- EffectCraft
+- SaneBar
+- MindZJ
+- RustGIS
+- GiroCrab
+- openGym
+- Cinephage
+- Haven
+- A Game About Capybaras Delivering Food
+- Rackula
 
-## Checked: no real outside coverage, so leave these out (44)
+## Checked: no real outside coverage, so leave these out (62)
 - Locode
 - VectorCraft
 - OpenTodo
@@ -97,42 +109,30 @@ Updated 2026-11-23 03:09 Central. The feature is the `whatPeopleSay` field in pr
 - Parenthèse
 - OldPhoneDeck
 - Halcyon
+- TextureCraft
+- ArtCraft Launcher
+- Glance
+- Arrmada
+- Haven for Android
+- Neon Zenith
+- The Lost Storm
+- Emberwick
+- Idle Tactics: Ascension
+- OpenAero DFW
+- Game Glance
+- Hearth for webOS
+- mctl
+- Ink Away
+- FluidWin
+- MoePeek
+- Minilytics
+- Pic2Sheet
 
-## Partly checked: worth another look (24)
-- Glance: searched only
-- LightCraft: searched only
-- DeckCraft: the main guide (pasqualepillitteri.it) is bot-blocked
-- SaneBar: Product Hunt reviews and an ifun.de article exist, but judged too thin; worth one more look
-- MindZJ: one critical linuxfr.org post (security audit concerns); needs a second source
-- DesignCraft: only mentioned in articles about the whole ArtCraft suite
-- TextureCraft: searched only
-- openGym: batch 7 ran after the hourly limit was used up, so it was searched only
-- RustGIS: one real review (It's FOSS); needs a second source
-- Neon Zenith: batch 7: searched only
-- A Game About Capybaras Delivering Food: press covered the AI build (Wccftech, MacObserver) but gave no opinion of the game
-- The Lost Storm: searched only
-- Haven: only one Cloudron forum post
-- Arrmada: searched only, no Hacker News check
-- Hearth for webOS: batch 7: searched only
-- Cinephage: searched only
-- mctl: searched only, no Hacker News check
-- GiroCrab: only one source (mobiflip.de)
-- Haven for Android: only an AlternativeTo listing
-- Ink Away: the leads were about other KOReader plugins
-- Emberwick: batch 7: searched only
-- FluidWin: searched only
-- Game Glance: searched only
-- OpenAero DFW: searched only, no Hacker News check
+## Partly checked: worth another look (2)
+- Claude of Tanks: the main player discussion is a Reddit thread and X posts (both blocked); the HN post had no comments
+- Mailflare: one independent article (cloudnews.tech); a NodeSeek thread that looks like a second source returned 403
 
-## Not researched yet (9)
-- EffectCraft (in-12.txt)
-- ArtCraft Launcher (in-12.txt)
-- Rackula (in-12.txt)
-- Claude of Tanks (in-12.txt)
-- Idle Tactics: Ascension (in-12.txt)
-- MoePeek (in-12.txt)
-- Minilytics (in-12.txt)
-- Pic2Sheet (in-12.txt)
-- Mailflare (in-12.txt)
+## Not researched yet (0)
+- none
 
 Skipped on purpose: InCloseMail and DesktopWiki (not released yet).

@@ -2,7 +2,13 @@
 
 Last updated: 2026-11-23 2:45 AM Central (cleanup and handoff; 120 apps in 29 categories live, "What people say" on 33 apps, speed/SEO pass live as 14013df). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
 
-## Newest: reviews on 33 apps and speed/SEO pass live; cleanup done (2026-11-23 2:45 AM Central)
+## Newest: capped reviews finished on the PC (2026-11-23 3:40 AM Central)
+
+- Done in a PC session on branch `reviews/finish-what-people-say` (local, not pushed yet): the 24 "partly checked" and 9 "not researched" apps were researched (batches `docs/reviews/in-13.txt` to `in-16.txt`). 13 got a "What people say" section (LightCraft, DeckCraft, DesignCraft, EffectCraft, SaneBar, MindZJ, RustGIS, GiroCrab, openGym, Cinephage, Haven, Capybaras, Rackula); 18 have no real coverage; Claude of Tanks and Mailflare stay "partly checked" (their main sources are Reddit/X and a NodeSeek thread that returns 403). All 35 new quotes were re-fetched and match their pages word for word. Per-app list: `docs/REVIEWS-STATUS.md`.
+- `build.js`: the cache-busting hash now ignores line endings, so a Windows checkout (CRLF) builds the same `?v=` links as the cloud instead of changing every page.
+- Waiting on the owner's Go live for these 13 sections (one card, as agreed).
+
+## Earlier: reviews on 33 apps and speed/SEO pass live; cleanup done (2026-11-23 2:45 AM Central)
 
 - **Goal:** keep growing the directory (120 apps), add compiled outside reviews ("What people say") to every app that has coverage, make the site faster and easier for search engines, and tidy the project before handing off.
 - **Done (all live on `main` at 14013df):**
