@@ -275,7 +275,49 @@
       "maker": "Richard B. Jamison",
       "source": "https://github.com/RichardBJamison/open-source-barware",
       "longDescription": "Walk your shelves and say what you see (\"Tito's, half. Jameson, full.\") and Open Source Barware builds the count sheet, prices every bottle and tells you what's short and what to reorder. Import last week's sales from your POS and it flags bottles that came up short.\n\nIt runs on your own Mac or Windows laptop, works without internet or AI (AI is optional, for reading invoice photos), counts in English or Spanish and can run several locations. There is a sample bar to try in the browser. It is free with no paid tier, under GPLv3.",
-      "builtWithAI": "The maker says AI is what let people from the bar trade build the tool themselves. The GitHub repo keeps CLAUDE.md and AGENTS.md files for AI coding agents, and 56 of its 249 commits (checked 2026-11-22) are co-authored by Claude."
+      "builtWithAI": "The maker says AI is what let people from the bar trade build the tool themselves. The GitHub repo keeps CLAUDE.md and AGENTS.md files for AI coding agents, and 56 of its 249 commits (checked 2026-11-22) are co-authored by Claude.",
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Most of the discussion comes from one Hacker News thread, and it was largely skeptical. Some commenters saw it as a possible free alternative to paid bar inventory services. Others questioned why invoice reading needs a cloud AI, called it a thin layer over a spreadsheet, and said the polished, AI-written website made the project harder to trust. A Product Hunt launch drew only a handful of upvotes and one positive comment.",
+        "praise": [
+          "Could replace paid bar inventory subscriptions",
+          "Local-first design, with the cloud used only for reading invoice photos",
+          "Interface looks polished"
+        ],
+        "complaints": [
+          "Uses cloud AI for invoice reading when local OCR could do the job",
+          "Seen by some as a spreadsheet with an opinionated front end",
+          "Marketing site felt AI-generated and short on a plain description of what the program does",
+          "No iPad or mobile app for counting stock behind the bar"
+        ],
+        "sources": [
+          {
+            "title": "Open Source Barware: free, local-first bar inventory software (GPLv3)",
+            "site": "Hacker News",
+            "url": "https://hn.algolia.com/api/v1/items/48837809",
+            "date": "2026-07-08",
+            "quote": "Why does it need cloud AI to read invoices? Basic foss OCR can do this very well, so too the most basic local AI.",
+            "who": "sandworm101",
+            "points": "34 points"
+          },
+          {
+            "title": "Open Source Barware: free, local-first bar inventory software (GPLv3)",
+            "site": "Hacker News",
+            "url": "https://hn.algolia.com/api/v1/items/48837809",
+            "date": "2026-07-08",
+            "quote": "It's hopefully an alternative to paying a company like Orca $200/mo.",
+            "who": "adamsiem"
+          },
+          {
+            "title": "opensourcebarware free bar inventory",
+            "site": "Product Hunt",
+            "url": "https://www.producthunt.com/products/opensourcebarware-free-bar-inventory",
+            "quote": "Love that it stays local-first and only pings the cloud when you snap an invoice photo",
+            "who": "Sefa",
+            "points": "4 upvotes"
+          }
+        ]
+      }
     },
     {
       "name": "PhotoCraft",
@@ -397,7 +439,42 @@
           "alt": "Two facing pages in Read mode with the dark theme",
           "caption": "Read mode, dark theme"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage of PdfCraft is thin and mostly technical. A source-code walkthrough on PyShine praises its real security model and handy JSON-driven automation, while listing clear gaps: weak editing of existing text, Latin-only OCR, and a borrowed renderer. A user on AlternativeTo liked that it is open source with a Linux build but noted it is still alpha. Wider press on the ArtCraft suite calls the apps promising but not ready for production.",
+        "praise": [
+          "Security features are genuine rather than cosmetic",
+          "Scriptable automation, such as marking every mention of a phrase in one step",
+          "Open source with a Linux version"
+        ],
+        "complaints": [
+          "Editing existing text is limited, especially for CJK",
+          "OCR only handles Latin scripts",
+          "Still alpha; fuzzing keeps finding crashes on malformed files"
+        ],
+        "sources": [
+          {
+            "title": "PdfCraft: An Acrobat Rebuilt From ISO 32000 - Inside storytold/pdfcraft",
+            "site": "PyShine",
+            "url": "https://pyshine.com/pdfcraft/",
+            "date": "2026-10-10",
+            "quote": "the security model is real, not a checkbox."
+          },
+          {
+            "title": "PdfCraft",
+            "site": "AlternativeTo",
+            "url": "https://alternativeto.net/software/pdfcraft/about/",
+            "quote": "it has linux version, open-source, clean-room reimplementation of adobe acrobat awesome",
+            "who": "Oktay Mercan"
+          },
+          {
+            "title": "PdfCraft guide, the free Acrobat alternative written in Rust",
+            "site": "pasqualepillitteri.it",
+            "url": "https://pasqualepillitteri.it/en/news/22545/pdfcraft-free-acrobat-alternative-guide"
+          }
+        ]
+      }
     },
     {
       "name": "WordCraft",
@@ -434,7 +511,46 @@
           "alt": "The Review tab with Track Changes on, showing an insertion, a deletion and comment balloons",
           "caption": "Track changes and comments"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "WordCraft got tech press coverage as part of ArtCraft's launch of free Rust rewrites of the Office apps. The Register tried it and found it worked fairly well, and other outlets called the suite promising. All of them said it is early software and not yet a dependable replacement for Word. Most coverage is about the suite as a whole and how it was built with AI, not detailed hands-on testing of WordCraft.",
+        "praise": [
+          "Ran fairly well in a quick hands-on test on an Arm-based Windows laptop",
+          "Familiar Word-like layout, and it opens and saves .docx files",
+          "Seen as a promising free, open-source option"
+        ],
+        "complaints": [
+          "Reviewers advise keeping it away from real work for now",
+          "Unproven with complex real-world documents, macros and collaboration",
+          "Few detailed hands-on reviews of WordCraft on its own"
+        ],
+        "sources": [
+          {
+            "title": "Rust upstart reveals 'reimplementation' of Microsoft Office – with Claude on coding duty",
+            "site": "The Register",
+            "url": "https://www.theregister.com/a/5301952",
+            "date": "2026-10-08",
+            "quote": "We fired up WordCraft on an Arm-based Surface and it worked pretty well.",
+            "who": "Richard Speed"
+          },
+          {
+            "title": "ArtCraft Releases Free Rust Alternatives to Word, Excel and PowerPoint, Plus CAD and Pro Tools Rivals",
+            "site": "PBX Science",
+            "url": "https://pbxscience.com/?p=23894",
+            "date": "2026-10-09",
+            "quote": "For now, they are best treated as promising open-source experiments to test, not as drop-in replacements for daily work."
+          },
+          {
+            "title": "WordCraft, GridCraft, DeckCraft : après Adobe, Word, Excel et PowerPoint réécrits en Rust avec l'IA",
+            "site": "IT-Connect",
+            "url": "https://www.it-connect.fr/wordcraft-gridcraft-deckcraft-suite-office-rust-claude/",
+            "date": "2026-10-26",
+            "quote": "Il sera super intéressant de voir le comportement de ces applications avec de vrais documents",
+            "who": "Florian Burnel"
+          }
+        ]
+      }
     },
     {
       "name": "GridCraft",
@@ -701,7 +817,41 @@
           "alt": "Four onboarding screens in the Prototype tab joined by connection curves",
           "caption": "Prototyping"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "FigCraft is covered as an early, open source Figma alternative. Writers like the idea of owning both the editor and its infrastructure and note improving Figma imports, but stress it is alpha, very rough, and lacks user accounts and proven collaboration, which limits team use. Coverage is thin and mostly cautious.",
+        "praise": [
+          "Easier imports of existing Figma designs",
+          "Full control over the editor and its hosting",
+          "Free and open source"
+        ],
+        "complaints": [
+          "Still alpha and rough around the edges",
+          "Missing user accounts and unproven collaboration hold back team adoption",
+          "Import fidelity not yet checked against real Figma files"
+        ],
+        "sources": [
+          {
+            "title": "FigCraft 0.7 improves Figma imports, but team migration remains unproven",
+            "site": "Magica",
+            "url": "https://magica.com/news/artcraft-figcraft-0-7-figma-imports-preview-collaboration",
+            "date": "2026-10-18",
+            "quote": "The attraction is control over both the editor and its infrastructure"
+          },
+          {
+            "title": "Figma is the next vibe-coded victim",
+            "site": "Level Up Coding",
+            "url": "https://levelup.gitconnected.com/figma-is-the-next-vibe-coded-victim-ffca4cb89b7a",
+            "quote": "very rough around the edges"
+          },
+          {
+            "title": "FigCraft guide, the free Figma alternative in Rust",
+            "site": "pasqualepillitteri.it",
+            "url": "https://pasqualepillitteri.it/en/news/23599/figcraft-guide-free-figma-alternative-rust"
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -775,7 +925,41 @@
           "alt": "Davit's Stats tab for one container, with live CPU and memory charts",
           "caption": "Live stats"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Davit's Show HN launch drew a large, mostly positive discussion. People liked that it is a small native SwiftUI app rather than Electron, that it is signed and notarized, and that it worked on first run with lower memory use than Docker Desktop. Skeptics said the homepage copy read like AI marketing, wondered whether vibe-coded tools will be maintained, and asked how it compares to OrbStack given Apple Containers runs a VM per container. Coverage is essentially this one thread.",
+        "praise": [
+          "Small, native SwiftUI app instead of Electron",
+          "Worked out of the box for running containers",
+          "Lighter on memory than Docker Desktop",
+          "Developer responsive to feature requests"
+        ],
+        "complaints": [
+          "Homepage text felt like AI-written marketing",
+          "Hard to choose among many similar vibe-coded tools; maintenance doubts",
+          "Per-container VMs in Apple Containers can add memory overhead versus OrbStack"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: Davit, a Apple Containers UI",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=48821848",
+            "date": "2026-07-07",
+            "quote": "Really nice. Worked perfectly downloading the runtime and running nginx:latest.",
+            "who": "internet2000",
+            "points": "389 points"
+          },
+          {
+            "title": "Show HN: Davit, a Apple Containers UI",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=48821848",
+            "date": "2026-07-07",
+            "quote": "Hmm… how does one even pick between multiple vibe coded options?",
+            "who": "roger_"
+          }
+        ]
+      }
     },
     {
       "name": "OpenTodo",
@@ -880,7 +1064,45 @@
           "alt": "The SuperCmd launcher with its search box and pinned commands such as Clipboard History, Notes and Snippets",
           "caption": "Launcher"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "SuperCmd launched on Product Hunt and was written up by the German Apple site ifun.de. Some users said it covered everything they used in Raycast and liked that it was fast, free and open source. Critics said it copies Raycast's design too closely, and some readers disliked that it was built largely with AI. Early users also reported a bug where search results could not be clicked with the mouse, which the developer said was fixed. Coverage is fairly thin and mostly from around launch.",
+        "praise": [
+          "Covers the core Raycast features many users rely on, for free",
+          "Runs existing Raycast extensions out of the box",
+          "Users found it fast and light"
+        ],
+        "complaints": [
+          "Criticised for copying Raycast's design and features too closely",
+          "Some readers are wary of an app built largely with AI",
+          "Early bug: search results could not be clicked with the mouse (reported fixed)"
+        ],
+        "sources": [
+          {
+            "title": "SuperCmd on Product Hunt",
+            "site": "Product Hunt",
+            "url": "https://www.producthunt.com/posts/supercmd-2",
+            "quote": "I never thought I'd give up Raycast, but after running this for a few hours, it has everything I use",
+            "who": "Phillip Winn",
+            "points": "111 upvotes"
+          },
+          {
+            "title": "SuperCmd: Freie Raycast-Alternative mit Launcher, Notizen und KI",
+            "site": "ifun.de",
+            "url": "https://www.ifun.de/supercmd-freie-raycast-alternative-mit-launcher-notizen-und-ki-277786/",
+            "date": "2026-04-24",
+            "quote": "SuperCmd kann ab Werk mit Raycast-Erweiterungen umgehen und diese direkt ausführen.",
+            "who": "Nicolas"
+          },
+          {
+            "title": "SuperCmd v2 launches with native Swift build and lower resource use",
+            "site": "AlternativeTo",
+            "url": "https://alternativeto.net/news/2026/7/supercmd-v2-launches-with-native-swift-build-and-lower-resource-use/",
+            "date": "2026-07-31"
+          }
+        ]
+      }
     },
     {
       "name": "MindZJ",
@@ -1228,7 +1450,39 @@
           "alt": "The Free My TV home screen with three trending picks above a shelf of streaming apps",
           "caption": "Trending picks from your own apps"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage is limited to a couple of blog write-ups that followed a wider October 2026 news wave about people using AI to strip ads from smart TVs. Writers liked that it needs no rooted TV or separate computer and that it ships with instructions so an AI assistant can adapt it to other TVs. One guide was openly cautious: the app needs powerful permissions, TV makers can break it with updates, and anyone adapting it with AI should review the generated code.",
+        "praise": [
+          "Works through the TV's own debugging interface, with no root or PC needed",
+          "Designed so an AI coding assistant can adapt it to other TV models",
+          "Openly documents its own risks"
+        ],
+        "complaints": [
+          "Needs powerful permissions, including accessibility access and the ability to disable other apps",
+          "TV system updates may break it",
+          "Young project with open questions about long-term maintenance"
+        ],
+        "sources": [
+          {
+            "title": "Free My TV: Someone Used Claude Code to Build an Ad-Free, Apple-TV-Style Home Screen for Your Smart TV",
+            "site": "The Menon Lab",
+            "url": "https://themenonlab.blog/blog/free-my-tv-claude-code-ad-free-smart-tv-home-screen",
+            "date": "2026-10-21",
+            "quote": "Cleverest bit: it doesn't need a rooted TV or a PC babysitting it.",
+            "who": "Prahlad Menon"
+          },
+          {
+            "title": "Free My TV: open-source ad-free Google TV home screen, Claude Code, ADB risks guide",
+            "site": "explainx.ai",
+            "url": "https://explainx.ai/blog/free-my-tv-open-source-ad-free-google-tv-home-screen-claude-code-adb-risks-guide-2026",
+            "date": "2026-10-20",
+            "quote": "Accessibility services can see and act on screen content, so grant that permission only if you trust the code.",
+            "who": "Yash Thakker"
+          }
+        ]
+      }
     },
     {
       "name": "Readest",
@@ -1849,7 +2103,47 @@
           "alt": "A smooth freeform surface modelled in SolidCraft",
           "caption": "Freeform surface"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "SolidCraft was covered by Hackaday and several blogs. Writers were impressed by how much already works in such a young project and liked that it is open, scriptable and can be driven by AI agents. Hackaday commenters were split: some called it remarkably complete, while others were sceptical of a largely AI-written CAD app and worried about long-term maintenance. Everyone agrees it is still early in development.",
+        "praise": [
+          "Many core parametric CAD features already work",
+          "Open, scriptable design that AI agents can drive",
+          "Developers are open about how mature it is"
+        ],
+        "complaints": [
+          "Still in early development",
+          "Scepticism about an app written largely with AI",
+          "Doubts about whether it will be maintained long term"
+        ],
+        "sources": [
+          {
+            "title": "SolidCraft Is Parametric, Automation-friendly CAD For Desktop And Browser",
+            "site": "Hackaday",
+            "url": "https://hackaday.com/2026/10/17/solidcraft-is-parametric-automation-friendly-cad-for-desktop-and-browser/",
+            "date": "2026-10-17",
+            "quote": "SolidCraft is still in early development, but so far quite a few features seem to work as they should.",
+            "who": "Donald Papp"
+          },
+          {
+            "title": "SolidCraft: An Open-Source, Clean-Room Fusion 360 Rebuilt in Pure Rust — and AI Agents Can Drive It",
+            "site": "The Menon Lab",
+            "url": "https://themenonlab.blog/blog/solidcraft-open-source-fusion-360-rust-mcp-agents",
+            "date": "2026-10-21",
+            "quote": "An open, scriptable, agent-drivable parametric CAD kernel is a genuinely big deal.",
+            "who": "Prahlad Menon"
+          },
+          {
+            "title": "Hackaday reader comments on SolidCraft",
+            "site": "Hackaday",
+            "url": "https://hackaday.com/2026/10/17/solidcraft-is-parametric-automation-friendly-cad-for-desktop-and-browser/",
+            "date": "2026-10-17",
+            "quote": "looks really impressive already",
+            "who": "tenbaht"
+          }
+        ]
+      }
     },
     {
       "name": "Mister Download Manager",
@@ -2166,7 +2460,51 @@
         "mud",
         "text adventure",
         "compuserve"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "The AI-assisted revival got notable attention in Chinese tech and games media, which framed it as a 1990s online game brought back in a weekend with Claude. A 17173 writer who played it said the game beat their expectations and felt immersive despite being text only, though the lack of Chinese support was a hurdle. Former players commenting on the maker's write-up were mostly nostalgic and grateful, with one doubting the 'one weekend' framing.",
+        "praise": [
+          "Brings back a long-lost 1990s online world for former players",
+          "Reviewer found the text-only game surprisingly immersive with plenty of content",
+          "Seen as a striking example of AI-assisted software preservation"
+        ],
+        "complaints": [
+          "English only, which made it hard for non-English players",
+          "Some skepticism that the rebuild really took only a weekend",
+          "Coverage centres on the AI story more than long-term play"
+        ],
+        "sources": [
+          {
+            "title": "复活一款死了30年的网游，他只花了一个周末 (Reviving an online game dead for 30 years took him one weekend)",
+            "site": "17173",
+            "url": "https://news.17173.com/content/08042026/110420198.shtml",
+            "date": "2026-08-04"
+          },
+          {
+            "title": "Claude复活30年前传奇游戏，仅用一个周末 (Claude revives a 30-year-old legendary game in one weekend)",
+            "site": "QbitAI",
+            "url": "https://www.qbitai.com/2026/04/399903.html",
+            "date": "2026-04-12"
+          },
+          {
+            "title": "Resurrecting a 1992 MUD with Agentic AI (reader comments)",
+            "site": "Meditations on the Metaverse (Substack)",
+            "url": "https://meditations.metavert.io/p/resurrecting-a-1992-mud-with-agentic/comments",
+            "date": "2026-04",
+            "quote": "Thank you for resurrecting the world, and for this glimpse behind the scenes of the build and the rebuild.",
+            "who": "Deb Powers"
+          },
+          {
+            "title": "Resurrecting a 1992 MUD with Agentic AI (reader comments)",
+            "site": "Meditations on the Metaverse (Substack)",
+            "url": "https://meditations.metavert.io/p/resurrecting-a-1992-mud-with-agentic/comments",
+            "date": "2026-04",
+            "quote": "I doubt it would be 6+ months, but I would expect longer than 1 weekend.",
+            "who": "John"
+          }
+        ]
+      }
     },
     {
       "name": "Voidstruck",
@@ -2205,7 +2543,44 @@
         "no man's sky",
         "elite",
         "space"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage is thin and very recent: an enthusiastic XDA Developers article and a WindowsForum piece that largely builds on it. Both were impressed that a whole procedurally generated galaxy of 150 million star systems fits in one small HTML file. WindowsForum added the caveats that it needs a WebGPU-capable browser, so a tiny file does not mean it runs everywhere, and that it is better described as AI-assisted and human-directed than AI-made.",
+        "praise": [
+          "Huge procedurally generated galaxy in a file under 300 KB",
+          "Good-looking visuals, compared to No Man's Sky",
+          "Free and runs in the browser"
+        ],
+        "complaints": [
+          "Needs a browser and device with WebGPU support",
+          "Few detailed play reviews yet"
+        ],
+        "sources": [
+          {
+            "title": "This Claude-coded sci-fi game fits 150 million star systems into a 299KB HTML file, and it's insane",
+            "site": "XDA Developers",
+            "url": "https://www.xda-developers.com/this-claude-coded-sci-fi-game-fits-150-million-star-systems-in-a-299-kb-html-file-and-its-insane/",
+            "date": "2026-11-19",
+            "quote": "It's like No Man's Sky, but you can put it on a USB stick.",
+            "who": "Simon Batt"
+          },
+          {
+            "title": "Voidstruck: Free 299 kB Browser Game Generates 150 Million Star Systems",
+            "site": "WindowsForum",
+            "url": "https://windowsforum.com/news/voidstruck-free-299-kb-browser-game-generates-150-million-star-systems.453176/",
+            "date": "2026-11-19",
+            "quote": "This is a useful demo of what a modern browser GPU API can do from one file."
+          },
+          {
+            "title": "Voidstruck: Free 299 kB Browser Game Generates 150 Million Star Systems",
+            "site": "WindowsForum",
+            "url": "https://windowsforum.com/news/voidstruck-free-299-kb-browser-game-generates-150-million-star-systems.453176/",
+            "date": "2026-11-19",
+            "quote": "A tiny file doesn't mean it runs everywhere."
+          }
+        ]
+      }
     },
     {
       "name": "Long Wind",
@@ -2316,7 +2691,51 @@
       "keywords": [
         "shooter",
         "bullet hell"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "The story of a dog whose random keystrokes Claude Code turned into games went viral, reaching the top of Hacker News and getting picked up by PC Gamer and many other outlets. Most people enjoyed it as a whimsical, creative experiment, and some took away a lesson that the scaffolding and feedback loops around the AI mattered more than the input. Sceptics said the dog adds nothing and called it random noise fed to a slot machine. Almost all the discussion is about the experiment rather than how good the game is to play.",
+        "praise": [
+          "Fun, whimsical and creative experiment",
+          "A refreshing change from typical AI news",
+          "Shows how much the setup and feedback loops around the AI matter"
+        ],
+        "complaints": [
+          "Sceptics say the dog's input is just random noise",
+          "Seen by some as an example of AI hype",
+          "Very little discussion of the game itself"
+        ],
+        "sources": [
+          {
+            "title": "I'm helping my dog vibe code games",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=47139675",
+            "date": "2026-02-24",
+            "quote": "this is incredible. we need more projects like this in the world!",
+            "who": "alan_sass",
+            "points": "1106 points, 377 comments"
+          },
+          {
+            "title": "'I taught my dog to vibe code games': yup, someone actually managed to get Claude AI to code a game based on the keyboard inputs of a pooch",
+            "site": "PC Gamer",
+            "url": "https://www.pcgamer.com/software/ai/i-taught-my-dog-to-vibe-code-games-yup-someone-actually-managed-to-get-claude-ai-to-code-a-game-based-on-the-keyboard-inputs-of-a-pooch",
+            "date": "2026-02-25",
+            "quote": "Of course, this is all whimsy and not to be taken too seriously.",
+            "who": "Jeremy Laird"
+          },
+          {
+            "title": "AI-powered vibe coding allows dogs to develop games",
+            "site": "GIGAZINE",
+            "url": "https://gigazine.net/gsc_news/en/20260225-taught-dog-to-vibe-coding",
+            "date": "2026-02-25"
+          },
+          {
+            "title": "Engineer teaches his dog to vibe code games using Claude Code",
+            "site": "Analytics India Magazine",
+            "url": "https://analyticsindiamag.com/ai-news/engineer-teaches-his-dog-to-vibe-code-games-using-claude-code"
+          }
+        ]
+      }
     },
     {
       "name": "Backroad Rally",
@@ -2503,7 +2922,49 @@
       "keywords": [
         "tower defense",
         "td"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Tower of Time, a short jam game where you rewind time to defend your base, got a popular Show HN thread because its maker documented building it with AI. Players enjoyed the rewind mechanic and found it engaging, and many praised sharing the prompts openly. Criticism covered its short length, an intro bug, and skepticism about how much the AI actually did in the accompanying video.",
+        "praise": [
+          "Rewind mechanic freshens up tower defense",
+          "Engaging and fun to play",
+          "Transparent write-up with prompts shared"
+        ],
+        "complaints": [
+          "Very short",
+          "Intro bug could leave players stuck",
+          "Some doubted how much of the work was really AI-driven",
+          "Would benefit from a difficulty setting"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: I AI-coded a tower defense game and documented the whole process",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=44463967",
+            "date": "2025-07-04",
+            "quote": "Fun game! Starred on github for making the development process transparent, including sharing your prompts! :)",
+            "who": "adelineJoOs",
+            "points": "319 points"
+          },
+          {
+            "title": "Tower of Time",
+            "site": "itch.io",
+            "url": "https://m4v3k.itch.io/tower-of-time",
+            "quote": "Love the rewind mechanic! It makes a somewhat tired genre fresh again.",
+            "who": "nebyoolae",
+            "points": "4.0 out of 5 from 1 rating"
+          },
+          {
+            "title": "Show HN: I AI-coded a tower defense game and documented the whole process",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=44463967",
+            "date": "2025-07-04",
+            "quote": "After scanning through the video, the first 20 minutes is a guy doing coding with no AI involved.",
+            "who": "thegrim33"
+          }
+        ]
+      }
     },
     {
       "name": "Game Master Claude",
@@ -2686,7 +3147,54 @@
         "command and conquer",
         "c&c",
         "drones"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Battle Drones got attention mainly as a case study in agent-driven \"vibe coding\" rather than as a game. Writers found the multiplayer-over-audio idea the most novel part and noted that Willison himself does not oversell it. Coverage is thin: a few tech newsletters and blogs, a Kottke link, and a small Hacker News thread with only a handful of comments, mostly about build cost and the audio link giving a playtester a headache.",
+        "praise": [
+          "Novel multiplayer over audio, unusual for an RTS",
+          "Seen as a strong example of what one person can build with coding agents",
+          "Replay and debug tooling left a process others can inspect"
+        ],
+        "complaints": [
+          "Audio modem sounds were unpleasant enough to cause a headache",
+          "Acoustic links are sensitive to room noise and speakers",
+          "Few player reviews; coverage is about the process more than the gameplay"
+        ],
+        "sources": [
+          {
+            "title": "Battle Drones: Simon Willison's Vibe-Coded RTS With Multiplayer Over Audio",
+            "site": "explainx.ai",
+            "url": "https://explainx.ai/blog/battle-drones-simon-willison-vibe-coded-rts-audio-multiplayer-claude-code-321-commits-2026",
+            "date": "2026-10-20",
+            "quote": "The headline feature is stranger than the game itself.",
+            "who": "Yash Thakker"
+          },
+          {
+            "title": "Simon Willison ships vibe-coded RTS in 321 agent commits",
+            "site": "AI Weekly",
+            "url": "https://aiweekly.co/alerts/simon-willison-ships-vibe-coded-rts-in-321-agent-commits",
+            "date": "2026-10-21",
+            "quote": "a sharp data point on how far agentic coding has pulled the single-dev ceiling",
+            "who": "Alexis Dufresne"
+          },
+          {
+            "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50173389",
+            "date": "2026-10-20",
+            "quote": "the audio modem multiplayer gave my wife a headache!",
+            "who": "simonw",
+            "points": "6 points"
+          },
+          {
+            "title": "Simon Willison on Battle Drones",
+            "site": "kottke.org",
+            "url": "https://kottke.org/26/10/0049863-simon-willison",
+            "date": "2026-10"
+          }
+        ]
+      }
     },
     {
       "name": "Tennis Tycoon",
@@ -2710,7 +3218,38 @@
       "keywords": [
         "tennis",
         "management"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Tennis Tycoon has a small but positive set of App Store ratings, and players call it addictive and fun. Mobilegamer.biz ran an interview with its developer, a retired tennis pro, which focuses on how he built it rather than judging the game. One reviewer liked it but said it still has a lot of flaws. Coverage is thin so far.",
+        "praise": [
+          "Players find it addictive and fun",
+          "Gameplay draws on the developer's real pro tennis career",
+          "Low price, and in-app purchases are not needed to progress"
+        ],
+        "complaints": [
+          "One player said it still has a lot of flaws",
+          "Only a handful of ratings and little press beyond one interview"
+        ],
+        "sources": [
+          {
+            "title": "Tennis Tycoon on the App Store",
+            "site": "Apple App Store",
+            "url": "https://apps.apple.com/app/id6759981855",
+            "quote": "I picked this game up before a flight and got super addicted.",
+            "who": "Atko18",
+            "points": "4.6 out of 5 from 15 ratings"
+          },
+          {
+            "title": "A retired tennis pro built and launched Tennis Tycoon entirely with Claude Code",
+            "site": "Mobilegamer.biz",
+            "url": "https://mobilegamer.biz/retired-tennis-pro-iain-atkinson-made-debut-game-tennis-tycoon-entirely-with-claude-code/",
+            "date": "2026-08-04",
+            "quote": "Atkinson said the game’s depth comes from his own playing career.",
+            "who": "Vikki Blake"
+          }
+        ]
+      }
     },
     {
       "name": "Void Balls",
@@ -4028,7 +4567,48 @@
           "alt": "FluentTaskScheduler's list of scheduled tasks",
           "caption": "Scheduled tasks"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Windows news sites welcomed FluentTaskScheduler as a much-needed modern face for the dated built-in Task Scheduler, praising its cleaner look that fits Windows 11. Reviewers also flagged rough edges: creating tasks is not very intuitive, one feature did not work as expected in testing, and Neowin urged caution since it is a third-party tool calling Windows APIs. Coverage is mostly news write-ups rather than long-term user reviews.",
+        "praise": [
+          "Cleaner interface that matches Windows 11 design",
+          "A real modernization of the legacy Task Scheduler",
+          "Could serve as a practical everyday replacement"
+        ],
+        "complaints": [
+          "Creating new tasks is not very intuitive",
+          "The Script Library did not work as expected in one review",
+          "Not everyone finds the interface attractive; developer admits some flaws",
+          "Third-party tool touching system APIs, so reviewers advise caution"
+        ],
+        "sources": [
+          {
+            "title": "Someone rebuilt Task Scheduler for Windows 11 and it goes way harder than it has any right to",
+            "site": "Windows Central",
+            "url": "https://www.windowscentral.com/microsoft/windows-11/someone-made-a-modern-version-of-task-scheduler-for-windows-11-and-it-looks-awesome",
+            "date": "2026-03-08",
+            "quote": "It delivers a cleaner interface and aligns more closely with Windows 11's design language.",
+            "who": "Mauro Huculak"
+          },
+          {
+            "title": "Someone finally made a modern Windows Task Scheduler with Fluent Design",
+            "site": "Neowin",
+            "url": "https://www.neowin.net/news/someone-finally-made-a-modern-windows-task-scheduler-with-fluent-design/",
+            "quote": "may serve as a nice alternative to the legacy application."
+          },
+          {
+            "title": "Unofficial Windows Task Scheduler gets updated with new features",
+            "site": "Neowin",
+            "url": "https://www.neowin.net/news/unofficial-windows-task-scheduler-gets-updated-with-new-features/"
+          },
+          {
+            "title": "FluentTaskScheduler: A Modern WinUI 3 Frontend for Windows Task Scheduler",
+            "site": "WindowsForum",
+            "url": "https://windowsforum.com/windows-news.4/fluenttaskscheduler-a-modern-winui-3-frontend-for-windows-task-scheduler.403832/"
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -4337,7 +4917,45 @@
         "video editor",
         "capcut",
         "premiere"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Concat got enthusiastic coverage from tech sites in several languages as a free, open source CapCut alternative with no watermark, account or paywall. A Polish hands-on review found it intuitive and quick, but said automatic subtitles sometimes misrecognise speech or fail entirely, and that it will not replace advanced editors. Coverage is mostly launch-style articles rather than long-term user reviews.",
+        "praise": [
+          "Free, no watermark, no sign-up and no subscription",
+          "Intuitive enough for beginners",
+          "Features tested worked quickly and smoothly"
+        ],
+        "complaints": [
+          "Auto subtitles are unreliable and need checking",
+          "Not a replacement for advanced editing software",
+          "iOS version only in beta via sideloading"
+        ],
+        "sources": [
+          {
+            "title": "Darmowa alternatywa dla CapCut na PC? Debiutuje Concat Video Editor",
+            "site": "instalki.pl",
+            "url": "https://www.instalki.pl/news/internet/darmowa-alternatywa-dla-capcut-na-pc-oto-concat-video-editor/",
+            "date": "2026-10-14",
+            "quote": "Automatyczne napisy nie zawsze działają jednak prawidłowo.",
+            "who": "Robert Lewandowski"
+          },
+          {
+            "title": "Concat: el nuevo editor de vídeo gratis y open source que le roba la corona a CapCut",
+            "site": "Androidphoria",
+            "url": "https://androidphoria.com/aplicaciones/concat-alternativa-gratis-capcut",
+            "date": "2026-10-19",
+            "quote": "esta alternativa merece un lugar en la lista de programas por probar.",
+            "who": "Gabriela Sulpizi"
+          },
+          {
+            "title": "Concat Might Just Be the Ultimate Open-Source Replacement for CapCut",
+            "site": "TechPP",
+            "url": "https://techpp.com/2026/11/05/capcut-alternative-concat-open-source/",
+            "date": "2026-11-05"
+          }
+        ]
+      }
     },
     {
       "group": "open",
