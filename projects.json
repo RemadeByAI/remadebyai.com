@@ -110,7 +110,49 @@
           "alt": "The macshot Studio video editor with background, zoom and caption controls and a timeline",
           "caption": "Studio video editor"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "The few people who have written about macshot like it as a free, native alternative to paid tools like CleanShot X, and say it is light on memory and polished for an open-source app. Coverage is thin: a short curated write-up, two German news posts and one very enthusiastic user comment. We found no detailed criticism. The project has about 3.5k GitHub stars.",
+        "praise": [
+          "Free, open-source alternative to paid screenshot apps",
+          "Lightweight and native, without heavy memory use",
+          "Polish that reviewers compare to commercial tools",
+          "Big feature set: annotation, scrolling capture, OCR, recording"
+        ],
+        "complaints": [
+          "Few detailed reviews yet",
+          "Little feedback so far on long-term reliability"
+        ],
+        "sources": [
+          {
+            "title": "macshot: native macOS screenshot tool review",
+            "site": "DataNexus",
+            "url": "https://datanexus-kr.github.io/en/curations/2026-04/2026-04-05-macshot-native-macos-screenshot-tool-review/",
+            "date": "2026-04-05",
+            "quote": "a rare open-source macOS utility that matches commercial polish without the memory bloat",
+            "who": "Junho Lee"
+          },
+          {
+            "title": "macshot on AlternativeTo",
+            "site": "AlternativeTo",
+            "url": "https://alternativeto.net/software/macshot/about/",
+            "quote": "Best MacOS screenshot app I've ever used, and everything works perfectly as expected.",
+            "who": "Mr. Anon",
+            "points": "9 likes"
+          },
+          {
+            "title": "macshot: Open-Source-Alternative für Screenshots auf dem Mac",
+            "site": "iFun.de",
+            "url": "https://www.ifun.de/macshot-open-source-alternative-fuer-screenshots-auf-dem-mac-277317/"
+          },
+          {
+            "title": "macshot 4: Kostenlose Screenshot-App für den Mac legt deutlich zu",
+            "site": "iFun.de",
+            "url": "https://www.ifun.de/macshot-4-kostenlose-screenshot-app-fuer-den-mac-legt-deutlich-zu-282781/"
+          }
+        ]
+      }
     },
     {
       "name": "Locode",
@@ -177,7 +219,39 @@
       ],
       "license": "MIT",
       "maker": "Zach Latta",
-      "longDescription": "Hold the Fn key, talk, and FreeFlow types what you said into whatever text field you are in. It cleans up filler words and spelling using nearby app context and your own vocabulary list, and Edit Mode can rewrite selected text from a spoken instruction such as \"make this shorter\".\n\nIt uses a free Groq API key by default, or any OpenAI-compatible provider including local models through Ollama or LM Studio. There is no FreeFlow server. It works on Apple Silicon and Intel Macs."
+      "longDescription": "Hold the Fn key, talk, and FreeFlow types what you said into whatever text field you are in. It cleans up filler words and spelling using nearby app context and your own vocabulary list, and Edit Mode can rewrite selected text from a spoken instruction such as \"make this shorter\".\n\nIt uses a free Groq API key by default, or any OpenAI-compatible provider including local models through Ollama or LM Studio. There is no FreeFlow server. It works on Apple Silicon and Intel Macs.",
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "FreeFlow got a well-received Show HN launch, where people liked having a free alternative to paid dictation apps such as Wispr Flow and Superwhisper. Commenters pointed out that it only runs on macOS and that it sends audio to a cloud model rather than transcribing on the device, and many used the thread to compare it with local tools like Handy. Beyond that thread and a short positive write-up, coverage is thin.",
+        "praise": [
+          "Free, with no monthly subscription, unlike the paid tools it replaces",
+          "Fast enough that dictation does not interrupt your work",
+          "Open source"
+        ],
+        "complaints": [
+          "Only works on macOS",
+          "Uses a cloud model instead of transcribing locally, which some saw as a privacy trade-off",
+          "Some commenters preferred fully local alternatives such as Handy"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: Free alternative to Wispr Flow, Superwhisper, and Monologue",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=47040375",
+            "date": "2026-02-16",
+            "quote": "Saved you a click: Mac only and actually Grok; local inference too slow.",
+            "who": "Zopieux",
+            "points": "277 points"
+          },
+          {
+            "title": "Free Voice Dictation for Mac with AI Context – FreeFlow",
+            "site": "ScriptByAI",
+            "url": "https://www.scriptbyai.com/voice-dictation-freeflow/",
+            "date": "2026-06-23",
+            "quote": "This is fast enough not to disrupt your flow."
+          }
+        ]
+      }
     },
     {
       "name": "Open Source Barware",
@@ -238,7 +312,55 @@
           "alt": "The Layer Style dialog editing an Outer Glow on a type layer over the Earthrise photograph",
           "caption": "Layer styles"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "PhotoCraft got press attention as part of the ArtCraft suite, a set of AI-built, open-source stand-ins for Adobe apps. Reviewers like that it is free, needs no account or internet connection, and looks familiar to Photoshop users. Hands-on testing of early alpha builds found real problems: no HEIC support, unreliable selections, and trouble saving layered files on a Mac. Coverage also raises wider questions about the quality, security and copyright status of code written mostly by AI.",
+        "praise": [
+          "Free and open source, with no account or cloud subscription needed",
+          "Familiar Photoshop-style layout that handles basic edits like colour correction and titles",
+          "Broad feature list for an alpha, including layers, masks and PSD handling"
+        ],
+        "complaints": [
+          "Early alpha builds had bugs with selections, moving objects and saving",
+          "Could not open HEIC photos and was not optimised for Macs in testing",
+          "Doubts about the quality, security and copyright status of AI-written code"
+        ],
+        "sources": [
+          {
+            "title": "One dev is recreating 7 Adobe apps in Rust for free, so I tested it out",
+            "site": "TechRadar",
+            "url": "https://www.techradar.com/pro/one-dev-is-recreating-7-adobe-apps-in-rust-for-free-so-i-tested-it-out",
+            "date": "2026-10-10",
+            "quote": "PhotoCraft failed for me at the very first hurdle: it can’t read the HEIC format.",
+            "who": "Steve Paris"
+          },
+          {
+            "title": "Solo developer rebuilds Adobe Creative Suite in Rust using Claude, releases it free",
+            "site": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/software/video-editing-graphic-design/solo-developer-rebuilds-adobe-creative-suite-in-rust-using-claude-releases-it-free-to-all-targets-100-percent-parity-in-one-month-despite-piracy-claims-and-safety-warnings",
+            "date": "2026-10-08",
+            "quote": "Privacy problems, malicious code, unsafe file handling, and more are among the list of concerns.",
+            "who": "Jhet Borja"
+          },
+          {
+            "title": "AI Makes \"Open-Source, Clean Room\" Implementations Of Adobe Photoshop & Premier In Rust",
+            "site": "Phoronix",
+            "url": "https://www.phoronix.com/news/Photocraft-Filmcraft-AI",
+            "date": "2026-10-07",
+            "quote": "Photocraft is the re-implementation of Adobe Photoshop.",
+            "who": "Michael Larabel",
+            "points": "18 forum comments"
+          },
+          {
+            "title": "ArtCraft, PhotoCraft & FilmCraft: 7 Free Adobe Alternatives Built with Claude",
+            "site": "AIIDE List",
+            "url": "https://aiidelist.com/blog/artcraft-photocraft-filmcraft-free-adobe-alternatives",
+            "date": "2026-10-11",
+            "quote": "Local editing does not require an ArtCraft account or a cloud AI subscription."
+          }
+        ]
+      }
     },
     {
       "name": "PdfCraft",
@@ -1025,7 +1147,57 @@
           "alt": "A project card listing 504 TV models, 138 brands and 31 languages, press logos, and a before-and-after of a Google TV home screen",
           "caption": "Before and after"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Clean Your TV was picked up by tech press in October 2026 as part of a wider trend of people using AI coding agents to strip ads and bloat from smart TVs. Reviewers like that it needs no root and disables packages rather than deleting them, so changes can be undone. The main worries are that users may approve agent commands they do not understand, that the project itself warns of boot loops on some TVs, and that it relies on community block lists and a paid AI agent. Coverage is news-style rather than hands-on testing.",
+        "praise": [
+          "No root needed and changes can be reversed",
+          "Disables bloat instead of permanently removing it",
+          "Clean, simple replacement home screen",
+          "Community testing across many TV models"
+        ],
+        "complaints": [
+          "Project warns some TVs have ended up in boot loops",
+          "Easy to approve AI agent commands you do not understand",
+          "Depends on community block lists and usually a paid AI coding agent",
+          "Does not cover Samsung, LG or other non-Android TVs"
+        ],
+        "sources": [
+          {
+            "title": "Please don't use AI hacks to debloat your TV",
+            "site": "PCWorld",
+            "url": "https://www.pcworld.com/article/3266473/please-dont-use-ai-hacks-to-debloat-your-tv.html",
+            "date": "2026-10-22",
+            "quote": "Both cleanyourtv and tv-detox warn that they've caused some TVs to get stuck in boot loops.",
+            "who": "Jared Newman"
+          },
+          {
+            "title": "CleanYourTV: The Open-Source Fix for Bloated Smart TVs",
+            "site": "GadgetReview",
+            "url": "https://www.gadgetreview.com/?p=425527",
+            "date": "2026-11-02",
+            "quote": "The AI assistant lowers the technical barrier, but it also means users can approve commands they do not fully understand.",
+            "who": "Alex Barrientos"
+          },
+          {
+            "title": "People are using AI to make their smart TVs dumb again",
+            "site": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/",
+            "date": "2026-10-19",
+            "quote": "promises to strip the bloatware from any Android TV or Google TV over Wi-Fi",
+            "who": "Sarah Perez"
+          },
+          {
+            "title": "People Are Using AI to Remove Ads and Bloatware From Their Android TVs, Here's How",
+            "site": "Best for Android",
+            "url": "https://bestforandroid.com/radar/people-using-ai-remove-ads-bloatware-from-android-tv/",
+            "date": "2026-10-20",
+            "quote": "It doesn't need root access, and you can go back to factory settings.",
+            "who": "Farzan Hussain"
+          }
+        ]
+      }
     },
     {
       "name": "Free My TV",
@@ -1301,7 +1473,50 @@
           "alt": "Ferrite's raw editor in dark mode with a file tree and outline",
           "caption": "Raw editor"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Ferrite drew a busy Show HN thread and a hands-on review from It's FOSS. People like that it is a fast native Rust app with built-in Mermaid rendering and an IDE-like set of tools for Markdown, and some note it avoids the usual egui look. Criticism covers missing features such as images in the rendered view and wikilinks, install problems on older Linux, a laggy split view, and unease that the code is largely AI-generated.",
+        "praise": [
+          "Fast native app written in Rust",
+          "IDE-style tools for Markdown, such as a terminal and Git status",
+          "Clean look that does not feel like a typical egui app",
+          "Built-in Mermaid diagram rendering"
+        ],
+        "complaints": [
+          "Rendered view does not show images",
+          "Missing wikilinks and backlinks compared with Obsidian",
+          "Install and startup problems on some systems",
+          "Some users want clearer disclosure of heavy AI use"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: Ferrite - Markdown editor in Rust with native Mermaid diagram rendering",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=46571980",
+            "date": "2026-01-11",
+            "quote": "Nice to see an egui project that doesn't have super obvious egui aesthetics.",
+            "who": "huevosabio",
+            "points": "241 points, 190 comments"
+          },
+          {
+            "title": "I Really Want to Love This Markdown Editor, But One Thing Holds It Back",
+            "site": "It's FOSS",
+            "url": "https://itsfoss.com/ferrite-editor/",
+            "date": "2026-07-28",
+            "quote": "Basically, Ferrite is like an IDE but for Markdown (or should I say text) files.",
+            "who": "Abhishek Prakash"
+          },
+          {
+            "title": "Show HN: Ferrite (comment)",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=46571980",
+            "date": "2026-01-11",
+            "quote": "seems like a promising alternative to obsidian, but missing [[wikilinks]] and back references",
+            "who": "khimaros"
+          }
+        ]
+      }
     },
     {
       "name": "Inbox Zero",
@@ -1429,7 +1644,45 @@
           "alt": "A keyword research chart of 300 keyword ideas by difficulty and monthly searches",
           "caption": "Keyword research"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "OpenSEO is seen as a lean, open-source alternative to Semrush and Ahrefs, and users on Product Hunt praise its clean interface, value for money and MCP support for AI agents. The main criticism is that calling it free is misleading, because the data comes from the paid DataForSEO API and costs build up once you start using it. Detailed independent reviews are still few, and much of the buzz is launch posts and GitHub star counts.",
+        "praise": [
+          "Clean interface without upsell clutter",
+          "Pay-as-you-go pricing is good value compared with big SEO suites",
+          "MCP server lets AI agents work with your SEO data"
+        ],
+        "complaints": [
+          "Not truly free: it relies on the paid DataForSEO API",
+          "Only Google Analytics is supported, no privacy-focused analytics like Plausible",
+          "Few in-depth independent reviews so far"
+        ],
+        "sources": [
+          {
+            "title": "OpenSEO reviews",
+            "site": "Product Hunt",
+            "url": "https://www.producthunt.com/products/openseo",
+            "quote": "I'd love to see some integrations with more privacy‑focused analytics, starting with Plausible.",
+            "who": "Matt Blake",
+            "points": "5.0 out of 5 from 2 reviews"
+          },
+          {
+            "title": "OpenSEO has 1.7k GitHub stars. I built the same thing for $0",
+            "site": "DEV Community",
+            "url": "https://dev.to/dannwaneri/openseo-has-17k-github-stars-i-built-the-same-thing-for-0-1dip",
+            "quote": "So it's free the same way a printer is free.",
+            "who": "Daniel Nwaneri"
+          },
+          {
+            "title": "Show HN: Open-source Semrush alternative just passed 1.6k stars",
+            "site": "Hacker News",
+            "url": "https://hnshowcase.com/post/47926567/open-source-semrush-alternative-just-passed-1-6k-stars",
+            "date": "2026-04-27",
+            "points": "2 points"
+          }
+        ]
+      }
     },
     {
       "name": "Voicebox",
@@ -1838,7 +2091,55 @@
         "warcraft",
         "mmo",
         "mmorpg"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "World of ClaudeCraft drew wide attention in mid 2026 as an MMO built largely with an AI coding agent in a few days, reportedly reaching over 30,000 players. Writers and Hacker News commenters were impressed by the scope for a weekend project and called it a fascinating proof of concept. Critics say it is far from polished, call the generated code messy and hard to maintain, report performance drops, and point out that many assets come from existing packs. Much of the coverage is about the AI angle more than the game itself.",
+        "praise": [
+          "Remarkable scope for a project built in days",
+          "Free to play in a browser on desktop and phone",
+          "Seen as an interesting proof of concept for AI-built games"
+        ],
+        "complaints": [
+          "Feels unpolished and far behind the games it imitates",
+          "Developers criticise the generated code as messy and hard to maintain",
+          "Some players report performance drops",
+          "Relies on existing asset packs, so less AI-made than it looks"
+        ],
+        "sources": [
+          {
+            "title": "World of ClaudeCraft: AI builds MMO in 2 days, here's why gamers aren't impressed",
+            "site": "Notebookcheck",
+            "url": "https://www.notebookcheck.net/World-of-ClaudeCraft-AI-builds-MMO-in-2-days-here-s-why-gamers-aren-t-impressed.1327938.0.html",
+            "date": "2026-06-24",
+            "quote": "Many users see World of ClaudeCraft more as a proof of concept than a fully fledged MMO.",
+            "who": "Marius Müller"
+          },
+          {
+            "title": "Mmorpg World of ClaudeCraft, vibe coded with Fable 5",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=48509143",
+            "date": "2026-06-12",
+            "quote": "Impressive for a few days of Fable time.",
+            "who": "Aurornis",
+            "points": "94 points"
+          },
+          {
+            "title": "World of Claudecraft: Das Wochenend-MMORPG, das 30.000 Spieler anlockt",
+            "site": "PC Games Hardware",
+            "url": "https://www.pcgameshardware.de/Kuenstliche-Intelligenz-Hardware-279517/News/World-of-ClaudeCraft-MMORPG-WoW-KI-Browsergame-1546503/",
+            "date": "2026-06-26",
+            "who": "Christopher Barnes"
+          },
+          {
+            "title": "World of Claudecraft in 2 Tagen",
+            "site": "t3n",
+            "url": "https://t3n.de/news/world-of-claudecraft-in-2-tagen-1749653/",
+            "date": "2026-08-08",
+            "who": "Marvin Fuhrmann"
+          }
+        ]
+      }
     },
     {
       "name": "Legends of Future Past",
@@ -3339,7 +3640,61 @@
         "bullet hell",
         "roguelite",
         "deckbuilder"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "CODEX MORTIS drew wide press attention for billing itself as the first game made 100% with AI, and most of that coverage is skeptical. Writers questioned the 'first' claim and called the art muddy and inconsistent and the trailer weak. Others said it does play like a real survivors-like game. Players have been kinder than the press: its Steam user reviews are Very Positive (81% of 98). Early player reports did mention interface problems.",
+        "praise": [
+          "Plays like a real, complete survivors-like roguelite",
+          "Steam players rate it well overall",
+          "Seen as a notable example of what AI coding tools can now build"
+        ],
+        "complaints": [
+          "Muddy, inconsistent art direction",
+          "The 'first 100% AI game' claim is hard to verify and seen by some as a publicity stunt",
+          "Little original about it compared with Vampire Survivors",
+          "Some players reported interface problems and low overall quality"
+        ],
+        "sources": [
+          {
+            "title": "CODEX MORTIS on Steam",
+            "site": "Steam",
+            "url": "https://store.steampowered.com/app/4084120",
+            "points": "Very Positive, 81% of 98 user reviews"
+          },
+          {
+            "title": "This roguelite claims to be the world's first fully playable game created 100 percent through AI",
+            "site": "PC Gamer",
+            "url": "https://www.pcgamer.com/games/roguelike/this-roguelite-claims-to-have-the-dubious-honor-of-being-the-worlds-first-fully-playable-game-created-100-percent-through-ai-in-a-milestone-for-slop-everywhere/",
+            "date": "2025-12-13",
+            "quote": "it appears to be an honest-to-God videogame with many of its genre's trappings",
+            "who": "Justin Wagner"
+          },
+          {
+            "title": "Codex Mortis is a 100% AI-made roguelite bullet hell, and it's proving divisive",
+            "site": "TweakTown",
+            "url": "https://www.tweaktown.com/news/109355/codex-mortis-is-a-100-ai-made-roguelite-bullet-hell-and-its-proving-divisive-as-hell-too/index.html",
+            "date": "2025-12-15",
+            "quote": "The concern is, of course, that it leads to a product which has no soul",
+            "who": "Darren Allan"
+          },
+          {
+            "title": "Is the 'first 100% AI video game' the ultimate rage bait?",
+            "site": "Creative Bloq",
+            "url": "https://www.creativebloq.com/3d/video-game-design/is-the-first-100-percent-ai-video-game-the-ultimate-rage-bait",
+            "date": "2025-12-15",
+            "quote": "The game hardly supports the argument that AI can generate original ideas or visuals either.",
+            "who": "Joe Foley"
+          },
+          {
+            "title": "First game fully made by AI released on Steam; some gamers praised it",
+            "site": "iXBT.games",
+            "url": "https://ixbt.games/en/news/2026/03/27/v-steam-vysla-pervaia-igra-polnostiu-sozdannaia-ii-nekotorye-geimery-poxvalili-neiroslop.amp.html",
+            "date": "2026-03-27",
+            "who": "Boris Piletskiy"
+          }
+        ]
+      }
     },
     {
       "name": "Meet Claude",
@@ -3365,7 +3720,63 @@
         "visual novel",
         "story",
         "satire"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Steam players are broadly positive about Meet Claude. They describe it as a short, thought-provoking satire whose design makes you feel your growing reliance on the AI helper, and many recommend playing it once. Criticism centres on tiring side quests, confusing word puzzles, a story some found predictable, and its heavy use of generative AI. All of the coverage comes from Steam user reviews and a game aggregator. We found no press reviews.",
+        "praise": [
+          "Thought-provoking take on how dependent people become on AI",
+          "Players say the story is the strongest part",
+          "The design makes its point by putting the player through it",
+          "Free and short enough to finish in one sitting"
+        ],
+        "complaints": [
+          "Side quests and time-pressured tasks get tiring",
+          "Some found the word games confusing and the ending dragged",
+          "A few called the story predictable",
+          "Some players object to its use of generative AI"
+        ],
+        "sources": [
+          {
+            "title": "Meet Claude on Steam",
+            "site": "Steam",
+            "url": "https://store.steampowered.com/app/4437280",
+            "date": "2026-03-13",
+            "points": "96% positive from 27 user reviews"
+          },
+          {
+            "title": "Meet Claude user reviews",
+            "site": "Steam Community",
+            "url": "https://steamcommunity.com/app/4437280/reviews/?browsefilter=toprated",
+            "date": "2026-03",
+            "quote": "proves the point about AI by letting you see how relying on AI dehumanizes you",
+            "who": "BarkingBrush"
+          },
+          {
+            "title": "Meet Claude user reviews",
+            "site": "Steam Community",
+            "url": "https://steamcommunity.com/app/4437280/reviews/?browsefilter=toprated",
+            "date": "2026-03",
+            "quote": "It's worth playing this once, especially if you are trapped in the same loop that the dev describes.",
+            "who": "jbooty"
+          },
+          {
+            "title": "Meet Claude user reviews",
+            "site": "Steam Community",
+            "url": "https://steamcommunity.com/app/4437280/reviews/?browsefilter=toprated",
+            "date": "2026-08",
+            "quote": "nice idea - not my cup of tea execution",
+            "who": "noonix3"
+          },
+          {
+            "title": "Meet Claude",
+            "site": "GameBrain",
+            "url": "https://gamebrain.co/game/meet-claude",
+            "quote": "The story is definitely the strongest part for me.",
+            "points": "95% audience score from 21 reviews"
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -3400,7 +3811,45 @@
           "alt": "dumbtv's home screen with more apps in a grid",
           "caption": "App grid"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "dumbtv was covered in October 2026 alongside other AI-assisted smart TV debloating projects. Writers note it fills a gap by targeting Amazon Fire TV, disables around 65 packages including ad and tracking services, and is written so AI agents can follow it. Caveats are general rather than specific: these tools are works in progress, AI agents can disable the wrong packages, and readers are advised to vet the scripts themselves. Coverage is news-style with little hands-on testing.",
+        "praise": [
+          "Supports Fire TV, which similar tools skip",
+          "Disables Amazon ad tracking and screen fingerprinting",
+          "No root needed and changes can be undone"
+        ],
+        "complaints": [
+          "Coverage warns AI-driven debloating can disable important packages",
+          "Readers advised to vet the scripts themselves",
+          "Few detailed hands-on reviews yet"
+        ],
+        "sources": [
+          {
+            "title": "People Are Using AI to Get Rid of Smart TV Ads and Make Their TVs Faster",
+            "site": "It's FOSS",
+            "url": "https://itsfoss.com/news/debloat-smart-tv/",
+            "date": "2026-10-19",
+            "quote": "One of them is dumbtv, and it covers a few gaps tv-vibehack leaves.",
+            "who": "Abhishek Prakash"
+          },
+          {
+            "title": "People are using AI to make their smart TVs dumb again",
+            "site": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/",
+            "date": "2026-10-19",
+            "who": "Sarah Perez"
+          },
+          {
+            "title": "Please don't use AI hacks to debloat your TV",
+            "site": "PCWorld",
+            "url": "https://www.pcworld.com/article/3266473/please-dont-use-ai-hacks-to-debloat-your-tv.html",
+            "date": "2026-10-22",
+            "who": "Jared Newman"
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -3471,7 +3920,48 @@
           "alt": "A family calendar and photo dashboard on e-ink panels",
           "caption": "Family dashboard"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Tesserae has a community thread on the Home Assistant forum and was also posted to Hacker News and the Pimoroni forums. On the Home Assistant forum, users praise its e-ink friendly design and say its MCP integration lets Claude build dashboards quickly. One user found the interface very slow, and another hit a connection error with Home Assistant. Coverage is thin and mostly from early adopters.",
+        "praise": [
+          "Design suits e-ink panels out of the box",
+          "MCP integration makes building dashboards fast",
+          "Open source and self-hosted"
+        ],
+        "complaints": [
+          "One user found the web UI very slow and unresponsive",
+          "Setup hiccups connecting to Home Assistant"
+        ],
+        "sources": [
+          {
+            "title": "Tesserae: open-source self-hosted dashboard companion for e-ink panels",
+            "site": "Home Assistant Community",
+            "url": "https://community.home-assistant.io/t/tesserae-open-source-self-hosted-dashboard-companion-for-e-ink-panels/1013540",
+            "date": "2026-06-11",
+            "quote": "The design of Tesserae is just made for e-ink out of the box",
+            "who": "Vriesvak"
+          },
+          {
+            "title": "Tesserae: open-source self-hosted dashboard companion for e-ink panels (reply)",
+            "site": "Home Assistant Community",
+            "url": "https://community.home-assistant.io/t/tesserae-open-source-self-hosted-dashboard-companion-for-e-ink-panels/1013540",
+            "date": "2026-06",
+            "quote": "The UI is very (very) slow and unresponsive.",
+            "who": "n0ir"
+          },
+          {
+            "title": "Show HN: Tesserae, self-hosted dashboards for the e-paper panel you own",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=48732157"
+          },
+          {
+            "title": "Tesserae: self-hosted dashboard for Inky panels",
+            "site": "Pimoroni Forums",
+            "url": "https://forums.pimoroni.com/t/tesserae-self-hosted-dashboard-for-inky-panels/28932"
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -3931,7 +4421,59 @@
         "plasma",
         "launchpad",
         "start menu"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "AppGrid got coverage on Linux news sites at launch in March 2026 and on later releases, plus discussion on the EndeavourOS and KDE forums. Users like how it looks and that it offers a Launchpad-style option for Plasma. Complaints are mostly early teething problems: install errors, a blank window for one user, a breakage after the Plasma 6.7 update with a beta theme, and some who prefer the traditional KDE menu. Press coverage is mostly descriptive release news.",
+        "praise": [
+          "Attractive full-screen design",
+          "Gives Plasma users a visual, Launchpad-like launcher",
+          "Actively updated with new features"
+        ],
+        "complaints": [
+          "Some install errors and a blank window reported early on",
+          "Broke for one user after the Plasma 6.7 update",
+          "Some users prefer the classic KDE menu style"
+        ],
+        "sources": [
+          {
+            "title": "AppGrid - A nice new launcher for KDE",
+            "site": "EndeavourOS Forum",
+            "url": "https://forum.endeavouros.com/t/appgrid-a-nice-new-launcher-for-kde/78620?page=3",
+            "date": "2026-03-17",
+            "quote": "I'm loving the launcher so far, it looks great too.",
+            "who": "Noodly"
+          },
+          {
+            "title": "AppGrid Introduces a New Grid-Based Application Launcher for KDE Plasma 6",
+            "site": "Linuxiac",
+            "url": "https://linuxiac.com/appgrid-introduces-a-new-grid-based-application-launcher-for-kde-plasma-6/",
+            "date": "2026-03-15",
+            "quote": "KDE Plasma users who prefer a more visual way to launch applications have a new option to try.",
+            "who": "Bobby Borisov"
+          },
+          {
+            "title": "AppGrid Launcher broke",
+            "site": "KDE Discuss",
+            "url": "https://discuss.kde.org/t/appgrid-launcher-broke/47980",
+            "date": "2026-06-20",
+            "quote": "Broke after update to 6.7 on cachy.",
+            "who": "kindofabuzz"
+          },
+          {
+            "title": "AppGrid Launcher for KDE Plasma 6 Released The Biggest 1.8.0",
+            "site": "UbuntuHandbook",
+            "url": "https://ubuntuhandbook.org/index.php/2026/05/appgrid-launcher-for-kde-plasma-6-biggest-update/",
+            "date": "2026-05"
+          },
+          {
+            "title": "AppGrid 1.9 adds compact mode, smarter search, UI updates, inline autocompletion, and more",
+            "site": "AlternativeTo",
+            "url": "https://alternativeto.net/news/2026/6/appgrid-1-9-adds-compact-mode-smarter-search-ui-updates-inline-autocompletion-and-more/",
+            "date": "2026-06"
+          }
+        ]
+      }
     },
     {
       "group": "open",
