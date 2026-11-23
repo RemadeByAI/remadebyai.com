@@ -1198,7 +1198,73 @@
           "alt": "Bitchat's globe for picking a geohash location channel",
           "caption": "Location channels"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "People like the idea behind Bitchat: a messenger with no account or phone number that works offline over a Bluetooth mesh. Commenters keep pointing to censorship, internet shutdowns and disasters as where it matters, and App Store users rate it highly for having no sign-up and no ads. The launch in July 2025 drew sharp criticism from security researchers, who showed that contacts could be impersonated. Dorsey added a warning not to rely on its security, and Trail of Bits, while crediting the quick fixes and the move to the Noise protocol, advised against using it for sensitive conversations at that time.\n\nIn everyday use, the common complaints are short Bluetooth range and too few people nearby to form a mesh. Some also worry about battery drain.",
+        "praise": [
+          "No account, phone number, setup or ads",
+          "Works without internet or cell service, useful during censorship, outages and crises",
+          "Open source, with security bugs fixed quickly after launch",
+          "Rated 4.7 out of 5 on the App Store"
+        ],
+        "complaints": [
+          "A launch-era flaw let attackers impersonate trusted contacts",
+          "Not audited at launch; experts said not to rely on it for sensitive use",
+          "Short Bluetooth range and few nearby users, so the mesh often finds no one",
+          "Worries about battery drain and reliability over many hops"
+        ],
+        "sources": [
+          {
+            "title": "Bitchat – A decentralized messaging app that works over Bluetooth mesh networks",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=44485342",
+            "date": "2025-07-07",
+            "quote": "I really like the idea and it would certainly be very useful for communicating in case of censorship or Internet outage.",
+            "who": "N19PEDL2",
+            "points": "795 points"
+          },
+          {
+            "title": "Building secure messaging is hard: A nuanced take on the Bitchat security debate",
+            "site": "Trail of Bits Blog",
+            "url": "https://blog.trailofbits.com/2025/07/18/building-secure-messaging-is-hard-a-nuanced-take-on-the-bitchat-security-debate/",
+            "date": "2025-07-18",
+            "quote": "Users should absolutely not rely on Bitchat for sensitive communications in its current state.",
+            "who": "Jim Miller"
+          },
+          {
+            "title": "Agentic insecurity vibes on Bitchat",
+            "site": "Supernetworks",
+            "url": "https://www.supernetworks.org/pages/blog/agentic-insecurity-vibes-on-bitchat",
+            "date": "2025-07-07",
+            "quote": "The protocol has an identity key system, but it's only decorative as implemented and has misleading security claims.",
+            "who": "Alex Radocea"
+          },
+          {
+            "title": "Jack Dorsey says his 'secure' new Bitchat app has not been tested for security",
+            "site": "TechCrunch",
+            "url": "https://techcrunch.com/2025/07/09/jack-dorsey-says-his-secure-new-bitchat-app-has-not-been-tested-for-security",
+            "date": "2025-07-09"
+          },
+          {
+            "title": "bitchat mesh",
+            "site": "Apple App Store",
+            "url": "https://apps.apple.com/us/app/-/id6748219622",
+            "quote": "No having to create an account, no real setup process of any kind, no ads.",
+            "who": "Insertnicknamehere3",
+            "points": "4.7 out of 5 from 526 ratings"
+          },
+          {
+            "title": "Testing Bitchat at the music festival",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=44815164",
+            "date": "2025-08-06",
+            "quote": "I like the idea, I’ve been wandering around soma and mission for a week but not found anyone online.",
+            "who": "mikeodds",
+            "points": "105 points"
+          }
+        ]
+      }
     },
     {
       "name": "Ferrite",
