@@ -3822,6 +3822,324 @@
         "homeworld",
         "strategy"
       ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-23",
+      "name": "SetShot",
+      "slug": "setshot",
+      "alternative": "Alternative to keeping notes on your Mac's settings by hand",
+      "description": "A Mac app that snapshots hundreds of macOS settings and compares two snapshots, so you can see exactly what an update, an installer or you changed, explained in plain English.",
+      "category": "Utilities",
+      "url": "https://github.com/adamengst/setshot-app",
+      "linkText": "Get it on GitHub",
+      "icon": "◑",
+      "tile": "",
+      "source": "https://github.com/adamengst/setshot-app",
+      "download": "https://github.com/adamengst/setshot-app/releases/latest",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Adam Engst (TidBITS Publishing)",
+      "longDescription": "Take a snapshot, change something (apply a macOS update, install software, adjust preferences), then take another. SetShot lists the recognized changes with a plain-English description, where to find each one in System Settings and, where possible, an Open in Settings button. Unrecognized changes show the raw name and old and new values, and can be submitted to grow its knowledge base.\n\nA journal keeps a searchable history of every change, snapshots can run on a schedule in the background, and you can compare against built-in baselines of fresh macOS 15, 26 and 27 installs to export everything you've changed. It never changes settings itself, and snapshots stay on your Mac. Runs on macOS 13 Ventura and later.",
+      "builtWithAI": "The README says SetShot is \"designed by Adam Engst, coded by Claude Code\". 345 of its 390 commits are co-authored by Claude (counted 2026-11-23).",
+      "screenshots": [
+        {
+          "src": "/assets/apps/setshot/1.webp",
+          "alt": "SetShot comparison results listing changed macOS settings",
+          "caption": "Comparison results"
+        },
+        {
+          "src": "/assets/apps/setshot/2.webp",
+          "alt": "The SetShot journal of past settings changes",
+          "caption": "The journal"
+        }
+      ],
+      "keywords": [
+        "macos settings",
+        "system settings",
+        "tidbits",
+        "diff"
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Source available",
+      "added": "2026-11-23",
+      "name": "Parenthèse",
+      "slug": "parenthese",
+      "alternative": "Alternative to Ancestry, MyHeritage",
+      "description": "A family tree you explore like a map, with photos, videos and voice recordings on every person, shared with relatives by a link and a password. Free to use online or self-host.",
+      "category": "Family",
+      "url": "https://parenthese.io/en/",
+      "linkText": "Visit site",
+      "icon": "♧",
+      "tile": "glance",
+      "source": "https://github.com/IliesAllali/parenthese",
+      "platforms": [
+        "Web"
+      ],
+      "license": "PolyForm Noncommercial 1.0.0",
+      "price": "Free",
+      "maker": "Ilies Allali",
+      "longDescription": "Each person in the tree can hold photos, videos, audio recordings, documents and GPS tracks, and you can draw, add stickers or place photos anywhere on the tree. Relatives who get the link and password look around without an account and can suggest additions, which the owner can apply straight away or review first. GEDCOM import and export lets you move from or to other genealogy programs.\n\nThere is a hosted version at app.parenthese.io (with a demo that needs no account) and a Docker setup for running your own copy on a server or NAS. The interface is in English, French and German. The code is source-available under a non-commercial licence, not an OSI open source licence.",
+      "builtWithAI": "The README says it was designed and directed by Ilies Allali and \"most of the code was written with Claude Code (Anthropic), then reviewed and tested\". 416 of its 651 commits are co-authored by Claude (counted 2026-11-23).",
+      "screenshots": [
+        {
+          "src": "/assets/apps/parenthese/1.webp",
+          "alt": "The Parenthèse demo family tree with a profile open showing photos",
+          "caption": "The demo tree"
+        }
+      ],
+      "keywords": [
+        "genealogy",
+        "family tree",
+        "gedcom",
+        "ancestry"
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-23",
+      "name": "Mailflare",
+      "slug": "mailflare",
+      "alternative": "Alternative to Google Workspace",
+      "description": "Self-hosted email on your own domain, plus calendar, booking links and file storage, that runs on Cloudflare or in one Docker container. Receiving and sending can be free.",
+      "category": "Email",
+      "url": "https://mailflare.co",
+      "linkText": "Visit site",
+      "icon": "✉",
+      "tile": "",
+      "source": "https://github.com/hieunc229/mailflare",
+      "platforms": [
+        "Web"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Freemium",
+      "maker": "hieunc229",
+      "longDescription": "Mailflare gives you personal or shared mailboxes on custom domains, routing rules to store, forward, reject or sort mail, a calendar with time zones and email invitations, a public booking page, and a Drive for storing and sharing files. Built-in AI agents can search mail, draft replies and manage events. You can import mail from IMAP, Gmail Takeout, .eml and .mbox files, and the interface comes in 34 languages.\n\nIt deploys to Cloudflare Workers with one button or runs as a single Docker container, with a choice of databases (Cloudflare D1, PostgreSQL, MySQL, SQLite and others) and storage (R2, B2 or S3). Receiving through Cloudflare Email Routing is free and sending can use the free tiers of Resend or Amazon SES. A hosted Mailflare Cloud is also offered from $4.",
+      "builtWithAI": "268 of its 651 commits are co-authored by Claude (about 41%, counted 2026-11-23).",
+      "screenshots": [
+        {
+          "src": "/assets/apps/mailflare/1.webp",
+          "alt": "The Mailflare inbox",
+          "caption": "Inbox"
+        },
+        {
+          "src": "/assets/apps/mailflare/2.webp",
+          "alt": "The Mailflare calendar",
+          "caption": "Calendar"
+        }
+      ],
+      "keywords": [
+        "self-hosted email",
+        "custom domain email",
+        "cloudflare",
+        "gmail",
+        "workspace"
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-23",
+      "name": "FluidWin",
+      "slug": "fluidwin",
+      "alternative": "Alternative to the Windows 11 taskbar",
+      "description": "Reshapes Windows 11 with a dock that replaces the taskbar, a notch that shows the time, volume, music and notifications, and a glass control center. Close it and Windows goes back exactly as it was.",
+      "category": "Utilities",
+      "url": "https://github.com/clooudfn/FluidWin",
+      "linkText": "Get it on GitHub",
+      "icon": "◒",
+      "tile": "capture",
+      "source": "https://github.com/clooudfn/FluidWin",
+      "download": "https://github.com/clooudfn/FluidWin/releases/latest",
+      "platforms": [
+        "Windows"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "clooudfn",
+      "longDescription": "The dock shows your apps with notification badges, live window previews, jump-list commands, a Downloads stack and the Recycle Bin, and can sit on any edge of the screen or follow you to another monitor. The notch at the top grows to show volume, notifications, the song playing with its controls and a timer, and has a shelf you can drag files onto. The control center groups Wi-Fi, Bluetooth, dark theme, keep awake, silent mode, timer, calendar, weather and news.\n\nIt is a portable zip with nothing to install, it never changes Windows system files, and it checks for updates itself. It is a one-person hobby project.",
+      "builtWithAI": "97 of its 108 commits are co-authored by Claude (counted 2026-11-23).",
+      "screenshots": [
+        {
+          "src": "/assets/apps/fluidwin/1.webp",
+          "alt": "The FluidWin control center open above the dock",
+          "caption": "Control center"
+        },
+        {
+          "src": "/assets/apps/fluidwin/2.webp",
+          "alt": "The FluidWin dock on a Windows desktop",
+          "caption": "The dock"
+        }
+      ],
+      "keywords": [
+        "dock",
+        "taskbar",
+        "notch",
+        "windows 11",
+        "macos look"
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-23",
+      "name": "OldPhoneDeck",
+      "slug": "oldphonedeck",
+      "alternative": "Alternative to Elgato Stream Deck",
+      "description": "Turns an old iPhone or iPad into a Stream Deck style control panel for your Mac, with app keys, now playing, Mac controls and widgets. Runs in Safari, with no jailbreak and no App Store.",
+      "category": "Productivity",
+      "url": "https://github.com/GLAUCOMA82/OldPhoneDeck",
+      "linkText": "Get it on GitHub",
+      "icon": "▦",
+      "tile": "code",
+      "source": "https://github.com/GLAUCOMA82/OldPhoneDeck",
+      "platforms": [
+        "macOS",
+        "iOS"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "GLAUCOMA82",
+      "longDescription": "A menu bar app on the Mac (PhoneDeck.app) has a Command Center where you drag apps, widgets and controls onto pages for an iPhone 4S, a modern iPhone or an iPad mini. Keys open any Mac app with its Dock badge, control Spotify or Apple Music, volume, brightness, dark mode, window tiling, Focus and even an external monitor's input. Widgets include clock, weather, calendar, Mac performance, batteries and handwritten notes.\n\nIt works on devices as old as an iPhone 4S on iOS 9, and a phone can also serve as a webcam and mic for calls or as a small second display. You build the Mac app from source with one script (macOS 14 or later and the Xcode command line tools).",
+      "builtWithAI": "The repo description and README say it was built with Claude Code.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/oldphonedeck/1.webp",
+          "alt": "An iPhone 4S on a desk stand running OldPhoneDeck",
+          "caption": "An iPhone 4S as a deck"
+        },
+        {
+          "src": "/assets/apps/oldphonedeck/2.webp",
+          "alt": "The OldPhoneDeck key layout",
+          "caption": "The deck"
+        }
+      ],
+      "keywords": [
+        "stream deck",
+        "macro keys",
+        "old iphone",
+        "control panel"
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-23",
+      "name": "Game Glance",
+      "slug": "game-glance",
+      "alternative": "Alternative to Steam's Game Mode home, HLTB for Deck",
+      "description": "A Decky Loader plugin for Steam's Game Mode on handhelds that turns each game's page into a full-screen view with how long it takes to beat, play time and achievements, plus an optional new home screen.",
+      "category": "Games",
+      "url": "https://github.com/michpalm/game-glance",
+      "linkText": "Get it on GitHub",
+      "icon": "◈",
+      "tile": "wiki",
+      "source": "https://github.com/michpalm/game-glance",
+      "download": "https://github.com/michpalm/game-glance/releases/latest",
+      "platforms": [
+        "Linux"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "michpalm",
+      "longDescription": "The game page shows full-screen art, HowLongToBeat times, your play time and achievements, and where the game comes from. Spotlight Home (off by default) replaces Steam's Home with one game at a time over its art, a row of recent games, all installed games including non-Steam ones, and Friends, News and Recommended tabs. It also adds touch and mouse control, a screensaver drawn from your games, and store info for games added by Heroic.\n\nInstall it from Game Mode through Decky's Install plugin from URL; it updates itself from releases. It was tested on a ROG Xbox Ally running Bazzite and should work on a Steam Deck and other SteamOS-like devices.",
+      "builtWithAI": "The README says the code was written with Claude, directed, reviewed and tested on device by the maker. 558 of its 807 commits are co-authored by Claude (counted 2026-11-23).",
+      "screenshots": [
+        {
+          "src": "/assets/apps/game-glance/1.webp",
+          "alt": "The Game Glance settings in Steam's Quick Access menu",
+          "caption": "Quick Access settings"
+        }
+      ],
+      "keywords": [
+        "steam deck",
+        "decky",
+        "howlongtobeat",
+        "bazzite",
+        "steamos",
+        "handheld"
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-23",
+      "name": "Halcyon",
+      "slug": "halcyon",
+      "alternative": "Inspired by open-world island exploration games",
+      "description": "A tropical atoll that lives through a whole day in your browser: walk the beach, swim the reef, sail the lagoon and fly over the peak, from sunrise to a glowing night.",
+      "category": "Games",
+      "url": "https://halcyon.billpwchan.art/",
+      "linkText": "Play now",
+      "icon": "☀",
+      "tile": "glance",
+      "source": "https://github.com/billpwchan/halcyon",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Bill Chan",
+      "longDescription": "Everything is drawn live with three.js and WebGL2: an FFT ocean that breaks on the reef, a 330 m peak built from real lidar, 43,000 scanned plants and 370,000 coral colonies, whales, dolphins, turtles and schools of fish, and a 36-minute day whose weather changes by itself before the lagoon lights up with bioluminescence.\n\nIt is a calm place to explore rather than a game with goals, made to the standard of a game's hero shot and kept at 60 fps on a laptop. It is from the maker of Neon Zenith and Sakura Fantasy. The code is MIT; models, textures and fonts keep their own licences.",
+      "builtWithAI": "The README says it was built with Claude Code running Claude Opus 5.5: the maker set the direction and reviewed every pass, and the model wrote the code.",
+      "screenshots": [
+        {
+          "src": "/assets/apps/halcyon/1.webp",
+          "alt": "Halcyon's forested peak at first light over the lagoon",
+          "caption": "First light"
+        },
+        {
+          "src": "/assets/apps/halcyon/2.webp",
+          "alt": "The beach on Halcyon's atoll",
+          "caption": "The beach"
+        }
+      ],
+      "keywords": [
+        "island",
+        "ocean",
+        "explore",
+        "three.js",
+        "relaxing"
+      ]
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "added": "2026-11-23",
+      "name": "OpenAero DFW",
+      "slug": "openaero-dfw",
+      "alternative": "Alternative to Microsoft Flight Simulator",
+      "description": "A flight simulator in the browser over real satellite imagery of Dallas-Fort Worth: fly a Boeing 737, a Cessna 172 or an F-16 in today's real weather and get every landing graded.",
+      "category": "Games",
+      "url": "https://mutaafaziz.com/openaero/",
+      "linkText": "Play now",
+      "icon": "✈",
+      "tile": "code",
+      "source": "https://github.com/mutaaf/openaero-dfw",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Mutaaf Aziz",
+      "longDescription": "It is a six-degrees-of-freedom flight model flown over the whole Dallas-Fort Worth area: land a 737 on DFW 35C, take an F-16 past Reunion Tower, or fly the approach into Love Field in a Cessna. Weather comes from the current METAR report. There is no install and no account, with keyboard controls (pitch, roll, rudder, throttle, gear, flaps, brakes, autopilot, mouse yoke) and touch controls on phones and tablets.\n\nA player guide on the site explains the controls and approaches.",
+      "builtWithAI": "The README says the game is developed by three scheduled Claude Code agents (Scout, Builder and Keeper) that test, build and merge it with CI as the gate. Its commits carry Claude co-author trailers throughout (checked 2026-11-23).",
+      "keywords": [
+        "flight sim",
+        "flight simulator",
+        "airplane",
+        "dallas",
+        "737",
+        "cessna",
+        "f-16"
+      ]
     }
   ]
 }
