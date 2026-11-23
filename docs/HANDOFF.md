@@ -26,12 +26,13 @@ Last updated: 2026-11-23 2:45 AM Central (cleanup and handoff; 120 apps in 29 ca
   - Awesome-list PRs: taskade/awesome-vibe-coding #175 is open with no review; filipecalegario/awesome-vibe-coding #520 state not re-checked.
   - Link previews after the SEO pass not yet checked in a sharing debugger (see Open items).
 - **Next, in order:**
-  1. Today 12:00 PM Central: r/IMadeThis launch post (owner posts it; Claude in Chrome can't open reddit.com). Suggest an image post (home screenshot from `/mnt/project-files/launch/producthunt-gallery/`) before they post. Then r/vibecoding and r/ClaudeAI on later weekday mornings.
-  2. Today 1:13 PM Central: the daily listing-request check (InCloseMail must be open on the PC "Dennis").
-  3. When the reviews thread finishes all rounds: one Go live card for the remaining "What people say" sections (merge `origin/main` into that branch and rerun `node build.js` first).
-  4. Check awesome-list PRs #175 and #520.
-  5. Keep reviews going: a "What people say" pass for each new listing, and re-check apps with no coverage now and then (see Decisions).
-  6. Open ideas: tell small makers about the README badge, ask the SnapFiles friend.
+  1. **TOP PRIORITY (owner, 2026-11-23: "when I start my new session, that will be my top prority -- finishing up all the reviews that you couldn't do because of the cap"):** finish "What people say" for every app the hourly cap blocked. Where it stands: 113 apps in scope (InCloseMail, DesktopWiki and a few others skipped by the reviews thread); 33 have a section live; batches 1-8 were researched (most had no real coverage, so they get no section, and about 20 were only partly checked before being redone in round 2); batches 9-12 (about 36 apps) were scheduled for about 2:58 and 4 AM Central. **There is no file listing which app is in which state:** the tracker is the checklist in the thread "Compile app reviews from other sites" (project thread cmsg_01NSXVSWJTa7KrVNGqHCdAgeKpv9Ut7tuWbYYnC6N37gJW). First read that thread's latest status and its branch (`git log origin/main..` on its `claude/project-thread-*` branch); anything it didn't reach, or only partly checked, is the to-do list. Apps in `projects.json` with no `whatPeopleSay` field (85 on 2026-11-23) are the pool to pick from. Work in hourly rounds (about 100 page reads an hour), then one Go live card for everything. While doing it, write the per-app result (covered / no coverage / partial) to `/mnt/project-files/reviews/status.md` so the next session doesn't have to reconstruct it.
+  2. Today 12:00 PM Central: r/IMadeThis launch post (owner posts it; Claude in Chrome can't open reddit.com). Suggest an image post (home screenshot from `/mnt/project-files/launch/producthunt-gallery/`) before they post. Then r/vibecoding and r/ClaudeAI on later weekday mornings.
+  3. Today 1:13 PM Central: the daily listing-request check (InCloseMail must be open on the PC "Dennis").
+  4. When the reviews thread finishes all rounds: one Go live card for the remaining "What people say" sections (merge `origin/main` into that branch and rerun `node build.js` first).
+  5. Check awesome-list PRs #175 and #520.
+  6. Keep reviews going: a "What people say" pass for each new listing, and re-check apps with no coverage now and then (see Decisions).
+  7. Open ideas: tell small makers about the README badge, ask the SnapFiles friend.
 
 ## Where things are
 
