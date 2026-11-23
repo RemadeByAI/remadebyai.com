@@ -47,6 +47,27 @@ Last updated: 2026-11-23 2:45 AM Central (cleanup and handoff; 120 apps in 29 ca
   6. Keep reviews going: a "What people say" pass for each new listing, and re-check apps with no coverage now and then (see Decisions).
   7. Open ideas: tell small makers about the README badge, ask the SnapFiles friend.
 
+## Reddit posting notes (learned 2026-11-23)
+
+- **What worked:** the r/SideProject post (https://www.reddit.com/r/SideProject/comments/1y2lgy3/) stayed up. It was short and casual, four sentences in the owner's own voice, with one link in the body and a question at the end:
+  > I made a download site for vibe-coded apps: 100 AI-built tools and games, hand-picked
+  > I kept finding great AI-built apps buried in Reddit threads and GitHub repos, so I put them in one place: https://remadebyai.com
+  > It's like the old shareware download sites, but every app is built with AI. Just started today, but I have 100 apps across 29 categories, including 26 original games.
+  > If you've built something with AI, you can list it there (free of course). What should I add next?
+- **What failed:** the r/IMadeThis post later the same day was removed at once by "Reddit's filters" (site-wide spam filter, not the mods). Likely causes, in order:
+  1. Second post linking the same new domain from the same account within hours.
+  2. Long, ad-style text (bullet feature list, "Disclosure", call to action) drafted by Claude.
+  3. A title stuffed with brand names (Photoshop, Notion, Discord, Pi-hole).
+  4. r/IMadeThis is mostly art and crafts and may filter link posts harder than r/SideProject.
+  The owner messaged its mods to ask for approval.
+- **Rules for the next posts (r/vibecoding, r/ClaudeAI, r/ShowYourApp):**
+  - Use the r/SideProject post as the template: short, casual, one link, end with a question. No feature lists, no brand-name titles, no marketing tone.
+  - Give each subreddit its own angle so the posts don't read as copies.
+  - Leave several days to a week between posts that link remadebyai.com. If one gets filtered, put the link in the first comment instead of the body next time.
+  - Comment normally on Reddit in between, to build the account's standing.
+  - A one-line note that InCloseMail and DesktopWiki are ours is enough when the post shows them. The Brand affiliate tag stays off.
+  - Reddit is blocked for Claude in both browsers. Claude drafts, the owner posts and sends screenshots when stuck.
+
 ## Where things are
 
 - **How to work (since 2026-11-21):** do site work in a cloud session on the attached repo. Cloud sessions can commit and push to GitHub directly, so a "Commit and push" button tap is enough. PC-based Remote Control sessions can't push on a button tap.
