@@ -113,7 +113,7 @@ figcaption { position: absolute; right: 14px; bottom: 9px; color: #bacabb; font:
 .capture { background: #322a1d; color: #f1d390; }
 .code { background: #1a3030; color: #a2e8df; }
 .glance { background: #33262f; color: #f0b8de; }
-.card h3 { margin-top: 13px; font-size: 1.47rem; font-weight: 750; letter-spacing: -.04em; }
+.card .card-title { margin-top: 13px; font-size: 1.47rem; font-weight: 750; letter-spacing: -.04em; line-height: 1.55; }
 .card p { color: var(--muted); }
 .card .alternative { margin-block: 2px 7px; color: #c6e8c4; font-size: .9rem; font-weight: 650; }
 .card-bottom { margin-top: auto; padding-top: 16px; }
@@ -249,7 +249,7 @@ footer { border-top: 1px solid var(--line); background: #0d1310; }
 .prose p + p { margin-top: 12px; }
 .shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); gap: 12px; margin-top: 16px; }
 .shots figure { position: relative; }
-.shots img { display: block; width: 100%; border: 1px solid var(--line); border-radius: 12px; }
+.shots img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 12px; }
 .shots figcaption { position: static; margin-top: 6px; }
 .review { max-width: 760px; margin-top: 14px; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
 .review p + p { margin-top: 10px; }

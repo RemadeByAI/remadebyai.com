@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /docs/
+Disallow: /clicks-worker/
+Disallow: /forms-worker/
+Disallow: /partials/
 
 Sitemap: https://remadebyai.com/sitemap.xml

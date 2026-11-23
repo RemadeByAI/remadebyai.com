@@ -52,6 +52,17 @@ Featured: `featured: true`, plus `tagline`, `featureText`, `featureLinkText`, `f
 
 Only state facts that have been checked. Leave unknown fields out; the page hides them.
 
+## Search engines and speed (2026-11-23)
+
+All of this is written by build.js; keep it when editing templates.
+- **Titles and descriptions:** app titles are "Name: Alternative to X | RemadeByAI", dropping "| RemadeByAI" when over 65 characters. Meta descriptions are clipped at a word to about 155 characters (`clip()`). Category pages get their own description (count, three newest names, what they replace; `categoryDescription()`).
+- **Link previews:** every page has Open Graph and Twitter tags with image alt text. App pages use their first local screenshot as the preview picture (size read from the file); other pages use `assets/og-image.png`.
+- **Structured data (JSON-LD):** app pages have SoftwareApplication (Google app type mapped from our category in `APP_CATEGORY`, platforms, licence, download link, screenshots, a free Offer only when the price is plainly Free or an exact $ price) plus BreadcrumbList. Category pages have ItemList plus BreadcrumbList. The home page has Organization (EmuKey LLC) and WebSite with the site search (`<!-- build:jsonld -->` region). Review markup is added only for our own `review` (never for EmuKey's own apps), and never from the "What people say" quotes, which are third-party. No star ratings.
+- **sitemap.xml** has `lastmod` per page: the newest of `added`, `review.date` and `whatPeopleSay.checked` (category and list pages take the newest of their apps). **robots.txt** keeps /docs/, /clicks-worker/, /forms-worker/ and /partials/ out of search. **404.html** (noindex) shows the newest apps; GitHub Pages serves it for any missing address.
+- **Headings:** one h1 per page; on list pages (categories, new, all apps, 404) card names are h2, elsewhere h3 (`card(app, level)`; style is `.card .card-title`).
+- **Screenshots:** the grid shows a thumbnail at most 960 px wide (`assets/apps/<slug>/thumb/`), linked to the full picture that the viewer opens. Images carry width/height so pages don't jump while loading. **After adding screenshots, run `python3 tools/make-thumbs.py` (needs Pillow), then `node build.js`.** Without a thumbnail the page just uses the full image.
+- **search.json** now loads only when someone uses the search box (click, focus by hand or typing), not on every page load.
+
 ## Build gotcha (fixed 2026-11-22)
 
 - `replaceRegion()` in build.js used a replacement string, so a `$1` inside app text (SuperCmd's "$19.99") was read as a regex group and wrote a stray `<!-- build:cards -->` into the page. It now uses a replacer function. Use functions, not strings, for any new `.replace()` that inserts app text.

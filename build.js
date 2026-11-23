@@ -64,6 +64,48 @@ const externalInNewTab = html => html.replace(/<a\b([^>]*?)\bhref="(https?:\/\/[
   if (/^https?:\/\/(www\.)?remadebyai\.com(\/|$)/i.test(href) || /\btarget=/.test(before + after)) return tag;
   return `<a${before}href="${href}"${after} target="_blank" rel="noopener">`;
 });
+// Shortens text for a meta description (search engines show about 155 characters), cutting at a word.
+function clip(text, max = 155) {
+  const t = String(text || '').replace(/\s+/g, ' ').trim();
+  if (t.length <= max) return t;
+  const cut = t.slice(0, max - 1);
+  return cut.slice(0, Math.max(cut.lastIndexOf(' '), max * 0.6)).replace(/[\s,.;:–—-]+$/, '') + '…';
+}
+// Width and height of a local PNG, JPEG or WebP (no packages needed). Lets pages reserve space for
+// screenshots, so the layout doesn't jump while they load. Returns null if the file can't be read.
+const SIZE_CACHE = new Map();
+function imageSize(src) {
+  if (/^https?:/.test(src)) return null;
+  if (SIZE_CACHE.has(src)) return SIZE_CACHE.get(src);
+  let size = null;
+  try {
+    const b = fs.readFileSync(path.join(ROOT, src.replace(/^\//, '')));
+    if (b.toString('ascii', 1, 4) === 'PNG') size = { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
+    else if (b.toString('ascii', 0, 4) === 'RIFF' && b.toString('ascii', 8, 12) === 'WEBP') {
+      const kind = b.toString('ascii', 12, 16);
+      if (kind === 'VP8X') size = { w: 1 + b.readUIntLE(24, 3), h: 1 + b.readUIntLE(27, 3) };
+      else if (kind === 'VP8L') { const n = b.readUInt32LE(21); size = { w: 1 + (n & 0x3fff), h: 1 + ((n >> 14) & 0x3fff) }; }
+      else if (kind === 'VP8 ') size = { w: b.readUInt16LE(26) & 0x3fff, h: b.readUInt16LE(28) & 0x3fff };
+    } else if (b[0] === 0xff && b[1] === 0xd8) {
+      for (let i = 2; i < b.length - 9;) {
+        if (b[i] !== 0xff) { i++; continue; }
+        const marker = b[i + 1];
+        if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) { size = { w: b.readUInt16BE(i + 7), h: b.readUInt16BE(i + 5) }; break; }
+        i += 2 + b.readUInt16BE(i + 2);
+      }
+    }
+  } catch { size = null; }
+  SIZE_CACHE.set(src, size);
+  return size;
+}
+// Small copy of a screenshot for the thumbnail grid: /assets/apps/x/1.webp -> /assets/apps/x/thumb/1.webp.
+// Made by tools/make-thumbs.py; pages fall back to the full image when there's no thumbnail yet.
+function thumbOf(src) {
+  if (/^https?:/.test(src)) return null;
+  const t = src.replace(/\/([^/]+)$/, '/thumb/$1');
+  return fs.existsSync(path.join(ROOT, t.replace(/^\//, ''))) ? t : null;
+}
+const jsonLdTag = data => `<script type="application/ld+json">${JSON.stringify(data).replace(/</g, '\\u003c')}</script>`;
 function write(file, content) {
   const full = path.join(ROOT, file);
   fs.mkdirSync(path.dirname(full), { recursive: true });
@@ -119,7 +161,12 @@ const byName = (a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base
 
 // ---------- shared pieces ----------
 let ASSET_VERSION = {};
-function head({ title, description, canonical, ogType = 'website', scripts = '' }) {
+// The site-wide link preview picture, used when a page has no screenshot of its own.
+const OG_DEFAULT = { src: '/assets/og-image.png', w: 1200, h: 630, alt: 'RemadeByAI logo with the tagline Familiar software. Rebuilt with AI.' };
+// image: { src, w, h, alt } for the link preview (an app's first screenshot); noindex: keep the page out of search results.
+function head({ title, description, canonical, ogType = 'website', scripts = '', image = OG_DEFAULT, noindex = false, jsonLd = [] }) {
+  const desc = clip(description);
+  const img = /^https?:/.test(image.src) ? image.src : SITE + image.src;
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -128,22 +175,24 @@ function head({ title, description, canonical, ogType = 'website', scripts = '' 
   <meta name="theme-color" content="#090d0b">
   <meta name="color-scheme" content="dark">
   <meta name="darkreader-lock">
-  <meta name="description" content="${esc(description)}">
   <title>${esc(title)}</title>
-  <link rel="canonical" href="${SITE}${canonical}">
-  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="${esc(desc)}">
+${noindex ? '  <meta name="robots" content="noindex">\n' : ''}${canonical ? `  <link rel="canonical" href="${SITE}${canonical}">\n` : ''}  <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <meta property="og:type" content="${ogType}">
   <meta property="og:site_name" content="RemadeByAI">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="${esc(title)}">
-  <meta property="og:description" content="${esc(description)}">
-  <meta property="og:url" content="${SITE}${canonical}">
-  <meta property="og:image" content="${SITE}/assets/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:description" content="${esc(desc)}">
+${canonical ? `  <meta property="og:url" content="${SITE}${canonical}">\n` : ''}  <meta property="og:image" content="${esc(img)}">
+${image.w && image.h ? `  <meta property="og:image:width" content="${image.w}">\n  <meta property="og:image:height" content="${image.h}">\n` : ''}  <meta property="og:image:alt" content="${esc(image.alt)}">
   <meta name="twitter:card" content="summary_large_image">
-${siteAssets()}${scripts}
+  <meta name="twitter:title" content="${esc(title)}">
+  <meta name="twitter:description" content="${esc(desc)}">
+  <meta name="twitter:image" content="${esc(img)}">
+  <meta name="twitter:image:alt" content="${esc(image.alt)}">
+${siteAssets()}${scripts}${jsonLd.map(d => '\n  ' + jsonLdTag(d)).join('')}
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -196,19 +245,20 @@ function externalLabel(app) {
 }
 
 // One card. data-* attributes feed the search and filters in directory.js.
-function card(app) {
+function card(app, level = 3) {
   const search = [app.name, app.alternative, app.description, app.category, app.owner, app.maker, ...(app.platforms || []), app.license, app.price, ...(app.keywords || [])]
     .filter(Boolean).join(' ').toLowerCase();
   const list = values => esc(values.join('|'));
   return `<article class="card" data-group="${esc(app.group)}" data-category="${esc(app.categorySlug)}" data-platform="${list(app.platforms || [])}" data-price="${list(priceTags(app))}" data-licence="${list(licenceTags(app))}" data-search="${esc(search)}">
   <div class="card-top">${tile(app)}<small>${esc(app.owner)}</small></div>
-  <h3><a class="card-link" href="/apps/${app.slug}/">${esc(app.name)}</a></h3>
+  <h${level} class="card-title"><a class="card-link" href="/apps/${app.slug}/">${esc(app.name)}</a></h${level}>
   <p class="alternative">${esc(app.alternative)}</p>
   <p>${esc(app.description)}</p>
   <div class="card-bottom"><a class="card-category" href="/categories/${app.categorySlug}/">${esc(app.category)}</a><span class="card-more" aria-hidden="true">Details →</span></div>
 </article>`;
 }
-const cardGrid = apps => `<div class="cards">\n${apps.map(card).join('\n')}\n</div>`;
+// level: the heading level of each card's name (2 on pages where the cards sit right under the h1).
+const cardGrid = (apps, level = 3) => `<div class="cards">\n${apps.map(a => card(a, level)).join('\n')}\n</div>`;
 
 function categoriesOf(apps) {
   const map = new Map();
@@ -232,6 +282,37 @@ function categoryTiles(categories) {
 }
 
 // ---------- pages ----------
+// Google's app types for SoftwareApplication "applicationCategory"; our category name stays in applicationSubCategory.
+const APP_CATEGORY = {
+  Email: 'CommunicationApplication', Messaging: 'CommunicationApplication', Documentation: 'BusinessApplication',
+  'Screen capture': 'MultimediaApplication', 'Developer tools': 'DeveloperApplication', Productivity: 'BusinessApplication',
+  Business: 'BusinessApplication', Graphics: 'DesignApplication', Office: 'BusinessApplication', Home: 'HomeApplication',
+  Video: 'MultimediaApplication', Utilities: 'UtilitiesApplication', '3D and CAD': 'DesignApplication', TV: 'EntertainmentApplication',
+  Reading: 'ReferenceApplication', Audio: 'MultimediaApplication', 'Health and fitness': 'HealthApplication',
+  'Maps and GIS': 'TravelApplication', Networking: 'UtilitiesApplication', Games: 'GameApplication', 'Media server': 'MultimediaApplication',
+  Family: 'LifestyleApplication', Translation: 'ReferenceApplication', 'File sharing': 'UtilitiesApplication', Backup: 'UtilitiesApplication',
+  '3D printing': 'DesignApplication', 'Science and space': 'EducationalApplication', Finance: 'FinanceApplication', Passwords: 'SecurityApplication',
+};
+// Price for structured data, only when we know it: free apps cost 0, and an exact price stated in "price" is used.
+function appOffers(app) {
+  const tags = priceTags(app);
+  if (tags.length === 1 && tags[0] === 'Free') return { '@type': 'Offer', price: '0', priceCurrency: 'USD' };
+  const m = /\$(\d+(?:\.\d{2})?)/.exec(app.price || '');
+  if (m && !tags.includes('Free') && !tags.includes('Freemium')) return { '@type': 'Offer', price: m[1], priceCurrency: 'USD' };
+  return null;
+}
+const breadcrumbs = items => ({
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: items.map(([name, url], i) => ({ '@type': 'ListItem', position: i + 1, name, item: SITE + url })),
+});
+// One screenshot: a small thumbnail (when tools/make-thumbs.py made one) linking to the full picture,
+// with its size set so the page doesn't jump while it loads.
+function shotFigure(s) {
+  const thumb = thumbOf(s.src);
+  const size = imageSize(thumb || s.src);
+  const dims = size ? ` width="${size.w}" height="${size.h}"` : '';
+  return `<figure><a href="${esc(s.src)}"><img src="${esc(thumb || s.src)}" alt="${esc(s.alt)}"${dims} loading="lazy" decoding="async"></a>${s.caption ? `<figcaption>${esc(s.caption)}</figcaption>` : ''}</figure>`;
+}
 function appPage(app, all) {
   const facts = [
     ['Category', `<a href="/categories/${app.categorySlug}/">${esc(app.category)}</a>`],
@@ -253,13 +334,12 @@ function appPage(app, all) {
   const shots = (app.screenshots || []).length ? `
   <section class="app-section" aria-labelledby="shots-title">
     <h2 id="shots-title">Screenshots</h2>
-    <div class="shots">${app.screenshots.map(s =>
-      `<figure><a href="${esc(s.src)}"><img src="${esc(s.src)}" alt="${esc(s.alt)}" loading="lazy"></a>${s.caption ? `<figcaption>${esc(s.caption)}</figcaption>` : ''}</figure>`).join('')}</div>
+    <div class="shots">${app.screenshots.map(shotFigure).join('')}</div>
   </section>` : '';
 
   const built = app.builtWithAI
     ? paragraphs(app.builtWithAI)
-    : `<p class="muted">We haven't confirmed how ${esc(app.name)} was built yet. If you made it, <a href="/#list">tell us how AI was part of it</a>.</p>`;
+    : `<p class="muted">We haven't confirmed how ${esc(app.name)} was built yet. If you made it, <a href="/list/">tell us how AI was part of it</a>.</p>`;
 
   const review = app.review ? `
     <div class="review">
@@ -277,16 +357,32 @@ function appPage(app, all) {
     ${cardGrid(related)}
   </section>` : '';
 
-  const title = `${app.name}: ${app.alternative} | RemadeByAI`;
-  const jsonLd = {
-    '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: app.name,
-    description: app.description, applicationCategory: app.category, url: app.url,
+  // Titles: "Name: Alternative to X | RemadeByAI", dropping the site name when it would get cut off in search results.
+  const fullTitle = `${app.name}: ${app.alternative} | RemadeByAI`;
+  const title = fullTitle.length <= 65 ? fullTitle : `${app.name}: ${app.alternative}`;
+  const page = `${SITE}/apps/${app.slug}/`;
+  const shotsAbs = (app.screenshots || []).map(s => /^https?:/.test(s.src) ? s.src : SITE + s.src);
+  const firstLocal = (app.screenshots || []).find(s => imageSize(s.src));
+  const preview = firstLocal ? { src: firstLocal.src, ...imageSize(firstLocal.src), alt: firstLocal.alt } : OG_DEFAULT;
+  const offers = appOffers(app);
+  const software = {
+    '@context': 'https://schema.org', '@type': 'SoftwareApplication', '@id': `${page}#app`, name: app.name,
+    description: app.description, applicationCategory: APP_CATEGORY[app.category] || 'UtilitiesApplication',
+    applicationSubCategory: app.category, url: app.url, mainEntityOfPage: page,
     ...(app.platforms ? { operatingSystem: app.platforms.join(', ') } : {}),
     ...(app.license ? { license: app.license } : {}),
+    ...(app.download ? { downloadUrl: app.download } : {}),
+    ...(shotsAbs.length ? { screenshot: shotsAbs, image: shotsAbs[0] } : {}),
+    ...(offers ? { offers } : {}),
     ...(app.maker || app.group === 'emukey' ? { author: { '@type': 'Organization', name: app.maker || app.owner } } : {}),
+    // Our own editorial review, when there is one. Never for EmuKey's own apps (that would be self-review),
+    // and never built from the third-party quotes under "What people say".
+    ...(app.review && app.group !== 'emukey' ? { review: { '@type': 'Review', datePublished: app.review.date,
+      reviewBody: app.review.body, author: { '@type': 'Organization', name: app.review.author || 'RemadeByAI' } } } : {}),
   };
-  return `${head({ title, description: `${app.name}. ${app.description}`, canonical: `/apps/${app.slug}/` })}
-<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>
+  const crumbs = breadcrumbs([['Home', '/'], [app.category, `/categories/${app.categorySlug}/`], [app.name, `/apps/${app.slug}/`]]);
+  return `${head({ title, description: `${app.name}, ${app.alternative.charAt(0).toLowerCase()}${app.alternative.slice(1)}. ${app.description}`,
+    canonical: `/apps/${app.slug}/`, image: preview, jsonLd: [software, crumbs] })}
 <div class="wrap app-page">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/categories/${app.categorySlug}/">${esc(app.category)}</a> / <span>${esc(app.name)}</span></nav>
   <section class="app-hero" aria-labelledby="app-title">
@@ -431,14 +527,60 @@ ${sorted.map(a => `      <option value="${a.slug}"${a === first ? ' selected' : 
 ${foot}`;
 }
 
-function listPage({ canonical, title, description, label, heading, intro, apps, extra = '' }) {
-  return `${head({ title, description, canonical })}
+// Unique search-result text for a category page: how many apps, a few names and what they replace.
+function categoryDescription(c) {
+  const sorted = [...c.apps].sort(byNewest);
+  const names = sorted.slice(0, 3).map(a => a.name);
+  const list = names.length > 1 ? `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}` : names[0];
+  const games = c.name === 'Games';
+  const n = c.apps.length;
+  const lower = c.name.split(' ').map(w => w === w.toUpperCase() ? w : w.toLowerCase()).join(' '); // keeps TV, CAD, GIS
+  const noun = games ? 'games' : /tools$/i.test(c.name) ? lower : `${lower} ${n === 1 ? 'app' : 'apps'}`;
+  const base = `${n} ${noun} built with AI, listed on RemadeByAI${n > 1 ? `, including ${list}` : `: ${list}`}.`;
+  // Add what they replace, as many as fit in a search result.
+  const replaces = [...new Set(sorted.map(a => a.alternative.replace(/^(Alternative to|Inspired by)\s*/i, '').split(/,| and | or /)[0].trim()))];
+  for (let k = Math.min(3, replaces.length); k > 0; k--) {
+    const some = replaces.slice(0, k);
+    const named = replaces.length > k ? `${some.join(', ')} and more` : some.length > 1 ? `${some.slice(0, -1).join(', ')} and ${some[k - 1]}` : some[0];
+    const text = `${base} ${games ? 'Inspired by' : 'Alternatives to'} ${named}.`;
+    if (text.length <= 155) return text;
+  }
+  return base;
+}
+const itemList = (name, apps) => ({
+  '@context': 'https://schema.org', '@type': 'ItemList', name, numberOfItems: apps.length,
+  itemListElement: apps.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/apps/${a.slug}/`, name: a.name })),
+});
+// Home page: who runs the site, and the site search (Google can use it for a search box).
+function siteJsonLd() {
+  return { '@context': 'https://schema.org', '@graph': [
+    { '@type': 'Organization', '@id': `${SITE}/#org`, name: 'EmuKey LLC', url: 'https://emukey.com/', logo: `${SITE}/assets/icon-512.png` },
+    { '@type': 'WebSite', '@id': `${SITE}/#site`, name: 'RemadeByAI', url: `${SITE}/`, publisher: { '@id': `${SITE}/#org` },
+      description: 'A directory of practical software built with AI: familiar tools rebuilt around how people actually work.',
+      potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: `${SITE}/apps/?q={search_term_string}` }, 'query-input': 'required name=search_term_string' } },
+  ] };
+}
+// GitHub Pages serves 404.html for any missing address. Kept out of search results; links use the site root.
+function notFoundPage(newest) {
+  return `${head({ title: 'Page not found | RemadeByAI', description: 'That page is not on RemadeByAI. Search the directory or browse by category.', canonical: '', noindex: true })}
+<div class="wrap list-page">
+  <p class="section-label">✦ 404</p>
+  <h1 class="page-title">Page not found</h1>
+  <p class="page-intro">That address isn't on RemadeByAI. It may have moved. Try the search box above, see <a href="/apps/">all apps</a> or <a href="/categories/">browse by category</a>.</p>
+  <h2 class="visually-hidden">Newest apps</h2>
+  ${cardGrid(newest.slice(0, NEW_ON_HOME))}
+</div>
+${foot}`;
+}
+
+function listPage({ canonical, title, description, label, heading, intro, apps, extra = '', jsonLd = [] }) {
+  return `${head({ title, description, canonical, jsonLd })}
 <div class="wrap list-page">
   <p class="section-label">✦ ${esc(label)}</p>
   <h1 class="page-title">${heading}</h1>
   <p class="page-intro">${intro}</p>
   ${extra}
-  ${cardGrid(apps)}
+  ${cardGrid(apps, 2)}
 </div>
 ${foot}`;
 }
@@ -513,7 +655,7 @@ function allAppsPage(apps, categories) {
     <span class="count" role="status">${apps.length} apps</span>
   </div>
   <div class="cards" id="all-apps">
-${az.map(card).join('\n')}
+${az.map(a => card(a, 2)).join('\n')}
   </div>
   <div class="empty" hidden><strong>No matching apps</strong><p>Try a different search or reset the filters.</p><button class="button" type="button" id="reset">Reset filters</button></div>
 </section>
@@ -561,7 +703,8 @@ ${foot}`);
   for (const c of categories) {
     write(`categories/${c.slug}/index.html`, listPage({
       canonical: `/categories/${c.slug}/`, title: `${c.name} apps | RemadeByAI`,
-      description: `AI-built ${c.name.toLowerCase()} apps and alternatives to familiar software, listed on RemadeByAI.`,
+      description: categoryDescription(c),
+      jsonLd: [itemList(`${c.name} apps`, [...c.apps].sort(byName)), breadcrumbs([['Home', '/'], ['Categories', '/categories/'], [c.name, `/categories/${c.slug}/`]])],
       label: 'Category', heading: esc(c.name), intro: `${c.apps.length} ${c.apps.length === 1 ? 'app' : 'apps'}. <a href="/categories/">All categories</a>`,
       apps: [...c.apps].sort(byName),
     }));
@@ -582,6 +725,7 @@ ${foot}`);
 
   let home = read('index.html');
   home = replaceRegion(home, 'assets', siteAssets());
+  home = replaceRegion(home, 'jsonld', '  ' + jsonLdTag(siteJsonLd(apps)));
   home = replaceRegion(home, 'header', header());
   home = replaceRegion(home, 'stats', `${apps.length} apps in ${categories.length} categories`);
   home = replaceRegion(home, 'featured', featured(apps.filter(a => a.featured)));
@@ -592,13 +736,21 @@ ${foot}`);
   write('index.html', home);
   write('search.json', searchIndex(apps));
 
-  const urls = ['/', '/apps/', '/categories/', '/new/', '/about/', '/list/', '/badge/', ...categories.map(c => `/categories/${c.slug}/`), ...apps.map(a => `/apps/${a.slug}/`)];
+  // lastmod: the newest date we know for each page (listed, reviewed, or "What people say" checked).
+  const appDate = a => [a.added, a.review && a.review.date, a.whatPeopleSay && a.whatPeopleSay.checked].filter(Boolean).sort().pop();
+  const newestOf = list => list.map(appDate).sort().pop();
+  const all = newestOf(apps);
+  const urls = [['/', all], ['/apps/', all], ['/categories/', all], ['/new/', newestOf(apps.map(a => ({ added: a.added })))],
+    ['/about/'], ['/list/'], ['/badge/'],
+    ...categories.map(c => [`/categories/${c.slug}/`, newestOf(c.apps)]), ...apps.map(a => [`/apps/${a.slug}/`, appDate(a)])];
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(u => `  <url><loc>${SITE}${u}</loc></url>`).join('\n')}
+${urls.map(([u, d]) => `  <url><loc>${SITE}${u}</loc>${d ? `<lastmod>${d}</lastmod>` : ''}</url>`).join('\n')}
 </urlset>
 `);
-  write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
+  // The repo's notes and Worker code are served by GitHub Pages too; keep them out of search results.
+  write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /docs/\nDisallow: /clicks-worker/\nDisallow: /forms-worker/\nDisallow: /partials/\n\nSitemap: ${SITE}/sitemap.xml\n`);
+  write('404.html', notFoundPage(newest));
 
   console.log(`Built ${apps.length} app pages, ${categories.length} category pages, new arrivals, home page and sitemap.`);
 }

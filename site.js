@@ -86,7 +86,9 @@
   }
 
   let quietFocus = false; // true while the page itself focuses the box on load (see below)
-  input.addEventListener('focus', () => { load(); if (input.value.trim() && !quietFocus) load().then(render); });
+  // The search index loads when someone actually uses the box, not when the page focuses it on load.
+  input.addEventListener('focus', () => { if (!quietFocus) load(); if (input.value.trim() && !quietFocus) load().then(render); });
+  input.addEventListener('pointerdown', () => { load(); });
   input.addEventListener('input', () => { load().then(render); });
   input.addEventListener('keydown', event => {
     if (event.key === 'ArrowDown') { event.preventDefault(); highlight(active + 1); }
