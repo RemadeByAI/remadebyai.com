@@ -49,6 +49,10 @@ Updated 2026-11-23 3:31 AM Central. The feature is the `whatPeopleSay` field in 
 - Starfall
 - SetShot
 
+## Added in hunt 8 with a section, waiting for Go live (2)
+- Sill
+- Compositor
+
 ## Live since 2026-11-23 (4bbb713) (13)
 - LightCraft
 - DeckCraft
@@ -64,7 +68,7 @@ Updated 2026-11-23 3:31 AM Central. The feature is the `whatPeopleSay` field in 
 - A Game About Capybaras Delivering Food
 - Rackula
 
-## Checked: no real outside coverage (62)
+## Checked: no real outside coverage (70)
 These have `"whatPeopleSay": { "checked": "2026-11-23", "none": true }`, so the page shows "No outside reviews of X yet. We last checked ...". Re-check now and then; when coverage turns up, replace the entry with a full one.
 
 - Locode
@@ -129,6 +133,14 @@ These have `"whatPeopleSay": { "checked": "2026-11-23", "none": true }`, so the 
 - MoePeek
 - Minilytics
 - Pic2Sheet
+- Dimble (hunt 8)
+- WallpaperMachine (hunt 8)
+- Prism Download Manager (hunt 8)
+- Screendrop (hunt 8)
+- Capso (hunt 8)
+- Reelbird (hunt 8)
+- Rembrandt (hunt 8)
+- Flowplan (hunt 8)
 
 ## Partly checked: worth another look (2)
 - Claude of Tanks: the main player discussion is a Reddit thread and X posts (both blocked); the HN post had no comments

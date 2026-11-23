@@ -2,7 +2,14 @@
 
 Last updated: 2026-11-23 2:45 AM Central (cleanup and handoff; 120 apps in 29 categories live, "What people say" on 33 apps, speed/SEO pass live as 14013df). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
 
-## Newest: capped reviews finished on the PC (2026-11-23 3:40 AM Central)
+## Newest: app hunt 8, 130 apps (2026-11-23 afternoon Central)
+
+- Three search agents (GitHub README search, Show HN, popular repos and curated lists) found 30 candidates; 10 added on branch `hunt/2026-11-23-hunt-8`: Sill (Sidecar), Dimble (Bartender), WallpaperMachine (Wallpaper Engine), Prism Download Manager (IDM), Screendrop (CleanShot X/Loom), Capso (CleanShot X), Reelbird (Loom/Screen Studio), Compositor (Photoshop, ~18.8k stars), Rembrandt (Lightroom) and Flowplan (Notion). Each has a Claude co-authored commit count (checked 2026-11-23) and a "What people say" pass: Sill and Compositor got sections (quotes re-checked), the other 8 got the "No outside reviews yet" line.
+- WallpaperMachine has no screenshot on purpose: its only app screenshot is full of other companies' game and anime art (same rule as Game Master Claude). Flowplan's maker shows as "Yannic S." (only name on GitHub). Capso switched from BSL 1.1 to MIT on 2026-11-16.
+- Held for a later hunt (good but weaker fit): Aldine (Overleaf, 19% Claude), Petal (CoScreen, 22%, 228 HN points), Dalibre (Calibre, very new), Tungsten Edge (uBar, no screenshots), Lyrimuse (LyricsX), Phosphene (overlaps WallpaperMachine), Chipload (CNC CAM), Natel (Google Contacts), filex (Nextcloud), VodMax (IPTV, piracy-adjacent), Maglev (downloads/torrents), Doop (close to an AI wrapper). Rejected: Peach (adult content).
+- The search and listing briefs used this round are worth reusing: a search brief with the skip list and AI-evidence rules, and a listing brief with the entry format and screenshot rules (WebP, max 1600 px, then `python tools/make-thumbs.py`).
+
+## Earlier: capped reviews finished on the PC (2026-11-23 3:40 AM Central)
 
 - Done in a PC session on branch `reviews/finish-what-people-say` (local, not pushed yet): the 24 "partly checked" and 9 "not researched" apps were researched (batches `docs/reviews/in-13.txt` to `in-16.txt`). 13 got a "What people say" section (LightCraft, DeckCraft, DesignCraft, EffectCraft, SaneBar, MindZJ, RustGIS, GiroCrab, openGym, Cinephage, Haven, Capybaras, Rackula); 18 have no real coverage; Claude of Tanks and Mailflare stay "partly checked" (their main sources are Reddit/X and a NodeSeek thread that returns 403). All 35 new quotes were re-fetched and match their pages word for word. Per-app list: `docs/REVIEWS-STATUS.md`.
 - `build.js`: the cache-busting hash now ignores line endings, so a Windows checkout (CRLF) builds the same `?v=` links as the cloud instead of changing every page.

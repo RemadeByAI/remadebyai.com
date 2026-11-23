@@ -6708,6 +6708,605 @@
         "checked": "2026-11-23",
         "none": true
       }
+    },
+    {
+      "name": "Sill",
+      "slug": "sill",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Sidecar and Duet Display",
+      "description": "Shows any Mac window, or the whole desktop, on your iPhone or iPad, where you use it with touch, a trackpad, keys or Apple Pencil. No account and no server in between.",
+      "category": "Utilities",
+      "url": "https://getsill.app",
+      "linkText": "Visit site",
+      "icon": "▣",
+      "tile": "",
+      "added": "2026-11-23",
+      "source": "https://github.com/Saffsanity/sill",
+      "download": "https://getsill.app/download",
+      "platforms": [
+        "macOS",
+        "iOS"
+      ],
+      "license": "Apache-2.0",
+      "price": "Free",
+      "maker": "Noah Saffer",
+      "longDescription": "Sill for Mac sits in the menu bar and streams the window you pick, or the whole desktop, to the free Sill app on your iPhone or iPad as HEVC video over an encrypted connection. Taps, scrolls, three-finger gestures, keys and Apple Pencil go back to the Mac, the app's menus show up on the device, text can be shared through the clipboard both ways, and Mac sound can play along (a beta). A virtual display keeps the streamed window updating even when other windows cover it.\n\nDevices connect on the same network, over a USB cable, with a direct Wi-Fi link when there is no shared network, or from away through your own VPN such as Tailscale. You pair each device once. It needs macOS 14 or later (Apple silicon or Intel) and iOS or iPadOS 17 or later. The Mac app is a free notarized download (or brew install --cask saffsanity/sill/sill) and the iPhone and iPad app is free on the App Store.",
+      "builtWithAI": "Checked 2026-11-23: 1,439 of 1,672 commits are co-authored by Claude. The README asks contributors to follow the conventions in the repo's CLAUDE.md.",
+      "keywords": [
+        "Sidecar",
+        "Duet Display",
+        "remote desktop",
+        "VNC",
+        "iPad",
+        "iPhone",
+        "Screens"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/sill/1.webp",
+          "alt": "The Mac's Weather app on an iPad held sideways, under Sill's bar of window thumbnails and buttons",
+          "caption": "Your Mac on an iPad"
+        },
+        {
+          "src": "/assets/apps/sill/2.webp",
+          "alt": "An iPad held upright in laptop mode, with the Mac's Clock app on top and Sill's keys and trackpad below",
+          "caption": "Laptop mode"
+        },
+        {
+          "src": "/assets/apps/sill/3.webp",
+          "alt": "Sill's Apps list on an iPad, with a search field, the apps open now and every app installed on the Mac",
+          "caption": "Launch any Mac app"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Sill got a popular Hacker News thread in October 2026, and early users there and on the App Store say it feels faster and simpler than VNC-style remote desktop apps, and easier than DIY streaming setups. People like that it starts from the iPhone or iPad, which Apple's Sidecar does not do. The complaints are about early bugs: keyboard modifiers, trackpad scrolling and Apple Pencil glitches in some apps, plus a few people who found it hard to tell from the description that it is a remote desktop app. Coverage is mostly launch-time comments and short App Store reviews.",
+        "praise": [
+          "Faster and smoother than VNC remote desktop apps",
+          "Started and controlled from the iPhone or iPad, unlike Sidecar",
+          "Free, with no account, and easier than DIY streaming setups",
+          "Highly rated on the App Store"
+        ],
+        "complaints": [
+          "Early bugs with keyboard shortcuts and trackpad scrolling",
+          "Apple Pencil glitches in some Mac apps",
+          "Some readers found it unclear at first what the app actually is"
+        ],
+        "sources": [
+          {
+            "title": "Any window from your Mac, on your iPhone and iPad",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50112739",
+            "date": "2026-10-16",
+            "quote": "Brilliant! So much faster and seamless than VNC.",
+            "who": "alin23",
+            "points": "275 points"
+          },
+          {
+            "title": "Same thread: replacing a streaming setup",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50112739",
+            "date": "2026-10-16",
+            "quote": "I've been using Sunshine + Moonlight and it required a lot of tinkering and breaks half the time.",
+            "who": "fbcpck"
+          },
+          {
+            "title": "Sill on the App Store",
+            "site": "App Store",
+            "url": "https://apps.apple.com/app/id6816359860",
+            "quote": "It lacks scroll support with the trackpad.",
+            "who": "ToasterSticks18",
+            "points": "4.9 out of 5 from 77 ratings"
+          },
+          {
+            "title": "Same thread: a bug report",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50112739",
+            "date": "2026-10-16",
+            "quote": "nor do keyboard shortcuts seem to work (modifiers not applying)",
+            "who": "explosion-s"
+          },
+          {
+            "title": "Sill Puts Any Mac App on Your iPhone or iPad for Free",
+            "site": "iThinkDifferent",
+            "url": "https://www.ithinkdiff.com/sill-app-stream-mac-windows-iphone-ipad-iphone-duo/",
+            "date": "2026-10-14",
+            "quote": "Sill is open source, collects no data, and has a few limits.",
+            "who": "Imran Hussain"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dimble",
+      "slug": "dimble",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Bartender",
+      "description": "A native menu bar manager for macOS 27 that hides the icons you don't need and brings them back on a hover, click or shortcut, or in a panel.",
+      "category": "Utilities",
+      "url": "https://dimble.fif7y.com",
+      "linkText": "Visit site",
+      "icon": "◐",
+      "tile": "bar",
+      "added": "2026-11-23",
+      "source": "https://github.com/fif7y/dimble",
+      "download": "https://github.com/fif7y/dimble/releases/latest",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "maker": "Gabriel Faucon",
+      "longDescription": "Dimble sorts menu bar icons into Visible, Hidden and Always Hidden. You arrange them in a layout editor with real icon previews or by Command-dragging in the bar, and hidden icons come back on a hover, a click, a keyboard shortcut, or as tiles in a panel under the menu bar. Menu bar search (Option-Command-K) opens any icon's menu by name, and it can keep Live Activities visible, set behaviour per display, tighten icon spacing and add separators, app launchers and stand-ins for system items such as media controls and AirDrop.\n\nIt needs macOS 27, because it drives the native hiding built into the rebuilt macOS 27 menu bar through a private Apple framework, so a macOS update could break hiding. It asks for Accessibility (Screen Recording is optional, for animations), has no account or analytics, and installs from a notarized DMG or with brew install --cask dimble. It was called Pelmet until version 0.3.1 and is still in beta.",
+      "builtWithAI": "Checked 2026-11-23: 982 of 1,040 commits are co-authored by Claude.",
+      "keywords": [
+        "Bartender",
+        "Hidden Bar",
+        "Ice",
+        "Thaw",
+        "Pelmet",
+        "menu bar manager",
+        "macOS 27"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/dimble/1.webp",
+          "alt": "Dimble's Behavior settings with Instant, Smooth and Fade animation choices, icon spacing, reveal on hover and the right-click menu editor",
+          "caption": "Reveal and hide rules"
+        },
+        {
+          "src": "/assets/apps/dimble/2.webp",
+          "alt": "Dimble's Panel settings with a live preview of hidden icons shown as tiles in a panel under the menu bar",
+          "caption": "Hidden icons in a panel"
+        },
+        {
+          "src": "/assets/apps/dimble/3.webp",
+          "alt": "Dimble's General settings with menu bar icon styles, accent colours, keyboard shortcuts, language and permission status",
+          "caption": "General settings"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "WallpaperMachine",
+      "slug": "wallpapermachine",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Wallpaper Engine",
+      "description": "Plays Wallpaper Engine scene, video and web wallpapers from the Steam Workshop as live wallpapers on a Mac, plus your own videos and pictures.",
+      "category": "Utilities",
+      "url": "https://www.wallpapermachine.app/",
+      "linkText": "Visit site",
+      "icon": "◈",
+      "tile": "",
+      "added": "2026-11-23",
+      "source": "https://github.com/MMFoundation/WallpaperMachine",
+      "download": "https://github.com/MMFoundation/WallpaperMachine/releases/latest",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "maker": "MMFoundation",
+      "longDescription": "Wallpaper Engine is Windows-only. WallpaperMachine is an independent Mac app, not affiliated with Wallpaper Engine or Valve, that plays its wallpapers with its own Metal renderer. You can browse the Steam Workshop inside the app without signing in, but downloading Workshop wallpapers needs a Steam account that owns Wallpaper Engine (Steam checks this), and scene wallpapers also need shared resources from a Wallpaper Engine you have bought. The app bundles neither. Without Wallpaper Engine you can still use the bundled video wallpaper, your own videos and pictures, and pixiv illustrations. Compatibility varies by wallpaper.\n\nEach display can have its own wallpaper, and there are playlists, schedules, audio-reactive wallpapers, desktop widgets such as clocks and calendars, Shortcuts support and battery rules that lower quality or pause playback. It needs a Mac with Apple silicon and macOS 15 or later, and installs from a free DMG or with brew install --cask wallpapermachine. A paid Priority Support option exists but unlocks no features.",
+      "builtWithAI": "Checked 2026-11-23: 791 of 1,455 commits are co-authored by Claude.",
+      "keywords": [
+        "Wallpaper Engine",
+        "live wallpaper",
+        "animated wallpaper",
+        "Steam Workshop",
+        "Wallpaper Engine for Mac"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Prism Download Manager",
+      "slug": "prism-download-manager",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Internet Download Manager (IDM)",
+      "description": "A download manager that splits files into up to 32 connections, resumes after crashes, and grabs videos, music and torrents. A browser extension hands downloads to it.",
+      "category": "Utilities",
+      "url": "https://prismdl.site",
+      "linkText": "Visit site",
+      "icon": "⬒",
+      "tile": "",
+      "added": "2026-11-23",
+      "source": "https://github.com/FortoGraphy/prism-download-manager",
+      "download": "https://github.com/FortoGraphy/prism-download-manager/releases/latest",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Jan Sechovec",
+      "longDescription": "Prism splits each download across up to 32 connections, writes straight to the final file and resumes after a crash, sleep or a dropped connection, checking that the file on the server has not changed. An extension for Chrome, Edge, Brave, Opera, Vivaldi and Firefox passes downloads to it, and it handles HTTP, FTP, HLS and DASH streams, BitTorrent and magnet links. Video and audio from YouTube and the other sites yt-dlp supports can be saved as MP4 or MP3, and it can fetch AI models from Hugging Face.\n\nThere are queues with schedules and speed limits, categories, batch downloads, a site grabber, a clipboard monitor and a mini window. Installers are for Windows 10 and 11, macOS 11 or later (Apple silicon and Intel) and Linux (deb, rpm, AppImage). They are not code-signed, so Windows and macOS warn on first start. No ads, account or telemetry.",
+      "builtWithAI": "Checked 2026-11-23: 63 of 70 commits are co-authored by Claude.",
+      "keywords": [
+        "IDM",
+        "Internet Download Manager",
+        "download accelerator",
+        "Folx",
+        "Free Download Manager",
+        "yt-dlp",
+        "torrent"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/prism-download-manager/1.webp",
+          "alt": "Prism's download details window with 16 live connections, a file map and a speed graph",
+          "caption": "16 connections at once"
+        },
+        {
+          "src": "/assets/apps/prism-download-manager/2.webp",
+          "alt": "Prism's video dialog offering MP4 in a chosen quality or MP3 only",
+          "caption": "Video or MP3"
+        },
+        {
+          "src": "/assets/apps/prism-download-manager/3.webp",
+          "alt": "Prism's queues and scheduler settings",
+          "caption": "Queues and scheduler"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Screendrop",
+      "slug": "screendrop",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to CleanShot X and Loom",
+      "description": "A native Mac app for screenshots and screen recordings, with an editor for both and optional Loom-style share links you host yourself.",
+      "category": "Screen capture",
+      "url": "https://github.com/fayazara/Screendrop",
+      "linkText": "Get it on GitHub",
+      "download": "https://github.com/fayazara/Screendrop/releases/latest",
+      "source": "https://github.com/fayazara/Screendrop",
+      "license": "CC0-1.0",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Fayaz Ahmed",
+      "icon": "◫",
+      "tile": "capture",
+      "added": "2026-11-23",
+      "longDescription": "Screendrop lives in the Mac menu bar and captures a display, a window or an area, with a hotkey for each plus one that copies on-screen text with OCR. New captures land in a floating stack where you can copy, pin, annotate or upload them, and a Library window keeps every screenshot and recording in one place. The annotation editor is non-destructive, with arrows, shapes, text, smart redaction, crops, backgrounds and borders you can change later.\n\nRecordings keep the screen, camera, cursor, clicks, keystrokes and audio as separate tracks, so you can add zooms, a smoother cursor, keystroke captions, camera layouts, cuts, speed changes and on-device captions after the fact. There is also a teleprompter that follows your voice. Sharing is optional and runs on your own Cloudflare account. It needs macOS 26.4 or newer, installs from a DMG or Homebrew, and the maker warns it is under active development with occasional breaking changes.",
+      "builtWithAI": "Checked 2026-11-23: 219 of 496 commits (44%) are co-authored by Claude. The repo also includes an AGENTS.md instruction file for AI coding agents.",
+      "keywords": [
+        "CleanShot",
+        "Loom",
+        "screenshot",
+        "screen recorder",
+        "annotate",
+        "OCR",
+        "self-hosted"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/screendrop/1.webp",
+          "alt": "The Screendrop Library window showing a grid of captures, category filters in the sidebar and an inspector with details of the selected screenshot",
+          "caption": "Capture library"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Capso",
+      "slug": "capso",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to CleanShot X",
+      "description": "A free, native Mac app for screenshots and screen recordings, with annotation, scrolling capture, text recognition and a recording editor.",
+      "category": "Screen capture",
+      "url": "https://github.com/lzhgus/Capso",
+      "linkText": "Get it on GitHub",
+      "download": "https://github.com/lzhgus/Capso/releases/latest",
+      "source": "https://github.com/lzhgus/Capso",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "lzhgus",
+      "icon": "◰",
+      "tile": "capture",
+      "added": "2026-11-23",
+      "longDescription": "Capso puts area, fullscreen, window, scrolling, timer, OCR and recording captures in one floating toolbar. Screenshots open in an annotation editor with arrows, shapes, text, highlighter, numbered markers, pixelate and crop, and a beautify mode adds a background, padding, rounded corners and a shadow. You can pin captures above other windows, copy text with OCR, translate a screen area, and browse everything in a history window.\n\nIt records MP4 or GIF with system audio, microphone and a webcam bubble in four shapes, and a recording editor handles trimming, zoom suggestions, cursor smoothing and backgrounds. Optional cloud sharing uploads to your own Cloudflare R2 bucket. It is a native Swift app for macOS 15 or later, available as a signed DMG or with Homebrew (brew install --cask capso), and is translated into 12 languages.",
+      "builtWithAI": "Checked 2026-11-23: 123 of 468 commits (26%) are co-authored by Claude. Counted separately, 25 more commits carry other AI agent co-author lines (19 from oh-my-codex, 6 from Cursor) and 1 more is marked \"Generated with Claude Code\", so 149 of 468 commits (32%) have some AI marker.",
+      "keywords": [
+        "CleanShot",
+        "CleanShot X",
+        "Shottr",
+        "screenshot",
+        "screen recorder",
+        "OCR",
+        "annotate",
+        "GIF"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/capso/1.webp",
+          "alt": "The Capso annotation editor with a red box and numbered markers drawn over a captured Finder window",
+          "caption": "Annotation editor"
+        },
+        {
+          "src": "/assets/apps/capso/2.webp",
+          "alt": "Capso's beautify settings adding a background, padding, rounded corners and a shadow to a screenshot",
+          "caption": "Screenshot beautification"
+        },
+        {
+          "src": "/assets/apps/capso/3.webp",
+          "alt": "An area selected for recording with Capso's Record GIF and Record Video options and a round webcam bubble",
+          "caption": "Recording with webcam"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Reelbird",
+      "slug": "reelbird",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Loom and Screen Studio",
+      "description": "A Mac screen recorder that copies a share link the moment you stop, then lets you add auto-zoom, a smooth cursor and captions under the same link.",
+      "category": "Screen capture",
+      "url": "https://reelbird.app",
+      "linkText": "Visit site",
+      "download": "https://github.com/btahir/reelbird/releases/latest",
+      "source": "https://github.com/btahir/reelbird",
+      "license": "MIT",
+      "price": "Freemium",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Bilal Tahir",
+      "icon": "◉",
+      "tile": "capture",
+      "added": "2026-11-23",
+      "longDescription": "Reelbird records a display, a window or an area, with camera, microphone and system audio on separate tracks. With sharing on, it uploads while you record and puts the link on your clipboard when you stop. Later you can open the same take, where it has already planned zooms on your clicks and typing, smoothed the cursor and levelled your voice, then trim, blur sensitive text, add captions or a background and update the video behind the existing link. It can also turn a recording into a step-by-step guide.\n\nThe app itself is free, with no account and no telemetry, and links can point at your own storage bucket such as Cloudflare R2. If you'd rather not set one up, the optional paid Reelbird Pro plan ($5 a month) hosts your links and adds viewer stats. It needs an Apple silicon Mac on macOS 15 or later, and it includes a command-line tool and an MCP server so coding agents can record demos.",
+      "builtWithAI": "Checked 2026-11-23: 227 of 248 commits (92%) are co-authored by Claude.",
+      "keywords": [
+        "Loom",
+        "Screen Studio",
+        "screen recorder",
+        "share link",
+        "auto-zoom",
+        "captions"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/reelbird/1.webp",
+          "alt": "The Reelbird editor with a recording preview, camera bubble, zoom settings and a timeline of automatic zoom regions",
+          "caption": "Auto-zoom editor"
+        },
+        {
+          "src": "/assets/apps/reelbird/2.webp",
+          "alt": "Reelbird's recording picker for choosing a window, with microphone, camera, system audio and share-while-recording toggles",
+          "caption": "Pick what to record"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Compositor",
+      "slug": "compositor",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Adobe Photoshop",
+      "description": "A free, native Mac image editor built around a Photoshop-style workflow, with layers, masks, adjustment layers, selections, retouching tools and filters.",
+      "category": "Graphics",
+      "url": "https://robbietilton.com/compositor",
+      "linkText": "Visit site",
+      "download": "https://github.com/robbietilton/Compositor/releases/latest",
+      "source": "https://github.com/robbietilton/Compositor",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Robbie Tilton",
+      "icon": "◈",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "Compositor is made for compositing and photo touch-up the way Photoshop users already work: layers and folders with blend modes, layer masks and clipping masks, adjustment and filter layers, layer effects like drop shadow and glow, and non-destructive transforms. Selections include marquee, lasso, magic wand and Select Subject, and there are Spot Healing, Clone Stamp, brush, gradient, shape and type tools, a Camera Raw style panel, Content-Aware Fill and background removal. Shortcuts follow Photoshop's and can be remapped.\n\nIt opens JPEG, PNG, HEIC, TIFF, WebP, SVG, PDF, GIF, camera RAW and 8-bit RGB Photoshop PSD and PSB files, keeping folders, masks and simple text editable, and exports PNG, JPEG, PDF and animated GIF. It needs macOS 26 or later on an Apple silicon Mac. Download it from the site or GitHub, or install it with Homebrew (brew install --cask robbietilton-compositor).",
+      "builtWithAI": "Checked 2026-11-23: 502 of 738 commits in the Compositor repo are co-authored by Claude. The README itself does not mention AI.",
+      "keywords": [
+        "Photoshop",
+        "Adobe Photoshop",
+        "image editor",
+        "photo editor",
+        "layers",
+        "PSD",
+        "Mac",
+        "GIMP"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/compositor/1.webp",
+          "alt": "Compositor on an iMac editing a portrait with the Layers panel, surrounded by its Adjustments, Hue/Saturation, Levels and Color Picker windows",
+          "caption": "Layers and adjustments"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Mac news sites describe Compositor as a capable, very small (about 12 MB) free alternative to Photoshop for compositing and photo touch-ups, and readers who tried it liked how much easier it is than GIMP. Writers and readers agree it does not have everything Photoshop has. Reader comments point to its narrow system support (it needs a recent macOS on Apple silicon), and one German reader felt the software quality still has a way to go. Coverage is mostly short news write-ups with reader comments rather than in-depth reviews; the GitHub repo has about 18,800 stars.",
+        "praise": [
+          "Free, open source and very small compared with Photoshop",
+          "Powerful layer, mask and adjustment tools for compositing",
+          "More familiar and easier to use than GIMP for Photoshop users"
+        ],
+        "complaints": [
+          "Does not have every Photoshop feature",
+          "Runs only on the newest macOS with Apple silicon, so older Macs are left out",
+          "A reader found no way to save a project, only export a JPEG",
+          "Some readers feel the software quality is still uneven"
+        ],
+        "sources": [
+          {
+            "title": "Check Out Compositor for Mac, a Free Lightweight Photoshop Alternative",
+            "site": "OS X Daily",
+            "url": "https://osxdaily.com/2026/09/21/check-out-compositor-for-mac-a-free-lightweight-photoshop-alternative",
+            "date": "2026-09-21",
+            "quote": "Compositor is an excellent app, and as a free download, it's absolutely worth checking out.",
+            "who": "Paul Horowitz"
+          },
+          {
+            "title": "Compositor: Kostenloser Open-Source-Bildeditor für den Mac im Photoshop-Stil",
+            "site": "Caschys Blog",
+            "url": "https://stadt-bremerhaven.de/?p=1351166",
+            "date": "2026-09-20",
+            "quote": "Für mich persönlich ist das Programm jetzt nichts, aber als Einsteiger kann man das bestimmt gut nutzen.",
+            "who": "Ralph"
+          },
+          {
+            "title": "Compositor – The Photoshop Alternative for Mac",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=49756798",
+            "date": "2026-09-18",
+            "points": "4 points"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rembrandt",
+      "slug": "rembrandt",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Adobe Lightroom",
+      "description": "A free RAW photo editor and library with masks, healing, presets and on-device AI, where you can also describe edits in plain words. No account or subscription.",
+      "category": "Graphics",
+      "url": "https://rembrandteditor.dev",
+      "linkText": "Visit site",
+      "download": "https://github.com/thesnarkitecht/rembrandt/releases/latest",
+      "source": "https://github.com/thesnarkitecht/rembrandt",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "maker": "thesnarkitecht",
+      "icon": "◐",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "Rembrandt develops RAW files from over 1,000 cameras and covers the everyday Lightroom work: tone and colour sliders, curves and grading, masks (brush, gradients, AI subject, sky, depth and people), healing and removal, lens corrections, presets and film looks, HDR, panorama and focus-stack merges, AI denoise and super resolution, and a photo library with albums and search. You can type or say edits like \"warmer and a bit brighter\" and watch the sliders move, using a small language model that runs on your computer.\n\nEdits are saved as standard XMP sidecars next to your photos, so your originals are never changed and other editors can read the edits. There are installers for macOS (Apple silicon and Intel), Windows and Linux, or you can run it as a small server on the computer that holds your photos and edit in any browser. AI features can be switched off entirely. The builds are not code-signed yet, and the project warns that its editing engine is still changing between versions.",
+      "builtWithAI": "Checked 2026-11-23: 168 of 240 commits in the Rembrandt repo are co-authored by Claude.",
+      "keywords": [
+        "Lightroom",
+        "Adobe Lightroom",
+        "Lightroom Classic",
+        "RAW editor",
+        "photo editor",
+        "darktable",
+        "XMP",
+        "photo library"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/rembrandt/1.webp",
+          "alt": "Rembrandt editing a garden photo after the typed request \"golden hour, shadows +25\", with the Light sliders on the right",
+          "caption": "Edit by asking"
+        },
+        {
+          "src": "/assets/apps/rembrandt/2.webp",
+          "alt": "A radial gradient mask drawn over a cat's eye, with exposure and colour adjustments for the mask",
+          "caption": "Masks"
+        },
+        {
+          "src": "/assets/apps/rembrandt/3.webp",
+          "alt": "The Rembrandt library showing photos grouped by day, with search, sorting and import",
+          "caption": "Photo library"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Flowplan",
+      "slug": "flowplan",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Notion",
+      "description": "A team workspace with pages, databases, whiteboards and a daily journal, edited together live. Host it yourself in one Docker container or use the hosted version.",
+      "category": "Productivity",
+      "url": "https://flowplan.org",
+      "linkText": "Visit site",
+      "download": "https://flowplan.org/download",
+      "source": "https://github.com/yannicschuller/flowplan",
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "maker": "Yannic S.",
+      "icon": "▦",
+      "tile": "wiki",
+      "added": "2026-11-23",
+      "longDescription": "Flowplan keeps documents, databases with table, board, calendar, timeline and other views, whiteboards, handwritten notebooks, a daily journal, and projects with tickets and sprints in one page tree. Teams edit together live with cursors, comments, mentions and suggested changes, and can share pages with guests by link or publish them on the web. It imports from Notion, AppFlowy, Obsidian, Jira and Trello and exports to Markdown, CSV and ZIP.\n\nIt runs as a single Docker container with SQLite, with PostgreSQL as an option for larger teams, or you can use the hosted version at app.flowplan.org, which runs in Germany. It installs as an offline-capable web app, with desktop apps for macOS, Windows and Linux, an iPhone and iPad app, and an Android app downloaded from the site. AI features are optional and off by default, and can use a local model through Ollama or your own key for a cloud service.",
+      "builtWithAI": "Checked 2026-11-23: 2,244 of 2,503 commits in the Flowplan repo are co-authored by Claude.",
+      "keywords": [
+        "Notion",
+        "Confluence",
+        "AppFlowy",
+        "wiki",
+        "knowledge base",
+        "whiteboard",
+        "self-hosted",
+        "Kanban"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/flowplan/1.webp",
+          "alt": "A Flowplan project kickoff page with a note callout, mentions of four attendees and headings, the page tree on the left",
+          "caption": "Pages and docs"
+        },
+        {
+          "src": "/assets/apps/flowplan/2.webp",
+          "alt": "A roadmap database shown as a board with Backlog, Planned, In progress and Done columns",
+          "caption": "Database board view"
+        },
+        {
+          "src": "/assets/apps/flowplan/3.webp",
+          "alt": "A Flowplan whiteboard with sticky notes in one frame and connected shapes in another",
+          "caption": "Whiteboards"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     }
   ]
 }
