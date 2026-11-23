@@ -1,6 +1,35 @@
 # Handoff notes
 
-Last updated: 2026-11-22 (calmer home page and site search, filters and analytics both LIVE as 1825a9b after the owner tapped Go live; 36 apps in 16 categories; featured slot rotates between InCloseMail and DesktopWiki; live at fa6995d: 23 apps in 11 categories; ArtCraft sweep live at 4061f1c: 28 apps in 12 categories). Read this first when picking up work on the site.
+Last updated: 2026-11-23 2:45 AM Central (cleanup and handoff; 120 apps in 29 categories live, "What people say" on 33 apps, speed/SEO pass live as 14013df). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
+
+## Newest: reviews on 33 apps and speed/SEO pass live; cleanup done (2026-11-23 2:45 AM Central)
+
+- **Goal:** keep growing the directory (120 apps), add compiled outside reviews ("What people say") to every app that has coverage, make the site faster and easier for search engines, and tidy the project before handing off.
+- **Done (all live on `main` at 14013df):**
+  - "What people say" sections on 33 apps (commits 39f718d, 7131d76, 8bdb50a). Field format: see *projects.json fields* (`whatPeopleSay`).
+  - Speed and search-engine pass, live at 2:21 AM Central. Details: [Search engines and speed](#search-engines-and-speed-2026-11-23). Checklist: `/mnt/project-files/seo/SEO-CHECKLIST.md`.
+  - Hunt 7 (8 apps, 120 total) went live earlier as b3ff0a0; notes in `/mnt/project-files/app-hunt/2026-11-23-hunt-7.md`.
+  - Cleanup: the shared project folder went from 54 MB to 5.5 MB (old previews removed).
+- **State:**
+  - `main` = 14013df. Nothing uncommitted in the cloud repo. This handoff is its own docs-only commit on top.
+  - The reviews thread ("Compile app reviews from other sites") is still running on its own `claude/project-thread-*` branch, in hourly rounds (next at about 2:58 AM, then about 4 AM Central), because cloud web reading is capped at about 100 pages an hour. Its new work collects on that branch; don't touch it from other sessions.
+  - 24 `claude/project-thread-*` branches are on GitHub. All but the active ones (reviews, this handoff) are stale and already merged or replaced; cloud sessions can't delete remote branches. The owner can delete them on GitHub's branches page (optional): https://github.com/remadebyai/remadebyai.com/branches
+  - The PC copy `C:\dev\remadebyaI\remadebyai-website` is still stale (see *Where things are*).
+- **Decisions (owner's rules, 2026-11-23):**
+  - Times always in Central, never UTC ("I don't know UTC").
+  - Every reply about work links the thread doing it, in the message text.
+  - Choices always on button cards, never "type X". Going live is never implied.
+  - Reviews: skip InCloseMail and DesktopWiki (unreleased); apps with no outside coverage get no section; **no batches, one Go live card at the end** of the reviews work.
+- **Open issues:**
+  - Remaining apps (120 minus 33, minus ICM/DW) still to be researched for "What people say".
+  - Awesome-list PRs: taskade/awesome-vibe-coding #175 is open with no review; filipecalegario/awesome-vibe-coding #520 state not re-checked.
+  - Link previews after the SEO pass not yet checked in a sharing debugger (see Open items).
+- **Next, in order:**
+  1. Today 12:00 PM Central: r/IMadeThis launch post (owner posts it; Claude in Chrome can't open reddit.com). Suggest an image post (home screenshot from `/mnt/project-files/launch/producthunt-gallery/`) before they post. Then r/vibecoding and r/ClaudeAI on later weekday mornings.
+  2. Today 1:13 PM Central: the daily listing-request check (InCloseMail must be open on the PC "Dennis").
+  3. When the reviews thread finishes all rounds: one Go live card for the remaining "What people say" sections (merge `origin/main` into that branch and rerun `node build.js` first).
+  4. Check awesome-list PRs #175 and #520.
+  5. Open ideas: tell small makers about the README badge, ask the SnapFiles friend.
 
 ## Where things are
 
