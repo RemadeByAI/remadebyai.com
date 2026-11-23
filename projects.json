@@ -587,7 +587,56 @@
           "alt": "A pivot table summarising revenue by region and product, with the Pivot Table Fields pane open",
           "caption": "Pivot tables"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "GridCraft got attention in October 2026 as part of ArtCraft's AI-assisted Rust remakes of Word, Excel and PowerPoint, covered by several tech news sites. Writers note its wide formula coverage and familiar Excel-like layout, but they report the developer's own figures and do not appear to have tested the spreadsheet in depth. They stress it is alpha software, with rough file compatibility and not ready to replace Excel for serious work.",
+        "praise": [
+          "Covers almost all of Excel's worksheet functions, according to the project",
+          "Free and open source, written in Rust",
+          "Layout close to Microsoft Office, so switching should be easy",
+          "Can be driven by AI agents through a CLI or MCP server"
+        ],
+        "complaints": [
+          "Alpha quality, with rough depth and file compatibility",
+          "May struggle with real-world .xlsx files",
+          "Press coverage repeats the maker's claims rather than independent testing"
+        ],
+        "sources": [
+          {
+            "title": "Developer Who Cloned Photoshop With AI Just Did the Same to Microsoft Office",
+            "site": "Decrypt",
+            "url": "https://decrypt.co/380991/developer-cloned-photoshop-ai-just-did-same-microsoft-office",
+            "date": "2026-10-14",
+            "quote": "In other words, it knows almost every formula but may still trip over your company's budget spreadsheet.",
+            "who": "Jose Antonio Lanz"
+          },
+          {
+            "title": "Free Word, Excel and PowerPoint Alternatives Come From the Developer Behind Adobe's AI Clones",
+            "site": "International Business Times Singapore",
+            "url": "https://www.ibtimes.sg/A000OjV",
+            "date": "2026-10-13",
+            "quote": "They are not yet proven replacements for Microsoft Office in demanding workflows.",
+            "who": "Dheemanth Kashyap"
+          },
+          {
+            "title": "Open Source AI Dev is Going After Microsoft Office, Too",
+            "site": "Thurrott.com",
+            "url": "https://thurrott.com/office/342646/open-source-ai-dev-is-going-after-microsoft-office-too",
+            "date": "2026-10-09",
+            "quote": "These apps–called WordCraft, GridCraft, and DeckCraft, respectively, aren't as far along as the Adobe-inspired apps.",
+            "who": "Paul Thurrott"
+          },
+          {
+            "title": "Rust upstart reveals 'reimplementation' of Microsoft Office – with Claude on coding duty",
+            "site": "The Register",
+            "url": "https://www.theregister.com/a/5301952",
+            "date": "2026-10-08",
+            "quote": "ArtCraft adds Word, Excel, and PowerPoint lookalikes to its open source lineup, but they're not ready for production",
+            "who": "Richard Speed"
+          }
+        ]
+      }
     },
     {
       "name": "micasa",
@@ -622,7 +671,54 @@
           "alt": "micasa's house overview, listing incidents, overdue and upcoming maintenance and expiring items",
           "caption": "House overview"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "micasa drew a lively Show HN discussion and a handful of write-ups on Linux and terminal tool sites. People praise the polished terminal interface, the documentation and the local, single-file SQLite approach with no cloud account. Critics on Hacker News doubted that family members would use a terminal app, questioned trusting important home records to an AI-assisted codebase, and wondered whether it beats a plain spreadsheet. The blog coverage is mostly descriptive and enthusiastic rather than critical.",
+        "praise": [
+          "Attractive, well-designed terminal interface and documentation",
+          "Keeps everything local in one SQLite file, with no account or subscription",
+          "Covers maintenance schedules, warranties, projects and vendors in one place"
+        ],
+        "complaints": [
+          "A terminal app is hard to share with non-technical household members",
+          "Some are wary of trusting important records to AI-assisted code",
+          "Hard to justify over a free spreadsheet for some users"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: Micasa – track your house from the terminal",
+            "site": "Hacker News",
+            "url": "https://hn.svelte.dev/item/47075124",
+            "date": "2026-02-19",
+            "quote": "This looks so much better than most project/product management tools out there.",
+            "who": "whiplash451"
+          },
+          {
+            "title": "Show HN: Micasa – track your house from the terminal (comment)",
+            "site": "Hacker News",
+            "url": "https://hn.svelte.dev/item/47075124",
+            "date": "2026-02-19",
+            "quote": "The only thing with that type of interface is that there is no chance my wife would use it via the terminal.",
+            "who": "mrpf1ster"
+          },
+          {
+            "title": "micasa: modal TUI for tracking home projects",
+            "site": "LinuxLinks",
+            "url": "https://www.linuxlinks.com/micasa-modal-tui-tracking-home-projects/",
+            "date": "2026-03-09",
+            "quote": "Single SQLite file. No cloud. No account. No subscriptions.",
+            "who": "Steve Emms"
+          },
+          {
+            "title": "micasa terminal home maintenance tracker",
+            "site": "OSTechNix",
+            "url": "https://ostechnix.com/micasa-terminal-home-maintenance-tracker/",
+            "quote": "If you enjoy using keyboard-driven tools like Vim or VisiData, you will feel right at home.",
+            "who": "sk"
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -661,7 +757,48 @@
           "alt": "FilmCraft grading a scene from Charade (1963) with the waveform and vectorscope beside the Program monitor",
           "caption": "Scopes and grading"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "FilmCraft was covered mostly as part of the ArtCraft suite launch, with one detailed hands-on review from ProVideo Coalition. The reviewer liked touches such as the built-in loudness meter and the shortcut editor, and was impressed at how far a Premiere-style clone had come. He found trimming and heavy timeline work unreliable, though, and doubted experienced editors would trust it yet. Tech press also stresses that the app is an early alpha built largely with AI.",
+        "praise": [
+          "Surprisingly far along for a free Premiere-style editor",
+          "Built-in loudness meter that is easy to reach",
+          "Well designed keyboard shortcut editor"
+        ],
+        "complaints": [
+          "Trimming and extended timeline editing work poorly",
+          "Confusing colour coding for trim modes",
+          "Very early alpha; reviewers doubt professionals will rely on AI-built software yet"
+        ],
+        "sources": [
+          {
+            "title": "I tried the ArtCraft video editor FilmCraft",
+            "site": "ProVideo Coalition",
+            "url": "https://www.provideocoalition.com/i-tried-the-artcraft-video-editor-filmcraft/amp/",
+            "date": "2026-10-23",
+            "quote": "There is no doubt that getting a clone of Premiere this far along is an impressive feat.",
+            "who": "Scott Simmons"
+          },
+          {
+            "title": "AI Makes \"Open-Source, Clean Room\" Implementations Of Adobe Photoshop & Premier In Rust",
+            "site": "Phoronix",
+            "url": "https://www.phoronix.com/news/Photocraft-Filmcraft-AI",
+            "date": "2026-10-07",
+            "quote": "an interesting demonstrator for the power of AI and potentially pressing legal challenges",
+            "who": "Michael Larabel",
+            "points": "18 comments"
+          },
+          {
+            "title": "ArtCraft launches 7 open-source creative apps",
+            "site": "Techaeris",
+            "url": "https://techaeris.com/2026/10/07/artcraft-launches-7-open-source-creative/",
+            "date": "2026-10-07",
+            "quote": "It is early, and it is imperfect",
+            "who": "Alex Hernandez"
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -2216,7 +2353,55 @@
           "alt": "GeoLibre Desktop with a globe view, the Layers pane and the attribute table",
           "caption": "GeoLibre Desktop"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "GeoLibre's 1.0 release was a popular Hacker News story, and it has at least one detailed independent write-up. People are impressed that a capable GIS runs entirely in the browser and recommend trying the live demo. Criticisms include file-loading errors and stalls with large files in the web version, a sense that it is not yet a full QGIS replacement, and some pushback on the marketing language and the low-contrast website.",
+        "praise": [
+          "A capable GIS that runs right in the browser, with a live demo worth trying",
+          "Careful handling of projections, including other planets",
+          "Python and Jupyter integration feels complete"
+        ],
+        "complaints": [
+          "Large files can stall or exhaust browser memory",
+          "Some testers hit file loading errors in the web version",
+          "Not yet a replacement for heavy QGIS workflows",
+          "Marketing copy and low-contrast website drew criticism"
+        ],
+        "sources": [
+          {
+            "title": "GeoLibre 1.0",
+            "site": "Hacker News",
+            "url": "https://hn.svelte.dev/item/48479852",
+            "date": "2026-06-10",
+            "quote": "Thoroughly recommend trying the live in-your-browser demo.",
+            "who": "simonw",
+            "points": "301 points"
+          },
+          {
+            "title": "GeoLibre 1.0 (comment)",
+            "site": "Hacker News",
+            "url": "https://hn.svelte.dev/item/48479852",
+            "date": "2026-06-10",
+            "quote": "The web version was giving me IO errors for any file I tried to load in.",
+            "who": "isaachh"
+          },
+          {
+            "title": "GeoLibre maps Earth, the Moon, and Mars in a browser",
+            "site": "Botmonster Tech",
+            "url": "https://botmonster.com/web-dev/geolibre-open-source-gis-in-the-browser/",
+            "date": "2026-09-10",
+            "quote": "GeoLibre still will not replace a heavy QGIS processing pipeline"
+          },
+          {
+            "title": "GeoLibre maps Earth, the Moon, and Mars in a browser",
+            "site": "Botmonster Tech",
+            "url": "https://botmonster.com/web-dev/geolibre-open-source-gis-in-the-browser/",
+            "date": "2026-09-10",
+            "quote": "So the Jupyter side feels finished rather than bolted on."
+          }
+        ]
+      }
     },
     {
       "name": "RustGIS",
@@ -3302,7 +3487,46 @@
         "soccer",
         "premier league",
         "fantasy football"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Feedback on 38-0-0 comes almost entirely from App Store user reviews, which are strongly positive overall. Players call it simple but challenging and a big time sink for football fans. The most common complaint is the number of ads, including reports of ads returning after paying to remove them, along with requests for more modes and fixes to owner mode and ranked PvP drafts. There is little press coverage.",
+        "praise": [
+          "Simple but challenging draft concept that football fans enjoy",
+          "Highly replayable and good for killing time",
+          "Several game modes"
+        ],
+        "complaints": [
+          "Too many ads, sometimes after every decision",
+          "A report of ads returning after buying ad removal and resetting",
+          "Owner mode resets and repeated players in ranked PvP frustrate some players"
+        ],
+        "sources": [
+          {
+            "title": "38-0-0: Football Squad Draft (UK App Store)",
+            "site": "App Store",
+            "url": "https://apps.apple.com/gb/app/id6776756035",
+            "quote": "I don't mind a few advertisements here and there but this game literally gives you one after every decision you make",
+            "who": "Zakb04",
+            "points": "4.7 out of 5 from 703 ratings"
+          },
+          {
+            "title": "38-0-0: Football Squad Draft (US App Store)",
+            "site": "App Store",
+            "url": "https://apps.apple.com/app/id6776756035",
+            "quote": "The game is simple, yet so challenging. A must have for any diehard football fan.",
+            "who": "GhostLegs420",
+            "points": "4.7 out of 5 from 94 ratings"
+          },
+          {
+            "title": "38-0-0: Football Squad Draft (UK App Store)",
+            "site": "App Store",
+            "url": "https://apps.apple.com/gb/app/id6776756035",
+            "quote": "Very good fun, could use more features however i bought no ads when i reset the game there's ads again.",
+            "who": "Seano7777"
+          }
+        ]
+      }
     },
     {
       "name": "Sprout Quest",
@@ -4120,7 +4344,45 @@
           "alt": "Meerkat CRM's contacts page suggesting possible duplicate contacts to merge",
           "caption": "Finding duplicate contacts"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage is thin and comes mainly from a launch thread in the Lemmy self-hosted community, where reactions were warm. Commenters liked the idea, the dark mode, the ready-made demo and the developer's open disclosure about using AI. Questions focused on data export, CalDAV support for birthdays and reminders, notification options, and how it compares with Monica or a plain contacts app. A blog write-up repeats the README's points about data ownership and a lightweight stack.",
+        "praise": [
+          "Fills a real need for a private personal CRM",
+          "Easy-to-try demo and built-in dark mode",
+          "Self-hosted, so you own your data",
+          "Honest disclosure of AI-assisted development"
+        ],
+        "complaints": [
+          "Some ask what it offers over Monica, a spreadsheet or existing contacts apps",
+          "Requests for CalDAV and more notification options",
+          "No native mobile app"
+        ],
+        "sources": [
+          {
+            "title": "Meerkat - a personal relationship and contact manager",
+            "site": "Lemmy (selfhosted@lemmy.world)",
+            "url": "https://deddit.petersanchez.com/g/selfhosted@lemmy.world/p/L6N3ys14vgbV912z4t-Meerkat--a-personal-relationship-and-contact-man",
+            "quote": "This is literally exactly what I have always wanted",
+            "who": "nothingcorporate@lemmy.today"
+          },
+          {
+            "title": "Meerkat - a personal relationship and contact manager",
+            "site": "Lemmy (selfhosted@lemmy.world)",
+            "url": "https://deddit.petersanchez.com/g/selfhosted@lemmy.world/p/L6N3ys14vgbV912z4t-Meerkat--a-personal-relationship-and-contact-man",
+            "quote": "Why is this better than a spreadsheet or my Thunderbird contacts?",
+            "who": "quick_snail@feddit.nl"
+          },
+          {
+            "title": "Stop losing friends to forgetfulness: Meerkat CRM exposed",
+            "site": "Bright Coding",
+            "url": "https://converter.brightcoding.dev/blog/stop-losing-friends-to-forgetfulness-meerkat-crm-exposed",
+            "date": "2026-07-07",
+            "quote": "The Go+React+SQLite stack is deliberately lightweight."
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -5287,7 +5549,37 @@
         "space",
         "homeworld",
         "strategy"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage is thin and focuses on how Starfall was made: a Homeworld-style space strategy game built by Claude Opus 5 from a single prompt for about $633. Russian gaming site Shazoo praised the fully procedural visuals, ship detail and effects, but said gameplay and performance still leave a lot to be desired. An explainx.ai blog post was more sceptical of the 'utterly perfect' framing around the project.",
+        "praise": [
+          "All visuals, from ships to nebulae, are generated by code",
+          "Detailed ships, effects and an adaptive soundtrack",
+          "Impressive result for the low build cost"
+        ],
+        "complaints": [
+          "Gameplay and performance are still weak",
+          "Desktop only, with a slow first load",
+          "Some see the launch claims as overhyped"
+        ],
+        "sources": [
+          {
+            "title": "Разработчик собрал трехмерную космическую стратегию в стиле Homeworld за 633 доллара с помощью ИИ Opus 5",
+            "site": "Shazoo",
+            "url": "https://shazoo.ru/2026/07/30/188011/razrabotcik-sobral-kosmiceskuiu-strategiiu-v-duxe-homeworld-za-633-dollara-s-pomoshhiu-opus-5",
+            "date": "2026-07-30"
+          },
+          {
+            "title": "Opus 5 Homeworld space RTS by Mike Luan",
+            "site": "explainx.ai",
+            "url": "https://explainx.ai/blog/opus-5-homeworld-space-rts-mikeluan-july-2026",
+            "date": "2026-07-28",
+            "quote": "That gap is worth naming plainly rather than passing along \"utterly perfect\" as fact",
+            "who": "Yash Thakker"
+          }
+        ]
+      }
     },
     {
       "group": "open",
@@ -5329,7 +5621,54 @@
         "system settings",
         "tidbits",
         "diff"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "SetShot was launched through TidBITS, which its developer runs, so the main article is not independent, but it got a warm mention from John Gruber at Daring Fireball and an active TidBITS Talk thread. Users like the idea and call it a cool, useful way to see what changed in System Settings. Early testers reported slow snapshots, a missing cancel button, confusing baseline instructions, and in one case no recognized changes at all.",
+        "praise": [
+          "Clever, genuinely useful idea for tracking macOS settings changes",
+          "Free and open source",
+          "Helped users find settings that changed after updates"
+        ],
+        "complaints": [
+          "Taking a snapshot is slow and lacks a cancel button",
+          "Some users saw unrecognized or no recognized changes",
+          "GitHub download page confused less technical users"
+        ],
+        "sources": [
+          {
+            "title": "SetShot 1.0 (and a Personal Tale of Defaults System Spelunking)",
+            "site": "Daring Fireball",
+            "url": "https://daringfireball.net/linked/2026/11/17/setshot-1-0",
+            "date": "2026-11-17",
+            "quote": "SetShot is a very cool app, and so very Adam Engst-flavored.",
+            "who": "John Gruber"
+          },
+          {
+            "title": "SetShot Tracks macOS Settings Changes (discussion)",
+            "site": "TidBITS Talk",
+            "url": "https://talk.tidbits.com/t/setshot-tracks-macos-settings-changes/34014",
+            "date": "2026-08-20",
+            "quote": "If you can to improve anything then make taking a snapshot faster.",
+            "who": "beatrixwillius"
+          },
+          {
+            "title": "SetShot Tracks macOS Settings Changes (discussion)",
+            "site": "TidBITS Talk",
+            "url": "https://talk.tidbits.com/t/setshot-tracks-macos-settings-changes/34014",
+            "date": "2026-08-20",
+            "quote": "Wow, Adam! That’s a really cool app.",
+            "who": "phillip"
+          },
+          {
+            "title": "SetShot Tracks macOS Settings Changes",
+            "site": "TidBITS",
+            "url": "https://tidbits.com/2026/08/19/setshot-tracks-macos-settings-changes/",
+            "date": "2026-08-19",
+            "who": "Adam Engst"
+          }
+        ]
+      }
     },
     {
       "group": "open",
