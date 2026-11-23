@@ -20,6 +20,7 @@ Last updated: 2026-11-23 2:45 AM Central (cleanup and handoff; 120 apps in 29 ca
   - Every reply about work links the thread doing it, in the message text.
   - Choices always on button cards, never "type X". Going live is never implied.
   - Reviews: skip InCloseMail and DesktopWiki (unreleased); apps with no outside coverage get no section; **no batches, one Go live card at the end** of the reviews work.
+  - **Reviews are ongoing (owner, 2026-11-23: "i also want to keep adding reviews"):** every newly listed app gets a "What people say" research pass when it is added (same rules as above: short linked quotes, no section when there is no coverage, never for InCloseMail/DesktopWiki until released). Apps that had no coverage get re-checked now and then (for example monthly), since new posts and reviews appear. Cloud web reading is capped at about 100 pages an hour, so plan large passes as hourly rounds. Nothing goes live without the owner's Go live card; for a big pass, one card at the end, not batches.
 - **Open issues:**
   - Remaining apps (120 minus 33, minus ICM/DW) still to be researched for "What people say".
   - Awesome-list PRs: taskade/awesome-vibe-coding #175 is open with no review; filipecalegario/awesome-vibe-coding #520 state not re-checked.
@@ -29,7 +30,8 @@ Last updated: 2026-11-23 2:45 AM Central (cleanup and handoff; 120 apps in 29 ca
   2. Today 1:13 PM Central: the daily listing-request check (InCloseMail must be open on the PC "Dennis").
   3. When the reviews thread finishes all rounds: one Go live card for the remaining "What people say" sections (merge `origin/main` into that branch and rerun `node build.js` first).
   4. Check awesome-list PRs #175 and #520.
-  5. Open ideas: tell small makers about the README badge, ask the SnapFiles friend.
+  5. Keep reviews going: a "What people say" pass for each new listing, and re-check apps with no coverage now and then (see Decisions).
+  6. Open ideas: tell small makers about the README badge, ask the SnapFiles friend.
 
 ## Where things are
 
