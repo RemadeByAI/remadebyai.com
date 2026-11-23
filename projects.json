@@ -174,7 +174,11 @@
       ],
       "license": "MIT",
       "maker": "Syed Shadman Akbar",
-      "longDescription": "Describe an app in plain English and Locode generates a complete React, Tailwind and Vite project, tests it with Playwright, fixes errors and lets you keep refining it with follow-up prompts. Everything runs on your own machine through Ollama, so there are no API keys or subscriptions.\n\nThe ready-made download is a DMG for Apple Silicon Macs. It can also be run from source with Python and Node."
+      "longDescription": "Describe an app in plain English and Locode generates a complete React, Tailwind and Vite project, tests it with Playwright, fixes errors and lets you keep refining it with follow-up prompts. Everything runs on your own machine through Ollama, so there are no API keys or subscriptions.\n\nThe ready-made download is a DMG for Apple Silicon Macs. It can also be run from source with Python and Node.",
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "Glance",
@@ -196,7 +200,11 @@
       "license": "MIT",
       "maker": "Plivo",
       "longDescription": "Glance lets a coding agent publish a page, dashboard or app to a live URL with one command (glance deploy). You leave comments on the page in the browser, much like in a Google Doc, and the agent reads them and fixes the page.\n\nYou host it yourself on Cloudflare's free tier. It works with Claude Code, Cursor, Codex, Cline, Aider or any agent that can run a shell command, every link needs a login, and optional Slack notifications tell you about new comments.",
-      "builtWithAI": "Glance's commit history shows it was built mostly with Claude: 206 of its 251 commits (checked 2026-11-21) are co-authored by Claude models."
+      "builtWithAI": "Glance's commit history shows it was built mostly with Claude: 206 of its 251 commits (checked 2026-11-21) are co-authored by Claude models.",
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "FreeFlow",
@@ -1011,7 +1019,11 @@
           "alt": "A still life of a vase, bowl, sphere and bottle made with 3D Revolve, with the Revolve dialog open",
           "caption": "3D Revolve"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -1271,7 +1283,11 @@
           "alt": "OpenTodo's Focus screen with one task and a large timer",
           "caption": "Focus timer"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "SaneBar",
@@ -1522,7 +1538,11 @@
           "caption": "Part drawing with section view"
         }
       ],
-      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 923 of 2,251 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files."
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 923 of 2,251 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files.",
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -1633,7 +1653,11 @@
           "caption": "Table view"
         }
       ],
-      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 206 of 653 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files."
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 206 of 653 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files.",
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -1672,7 +1696,11 @@
           "caption": "Baking mesh maps"
         }
       ],
-      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 141 of 1,114 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files."
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 141 of 1,114 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files.",
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -1711,7 +1739,11 @@
           "caption": "Wood planks material"
         }
       ],
-      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 68 of 502 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files."
+      "builtWithAI": "Checked 2026-11-22 in the repo's commit history: 68 of 502 commits are co-authored by Claude, and the repo has CLAUDE.md and AGENTS.md files.",
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "Clean Your TV",
@@ -2600,7 +2632,11 @@
           "alt": "Mister Download Manager running on Linux",
           "caption": "On Linux"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "GeoLibre",
@@ -2849,7 +2885,11 @@
           "alt": "SoloMD editing a travel itinerary note with a checklist, a table and a code block",
           "caption": "Writing a note"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "TelltaleDNS",
@@ -2883,7 +2923,11 @@
           "alt": "TelltaleDNS dashboard in light mode",
           "caption": "Light mode"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "World of ClaudeCraft",
@@ -3162,7 +3206,11 @@
         "wuxia",
         "sword",
         "kung fu"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "Neon Zenith",
@@ -3200,7 +3248,11 @@
       "keywords": [
         "cyberpunk",
         "flying car"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "Quasar Saz",
@@ -3316,7 +3368,11 @@
       "keywords": [
         "art of rally",
         "racing"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "Bash Fighter",
@@ -3351,7 +3407,11 @@
         "smash bros",
         "super smash bros",
         "fighting game"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "Spinlings",
@@ -3393,7 +3453,11 @@
         "creature collector",
         "gacha",
         "collector"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "Claude of Tanks",
@@ -3536,7 +3600,11 @@
         "d&d",
         "dungeons and dragons",
         "tabletop rpg"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "Sakura Fantasy",
@@ -3569,7 +3637,11 @@
       "keywords": [
         "boat",
         "relaxing"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "Tidewater",
@@ -3606,7 +3678,11 @@
       ],
       "keywords": [
         "fishing"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "A Game About Capybaras Delivering Food",
@@ -3713,7 +3789,11 @@
         "flight simulator",
         "msfs",
         "microsoft flight simulator"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "Battle Drones",
@@ -3868,7 +3948,11 @@
       "keywords": [
         "roguelite",
         "roguelike"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "38-0-0",
@@ -3968,7 +4052,11 @@
           "alt": "Chopping an oak tree in Sprout Quest",
           "caption": "Chopping wood"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "Idle Tactics: Ascension",
@@ -3995,7 +4083,11 @@
         "auto battler",
         "afk",
         "gacha"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "The Lost Storm",
@@ -4035,7 +4127,11 @@
           "alt": "The skill tree in The Lost Storm",
           "caption": "The skill tree"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "Escape from the Depths",
@@ -4060,7 +4156,11 @@
         "idle rpg",
         "roguelite",
         "roguelike"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4166,7 +4266,11 @@
           "alt": "Nota's piano roll editing notes",
           "caption": "Piano roll"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4200,7 +4304,11 @@
           "alt": "Arrmada's page for a TV series with seasons and episodes",
           "caption": "Series details"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4224,7 +4332,11 @@
       "price": "Free",
       "maker": "jpzk",
       "longDescription": "Opensidian is a clean-room remake of Obsidian's behaviour built with Rust and Tauri: it works with the same vault folders, and has a graph view, canvas, themes and community plugins. It is not affiliated with Obsidian and contains none of its code.\n\nLinux builds come as AppImage, Flatpak, RPM and DEB, and there are Mac builds for Apple silicon and Intel. The project describes itself as under heavy development.",
-      "builtWithAI": "The README says Opensidian \"was built predominantly with AI models. Nearly all of the code, the design docs, and this README were written by Claude\" under one human maintainer."
+      "builtWithAI": "The README says Opensidian \"was built predominantly with AI models. Nearly all of the code, the design docs, and this README were written by Claude\" under one human maintainer.",
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4257,7 +4369,11 @@
           "alt": "Hearth with a photo of clouds over mountains as the background",
           "caption": "Photo background"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4293,7 +4409,11 @@
           "alt": "Reading an email rendered as Markdown in neomd",
           "caption": "Reading an email"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4330,7 +4450,11 @@
           "alt": "A server's live console in Minecraft Server Manager",
           "caption": "Server console"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4360,7 +4484,11 @@
           "alt": "BrainRotGuard's kid search page and the parent's Telegram approval messages",
           "caption": "Kid view and parent approvals"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4395,7 +4523,11 @@
           "alt": "Prism on a phone with the day's plans and chores",
           "caption": "On a phone"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4425,7 +4557,11 @@
           "alt": "MoePeek's settings and its floating translation panel",
           "caption": "Translation panel"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4454,7 +4590,11 @@
           "alt": "SkySend's banner showing the upload page on desktop and a request on a phone",
           "caption": "Share anything"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4483,7 +4623,11 @@
           "alt": "DBackup's banner showing its dashboard on desktop and phone",
           "caption": "Dashboard"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4592,7 +4736,11 @@
           "alt": "HelixScreen showing a 3D bed mesh map",
           "caption": "Bed mesh"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4626,7 +4774,11 @@
           "alt": "mctl in the amber retro theme",
           "caption": "Retro theme"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4660,7 +4812,11 @@
           "alt": "Writing an invoice in Haben",
           "caption": "Invoice"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4764,7 +4920,11 @@
           "alt": "Muximux dashboard in light mode",
           "caption": "Light mode"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4794,7 +4954,11 @@
           "alt": "VibeNVR's dashboard with camera tiles and recent events",
           "caption": "Dashboard"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4828,7 +4992,11 @@
           "alt": "Prismarr's Discover page",
           "caption": "Discover"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -4926,7 +5094,11 @@
           "alt": "Minilytics dashboard with visitors and revenue chart",
           "caption": "Dashboard"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "CODEX MORTIS",
@@ -5201,7 +5373,11 @@
           "alt": "Haven's list of saved connections",
           "caption": "Connections"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -5309,7 +5485,11 @@
           "alt": "Absorb's player card with a book cover and playback controls",
           "caption": "Now playing"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -5423,7 +5603,11 @@
           "alt": "Bramble offering saved logins to fill in a sign-in page",
           "caption": "Autofill"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -5446,7 +5630,11 @@
       "price": "Free",
       "maker": "Paul-Vincent Roll",
       "longDescription": "KoShelf reads the data KOReader keeps about your books and comics and turns it into a web library: currently reading, finished and unread, with highlights, notes and ratings on each book, reading time and pages, and activity heatmaps. It can write edits back to KOReader and has a built-in reader for EPUB, FB2, MOBI and CBZ.",
-      "builtWithAI": "The README says it \"was built for personal use and relies heavily on AI-generated code.\""
+      "builtWithAI": "The README says it \"was built for personal use and relies heavily on AI-generated code.\"",
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -5482,7 +5670,11 @@
           "alt": "Oh My Android's layout inspector with TalkBack order",
           "caption": "Layout inspector"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "BigText",
@@ -5520,7 +5712,11 @@
           "alt": "BigText with a regular-expression search across a huge log file and a results panel listing matches",
           "caption": "Regex search with a results panel"
         }
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "name": "Fresh",
@@ -5654,7 +5850,11 @@
         "quickbooks",
         "xero",
         "bookkeeping"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -5774,7 +5974,11 @@
         "m3u",
         "xtream",
         "tivimate"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -5899,7 +6103,11 @@
         "chrome extension",
         "new tab",
         "onetab"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -5943,7 +6151,11 @@
         "e-ink",
         "handwriting",
         "notes"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -5975,7 +6187,11 @@
         "emulationstation",
         "chd",
         "no-intro"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "indie",
@@ -6001,7 +6217,11 @@
         "rpg",
         "fantasy",
         "simon willison"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "indie",
@@ -6028,7 +6248,11 @@
         "cozy",
         "pumpkin farmer",
         "simon willison"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -6219,7 +6443,11 @@
         "family tree",
         "gedcom",
         "ancestry"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -6304,7 +6532,11 @@
         "notch",
         "windows 11",
         "macos look"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -6346,7 +6578,11 @@
         "macro keys",
         "old iphone",
         "control panel"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -6385,7 +6621,11 @@
         "bazzite",
         "steamos",
         "handheld"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -6427,7 +6667,11 @@
         "explore",
         "three.js",
         "relaxing"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     },
     {
       "group": "open",
@@ -6459,7 +6703,11 @@
         "737",
         "cessna",
         "f-16"
-      ]
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     }
   ]
 }

@@ -138,7 +138,9 @@ function load() {
     if (app.whatPeopleSay) {
       const w = app.whatPeopleSay;
       if (!w.checked || !/^\d{4}-\d{2}-\d{2}$/.test(w.checked)) problems.push(`${where}: whatPeopleSay needs "checked" like 2026-11-23.`);
-      if (!w.summary) problems.push(`${where}: whatPeopleSay needs a "summary".`);
+      if (w.none) {
+        if (w.summary || (w.sources || []).length) problems.push(`${where}: whatPeopleSay with "none": true can't also have a summary or sources.`);
+      } else if (!w.summary) problems.push(`${where}: whatPeopleSay needs a "summary" (or "none": true when we found no coverage).`);
       for (const src of w.sources || []) {
         if (!src.url || !/^https?:\/\//.test(src.url) || !src.site) problems.push(`${where}: each whatPeopleSay source needs "site" and an http(s) "url".`);
         if (src.quote && src.quote.split(/\s+/).length > 40) problems.push(`${where}: keep whatPeopleSay quotes short (40 words max).`);
@@ -417,10 +419,16 @@ ${foot}`;
 
 // ---------- "What people say" (compiled from public discussion) ----------
 // Our own summary of what others say about an app, with short attributed quotes and links to the
-// full threads/reviews. Never paste whole reviews. Apps without a whatPeopleSay entry show nothing.
+// full threads/reviews. Never paste whole reviews. Apps without a whatPeopleSay entry show nothing;
+// { checked, none: true } means we looked and found no real outside coverage, and shows one short line.
 function whatPeopleSay(app) {
   const w = app.whatPeopleSay;
   if (!w) return '';
+  if (w.none) return `
+  <section class="app-section" aria-labelledby="buzz-title">
+    <h2 id="buzz-title">What people say</h2>
+    <p class="muted">No outside reviews of ${esc(app.name)} yet. We last checked ${esc(formatDate(w.checked))}.</p>
+  </section>`;
   const list = (title, items, cls) => items && items.length
     ? `<div class="buzz-col ${cls}"><h3>${title}</h3><ul>${items.map(i => `<li>${esc(i)}</li>`).join('')}</ul></div>` : '';
   const sources = (w.sources || []).map(src => {
