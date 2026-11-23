@@ -2,7 +2,7 @@
 
 Updated 2026-11-23 3:31 AM Central. The feature is the `whatPeopleSay` field in projects.json (see docs/HANDOFF.md). All 118 apps in scope have now been researched; only the two under "Partly checked" are left, and both need a source cloud and PC sessions cannot read (Reddit, X, a 403 forum).
 
-**Limit:** a Claude session can read about 100 web pages per hour (WebFetch, shared by every agent). Run 2 research agents per hour, each capped at 40 fetches. reddit.com is blocked.
+**Limit:** cloud sessions on the old plan could read about 100 web pages per hour (WebFetch, shared by every agent). On 2026-11-23, after the owner moved to Claude Team, a PC session read about 120 pages in 15 minutes with no limit errors. It's not known whether the plan or the PC made the difference, so start big passes with a few agents and watch for fetch errors. reddit.com is blocked.
 **How:** each agent follows `docs/reviews/PROMPT.md` for one list of apps (`docs/reviews/in-N.txt`) and writes JSON (slug -> entry, or null when there's no real coverage). Merge into projects.json with `"checked": "YYYY-MM-DD"`, run `node build.js`, and keep quotes short and verbatim. Apps with no real coverage get NO section.
 **Going live:** the owner taps Go live / Not yet. Never push to main without it.
 
