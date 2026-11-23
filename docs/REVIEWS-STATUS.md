@@ -1,18 +1,21 @@
 # "What people say" status
 
-Updated 2026-11-23 03:08 Central. The feature is the `whatPeopleSay` field in projects.json (see docs/HANDOFF.md). It's the top priority for the next session: finish the apps listed under "Partly checked" and "Not researched yet".
+Updated 2026-11-23 03:09 Central. The feature is the `whatPeopleSay` field in projects.json (see docs/HANDOFF.md). It's the top priority for the next session: finish the apps listed under "Partly checked" and "Not researched yet".
 
 **Limit:** a Claude session can read about 100 web pages per hour (WebFetch, shared by every agent). Run 2 research agents per hour, each capped at 40 fetches. reddit.com is blocked.
 **How:** each agent follows `docs/reviews/PROMPT.md` for one list of apps (`docs/reviews/in-N.txt`) and writes JSON (slug -> entry, or null when there's no real coverage). Merge into projects.json with `"checked": "YYYY-MM-DD"`, run `node build.js`, and keep quotes short and verbatim. Apps with no real coverage get NO section.
 **Going live:** the owner taps Go live / Not yet. Never push to main without it.
 
-## Live on the site with a section (33)
+## Live on the site with a section (41)
 - macshot
 - FreeFlow
 - Open Source Barware
 - PhotoCraft
 - PdfCraft
 - WordCraft
+- GridCraft
+- micasa
+- FilmCraft
 - FigCraft
 - Davit
 - SuperCmd
@@ -25,6 +28,7 @@ Updated 2026-11-23 03:08 Central. The feature is the `whatPeopleSay` field in pr
 - OpenSEO
 - Voicebox
 - SolidCraft
+- GeoLibre
 - World of ClaudeCraft
 - Legends of Future Past
 - Voidstruck
@@ -32,6 +36,8 @@ Updated 2026-11-23 03:08 Central. The feature is the `whatPeopleSay` field in pr
 - Tower of Time
 - Battle Drones
 - Tennis Tycoon
+- 38-0-0
+- Meerkat CRM
 - CODEX MORTIS
 - Meet Claude
 - dumbtv
@@ -40,16 +46,11 @@ Updated 2026-11-23 03:08 Central. The feature is the `whatPeopleSay` field in pr
 - Fresh
 - Concat
 - AppGrid for Plasma
-
-## Done on the branch, waiting for Go live (8)
-- GridCraft
-- micasa
-- FilmCraft
-- GeoLibre
-- 38-0-0
-- Meerkat CRM
 - Starfall
 - SetShot
+
+## Done on the branch, waiting for Go live (0)
+- none
 
 ## Checked: no real outside coverage, so leave these out (44)
 - Locode
