@@ -7307,6 +7307,1128 @@
         "checked": "2026-11-23",
         "none": true
       }
+    },
+    {
+      "name": "Inkline Town",
+      "slug": "inkline-town",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by city-building games",
+      "description": "A town-building game in the browser, drawn in thin 3D line art. Serve a timed term as mayor and grow a hamlet into a city. Free, nothing to install.",
+      "category": "Games",
+      "url": "https://inkline.typeonce.games",
+      "linkText": "Play now",
+      "source": "https://github.com/SandroMaglione/inkline-town",
+      "license": "Apache-2.0",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Sandro Maglione",
+      "icon": "⌂",
+      "tile": "code",
+      "added": "2026-11-23",
+      "longDescription": "You pick the size and richness of a new island and a term of 45, 60 or 90 minutes, then lay roads, house settlers and build production chains: lumber and planks, stone and ore for tools, wheat to flour to bread, wool to cloth, and furniture for the finest homes. Settlers move up to citizens and burghers as their streets improve, while you juggle taxes, trade, winters, fires and the crown's demands. Each term ends with a verdict and a chronicle of how it went, and you can stand again to carry on the same town.\n\nEverything is drawn in code as line art, with no image files. It runs in a browser on a computer or a phone, saves stay on your device, and you can share a link that opens your town for someone else to play on.",
+      "builtWithAI": "Checked 2026-11-23: 146 of 217 commits are co-authored by Claude. The README itself makes no statement about AI.",
+      "keywords": [
+        "city builder",
+        "town builder",
+        "colony",
+        "mayor",
+        "strategy",
+        "typeonce"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/inkline-town/1.webp",
+          "alt": "Close view of a town hall with a clock tower, carts and residents on the streets around it, drawn in line art",
+          "caption": "Town centre"
+        },
+        {
+          "src": "/assets/apps/inkline-town/2.webp",
+          "alt": "A large island town late in a term, with houses, workshops and farms spread around the town hall",
+          "caption": "A grown town"
+        },
+        {
+          "src": "/assets/apps/inkline-town/3.webp",
+          "alt": "The charter screen for choosing land size, term length and richness, with a preview of the island",
+          "caption": "Starting a charter"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Terminactory",
+      "slug": "terminactory",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by factory-building games",
+      "description": "An idle factory game that runs in your terminal. Mine, process and sell, research your way up, and the factory keeps earning while you are away.",
+      "category": "Games",
+      "url": "https://gitlab.com/snipedbywifi/terminactory",
+      "linkText": "Get it on GitLab",
+      "source": "https://gitlab.com/snipedbywifi/terminactory",
+      "license": "Apache-2.0",
+      "price": "Free",
+      "platforms": [
+        "macOS",
+        "Linux"
+      ],
+      "maker": "SnipedByWiFi",
+      "icon": "▦",
+      "tile": "code",
+      "added": "2026-11-23",
+      "longDescription": "You place drills, furnaces and other machines, link them with belts, power them with solar panels and later steam, and sell what they make at a trade post. Research unlocks better machines on the way to computers and oil, and nothing attacks you or breaks at random. An in-game browser holds a wiki, production stats, the research tree and a small fake web of forums and sites full of optional lore.\n\nIt is meant to sit next to your coding agents: a Claude Code hook (or a tfac msg command for other tools) shows the agent's replies in the game as telegrams. You build it from source with Rust 1.88 or newer and need a UTF-8 terminal; it works on macOS and Linux, and on Windows through WSL.",
+      "builtWithAI": "Checked 2026-11-23: 211 of 218 commits are co-authored by Claude. The README says: \"I made this with major AI assistance (Claude, mainly).\"",
+      "keywords": [
+        "factory",
+        "idle",
+        "terminal",
+        "tui",
+        "rust",
+        "automation",
+        "tfac"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/terminactory/1.webp",
+          "alt": "A large factory drawn in coloured terminal characters, with earnings and research graphs in a sidebar",
+          "caption": "A busy factory"
+        },
+        {
+          "src": "/assets/apps/terminactory/2.webp",
+          "alt": "The research tree open in the in-game browser, showing unlocks such as belt tunnels",
+          "caption": "Research tree"
+        },
+        {
+          "src": "/assets/apps/terminactory/3.webp",
+          "alt": "Search results in the in-game browser, listing wiki and forum pages about coal",
+          "caption": "In-game browser"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Harness Hollow",
+      "slug": "harness-hollow",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by cozy farming games",
+      "description": "A cozy 3D farming game for two players who share one farm in real time, in the browser on a computer or phone. No account needed, or host it yourself.",
+      "category": "Games",
+      "url": "https://harvest-hollow.up.railway.app",
+      "linkText": "Play now",
+      "source": "https://github.com/KrasimirKralev/harvest-hollow",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Krasimir Kralev",
+      "icon": "✿",
+      "tile": "code",
+      "added": "2026-11-23",
+      "longDescription": "Two farmers share one farm and see each other's actions as they happen: plant and harvest crops, raise animals, run workshops with recipe queues, fill orders and quests, decorate, and grow a village across the river. It has 40 levels, day and night, seasons and weather, touch controls with a phone layout, and English and Bulgarian.\n\nOn the free public server you start a farm in one tap and invite your partner with a link; farms nobody visits for 7 days are deleted. You can also run it yourself with Node.js 24 on a home computer or a Raspberry Pi, where an optional helper can use your own Claude or ChatGPT sign-in to turn a typed wish into a game mod.",
+      "builtWithAI": "The README says it was built in October 2026 by Krasimir Kralev \"directing AI coding agents (mostly Claude Code, with OpenAI Codex for second opinions and screenshot reviews).\" Its commits carry no co-author lines (0 of 12, checked 2026-11-23).",
+      "keywords": [
+        "farming",
+        "farm",
+        "co-op",
+        "cozy",
+        "multiplayer",
+        "harvest hollow"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/harness-hollow/1.webp",
+          "alt": "Two farmers sitting on a bench at sunset with a busy 3D farm, barn and silo around them",
+          "caption": "Golden hour"
+        },
+        {
+          "src": "/assets/apps/harness-hollow/2.webp",
+          "alt": "The farm by day with crop fields, animal pens and buildings, and the game's menus along the edges",
+          "caption": "The farm by day"
+        },
+        {
+          "src": "/assets/apps/harness-hollow/3.webp",
+          "alt": "A village by a river with a bridge, houses and a market tent",
+          "caption": "The village"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Second Tail",
+      "slug": "second-tail",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by story-driven 2D platformers",
+      "description": "A 2D platformer about two pet rats trying to get home across a cold city. Swap between them mid-air to use each one's moves. Free demo in the browser.",
+      "category": "Games",
+      "url": "https://para1992.itch.io/second-tail",
+      "linkText": "Play now",
+      "price": "Free",
+      "platforms": [
+        "Web",
+        "Windows"
+      ],
+      "maker": "para1992",
+      "icon": "∿",
+      "tile": "code",
+      "added": "2026-11-23",
+      "longDescription": "Sal can double jump and climb, Ben can dash and ram, and the way home needs both of them. The demo covers rooftops, a mine, an aqueduct, a market and more, with several boss fights, a race in the rain and puzzles about freeing prisoners. It supports English and Ukrainian, controllers, rebindable keys and a reduced-motion option.\n\nIt is an early demo still in development, made in Unity. It plays in the browser on a computer or a phone (with on-screen controls) and is also a Windows download on itch.io. The first browser load is about 190 MB. The characters and art are made with AI image generation.",
+      "builtWithAI": "The itch.io page says it is made by one developer working with AI agents, with code \"written with Claude (Anthropic) and Codex (OpenAI) agents, directed and reviewed by the developer.\"",
+      "keywords": [
+        "platformer",
+        "rats",
+        "2d",
+        "adventure",
+        "itch.io"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/second-tail/1.webp",
+          "alt": "The two rats by a pool with a colonnade behind, a crab and pieces of cheese nearby",
+          "caption": "By the pool"
+        },
+        {
+          "src": "/assets/apps/second-tail/2.webp",
+          "alt": "The two rats on a ledge at dusk under stone arches, with a bat flying nearby",
+          "caption": "Under the arches"
+        },
+        {
+          "src": "/assets/apps/second-tail/3.webp",
+          "alt": "Close view of the two rats, one in a hard hat and one in a felt hat and dark glasses",
+          "caption": "Sal and Ben"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "layerling",
+      "slug": "layerling",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Tinkercad",
+      "description": "Easy 3D design for people with a 3D printer: drop shapes on a plate, turn shapes into holes, round edges and export for your slicer. Runs in the browser with no account.",
+      "category": "3D printing",
+      "url": "https://layerling.com",
+      "linkText": "Visit site",
+      "icon": "◩",
+      "tile": "",
+      "added": "2026-11-23",
+      "source": "https://github.com/henmedia/layerling",
+      "platforms": [
+        "Web"
+      ],
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "maker": "Stefan (henmedia)",
+      "longDescription": "layerling works the way Tinkercad does (a build plate, solid shapes and hole shapes, group, bundle, Alt-drag to copy) and then goes further: chamfers and fillets on any edge, hollowing to an even wall, splitting, sketches you can extrude or revolve, threads, gears, patterns, hole grids and holes for heat-set inserts. It knows the plate size of more than 230 printers, marks overhangs, runs a print check for thin walls and floating parts, and exports STL, 3MF, OBJ and STEP. It imports STL, OBJ, 3MF, STEP, SVG and DXF.\n\nThere is nothing to sign up for: designs stay in your browser unless you save them as a project file. You can install it as an app that starts without internet, or host your own copy with Docker on a PC, NAS or home server. An optional MCP server lets an AI client such as Claude or Codex build in the open editor while you watch. It is not a full CAD package: there is no parametric timeline and no assemblies.",
+      "builtWithAI": "Checked 2026-11-23: 2,731 of 3,816 commits in the repository are co-authored by Claude.",
+      "keywords": [
+        "tinkercad",
+        "fusion 360",
+        "3d cad",
+        "stl",
+        "3mf",
+        "3d printing design",
+        "bambu",
+        "gridfinity"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/layerling/1.webp",
+          "alt": "layerling editor with a demo plate holding a cup, a box, a bolt, a gear and raised text",
+          "caption": "The build plate"
+        },
+        {
+          "src": "/assets/apps/layerling/2.webp",
+          "alt": "Rounding all edges of a box with the Fillet edges panel open",
+          "caption": "Fillet edges"
+        },
+        {
+          "src": "/assets/apps/layerling/3.webp",
+          "alt": "Print check panel flagging a thin wall on an open box, shown hatched in red",
+          "caption": "Print check"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Press coverage is small: All3DP wrote up the launch in September 2026, mostly describing it, with a dry nod to its fast pace of updates. The real opinions come from its very busy GitHub Discussions (more than 1,100 threads), where many people say they have switched from Tinkercad and find it easier and more capable. The criticism there is the normal stuff of a young, fast-moving app: bug reports and designs lost because nothing is saved to the cloud. Most of the feedback comes from enthusiastic users asking for features.\n\nWe couldn't check Reddit for this round-up.",
+        "praise": [
+          "Many Tinkercad users say they have switched and prefer it",
+          "Easy to get into, even for beginners",
+          "Tools Tinkercad lacks, such as hollowing and fillets",
+          "Very frequent updates"
+        ],
+        "complaints": [
+          "Bugs typical of a young app, for example exports ignoring a renamed design",
+          "Designs live in the browser, so unsaved work can be lost; some users want accounts or cloud saving",
+          "Mouse navigation differs from Bambu Studio by default"
+        ],
+        "sources": [
+          {
+            "title": "Meet Layerling, the Free Tinkercad Alternative Claude Can Drive",
+            "site": "All3DP",
+            "url": "https://all3dp.com/6/meet-layerling-the-free-tinkercad-alternative-claude-can-drive/",
+            "date": "2026-09-21",
+            "quote": "It has already been updated dozens of times, so development does not appear to be lingering over coffee.",
+            "who": "Carolyn Schwaar"
+          },
+          {
+            "title": "Lasso Split and other split functions",
+            "site": "GitHub Discussions",
+            "url": "https://github.com/henmedia/layerling/discussions/1198",
+            "date": "2026-11-02",
+            "quote": "Loving Layerling considerably and have made the change over from Tinkercad gladly.",
+            "who": "jhortonman"
+          },
+          {
+            "title": "big ideas or maybe too big",
+            "site": "GitHub Discussions",
+            "url": "https://github.com/henmedia/layerling/discussions/1423",
+            "date": "2026-11-07",
+            "quote": "I find myself really liking how easy it is to get into Layerling.",
+            "who": "jayx44"
+          },
+          {
+            "title": "Cloud/Account",
+            "site": "GitHub Discussions",
+            "url": "https://github.com/henmedia/layerling/discussions/1669",
+            "date": "2026-11-12",
+            "quote": "recently i had several projects deleted and my mistake was that i didn't saved them",
+            "who": "danynos"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlayTranslate",
+      "slug": "playtranslate",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Google Lens screen translation",
+      "description": "Translates the text on your Android screen in games, visual novels and manga with one tap, or automatically as dialogue changes. Works offline and helps you learn with word lookup and Anki cards.",
+      "category": "Translation",
+      "url": "https://www.playtranslate.com/",
+      "linkText": "Visit site",
+      "icon": "⇄",
+      "tile": "",
+      "added": "2026-11-23",
+      "source": "https://github.com/dominostars/playtranslate",
+      "download": "https://github.com/dominostars/playtranslate/releases/latest",
+      "platforms": [
+        "Android"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "maker": "dominostars",
+      "longDescription": "PlayTranslate reads the text on your screen and translates it over the game you are playing. Tap once to translate, or turn on auto mode and it follows the dialogue. You can crop to just the dialogue box, hover a lens over a word for its dictionary entry, show furigana or pinyin above the text, hear it read aloud, and point the camera at real-world text. It reads 26 languages and translates into 59, with offline OCR and dictionaries; online services such as DeepL or your own AI key are optional.\n\nFor learners it saves sentences to AnkiDroid with the translation, a screenshot and even recorded game audio, and it works with Yomitan dictionaries. It needs Android 10 or later and is installed from an APK on GitHub, not the Play Store, so Play Protect may warn and some features need accessibility permission. Dual-screen handhelds and split screen are supported.",
+      "builtWithAI": "Checked 2026-11-23: 2,087 of 2,166 commits in the repository are co-authored by Claude.",
+      "keywords": [
+        "google lens",
+        "screen translator",
+        "game translation",
+        "visual novel",
+        "manga",
+        "japanese",
+        "anki",
+        "yomitan"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "OnAir",
+      "slug": "onair",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to SDR# and SDR++",
+      "description": "Turns a cheap software-defined radio into a receiver for digital TV, DAB radio, aircraft, ships, weather satellites, pagers and much more, with the spectrum and decoded data in one app.",
+      "category": "Science and space",
+      "url": "https://on-air.dev",
+      "linkText": "Visit site",
+      "icon": "◉",
+      "tile": "",
+      "added": "2026-11-23",
+      "source": "https://github.com/adswill/OnAir",
+      "download": "https://github.com/adswill/OnAir/releases/latest",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "license": "GPL-3.0",
+      "price": "Free",
+      "maker": "Kristijonas Adomaitis",
+      "longDescription": "Plug in an RTL-SDR, HackRF, Airspy, SDRplay, LimeSDR, Pluto or one of many other radios, pick a mode and press Start. OnAir has close to 400 receive modes: digital TV (DVB-T/T2, ATSC, ISDB-T) with a live player, DAB+ and FM with RDS, ADS-B aircraft and AIS ships on a map, NOAA and Meteor weather satellite pictures, DMR, P25 and TETRA, pagers, FT8 and other ham modes, and sensors. It shows the spectrum, waterfall, constellations and a signal quality score, with auto-tune, gain help and a channel scanner. No radio yet? A built-in tour plays a demo signal.\n\nInstallers are on GitHub for macOS 15 or later (Apple silicon or Intel, not signed), 64-bit Windows 10 and 11, Linux (x86-64 and arm64) and Android 9 or later (receive only). Windows users need the WinUSB driver for HackRF, RTL-SDR and Airspy radios. Patented voice codecs are not included. Many newer decoders have been tested only on generated signals, so some may not work on the air yet.",
+      "builtWithAI": "Checked 2026-11-23: 4,459 of 5,740 commits in the repository are co-authored by Claude. RTL-SDR.com's write-up carries the note: \"This software was coded with Claude AI.\"",
+      "keywords": [
+        "sdr#",
+        "sdrsharp",
+        "sdr++",
+        "rtl-sdr",
+        "hackrf",
+        "ads-b",
+        "dab",
+        "dvb-t"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/onair/1.webp",
+          "alt": "OnAir receiving a DVB-T test signal with spectrum, waterfall and constellation plots",
+          "caption": "Digital TV decoding"
+        },
+        {
+          "src": "/assets/apps/onair/2.webp",
+          "alt": "Map window showing aircraft positions decoded from ADS-B next to a list of flights",
+          "caption": "Aircraft on a map"
+        },
+        {
+          "src": "/assets/apps/onair/3.webp",
+          "alt": "OnAir decoding a DAB+ ensemble with a list of stations and signal charts",
+          "caption": "DAB+ radio"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "RTL-SDR.com, the main radio hobby blog, covered OnAir twice in October 2026, and its readers' comments give a mixed but mostly warm picture. Fans call it brilliant and one of the few useful AI-built projects in the hobby. Others report that digital TV decoding failed for them, call it buggy, or would rather see the basics polished before more decoders are added. The blog itself cautions that decoders written this quickly may not all work as expected.\n\nWe couldn't check Reddit for this round-up.",
+        "praise": [
+          "Huge range of signals in one free app",
+          "Several readers call it great and improving quickly",
+          "DAB, FM and ADS-B with maps work well for many users"
+        ],
+        "complaints": [
+          "DVB-T decoding failed for some readers",
+          "Still buggy in places",
+          "Some would rather see basic features refined before new decoders",
+          "Quickly written decoders may not all work as expected"
+        ],
+        "sources": [
+          {
+            "title": "OnAir Adds Decoder Support for Almost Every Signal",
+            "site": "RTL-SDR.com",
+            "url": "https://www.rtl-sdr.com/onair-adds-decoder-support-for-almost-every-signal/",
+            "date": "2026-10-15",
+            "quote": "Obviously, with these decoders all being vibecoded so quickly, there is no guarantee yet that they will all work as expected."
+          },
+          {
+            "title": "Same post: reader comment",
+            "site": "RTL-SDR.com",
+            "url": "https://www.rtl-sdr.com/onair-adds-decoder-support-for-almost-every-signal/",
+            "date": "2026-10",
+            "quote": "It is a brilliant piece of software.",
+            "who": "Peter De Witte"
+          },
+          {
+            "title": "Same post: reader comment",
+            "site": "RTL-SDR.com",
+            "url": "https://www.rtl-sdr.com/onair-adds-decoder-support-for-almost-every-signal/",
+            "date": "2026-10",
+            "quote": "It’s great that new decoders are being added, but lets refine basic functionality first.",
+            "who": "Ric L"
+          },
+          {
+            "title": "OnAir: A Digital TV and DAB Decoder for SDRs",
+            "site": "RTL-SDR.com",
+            "url": "https://www.rtl-sdr.com/onair-a-digital-tv-and-dab-decoder-for-sdrs/",
+            "date": "2026-10-08",
+            "quote": "It is still buggy but with a Pluto+ and MacOS I could decode DVB-T just fine.",
+            "who": "anon"
+          },
+          {
+            "title": "Same post: reader comment",
+            "site": "RTL-SDR.com",
+            "url": "https://www.rtl-sdr.com/onair-a-digital-tv-and-dab-decoder-for-sdrs/",
+            "date": "2026-10",
+            "quote": "Working well with ADSB + maps and some channels on TV=T2 Australia.",
+            "who": "Tony"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tiny Little Office",
+      "slug": "tiny-little-office",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Google Docs, Microsoft Office",
+      "description": "Ten small office apps in the browser, from a word processor and spreadsheet to slides and a calendar, where the whole document is stored in the link. No account: share the link to share the document.",
+      "category": "Office",
+      "url": "https://tinylittleoffice.com",
+      "linkText": "Visit site",
+      "icon": "▧",
+      "tile": "",
+      "added": "2026-11-23",
+      "source": "https://github.com/aboard-io/tinylittleoffice",
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "price": "Free",
+      "maker": "Aboard",
+      "longDescription": "There are ten apps: Word Processor, Outliner, Presentation Builder, Spreadsheet, Calculator, Drawing Tool, Diagram Maker, Animator, Calendar and Trip Planner, in 21 languages. Each document is packed into the page's address, so copying the link copies the document and whoever has the link has it. Because of that, documents have to stay small.\n\nBy default nothing is stored anywhere. You can choose to keep documents on your own device, or make a short link that is encrypted with a key the server never sees. AI agents can make documents too, through an llms.txt file, an npm package or a Claude Code skill. Developers can run their own copy; the code needs Node 24 or later.",
+      "builtWithAI": "Checked 2026-11-23: 205 of 209 commits in the repository are co-authored by Claude.",
+      "keywords": [
+        "google docs",
+        "microsoft office",
+        "word processor",
+        "spreadsheet",
+        "presentation",
+        "no account",
+        "link sharing"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/tiny-little-office/1.webp",
+          "alt": "Word Processor with a neighbourhood letter, a task list and a cost table",
+          "caption": "Word Processor"
+        },
+        {
+          "src": "/assets/apps/tiny-little-office/2.webp",
+          "alt": "Presentation Builder with a title slide and slide thumbnails on the right",
+          "caption": "Presentation Builder"
+        },
+        {
+          "src": "/assets/apps/tiny-little-office/3.webp",
+          "alt": "Spreadsheet splitting rent across four rooms with totals",
+          "caption": "Spreadsheet"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Tiny Little Office got a lot of attention at launch in October 2026: a Hacker News thread with more than 700 points and 200 comments, plus write-ups in The Register and TechRadar. People like the clever idea of the link being the document, the lack of accounts and how polished it looks, and some single out apps like the Animator and Trip Planner. Critics point out that documents must stay small because they live in the URL, ask why not just use LibreOffice, and doubt how long a quickly built, AI-coded project will last. Early users also hit some bugs, and the site went down under the launch traffic.\n\nWe couldn't check Reddit for this round-up.",
+        "praise": [
+          "Clever idea: the document is the link, no accounts",
+          "Polished and nice to use",
+          "Handy small apps such as the Animator and Trip Planner",
+          "Private by default, free and open source"
+        ],
+        "complaints": [
+          "Documents must stay small because they live in the link",
+          "Some see no reason to use it over LibreOffice or other suites",
+          "Doubts about how long a quickly built project will last",
+          "Early bugs, and the site went down under launch traffic"
+        ],
+        "sources": [
+          {
+            "title": "Tiny Little Office",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50096142",
+            "date": "2026-10-14",
+            "quote": "This is so well done!",
+            "who": "EGreg",
+            "points": "705 points"
+          },
+          {
+            "title": "TinyLittleOffice, where the link is the document",
+            "site": "The Register",
+            "url": "https://www.theregister.com/a/5303328",
+            "date": "2026-10-15",
+            "quote": "We tested the project, and it is indeed very impressive from a technical standpoint.",
+            "who": "Richard Speed"
+          },
+          {
+            "title": "Same Hacker News thread: on size limits",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50096142",
+            "date": "2026-10-15",
+            "quote": "The entire 'document' is encoded in the URL and so there a quick limit to document size",
+            "who": "ninju"
+          },
+          {
+            "title": "Same Hacker News thread: a skeptical view",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50096142",
+            "date": "2026-10-15",
+            "quote": "Much more advanced software is available for free for all platforms. Why not just go and install LibreOffice?",
+            "who": "self_awareness"
+          },
+          {
+            "title": "Developer vibe-codes another free Microsoft Office clone for your browser",
+            "site": "TechRadar",
+            "url": "https://techradar.com/computing/office-suites/developer-vibe-codes-another-free-microsoft-office-clone-for-your-browser-and-its-a-perfect-privacy-match-for-signal-fans-with-no-logins-and-local-only-storage"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Parrot",
+      "slug": "parrot",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Otter.ai, Granola",
+      "description": "A Mac meeting recorder that transcribes any call on your own computer, with no bot joining. An optional assistant suggests answers from your documents during the call.",
+      "category": "Productivity",
+      "url": "https://openparrot.app",
+      "linkText": "Visit site",
+      "download": "https://github.com/turantekin/Parrot/releases",
+      "source": "https://github.com/turantekin/Parrot",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Uygar Turantekin",
+      "icon": "◎",
+      "tile": "voice",
+      "added": "2026-11-23",
+      "longDescription": "Parrot records your Mac's system audio and your microphone as two tracks, so it works with Zoom, Google Meet, Teams or anything else your Mac can hear, and no bot joins the call. Transcription runs on the Mac with Whisper or Parakeet, it tells speakers apart, and afterwards it writes a report with a summary, objections, talk balance and the next steps people promised. You can search all your past calls and ask questions about them.\n\nThe live assistant is optional. You choose what powers it: Claude with your own API key, any OpenAI-compatible server, or a local model through Ollama, which keeps everything offline and free. You can add PDFs or notes, and it suggests answers from them while the other side is still talking. Parrot needs macOS 14 or later on an Apple silicon Mac. Releases are still marked as pre-releases, and the maker says some bugs remain.",
+      "builtWithAI": "Checked 2026-11-23: 519 of 703 commits are co-authored by Claude. The maker on Hacker News: \"It is 100% vibe coded but made with love :)\"",
+      "keywords": [
+        "meeting recorder",
+        "transcription",
+        "Otter",
+        "Granola",
+        "Whisper",
+        "Zoom",
+        "meeting notes",
+        "Ollama"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/parrot/1.webp",
+          "alt": "Parrot's live call screen with a call score, a suggested answer quoted from a FAQ file, an open pricing question, a promised next step and the live transcript",
+          "caption": "Live call screen"
+        },
+        {
+          "src": "/assets/apps/parrot/2.webp",
+          "alt": "Parrot's Knowledge settings with a security FAQ PDF added, and a suggested answer to a single sign-on question taken from it",
+          "caption": "Answers from your documents"
+        },
+        {
+          "src": "/assets/apps/parrot/3.webp",
+          "alt": "A Parrot post-call report with a summary, pain points, talk balance, questions handled and missed, and follow-ups",
+          "caption": "Post-call report"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage is thin: a Show HN thread from September 2026 (39 points), a few comments on Product Hunt and some thank-you notes on GitHub. People like that no bot joins the call, that it's free and open source, and how polished the setup feels. An early tester reported an echo on the other side's voice in recordings, and one commenter felt there are already plenty of meeting recorders. Several found the assistant's old name, Copilot, confusing; the maker renamed it Assistant the next day.\n\nWe couldn't check Reddit for this round-up.",
+        "praise": [
+          "No meeting bot: it records what your Mac hears",
+          "Free and open source, with local transcription",
+          "Polished onboarding",
+          "Frequent updates and a responsive maker"
+        ],
+        "complaints": [
+          "An early tester heard an echo on other speakers' voices in recordings",
+          "Plenty of similar meeting recorders already exist",
+          "Requests for automatic Markdown export and attaching whole folders"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: Parrot, Open-Source Smart Meeting Recorder with Co-Pilot on Mac",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=49910328",
+            "date": "2026-10-01",
+            "quote": "This one looks super nice. Trying it now.",
+            "who": "marshalla",
+            "points": "39 points"
+          },
+          {
+            "title": "Same Show HN thread: after installing from source",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=49910328",
+            "date": "2026-09-30",
+            "quote": "Really liked the onboarding!",
+            "who": "catoc"
+          },
+          {
+            "title": "Parrot on Product Hunt",
+            "site": "Product Hunt",
+            "url": "https://www.producthunt.com/products/parrot-10",
+            "quote": "30 releases in six months is impressive, and free and open source is a lovely bonus.",
+            "who": "Thomas Unise",
+            "points": "81 upvotes"
+          },
+          {
+            "title": "Thank you / Feedback",
+            "site": "GitHub Discussions",
+            "url": "https://github.com/turantekin/Parrot/discussions/15",
+            "date": "2026-07-22",
+            "quote": "It’s clean, private, and exactly what I needed for meeting recordings on my Mac Mini M1.",
+            "who": "datpro12345"
+          },
+          {
+            "title": "Same Show HN thread: a recording problem",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=49910328",
+            "date": "2026-09-30",
+            "quote": "the audio it records has a echo",
+            "who": "joshstrange"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Nightwatch",
+      "slug": "nightwatch",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Clear Outside, Astrospheric",
+      "description": "A menu-bar app for stargazers that finds tonight's clear window, ranks what you can see or photograph, and alerts you when it's worth setting up.",
+      "category": "Science and space",
+      "url": "https://delphi-dolphin.com/nightwatch",
+      "linkText": "Visit site",
+      "download": "https://github.com/rsutcliffe/nightwatch/releases/latest",
+      "source": "https://github.com/rsutcliffe/nightwatch",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS",
+        "iOS"
+      ],
+      "maker": "Richard Sutcliffe",
+      "icon": "☾",
+      "tile": "bar",
+      "added": "2026-11-23",
+      "longDescription": "Nightwatch sits in the Mac menu bar and checks the forecast every 30 minutes, using Apple Weather or Open-Meteo for cloud plus 7Timer for seeing and transparency. An hour before sunset it sends one alert if there's a long enough clear run in full darkness, along with a second forecast's opinion. It also shows a sky score, a plan for tonight with the best time for each target, the week ahead, events like meteor showers and ISS passes, and darker sites nearby.\n\nYou can tell it how much sky your trees and houses block in each direction, or measure that from a phone photo, and it only suggests targets that clear it. It knows your telescope or smart scope and suggests filters, exposures and frame counts. The Mac download needs macOS 14 or later on Apple silicon, and the app is also free on the App Store for Mac, iPhone and iPad.",
+      "builtWithAI": "Checked 2026-11-23: 179 of 342 commits are co-authored by Claude.",
+      "keywords": [
+        "astronomy",
+        "astrophotography",
+        "clear sky",
+        "stargazing",
+        "weather",
+        "Clear Outside",
+        "Astrospheric",
+        "telescope"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/nightwatch/1.webp",
+          "alt": "The Nightwatch menu-bar popover with a sky score of 95, tonight's clear window, seeing, wind, the Moon and the three best targets",
+          "caption": "Tonight at a glance"
+        },
+        {
+          "src": "/assets/apps/nightwatch/2.webp",
+          "alt": "Nightwatch's plan for tonight with an altitude chart and the order to shoot each target in the clear window",
+          "caption": "Tonight's plan"
+        },
+        {
+          "src": "/assets/apps/nightwatch/3.webp",
+          "alt": "Nightwatch's week ahead, listing each night's clear window, darkness and Moon, with later nights marked Less certain",
+          "caption": "The week ahead"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Seal",
+      "slug": "seal",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Google Inactive Account Manager",
+      "description": "An iPhone app for writing sealed letters and passwords that open for the people you choose if you stop checking in. Everything is encrypted on your phone.",
+      "category": "Family",
+      "url": "https://sealmessenger.com",
+      "linkText": "Visit site",
+      "download": "https://apps.apple.com/app/id6779471126",
+      "source": "https://github.com/jasonepage/Seal",
+      "license": "MPL-2.0",
+      "price": "Freemium",
+      "platforms": [
+        "iOS",
+        "Web"
+      ],
+      "maker": "Jason Page",
+      "icon": "✉",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "You write one envelope per person: a letter, photos, a voice message, a video, files and secrets like passwords. A few trusted people each hold a piece of the key, added in person. If you don't open the app for a set time (90 days by default), one of them can start a claim, you get daily warnings for weeks, and only then can enough key holders release the envelopes. Each one opens only for the person it was written for, and one tap from you stops the process at any point.\n\nThe envelopes are encrypted on the phone before they're stored in iCloud, and there's no password or email account, just a passkey or a security key. The app is for iPhone and iPad on iOS 18 or later; recipients and key holders can open envelopes in a browser. It's free to install, and the owner pays once to seal envelopes. The maker says the code hasn't been independently audited yet.",
+      "builtWithAI": "Checked 2026-11-23: 216 of 265 commits are co-authored by Claude. The maker on Hacker News: \"Currently, it's just me and Claude working on this.\"",
+      "keywords": [
+        "digital legacy",
+        "dead man's switch",
+        "estate planning",
+        "emergency access",
+        "passwords",
+        "letters",
+        "inheritance"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/seal/1.webp",
+          "alt": "Seal's envelope list on an iPhone, one envelope per person, marked as sealed and checked in",
+          "caption": "Envelopes"
+        },
+        {
+          "src": "/assets/apps/seal/2.webp",
+          "alt": "Writing an envelope in Seal on an iPhone",
+          "caption": "Writing an envelope"
+        },
+        {
+          "src": "/assets/apps/seal/3.webp",
+          "alt": "Seal's countdown timeline on an iPhone, showing the warning and grace periods before envelopes can open",
+          "caption": "The countdown"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Faro",
+      "slug": "faro",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to FileZilla, WinSCP",
+      "description": "A desktop file client for SFTP, FTP, S3, WebDAV and cloud drives. Browse two places side by side, transfer and sync folders, and open an SSH terminal.",
+      "category": "File sharing",
+      "url": "https://faroapp.dev",
+      "linkText": "Visit site",
+      "download": "https://github.com/jhd3197/Faro/releases/latest",
+      "source": "https://github.com/jhd3197/Faro",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "maker": "Juan Denis",
+      "icon": "⇄",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "Faro connects to SFTP, FTP and FTPS servers, S3-compatible storage such as AWS S3, Cloudflare R2 and Backblaze B2, WebDAV and Nextcloud, and cloud drives like Dropbox, OneDrive and Google Drive. You get two panes side by side with drag and drop, a transfer queue with pause, resume and bandwidth limits, folder syncs you can preview first, a disk usage view, and an SSH terminal in the same window. You can edit remote files in your own editor and import saved sites from FileZilla, PuTTY or your SSH config.\n\nOn Windows you can mount a server as a folder in Explorer, with files downloaded only when you open them. There's also a command-line tool and an optional bridge that lets a local AI agent use your open sessions, with each command needing your approval by default. Installers are available for Windows, macOS (Intel and Apple silicon) and Linux, but they aren't code-signed yet, so Windows and macOS show a warning on first launch.",
+      "builtWithAI": "Checked 2026-11-23: 205 of 703 commits are co-authored by Claude.",
+      "keywords": [
+        "SFTP",
+        "FTP",
+        "FileZilla",
+        "WinSCP",
+        "Cyberduck",
+        "S3",
+        "SSH client",
+        "file transfer"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/faro/1.webp",
+          "alt": "Faro's two-pane browser with a local Windows drive on the left and an SFTP server folder on the right",
+          "caption": "Local and remote side by side"
+        },
+        {
+          "src": "/assets/apps/faro/2.webp",
+          "alt": "An SSH terminal open in Faro next to the file browser",
+          "caption": "SSH terminal"
+        },
+        {
+          "src": "/assets/apps/faro/3.webp",
+          "alt": "Faro previewing a directory sync plan between two folders",
+          "caption": "Folder sync preview"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Cra",
+      "slug": "cra",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Arc",
+      "description": "A Mac browser with a sidebar instead of a tab strip, built to replace Arc: spaces, pinned tabs, split view and Arc's shortcuts, with your Arc sidebar imported in one go.",
+      "category": "Utilities",
+      "url": "https://crabrowser.app",
+      "linkText": "Visit site",
+      "download": "https://github.com/VictorKildahl/cra/releases/latest",
+      "source": "https://github.com/VictorKildahl/cra",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS",
+        "iOS"
+      ],
+      "maker": "Victor Kildahl",
+      "icon": "◧",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "Cra keeps the Arc way of browsing: spaces with their own pinned tabs and favorites, Today tabs that archive themselves, folders, a command bar that searches everything, split view, Little Windows, Peek, Boosts, Easels and Arc's keyboard shortcuts. On first launch it imports Arc's spaces, pinned tabs, favorites, archive and passwords, and it can also bring over tabs, bookmarks and passwords from Chrome, Dia, Zen, Firefox, Safari and others.\n\nThe app is written in Swift on Chrome's own engine, so sites and Chrome extensions work as they do in Chrome, and it has a built-in ad and tracker blocker. It needs macOS 14 or later and runs on Apple silicon and Intel Macs; there is also a free iPhone and iPad app (iOS 17) in the style of Arc Search. No account is needed.",
+      "builtWithAI": "Checked 2026-11-23: 1,194 of 1,331 commits are co-authored by Claude.",
+      "keywords": [
+        "Arc browser",
+        "Arc Search",
+        "The Browser Company",
+        "sidebar browser",
+        "vertical tabs",
+        "Chromium",
+        "web browser"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/cra/1.webp",
+          "alt": "Cra with favorites, a space with pinned tabs and folders in the sidebar, and a web page open on the right",
+          "caption": "Sidebar with spaces"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Cra is only a few weeks old, so coverage is thin, but what there is comes from Arc users looking for a way out before Arc shuts down. Chris Coyier tried several Arc replacements and called Cra the closest copy, praising the importer and its Little Arc. An AlternativeTo reviewer liked that spaces, pinned tabs and split panes carry over. The complaints so far are early bugs: an extension that could not be removed, and a report on Hacker News that developer tools showed a blank page.",
+        "praise": [
+          "The closest copy of Arc's features and feel",
+          "Importing from Arc is smooth and keeps spaces, passwords and extensions",
+          "Little Arc and the always-on toolbar work well"
+        ],
+        "complaints": [
+          "Early bugs, such as an extension that could not be removed",
+          "One report of developer tools showing a blank page",
+          "Few detailed reviews yet"
+        ],
+        "sources": [
+          {
+            "title": "Browsers To Try If You're Being Forced Off Arc",
+            "site": "Master.dev",
+            "url": "https://blog.master.dev/browsers-to-try-if-youre-being-forced-off-arc/",
+            "date": "2026-11-16",
+            "quote": "I actually found Cra (Arc backward?) to be easily the most direct Arc clone of them all.",
+            "who": "Chris Coyier"
+          },
+          {
+            "title": "Cra reviews",
+            "site": "AlternativeTo",
+            "url": "https://alternativeto.net/software/cra/about/",
+            "date": "2026-11-16",
+            "quote": "One-step import of spaces, passwords, and extensions makes trying it out painless.",
+            "who": "Uladzislau Rybakou",
+            "points": "5 out of 5"
+          },
+          {
+            "title": "Same article: what Chris Coyier didn't like",
+            "site": "Master.dev",
+            "url": "https://blog.master.dev/browsers-to-try-if-youre-being-forced-off-arc/",
+            "date": "2026-11-16",
+            "quote": "Found a bug where I was unable to remove a browser extension (but could disable it)",
+            "who": "Chris Coyier"
+          },
+          {
+            "title": "Arc Browser Clean Room Reimplementation",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50501994",
+            "date": "2026-11-16",
+            "quote": "developer tools doesn't work, shows a blank page",
+            "who": "billconan"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StykAnimate",
+      "slug": "stykanimate",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Pivot Animator, Stick Nodes",
+      "description": "A stick figure animation app that opens Pivot and Stick Nodes projects. Pose figures, build your own, animate frame by frame and export MP4, GIF or WebM.",
+      "category": "Graphics",
+      "url": "https://stykanimate.com",
+      "linkText": "Visit site",
+      "download": "https://github.com/filippocalippo/styk-animate-releases/releases/latest",
+      "source": "https://github.com/filippocalippo/StykAnimate-App",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "Web"
+      ],
+      "maker": "filippocalippo",
+      "icon": "✱",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "StykAnimate opens Pivot (.piv, .stk) and Stick Nodes files and can save them back. You pose jointed figures with inverse kinematics for arms and legs, build your own figures from lines, circles, shapes, text and images, and animate either on a simple Pivot-style frame strip or on an advanced timeline with layers, keys and easing. Onion skins, motion paths, camera moves, particle effects and a shared library of figures from other animators are included.\n\nExports cover MP4, WebM with transparency, GIF, APNG, image frames and editable project files. It runs on Windows and Linux (installer, portable or AppImage) or in the browser at app.stykanimate.com, which works offline once loaded. Everything runs on your own device; the desktop app sends anonymous usage and crash statistics, which you can turn off in Preferences.",
+      "builtWithAI": "Checked 2026-11-23: 1,372 of 1,796 commits are co-authored by Claude.",
+      "keywords": [
+        "Pivot Animator",
+        "Pivot Stickfigure Animator",
+        "Stick Nodes",
+        "stick figure",
+        "stickman animation",
+        "Stykz",
+        "2D animation"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/stykanimate/1.webp",
+          "alt": "StykAnimate editor with a blue stick figure on the stage, its properties on the right and the layered timeline below",
+          "caption": "Advanced timeline"
+        },
+        {
+          "src": "/assets/apps/stykanimate/2.webp",
+          "alt": "StykAnimate with the simple Pivot-style frame strip showing one frame and its inbetweens",
+          "caption": "Pivot-style frame strip"
+        },
+        {
+          "src": "/assets/apps/stykanimate/3.webp",
+          "alt": "StykAnimate's Build mode with tools for drawing lines, circles and joints to make a custom figure",
+          "caption": "Building a figure"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Tellyscope",
+      "slug": "tellyscope",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Send Files to TV, ADB tools",
+      "description": "A phone app that looks after your Android TV, Google TV or Fire TV over Wi-Fi: remove bloatware, install apps, send files and use it as a remote. No root and no PC.",
+      "category": "TV",
+      "url": "https://man15h.github.io/tellyscope/",
+      "linkText": "Visit site",
+      "download": "https://github.com/man15h/tellyscope/releases/latest",
+      "source": "https://github.com/man15h/tellyscope",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Android"
+      ],
+      "maker": "Manish",
+      "icon": "▭",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "Tellyscope connects to the TV over your Wi-Fi with ADB, the same debugging link developers use. Its debloat tool matches your TV to one of more than 330 tested lists and shows every app it will turn off before it does; built-in apps are only disabled, never uninstalled, and every change can be undone. It also installs APKs and split APK bundles from your phone, sends files to and from the TV, can set a launcher such as Projectivy as the home screen, and turns on ad-blocking Private DNS.\n\nThe phone doubles as a remote with a D-pad, typing and shortcuts to streaming apps, and an advanced monitor shows CPU, memory and network use per app. You need an Android phone on Android 8.0 or newer on the same Wi-Fi, and developer options turned on on the TV. Get the APK from GitHub, Obtainium or Orion Store; a Google Play version is in testing.",
+      "builtWithAI": "Checked 2026-11-23: 611 of 707 commits are co-authored by Claude.",
+      "keywords": [
+        "Android TV",
+        "Google TV",
+        "Fire TV",
+        "debloat",
+        "bloatware",
+        "ADB",
+        "Projectivy",
+        "sideload"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/tellyscope/1.webp",
+          "alt": "Tellyscope's page for a TV with its vitals and the Install, Debloat and Send buttons",
+          "caption": "Your TV at a glance"
+        },
+        {
+          "src": "/assets/apps/tellyscope/2.webp",
+          "alt": "Tellyscope's remote with a D-pad, Back, Home, volume keys and buttons for streaming apps",
+          "caption": "Phone as a remote"
+        },
+        {
+          "src": "/assets/apps/tellyscope/3.webp",
+          "alt": "Tellyscope's Debloat screen listing the apps it will turn off, each with its package name",
+          "caption": "Review before debloating"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Coverage is small but positive: a how-to article on DigitBin and two YouTube walkthroughs from TV and streaming channels, all from the app's first weeks. They like that it cleans up a Google TV or Fire TV from a phone with no PC or root, and that changes can be undone. DigitBin is careful to say it won't make a cheap TV fast and recommends staying off the alpha builds. GitHub issues show some TVs and Fire TV sticks failing to connect.",
+        "praise": [
+          "Debloats a TV from the phone, with no PC, root or commands",
+          "Apps are switched off rather than deleted, with an undo",
+          "Also installs a better launcher and blocks ads"
+        ],
+        "complaints": [
+          "Won't turn a slow, cheap TV into a fast one",
+          "Some TVs and Fire TV sticks fail to connect",
+          "Many releases are alpha test builds"
+        ],
+        "sources": [
+          {
+            "title": "Can debloating really make a slow Android TV faster? Here is how to do it from your phone",
+            "site": "DigitBin",
+            "url": "https://www.digitbin.com/debloat-android-tv-faster/",
+            "date": "2026-10-31",
+            "quote": "What it can do is switch off apps you never asked for, with an undo if something breaks.",
+            "who": "Nikhil Azza"
+          },
+          {
+            "title": "De-Bloat and Block Ads on Your Google TV With These Two Apps!",
+            "site": "YouTube",
+            "url": "https://www.youtube.com/watch?v=TBu0qgXmYFo",
+            "date": "2026-10-24",
+            "who": "Shane Craig",
+            "points": "75,274 views"
+          },
+          {
+            "title": "This FREE App Cleans Up Your Firestick, NO PC Needed!",
+            "site": "YouTube",
+            "url": "https://www.youtube.com/watch?v=h_TcOpugax4",
+            "date": "2026-10-27",
+            "quote": "no PC, no root and no complicated commands needed!",
+            "who": "TechDoctorUK",
+            "points": "20,913 views"
+          },
+          {
+            "title": "Same DigitBin article: the limits",
+            "site": "DigitBin",
+            "url": "https://www.digitbin.com/debloat-android-tv-faster/",
+            "date": "2026-10-31",
+            "quote": "It will not turn a cheap TV into a flagship.",
+            "who": "Nikhil Azza"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZenLink",
+      "slug": "zenlink",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Phone Link, AirServer",
+      "description": "Shows your iPhone, iPad or Android phone on a Windows PC over USB or Wi-Fi, with sound, and lets you control it with mouse and keyboard. Android needs no app.",
+      "category": "Utilities",
+      "url": "https://zenvyzenshiro.github.io/zenlink/",
+      "linkText": "Visit site",
+      "download": "https://github.com/zenvyzenshiro/zenlink/releases/latest",
+      "source": "https://github.com/zenvyzenshiro/zenlink",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "maker": "Zenvy Zenshiro",
+      "icon": "⧉",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "ZenLink mirrors a phone or tablet in a window on Windows: 60 fps on iPhone and iPad and up to 120 fps on Android, with hardware decoding, synced sound and mouse and keyboard control. Android phones (5.0 or newer, sound from Android 11) connect over USB or Wi-Fi using the scrcpy server, with nothing to install on the phone. iPhones and iPads connect through Apple's driver (iOS 17 or newer with Developer Mode, for control) or through ZenLink Studio, which takes picture and sound over the cable or acts as an AirPlay receiver.\n\nExtras include Alt+C to copy text off the phone screen with OCR, dropping files on the window to send them, launching Android apps in their own window, a stealth mode that dims the phone, and smooth capture in OBS for streamers. It needs 64-bit Windows 10 (1809) or Windows 11, and Apple Devices or iTunes for iPhones.",
+      "builtWithAI": "Checked 2026-11-23: 183 of 190 commits are co-authored by Claude.",
+      "keywords": [
+        "screen mirroring",
+        "Phone Link",
+        "AirServer",
+        "scrcpy",
+        "iPhone mirroring",
+        "AirPlay receiver",
+        "Android to PC",
+        "OBS"
+      ],
+      "screenshots": [],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     }
   ]
 }

@@ -49,9 +49,18 @@ Updated 2026-11-23 3:31 AM Central. The feature is the `whatPeopleSay` field in 
 - Starfall
 - SetShot
 
-## Added in hunt 8 with a section, waiting for Go live (2)
+## Added in hunt 8 with a section, live (2)
 - Sill
 - Compositor
+
+## Added in hunt 9 with a section, waiting for Go live (6)
+All quotes re-checked against their pages on 2026-11-23.
+- layerling
+- OnAir
+- Tiny Little Office
+- Parrot
+- Cra
+- Tellyscope
 
 ## Live since 2026-11-23 (4bbb713) (13)
 - LightCraft
@@ -68,7 +77,7 @@ Updated 2026-11-23 3:31 AM Central. The feature is the `whatPeopleSay` field in 
 - A Game About Capybaras Delivering Food
 - Rackula
 
-## Checked: no real outside coverage (70)
+## Checked: no real outside coverage (80)
 These have `"whatPeopleSay": { "checked": "2026-11-23", "none": true }`, so the page shows "No outside reviews of X yet. We last checked ...". Re-check now and then; when coverage turns up, replace the entry with a full one.
 
 - Locode
@@ -141,6 +150,16 @@ These have `"whatPeopleSay": { "checked": "2026-11-23", "none": true }`, so the 
 - Reelbird (hunt 8)
 - Rembrandt (hunt 8)
 - Flowplan (hunt 8)
+- Inkline Town (hunt 9)
+- Terminactory (hunt 9; only the Show HN thread plus an auto-generated PromptZone post)
+- Harness Hollow (hunt 9)
+- Second Tail (hunt 9)
+- PlayTranslate (hunt 9; Brazilian articles with no quotable opinions, Android Authority unreadable)
+- Nightwatch (hunt 9)
+- Seal (hunt 9)
+- Faro (hunt 9)
+- StykAnimate (hunt 9)
+- ZenLink (hunt 9)
 
 ## Partly checked: worth another look (2)
 - Claude of Tanks: the main player discussion is a Reddit thread and X posts (both blocked); the HN post had no comments

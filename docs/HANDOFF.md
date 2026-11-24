@@ -2,7 +2,14 @@
 
 Last updated: 2026-11-23 2:45 AM Central (cleanup and handoff; 120 apps in 29 categories live, "What people say" on 33 apps, speed/SEO pass live as 14013df). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
 
-## Newest: app hunt 8, 130 apps (2026-11-23 afternoon Central)
+## Newest: app hunt 9, 146 apps (2026-11-23 evening Central)
+
+- Four search agents (GitHub by thin category, Show HN, games, popular repos and lists) found 37 candidates; 16 added on branch `hunt/2026-11-23-hunt-9`. Games: Inkline Town (city builder), Terminactory (terminal factory game, GitLab), Harness Hollow (co-op farming), Second Tail (itch.io platformer, closed source). Apps: layerling (Tinkercad), PlayTranslate (screen translation), OnAir (SDR# / SDR++), Tiny Little Office (Office in the browser), Parrot (Otter.ai / Granola), Nightwatch (stargazing forecast), Seal (sealed letters for family), Faro (FileZilla / WinSCP), Cra (Arc), StykAnimate (Pivot Animator), Tellyscope (Android TV manager), ZenLink (Phone Link).
+- "What people say": 6 got sections (layerling, OnAir, Tiny Little Office, Parrot, Cra, Tellyscope; all 29 quotes re-checked against their pages), 10 got the "none" line. Terminactory's only second source was an auto-generated PromptZone post, so it got "none".
+- No screenshots on purpose: PlayTranslate (its pictures show a third-party game) and ZenLink (README has only a logo; the site's demo is a simulation). StykAnimate and Tiny Little Office screenshots were captured from the official web apps with headless Edge (script: scratchpad `scripts/cdpshot.mjs`, not kept in the repo).
+- Held for a later hunt: HolyArrs (2.8k stars, maker says Claude Code wrote most of it, overlaps Arrmada/Cinephage), Zigzag (Arc, only 76 of 4,956 commits), KiwiDesk (BSL), desigma (Figma, alpha), BackupZit, GymCoach, Mirli, Arctis Sound Manager, Free GST Billing, MixMusic, Bambu Bar, Mila, MacMix, Swarm, OnKey, Narro, Arena Game, Mecha Royale, Rose & Blade, PrintStash, Strata Files. Games list for later hunts: github.com/lappemic/awesome-ai-built-games (~120 AI-built games).
+
+## Earlier: app hunt 8, 130 apps (2026-11-23 afternoon Central)
 
 - Three search agents (GitHub README search, Show HN, popular repos and curated lists) found 30 candidates; 10 added on branch `hunt/2026-11-23-hunt-8`: Sill (Sidecar), Dimble (Bartender), WallpaperMachine (Wallpaper Engine), Prism Download Manager (IDM), Screendrop (CleanShot X/Loom), Capso (CleanShot X), Reelbird (Loom/Screen Studio), Compositor (Photoshop, ~18.8k stars), Rembrandt (Lightroom) and Flowplan (Notion). Each has a Claude co-authored commit count (checked 2026-11-23) and a "What people say" pass: Sill and Compositor got sections (quotes re-checked), the other 8 got the "No outside reviews yet" line.
 - WallpaperMachine has no screenshot on purpose: its only app screenshot is full of other companies' game and anime art (same rule as Game Master Claude). Flowplan's maker shows as "Yannic S." (only name on GitHub). Capso switched from BSL 1.1 to MIT on 2026-11-16.

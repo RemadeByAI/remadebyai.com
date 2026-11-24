@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d0b">
+  <meta name="color-scheme" content="dark">
+  <meta name="darkreader-lock">
+  <title>OnAir: Alternative to SDR# and SDR++ | RemadeByAI</title>
+  <meta name="description" content="OnAir, alternative to SDR# and SDR++. Turns a cheap software-defined radio into a receiver for digital TV, DAB radio, aircraft, ships, weather…">
+  <link rel="canonical" href="https://remadebyai.com/apps/onair/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RemadeByAI">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="OnAir: Alternative to SDR# and SDR++ | RemadeByAI">
+  <meta property="og:description" content="OnAir, alternative to SDR# and SDR++. Turns a cheap software-defined radio into a receiver for digital TV, DAB radio, aircraft, ships, weather…">
+  <meta property="og:url" content="https://remadebyai.com/apps/onair/">
+  <meta property="og:image" content="https://remadebyai.com/assets/apps/onair/1.webp">
+  <meta property="og:image:width" content="1400">
+  <meta property="og:image:height" content="840">
+  <meta property="og:image:alt" content="OnAir receiving a DVB-T test signal with spectrum, waterfall and constellation plots">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OnAir: Alternative to SDR# and SDR++ | RemadeByAI">
+  <meta name="twitter:description" content="OnAir, alternative to SDR# and SDR++. Turns a cheap software-defined radio into a receiver for digital TV, DAB radio, aircraft, ships, weather…">
+  <meta name="twitter:image" content="https://remadebyai.com/assets/apps/onair/1.webp">
+  <meta name="twitter:image:alt" content="OnAir receiving a DVB-T test signal with spectrum, waterfall and constellation plots">
+  <script>(function(){var t='dark';try{if(localStorage.getItem('theme')==='light')t='light'}catch(e){}var d=document.documentElement;d.setAttribute('data-theme',t);if(t==='light'){var m=document.querySelector('meta[name="color-scheme"]');if(m)m.content='light';m=document.querySelector('meta[name="theme-color"]');if(m)m.content='#f5f8f3'}})();</script>
+  <link rel="stylesheet" href="/styles.css?v=266d271866">
+  <script src="/site.js?v=8af6034e91" defer></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"0f5ef649282441df8c6138452124737d"}'></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","@id":"https://remadebyai.com/apps/onair/#app","name":"OnAir","description":"Turns a cheap software-defined radio into a receiver for digital TV, DAB radio, aircraft, ships, weather satellites, pagers and much more, with the spectrum and decoded data in one app.","applicationCategory":"EducationalApplication","applicationSubCategory":"Science and space","url":"https://on-air.dev","mainEntityOfPage":"https://remadebyai.com/apps/onair/","operatingSystem":"Windows, macOS, Linux, Android","license":"GPL-3.0","downloadUrl":"https://github.com/adswill/OnAir/releases/latest","screenshot":["https://remadebyai.com/assets/apps/onair/1.webp","https://remadebyai.com/assets/apps/onair/2.webp","https://remadebyai.com/assets/apps/onair/3.webp"],"image":"https://remadebyai.com/assets/apps/onair/1.webp","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"Kristijonas Adomaitis"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://remadebyai.com/"},{"@type":"ListItem","position":2,"name":"Science and space","item":"https://remadebyai.com/categories/science-and-space/"},{"@type":"ListItem","position":3,"name":"OnAir","item":"https://remadebyai.com/apps/onair/"}]}</script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="35" height="35"><span>RemadeBy<em>AI</em><small>.com</small></span></a>
+    <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/new/">New</a><a href="/apps/">All apps</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
+    <form class="site-search" action="/apps/" method="get" role="search" data-clicks="https://remadebyai-clicks.remadebyai.workers.dev/click">
+      <label><span class="visually-hidden">Search all apps</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
+      <ul class="site-search-results" id="site-search-results" role="listbox" aria-label="Matching apps" hidden></ul>
+    </form>
+    <button class="theme-toggle" type="button" aria-label="Switch to light mode"><span class="to-light"><span class="icon" aria-hidden="true">☀︎</span><span class="label">Light mode</span></span><span class="to-dark"><span class="icon" aria-hidden="true">☾</span><span class="label">Dark mode</span></span></button>
+  </div>
+</header>
+<main id="main">
+<div class="wrap app-page">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/categories/science-and-space/">Science and space</a> / <span>OnAir</span></nav>
+  <section class="app-hero" aria-labelledby="app-title">
+    <div>
+      <div class="app-title-row"><span class="tile" aria-hidden="true">◉</span><small class="owner">Open source</small></div>
+      <h1 id="app-title">OnAir</h1>
+      <p class="lede">Alternative to SDR# and SDR++</p>
+      <p class="app-summary">Turns a cheap software-defined radio into a receiver for digital TV, DAB radio, aircraft, ships, weather satellites, pagers and much more, with the spectrum and decoded data in one app.</p>
+      <div class="app-actions"><a class="button primary" href="https://github.com/adswill/OnAir/releases/latest" data-track="download" data-app="onair" target="_blank" rel="noopener">Download</a><a class="button" href="https://on-air.dev" data-track="site" data-app="onair" target="_blank" rel="noopener">Visit site</a></div>
+    </div>
+    <dl class="facts">
+      <div><dt>Category</dt><dd><a href="/categories/science-and-space/">Science and space</a></dd></div>
+      <div><dt>Replaces</dt><dd>SDR# and SDR++</dd></div>
+      <div><dt>Platforms</dt><dd>Windows, macOS, Linux, Android</dd></div>
+      <div><dt>Licence</dt><dd>GPL-3.0</dd></div>
+      <div><dt>Price</dt><dd>Free</dd></div>
+      <div><dt>Made by</dt><dd>Kristijonas Adomaitis</dd></div>
+      <div><dt>Source code</dt><dd><a href="https://github.com/adswill/OnAir" data-track="source" data-app="onair" target="_blank" rel="noopener">github.com/adswill/OnAir</a></dd></div>
+      <div><dt>Listed</dt><dd>November 23, 2026</dd></div>
+    </dl>
+  </section>
+  <section class="app-section" aria-labelledby="about-app-title"><h2 id="about-app-title">About OnAir</h2><div class="prose"><p>Plug in an RTL-SDR, HackRF, Airspy, SDRplay, LimeSDR, Pluto or one of many other radios, pick a mode and press Start. OnAir has close to 400 receive modes: digital TV (DVB-T/T2, ATSC, ISDB-T) with a live player, DAB+ and FM with RDS, ADS-B aircraft and AIS ships on a map, NOAA and Meteor weather satellite pictures, DMR, P25 and TETRA, pagers, FT8 and other ham modes, and sensors. It shows the spectrum, waterfall, constellations and a signal quality score, with auto-tune, gain help and a channel scanner. No radio yet? A built-in tour plays a demo signal.</p>
+<p>Installers are on GitHub for macOS 15 or later (Apple silicon or Intel, not signed), 64-bit Windows 10 and 11, Linux (x86-64 and arm64) and Android 9 or later (receive only). Windows users need the WinUSB driver for HackRF, RTL-SDR and Airspy radios. Patented voice codecs are not included. Many newer decoders have been tested only on generated signals, so some may not work on the air yet.</p></div></section>
+  
+  <section class="app-section" aria-labelledby="shots-title">
+    <h2 id="shots-title">Screenshots</h2>
+    <div class="shots"><figure><a href="/assets/apps/onair/1.webp"><img src="/assets/apps/onair/thumb/1.webp" alt="OnAir receiving a DVB-T test signal with spectrum, waterfall and constellation plots" width="960" height="576" loading="lazy" decoding="async"></a><figcaption>Digital TV decoding</figcaption></figure><figure><a href="/assets/apps/onair/2.webp"><img src="/assets/apps/onair/thumb/2.webp" alt="Map window showing aircraft positions decoded from ADS-B next to a list of flights" width="960" height="576" loading="lazy" decoding="async"></a><figcaption>Aircraft on a map</figcaption></figure><figure><a href="/assets/apps/onair/3.webp"><img src="/assets/apps/onair/thumb/3.webp" alt="OnAir decoding a DAB+ ensemble with a list of stations and signal charts" width="960" height="576" loading="lazy" decoding="async"></a><figcaption>DAB+ radio</figcaption></figure></div>
+  </section>
+  <section class="app-section" aria-labelledby="built-title">
+    <h2 id="built-title">How it was built with AI</h2>
+    <div class="prose"><p>Checked 2026-11-23: 4,459 of 5,740 commits in the repository are co-authored by Claude. RTL-SDR.com's write-up carries the note: &quot;This software was coded with Claude AI.&quot;</p></div>
+  </section>
+  
+  <section class="app-section" aria-labelledby="buzz-title">
+    <h2 id="buzz-title">What people say</h2>
+    <div class="buzz">
+      <div class="prose"><p>RTL-SDR.com, the main radio hobby blog, covered OnAir twice in October 2026, and its readers' comments give a mixed but mostly warm picture. Fans call it brilliant and one of the few useful AI-built projects in the hobby. Others report that digital TV decoding failed for them, call it buggy, or would rather see the basics polished before more decoders are added. The blog itself cautions that decoders written this quickly may not all work as expected.</p>
+<p>We couldn't check Reddit for this round-up.</p></div>
+      <div class="buzz-cols"><div class="buzz-col good"><h3>People like</h3><ul><li>Huge range of signals in one free app</li><li>Several readers call it great and improving quickly</li><li>DAB, FM and ADS-B with maps work well for many users</li></ul></div><div class="buzz-col bad"><h3>Common complaints</h3><ul><li>DVB-T decoding failed for some readers</li><li>Still buggy in places</li><li>Some would rather see basic features refined before new decoders</li><li>Quickly written decoders may not all work as expected</li></ul></div></div>
+      <h3 class="buzz-sources-title">Where people said it</h3><ul class="buzz-sources"><li class="buzz-source">
+        <blockquote>&ldquo;Obviously, with these decoders all being vibecoded so quickly, there is no guarantee yet that they will all work as expected.&rdquo;</blockquote>
+        <p><a href="https://www.rtl-sdr.com/onair-adds-decoder-support-for-almost-every-signal/" target="_blank" rel="noopener">OnAir Adds Decoder Support for Almost Every Signal</a> <span class="buzz-by">RTL-SDR.com · October 15, 2026</span></p>
+      </li><li class="buzz-source">
+        <blockquote>&ldquo;It is a brilliant piece of software.&rdquo;</blockquote>
+        <p><a href="https://www.rtl-sdr.com/onair-adds-decoder-support-for-almost-every-signal/" target="_blank" rel="noopener">Same post: reader comment</a> <span class="buzz-by">Peter De Witte on RTL-SDR.com · October 2026</span></p>
+      </li><li class="buzz-source">
+        <blockquote>&ldquo;It’s great that new decoders are being added, but lets refine basic functionality first.&rdquo;</blockquote>
+        <p><a href="https://www.rtl-sdr.com/onair-adds-decoder-support-for-almost-every-signal/" target="_blank" rel="noopener">Same post: reader comment</a> <span class="buzz-by">Ric L on RTL-SDR.com · October 2026</span></p>
+      </li><li class="buzz-source">
+        <blockquote>&ldquo;It is still buggy but with a Pluto+ and MacOS I could decode DVB-T just fine.&rdquo;</blockquote>
+        <p><a href="https://www.rtl-sdr.com/onair-a-digital-tv-and-dab-decoder-for-sdrs/" target="_blank" rel="noopener">OnAir: A Digital TV and DAB Decoder for SDRs</a> <span class="buzz-by">anon on RTL-SDR.com · October 8, 2026</span></p>
+      </li><li class="buzz-source">
+        <blockquote>&ldquo;Working well with ADSB + maps and some channels on TV=T2 Australia.&rdquo;</blockquote>
+        <p><a href="https://www.rtl-sdr.com/onair-a-digital-tv-and-dab-decoder-for-sdrs/" target="_blank" rel="noopener">Same post: reader comment</a> <span class="buzz-by">Tony on RTL-SDR.com · October 2026</span></p>
+      </li></ul>
+      <p class="review-meta">Compiled by RemadeByAI from 5 public sources, checked November 23, 2026. Quotes are short excerpts; follow the links for the full context.</p>
+    </div>
+  </section>
+  <section class="app-section" aria-labelledby="review-title">
+    <h2 id="review-title">Our review</h2>
+    <p class="muted">We haven't reviewed OnAir yet.</p>
+  </section>
+  
+  <section class="app-section" aria-labelledby="related-title">
+    <h2 id="related-title">More in Science and space</h2>
+    <div class="cards">
+<article class="card" data-group="open" data-category="science-and-space" data-platform="macOS|iOS" data-price="Free" data-licence="MIT" data-search="nightwatch alternative to clear outside, astrospheric a menu-bar app for stargazers that finds tonight's clear window, ranks what you can see or photograph, and alerts you when it's worth setting up. science and space open source richard sutcliffe macos ios mit free astronomy astrophotography clear sky stargazing weather clear outside astrospheric telescope">
+  <div class="card-top"><span class="tile bar" aria-hidden="true">☾</span><small>Open source</small></div>
+  <h3 class="card-title"><a class="card-link" href="/apps/nightwatch/">Nightwatch</a></h3>
+  <p class="alternative">Alternative to Clear Outside, Astrospheric</p>
+  <p>A menu-bar app for stargazers that finds tonight's clear window, ranks what you can see or photograph, and alerts you when it's worth setting up.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/science-and-space/">Science and space</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="science-and-space" data-platform="Linux" data-price="Free" data-licence="GPL-3.0" data-search="mctl alternative to spacecraft tracking sites a retro mission-control display that tracks the iss, dragon capsules, hubble, jwst and more: orbit map, ground track, pass predictions and live iss telemetry. science and space open source liam droog linux gpl-3.0 free">
+  <div class="card-top"><span class="tile code" aria-hidden="true">✴</span><small>Open source</small></div>
+  <h3 class="card-title"><a class="card-link" href="/apps/mctl/">mctl</a></h3>
+  <p class="alternative">Alternative to spacecraft tracking sites</p>
+  <p>A retro mission-control display that tracks the ISS, Dragon capsules, Hubble, JWST and more: orbit map, ground track, pass predictions and live ISS telemetry.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/science-and-space/">Science and space</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+</div>
+  </section>
+  
+  <details class="badge-box">
+    <summary>Made OnAir? Add a “Listed on RemadeByAI” badge to your README</summary>
+    <div class="badge-body">
+      <p class="badge-previews"><img src="/assets/badge/listed-dark.svg" alt="Listed on RemadeByAI (dark)" width="172" height="28"> <img src="/assets/badge/listed-light.svg" alt="Listed on RemadeByAI (light)" width="172" height="28"></p>
+      <div class="snippet"><div class="snippet-head"><span>Markdown, dark badge</span><button class="copy" type="button" data-copy>Copy</button></div><pre><code>[![Listed on RemadeByAI](https://remadebyai.com/assets/badge/listed-dark.svg)](https://remadebyai.com/apps/onair/)</code></pre></div>
+      <div class="snippet"><div class="snippet-head"><span>Markdown, light badge</span><button class="copy" type="button" data-copy>Copy</button></div><pre><code>[![Listed on RemadeByAI](https://remadebyai.com/assets/badge/listed-light.svg)](https://remadebyai.com/apps/onair/)</code></pre></div>
+      <p class="muted">Want it to follow the reader's light or dark mode on GitHub? See <a href="/badge/?app=onair">the badge page</a>.</p>
+    </div>
+  </details>
+</div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div class="foot-about"><a class="brand" href="/">RemadeBy<em>AI</em></a><p>Familiar software, rebuilt with AI. <em class="foot-note">(A software directory from <a href="https://emukey.com/" target="_blank" rel="noopener">EmuKey LLC</a>.)</em></p></div>
+    <nav class="foot-links" aria-label="Footer"><a href="/apps/">All apps</a><a href="/new/">New arrivals</a><a href="/categories/">Categories</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
+  </div>
+</footer>
+</body>
+</html>
