@@ -53,7 +53,7 @@ Updated 2026-11-23 3:31 AM Central. The feature is the `whatPeopleSay` field in 
 - Sill
 - Compositor
 
-## Added in hunt 9 with a section, waiting for Go live (6)
+## Added in hunt 9 with a section, live (6)
 All quotes re-checked against their pages on 2026-11-23.
 - layerling
 - OnAir
@@ -61,6 +61,12 @@ All quotes re-checked against their pages on 2026-11-23.
 - Parrot
 - Cra
 - Tellyscope
+
+## Added in hunt 10 with a section, waiting for Go live (3)
+All quotes re-checked against their pages on 2026-11-23.
+- HolyArrs
+- Pyramid Wars (itch.io player comments on the game page and the AI Browser Game Jam 3 page)
+- AI WORMS (itch.io player comments on the game page and the AI Browser Game Jam 5 page)
 
 ## Live since 2026-11-23 (4bbb713) (13)
 - LightCraft
@@ -77,7 +83,7 @@ All quotes re-checked against their pages on 2026-11-23.
 - A Game About Capybaras Delivering Food
 - Rackula
 
-## Checked: no real outside coverage (80)
+## Checked: no real outside coverage (92)
 These have `"whatPeopleSay": { "checked": "2026-11-23", "none": true }`, so the page shows "No outside reviews of X yet. We last checked ...". Re-check now and then; when coverage turns up, replace the entry with a full one.
 
 - Locode
@@ -160,6 +166,18 @@ These have `"whatPeopleSay": { "checked": "2026-11-23", "none": true }`, so the 
 - Faro (hunt 9)
 - StykAnimate (hunt 9)
 - ZenLink (hunt 9)
+- BackupZit (hunt 10; one Proxmox forum thread only)
+- Arctis Sound Manager (hunt 10)
+- PrintStash (hunt 10)
+- Strata Files (hunt 10; one AlternativeTo comment only)
+- GymCoach (hunt 10; one HN comment only)
+- IMAGO (hunt 10)
+- Postfalcon (hunt 10)
+- Codetta (hunt 10)
+- Ferry (hunt 10)
+- Merran (hunt 10)
+- Arena Game (hunt 10)
+- Hack://TheSystem (hunt 10)
 
 ## Partly checked: worth another look (2)
 - Claude of Tanks: the main player discussion is a Reddit thread and X posts (both blocked); the HN post had no comments

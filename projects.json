@@ -8429,6 +8429,910 @@
         "checked": "2026-11-23",
         "none": true
       }
+    },
+    {
+      "name": "HolyArrs",
+      "slug": "holyarrs",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Sonarr, Radarr and Overseerr",
+      "description": "One self-hosted app that finds, requests, downloads and files your shows, movies and music for Plex, Jellyfin or Emby, in place of six separate *arr apps.",
+      "category": "Media server",
+      "url": "https://holyarrs.com",
+      "linkText": "Visit site",
+      "download": "https://github.com/HolyArrs/HolyArrs/releases/latest",
+      "source": "https://github.com/HolyArrs/HolyArrs",
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "maker": "CoderLuii",
+      "icon": "✚",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "HolyArrs does the jobs of Sonarr, Radarr, Lidarr, Bazarr, Prowlarr and Seerr in one app with one login. You browse it like a streaming service, people in your household ask for a title, and it searches your indexers, picks a release by your rules, sends it to qBittorrent, SABnzbd or another downloader, fetches subtitles and files it into your library. It has a calendar, alerts to Discord, Telegram, ntfy and others, and can import an existing Sonarr, Radarr, Lidarr, Prowlarr, Bazarr or Seerr setup without changing it.\n\nIt runs as a small Docker container (about 16 MB) on amd64, arm64 or armv7, with an experimental Synology package too. Posters and search come from the maker's own metadata server, so no API keys are needed. The project went public in November 2026 and is still young.",
+      "builtWithAI": "The maker on Show HN (2026-11-10): \"how it got built: claude code wrote most of the go and svelte. i wrote the specs, reviewed everything and tested it on my own server.\" Checked 2026-11-23: none of the 129 public commits carry a Claude co-author line.",
+      "keywords": [
+        "Sonarr",
+        "Radarr",
+        "Lidarr",
+        "Bazarr",
+        "Prowlarr",
+        "Overseerr",
+        "Seerr",
+        "arr stack"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "HolyArrs got a busy Show HN launch and two setup guides within its first week. People like the idea of one small app with one login in place of six, and guide writers say it is worth trying next to an existing setup. The common worries are that it is very new and largely AI-written, that it depends on the maker's own metadata server, and that earlier attempts to merge the *arr apps faded away. Coverage so far is launch discussion and tutorials, not long-term use.",
+        "praise": [
+          "One app, one login and one port instead of six",
+          "Very small download, because it is a single Go program",
+          "Imports an existing Sonarr or Radarr setup without changing it, so it is easy to try side by side"
+        ],
+        "complaints": [
+          "Very young, with many releases a day at launch, so behaviour can change",
+          "Relies on a metadata server run and paid for by the maker",
+          "Doubts about long-term maintenance of a largely AI-written project",
+          "Some feel the separate *arr apps exist for good reasons"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: A 15 MB self-hosted Netflix and Spotify for your media server",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50443332",
+            "date": "2026-11-10",
+            "quote": "One static Go binary skips all of that.",
+            "who": "inexcf",
+            "points": "172 points"
+          },
+          {
+            "title": "HolyArrs vs the arr stack: should you switch?",
+            "site": "SSD Nodes",
+            "url": "https://www.ssdnodes.com/learn/holyarrs-vs-the-arr-stack",
+            "date": "2026-11-18",
+            "quote": "If you have an arr stack that works, try HolyArrs beside it for now and do not switch yet.",
+            "who": "Matt Connor"
+          },
+          {
+            "title": "HolyArrs Docker Setup: One 15 MB App Instead of Six *arr Containers",
+            "site": "Bitdoze",
+            "url": "https://www.bitdoze.com/holyarrs-docker-guide/",
+            "date": "2026-11-13",
+            "quote": "That external metadata dependency is the biggest structural trade-off compared to Sonarr and Radarr",
+            "who": "Dragos Balota"
+          },
+          {
+            "title": "Show HN: A 15 MB self-hosted Netflix and Spotify for your media server",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50440290",
+            "date": "2026-11-10",
+            "quote": "I've seen multiple \"consolidate all the arr\" attempts over the years. None prevail.",
+            "who": "tjohnell"
+          },
+          {
+            "title": "Show HN: A 15 MB self-hosted Netflix and Spotify for your media server",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50441020",
+            "date": "2026-11-10",
+            "quote": "I am a bit disturbed by the built-in reliance on your metadata server.",
+            "who": "corroclaro"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BackupZit",
+      "slug": "backupzit",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Veeam and NAKIVO",
+      "description": "Self-hosted backup software run from one web console. It backs up PCs, servers, Proxmox, Hyper-V and VMware VMs, databases, NAS shares and Microsoft 365.",
+      "category": "Backup",
+      "url": "https://backupzit.com/",
+      "linkText": "Visit site",
+      "download": "https://github.com/Max-Zit/backupzit/releases/latest",
+      "source": "https://github.com/Max-Zit/backupzit",
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "maker": "MaxZit",
+      "icon": "⛁",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "A web console runs jobs for agents on Windows, Linux and Mac machines. It covers files, whole Windows disks and Linux systems with bare-metal restore, Proxmox VE, VMware ESXi and Hyper-V virtual machines (including instant recovery and automatic boot tests for Proxmox), SQL Server, PostgreSQL and MySQL databases, NAS shares and Microsoft 365 mail, OneDrive and SharePoint. Backups are deduplicated, compressed and encrypted, and can go to SFTP, S3, SMB, Azure, USB disks or an immutable hardened repository.\n\nThe console needs a small Linux VM (Debian, Ubuntu, AlmaLinux or Rocky) and comes as a ready-made VM image, an installer ISO, an install script or Docker. The Mac agent is Apple silicon only (macOS 13+) and backs up files. The first public release was in October 2026, and MaxZit sells optional support.",
+      "builtWithAI": "Checked 2026-11-23: 163 of 493 commits are co-authored by Claude.",
+      "keywords": [
+        "Veeam",
+        "NAKIVO",
+        "Proxmox backup",
+        "Hyper-V backup",
+        "bare metal restore",
+        "Microsoft 365 backup"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/backupzit/1.webp",
+          "alt": "BackupZit console showing a nightly backup job with its schedule, retention and run history",
+          "caption": "A backup job"
+        },
+        {
+          "src": "/assets/apps/backupzit/2.webp",
+          "alt": "BackupZit page for a finished backup run with file counts, data read and restore options",
+          "caption": "A finished backup"
+        },
+        {
+          "src": "/assets/apps/backupzit/3.webp",
+          "alt": "BackupZit calendar of planned and finished backup runs for October 2026",
+          "caption": "Calendar of runs"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Arctis Sound Manager",
+      "slug": "arctis-sound-manager",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to SteelSeries GG and Sonar",
+      "description": "A Linux app for SteelSeries Arctis headsets, with a Sonar-style equalizer, a Game, Chat and Media mixer, ChatMix and headset settings like battery, sidetone and noise cancelling.",
+      "category": "Audio",
+      "url": "https://loteran.github.io/Arctis-Sound-Manager/",
+      "linkText": "Visit site",
+      "download": "https://github.com/loteran/Arctis-Sound-Manager/releases/latest",
+      "source": "https://github.com/loteran/Arctis-Sound-Manager",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "maker": "Loteran",
+      "icon": "◖",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "SteelSeries does not make GG or Sonar for Linux, so this fills the gap. It splits your audio into Game, Chat and Media channels with a ChatMix slider, routes browsers and players automatically, and has a Sonar-style parametric EQ with over 350 game presets that can switch on by itself when a game starts. It also does spatial audio, mic noise removal, a separate stream mix for OBS, 30-second clips and headset controls such as ANC, sidetone and battery.\n\nIt supports the Arctis Nova Pro, Nova Elite, Nova 7, 5 and 3, older Arctis 7, 9 and Pro models and GameBuds, and is built on PipeWire. One install script covers Arch, Fedora, Debian and Ubuntu, with a Distrobox setup for Bazzite and SteamOS. Parts of the code come from the earlier Linux Arctis Manager project.",
+      "builtWithAI": "Checked 2026-11-23: 1,557 of 3,203 commits are co-authored by Claude.",
+      "keywords": [
+        "SteelSeries GG",
+        "SteelSeries Sonar",
+        "Arctis Nova Pro",
+        "ChatMix",
+        "headset EQ",
+        "PipeWire"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/arctis-sound-manager/1.webp",
+          "alt": "Arctis Sound Manager channel mixer with Master, Game, Chat and Media sliders and a ChatMix bar for an Arctis Nova Pro Wireless",
+          "caption": "Channel mixer"
+        },
+        {
+          "src": "/assets/apps/arctis-sound-manager/2.webp",
+          "alt": "Arctis Sound Manager Sonar page with a parametric EQ curve, game presets, macro sliders and Spatial Audio",
+          "caption": "Sonar EQ"
+        },
+        {
+          "src": "/assets/apps/arctis-sound-manager/3.webp",
+          "alt": "Arctis Sound Manager Devices page listing headset battery, noise cancelling, mic and GameDAC status",
+          "caption": "Headset status"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "PrintStash",
+      "slug": "printstash",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Manyfold",
+      "description": "A self-hosted library for your 3D models that keeps each model's files, G-code revisions, slicer settings and print results together, and can send jobs to your printers.",
+      "category": "3D printing",
+      "url": "https://www.printstash.org",
+      "linkText": "Visit site",
+      "source": "https://github.com/xiao-villamor/PrintStash",
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Xiao Villamor",
+      "icon": "▦",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "Upload models and archives or index a folder or NAS in place, then sort them into collections with tags, filters and saved views. It previews meshes and G-code layers, compares slicer settings between revisions, lets you mark the known-good one, and records print outcomes, time, cost and filament (with optional Spoolman). It reads STL, 3MF, OBJ, STEP, G-code and more, but does not slice models itself.\n\nIt runs as one Docker container on SQLite, with PostgreSQL, S3 storage and OIDC sign-in as options. Moonraker/Klipper is the main printer integration; Bambu LAN, PrusaLink, OctoPrint and Elegoo Centauri Carbon support is in beta.",
+      "builtWithAI": "The repo has a CLAUDE.md agent guide and a .claude folder. Checked 2026-11-23: 352 of 1,701 commits are co-authored by Claude.",
+      "keywords": [
+        "Manyfold",
+        "3D model library",
+        "STL organizer",
+        "G-code manager",
+        "Klipper",
+        "Moonraker",
+        "OctoPrint",
+        "Spoolman"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/printstash/1.webp",
+          "alt": "PrintStash model page with a 3D preview of a coin beside its recommended G-code, slicer settings and a Send to printer button",
+          "caption": "Model with recommended print"
+        },
+        {
+          "src": "/assets/apps/printstash/2.webp",
+          "alt": "PrintStash printer page showing a Klipper printer's print progress, temperatures and controls",
+          "caption": "Printer monitoring"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Strata Files",
+      "slug": "strata-files",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Finder",
+      "description": "A fast, keyboard-first file manager for the Mac with instant search, live folder sizes, a disk usage map and dual panes, built to feel like part of macOS.",
+      "category": "Utilities",
+      "url": "https://stratafiles.app/",
+      "linkText": "Visit site",
+      "download": "https://github.com/cristipufu/strata-files/releases/latest",
+      "source": "https://github.com/cristipufu/strata-files",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Cristi Pufu",
+      "icon": "◫",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "It indexes your home folder and Applications so searches return as you type, including plain-English queries like \"videos bigger than 500 MB\". Folders show their real size right away, a Disk Usage view maps where space went, and Large Files and Duplicates help clean up. Copies can be paused and resumed, conflicts are shown side by side, and past operations can be undone. Pressing Space previews dozens of formats, from Markdown and SQLite to archives and 3D models.\n\nFor developers it shows Git status per file, cleans build folders, and browses SFTP, S3 and Docker containers. Everything runs locally with no account. It needs an Apple silicon Mac on macOS 26 or later and can also be installed with Homebrew.",
+      "builtWithAI": "The repo has CLAUDE.md and AGENTS.md files. Checked 2026-11-23: 146 of 803 commits are co-authored by Claude.",
+      "keywords": [
+        "Finder",
+        "file manager",
+        "Path Finder",
+        "ForkLift",
+        "Commander One",
+        "disk usage",
+        "dual pane",
+        "Mac"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/strata-files/1.webp",
+          "alt": "Five Strata windows stacked in different color themes, each listing project folders",
+          "caption": "Color themes"
+        },
+        {
+          "src": "/assets/apps/strata-files/2.webp",
+          "alt": "Strata showing results for the plain-English search videos bigger than 500 MB",
+          "caption": "Plain-English search"
+        },
+        {
+          "src": "/assets/apps/strata-files/3.webp",
+          "alt": "Strata's disk usage map showing a folder's subfolders as blocks sized by space used",
+          "caption": "Disk usage map"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "GymCoach",
+      "slug": "gymcoach",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Hevy and Strong",
+      "description": "A self-hosted workout tracker with an AI coach that reads your own logs: it suggests loads, flags stalled lifts and writes programs, using your own Claude, OpenRouter or local model.",
+      "category": "Health and fitness",
+      "url": "https://github.com/gymcoach-app/gymcoach",
+      "linkText": "Get it on GitHub",
+      "source": "https://github.com/gymcoach-app/gymcoach",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Julien Audibert",
+      "icon": "✚",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "Log sets quickly (shorthand like 100x8@9 works), with a rest timer, plate calculator, supersets and offline logging as an installable web app. Progress pages chart estimated 1RM and weekly volume per muscle, with a muscle heat map, records and a training calendar. It includes classic programs like 5/3/1, GZCLP and StrongLifts, logs cardio, and imports history from Strong, Hevy, Apple Health, Strava and watch files.\n\nWhat sets it apart from other self-hosted trackers is the coach: add an Anthropic, OpenRouter or local model key and it gives weekly reviews, answers questions about your training and generates programs from one sentence. Without a key it is a plain tracker. It runs with Docker on an x86_64 server, and there is a live demo.",
+      "builtWithAI": "The README calls it \"an AI coach, built by an AI\" and says Claude Code agents maintain the app, from picking issues to merging pull requests, while a human sets the direction. Checked 2026-11-23: 317 of 565 commits are co-authored by Claude.",
+      "keywords": [
+        "Hevy",
+        "Strong",
+        "Fitbod",
+        "workout log",
+        "gym tracker",
+        "AI coach",
+        "strength training",
+        "self-hosted"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/gymcoach/1.webp",
+          "alt": "GymCoach home screen on a phone with a new personal record card and the week's program sessions",
+          "caption": "Home dashboard"
+        },
+        {
+          "src": "/assets/apps/gymcoach/2.webp",
+          "alt": "GymCoach progress page with weekly volume per muscle group and a muscle heat map",
+          "caption": "Volume and muscle map"
+        },
+        {
+          "src": "/assets/apps/gymcoach/3.webp",
+          "alt": "GymCoach AI program page with a box to describe goals and a Generate button",
+          "caption": "AI program generator"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "IMAGO",
+      "slug": "imago",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Adobe Lightroom",
+      "description": "A non-destructive photo editor for the photos on your Immich server or your phone, with light, colour, curves, masks and reusable recipes.",
+      "category": "Graphics",
+      "url": "https://imago.742studio.eu",
+      "linkText": "Visit site",
+      "download": "https://play.google.com/store/apps/details?id=eu.studio742.imago",
+      "source": "https://github.com/paulomarques742/imago",
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Android"
+      ],
+      "maker": "Paulo Marques (742 Studio)",
+      "icon": "◐",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "IMAGO opens the photos on your own Immich server (version 2.6.0 or later, connected with an API key) or in your phone's gallery and edits them without touching the original: exposure, contrast, highlights and shadows, colour, a tone curve, an eight-band colour mixer, colour grading wheels, linear and radial masks, crop and straighten. Every edit is kept as a recipe you can change later, and exports go back to Immich at full resolution, stacked on the original.\n\nIt needs Android 12 or later and runs its adjustments on the device's GPU at 16 bits per channel. A composer turns photos into stories, posts and carousels. An optional account syncs recipes and presets between devices, but photos never sync and there are no ads or analytics. A Windows desktop app is in the same repo, but it has to be built from source; the site only links to Google Play. An optional supporter plan costs EUR 1 a month.",
+      "builtWithAI": "The repo has an AGENTS.md guide for coding agents. Checked 2026-11-23: 164 of 180 commits are co-authored by Claude.",
+      "keywords": [
+        "Lightroom",
+        "Immich",
+        "photo editor",
+        "non-destructive",
+        "Snapseed",
+        "Android photo editor"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/imago/1.webp",
+          "alt": "IMAGO on a tablet, editing a photo of a red lighthouse with exposure, contrast, highlights and shadows sliders in a side panel",
+          "caption": "Editing on a tablet"
+        },
+        {
+          "src": "/assets/apps/imago/2.webp",
+          "alt": "IMAGO on a phone applying a linear gradient mask to the sky above a lighthouse, with exposure and contrast sliders for the mask",
+          "caption": "Masks"
+        },
+        {
+          "src": "/assets/apps/imago/3.webp",
+          "alt": "IMAGO recipe library on a phone showing filter previews such as Golden Hour, Dramatic, Pastel and Black and White",
+          "caption": "Built-in recipes"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Postfalcon",
+      "slug": "postfalcon",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Buffer and Hootsuite",
+      "description": "A social media scheduler: write a post once, place it on a calendar and have it published to Mastodon, Bluesky, Instagram, TikTok, LinkedIn and more.",
+      "category": "Business",
+      "url": "https://postfalcon.co",
+      "linkText": "Visit site",
+      "source": "https://github.com/postfalcon/postfalcon",
+      "license": "AGPL-3.0",
+      "price": "Freemium",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Postfalcon (natewhi)",
+      "icon": "▦",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "Postfalcon schedules posts for Mastodon, Bluesky, Facebook, Instagram, Threads, Telegram, YouTube, TikTok, Pinterest and LinkedIn (X too, if you pay for X's API). One composer cross-posts to several channels with per-platform options, a calendar lets you drag posts to new times, posts can repeat daily, weekly or monthly, and an analytics page pulls back views, likes, comments and shares. A REST API, an MCP server for AI assistants and outbound webhooks are included.\n\nYou can self-host it for free with every feature: a one-line installer sets it up with Docker on a Linux server with a domain, using about 100 MB of memory. The hosted version at postfalcon.co is free for Mastodon, Bluesky and Telegram, and paid plans for the other platforms start at $29 a month with a 7-day trial.",
+      "builtWithAI": "The repo ships a CLAUDE.md file describing its conventions. Checked 2026-11-23: 136 of 145 commits are co-authored by Claude.",
+      "keywords": [
+        "Buffer",
+        "Hootsuite",
+        "Postiz",
+        "social media scheduler",
+        "cross-posting",
+        "Mastodon",
+        "Bluesky"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/postfalcon/1.webp",
+          "alt": "Postfalcon month calendar for November 2026 filled with scheduled posts for a demo coffee roaster across five channels",
+          "caption": "Content calendar"
+        },
+        {
+          "src": "/assets/apps/postfalcon/2.webp",
+          "alt": "Postfalcon new post window with a caption, a coffee photo, channel picker, live preview and scheduling options",
+          "caption": "Writing a post"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Codetta",
+      "slug": "codetta",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Mp3tag and MusicBrainz Picard",
+      "description": "A self-hosted music library manager you use from a browser: fix tags and cover art, match albums on MusicBrainz, rename and organise files, and file new downloads.",
+      "category": "Audio",
+      "url": "https://gavndev.github.io/codetta/",
+      "linkText": "Visit site",
+      "source": "https://github.com/gavndev/codetta",
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Web",
+        "Linux",
+        "macOS"
+      ],
+      "maker": "Gavin Griggs",
+      "icon": "♪",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "Codetta runs next to your music and opens in any browser, including your phone. Edit tags for one track or a whole album with a preview before anything is written, match albums on MusicBrainz (with Discogs, Deezer and iTunes as fallbacks), rename and move files with a folder pattern, and point it at a downloads folder so new music is matched and filed. A library health check finds split albums, missing covers and duplicates, and every change can be undone from the activity log.\n\nIt handles FLAC, MP3, M4A, OGG, WAV, AIFF, WMA and more, and tells Navidrome, Jellyfin, Emby, Plex and Lidarr to rescan after changes. It runs as a small Docker container (Intel/AMD or ARM, Raspberry Pi 4 and up), or on a Linux or Mac computer via pipx (Python 3.14) or snap. It is still labelled beta, so keep a backup of your music.",
+      "builtWithAI": "The README says: \"Codetta is AI-Assisted. ... This project is assisted by Claude Opus 5.5.\" Checked 2026-11-23: 94 of 236 commits are co-authored by Claude.",
+      "keywords": [
+        "Mp3tag",
+        "MusicBrainz Picard",
+        "beets",
+        "tag editor",
+        "music tagger",
+        "Navidrome",
+        "Lidarr"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/codetta/1.webp",
+          "alt": "Codetta library view listing artist folders with a Library health card showing 3 things to look at",
+          "caption": "Music library"
+        },
+        {
+          "src": "/assets/apps/codetta/2.webp",
+          "alt": "Codetta Library health dialog flagging an album with two spellings of its name, a folder with no cover and missing tags, each with fix buttons",
+          "caption": "Library health"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Ferry",
+      "slug": "ferry",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to AirDrop and Pushbullet",
+      "description": "A small server on your home network that passes text, links and files between your phone and computers, with a shared timeline of everything each device sent.",
+      "category": "File sharing",
+      "url": "https://max1874.com/ferry/",
+      "linkText": "Visit site",
+      "download": "https://github.com/max1874/ferry/releases/latest",
+      "source": "https://github.com/max1874/ferry",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "maker": "Max",
+      "icon": "⇄",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "Ferry looks like a chat with yourself: paste a link, a shell command, a photo or a file on one device and it lands in a timeline every joined device can read, with a one-tap copy button. Files up to 64 MB are stored as uploaded, without re-encoding. There is no account; a new device joins by scanning a QR code, optionally gated by a shared password, and can be revoked later. Any message can be recalled from the server.\n\nIt runs as one Go server with SQLite, usually via Docker Compose on an always-on amd64 or arm64 machine, and is meant to stay on a trusted private network over plain HTTP, not the public internet. Any browser works as a client; optional native apps exist for Android 8+ (APK in the releases) and iOS 26+ (FerryDrop on the App Store). There is no automatic discovery or background clipboard sync.",
+      "builtWithAI": "The repo has a CLAUDE.md agent guide. Checked 2026-11-23: 80 of 134 commits are co-authored by Claude.",
+      "keywords": [
+        "AirDrop",
+        "Pushbullet",
+        "clipboard sharing",
+        "LAN file transfer",
+        "FerryDrop",
+        "self-hosted",
+        "send link to phone"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/ferry/1.webp",
+          "alt": "Ferry web timeline with a link and a command sent from an iPhone and a MacBook, a text file and an image, each labelled with the sending device",
+          "caption": "Shared device timeline"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Merran",
+      "slug": "merran",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Paprika and Mealie",
+      "description": "A self-hosted meal planner for households that keeps recipes, a weekly plan, shopping lists and a pantry together. It is still alpha software.",
+      "category": "Home",
+      "url": "https://merran.app/",
+      "linkText": "Visit site",
+      "source": "https://github.com/merran-app/merran",
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Kyle Johnson",
+      "icon": "✎",
+      "tile": "",
+      "added": "2026-11-23",
+      "longDescription": "Merran is in alpha: there are only pre-release versions so far, and the maker asks you to back up its data folder before every update. Import recipes from websites, write your own or migrate from Mealie and other apps, then plan the week with serving counts, build shared shopping lists that combine quantities, and track pantry amounts and use-by dates. A cooking view gives step-by-step instructions, ingredient checklists and timers, and there is a browser extension and an API with scoped keys.\n\nIt runs as one Docker container with SQLite built in, with Postgres optional, and works in the browser on phones, tablets and desktops. Recipes, planning, lists and the pantry work without AI; an optional assistant for imports, substitutions and suggested changes uses your own AI provider or endpoint. Sending lists to supported store carts, nutrition and voice need extra setup.",
+      "builtWithAI": "The repo has CLAUDE.md and AGENTS.md agent guides and a .claude folder. Checked 2026-11-23: 126 of 174 commits are co-authored by Claude.",
+      "keywords": [
+        "Paprika",
+        "Mealie",
+        "Tandoor",
+        "recipe manager",
+        "meal planner",
+        "grocery list",
+        "pantry",
+        "self-hosted"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/merran/1.webp",
+          "alt": "Merran Today page with tonight's dinner, a Start cooking button and cards for the week's plan, shopping and food to use soon",
+          "caption": "Today view"
+        },
+        {
+          "src": "/assets/apps/merran/2.webp",
+          "alt": "Merran recipe library with search, diet and tag filters and recipe cards showing cooking time, rating and cost per serving",
+          "caption": "Recipe library"
+        },
+        {
+          "src": "/assets/apps/merran/3.webp",
+          "alt": "Merran weekly plan with breakfast and dinner for each day, meals planned, calories and budget",
+          "caption": "Weekly meal plan"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Pyramid Wars",
+      "slug": "pyramid-wars",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by real-time strategy games",
+      "description": "A fast top-down pixel-art strategy game in your browser: build a base, mine crystals, click enemies and cast abilities to destroy the enemy pyramid before yours falls.",
+      "category": "Games",
+      "url": "https://durian-arcade.itch.io/pyramid-wars",
+      "linkText": "Play now",
+      "icon": "▲",
+      "tile": "glance",
+      "added": "2026-11-23",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "Durian Arcade",
+      "longDescription": "You lead a blue army across 10 desert and winter battlefields, placing factories, towers and crystal harvesters, dragging units into position and casting abilities on keys 1 to 5. Gold earned in battle buys booster packs of unit and ability cards (common, rare and legendary) that strengthen your army, and there is a tutorial and a map editor.\n\nThe free browser version on itch.io is a demo that won the AI Browser Game Jam 3. A Steam version for Windows and Linux has a planned release date of 1 March 2027, with a demo and a playtest already on Steam (store.steampowered.com/app/4996430).",
+      "builtWithAI": "The maker says on itch.io: \"This was vibe coded using Claude Opus 4.8 with a 20x Pro plan in 3 weeks. It's vanilla HTML + JS. The sounds and graphics were also created with Claude and are included in the code.\" The jam entry adds that the cover image was made with Super Grok.",
+      "keywords": [
+        "rts",
+        "real-time strategy",
+        "clicker",
+        "pixel art",
+        "tanks",
+        "booster packs",
+        "tower defense"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/pyramid-wars/1.webp",
+          "alt": "Blue and red tank armies fighting across a snowy battlefield in Pyramid Wars",
+          "caption": "A winter battle"
+        },
+        {
+          "src": "/assets/apps/pyramid-wars/2.webp",
+          "alt": "A base with crystal fields and tanks on a desert map",
+          "caption": "Building up the base"
+        },
+        {
+          "src": "/assets/apps/pyramid-wars/3.webp",
+          "alt": "The Market screen with unit, ability and premium booster packs",
+          "caption": "The booster pack market"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "The only feedback so far comes from players on itch.io, mostly fellow entrants in the AI Browser Game Jam 3, where it ranked first overall from 14 ratings. Players enjoyed the fast matches, the depth and the tutorial, and several called it their favourite entry. The common criticism is balance: difficulty jumps after level 5, the tank AI wanders, and the mix of clicker and RTS can feel busy. Coverage is thin and limited to jam comments.",
+        "praise": [
+          "Fast, action-packed matches",
+          "Deeper strategy than expected for a jam game",
+          "Clear tutorial that helps newcomers to the genre"
+        ],
+        "complaints": [
+          "Difficulty spikes after level 5",
+          "Tank AI sometimes ignores the base",
+          "Clicker and RTS parts compete, which can feel cluttered"
+        ],
+        "sources": [
+          {
+            "title": "Pyramid Wars Demo (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 3",
+            "url": "https://itch.io/jam/ai-game-jam-3/rate/4673138",
+            "date": "2026-06-30",
+            "quote": "This is my favorite submission in this Jam! I had a blast playing this and beat all 10 levels.",
+            "who": "HD Expanse",
+            "points": "Ranked #1 overall, 4.29 out of 5 from 14 ratings"
+          },
+          {
+            "title": "Pyramid Wars Demo (comments)",
+            "site": "itch.io",
+            "url": "https://durian-arcade.itch.io/pyramid-wars",
+            "date": "2026-07-04",
+            "quote": "Love the action packed quickness from start to finish of each match!",
+            "who": "InquisitorMu"
+          },
+          {
+            "title": "Pyramid Wars Demo (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 3",
+            "url": "https://itch.io/jam/ai-game-jam-3/rate/4673138",
+            "date": "2026-06-27",
+            "quote": "The tutorial is really well-done, and is something that is often forgotten.",
+            "who": "Yen Rye"
+          },
+          {
+            "title": "Pyramid Wars Demo (comments)",
+            "site": "itch.io",
+            "url": "https://durian-arcade.itch.io/pyramid-wars",
+            "date": "2026-06-24",
+            "quote": "Had a lot of fun playing this, after level 5 though it seems next to imposable lol.",
+            "who": "trashy.io"
+          },
+          {
+            "title": "Pyramid Wars Demo (comments)",
+            "site": "itch.io",
+            "url": "https://durian-arcade.itch.io/pyramid-wars",
+            "date": "2026-07-04",
+            "quote": "As the previous player mentioned, the tank AI could use a bit of tweaking.",
+            "who": "InquisitorMu"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AI WORMS",
+      "slug": "ai-worms",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by whack-a-mole arcade games",
+      "description": "A one-button tapping game: whack the glowing worms that possess appliances before they escape, across eleven worlds from the kitchen to outer space. Best on a phone.",
+      "category": "Games",
+      "url": "https://seymour8glass.itch.io/ai-worms",
+      "linkText": "Play now",
+      "icon": "◉",
+      "tile": "voice",
+      "added": "2026-11-23",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "seymour8glass",
+      "longDescription": "You chase the worms from the Kitchen through the Living Room, Garage, Yard, a Halloween campfire, Dracula's Castle, Outer Space, the Glowing Deep and Neon Tokyo up into the Cloud for a boss fight, with a Christmas bonus level after it. Tapping friendly characters gives a bonus, linked worms pop together, and catching bouncing worms or flying treats doubles your points. Let five worms escape and you can continue from the level you reached.\n\nIt is made for ages 7 and up and plays best on a phone in portrait; on a laptop a yellow ring shows which worm your cursor will hit, and desktop play is deliberately easier. There are no image or audio files: all graphics, music and sound are drawn and synthesised live in the browser.",
+      "builtWithAI": "The maker says on itch.io: \"built entirely by AI, directed by a human. Every line of code, every drawing, every sound and all the music came from Claude (Anthropic) through conversation.\" They playtested over more than 140 versions, and Claude also wrote test bots that play the levels.",
+      "keywords": [
+        "whack-a-mole",
+        "whack a mole",
+        "tapping game",
+        "one-button",
+        "casual",
+        "mobile game",
+        "worms"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/ai-worms/1.webp",
+          "alt": "Glowing worms and garden gnomes in a night-time backyard level of AI WORMS",
+          "caption": "The Yard"
+        },
+        {
+          "src": "/assets/apps/ai-worms/2.webp",
+          "alt": "Worms escaping along a neon city street with a green dinosaur",
+          "caption": "Neon Tokyo"
+        },
+        {
+          "src": "/assets/apps/ai-worms/3.webp",
+          "alt": "Worms riding jellyfish in an underwater level with a shark and a mermaid",
+          "caption": "The Glowing Deep"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "summary": "Feedback comes from players on itch.io, mostly other entrants in the AI Browser Game Jam 5, where it was rated by 29 players. People describe it as a cute, silly and chaotic whack-a-mole with surprisingly many levels and satisfying sound effects. Criticisms are that later stages get too busy to read, it can feel repetitive, and one player found it too fast on desktop (the maker has since made desktop easier). Coverage is limited to jam comments, which tend to be friendly.",
+        "praise": [
+          "Cute, absurd and fun for short sessions",
+          "More levels and variety than expected",
+          "Satisfying sound effects and music"
+        ],
+        "complaints": [
+          "Later stages get chaotic and hard to read",
+          "Can feel repetitive after a while",
+          "Bright, busy screens can tire the eyes"
+        ],
+        "sources": [
+          {
+            "title": "AI WORMS : They're Everywhere (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5207755",
+            "date": "2026-11-02",
+            "quote": "It’s like a whack-a-mole fever dream during the flu.",
+            "who": "m040xie",
+            "points": "3.70 out of 5 for Fun from 29 ratings"
+          },
+          {
+            "title": "AI WORMS : They're Everywhere (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5207755",
+            "date": "2026-11-10",
+            "quote": "Agree with everyone else rating, great little whack-a-mole time waster.",
+            "who": "Zucchini Basket Games"
+          },
+          {
+            "title": "AI WORMS (comments)",
+            "site": "itch.io",
+            "url": "https://seymour8glass.itch.io/ai-worms",
+            "date": "2026-11-02",
+            "quote": "It gets a bit chaotic around stages 4–5, though.",
+            "who": "TheDannos",
+            "points": "5.0 out of 5 from 3 ratings"
+          },
+          {
+            "title": "AI WORMS : They're Everywhere (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5207755",
+            "date": "2026-11-01",
+            "quote": "It does feel a bit repetitive after a while, but it's a nice casual experience overall.",
+            "who": "dporto"
+          },
+          {
+            "title": "AI WORMS : They're Everywhere (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5207755",
+            "date": "2026-11-05",
+            "quote": "Really fun and addictive to play, though my eyes started to feel a little strained after playing for a while haha.",
+            "who": "PATLOM"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Arena Game",
+      "slug": "arena-game",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by real-time strategy arena games",
+      "description": "A real-time 3D strategy game in your browser where two players buy tanks, helicopters and infantry while each also runs around the map as a soldier. Play a person or the computer.",
+      "category": "Games",
+      "url": "https://arena.ibuildstuff.eu",
+      "linkText": "Play now",
+      "icon": "⚑",
+      "tile": "bar",
+      "added": "2026-11-23",
+      "source": "https://github.com/tombuildsstuff/web-arena-game",
+      "license": "MIT",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "Tom Harvey",
+      "longDescription": "Matches last five minutes. You earn money over time and from kills, spend it on tanks, helicopters, snipers, rocket launchers and super units that march toward the enemy base, and claim turrets, forward bases and barracks along the way; whoever scores the most points wins. You can queue for a real opponent, practise against Easy, Medium or Hard AI on two maps, watch live games and climb a leaderboard, with a choice of visual themes and touch controls on phones.\n\nYou can play as a guest or sign in with GitHub or BlueSky to keep your stats. The server is written in Go with a Three.js client, and you can build and host your own copy as a single binary.",
+      "builtWithAI": "Checked 2026-11-23: 22 of the repo's 53 commits are co-authored by Claude. The site says: \"This entire game was coded by Claude Code (Anthropic's AI coding assistant), with prompts and direction provided by @tombuildsstuff.\"",
+      "keywords": [
+        "rts",
+        "tanks",
+        "multiplayer",
+        "3d",
+        "three.js",
+        "strategy"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
+    },
+    {
+      "name": "Hack://TheSystem",
+      "slug": "hack-the-system",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by hacking puzzle games",
+      "description": "A short, unsettling text-based horror game in your browser: type commands to break through four security layers of a rogue AI before its trace finds you, then face a boss.",
+      "category": "Games",
+      "url": "https://wietske.itch.io/hackthesystem",
+      "linkText": "Play now",
+      "icon": "▣",
+      "tile": "code",
+      "added": "2026-11-23",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "Wietske",
+      "longDescription": "You sit at a hacker terminal and type commands to work through four puzzle stages, with Matrix-style effects, glitches and a trace meter that fills as you go. A boss stage, where you type the packets it throws at you before they reach your firewall, was added in an update on 24 October 2026; the maker admits it is hard.\n\nIt takes about 5 to 10 minutes, is played with the keyboard, is in English and runs in the browser (made with Unity). It aims for an unsettling mood rather than jump scares.",
+      "builtWithAI": "The maker says on itch.io: \"This game was entirely made by Claude Opus 5.5.\" They wrote one opening prompt into an empty project, answered two questions, and \"Claude did the rest.\"",
+      "keywords": [
+        "hacking game",
+        "horror",
+        "terminal",
+        "typing game",
+        "text-based",
+        "puzzle"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/hack-the-system/1.webp",
+          "alt": "A green hacker terminal showing the intrusion toolkit and the target, THE SYSTEM",
+          "caption": "The intrusion toolkit"
+        },
+        {
+          "src": "/assets/apps/hack-the-system/2.webp",
+          "alt": "A pixel-art eye with an integrity bar during the boss fight",
+          "caption": "The boss stage"
+        },
+        {
+          "src": "/assets/apps/hack-the-system/3.webp",
+          "alt": "A red screen with the words FOUND YOU when the trace completes",
+          "caption": "When the trace fills"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-23",
+        "none": true
+      }
     }
   ]
 }

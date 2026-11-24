@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d0b">
+  <meta name="color-scheme" content="dark">
+  <meta name="darkreader-lock">
+  <title>HolyArrs: Alternative to Sonarr, Radarr and Overseerr</title>
+  <meta name="description" content="HolyArrs, alternative to Sonarr, Radarr and Overseerr. One self-hosted app that finds, requests, downloads and files your shows, movies and music for…">
+  <link rel="canonical" href="https://remadebyai.com/apps/holyarrs/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RemadeByAI">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="HolyArrs: Alternative to Sonarr, Radarr and Overseerr">
+  <meta property="og:description" content="HolyArrs, alternative to Sonarr, Radarr and Overseerr. One self-hosted app that finds, requests, downloads and files your shows, movies and music for…">
+  <meta property="og:url" content="https://remadebyai.com/apps/holyarrs/">
+  <meta property="og:image" content="https://remadebyai.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="RemadeByAI logo with the tagline Familiar software. Rebuilt with AI.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HolyArrs: Alternative to Sonarr, Radarr and Overseerr">
+  <meta name="twitter:description" content="HolyArrs, alternative to Sonarr, Radarr and Overseerr. One self-hosted app that finds, requests, downloads and files your shows, movies and music for…">
+  <meta name="twitter:image" content="https://remadebyai.com/assets/og-image.png">
+  <meta name="twitter:image:alt" content="RemadeByAI logo with the tagline Familiar software. Rebuilt with AI.">
+  <script>(function(){var t='dark';try{if(localStorage.getItem('theme')==='light')t='light'}catch(e){}var d=document.documentElement;d.setAttribute('data-theme',t);if(t==='light'){var m=document.querySelector('meta[name="color-scheme"]');if(m)m.content='light';m=document.querySelector('meta[name="theme-color"]');if(m)m.content='#f5f8f3'}})();</script>
+  <link rel="stylesheet" href="/styles.css?v=266d271866">
+  <script src="/site.js?v=8af6034e91" defer></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"0f5ef649282441df8c6138452124737d"}'></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","@id":"https://remadebyai.com/apps/holyarrs/#app","name":"HolyArrs","description":"One self-hosted app that finds, requests, downloads and files your shows, movies and music for Plex, Jellyfin or Emby, in place of six separate *arr apps.","applicationCategory":"MultimediaApplication","applicationSubCategory":"Media server","url":"https://holyarrs.com","mainEntityOfPage":"https://remadebyai.com/apps/holyarrs/","operatingSystem":"Linux","license":"AGPL-3.0","downloadUrl":"https://github.com/HolyArrs/HolyArrs/releases/latest","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"CoderLuii"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://remadebyai.com/"},{"@type":"ListItem","position":2,"name":"Media server","item":"https://remadebyai.com/categories/media-server/"},{"@type":"ListItem","position":3,"name":"HolyArrs","item":"https://remadebyai.com/apps/holyarrs/"}]}</script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="35" height="35"><span>RemadeBy<em>AI</em><small>.com</small></span></a>
+    <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/new/">New</a><a href="/apps/">All apps</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
+    <form class="site-search" action="/apps/" method="get" role="search" data-clicks="https://remadebyai-clicks.remadebyai.workers.dev/click">
+      <label><span class="visually-hidden">Search all apps</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
+      <ul class="site-search-results" id="site-search-results" role="listbox" aria-label="Matching apps" hidden></ul>
+    </form>
+    <button class="theme-toggle" type="button" aria-label="Switch to light mode"><span class="to-light"><span class="icon" aria-hidden="true">☀︎</span><span class="label">Light mode</span></span><span class="to-dark"><span class="icon" aria-hidden="true">☾</span><span class="label">Dark mode</span></span></button>
+  </div>
+</header>
+<main id="main">
+<div class="wrap app-page">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/categories/media-server/">Media server</a> / <span>HolyArrs</span></nav>
+  <section class="app-hero" aria-labelledby="app-title">
+    <div>
+      <div class="app-title-row"><span class="tile" aria-hidden="true">✚</span><small class="owner">Open source</small></div>
+      <h1 id="app-title">HolyArrs</h1>
+      <p class="lede">Alternative to Sonarr, Radarr and Overseerr</p>
+      <p class="app-summary">One self-hosted app that finds, requests, downloads and files your shows, movies and music for Plex, Jellyfin or Emby, in place of six separate *arr apps.</p>
+      <div class="app-actions"><a class="button primary" href="https://github.com/HolyArrs/HolyArrs/releases/latest" data-track="download" data-app="holyarrs" target="_blank" rel="noopener">Download</a><a class="button" href="https://holyarrs.com" data-track="site" data-app="holyarrs" target="_blank" rel="noopener">Visit site</a></div>
+    </div>
+    <dl class="facts">
+      <div><dt>Category</dt><dd><a href="/categories/media-server/">Media server</a></dd></div>
+      <div><dt>Replaces</dt><dd>Sonarr, Radarr and Overseerr</dd></div>
+      <div><dt>Platforms</dt><dd>Linux</dd></div>
+      <div><dt>Licence</dt><dd>AGPL-3.0</dd></div>
+      <div><dt>Price</dt><dd>Free</dd></div>
+      <div><dt>Made by</dt><dd>CoderLuii</dd></div>
+      <div><dt>Source code</dt><dd><a href="https://github.com/HolyArrs/HolyArrs" data-track="source" data-app="holyarrs" target="_blank" rel="noopener">github.com/HolyArrs/HolyArrs</a></dd></div>
+      <div><dt>Listed</dt><dd>November 23, 2026</dd></div>
+    </dl>
+  </section>
+  <section class="app-section" aria-labelledby="about-app-title"><h2 id="about-app-title">About HolyArrs</h2><div class="prose"><p>HolyArrs does the jobs of Sonarr, Radarr, Lidarr, Bazarr, Prowlarr and Seerr in one app with one login. You browse it like a streaming service, people in your household ask for a title, and it searches your indexers, picks a release by your rules, sends it to qBittorrent, SABnzbd or another downloader, fetches subtitles and files it into your library. It has a calendar, alerts to Discord, Telegram, ntfy and others, and can import an existing Sonarr, Radarr, Lidarr, Prowlarr, Bazarr or Seerr setup without changing it.</p>
+<p>It runs as a small Docker container (about 16 MB) on amd64, arm64 or armv7, with an experimental Synology package too. Posters and search come from the maker's own metadata server, so no API keys are needed. The project went public in November 2026 and is still young.</p></div></section>
+  
+  <section class="app-section" aria-labelledby="built-title">
+    <h2 id="built-title">How it was built with AI</h2>
+    <div class="prose"><p>The maker on Show HN (2026-11-10): &quot;how it got built: claude code wrote most of the go and svelte. i wrote the specs, reviewed everything and tested it on my own server.&quot; Checked 2026-11-23: none of the 129 public commits carry a Claude co-author line.</p></div>
+  </section>
+  
+  <section class="app-section" aria-labelledby="buzz-title">
+    <h2 id="buzz-title">What people say</h2>
+    <div class="buzz">
+      <div class="prose"><p>HolyArrs got a busy Show HN launch and two setup guides within its first week. People like the idea of one small app with one login in place of six, and guide writers say it is worth trying next to an existing setup. The common worries are that it is very new and largely AI-written, that it depends on the maker's own metadata server, and that earlier attempts to merge the *arr apps faded away. Coverage so far is launch discussion and tutorials, not long-term use.</p></div>
+      <div class="buzz-cols"><div class="buzz-col good"><h3>People like</h3><ul><li>One app, one login and one port instead of six</li><li>Very small download, because it is a single Go program</li><li>Imports an existing Sonarr or Radarr setup without changing it, so it is easy to try side by side</li></ul></div><div class="buzz-col bad"><h3>Common complaints</h3><ul><li>Very young, with many releases a day at launch, so behaviour can change</li><li>Relies on a metadata server run and paid for by the maker</li><li>Doubts about long-term maintenance of a largely AI-written project</li><li>Some feel the separate *arr apps exist for good reasons</li></ul></div></div>
+      <h3 class="buzz-sources-title">Where people said it</h3><ul class="buzz-sources"><li class="buzz-source">
+        <blockquote>&ldquo;One static Go binary skips all of that.&rdquo;</blockquote>
+        <p><a href="https://news.ycombinator.com/item?id=50443332" target="_blank" rel="noopener">Show HN: A 15 MB self-hosted Netflix and Spotify for your media server</a> <span class="buzz-by">inexcf on Hacker News · November 10, 2026 · 172 points</span></p>
+      </li><li class="buzz-source">
+        <blockquote>&ldquo;If you have an arr stack that works, try HolyArrs beside it for now and do not switch yet.&rdquo;</blockquote>
+        <p><a href="https://www.ssdnodes.com/learn/holyarrs-vs-the-arr-stack" target="_blank" rel="noopener">HolyArrs vs the arr stack: should you switch?</a> <span class="buzz-by">Matt Connor on SSD Nodes · November 18, 2026</span></p>
+      </li><li class="buzz-source">
+        <blockquote>&ldquo;That external metadata dependency is the biggest structural trade-off compared to Sonarr and Radarr&rdquo;</blockquote>
+        <p><a href="https://www.bitdoze.com/holyarrs-docker-guide/" target="_blank" rel="noopener">HolyArrs Docker Setup: One 15 MB App Instead of Six *arr Containers</a> <span class="buzz-by">Dragos Balota on Bitdoze · November 13, 2026</span></p>
+      </li><li class="buzz-source">
+        <blockquote>&ldquo;I've seen multiple &quot;consolidate all the arr&quot; attempts over the years. None prevail.&rdquo;</blockquote>
+        <p><a href="https://news.ycombinator.com/item?id=50440290" target="_blank" rel="noopener">Show HN: A 15 MB self-hosted Netflix and Spotify for your media server</a> <span class="buzz-by">tjohnell on Hacker News · November 10, 2026</span></p>
+      </li><li class="buzz-source">
+        <blockquote>&ldquo;I am a bit disturbed by the built-in reliance on your metadata server.&rdquo;</blockquote>
+        <p><a href="https://news.ycombinator.com/item?id=50441020" target="_blank" rel="noopener">Show HN: A 15 MB self-hosted Netflix and Spotify for your media server</a> <span class="buzz-by">corroclaro on Hacker News · November 10, 2026</span></p>
+      </li></ul>
+      <p class="review-meta">Compiled by RemadeByAI from 5 public sources, checked November 23, 2026. Quotes are short excerpts; follow the links for the full context.</p>
+    </div>
+  </section>
+  <section class="app-section" aria-labelledby="review-title">
+    <h2 id="review-title">Our review</h2>
+    <p class="muted">We haven't reviewed HolyArrs yet.</p>
+  </section>
+  
+  <section class="app-section" aria-labelledby="related-title">
+    <h2 id="related-title">More in Media server</h2>
+    <div class="cards">
+<article class="card" data-group="open" data-category="media-server" data-platform="Web" data-price="Free" data-licence="AGPL-3.0" data-search="prismarr alternative to organizr for media servers one modern dashboard for your self-hosted media stack: radarr, sonarr, prowlarr, seerr, your download clients and plex activity in a single interface. media server open source joshua bethoule-voisin web agpl-3.0 free">
+  <div class="card-top"><span class="tile" aria-hidden="true">◇</span><small>Open source</small></div>
+  <h3 class="card-title"><a class="card-link" href="/apps/prismarr/">Prismarr</a></h3>
+  <p class="alternative">Alternative to Organizr for media servers</p>
+  <p>One modern dashboard for your self-hosted media stack: Radarr, Sonarr, Prowlarr, Seerr, your download clients and Plex activity in a single interface.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/media-server/">Media server</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="media-server" data-platform="Web" data-price="Free" data-licence="GPL-3.0" data-search="cinephage alternative to sonarr, radarr and overseerr self-hosted media management in one app: movies, tv, subtitles, indexers, discovery lists and live tv in a single interface instead of a stack of separate services. media server open source cinephage contributors web gpl-3.0 free">
+  <div class="card-top"><span class="tile" aria-hidden="true">▶</span><small>Open source</small></div>
+  <h3 class="card-title"><a class="card-link" href="/apps/cinephage/">Cinephage</a></h3>
+  <p class="alternative">Alternative to Sonarr, Radarr and Overseerr</p>
+  <p>Self-hosted media management in one app: movies, TV, subtitles, indexers, discovery lists and live TV in a single interface instead of a stack of separate services.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/media-server/">Media server</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="media-server" data-platform="Linux" data-price="Free" data-licence="MIT" data-search="arrmada alternative to sonarr, radarr and overseerr one self-hosted app for your media server: it finds and organises movies, tv, books and audiobooks, takes requests from your household and keeps plex or jellyfin tidy. media server open source tristen lammi linux mit free">
+  <div class="card-top"><span class="tile" aria-hidden="true">⚓</span><small>Open source</small></div>
+  <h3 class="card-title"><a class="card-link" href="/apps/arrmada/">Arrmada</a></h3>
+  <p class="alternative">Alternative to Sonarr, Radarr and Overseerr</p>
+  <p>One self-hosted app for your media server: it finds and organises movies, TV, books and audiobooks, takes requests from your household and keeps Plex or Jellyfin tidy.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/media-server/">Media server</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+</div>
+  </section>
+  
+  <details class="badge-box">
+    <summary>Made HolyArrs? Add a “Listed on RemadeByAI” badge to your README</summary>
+    <div class="badge-body">
+      <p class="badge-previews"><img src="/assets/badge/listed-dark.svg" alt="Listed on RemadeByAI (dark)" width="172" height="28"> <img src="/assets/badge/listed-light.svg" alt="Listed on RemadeByAI (light)" width="172" height="28"></p>
+      <div class="snippet"><div class="snippet-head"><span>Markdown, dark badge</span><button class="copy" type="button" data-copy>Copy</button></div><pre><code>[![Listed on RemadeByAI](https://remadebyai.com/assets/badge/listed-dark.svg)](https://remadebyai.com/apps/holyarrs/)</code></pre></div>
+      <div class="snippet"><div class="snippet-head"><span>Markdown, light badge</span><button class="copy" type="button" data-copy>Copy</button></div><pre><code>[![Listed on RemadeByAI](https://remadebyai.com/assets/badge/listed-light.svg)](https://remadebyai.com/apps/holyarrs/)</code></pre></div>
+      <p class="muted">Want it to follow the reader's light or dark mode on GitHub? See <a href="/badge/?app=holyarrs">the badge page</a>.</p>
+    </div>
+  </details>
+</div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div class="foot-about"><a class="brand" href="/">RemadeBy<em>AI</em></a><p>Familiar software, rebuilt with AI. <em class="foot-note">(A software directory from <a href="https://emukey.com/" target="_blank" rel="noopener">EmuKey LLC</a>.)</em></p></div>
+    <nav class="foot-links" aria-label="Footer"><a href="/apps/">All apps</a><a href="/new/">New arrivals</a><a href="/categories/">Categories</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
+  </div>
+</footer>
+</body>
+</html>

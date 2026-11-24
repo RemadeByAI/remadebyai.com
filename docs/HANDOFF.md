@@ -2,7 +2,16 @@
 
 Last updated: 2026-11-23 2:45 AM Central (cleanup and handoff; 120 apps in 29 categories live, "What people say" on 33 apps, speed/SEO pass live as 14013df). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
 
-## Newest: app hunt 9, 146 apps (2026-11-23 evening Central)
+## Newest: app hunt 10, 161 apps (2026-11-23 evening Central)
+
+- Sources: 6 apps held from hunt 9, the selfh.st weekly "New Software" sections (2026-09 to 2026-11; 68 repos counted) and the awesome-ai-built-games list (most evidence there is itch.io maker statements). 15 added on branch `hunt/2026-11-23-hunt-10`. Apps: HolyArrs (Sonarr/Radarr/Overseerr; maker's HN statement, 0 Claude trailers), BackupZit (Veeam), Arctis Sound Manager (SteelSeries GG on Linux), PrintStash (Manyfold, 3D printing), Strata Files (Finder), GymCoach (Hevy/Strong; AI coach, web), IMAGO (Lightroom for Immich, Android), Postfalcon (Buffer, Freemium hosted plans), Codetta (Mp3tag), Ferry (AirDrop/Pushbullet), Merran (Paprika/Mealie, alpha). Games: Pyramid Wars (clicker RTS, itch.io demo, Steam release planned 2027), AI WORMS (one-button arcade), Arena Game (3D arena RTS), Hack://TheSystem (short hacking horror puzzle).
+- "What people say": sections for HolyArrs, Pyramid Wars and AI WORMS (all 15 quotes re-checked by script against the pages); the other 12 got "none".
+- Fixes made before listing: Mecha Royale dropped (its code has crypto-token prize tournaments; skip list says no crypto). HolyArrs has no screenshots (every README image shows real movie posters and streaming brands). PrintStash's "Mandalorian miniature" screenshot removed. Arena Game's keywords no longer name the specific game it was inspired by. Codetta's screenshots show artist names as plain text but no album art.
+- No screenshots: HolyArrs, Arena Game (3D view didn't render headless; none in README or site).
+- Already listed, so the games agent's top picks were skipped: OpenAero DFW, Bash Fighter, backroad rally. Brief agents to check existing-apps.txt by name.
+- Held for later: Silo (Plex, 60% Claude, pre-release, no screenshots), LibrePaper (Overleaf), Dinatos (third workout app), Excaliself (built on Excalidraw), Cleep (inactive since 2026-10-02), Paper (FreshRSS front end), Couchwave (a week old), Rolodex (Monica, Cursor-built), VybeCiv, DRAG UP YOUR BAR, Ink Side Down. Still held from hunt 9: Zigzag, KiwiDesk, desigma, Mirli, Free GST Billing, MixMusic, Bambu Bar, Mila, MacMix, Swarm, OnKey, Narro, Rose & Blade.
+
+## Earlier: app hunt 9, 146 apps (2026-11-23 evening Central)
 
 - Four search agents (GitHub by thin category, Show HN, games, popular repos and lists) found 37 candidates; 16 added on branch `hunt/2026-11-23-hunt-9`. Games: Inkline Town (city builder), Terminactory (terminal factory game, GitLab), Harness Hollow (co-op farming), Second Tail (itch.io platformer, closed source). Apps: layerling (Tinkercad), PlayTranslate (screen translation), OnAir (SDR# / SDR++), Tiny Little Office (Office in the browser), Parrot (Otter.ai / Granola), Nightwatch (stargazing forecast), Seal (sealed letters for family), Faro (FileZilla / WinSCP), Cra (Arc), StykAnimate (Pivot Animator), Tellyscope (Android TV manager), ZenLink (Phone Link).
 - "What people say": 6 got sections (layerling, OnAir, Tiny Little Office, Parrot, Cra, Tellyscope; all 29 quotes re-checked against their pages), 10 got the "none" line. Terminactory's only second source was an auto-generated PromptZone post, so it got "none".
