@@ -1,8 +1,23 @@
 # Handoff notes
 
-Last updated: 2026-11-23 2:45 AM Central (cleanup and handoff; 120 apps in 29 categories live, "What people say" on 33 apps, speed/SEO pass live as 14013df). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
+Last updated: 2026-11-24 Central (184 apps live as 6eaccef; every app in scope has been checked for "What people say"). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
 
-## Newest: app hunt 11, 184 apps (2026-11-24 Central)
+## Newest: status checks and next steps (2026-11-24 Central)
+
+- **State:** `main` = `origin/main` = 6eaccef (hunt 11), live. Work now happens in the PC copy `C:\dev\remadebyaI\remadebyai-website`, which is level with GitHub. The merged local branches `hunt/2026-11-23-hunt-8`, `-9`, `-10`, `hunt/2026-11-24-hunt-11` and `reviews/finish-what-people-say` were deleted; `main` is the only local branch.
+- **Reviews:** done for all 182 apps in scope (74 sections, 106 "none"). Left: Claude of Tanks and Mailflare (sources on Reddit, X and a forum that returns 403). See `docs/REVIEWS-STATUS.md`.
+- **Listing requests (checked 2026-11-24):** none new. The RBA - ListMyApp folder holds only Pic2Sheet (green, listed).
+- **Awesome-list PRs (checked 2026-11-24):** both still open, no comments or reviews. taskade/awesome-vibe-coding #175 is the better bet: that list merged PRs as recently as 2026-11-19 and has about 20 open. filipecalegario/awesome-vibe-coding #520 looks unmaintained: no merges since 2026-04-11 and 200+ open PRs.
+- **Link previews (checked 2026-11-24 with opengraph.xyz):** home page is fine (og-image.png, 1200x630 PNG). Home page has no twitter:title/description/image tags, but X falls back to the og: tags. App pages use their first screenshot, which is WebP and not 1.91:1 (e.g. Zigzag 1600x1026), so cards can be cropped, and LinkedIn may not show WebP preview images at all. Possible fix: have build.js write a 1200x630 PNG or JPEG preview per app, or fall back to og-image.png. Not done yet.
+- **Next, in order:**
+  1. Daily listing-request check (see `C:\dev\remadebyaI\listing-inbox\HOW-TO-READ.md`).
+  2. Decide on the app-page preview image fix above.
+  3. Next Reddit post (r/vibecoding or r/ClaudeAI), no earlier than about 2026-11-27, following the Reddit posting notes below. Claude drafts, the owner posts.
+  4. App hunt 12 when wanted: held apps (FeedZero, Silo, LibrePaper, Dinatos, Excaliself, Paper, Couchwave, Rolodex, KiwiDesk, desigma, and others listed under hunts 9-11); re-check whether OpenWorld RPG merged the Jujutsu Kaisen PR.
+  5. Re-check the awesome-list PRs about weekly; re-check apps with "none" about monthly.
+  6. Open ideas: tell small makers about the README badge, ask the SnapFiles friend.
+
+## Earlier: app hunt 11, 184 apps (2026-11-24 Central)
 
 - Sources: 5 apps held from hunt 9, GitHub repos with a CLAUDE.md or claude-code/vibe-coded topics, Show HN posts from 2026-04 to 2026-08 (older than earlier hunts searched), and itch.io AI game jams (AI Browser Game Jam 1-5, Slapjam, Just Vibe It). 23 added on branch `hunt/2026-11-24-hunt-11`.
   - Apps (15): Zigzag (Arc, native WebKit; maker statement, only 76 of 4,972 commits have Claude trailers), Mila (MacWhisper), Bambu Bar (Bambu printer monitor, Freemium), MacMix (SoundSource, Freemium), Mirli (local sound/music generation), Tolaria (Obsidian, 20k stars), BrightBean Studio (Buffer for agencies), TikZ Editor (built with Codex), Minute (offline meeting notes, built with Codex), Calino (Google Calendar), Dorso (posture, also $4.99 on the App Store), Readfine (RSS), Pesto Clipboard (Maccy), Roxel (MagicaVoxel), Podium (iPod-style Android player; streams via an unofficial YouTube Music client, said in the listing).
@@ -62,7 +77,7 @@ Last updated: 2026-11-23 2:45 AM Central (cleanup and handoff; 120 apps in 29 ca
   - Remaining apps (120 minus 33, minus ICM/DW) still to be researched for "What people say".
   - Awesome-list PRs: taskade/awesome-vibe-coding #175 is open with no review; filipecalegario/awesome-vibe-coding #520 state not re-checked.
   - Link previews after the SEO pass not yet checked in a sharing debugger (see Open items).
-- **Next, in order:**
+- **Next, in order (superseded 2026-11-24; see the newest section at the top):**
   1. **TOP PRIORITY (owner, 2026-11-23: "when I start my new session, that will be my top prority -- finishing up all the reviews that you couldn't do because of the cap"):** finish "What people say" for every app the hourly cap blocked. Where it stands: 113 apps in scope (InCloseMail, DesktopWiki and a few others skipped by the reviews thread); 33 have a section live; batches 1-8 were researched (most had no real coverage, so they get no section, and about 20 were only partly checked before being redone in round 2); batches 9-12 (about 36 apps) were scheduled for about 2:58 and 4 AM Central. **Per-app status is in `docs/REVIEWS-STATUS.md`** (live / on the branch waiting for Go live / no coverage / partly checked / not researched), and it is updated after each round. The research prompt and app lists are in `docs/reviews/` (`PROMPT.md`, `in-N.txt`). Pick up the "Partly checked" and "Not researched yet" sections. Work in hourly rounds (about 100 page reads an hour), then ask for one Go live for everything.
   2. **Done 2026-11-23 about 1:20 PM Central:** r/IMadeThis launch post, posted by the owner (text post with the home page screenshot inline, a one-line note that InCloseMail and DesktopWiki are ours, no Brand affiliate tag). reddit.com is blocked for Claude in both the app browser and Claude in Chrome, so the owner posts and sends screenshots. Next: r/vibecoding and r/ClaudeAI on later weekday mornings; Reddit suggested r/ShowYourApp (6.4K weekly visitors), a good fit for one more post on another day. Don't repost to many communities at once.
   3. **Done 2026-11-23 1:12 PM Central:** daily listing-request check, no new requests (log in `C:\dev\remadebyaI\listing-inbox\emails.md`).
@@ -95,7 +110,7 @@ Last updated: 2026-11-23 2:45 AM Central (cleanup and handoff; 120 apps in 29 ca
 ## Where things are
 
 - **How to work (since 2026-11-21):** do site work in a cloud session on the attached repo. Cloud sessions can commit and push to GitHub directly, so a "Commit and push" button tap is enough. PC-based Remote Control sessions can't push on a button tap.
-- **PC copy is stale:** `C:\dev\remadebyaI\remadebyai-website` has uncommitted edits identical to 2c52a37. Before any local work there, run `git checkout -- . && git pull`.
+- **PC copy:** `C:\dev\remadebyaI\remadebyai-website` is current (level with `origin/main` on 2026-11-24) and is where hunts 8-11 were done. Run `git pull` before local work.
 - **Local source:** `C:\dev\remadebyaI\remadebyai-website` on the PC "Dennis".
 - **Repo:** https://github.com/RemadeByAI/remadebyai.com (public, branch `main`).
 - **Hosting:** GitHub Pages from `main` at the repo root, custom domain `remadebyai.com` (see `CNAME`). DNS A records point to GitHub Pages (185.199.108-111.153).

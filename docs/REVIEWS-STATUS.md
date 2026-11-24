@@ -1,6 +1,6 @@
 # "What people say" status
 
-Updated 2026-11-23 3:31 AM Central. The feature is the `whatPeopleSay` field in projects.json (see docs/HANDOFF.md). All 118 apps in scope have now been researched; only the two under "Partly checked" are left, and both need a source cloud and PC sessions cannot read (Reddit, X, a 403 forum).
+Updated 2026-11-24 Central. The feature is the `whatPeopleSay` field in projects.json (see docs/HANDOFF.md). All 182 apps in scope (184 listed, minus InCloseMail and DesktopWiki) have been researched: 74 have a section, 106 have the "none" line. Only the two under "Partly checked" are left, and both need a source cloud and PC sessions cannot read (Reddit, X, a 403 forum).
 
 **Limit:** cloud sessions on the old plan could read about 100 web pages per hour (WebFetch, shared by every agent). On 2026-11-23, after the owner moved to Claude Team, a PC session read about 120 pages in 15 minutes with no limit errors. It's not known whether the plan or the PC made the difference, so start big passes with a few agents and watch for fetch errors. reddit.com is blocked.
 **How:** each agent follows `docs/reviews/PROMPT.md` for one list of apps (`docs/reviews/in-N.txt`) and writes JSON (slug -> entry, or null when there's no real coverage). Merge into projects.json with `"checked": "YYYY-MM-DD"`, run `node build.js`, and keep quotes short and verbatim. Apps with no real coverage get NO section.
@@ -68,7 +68,7 @@ All quotes re-checked against their pages on 2026-11-23.
 - Pyramid Wars (itch.io player comments on the game page and the AI Browser Game Jam 3 page)
 - AI WORMS (itch.io player comments on the game page and the AI Browser Game Jam 5 page)
 
-## Added in hunt 11 with a section, waiting for Go live (9)
+## Added in hunt 11 with a section, live since 2026-11-24 (6eaccef) (9)
 All quotes re-checked 2026-11-24 (by script against the pages; Product Hunt and AlternativeTo block scripts, so those three were read with WebFetch).
 - Zigzag
 - Tolaria
