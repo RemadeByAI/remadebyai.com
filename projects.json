@@ -9333,6 +9333,1660 @@
         "checked": "2026-11-23",
         "none": true
       }
+    },
+    {
+      "name": "Zigzag",
+      "slug": "zigzag",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Arc",
+      "description": "A small, native Mac browser for people leaving Arc, with spaces, pinned tabs and split view. It runs on Safari's WebKit engine rather than Chromium, yet installs Chrome Web Store extensions.",
+      "category": "Utilities",
+      "url": "https://zigzagbrowser.com",
+      "linkText": "Visit site",
+      "download": "https://github.com/ZigaoWang/zigzag/releases/latest",
+      "source": "https://github.com/ZigaoWang/zigzag",
+      "license": "Apache-2.0",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Zigao Wang",
+      "icon": "◇",
+      "tile": "",
+      "added": "2026-11-24",
+      "longDescription": "Zigzag keeps tabs in a sidebar grouped into spaces, each with its own color, pinned tabs and folders, plus favorites, profiles, a command bar, split view for up to four pages and a small pop-up window for quick links like Little Arc. Importing from Arc brings over spaces, pinned tabs, favorites, history, passwords and sign-ins, and it can also import from Chrome, Safari, Firefox, Zen and others.\n\nUnlike most Arc replacements it is not built on Chromium: it's a Swift app on the WebKit engine that ships with macOS, about 35 MB installed, so engine security fixes come with macOS updates. Chrome extensions such as 1Password and Bitwarden install from the Chrome Web Store, though a few Chrome extension APIs are still missing. It has a built-in ad blocker, cookie banner refusal and dark pages, with no account or telemetry. It needs macOS 15.4 or later and has no sync between Macs yet.",
+      "builtWithAI": "The maker wrote on Show HN (2026-11-14): \"Claude writes most of the code, but I am the one reviewing the quality, the functions and the UI/UX decisions.\" Few commits carry the trailer: checked 2026-11-24, 76 of 4,972 commits are co-authored by Claude.",
+      "keywords": [
+        "Arc browser",
+        "The Browser Company",
+        "sidebar browser",
+        "vertical tabs",
+        "WebKit",
+        "Safari",
+        "web browser",
+        "Little Arc"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/zigzag/1.webp",
+          "alt": "Zigzag's all-tabs view showing a space called Studio with a Wikipedia article as a card, filtered by a search",
+          "caption": "Every tab at once"
+        },
+        {
+          "src": "/assets/apps/zigzag/2.webp",
+          "alt": "A Wikipedia article on typography open in a small Zigzag Mini window over the page it was opened from",
+          "caption": "Zigzag Mini peek"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "summary": "Zigzag launched on Show HN in mid-November 2026 and on Product Hunt, and the comments so far are mostly from early users switching away from Arc or Zen. People describe it as very fast and smooth, light on memory, and close to the Arc way of working, and extension developers liked that Chrome extensions install without changes. The doubts are about trust rather than features: several commenters are wary of a heavily AI-written browser from a solo developer and whether it will last. Coverage is young and made up of launch-week comments, not longer reviews.",
+        "praise": [
+          "Feels very fast and smooth, with no jank in the sidebar or space switching",
+          "Uses far less memory than Chromium- or Firefox-based Arc clones",
+          "Chrome extensions install from the Chrome Web Store on a WebKit browser",
+          "Spaces and profiles work well for people coming from Arc"
+        ],
+        "complaints": [
+          "Some don't trust a browser written mostly with AI where security matters",
+          "Worry about relying on a solo developer's project long term",
+          "Missing a few Arc features, such as Portrait mode screenshots, and sync between Macs"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: Zigzag, a native Mac browser for people leaving Arc",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50496787",
+            "date": "2026-11-15",
+            "quote": "Really I cannot overstate how fast/responsive it is.",
+            "who": "ma101an",
+            "points": "123 points"
+          },
+          {
+            "title": "Same Show HN thread: switching from Zen",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50496787",
+            "date": "2026-11-17",
+            "quote": "the ram usage on my mac is 4x as low, which is a massive improvement!",
+            "who": "RalfBr"
+          },
+          {
+            "title": "Zigzag Browser",
+            "site": "Product Hunt",
+            "url": "https://www.producthunt.com/products/zigzag-browser",
+            "date": "2026-11",
+            "quote": "I love the simplicity of Zigzag, both with the interface and with the WebKit engine.",
+            "who": "Jeff Pedigo",
+            "points": "113 upvotes"
+          },
+          {
+            "title": "Same Show HN thread: comparing Arc alternatives",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50496787",
+            "date": "2026-11-18",
+            "quote": "Zigzag is suprisingly the best of all of them in terms of stability, coherence of the design, and sheer performance.",
+            "who": "pmkary"
+          },
+          {
+            "title": "Same Show HN thread: a security worry",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50496787",
+            "date": "2026-11-17",
+            "quote": "I just don't trust vibe coding and for a browser it's pretty important for it to be secure",
+            "who": "myzek"
+          },
+          {
+            "title": "Same Show HN thread: a solo project",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=50496787",
+            "date": "2026-11-17",
+            "quote": "I'm wary about moving over to a browser that is just the hobby project of a solo developer.",
+            "who": "usrme"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mila",
+      "slug": "mila",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to MacWhisper",
+      "description": "A Mac app that records meetings, dictation and voice memos and transcribes them on the device, in English or Hebrew, with speaker labels and optional summaries.",
+      "category": "Audio",
+      "url": "https://island-io.github.io/mila/",
+      "linkText": "Visit site",
+      "download": "https://github.com/island-io/mila/releases/latest",
+      "source": "https://github.com/island-io/mila",
+      "license": "Apache-2.0",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Island",
+      "icon": "◉",
+      "tile": "voice",
+      "added": "2026-11-24",
+      "longDescription": "Mila records your microphone, the audio of one app such as Zoom, Slack or Google Meet in Chrome, or both together for meetings, with no virtual audio device to install. It transcribes with Whisper through whisper.cpp on the Mac's GPU, labels who said what and remembers speaker names, and exports SRT subtitles. Global shortcuts dictate English or Hebrew into any app, and voice memos synced from your iPhone are transcribed automatically. Titles and summaries can come from an AI tool you already use, and are off until you turn them on.\n\nIt needs macOS 14 or later; an Apple silicon Mac with 16 GB of memory is recommended, and the two default models take about 4.6 GB. Companies can instead point every Mac at their own transcription server and roll out settings through MDM or a shared config file.",
+      "builtWithAI": "Checked 2026-11-24: 183 of 219 commits are co-authored by Claude.",
+      "keywords": [
+        "MacWhisper",
+        "Whisper",
+        "speech to text",
+        "transcription",
+        "dictation",
+        "meeting notes",
+        "Hebrew",
+        "Otter"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/mila/1.webp",
+          "alt": "Mila showing a meeting transcript in Hebrew and English with color-coded speakers, a summary and action items, and a list of recordings in folders",
+          "caption": "Transcript with speakers"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Bambu Bar",
+      "slug": "bambu-bar",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Bambu Handy",
+      "description": "Keeps your Bambu Lab 3D printer's progress and time left in the Mac menu bar or Windows tray, with temperatures, filament, the camera and print controls a click away.",
+      "category": "3D printing",
+      "url": "https://bambubar.app",
+      "linkText": "Visit site",
+      "download": "https://github.com/rolottr/bambu-bar/releases/latest",
+      "source": "https://github.com/rolottr/bambu-bar",
+      "license": "MIT",
+      "price": "Freemium",
+      "platforms": [
+        "macOS",
+        "Windows"
+      ],
+      "maker": "NINA LABS",
+      "icon": "▤",
+      "tile": "bar",
+      "added": "2026-11-24",
+      "longDescription": "Bambu Bar shows percent done and time left in the menu bar, and a click opens a panel with the job, its stage, nozzle, bed and chamber temperatures, AMS spools with grams left and printer errors in plain words. You can pause, resume or stop a print, change its speed, switch the chamber light and watch the printer's camera. It watches several printers at once, adds desktop widgets and sends notifications when a print finishes, fails or pauses.\n\nIt talks to the printers directly over your local network, with no account or cloud, and reads access codes from Bambu Studio or OrcaSlicer during setup. Print controls need the printer in LAN Only mode with Developer Mode on. The Mac app needs macOS 26 or later and the Windows app Windows 10 (1903) or 11. The GitHub build is free; a one-time $9.99 supporter licence adds automatic updates.",
+      "builtWithAI": "Checked 2026-11-24: 163 of 183 commits are co-authored by Claude.",
+      "keywords": [
+        "Bambu Lab",
+        "Bambu Handy",
+        "Bambu Studio",
+        "OrcaSlicer",
+        "3D printer monitor",
+        "menu bar",
+        "AMS",
+        "P1S"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/bambu-bar/1.webp",
+          "alt": "Bambu Bar's Printer page with a 3D model of the printer, a print at 69 percent, time left, temperatures, fans and AMS spools",
+          "caption": "Printer page"
+        },
+        {
+          "src": "/assets/apps/bambu-bar/2.webp",
+          "alt": "The menu bar item showing 66 percent and 54 minutes left, with its panel open showing progress, temperatures and spools",
+          "caption": "Menu bar panel"
+        },
+        {
+          "src": "/assets/apps/bambu-bar/3.webp",
+          "alt": "All Printers page listing six printers, with the paused one first and progress bars for the others",
+          "caption": "All printers"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "MacMix",
+      "slug": "macmix",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to SoundSource",
+      "description": "A menu bar audio mixer for the Mac: set each app's volume, give apps their own EQ, and switch speakers, headphones and microphones in one click.",
+      "category": "Audio",
+      "url": "https://macmix.jazminli.com",
+      "linkText": "Visit site",
+      "download": "https://github.com/ljmng7/MacMix/releases/latest",
+      "source": "https://github.com/ljmng7/MacMix",
+      "license": "GPL-3.0",
+      "price": "Freemium",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Jazmín (ljmng7)",
+      "icon": "◐",
+      "tile": "bar",
+      "added": "2026-11-24",
+      "longDescription": "MacMix adds the controls macOS leaves out. From a small panel in the menu bar you can turn one app down without touching the rest, boost a quiet app up to 200%, and have MacMix remember each app's level. It switches between outputs such as AirPods, speakers and AirPlay receivers, picks the microphone, and can set the volume of external monitors over DDC/CI.\n\nEvery feature is open source, including per-app EQ with presets, sending one app to several devices at once, scene presets and Bluetooth battery levels. If you build it yourself in Xcode, everything is unlocked. The signed, self-updating download is free for the basics, and those extra Studio features are a one-time purchase. It needs macOS Sonoma 14.4 or later and asks for System Audio Recording permission for per-app mixing; audio stays on your Mac.",
+      "builtWithAI": "Checked 2026-11-24: 65 of 158 commits in the MacMix repo are co-authored by Claude.",
+      "keywords": [
+        "SoundSource",
+        "per-app volume",
+        "volume mixer",
+        "equalizer",
+        "Background Music",
+        "menu bar audio",
+        "AirPlay"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/macmix/1.webp",
+          "alt": "The MacMix menu bar panel with system volume, the Music app's volume slider and a three-band EQ",
+          "caption": "Per-app EQ"
+        },
+        {
+          "src": "/assets/apps/macmix/2.webp",
+          "alt": "The MacMix panel sending one app to AirPods, EarPods and MacBook speakers, each with its own volume",
+          "caption": "One app, several outputs"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Mirli",
+      "slug": "mirli",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to ElevenLabs and Suno",
+      "description": "A local studio for AI audio: make sound effects, music, songs with lyrics and voices on your own GPU, then arrange them on a multi-track timeline.",
+      "category": "Audio",
+      "url": "https://mirli.app/",
+      "linkText": "Visit site",
+      "download": "https://github.com/HamSanders/soundbox/releases/latest",
+      "source": "https://github.com/HamSanders/soundbox",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "maker": "Ham (HamSanders)",
+      "icon": "♫",
+      "tile": "voice",
+      "added": "2026-11-24",
+      "longDescription": "Mirli (formerly Soundbox) is aimed at sound for games, videos and stories more than at voice alone. Describe a sound effect or a piece of music and it generates it; give it a lyric sheet and it makes a song; type a script and it voices each line with saved or cloned voices. Everything lands on a multi-track timeline with lanes for narration, dialogue, music and effects, where you can mix down and export. It can also extend or cover a track and split audio into stems.\n\nIt runs open-weight models such as Stable Audio 3.0 and ACE-Step through its own native runtime, with no account, no credits and no Python setup, and works offline once a model is downloaded. Each model's licence and commercial-use terms are shown before you download it. An NVIDIA GPU is the main target; it also runs on the CPU, slowly, and the Mac installers are not yet confirmed with the main models. There is a local HTTP API and an MCP server so Claude Code or Cursor can add sounds to a project.",
+      "builtWithAI": "Checked 2026-11-24: 94 of 140 commits in the repo are co-authored by Claude, and it ships an AGENTS.md file for AI coding agents.",
+      "keywords": [
+        "ElevenLabs",
+        "Suno",
+        "Soundbox",
+        "sound effects generator",
+        "AI music",
+        "text to speech",
+        "voice cloning",
+        "Stable Audio"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/mirli/1.webp",
+          "alt": "The Mirli studio with a script voiced by three characters above a five-lane timeline of narration, dialogue, music, ambience and effects",
+          "caption": "Script and timeline"
+        },
+        {
+          "src": "/assets/apps/mirli/2.webp",
+          "alt": "Mirli's Music page with the create panel for model, lyrics and styles beside a list of generated tracks with licence badges",
+          "caption": "Making music"
+        },
+        {
+          "src": "/assets/apps/mirli/3.webp",
+          "alt": "Mirli's SFX page with a prompt box, duration and seed settings beside a list of generated sound effects",
+          "caption": "Sound effects"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Tolaria",
+      "slug": "tolaria",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Obsidian",
+      "description": "A desktop app for a Markdown knowledge base kept as plain files, where every vault is a git repo and notes get types and relationships. Set up for AI agents to work in the same vault.",
+      "category": "Productivity",
+      "url": "https://tolaria.md",
+      "linkText": "Visit site",
+      "download": "https://github.com/refactoringhq/tolaria/releases/latest",
+      "source": "https://github.com/refactoringhq/tolaria",
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "maker": "Luca Rossi (refactoringhq)",
+      "icon": "◈",
+      "tile": "wiki",
+      "added": "2026-11-24",
+      "longDescription": "Tolaria keeps your notes as Markdown files with YAML frontmatter in an ordinary folder, and treats that folder as a git repository, so you get version history and can sync through any git remote with no account or Tolaria server. Unlike a plain Obsidian-style editor, it is opinionated about structure: notes have types (such as projects, people or essays) and relationships, and there is an inbox, saved views, a command palette and a Notion-like block editor. It also has setup paths for Claude Code, Codex CLI and Gemini CLI, so AI agents can read and edit the vault and show up as their own git authors.\n\nThe maker built it to run his own vault of more than 10,000 notes. Downloads are offered for Mac (Apple silicon and Intel, also via Homebrew), Windows and Linux (AppImage, DEB, RPM), and an iPhone and iPad version is in TestFlight beta. On first launch you can clone a getting-started vault that walks through the app.",
+      "builtWithAI": "Checked 2026-11-24: 1,245 of 4,811 commits are co-authored by Claude.",
+      "keywords": [
+        "Obsidian",
+        "Notion",
+        "Logseq",
+        "Bear",
+        "second brain",
+        "markdown notes",
+        "git notes",
+        "knowledge base"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/tolaria/1.webp",
+          "alt": "Tolaria window with a sidebar of note types, an inbox list of notes, an essay open in the editor and a properties panel showing type, relationships and git history",
+          "caption": "Inbox and editor"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "summary": "Most of the discussion comes from its Show HN launch, where people liked the clean interface, the git-backed plain files and the Notion-style editor. Some called it the best parts of Obsidian and its plugins in one app. Others objected that it is a web-based Tauri app rather than a native Mac app, and early testers hit bugs and small editing annoyances. A knowledge-management writer highlighted its local-first design and its focus on AI tools, but noted it was desktop only at the time. Coverage is mostly first impressions from launch week.",
+        "praise": [
+          "Clean, good-looking interface",
+          "Plain Markdown files with git history and sync",
+          "Brings Obsidian-plus-plugins features together in one designed app",
+          "Built around AI agents working in the vault, not bolted-on AI"
+        ],
+        "complaints": [
+          "A Tauri web-view app, not a native Mac app",
+          "Early bugs, including a frozen blank window for one tester",
+          "Small editor gaps such as code-block shortcuts and slow very large files"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: Tolaria – Open-source macOS app to manage Markdown knowledge bases",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=47887678",
+            "date": "2026-04-24",
+            "quote": "It is like you have taken all the things I want from Obsidian (plus plug-ins) and made them into a single, well designed app.",
+            "who": "james-bcn",
+            "points": "318 points"
+          },
+          {
+            "title": "Show HN: Tolaria (comment)",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=47883140",
+            "date": "2026-04-23",
+            "quote": "This is clean and love the git-backed approach.",
+            "who": "r0bbie"
+          },
+          {
+            "title": "Show HN: Tolaria (comment)",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=47886563",
+            "date": "2026-04-24",
+            "quote": "I tried it and it looks really nice but like most of these it has too many small editing thorns for me to use.",
+            "who": "sixhobbits"
+          },
+          {
+            "title": "Show HN: Tolaria (comment)",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=47891623",
+            "date": "2026-04-24",
+            "quote": "Looks fantastic, but I've run into three bugs in about 5 minutes, including a blank, frozen app.",
+            "who": "vulture916"
+          },
+          {
+            "title": "Tolaria",
+            "site": "dsebastien.net",
+            "url": "https://www.dsebastien.net/tolaria/",
+            "date": "2026-05-01",
+            "quote": "built around the MCP integration story rather than bolted-on AI features",
+            "who": "Sébastien Dubois"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BrightBean Studio",
+      "slug": "brightbean-studio",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Buffer and Hootsuite",
+      "description": "Social media management for agencies: separate client workspaces, approval steps with a client review link, a shared inbox for comments and DMs, and scheduling to 10+ networks. Free hosted or self-hosted.",
+      "category": "Business",
+      "url": "https://brightbean.xyz/studio/",
+      "linkText": "Visit site",
+      "source": "https://github.com/brightbeanxyz/brightbean-studio",
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "BrightBean (JanSchu)",
+      "icon": "▦",
+      "tile": "",
+      "added": "2026-11-24",
+      "longDescription": "BrightBean Studio plans, schedules and publishes posts to Facebook, Instagram, LinkedIn, TikTok, YouTube, Pinterest, Threads, Bluesky, Mastodon, Google Business Profile and DEV.to (X is not supported). It is built for people running many client accounts: unlimited organisations, workspaces and team members with roles, approval stages with comments, a no-account magic link so clients can approve posts, a unified inbox for comments, mentions, DMs and reviews, per-post analytics, a media library, a Kanban idea board and recurring posting slots on a calendar.\n\nEvery feature is free, with no paid tier. You can use the free hosted version at brightbean.xyz, deploy it with one click to Heroku, Render or Railway, or run it on your own server with Docker Compose (Django and PostgreSQL). Self-hosting means creating your own developer credentials with each social network.",
+      "builtWithAI": "Checked 2026-11-24: 196 of 656 commits are co-authored by Claude. The Show HN was titled \"I built a social media management tool in 3 weeks with Claude and Codex\", and the maker wrote: \"I used Opus 4.6 (Claude Code) for planning and building the first pass of backend and UI.\"",
+      "keywords": [
+        "Buffer",
+        "Hootsuite",
+        "Sendible",
+        "SocialPilot",
+        "social media scheduler",
+        "agency",
+        "client approval",
+        "social inbox"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/brightbean-studio/1.webp",
+          "alt": "BrightBean Studio month calendar for April 2026 with scheduled YouTube, Instagram and Pinterest posts and a colour key for draft, pending review, approved and published",
+          "caption": "Content calendar"
+        },
+        {
+          "src": "/assets/apps/brightbean-studio/2.webp",
+          "alt": "BrightBean Studio post editor with title, caption, attached image, Pinterest board settings and live Pinterest and YouTube previews",
+          "caption": "Writing a post"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "summary": "Its Show HN drew a lot of discussion, but most of it was about building software with AI rather than about the app. People who need a social media tool welcomed a free, open option and praised how complete it is. Several said the \"built in 3 weeks with AI\" pitch made them doubt it would be reliable or maintained. Hands-on reviews are still thin.",
+        "praise": [
+          "Very complete feature set for a new free tool",
+          "Calendar view makes a client's month easy to check"
+        ],
+        "complaints": [
+          "Some doubt that a tool built quickly with AI will be reliable or maintained",
+          "No X (Twitter) support",
+          "Self-hosting needs PostgreSQL, a worker and each network's API keys"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: I built a social media management tool in 3 weeks with Claude and Codex",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=47762867",
+            "date": "2026-04-14",
+            "quote": "Really impressive to ship something this complete in 3 weeks.",
+            "who": "thomasquarre",
+            "points": "190 points"
+          },
+          {
+            "title": "Show HN: BrightBean Studio (comment)",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=47751579",
+            "date": "2026-04-13",
+            "quote": "Pitching a product by telling me it's built quickly with AI does the opposite of convincing me to try it",
+            "who": "bryanhogan"
+          },
+          {
+            "title": "Show HN: BrightBean Studio (comment)",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=47750978",
+            "date": "2026-04-13",
+            "quote": "Legitimately cool project OP.",
+            "who": "domo__knows"
+          },
+          {
+            "title": "BrightBean Studio",
+            "site": "Product Hunt",
+            "url": "https://www.producthunt.com/products/brightbean-studio-social-media",
+            "quote": "A client review link that works without an account is a thoughtful detail.",
+            "who": "Oleksii Sekundant"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TikZ Editor",
+      "slug": "tikz-editor",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to TikZiT",
+      "description": "A visual editor for TikZ, the LaTeX drawing language. Drag shapes, arrows and labels on a canvas and your TikZ code updates as you go, keeping your own formatting.",
+      "category": "Graphics",
+      "url": "https://tikz.dev/editor/",
+      "linkText": "Visit site",
+      "download": "https://github.com/DominikPeters/tikz-editor/releases/latest",
+      "source": "https://github.com/DominikPeters/tikz-editor",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS"
+      ],
+      "maker": "Dominik Peters",
+      "icon": "◇",
+      "tile": "",
+      "added": "2026-11-24",
+      "longDescription": "TikZ Editor shows your TikZ source next to the rendered figure and keeps the two in sync. You can open a single figure, a whole paper's .tex file or a Beamer presentation, then move, resize, align and group elements, draw nodes, arrows, curves, matrices and trees, and edit styles in an inspector. When you drag something, only the numbers in that coordinate change, so your line breaks and indentation stay as they were, and existing \\foreach loops keep working. It needs no TeX install to show the figure, and it flags code errors as you type.\n\nIt runs in the browser at tikz.dev, as a desktop app for Windows, macOS and Linux, and as a free iPad app. It exports SVG, PDF, PNG or standalone LaTeX, and imports SVG, Ipe and PowerPoint files. Very hacky TeX may not be read correctly, and pgfplots and some advanced constructs are not supported yet. The desktop app has an optional assistant that uses your ChatGPT account through Codex. There are no accounts or analytics.",
+      "builtWithAI": "The maker wrote on Show HN (2026-06-23): \"(This app was built almost entirely by Codex.)\" The app's site adds that the code was written by Codex \"with some contributions from Claude\"; checked 2026-11-24, 12 of 1,839 commits are co-authored by Claude.",
+      "keywords": [
+        "TikZ",
+        "LaTeX",
+        "PGF",
+        "TikZiT",
+        "diagram editor",
+        "Beamer",
+        "figures",
+        "Ipe"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/tikz-editor/1.webp",
+          "alt": "TikZ Editor with a decision tree figure on the canvas, its TikZ source on the left and the inspector on the right",
+          "caption": "Source and canvas"
+        },
+        {
+          "src": "/assets/apps/tikz-editor/2.webp",
+          "alt": "The web version of TikZ Editor showing a finite-state automaton with three states next to its TikZ code",
+          "caption": "Editing an automaton"
+        },
+        {
+          "src": "/assets/apps/tikz-editor/3.webp",
+          "alt": "A Beamer lecture deck open in TikZ Editor, with slide thumbnails, the title slide, its source and theme settings",
+          "caption": "Beamer slides"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "summary": "Most of the discussion comes from its Show HN launch in June 2026, which drew 451 points and a lot of thanks from students and researchers who have long hand-tuned TikZ coordinates. People like that it can edit existing figures without rewriting the code. The main criticism is that new elements get absolute coordinates instead of TikZ's relative positioning and anchors. Beyond Hacker News, coverage is thin: one short user review and a few blog write-ups.",
+        "praise": [
+          "Edits existing TikZ figures without turning the code into machine-generated output",
+          "Saves the edit-and-recompile loop of nudging coordinates by hand",
+          "Free and open source, with web and desktop versions"
+        ],
+        "complaints": [
+          "New and aligned elements use absolute coordinates rather than idiomatic relative positioning",
+          "No support yet for pgfplots or Typst's CeTZ, which some users asked for",
+          "An early Linux build showed a distorted grid for one user"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: TikZ Editor, WYSIWYG editor for figures in LaTeX",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=48646267",
+            "date": "2026-06-23",
+            "quote": "The killer feature for me is not drawing TikZ visually, but being able to touch old TikZ without turning the source into generated-looking soup.",
+            "who": "Littice",
+            "points": "451 points"
+          },
+          {
+            "title": "Show HN: TikZ Editor (comment on the generated code)",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=48649028",
+            "date": "2026-06-23",
+            "quote": "However, the generated TikZ code is not good in my opinion. Everything uses absolute coordinates, which in TikZ is seldom needed.",
+            "who": "gignico"
+          },
+          {
+            "title": "TikZ Editor reviews",
+            "site": "AlternativeTo",
+            "url": "https://alternativeto.net/software/tikz-editor/about/",
+            "date": "2026-06-25",
+            "quote": "A useful app, exactly what I need when writing a paper",
+            "who": "Tintin Yuan",
+            "points": "5 out of 5 from 1 review"
+          },
+          {
+            "title": "TikZ Editor: a WYSIWYG editor for LaTeX figures",
+            "site": "lilting.ch",
+            "url": "https://lilting.ch/en/articles/tikz-editor-latex-wysiwyg",
+            "date": "2026-06-24",
+            "quote": "a UI that was hard to come by until now has appeared",
+            "who": "Ikesan"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Minute",
+      "slug": "minute",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Granola, Otter.ai",
+      "description": "A Mac meeting note-taker that works with no internet at all. It notices when a call starts, transcribes it live, then writes a summary, decisions and action items with a local model.",
+      "category": "Productivity",
+      "url": "https://minutenotes.app",
+      "linkText": "Visit site",
+      "download": "https://github.com/mraza007/minute/releases/latest",
+      "source": "https://github.com/mraza007/minute",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Muhammad Raza",
+      "icon": "◔",
+      "tile": "voice",
+      "added": "2026-11-24",
+      "longDescription": "Minute records your microphone and, if you allow it, the other people on the call, with no bot joining the meeting. It can spot when Zoom, Teams, Slack, FaceTime, Webex, Discord or a browser call starts and offer to record, then stop by itself when the call goes quiet or ends. Whisper writes the transcript as people talk, and when you stop, a local language model writes a summary, the decisions and action items you can tick off. You can ask questions about one meeting, label speakers by voice and have them recognised next time, search every transcript, and save each note to an Obsidian vault as Markdown.\n\nEverything runs inside the app: there is no account, no analytics and no cloud AI service to plug in, and it only goes online to download models or check for updates. It is a quiet note-taker rather than a live call coach. Notes are plain files on your disk, and audio is deleted after 30 days by default. It needs macOS 11 or later (13 or later to record system audio), at least 8 GB of memory and about 3 GB of disk for the default models. Apple silicon is the tested target; an Intel build exists but is untested.",
+      "builtWithAI": "The maker wrote on Show HN (2026-07-28): \"I built the project end-to-end with Codex as a design and engineering partner\", adding that this covered the UX, accessibility work, reliability tests, CI and release automation. No commits carry AI co-author lines (checked 2026-11-24: 0 of 351).",
+      "keywords": [
+        "Granola",
+        "Otter",
+        "meeting notes",
+        "transcription",
+        "Whisper",
+        "offline",
+        "local LLM",
+        "Obsidian"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/minute/1.webp",
+          "alt": "A finished meeting note in Minute with a summary, numbered decisions and action items with checkboxes, and a list of past meetings on the left",
+          "caption": "Summary and action items"
+        },
+        {
+          "src": "/assets/apps/minute/2.webp",
+          "alt": "Minute recording a meeting, with a live transcript split by speaker, a marker, and Stop and summarize and Pause buttons",
+          "caption": "Live transcript"
+        },
+        {
+          "src": "/assets/apps/minute/3.webp",
+          "alt": "Minute's Ask panel answering two questions about a meeting, with clickable timestamps in the answers",
+          "caption": "Ask about a meeting"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Torched!",
+      "slug": "torched",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by cooking games",
+      "description": "A short browser cooking game set in a tiny Paris bistro: sweep a kitchen torch over desserts and fish until they turn gold, not black, while a feared food critic watches.",
+      "category": "Games",
+      "url": "https://erathul.itch.io/torched",
+      "linkText": "Play now",
+      "icon": "♨",
+      "tile": "glance",
+      "added": "2026-11-24",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "Erathul",
+      "longDescription": "You are the new cook at Chez Flambeau. Hold the mouse button or your finger to torch, keep the flame moving until the whole surface turns amber, then ring the bell to serve. Five nights bring crème brûlées with guests' wishes (extra dark, light, half and half), a side of salmon whose thin tail cooks faster, a lemon meringue tart, marshmallow squares that can catch fire, and a night in the dining car of a train where curves and brakes move the plate under your torch. After each night the critic's review appears as a newspaper clipping, read aloud, with zero to three stars.\n\nA guest book unlocks special orders for eight regular guests, an endless mode keeps five tables going until you lose three, and there are nine stamps to collect. A night takes about three minutes, it works with mouse or touch, and your progress stays in your browser.",
+      "builtWithAI": "The maker says on itch.io: \"Torched! is built by Claude Code (Claude Opus 5.5) as chef de cuisine: plan, architecture, assembly and checks.\" The credits list \"Code, shaders, tests and text: Claude Code\", with images, voices, sound and music made with ElevenLabs tools (https://erathul.itch.io/torched).",
+      "keywords": [
+        "cooking",
+        "creme brulee",
+        "kitchen torch",
+        "food critic",
+        "bistro",
+        "paris",
+        "game jam"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/torched/1.webp",
+          "alt": "A kitchen torch caramelising the sugar on a crème brûlée, with the chef's order and a guest ticket on screen",
+          "caption": "Torching a crème brûlée"
+        },
+        {
+          "src": "/assets/apps/torched/2.webp",
+          "alt": "A spoon cracking an evenly browned crème brûlée with a three-star Parfait rating",
+          "caption": "A perfect crust"
+        },
+        {
+          "src": "/assets/apps/torched/3.webp",
+          "alt": "A side of salmon on a wooden board being seared with the torch",
+          "caption": "Night 2: the salmon"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "summary": "The feedback comes from players on itch.io, mostly fellow entrants in the AI Browser Game Jam 5, where it tied for 4th place overall from 24 ratings. Players like the satisfying colour change of the sugar, the voices and sound, and the double meaning of the theme, and several called it polished. Criticism is mild: the first dish is the hardest, the hint to keep the torch moving comes too late, and the core action can feel slow or repetitive after a few plates. Coverage is limited to jam comments.",
+        "praise": [
+          "Very satisfying sugar that browns exactly where the flame goes",
+          "Good voice acting and sound design",
+          "Polished and a clever take on the jam theme",
+          "Simple to pick up with room to get better"
+        ],
+        "complaints": [
+          "Easy to burn everything; three stars are hard to earn",
+          "Crème brûlée is the hardest dish but comes first",
+          "Torching can feel slow or tedious after several dishes"
+        ],
+        "sources": [
+          {
+            "title": "Torched! (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5238978",
+            "date": "2026-11-11",
+            "quote": "The gradual colour change on the sugar makes torching the brûlée feel tangible.",
+            "who": "Shumpei0706",
+            "points": "Tied 4th overall, 4.0 out of 5 from 24 ratings"
+          },
+          {
+            "title": "Torched! (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5238978",
+            "date": "2026-11-04",
+            "quote": "Tight design, clear understanding of the subject, and great direction all around.",
+            "who": "healeyj"
+          },
+          {
+            "title": "Torched! (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5238978",
+            "date": "2026-10-31",
+            "quote": "for a simple mechanic there is actually a reasonably deep level of mastery.",
+            "who": "Stealth"
+          },
+          {
+            "title": "Torched! (comments)",
+            "site": "itch.io",
+            "url": "https://erathul.itch.io/torched",
+            "date": "2026-10-31",
+            "quote": "I got so into it that I kept pressing too hard and ended up burning everything.",
+            "who": "ryokucha-yunomi",
+            "points": "5.0 out of 5 from 4 ratings"
+          },
+          {
+            "title": "Torched! (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5238978",
+            "date": "2026-10-31",
+            "quote": "The actual game mechanic is surprisingly fun, although tedious after the 5 or so dish.",
+            "who": "Atlas"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Kara and the Primal Torch",
+      "slug": "kara-and-the-primal-torch",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by retro action platformers",
+      "description": "A pixel-art side-scrolling platformer in your browser. A living torch floats beside the heroine and homes in on enemies, but every blast dims the only light you have.",
+      "category": "Games",
+      "url": "https://egobiian.itch.io/kara-and-the-primal-torch",
+      "linkText": "Play now",
+      "icon": "✧",
+      "tile": "capture",
+      "added": "2026-11-24",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "egobiian",
+      "longDescription": "A cult has put out every fire of Kara's tribe except the Primal Torch. You run and jump through the fallen camp, the Ancestral Sands and the Sleeping Volcano, holding fire to let the torch hunt the nearest enemy. Firing drains the flame and shrinks its light, so you fight in the dark if you burn too long. Bonfires act as checkpoints, three guardian bosses wait at the ends of the stages, and secret chambers hide nine captives to free for the true ending.\n\nThere is an Arcade mode with chained kills for score and a Time Attack mode. It plays with keyboard, gamepad or touch (landscape on phones). It was made in Godot for the AI Browser Game Jam 5, and its status on itch.io is On hold.",
+      "builtWithAI": "The maker says on itch.io: \"Almost everything in the game was generated with AI, directed and curated by Egobiian\", with \"Code, stages and the design document: Claude Code by Anthropic, working as a small team of specialised agents\". Graphics came from PixelLab, music from ACE-Step and sound from MOSS-SoundEffect (https://egobiian.itch.io/kara-and-the-primal-torch).",
+      "keywords": [
+        "platformer",
+        "side scroller",
+        "pixel art",
+        "retro",
+        "boss battle",
+        "torch",
+        "godot"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/kara-and-the-primal-torch/1.webp",
+          "alt": "Title screen with the red-haired heroine on a cliff beside a floating flame, under an eclipse",
+          "caption": "Title screen"
+        },
+        {
+          "src": "/assets/apps/kara-and-the-primal-torch/2.webp",
+          "alt": "The living torch blasting a hooded cultist in the fallen camp, with the light shrinking around the heroine",
+          "caption": "Burning a cultist"
+        },
+        {
+          "src": "/assets/apps/kara-and-the-primal-torch/3.webp",
+          "alt": "A shadowy cult figure firing a purple beam at the heroine in a red canyon",
+          "caption": "Into the canyon"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "summary": "The only feedback comes from players on itch.io, mostly fellow entrants in the AI Browser Game Jam 5, where it placed 21st overall from 7 ratings. Players like the pixel art, the heroine, the 90s feel and the way firing darkens the screen. Criticism covers the simple first boss, the lack of health pickups in early versions and a short minimum jump; the maker has updated the game since several of these comments. Coverage is thin.",
+        "praise": [
+          "Strong pixel art and smooth animation",
+          "Firing that darkens the world makes the theme clear",
+          "A convincing 90s arcade feel"
+        ],
+        "complaints": [
+          "The first boss is basic",
+          "Early versions had no way to recover health",
+          "The short-press jump is hard on higher walls"
+        ],
+        "sources": [
+          {
+            "title": "Kara and the Primal Torch (comments)",
+            "site": "itch.io",
+            "url": "https://egobiian.itch.io/kara-and-the-primal-torch",
+            "date": "2026-10-20",
+            "quote": "i like that the area become dimmer as she spew fire.",
+            "who": "vendatta77",
+            "points": "4.0 out of 5 from 1 rating"
+          },
+          {
+            "title": "Kara and the Primal Torch (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5186387",
+            "date": "2026-11-08",
+            "quote": "I liked the pixel art, the main character is well‑designed, and the game is truly excellent.",
+            "who": "rontoss",
+            "points": "21st overall, 3.71 out of 5 from 7 ratings"
+          },
+          {
+            "title": "Kara and the Primal Torch (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5186387",
+            "date": "2026-11-04",
+            "quote": "I struggled with the short-press jump on the higher walls, so a slightly higher minimum jump might help.",
+            "who": "CaCC-Lab"
+          },
+          {
+            "title": "Kara and the Primal Torch (comments)",
+            "site": "itch.io",
+            "url": "https://egobiian.itch.io/kara-and-the-primal-torch",
+            "date": "2026-10-25",
+            "quote": "Really fun! The final boss was a good challenge",
+            "who": "SparePower"
+          },
+          {
+            "title": "Kara and the Primal Torch (comments)",
+            "site": "itch.io",
+            "url": "https://egobiian.itch.io/kara-and-the-primal-torch",
+            "date": "2026-10-20",
+            "quote": "also health sniffer attack is a bit basic.",
+            "who": "vendatta77"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Coalheart",
+      "slug": "coalheart",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by turn-based puzzle games",
+      "description": "A short turn-based puzzle game in your browser: a little coal creature carries the last fire through a cold temple, and the order you collect and spend that fire is the puzzle.",
+      "category": "Games",
+      "url": "https://nebitula.itch.io/coalheart",
+      "linkText": "Play now",
+      "icon": "◈",
+      "tile": "glance",
+      "added": "2026-11-24",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "NeBITula",
+      "longDescription": "Torches never refill and every room holds exactly the fire it needs. You bump a torch to take its fire, spend 3 to light a brazier that opens the gate with the same rune and 2 to burn away brambles, all while a gauge limits how much you can carry. If the fire left can no longer reach the stairs, the game tells you, and undo and restart are free.\n\nThere are 15 rooms in three chapters, each with a par for the fewest moves, and your best results are kept in the browser. It plays with arrow keys or WASD, or by tapping and swiping on a touch screen. The pixel art, fonts, music and sound are all made in code.",
+      "builtWithAI": "The maker's AI disclosure on itch.io: \"Coalheart was made with Claude Code, Anthropic's AI coding assistant, under the developer's direction.\" In a comment the maker adds that he described the concept and style, \"gave all this to Claude and I got the fully working game\" (https://nebitula.itch.io/coalheart).",
+      "keywords": [
+        "puzzle",
+        "turn-based",
+        "logic",
+        "pixel art",
+        "dungeon",
+        "fire",
+        "game jam"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/coalheart/1.webp",
+          "alt": "The final room, The Heart, with torches, braziers, rune gates and a fire gauge showing 2 of 6",
+          "caption": "The final room"
+        },
+        {
+          "src": "/assets/apps/coalheart/2.webp",
+          "alt": "An early room with the coal creature beside a torch, a brazier and a rune gate",
+          "caption": "Learning the runes"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "summary": "The feedback comes from players on itch.io, mostly fellow entrants in the AI Browser Game Jam 5, where it tied for first place overall from 7 ratings. Players praise the pixel art, the music and how cleanly each room teaches one idea. The main criticisms are that the room is drawn small on a large screen, par counts every step so early rooms feel like route tracing, and later puzzles could make more use of the level layout. Coverage is limited to jam comments.",
+        "praise": [
+          "Charming pixel art and music",
+          "Each room teaches one idea clearly",
+          "Free undo and restart, and par scores that invite replays"
+        ],
+        "complaints": [
+          "The room is drawn small, so tiles can be tiny",
+          "Early rooms feel more like tracing a route than solving",
+          "Later puzzles could use the level layout more"
+        ],
+        "sources": [
+          {
+            "title": "Coalheart (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5213715",
+            "date": "2026-10-23",
+            "quote": "One idea per room teaches well, the over-par note hinting at a shorter route makes me want another go",
+            "who": "havocy28",
+            "points": "Tied 1st overall, 4.14 out of 5 from 7 ratings"
+          },
+          {
+            "title": "Coalheart (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5213715",
+            "date": "2026-11-01",
+            "quote": "Great game, played it for a good while! Loved the art, music and gameplay.",
+            "who": "egobiian"
+          },
+          {
+            "title": "Coalheart (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5213715",
+            "date": "2026-10-31",
+            "quote": "I feel like I wanted the level geometry to matter more directly to the puzzles in the later stages",
+            "who": "Ceesearch"
+          },
+          {
+            "title": "Coalheart (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5213715",
+            "date": "2026-10-23",
+            "quote": "The room is drawn small in the middle of a big empty canvas, about a third of my window width, so the tiles were tiny.",
+            "who": "havocy28"
+          },
+          {
+            "title": "Coalheart (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5213715",
+            "date": "2026-11-02",
+            "quote": "Nice little game - perfect implementation of the theme!",
+            "who": "KiGaRo Games"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lightkeeper",
+      "slug": "lightkeeper",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by arcade guiding games",
+      "description": "Keep a lighthouse through seven stormy nights. Ships can only plot a course across water your beam has lit, so you sweep and hold the light to guide them past the rocks.",
+      "category": "Games",
+      "url": "https://thedannos.itch.io/lightkeeper",
+      "linkText": "Play now",
+      "icon": "☼",
+      "tile": "glance",
+      "added": "2026-11-24",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "TheDannos",
+      "longDescription": "You aim the beam with the mouse, a finger or the keyboard. Holding it on a ship lets it chart a safe route to the harbour as far as the light reaches, a Flash lights the whole sea for a moment at the cost of oil, and three wrecks lose the night. Each night adds something new: fog banks, lightning, currents, wind, smugglers, supply ships and a kraken that rises under neglected ships.\n\nBetween nights, letters arrive from the people you saved and the harbour sells upgrades such as a faster mechanism, a Fresnel lens, a rescue boat and a fog siren. All seven nights take about 15 to 20 minutes, progress is saved in the browser, and it is best played in landscape with sound on. All the art is drawn in code in a woodcut style.",
+      "builtWithAI": "The maker says on the jam page: \"One person, zero hand-written code. I designed the game and made every call; AI agents built the rest in 13 days.\" The game's credits read \"Code, art and tools: written with Claude (Anthropic) in Claude Code\", with music from Suno and sound effects from ElevenLabs (https://itch.io/jam/ai-jam-5/rate/5265063).",
+      "keywords": [
+        "lighthouse",
+        "ships",
+        "storm",
+        "arcade",
+        "kraken",
+        "game jam",
+        "beam"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/lightkeeper/1.webp",
+          "alt": "The lighthouse beam lighting a ship's dotted course across a dark, stormy sea",
+          "caption": "Guiding a ship in"
+        },
+        {
+          "src": "/assets/apps/lightkeeper/2.webp",
+          "alt": "The harbour shop between nights, with upgrades like a faster mechanism, bigger tank, lenses, rescue boat and fog siren",
+          "caption": "Harbour upgrades"
+        },
+        {
+          "src": "/assets/apps/lightkeeper/3.webp",
+          "alt": "A letter to the lighthouse keeper from an apprentice on a brig",
+          "caption": "Letters from the saved"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "summary": "The feedback comes from players on itch.io, mostly fellow entrants in the AI Browser Game Jam 5, where it tied for first place overall from 14 ratings. Players praise the melancholic music and art, the rain, and the way each night adds a new twist. Criticisms are about balance: upgrades after the first feel small, two ships arriving from opposite sides can be nearly impossible to save, and the last nights can feel opaque. Coverage is limited to jam comments.",
+        "praise": [
+          "Atmospheric music, rain sounds and art",
+          "Easy to understand, with new mechanics each night",
+          "Letters from the crews add feeling"
+        ],
+        "complaints": [
+          "Later upgrades feel small",
+          "Some ship arrivals are very hard to handle at once",
+          "The last nights can feel opaque"
+        ],
+        "sources": [
+          {
+            "title": "Lightkeeper (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5265063",
+            "date": "2026-11-04",
+            "quote": "The music is beautifully chosen, and the sound of the rain adds so much to the experience.",
+            "who": "m040xie",
+            "points": "Tied 1st overall, 4.14 out of 5 from 14 ratings"
+          },
+          {
+            "title": "Lightkeeper (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5265063",
+            "date": "2026-11-05",
+            "quote": "The music and art had this wonderfully melancholic vibe that fit the game perfectly!",
+            "who": "ryokucha-yunomi"
+          },
+          {
+            "title": "Lightkeeper (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5265063",
+            "date": "2026-10-31",
+            "quote": "Upgrades are a nice thing to pull forward, but honestly there was a big gap between the first install and the +5% or +8% tweaks afterwards.",
+            "who": "Ceesearch"
+          },
+          {
+            "title": "Lightkeeper (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5265063",
+            "date": "2026-11-05",
+            "quote": "If another ship came from the right at the same time, it was almost impossible to shine light on both in time",
+            "who": "ryokucha-yunomi"
+          },
+          {
+            "title": "Lightkeeper (jam ratings and comments)",
+            "site": "itch.io, AI Browser Game Jam 5",
+            "url": "https://itch.io/jam/ai-jam-5/rate/5265063",
+            "date": "2026-10-31",
+            "quote": "The one thing I wanted was more ships on screen at once, to keep the beam busy and build some tension.",
+            "who": "seymour8glass"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Xs of Y",
+      "slug": "xs-of-y",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by roguelike games",
+      "description": "An unfinished but playable terminal-style roguelike that names itself every run. Its magic is a small Lisp: runes stand for code, and you piece spells together.",
+      "category": "Games",
+      "url": "https://nooga.github.io/xsofy/",
+      "linkText": "Play now",
+      "icon": "⌘",
+      "tile": "code",
+      "added": "2026-11-24",
+      "source": "https://github.com/nooga/xsofy",
+      "license": "MIT",
+      "platforms": [
+        "Web",
+        "macOS",
+        "Linux"
+      ],
+      "price": "Free",
+      "maker": "nooga",
+      "longDescription": "Every run gets a new title (such as Voids of Deferred Maintenance), a new quest and a new mapping of runes, which secretly stand for Lisp expressions you inscribe on weapons and armour. The dungeon fights back in more ordinary ways too: spiders web you, slimes split, trolls regenerate, fire spreads through grass, and you can shove monsters into lava or chasms. The maker names Brogue as the main inspiration for its look.\n\nThe maker says plainly that it is not finished: it is playable, but expect bugs and crashes, and the rune system has no documentation yet. It runs in the browser, or in a terminal on macOS and Linux via Homebrew (brew install nooga/tap/xsofy). It is written in let-go, the maker's own Clojure-like language.",
+      "builtWithAI": "Checked 2026-11-24: 72 of the repo's 194 commits are co-authored by Claude.",
+      "keywords": [
+        "roguelike",
+        "brogue",
+        "lisp",
+        "clojure",
+        "ascii",
+        "dungeon crawler",
+        "terminal game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/xs-of-y/1.webp",
+          "alt": "A small lit dungeon area in coloured text characters, with the player's health, an archer and a slime listed on the left and the quest message below",
+          "caption": "The first level"
+        },
+        {
+          "src": "/assets/apps/xs-of-y/2.webp",
+          "alt": "The title screen reading Voids of Deferred Maintenance among scattered runes",
+          "caption": "A new name each run"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "The Human Box",
+      "slug": "the-human-box",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by god games and civilization sandboxes",
+      "description": "A civilization sandbox where Stone Age tribes invent languages, religions and wars on their own across 45 eras. Watch, or play god with blessings and disasters.",
+      "category": "Games",
+      "url": "https://thehumanbox.com",
+      "linkText": "Play now",
+      "download": "https://github.com/1homsi/thehumanbox/releases/latest",
+      "icon": "◍",
+      "tile": "glance",
+      "added": "2026-11-24",
+      "source": "https://github.com/1homsi/thehumanbox",
+      "license": "MIT",
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "price": "Free",
+      "maker": "Mohamad Homsi",
+      "longDescription": "Autonomous people are born with traits from both parents, learn, form tribes, build homes and cities, trade, found religions, sign treaties and go to war, from the Stone Age through 45 eras into speculative far-future ones. Each person has their own thoughts, memories, family tree and words of their tribe's language, all written by the simulation itself rather than a language model. You can watch at up to 5000x speed, follow anyone, read the world's chronicles, or use about 160 god tools to answer prayers, reshape land and send plagues or disasters.\n\nThe simulation is Rust compiled to WebAssembly and runs on your own device with no sign-up; worlds save locally and can be exported. Desktop apps for Windows, Linux and Apple silicon Macs are on the releases page; they are not code-signed yet, so you have to get past the security warning.",
+      "builtWithAI": "Checked 2026-11-24: 2,108 of the repo's 4,128 commits are co-authored by Claude.",
+      "keywords": [
+        "worldbox",
+        "god game",
+        "civilization",
+        "simulation",
+        "sandbox",
+        "tribes",
+        "wasm",
+        "rust"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/the-human-box/1.webp",
+          "alt": "A pixel-art map of forest and coast with a small named tribe gathered by the shore and god tools along the bottom",
+          "caption": "A tribe's first camp"
+        },
+        {
+          "src": "/assets/apps/the-human-box/2.webp",
+          "alt": "The civilization panel listing tribes with their era, population, government and currency",
+          "caption": "The civilization panel"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Bokken",
+      "slug": "bokken",
+      "group": "indie",
+      "owner": "Independent",
+      "alternative": "Inspired by physics-based sword fighting games",
+      "description": "A 2D physics fighting game where you carve your own weapons out of pixels, and their weight, balance, edges and grip decide how they fight.",
+      "category": "Games",
+      "url": "https://plinthcybernetics.itch.io/bokken-cyol",
+      "linkText": "Play now",
+      "icon": "⚔",
+      "tile": "bar",
+      "added": "2026-11-24",
+      "platforms": [
+        "Web",
+        "Windows",
+        "Linux"
+      ],
+      "price": "Free",
+      "maker": "Stuart Weiss (Plinth Cybernetics)",
+      "longDescription": "There are no weapon types: you carve wood with a sharp stone, hone edges, join pieces of different materials and set the grip, and the game works out how the result swings. You steer your arms directly to swing and thrust, break scenery and knock weapons out of enemies' hands while crossing an island past a bandit, a monk and an Oni to face a Master. Fires heal you, and weapons chip and break, so you keep rebuilding them. There are three modes: one-life Realism, a more forgiving Gamified mode with checkpoints, and Endless.\n\nIt is a one-week prototype made with Godot for an AI game jam (Jamference: AI Game Jam Hack 2, October 2026). It plays in the browser with keyboard and mouse, a gamepad or touch (landscape only on phones), and there are downloads for Windows and Linux. The crafting takes some learning; the in-game help (H) explains it.",
+      "builtWithAI": "The maker says on itch.io: \"Claude Code (Anthropic) wrote the code, the design documents from my notes, the tools, the tests, and integrated it all together.\" He designed the game and tuned it by hand; the cover painting was made with Grok Imagine.",
+      "keywords": [
+        "sword fighting",
+        "physics",
+        "crafting",
+        "samurai",
+        "musashi",
+        "game jam",
+        "godot"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/bokken/1.webp",
+          "alt": "Two pixel figures duelling with long wooden weapons on hills at sunset",
+          "caption": "A duel at dusk"
+        },
+        {
+          "src": "/assets/apps/bokken/2.webp",
+          "alt": "The crafting screen with a wooden weapon on a pixel grid and its weight, balance, reach and grip stats",
+          "caption": "Carving a weapon"
+        },
+        {
+          "src": "/assets/apps/bokken/3.webp",
+          "alt": "A fight with a bandit by a wooden fence in a forest, with control hints on screen",
+          "caption": "The bandit in the forest"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "OpenWorld RPG",
+      "slug": "openworld-rpg",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by open-world RPGs",
+      "description": "A pixel-art open-world RPG in your browser with over a thousand maps, a main story, real-time combat, crafting, farming and building, plus the engine and editor it is made with.",
+      "category": "Games",
+      "url": "https://openworldrpg.ai/",
+      "linkText": "Visit site",
+      "icon": "⛨",
+      "tile": "",
+      "added": "2026-11-24",
+      "source": "https://github.com/SihanXU/openworld",
+      "license": "MIT",
+      "platforms": [
+        "Web"
+      ],
+      "price": "Free",
+      "maker": "The OpenWorld authors",
+      "longDescription": "You set out on a pilgrimage across a world of villages, cities, wilderness and dungeons, with a main story, side quests and jobs, real-time combat with telegraphed boss attacks, crafting, farming and building on your own land. More than 1,600 characters have homes, jobs and daily routines, and trade and react to what they see. It is in English and Chinese, and a demo is playable on the website.\n\nAll the world's rules are data. Optionally, a language model (your own API key, or a local setup) can propose a new rule when you try something no rule covers; the engine tests it before using it. The game is fully playable without any model. The repo also contains the TypeScript engine and a map and quest editor, and the project is the research platform for a paper. Code is MIT, the project's own art is CC0, and it also uses the CC0 Ninja Adventure pack.",
+      "builtWithAI": "Checked 2026-11-24: 669 of the repo's 1,037 commits are co-authored by Claude.",
+      "keywords": [
+        "rpg",
+        "open world",
+        "pixel art",
+        "game engine",
+        "level editor",
+        "llm",
+        "farming",
+        "crafting"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/openworld-rpg/1.webp",
+          "alt": "A pixel-art cathedral with a rose window and gardens in the game's capital city",
+          "caption": "Sunwell Abbey"
+        },
+        {
+          "src": "/assets/apps/openworld-rpg/2.webp",
+          "alt": "A busy market square with striped stalls and townsfolk",
+          "caption": "The market"
+        },
+        {
+          "src": "/assets/apps/openworld-rpg/3.webp",
+          "alt": "A harbour town with sailing ships moored at wooden piers",
+          "caption": "Rimeholm harbour"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Calino",
+      "slug": "calino",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Google Calendar",
+      "description": "A calendar in your browser that connects to your own CalDAV or JMAP server, such as Nextcloud, Fastmail or Radicale. It handles events, tasks and journal notes, with no Calino account.",
+      "category": "Productivity",
+      "url": "https://calino.io",
+      "linkText": "Visit site",
+      "download": "https://github.com/Ivan-Malinovski/calino/releases/latest",
+      "source": "https://github.com/Ivan-Malinovski/calino",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web",
+        "Android"
+      ],
+      "maker": "Ivan Malinovski",
+      "icon": "▦",
+      "tile": "",
+      "added": "2026-11-24",
+      "longDescription": "Calino is a calendar app that runs in the browser and talks directly to the calendar server you already use: Nextcloud, Baikal, Radicale, Fastmail, iCloud or any other CalDAV server, and JMAP servers such as Stalwart. It has month, week, 3-day, day, agenda and year views, drag-and-drop editing, a command palette where you can type something like \"coffee on wednesday at 12\" to create an event, tasks with priorities and recurrence, journal entries in Markdown, contacts from CardDAV, colour-coded categories and light and dark themes.\n\nThere is no Calino account and no backend: your calendar data and settings stay in the browser, and it can be installed as a web app. Use the free hosted version at calino.io or run your own copy with Docker. Your server has to allow browser requests (CORS), or you can go through a proxy, including one the project hosts. An Android app is available as an APK from GitHub Releases, not from Google Play.",
+      "builtWithAI": "Checked 2026-11-24: 437 of 1,897 commits are co-authored by Claude. The README's \"Vibecoding disclaimer\" says: \"Calino is largely vibecoded by Claude Opus 4.8, Opus 5 and ChatGPT 5.6 Sol and Luna.\"",
+      "keywords": [
+        "Google Calendar",
+        "Fantastical",
+        "CalDAV client",
+        "Nextcloud calendar",
+        "web calendar",
+        "JMAP",
+        "tasks",
+        "journal"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/calino/1.webp",
+          "alt": "Calino's month view for June 2026 with events and tasks, shown half in the light theme and half in the dark theme",
+          "caption": "Month view"
+        },
+        {
+          "src": "/assets/apps/calino/2.webp",
+          "alt": "Calino's task list grouped into overdue, this week and later, with priorities and due dates",
+          "caption": "Tasks"
+        },
+        {
+          "src": "/assets/apps/calino/3.webp",
+          "alt": "Calino's journal view in the dark theme with dated entries, formatted notes and links to events",
+          "caption": "Journal"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Dorso",
+      "slug": "dorso",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Upright and other posture apps",
+      "description": "A Mac menu bar app that watches your posture through the camera or AirPods and gradually blurs the screen when you slouch. Sit up straight and the blur clears.",
+      "category": "Health and fitness",
+      "url": "https://dorso.app",
+      "linkText": "Visit site",
+      "download": "https://github.com/tldev/dorso/releases/latest",
+      "source": "https://github.com/tldev/dorso",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Tom Johnell (tldev)",
+      "icon": "◉",
+      "tile": "bar",
+      "added": "2026-11-24",
+      "longDescription": "Dorso sits in the menu bar and checks how you are sitting. With the camera it uses Apple's Vision framework to follow the position of your head against a baseline you calibrate while sitting up straight; with AirPods Pro, Max or 3rd generation and later it reads the tilt of your head instead, so no camera is needed. When you slouch, the screen blurs a little, then more the worse it gets. You can pick a glow, border or solid warning instead, set a dead zone, delay and sensitivity, pause it when you're away from your desk, and see a daily posture score with a seven-day chart.\n\nAll processing happens on your Mac, with no account and no cloud. It needs macOS 13 Ventura or later (AirPods mode needs macOS 14). The signed and notarized download on GitHub and the Homebrew install are free; the same app is also sold on the Mac App Store as \"Dorso - Posture Monitor\" for $4.99. It was first released as Posturr.",
+      "builtWithAI": "Checked 2026-11-24: 228 of 336 commits are co-authored by Claude.",
+      "keywords": [
+        "Posturr",
+        "posture",
+        "slouch",
+        "Upright",
+        "ergonomics",
+        "screen blur",
+        "AirPods"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/dorso/1.webp",
+          "alt": "Dorso's settings window with camera tracking, the blur warning style and sliders for dead zone, intensity, delay and detection",
+          "caption": "Settings"
+        },
+        {
+          "src": "/assets/apps/dorso/2.webp",
+          "alt": "Dorso's posture analytics window with today's score of 91%, monitoring time, slouch time and a seven-day bar chart",
+          "caption": "Posture analytics"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "summary": "Dorso got wide attention in January 2026, when it was still called Posturr: a Hacker News thread reached the front page and the German news agency dpa wrote it up. People who tried it said the gradual blur works and quickly changed how they sit. The criticism was about CPU use, unease with a camera that is always on, the app not opening on some Macs at first, and a debate over whether sitting upright is healthy at all. Most of this feedback is about the first release; later versions added AirPods tracking and a notarized download.",
+        "praise": [
+          "The gradual blur is an effective nudge to sit up",
+          "Users said it improved their posture within days",
+          "Runs locally with no account"
+        ],
+        "complaints": [
+          "Early versions used a noticeable share of CPU",
+          "Some people are uneasy about the camera watching them all day",
+          "Mac only",
+          "Some commenters doubt that upright posture is the right goal"
+        ],
+        "sources": [
+          {
+            "title": "A macOS app that blurs your screen when you slouch",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=46754944",
+            "date": "2026-01-25",
+            "quote": "I cloned this a few hours ago and started using it and it’s amazing how effective the blur is!",
+            "who": "einsteinx2",
+            "points": "692 points"
+          },
+          {
+            "title": "New app helps you sit up straight while at your computer",
+            "site": "The Star (dpa)",
+            "url": "https://www.thestar.com.my/tech/tech-news/2026/02/08/new-app-helps-you-sit-up-straight-while-at-your-computer",
+            "date": "2026-02-08",
+            "quote": "It is especially helpful as the blur is applied in stages.",
+            "who": "dpa"
+          },
+          {
+            "title": "Same Hacker News thread: after installing",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=46770512",
+            "date": "2026-01-26",
+            "quote": "I've now installed this and it's already improved my posture -- thanks!",
+            "who": "gcanyon"
+          },
+          {
+            "title": "Same Hacker News thread: CPU use",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=46761866",
+            "date": "2026-01-26",
+            "quote": "I've noticed that the app tends to use 15% of my CPU constantly.",
+            "who": "coolandsmartrr"
+          },
+          {
+            "title": "Same Hacker News thread: camera worries",
+            "site": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=46757316",
+            "date": "2026-01-25",
+            "quote": "I’m a little put off with the idea that my camera is always watching me but the thought behind it is really cool.",
+            "who": "hk1337"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Readfine",
+      "slug": "readfine",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Feedly and Tiny Tiny RSS",
+      "description": "An RSS reader for the web that puts the articles you care about first, merges the same story from several sites into one row, and can summarize articles with your own AI key.",
+      "category": "Reading",
+      "url": "https://readfine.app",
+      "linkText": "Visit site",
+      "source": "https://github.com/jakublibik/readfine",
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "jakublibik",
+      "icon": "☰",
+      "tile": "",
+      "added": "2026-11-24",
+      "longDescription": "Readfine is a web feed reader in the spirit of Tiny Tiny RSS. Subscribe to RSS and Atom feeds or YouTube channels, scrape sites without a feed using a CSS selector, or save any link to read later. Every new article gets a relevance score against topics you list, without any AI, so the best ones come first, and when several feeds cover the same event they collapse into one row. Filters can label, star, mark read or archive articles using regex and AND/OR conditions. The reader pulls in the full article text, plays YouTube and Vimeo videos in place, and has two- or three-panel layouts, a proper phone layout, dark mode and keyboard shortcuts. OPML import works with Tiny Tiny RSS.\n\nAI features are optional and use your own key: summaries, a chat about an article, and \"Catch me up\" digests, also by email on a schedule, with Anthropic, OpenAI, Gemini or a local model through an OpenAI-compatible endpoint such as Ollama. You can sign up for free at readfine.app (up to 150 feeds) or host it yourself with Docker Compose and PostgreSQL; the setup script needs Linux, macOS or WSL2.",
+      "builtWithAI": "Checked 2026-11-24: 951 of 1,010 commits are co-authored by Claude. The README says: \"Readfine is primarily AI-written (with Claude Code), with limited line-by-line human review.\"",
+      "keywords": [
+        "Tiny Tiny RSS",
+        "Feedly",
+        "Inoreader",
+        "Miniflux",
+        "RSS reader",
+        "feed reader",
+        "self-hosted",
+        "AI summaries"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/readfine/1.webp",
+          "alt": "Readfine's three-panel layout with folders and labels, a scored article list and an article open with an AI summary and key points",
+          "caption": "Reading with an AI summary"
+        },
+        {
+          "src": "/assets/apps/readfine/2.webp",
+          "alt": "Readfine's filter editor on a phone, with folder scope, a regex condition, a minimum score and label and star actions",
+          "caption": "Filters on a phone"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Pesto Clipboard",
+      "slug": "pesto-clipboard",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Maccy and Paste",
+      "description": "A free menu bar clipboard manager for the Mac. It keeps a searchable history of text, images and files you copy, one shortcut away.",
+      "category": "Utilities",
+      "url": "https://pestoclipboard.com",
+      "linkText": "Visit site",
+      "download": "https://github.com/matthewpick/pesto-clipboard/releases/latest",
+      "source": "https://github.com/matthewpick/pesto-clipboard",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Matthew Pick",
+      "icon": "⎘",
+      "tile": "bar",
+      "added": "2026-11-24",
+      "longDescription": "Pesto Clipboard sits in the menu bar and remembers more than 500 things you have copied, including text, images and files. Press Cmd+Shift+V (or your own shortcut) to open the history, type to filter it, and paste an item with Return or by its number from 1 to 9. Shift+Return pastes without formatting.\n\nIt needs macOS 14 Sonoma or later and installs from a DMG or with Homebrew. History is kept in a local database on your Mac, and copies from password managers such as 1Password and Bitwarden are skipped by default. The app is not sandboxed and does not encrypt its history itself; it relies on FileVault for that.",
+      "builtWithAI": "Checked 2026-11-24: 62 of 99 commits in the Pesto Clipboard repo are co-authored by Claude, and the repo includes a CLAUDE.md file for the coding agent.",
+      "keywords": [
+        "clipboard manager",
+        "clipboard history",
+        "Maccy",
+        "Paste",
+        "Copy Em",
+        "pasteboard",
+        "menu bar"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/pesto-clipboard/1.webp",
+          "alt": "The Pesto Clipboard window with a search field and two clipboard items, one starred, numbered for quick paste",
+          "caption": "Clipboard history"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Roxel",
+      "slug": "roxel",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to MagicaVoxel",
+      "description": "A lightweight desktop voxel editor for building small 3D scenes out of cubes, with import and export for MagicaVoxel, Goxel, OBJ and glTF files.",
+      "category": "3D and CAD",
+      "url": "https://starzonmyarmz.github.io/roxel/",
+      "linkText": "Visit site",
+      "download": "https://github.com/starzonmyarmz/roxel/releases/latest",
+      "source": "https://github.com/starzonmyarmz/roxel",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "maker": "Daniel Marino",
+      "icon": "▧",
+      "tile": "",
+      "added": "2026-11-24",
+      "longDescription": "Roxel gives you a big open canvas and a small floating toolbar: brush, erase, recolor, eyedropper, shapes (boxes, spheres, cylinders, lines), selection with copy and paste, and a move tool. It comes with palettes such as PICO-8, Sweetie 16 and Endesga 32, lets you make your own, and has light and dark themes and a command palette with every shortcut.\n\nIt opens MagicaVoxel .vox, Qubicle .qb and Goxel .gox files, and exports to .vox, .gox, OBJ, glTF (ready for Unity or Godot), transparent PNG and SVG, plus a lit, framed \"Roxel Shot\" image for sharing. A separate rox command-line tool can render and convert models without the app. Builds for Windows, macOS and Linux are on GitHub and itch.io; they are not signed, so macOS and Windows warn on first launch.",
+      "builtWithAI": "Checked 2026-11-24: 408 of 496 commits in the Roxel repo are co-authored by Claude. The maker tags the project \"vibe-coded\" on GitHub, and the repo includes several CLAUDE.md instruction files.",
+      "keywords": [
+        "voxel editor",
+        "MagicaVoxel",
+        "Goxel",
+        "voxel art",
+        "vox",
+        "3D pixel art",
+        "Qubicle"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/roxel/1.webp",
+          "alt": "Roxel editing a voxel lighthouse island, with file status and a colour palette on the left and the tool bar on the right",
+          "caption": "Editing a scene"
+        },
+        {
+          "src": "/assets/apps/roxel/2.webp",
+          "alt": "A voxel castle with four blue-roofed towers on a grass base, exported as a Roxel Shot",
+          "caption": "Roxel Shot export"
+        },
+        {
+          "src": "/assets/apps/roxel/3.webp",
+          "alt": "A small voxel diorama of a river with trees ending in a waterfall",
+          "caption": "Voxel diorama"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Podium",
+      "slug": "podium",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to the classic iPod",
+      "description": "An Android music player built around a click wheel, styled after classic iPods. Plays your own music library, with Cover Flow, synced lyrics and lots of finishes to choose from.",
+      "category": "Audio",
+      "url": "https://podium-music-player.vercel.app/",
+      "linkText": "Visit site",
+      "download": "https://github.com/GHOSTxASR/podium-music-player/releases/latest",
+      "source": "https://github.com/GHOSTxASR/podium-music-player",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Android"
+      ],
+      "maker": "Ashmit Roy (GHOSTxASR)",
+      "icon": "◎",
+      "tile": "",
+      "added": "2026-11-24",
+      "longDescription": "Podium turns your phone into a pocket music player with a wheel: turn it to move through menus, press the centre to choose, and press Menu to go back, with a click under your thumb on every step. It plays your local library by album and artist, flips through albums in Cover Flow, shows time-synced lyrics word by word, and keeps playing in the background with lock-screen and Bluetooth controls. It can also search and stream music online through an unofficial YouTube Music client (NewPipeExtractor).\n\nMuch of the fun is in making it yours: six body finishes or any colour, display themes, 17 typefaces, glitter in the case, and stickers cut out of your own photos. There are no ads and no analytics. It needs Android 10 or later and is installed as an APK from GitHub, not from Google Play.",
+      "builtWithAI": "Checked 2026-11-24: 76 of 83 commits in the Podium repo are co-authored by Claude, and the repo includes a CLAUDE.md file for the coding agent.",
+      "keywords": [
+        "iPod",
+        "click wheel",
+        "Cover Flow",
+        "retro music player",
+        "iPod classic",
+        "music player",
+        "lyrics"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/podium/1.webp",
+          "alt": "Six Podium screens in silver, black, burgundy, white with stickers, cream and pale blue finishes, showing the main menu and Now Playing above a click wheel",
+          "caption": "Finishes and themes"
+        },
+        {
+          "src": "/assets/apps/podium/2.webp",
+          "alt": "Podium showing Cover Flow, with made-up album covers fanned out on both sides of a phone-sized player",
+          "caption": "Cover Flow"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
     }
   ]
 }

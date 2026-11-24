@@ -62,11 +62,23 @@ All quotes re-checked against their pages on 2026-11-23.
 - Cra
 - Tellyscope
 
-## Added in hunt 10 with a section, waiting for Go live (3)
+## Added in hunt 10 with a section, live (3)
 All quotes re-checked against their pages on 2026-11-23.
 - HolyArrs
 - Pyramid Wars (itch.io player comments on the game page and the AI Browser Game Jam 3 page)
 - AI WORMS (itch.io player comments on the game page and the AI Browser Game Jam 5 page)
+
+## Added in hunt 11 with a section, waiting for Go live (9)
+All quotes re-checked 2026-11-24 (by script against the pages; Product Hunt and AlternativeTo block scripts, so those three were read with WebFetch).
+- Zigzag
+- Tolaria
+- BrightBean Studio
+- TikZ Editor
+- Dorso
+- Torched!
+- Kara and the Primal Torch
+- Coalheart
+- Lightkeeper
 
 ## Live since 2026-11-23 (4bbb713) (13)
 - LightCraft
@@ -83,7 +95,7 @@ All quotes re-checked against their pages on 2026-11-23.
 - A Game About Capybaras Delivering Food
 - Rackula
 
-## Checked: no real outside coverage (92)
+## Checked: no real outside coverage (106)
 These have `"whatPeopleSay": { "checked": "2026-11-23", "none": true }`, so the page shows "No outside reviews of X yet. We last checked ...". Re-check now and then; when coverage turns up, replace the entry with a full one.
 
 - Locode
@@ -178,6 +190,20 @@ These have `"whatPeopleSay": { "checked": "2026-11-23", "none": true }`, so the 
 - Merran (hunt 10)
 - Arena Game (hunt 10)
 - Hack://TheSystem (hunt 10)
+- Mila (hunt 11)
+- Bambu Bar (r/BambuLab post only; Reddit blocked) (hunt 11)
+- MacMix (hunt 11)
+- Mirli (hunt 11)
+- Minute (small HN thread only) (hunt 11)
+- Xs of Y (one HN thread only, 213 points) (hunt 11)
+- The Human Box (hunt 11)
+- Bokken (comments on its own itch page only) (hunt 11)
+- OpenWorld RPG (hunt 11)
+- Calino (hunt 11)
+- Readfine (hunt 11)
+- Pesto Clipboard (hunt 11)
+- Roxel (hunt 11)
+- Podium (hunt 11)
 
 ## Partly checked: worth another look (2)
 - Claude of Tanks: the main player discussion is a Reddit thread and X posts (both blocked); the HN post had no comments

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d0b">
+  <meta name="color-scheme" content="dark">
+  <meta name="darkreader-lock">
+  <title>TikZ Editor: Alternative to TikZiT | RemadeByAI</title>
+  <meta name="description" content="TikZ Editor, alternative to TikZiT. A visual editor for TikZ, the LaTeX drawing language. Drag shapes, arrows and labels on a canvas and your TikZ code…">
+  <link rel="canonical" href="https://remadebyai.com/apps/tikz-editor/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RemadeByAI">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="TikZ Editor: Alternative to TikZiT | RemadeByAI">
+  <meta property="og:description" content="TikZ Editor, alternative to TikZiT. A visual editor for TikZ, the LaTeX drawing language. Drag shapes, arrows and labels on a canvas and your TikZ code…">
+  <meta property="og:url" content="https://remadebyai.com/apps/tikz-editor/">
+  <meta property="og:image" content="https://remadebyai.com/assets/apps/tikz-editor/1.webp">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="929">
+  <meta property="og:image:alt" content="TikZ Editor with a decision tree figure on the canvas, its TikZ source on the left and the inspector on the right">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TikZ Editor: Alternative to TikZiT | RemadeByAI">
+  <meta name="twitter:description" content="TikZ Editor, alternative to TikZiT. A visual editor for TikZ, the LaTeX drawing language. Drag shapes, arrows and labels on a canvas and your TikZ code…">
+  <meta name="twitter:image" content="https://remadebyai.com/assets/apps/tikz-editor/1.webp">
+  <meta name="twitter:image:alt" content="TikZ Editor with a decision tree figure on the canvas, its TikZ source on the left and the inspector on the right">
+  <script>(function(){var t='dark';try{if(localStorage.getItem('theme')==='light')t='light'}catch(e){}var d=document.documentElement;d.setAttribute('data-theme',t);if(t==='light'){var m=document.querySelector('meta[name="color-scheme"]');if(m)m.content='light';m=document.querySelector('meta[name="theme-color"]');if(m)m.content='#f5f8f3'}})();</script>
+  <link rel="stylesheet" href="/styles.css?v=266d271866">
+  <script src="/site.js?v=8af6034e91" defer></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"0f5ef649282441df8c6138452124737d"}'></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","@id":"https://remadebyai.com/apps/tikz-editor/#app","name":"TikZ Editor","description":"A visual editor for TikZ, the LaTeX drawing language. Drag shapes, arrows and labels on a canvas and your TikZ code updates as you go, keeping your own formatting.","applicationCategory":"DesignApplication","applicationSubCategory":"Graphics","url":"https://tikz.dev/editor/","mainEntityOfPage":"https://remadebyai.com/apps/tikz-editor/","operatingSystem":"Web, Windows, macOS, Linux, iOS","license":"MIT","downloadUrl":"https://github.com/DominikPeters/tikz-editor/releases/latest","screenshot":["https://remadebyai.com/assets/apps/tikz-editor/1.webp","https://remadebyai.com/assets/apps/tikz-editor/2.webp","https://remadebyai.com/assets/apps/tikz-editor/3.webp"],"image":"https://remadebyai.com/assets/apps/tikz-editor/1.webp","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"Dominik Peters"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://remadebyai.com/"},{"@type":"ListItem","position":2,"name":"Graphics","item":"https://remadebyai.com/categories/graphics/"},{"@type":"ListItem","position":3,"name":"TikZ Editor","item":"https://remadebyai.com/apps/tikz-editor/"}]}</script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="35" height="35"><span>RemadeBy<em>AI</em><small>.com</small></span></a>
+    <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/new/">New</a><a href="/apps/">All apps</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
+    <form class="site-search" action="/apps/" method="get" role="search" data-clicks="https://remadebyai-clicks.remadebyai.workers.dev/click">
+      <label><span class="visually-hidden">Search all apps</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
+      <ul class="site-search-results" id="site-search-results" role="listbox" aria-label="Matching apps" hidden></ul>
+    </form>
+    <button class="theme-toggle" type="button" aria-label="Switch to light mode"><span class="to-light"><span class="icon" aria-hidden="true">☀︎</span><span class="label">Light mode</span></span><span class="to-dark"><span class="icon" aria-hidden="true">☾</span><span class="label">Dark mode</span></span></button>
+  </div>
+</header>
+<main id="main">
+<div class="wrap app-page">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/categories/graphics/">Graphics</a> / <span>TikZ Editor</span></nav>
+  <section class="app-hero" aria-labelledby="app-title">
+    <div>
+      <div class="app-title-row"><span class="tile" aria-hidden="true">◇</span><small class="owner">Open source</small></div>
+      <h1 id="app-title">TikZ Editor</h1>
+      <p class="lede">Alternative to TikZiT</p>
+      <p class="app-summary">A visual editor for TikZ, the LaTeX drawing language. Drag shapes, arrows and labels on a canvas and your TikZ code updates as you go, keeping your own formatting.</p>
+      <div class="app-actions"><a class="button primary" href="https://github.com/DominikPeters/tikz-editor/releases/latest" data-track="download" data-app="tikz-editor" target="_blank" rel="noopener">Download</a><a class="button" href="https://tikz.dev/editor/" data-track="site" data-app="tikz-editor" target="_blank" rel="noopener">Visit site</a></div>
+    </div>
+    <dl class="facts">
+      <div><dt>Category</dt><dd><a href="/categories/graphics/">Graphics</a></dd></div>
+      <div><dt>Replaces</dt><dd>TikZiT</dd></div>
+      <div><dt>Platforms</dt><dd>Web, Windows, macOS, Linux, iOS</dd></div>
+      <div><dt>Licence</dt><dd>MIT</dd></div>
+      <div><dt>Price</dt><dd>Free</dd></div>
+      <div><dt>Made by</dt><dd>Dominik Peters</dd></div>
+      <div><dt>Source code</dt><dd><a href="https://github.com/DominikPeters/tikz-editor" data-track="source" data-app="tikz-editor" target="_blank" rel="noopener">github.com/DominikPeters/tikz-editor</a></dd></div>
+      <div><dt>Listed</dt><dd>November 24, 2026</dd></div>
+    </dl>
+  </section>
+  <section class="app-section" aria-labelledby="about-app-title"><h2 id="about-app-title">About TikZ Editor</h2><div class="prose"><p>TikZ Editor shows your TikZ source next to the rendered figure and keeps the two in sync. You can open a single figure, a whole paper's .tex file or a Beamer presentation, then move, resize, align and group elements, draw nodes, arrows, curves, matrices and trees, and edit styles in an inspector. When you drag something, only the numbers in that coordinate change, so your line breaks and indentation stay as they were, and existing \foreach loops keep working. It needs no TeX install to show the figure, and it flags code errors as you type.</p>
+<p>It runs in the browser at tikz.dev, as a desktop app for Windows, macOS and Linux, and as a free iPad app. It exports SVG, PDF, PNG or standalone LaTeX, and imports SVG, Ipe and PowerPoint files. Very hacky TeX may not be read correctly, and pgfplots and some advanced constructs are not supported yet. The desktop app has an optional assistant that uses your ChatGPT account through Codex. There are no accounts or analytics.</p></div></section>
+  
+  <section class="app-section" aria-labelledby="shots-title">
+    <h2 id="shots-title">Screenshots</h2>
+    <div class="shots"><figure><a href="/assets/apps/tikz-editor/1.webp"><img src="/assets/apps/tikz-editor/thumb/1.webp" alt="TikZ Editor with a decision tree figure on the canvas, its TikZ source on the left and the inspector on the right" width="960" height="557" loading="lazy" decoding="async"></a><figcaption>Source and canvas</figcaption></figure><figure><a href="/assets/apps/tikz-editor/2.webp"><img src="/assets/apps/tikz-editor/thumb/2.webp" alt="The web version of TikZ Editor showing a finite-state automaton with three states next to its TikZ code" width="960" height="600" loading="lazy" decoding="async"></a><figcaption>Editing an automaton</figcaption></figure><figure><a href="/assets/apps/tikz-editor/3.webp"><img src="/assets/apps/tikz-editor/thumb/3.webp" alt="A Beamer lecture deck open in TikZ Editor, with slide thumbnails, the title slide, its source and theme settings" width="960" height="600" loading="lazy" decoding="async"></a><figcaption>Beamer slides</figcaption></figure></div>
+  </section>
+  <section class="app-section" aria-labelledby="built-title">
+    <h2 id="built-title">How it was built with AI</h2>
+    <div class="prose"><p>The maker wrote on Show HN (2026-06-23): &quot;(This app was built almost entirely by Codex.)&quot; The app's site adds that the code was written by Codex &quot;with some contributions from Claude&quot;; checked 2026-11-24, 12 of 1,839 commits are co-authored by Claude.</p></div>
+  </section>
+  
+  <section class="app-section" aria-labelledby="buzz-title">
+    <h2 id="buzz-title">What people say</h2>
+    <div class="buzz">
+      <div class="prose"><p>Most of the discussion comes from its Show HN launch in June 2026, which drew 451 points and a lot of thanks from students and researchers who have long hand-tuned TikZ coordinates. People like that it can edit existing figures without rewriting the code. The main criticism is that new elements get absolute coordinates instead of TikZ's relative positioning and anchors. Beyond Hacker News, coverage is thin: one short user review and a few blog write-ups.</p></div>
+      <div class="buzz-cols"><div class="buzz-col good"><h3>People like</h3><ul><li>Edits existing TikZ figures without turning the code into machine-generated output</li><li>Saves the edit-and-recompile loop of nudging coordinates by hand</li><li>Free and open source, with web and desktop versions</li></ul></div><div class="buzz-col bad"><h3>Common complaints</h3><ul><li>New and aligned elements use absolute coordinates rather than idiomatic relative positioning</li><li>No support yet for pgfplots or Typst's CeTZ, which some users asked for</li><li>An early Linux build showed a distorted grid for one user</li></ul></div></div>
+      <h3 class="buzz-sources-title">Where people said it</h3><ul class="buzz-sources"><li class="buzz-source">
+        <blockquote>&ldquo;The killer feature for me is not drawing TikZ visually, but being able to touch old TikZ without turning the source into generated-looking soup.&rdquo;</blockquote>
+        <p><a href="https://news.ycombinator.com/item?id=48646267" target="_blank" rel="noopener">Show HN: TikZ Editor, WYSIWYG editor for figures in LaTeX</a> <span class="buzz-by">Littice on Hacker News · June 23, 2026 · 451 points</span></p>
+      </li><li class="buzz-source">
+        <blockquote>&ldquo;However, the generated TikZ code is not good in my opinion. Everything uses absolute coordinates, which in TikZ is seldom needed.&rdquo;</blockquote>
+        <p><a href="https://news.ycombinator.com/item?id=48649028" target="_blank" rel="noopener">Show HN: TikZ Editor (comment on the generated code)</a> <span class="buzz-by">gignico on Hacker News · June 23, 2026</span></p>
+      </li><li class="buzz-source">
+        <blockquote>&ldquo;A useful app, exactly what I need when writing a paper&rdquo;</blockquote>
+        <p><a href="https://alternativeto.net/software/tikz-editor/about/" target="_blank" rel="noopener">TikZ Editor reviews</a> <span class="buzz-by">Tintin Yuan on AlternativeTo · June 25, 2026 · 5 out of 5 from 1 review</span></p>
+      </li><li class="buzz-source">
+        <blockquote>&ldquo;a UI that was hard to come by until now has appeared&rdquo;</blockquote>
+        <p><a href="https://lilting.ch/en/articles/tikz-editor-latex-wysiwyg" target="_blank" rel="noopener">TikZ Editor: a WYSIWYG editor for LaTeX figures</a> <span class="buzz-by">Ikesan on lilting.ch · June 24, 2026</span></p>
+      </li></ul>
+      <p class="review-meta">Compiled by RemadeByAI from 4 public sources, checked November 24, 2026. Quotes are short excerpts; follow the links for the full context.</p>
+    </div>
+  </section>
+  <section class="app-section" aria-labelledby="review-title">
+    <h2 id="review-title">Our review</h2>
+    <p class="muted">We haven't reviewed TikZ Editor yet.</p>
+  </section>
+  
+  <section class="app-section" aria-labelledby="related-title">
+    <h2 id="related-title">More in Graphics</h2>
+    <div class="cards">
+<article class="card" data-group="open" data-category="graphics" data-platform="Android" data-price="Free" data-licence="AGPL-3.0" data-search="imago alternative to adobe lightroom a non-destructive photo editor for the photos on your immich server or your phone, with light, colour, curves, masks and reusable recipes. graphics open source paulo marques (742 studio) android agpl-3.0 free lightroom immich photo editor non-destructive snapseed android photo editor">
+  <div class="card-top"><span class="tile" aria-hidden="true">◐</span><small>Open source</small></div>
+  <h3 class="card-title"><a class="card-link" href="/apps/imago/">IMAGO</a></h3>
+  <p class="alternative">Alternative to Adobe Lightroom</p>
+  <p>A non-destructive photo editor for the photos on your Immich server or your phone, with light, colour, curves, masks and reusable recipes.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/graphics/">Graphics</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="graphics" data-platform="Windows|Linux|Web" data-price="Free" data-licence="GPL-3.0" data-search="stykanimate alternative to pivot animator, stick nodes a stick figure animation app that opens pivot and stick nodes projects. pose figures, build your own, animate frame by frame and export mp4, gif or webm. graphics open source filippocalippo windows linux web gpl-3.0 free pivot animator pivot stickfigure animator stick nodes stick figure stickman animation stykz 2d animation">
+  <div class="card-top"><span class="tile" aria-hidden="true">✱</span><small>Open source</small></div>
+  <h3 class="card-title"><a class="card-link" href="/apps/stykanimate/">StykAnimate</a></h3>
+  <p class="alternative">Alternative to Pivot Animator, Stick Nodes</p>
+  <p>A stick figure animation app that opens Pivot and Stick Nodes projects. Pose figures, build your own, animate frame by frame and export MP4, GIF or WebM.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/graphics/">Graphics</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="graphics" data-platform="Windows|macOS|Linux" data-price="Free" data-licence="GPL-3.0" data-search="rembrandt alternative to adobe lightroom a free raw photo editor and library with masks, healing, presets and on-device ai, where you can also describe edits in plain words. no account or subscription. graphics open source thesnarkitecht windows macos linux gpl-3.0 free lightroom adobe lightroom lightroom classic raw editor photo editor darktable xmp photo library">
+  <div class="card-top"><span class="tile" aria-hidden="true">◐</span><small>Open source</small></div>
+  <h3 class="card-title"><a class="card-link" href="/apps/rembrandt/">Rembrandt</a></h3>
+  <p class="alternative">Alternative to Adobe Lightroom</p>
+  <p>A free RAW photo editor and library with masks, healing, presets and on-device AI, where you can also describe edits in plain words. No account or subscription.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/graphics/">Graphics</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+</div>
+  </section>
+  
+  <details class="badge-box">
+    <summary>Made TikZ Editor? Add a “Listed on RemadeByAI” badge to your README</summary>
+    <div class="badge-body">
+      <p class="badge-previews"><img src="/assets/badge/listed-dark.svg" alt="Listed on RemadeByAI (dark)" width="172" height="28"> <img src="/assets/badge/listed-light.svg" alt="Listed on RemadeByAI (light)" width="172" height="28"></p>
+      <div class="snippet"><div class="snippet-head"><span>Markdown, dark badge</span><button class="copy" type="button" data-copy>Copy</button></div><pre><code>[![Listed on RemadeByAI](https://remadebyai.com/assets/badge/listed-dark.svg)](https://remadebyai.com/apps/tikz-editor/)</code></pre></div>
+      <div class="snippet"><div class="snippet-head"><span>Markdown, light badge</span><button class="copy" type="button" data-copy>Copy</button></div><pre><code>[![Listed on RemadeByAI](https://remadebyai.com/assets/badge/listed-light.svg)](https://remadebyai.com/apps/tikz-editor/)</code></pre></div>
+      <p class="muted">Want it to follow the reader's light or dark mode on GitHub? See <a href="/badge/?app=tikz-editor">the badge page</a>.</p>
+    </div>
+  </details>
+</div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div class="foot-about"><a class="brand" href="/">RemadeBy<em>AI</em></a><p>Familiar software, rebuilt with AI. <em class="foot-note">(A software directory from <a href="https://emukey.com/" target="_blank" rel="noopener">EmuKey LLC</a>.)</em></p></div>
+    <nav class="foot-links" aria-label="Footer"><a href="/apps/">All apps</a><a href="/new/">New arrivals</a><a href="/categories/">Categories</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
+  </div>
+</footer>
+</body>
+</html>
