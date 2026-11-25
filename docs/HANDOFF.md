@@ -1,8 +1,13 @@
 # Handoff notes
 
-Last updated: 2026-11-24 evening Central (hunt 12 on branch `claude/project-thread-hnlcph`, 197 apps, waiting for Go live; 184 live as 6eaccef). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
+Last updated: 2026-11-25 afternoon Central (hunt 13 on branch `claude/project-thread-lmcat2`, 207 apps, waiting for Go live; 197 live as 5d25d59). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
 
-## Newest: app hunt 12, 197 apps (2026-11-24 evening Central, cloud)
+## Newest: app hunt 13, 207 apps (2026-11-25 afternoon Central, cloud)
+
+- 10 added on branch `claude/project-thread-lmcat2`: Folio (Acrobat Reader), Hadron (CrossOver for Steam games on Apple Silicon; no screenshot), NeonPlan 3D (Home Assistant 3D floor plan, Freemium; chosen over its fork NextFloor), Lipflow (silent Wispr Flow; no screenshot), SimRun (iOS Simulator), waarm64 (ARM VM in a browser), CUPS Admin (CUPS web UI for macOS 27), Aerial (Android TV home screen, 13k stars) and the games Cinderwatch and Brushwild. NeonPlan 3D got "What people say"; the rest "none".
+- Held: couch-tv (7th TV launcher), NeonClipping and ink music (YouTube downloading/streaming), Hand-thesia (no licence), Uno com Escada. Full notes: `/mnt/project-files/app-hunt/2026-11-25-hunt-13.md`.
+
+## Earlier: app hunt 12, 197 apps (2026-11-24 evening Central, cloud)
 
 - 13 added on branch `claude/project-thread-hnlcph`: desigma (Figma), Tungsten Edge (uBar/Dock; free until 1.0, then US$24), Chipload (VCarve, CNC CAM), rec-rs (OBS, clean-room via REA), jOtter (Jupyter TUI), Natel (Google Contacts for CardDAV), Dalibre (Calibre), LibrePaper (Overleaf), Lyrimuse (LyricsX, no screenshots: album art), Excaliself (Excalidraw+), mirador (terminal dashboard), yami (niri desktop shell) and the game Stard (card battle from your GitHub stars). All have Claude commit counts; all 13 got "What people say": none (only single-place coverage).
 - Held: HeyPuter/everything (51 MIT apps rebuilding Office, Photoshop, AutoCAD etc.; weak AI evidence so far), ScreenPlink (firearms dry-fire game), Couchwave (yt-dlp). Vibe Jam 2026 award games need PC screenshots. Full notes: `/mnt/project-files/app-hunt/2026-11-24-hunt-12.md`.
