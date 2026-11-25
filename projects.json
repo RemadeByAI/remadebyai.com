@@ -10987,6 +10987,629 @@
         "checked": "2026-11-24",
         "none": true
       }
+    },
+    {
+      "name": "desigma",
+      "slug": "desigma",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Figma",
+      "description": "A free, offline interface design app written in Rust, with frames, auto layout, components, prototyping and live collaboration. It opens Figma files.",
+      "category": "Graphics",
+      "url": "https://github.com/deepfounder-ai/desigma",
+      "linkText": "Visit site",
+      "download": "https://github.com/deepfounder-ai/desigma/releases",
+      "source": "https://github.com/deepfounder-ai/desigma",
+      "license": "Apache-2.0",
+      "price": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "maker": "Kir (Deep Founder)",
+      "icon": "◇",
+      "tile": "",
+      "added": "2026-11-24",
+      "longDescription": "desigma covers the everyday Figma workflow in a native desktop app with no web view: frames with auto layout, components with variants and properties, variables with light and dark modes, vector editing, prototyping with Smart Animate, keyframe motion, whiteboards and slide decks. Dev mode shows measurements and generates code in CSS, Tailwind, SwiftUI, Jetpack Compose, React, Flutter or Vue. It imports .fig files and Figma's API JSON, and live collaboration works by sharing a link, with no account.\n\nThe project labels itself an early alpha. Builds for Windows (installer or portable zip), macOS (one .dmg for Apple silicon and Intel) and Linux are on the releases page; they are not code-signed yet, so the first launch shows a warning. An optional AI image edit feature uses your own OpenRouter key.",
+      "builtWithAI": "Checked 2026-11-24: 289 of the repo's 428 commits are co-authored by Claude (Sonnet 5.5 and Opus 5.5).",
+      "keywords": [
+        "Figma",
+        "Penpot",
+        "Sketch",
+        "UI design",
+        "prototyping",
+        "auto layout",
+        "design tool",
+        "rust"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/desigma/1.webp",
+          "alt": "desigma editor with four mobile banking app screens on the canvas, a layers panel on the left and design properties on the right",
+          "caption": "The editor"
+        },
+        {
+          "src": "/assets/apps/desigma/2.webp",
+          "alt": "A button component selected in desigma with variant pickers and overrides in the right panel",
+          "caption": "Components and variants"
+        },
+        {
+          "src": "/assets/apps/desigma/3.webp",
+          "alt": "Prototype mode with connectors from the selected mobile screen to the screens its buttons open",
+          "caption": "Prototype mode"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Tungsten Edge",
+      "slug": "tungsten-edge",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to uBar and the macOS Dock",
+      "description": "A per-window taskbar for the Mac: every open window gets its own card at the bottom of the screen, one click away, the way the Windows taskbar works.",
+      "category": "Utilities",
+      "url": "https://tungstenedge.app",
+      "linkText": "Visit site",
+      "source": "https://github.com/moonbai-studio/tungsten-edge",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "moonbai studio",
+      "icon": "▭",
+      "tile": "bar",
+      "added": "2026-11-24",
+      "longDescription": "Instead of one icon per app like the Dock, Tungsten Edge shows a card for each window, so getting back to one particular Finder or browser window takes a single click. Windows that are minimized or hidden show a greyed title, single-window apps stay as compact icons, and rarely used apps can be stashed in a drawer at the right end. It also has pinned folders like Dock stacks, unread badges for messaging apps, edge auto-hide and a taskbar on every display.\n\nIt is a native Swift app for macOS 12 or later (Apple silicon and Intel) and needs Accessibility permission to manage windows. Ready-made builds are on the official website. The maker says it is free until version 1.0, after which it becomes a one-time purchase (the site gives US$24 outside China, with a 21-day free trial), and people who join the founding-user list before then keep it free.",
+      "builtWithAI": "Checked 2026-11-24: 622 of the repo's 759 commits are co-authored by Claude (Opus 5, Opus 5.5 and Fable 5.1).",
+      "keywords": [
+        "uBar",
+        "taskbar",
+        "Dock replacement",
+        "window switcher",
+        "Windows taskbar on Mac",
+        "DockDoor",
+        "HyperDock"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/tungsten-edge/1.webp",
+          "alt": "A Mac desktop with a Finder window open and the Tungsten Edge taskbar at the bottom showing a separate card for each open window",
+          "caption": "One card per window"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Chipload",
+      "slug": "chipload",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Vectric VCarve and Carbide Create",
+      "description": "Free 2.5D CAM software for CNC routers and mills: bring in a DXF or SVG drawing (or draw in the app), set up cuts, simulate them in 3D and export checked G-code.",
+      "category": "3D and CAD",
+      "url": "https://chipload.github.io/chipload/",
+      "linkText": "User guide",
+      "download": "https://github.com/chipload/chipload/releases",
+      "source": "https://github.com/chipload/chipload",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "maker": "Gustav Näslund",
+      "icon": "⚙",
+      "tile": "",
+      "added": "2026-11-24",
+      "longDescription": "Chipload turns drawings into toolpaths: profiles with tabs and dogbones, pockets with islands, V-carving (including text), chamfers, drilling and boring, fill patterns, mouldings, surfacing and 3D reliefs carved from an STL model or a depth-map picture. A material-removal simulation shows the cut in 3D with cycle time and chip load, it can nest many parts onto boards, and an independent checker reads every program for machine limits, rapids through the stock and other mistakes before the G-code is written.\n\nThe maker says its programs have cut wood on a GRBL router (a Shapeoko) but have not yet been tried on LinuxCNC or Mach3/4, or in inches, and asks people with real machines to test it, starting with an air cut. It is written in Rust, with downloads for Linux, Windows and macOS.",
+      "builtWithAI": "Checked 2026-11-24: 969 of the repo's 993 commits are co-authored by Claude (mostly Opus 5.5), and the repo has a CLAUDE.md file for the coding agent.",
+      "keywords": [
+        "CAM",
+        "CNC",
+        "G-code",
+        "VCarve",
+        "Vectric Aspire",
+        "Carbide Create",
+        "Easel",
+        "Fusion 360 CAM",
+        "router",
+        "V-carve",
+        "GRBL",
+        "Shapeoko"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/chipload/1.webp",
+          "alt": "Chipload showing a plaque project in 3D: a pocket around an island, holes, a V-carved logo and an outline with tabs, with the operation tree on the left and profile settings on the right",
+          "caption": "Toolpaths over the stock"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "rec-rs",
+      "slug": "rec-rs",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to OBS Studio",
+      "description": "A simple, fast screen and camera recorder for the Mac, made for recording YouTube videos. It records screen, system audio, microphone and webcam into one file and can stream as well.",
+      "category": "Screen capture",
+      "url": "https://github.com/michaelshimeles/rec-rs",
+      "linkText": "Visit site",
+      "download": "https://github.com/michaelshimeles/rec-rs/releases",
+      "source": "https://github.com/michaelshimeles/rec-rs",
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Michael Shimeles",
+      "icon": "●",
+      "tile": "capture",
+      "added": "2026-11-24",
+      "longDescription": "rec-rs records the screen, system audio, microphone and webcam into a single .mov or .mp4 that opens in QuickTime, Final Cut, Premiere and DaVinci Resolve, or writes screen and camera as separate files in sync. The webcam overlay can be dragged anywhere and shaped as a circle, squircle or pill. It can also keep a replay buffer of the last seconds and stream over RTMP (YouTube, Twitch, Kick) or WHIP to several places at once.\n\nIt uses only Apple frameworks (ScreenCaptureKit, VideoToolbox, Metal), with no FFmpeg, OBS or Electron inside, and needs macOS 15 or later on Apple silicon or Intel. The maker says it is a clean-room rewrite: OBS was studied for its architecture with the reverse-engineering tool REA and Claude Code, and no OBS code was copied.",
+      "builtWithAI": "Checked 2026-11-24: 75 of the repo's 106 commits are co-authored by Claude (Opus 5.5). The README says OBS was studied with REA and Claude Code before the rewrite.",
+      "keywords": [
+        "OBS",
+        "Screen Studio",
+        "QuickTime screen recording",
+        "Loom",
+        "screen recorder",
+        "webcam overlay",
+        "streaming",
+        "replay buffer"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/rec-rs/1.webp",
+          "alt": "The rec-rs main window with a live preview of the recorded screen, scene picker, sources, replay buffer and stream settings, record button and audio meters",
+          "caption": "Main window"
+        },
+        {
+          "src": "/assets/apps/rec-rs/2.webp",
+          "alt": "rec-rs settings for output folder, format, resolution, frame rate, codec, audio tracks and live encoding",
+          "caption": "Settings"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "jOtter",
+      "slug": "jotter",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Jupyter Notebook and JupyterLab",
+      "description": "A fast Jupyter notebook app for the terminal, with vim keys, inline plots and rendered LaTeX. It opens and saves real .ipynb files.",
+      "category": "Developer tools",
+      "url": "https://samox73.github.io/jotter/",
+      "linkText": "Visit site",
+      "download": "https://github.com/samox73/jotter/releases",
+      "source": "https://github.com/samox73/jotter",
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "platforms": [
+        "Linux",
+        "macOS"
+      ],
+      "maker": "Samuel Recker",
+      "icon": "⌘",
+      "tile": "code",
+      "added": "2026-11-24",
+      "longDescription": "jOtter edits and runs .ipynb notebooks in a terminal and saves them byte for byte the way Jupyter does, so collaborators using JupyterLab never notice. It can also keep notebooks as .py scripts in jupytext's percent format so outputs stay out of git. Matplotlib figures show inline in terminals that support kitty graphics, sixel or iTerm2, LaTeX is rendered without a TeX install, and cells are edited with vim keys or an embedded Neovim using your own config.\n\nIt finds your project's venv, uv, conda or pixi environment on its own, and has atomic saves, autosave and crash recovery. Install it with cargo, uv (PyPI), Nix, or the .deb, .rpm and .apk packages and static Linux binary on each release.",
+      "builtWithAI": "The README says: \"jOtter is built with Claude Code. I direct the work and review the changes.\" Checked 2026-11-24: 81 of the repo's 126 commits are co-authored by Claude.",
+      "keywords": [
+        "Jupyter",
+        "JupyterLab",
+        "ipynb",
+        "notebook",
+        "TUI",
+        "terminal",
+        "euporie",
+        "vim",
+        "python"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/jotter/1.webp",
+          "alt": "A notebook in jOtter's terminal view: a SymPy matrix rendered as LaTeX, code cells, and a Lorenz attractor and Mandelbrot plot shown inline",
+          "caption": "Plots and math in the terminal"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Natel",
+      "slug": "natel",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Google Contacts",
+      "description": "A small web app for editing the contacts on your own CardDAV server (Baïkal, Radicale, Nextcloud and others) from any browser.",
+      "category": "Productivity",
+      "url": "https://demo.natel.app/contacts",
+      "linkText": "Try the demo",
+      "source": "https://github.com/KewinDousse/natel",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Kewin Dousse",
+      "icon": "☎",
+      "tile": "",
+      "added": "2026-11-24",
+      "longDescription": "If you keep your address book on a CardDAV server so it syncs to your phones and computers, Natel gives you a clean place to search, fix and organise those contacts in a browser, on a computer or a phone. It does contacts only: no calendars, tasks or mail, and it does not host address books itself.\n\nIt runs as one small Docker container that you point at your server (or without Docker), and you sign in with your CardDAV account. It keeps fields it does not show, warns you instead of overwriting a contact someone changed on another device, and keeps your password in memory only. There is a public demo with made-up contacts that reset on reload.",
+      "builtWithAI": "The README says: \"Natel's code is mostly written by AI agents\", with the maintainer setting the backlog, deciding the design and approving each release. Checked 2026-11-24: 301 of 402 commits are co-authored by Claude and 48 by Codex.",
+      "keywords": [
+        "Google Contacts",
+        "CardDAV",
+        "contacts",
+        "address book",
+        "Baikal",
+        "Radicale",
+        "Nextcloud contacts",
+        "self-hosted"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/natel/1.webp",
+          "alt": "Natel in a desktop browser: an alphabetical contact list on the left and one contact's phone, email, birthday and groups on the right",
+          "caption": "Desktop"
+        },
+        {
+          "src": "/assets/apps/natel/2.webp",
+          "alt": "A contact open in Natel on a phone, with call, text and email buttons",
+          "caption": "On a phone"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Dalibre",
+      "slug": "dalibre",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Calibre",
+      "description": "A calm, fast desktop e-book library that reads and writes your existing Calibre library. One small native app, no web view.",
+      "category": "Reading",
+      "url": "https://dalibre.randynamic.org",
+      "linkText": "Visit site",
+      "download": "https://github.com/djyde/dalibre/releases",
+      "source": "https://github.com/djyde/dalibre",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "maker": "Randy Lu (djyde)",
+      "icon": "❧",
+      "tile": "wiki",
+      "added": "2026-11-24",
+      "longDescription": "Dalibre is a lighter front end for the book library Calibre already keeps: point it at a Calibre library folder (or let it find the one Calibre uses) and browse, search and organise your books, with the same files and database underneath so you can keep using Calibre alongside it. Libraries on network shares work too.\n\nIt is written in Go with a native UI, ships as one binary for macOS, Windows and Linux, and updates itself from signed GitHub releases. Your own AI agents (Claude Code, Claude Desktop, Cursor) can work with the library through its open tools. It is a young project, started in November 2026.",
+      "builtWithAI": "Checked 2026-11-24: 67 of the repo's 104 commits are co-authored by Claude (Opus 5.5), and the repo has an AGENTS.md file for coding agents.",
+      "keywords": [
+        "Calibre",
+        "ebook manager",
+        "e-book library",
+        "epub",
+        "Kindle",
+        "book library",
+        "ebooks"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/dalibre/1.webp",
+          "alt": "Dalibre promotional image: the tagline 'Your calibre library, light as a paperback' beside the app window showing a grid of book covers and a sidebar of formats and authors",
+          "caption": "The library view"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "LibrePaper",
+      "slug": "librepaper",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Overleaf and Google Docs comments",
+      "description": "Write and review papers together in the browser: LaTeX, Typst, Markdown, Quarto, HTML or Org, with live highlights, comments and suggested edits.",
+      "category": "Office",
+      "url": "https://librepaper.org",
+      "linkText": "Visit site",
+      "source": "https://github.com/LibrePaper/librepaper",
+      "license": "MIT",
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "maker": "Vincent Arel-Bundock",
+      "icon": "✎",
+      "tile": "",
+      "added": "2026-11-24",
+      "longDescription": "LibrePaper lets you create or upload a writing project, compile it in the browser, and share a link so others can highlight passages, comment and suggest edits at the same time, with live updates. It handles LaTeX, Typst, Markdown, Quarto, HTML and Org, so it suits academic papers as well as notes and reports.\n\nYou can sign in to the hosted app at app.librepaper.org with GitHub or Google (new accounts start with a tutorial project in every format), use the desktop app, which can also keep scheduled ZIP backups of your projects, or run it yourself from one static binary on a laptop or small server. A command-line tool exports a complete copy of any project. It is made by political scientist Vincent Arel-Bundock.",
+      "builtWithAI": "Checked 2026-11-24: 1,619 of the repo's 6,449 commits are co-authored by Claude (Opus 5.5, Haiku 5.5 and Fable 5.2), and the repo has CLAUDE.md and AGENTS.md files for coding agents.",
+      "keywords": [
+        "Overleaf",
+        "LaTeX editor",
+        "Typst",
+        "Quarto",
+        "Google Docs",
+        "collaborative writing",
+        "peer review",
+        "academic writing"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/librepaper/1.webp",
+          "alt": "The LibrePaper editor with LaTeX source on the left and the compiled paper with a figure, equation and table on the right",
+          "caption": "LaTeX source and preview"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Lyrimuse",
+      "slug": "lyrimuse",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to LyricsX",
+      "description": "Desktop lyrics for the Mac: word-by-word synced lyrics for the song you are playing, in a floating overlay, the menu bar, a capsule under the notch or a lyrics window.",
+      "category": "Audio",
+      "url": "https://github.com/Yudaotor/lyrimuse",
+      "linkText": "Visit site",
+      "download": "https://github.com/Yudaotor/lyrimuse/releases/latest",
+      "source": "https://github.com/Yudaotor/lyrimuse",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Yudaotor",
+      "icon": "♪",
+      "tile": "voice",
+      "added": "2026-11-24",
+      "longDescription": "Lyrimuse lives in the menu bar and highlights lyrics word by word as a song plays, for Apple Music, Spotify, YouTube Music, Amazon Music and many other players, including Chinese-language ones such as QQ Music and NetEase. It searches sixteen lyric sources automatically, scores each match, and can show translations and romanization under the original. Duets are split by singer, and a Lyrics Manager lets you fix or re-match any track.\n\nIt also scrobbles to Last.fm and shows your listening stats and a yearly heatmap. The maker pitches it at people coming from LyricsX, which has had no release since April 2022. It needs macOS 14 or later (Apple silicon or Intel) and installs with Homebrew or from the releases page. It is free, with no paid version or account.",
+      "builtWithAI": "Checked 2026-11-24: 780 of the repo's 2,968 commits are co-authored by Claude (Opus 5 and Opus 5.5).",
+      "keywords": [
+        "LyricsX",
+        "lyrics",
+        "synced lyrics",
+        "karaoke",
+        "Apple Music lyrics",
+        "Spotify lyrics",
+        "desktop lyrics",
+        "Last.fm",
+        "scrobbler"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Excaliself",
+      "slug": "excaliself",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Excalidraw+ and Miro",
+      "description": "Your team's whiteboard on your own server: the Excalidraw canvas with live collaboration, a shared team space, folders and search.",
+      "category": "Productivity",
+      "url": "https://excaliself.com",
+      "linkText": "Visit site",
+      "source": "https://github.com/maciekzygmunt/excaliself",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Maciej Zygmunt",
+      "icon": "✐",
+      "tile": "",
+      "added": "2026-11-24",
+      "longDescription": "Excaliself wraps the open-source Excalidraw editor in a small self-hosted app that stores every drawing in your own Postgres database. You get auto-save, live collaboration by link with cursors and follow mode (for members or guests), a shared team space next to private spaces, a team shape library, folders, stars, search inside drawings, trash with restore, and import from Excalidraw+.\n\nAccounts are invite-only, with optional single sign-on through Google Workspace, Microsoft Entra ID or any OIDC provider. MCP clients such as Claude can find, read and create drawings, and their changes wait on the canvas until you apply them. A one-line Docker command starts a throwaway preview with example drawings.",
+      "builtWithAI": "Checked 2026-11-24: 75 of the repo's 277 commits are co-authored by Claude (Fable 5), and the repo has a CLAUDE.md file for the coding agent.",
+      "keywords": [
+        "Excalidraw",
+        "Excalidraw+",
+        "whiteboard",
+        "Miro",
+        "FigJam",
+        "diagram",
+        "self-hosted",
+        "sketch"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/excaliself/1.webp",
+          "alt": "Excaliself home in dark mode: a sidebar with starred drawings and folders, and a grid of recent hand-drawn diagrams",
+          "caption": "Dark mode"
+        },
+        {
+          "src": "/assets/apps/excaliself/2.webp",
+          "alt": "Excaliself home in light mode with the same recent drawings",
+          "caption": "Light mode"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "mirador",
+      "slug": "mirador",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to WTF and desktop dashboard widgets",
+      "description": "A calm personal dashboard for your terminal: clocks, calendar, weather, a real task list, notes, a market watchlist and live system graphs in one tab.",
+      "category": "Productivity",
+      "url": "https://github.com/jchultarsky/mirador",
+      "linkText": "Visit site",
+      "download": "https://github.com/jchultarsky/mirador/releases/latest",
+      "source": "https://github.com/jchultarsky/mirador",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "maker": "Julian Chultarsky",
+      "icon": "◷",
+      "tile": "glance",
+      "added": "2026-11-24",
+      "longDescription": "mirador is built to sit in a terminal tab all day and be glanced at, so nothing blinks and only the focused panel is at full brightness. Its fourteen panels include world clocks, a two-month calendar and agenda, weather with an hourly forecast, a task list with due dates, priorities and tags, notes, news headlines, a calculator, a pomodoro timer, a market watchlist and CPU, memory and network charts. Panels can be turned off and rearranged from the keyboard.\n\nTasks, notes and the watchlist are plain TOML files you own. There is no account, API key or telemetry, and update checks are off until you turn them on. Install it with cargo or the one-line installers for macOS, Linux and Windows.",
+      "builtWithAI": "The README says the code and most of the documentation were written by Claude, working from the maintainer's direction. Checked 2026-11-24: 291 of 336 commits are co-authored by Claude.",
+      "keywords": [
+        "terminal dashboard",
+        "wtfutil",
+        "TUI",
+        "calendar",
+        "todo",
+        "pomodoro",
+        "weather",
+        "Rainmeter",
+        "status dashboard"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/mirador/1.webp",
+          "alt": "mirador in a wide terminal: a large clock, calendar, weather table, task list, agenda, notes, news, pomodoro, market watchlist and CPU and network graphs",
+          "caption": "The default panels"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "yami",
+      "slug": "yami",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Alternative to Waybar, Rofi and other desktop shell pieces",
+      "description": "A pixel-art desktop for the niri Wayland compositor on Linux: bar, launcher, dock, notifications, lock screen, widgets and settings in one light Rust shell.",
+      "category": "Utilities",
+      "url": "https://github.com/Trendorin/yami",
+      "linkText": "Visit site",
+      "download": "https://github.com/Trendorin/yami/releases/latest",
+      "source": "https://github.com/Trendorin/yami",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "maker": "Trendorin",
+      "icon": "▦",
+      "tile": "code",
+      "added": "2026-11-24",
+      "longDescription": "yami turns the niri compositor into a finished desktop with one look: dark graphite, one accent colour and crisp pixel fonts. Its shell draws the bar, app launcher with clipboard history, dock, notifications, lock screen, system tray, desktop widgets and settings itself, with no toolkit, and idles at about 15 MB of RAM. A file manager, image viewer, player, screenshot tool and login screen come as separate modules, so you can take the whole desktop or only some pieces.\n\nOne command installs it on eight distributions (including Arch, Fedora, Debian, openSUSE and Alpine), and NixOS users get a flake. Updates arrive signed. It is for people already comfortable with a tiling Wayland setup.",
+      "builtWithAI": "Checked 2026-11-24: 299 of the repo's 325 commits are co-authored by Claude.",
+      "keywords": [
+        "niri",
+        "Wayland",
+        "Waybar",
+        "Rofi",
+        "desktop shell",
+        "tiling window manager",
+        "pixel art",
+        "Linux rice",
+        "Hyprland"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/yami/1.webp",
+          "alt": "A dark yami desktop with a pixel clock, calendar, system graphs and a music widget",
+          "caption": "Desktop widgets"
+        },
+        {
+          "src": "/assets/apps/yami/2.webp",
+          "alt": "yami-files, a dark pixel-style file manager showing folders and image files",
+          "caption": "yami-files"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
+    },
+    {
+      "name": "Stard",
+      "slug": "stard",
+      "group": "open",
+      "owner": "Open source",
+      "alternative": "Inspired by auto-battler card games",
+      "description": "A browser card battle built from your GitHub stars: every repo you have starred is a card. Build a team and fight other developers' decks. No sign-up.",
+      "category": "Games",
+      "url": "https://stard.armanckeser.com/run",
+      "linkText": "Play now",
+      "source": "https://github.com/armanckeser/stard",
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Armanc Keser",
+      "icon": "★",
+      "tile": "",
+      "added": "2026-11-24",
+      "longDescription": "Type any GitHub username and the shop deals cards from that account's starred repos, shuffled afresh for every run. Buy cards onto your shelf, drag them onto your half of the board and press Fight, and every card acts at once. Cards that share a language or topic form sets, ticked off like a pull request's checks, and after rounds 2 and 4 you pick one of three boosts. Five wins finish a run, three losses end it.\n\nThe same site can turn your stars into profile cards for your GitHub README, a yearly \"your stars\" recap, and an organizer that sorts stars into GitHub Lists and flags dead repos. You can also run the whole thing locally with npx and the GitHub CLI.",
+      "builtWithAI": "Checked 2026-11-24: 143 of the repo's 373 commits are co-authored by Claude (Opus 5.5).",
+      "keywords": [
+        "auto battler",
+        "card game",
+        "GitHub stars",
+        "deck builder",
+        "developer game",
+        "Super Auto Pets"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/stard/1.webp",
+          "alt": "A Stard battle in round 3: cute robot cards on a green and red grid board, the player's shop of repo cards below and a Fight button",
+          "caption": "A round in progress"
+        },
+        {
+          "src": "/assets/apps/stard/2.webp",
+          "alt": "The Stard star organizer showing a GitHub List called Run Your Server with repos, stars, forks and health scores",
+          "caption": "The star organizer"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-24",
+        "none": true
+      }
     }
   ]
 }

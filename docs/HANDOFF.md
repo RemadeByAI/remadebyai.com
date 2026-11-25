@@ -1,8 +1,13 @@
 # Handoff notes
 
-Last updated: 2026-11-24 Central (184 apps live as 6eaccef; every app in scope has been checked for "What people say"). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
+Last updated: 2026-11-24 evening Central (hunt 12 on branch `claude/project-thread-hnlcph`, 197 apps, waiting for Go live; 184 live as 6eaccef). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
 
-## Newest: status checks and next steps (2026-11-24 Central)
+## Newest: app hunt 12, 197 apps (2026-11-24 evening Central, cloud)
+
+- 13 added on branch `claude/project-thread-hnlcph`: desigma (Figma), Tungsten Edge (uBar/Dock; free until 1.0, then US$24), Chipload (VCarve, CNC CAM), rec-rs (OBS, clean-room via REA), jOtter (Jupyter TUI), Natel (Google Contacts for CardDAV), Dalibre (Calibre), LibrePaper (Overleaf), Lyrimuse (LyricsX, no screenshots: album art), Excaliself (Excalidraw+), mirador (terminal dashboard), yami (niri desktop shell) and the game Stard (card battle from your GitHub stars). All have Claude commit counts; all 13 got "What people say": none (only single-place coverage).
+- Held: HeyPuter/everything (51 MIT apps rebuilding Office, Photoshop, AutoCAD etc.; weak AI evidence so far), ScreenPlink (firearms dry-fire game), Couchwave (yt-dlp). Vibe Jam 2026 award games need PC screenshots. Full notes: `/mnt/project-files/app-hunt/2026-11-24-hunt-12.md`.
+
+## Earlier: status checks and next steps (2026-11-24 Central)
 
 - **State:** `main` = `origin/main` = 6eaccef (hunt 11), live. Work now happens in the PC copy `C:\dev\remadebyaI\remadebyai-website`, which is level with GitHub. The merged local branches `hunt/2026-11-23-hunt-8`, `-9`, `-10`, `hunt/2026-11-24-hunt-11` and `reviews/finish-what-people-say` were deleted; `main` is the only local branch.
 - **Reviews:** done for all 182 apps in scope (74 sections, 106 "none"). Left: Claude of Tanks and Mailflare (sources on Reddit, X and a forum that returns 403). See `docs/REVIEWS-STATUS.md`.
