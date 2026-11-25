@@ -11610,6 +11610,493 @@
         "checked": "2026-11-24",
         "none": true
       }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit GitHub",
+      "tile": "wiki",
+      "added": "2026-11-25",
+      "name": "Folio",
+      "slug": "folio",
+      "alternative": "Alternative to Adobe Acrobat Reader",
+      "description": "A fast, clean PDF reader for Windows, Mac and Linux: tabs, highlights and notes, signing, and optional Ask AI about your documents. No account.",
+      "category": "Office",
+      "url": "https://github.com/Forward-Future/folio",
+      "download": "https://github.com/Forward-Future/folio-releases/releases/latest",
+      "source": "https://github.com/Forward-Future/folio",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "maker": "Forward Future (Matthew Berman)",
+      "icon": "▤",
+      "longDescription": "Folio opens PDFs in tabs and remembers where you left each one. You can highlight in colours with notes, draw, add text boxes, sign with a drawn signature, print booklets, and read in dark mode. It also opens PDF links straight from the web, turns a web page into a selectable PDF, and converts Word files to PDF when you open them.\n\nAsk AI is optional: ask about the whole document or a passage and get answers with page links, using your ChatGPT plan, your Claude subscription through Claude Code, an OpenRouter key or a local model. Builds are not code-signed yet, so Windows and macOS warn on first launch.",
+      "builtWithAI": "Checked 2026-11-25: 87 of the repo's 148 commits are co-authored by Claude.",
+      "keywords": [
+        "PDF reader",
+        "Acrobat",
+        "PDF annotator",
+        "sign PDF",
+        "Sumatra",
+        "Foxit",
+        "highlight PDF"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/folio/1.webp",
+          "alt": "Folio showing a sample PDF with page thumbnails on the left and the Ask AI panel on the right answering a question with page citations",
+          "caption": "Ask AI beside a document"
+        },
+        {
+          "src": "/assets/apps/folio/2.webp",
+          "alt": "Folio with coloured highlights in a document and their notes listed in the sidebar",
+          "caption": "Highlights and notes"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-25",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit site",
+      "tile": "code",
+      "added": "2026-11-25",
+      "name": "Hadron",
+      "slug": "hadron",
+      "alternative": "Alternative to CrossOver (for Steam games)",
+      "description": "Play Windows games from your Steam library on Apple Silicon Macs, straight from Mac Steam. Like Proton for the Mac. Early development.",
+      "category": "Games",
+      "url": "https://docs.hadrondb.com",
+      "download": "https://github.com/Broyojo/hadron/releases/latest",
+      "source": "https://github.com/Broyojo/hadron",
+      "license": "BSD-2-Clause",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "David Andrews (Broyojo)",
+      "icon": "⚛",
+      "longDescription": "Hadron sets up the Mac version of Steam so Windows games install and launch from your library as usual. Nothing runs under Rosetta: Wine is built natively for arm64, FEX translates the game's x86 code, and Direct3D, Vulkan and OpenGL are translated to Metal, with Retina mode and MetalFX upscaling.\n\nIt needs macOS 27 on Apple Silicon and installs with Homebrew or a disk image. It is early: a handful of games play well and many don't start yet, and the project keeps a list of which ones work. It is unofficial and not affiliated with Valve, Apple or CodeWeavers.",
+      "builtWithAI": "The README says most of Hadron's code was written by Claude Code running Claude Opus 5.5, directed and tested by its author. Checked 2026-11-25: 309 of 437 commits carry Claude co-author lines.",
+      "keywords": [
+        "CrossOver",
+        "Whisky",
+        "Proton",
+        "Wine",
+        "Game Porting Toolkit",
+        "Windows games on Mac",
+        "Steam Mac"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-25",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Try the demo",
+      "tile": "glance",
+      "added": "2026-11-25",
+      "name": "NeonPlan 3D",
+      "slug": "neonplan-3d",
+      "alternative": "Alternative to floor plan cards for Home Assistant",
+      "description": "Draw your home inside Home Assistant and control it from a live 3D floor plan: lights glow, blinds move, doors open. Local, no cloud.",
+      "category": "Home",
+      "url": "https://neonplan3d.mastershort.de/",
+      "source": "https://github.com/Mastershort/neonplan3d",
+      "download": "https://github.com/Mastershort/neonplan3d/releases",
+      "license": "MIT",
+      "price": "Freemium",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Torsten (Mastershort)",
+      "icon": "⌂",
+      "longDescription": "NeonPlan 3D adds a floor plan editor to Home Assistant: draw floors, rooms, doors, windows and roofs, or import Sweet Home 3D, iPhone LiDAR scans or CAD files. The house then shows live in 3D on a wall tablet or dashboard, with lights in their real colours, moving blinds, cameras, energy flows and single-room cards. Styles range from glowing neon to homely wood floors and an architect's white model.\n\nIt installs through HACS and runs fully locally. The core is free and MIT licensed; a free optional account unlocks fun packs, and paid Pro add-ons cover energy, cars, household and heat pumps. A free community fork, NextFloor, also exists.",
+      "builtWithAI": "Checked 2026-11-25: 1,261 of the repo's 1,324 commits are co-authored by Claude.",
+      "keywords": [
+        "Home Assistant",
+        "3D floor plan",
+        "floorplan card",
+        "floor3d",
+        "smart home dashboard",
+        "HACS",
+        "NextFloor",
+        "Sweet Home 3D"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/neonplan-3d/1.webp",
+          "alt": "One house shown in five styles side by side: Neon, Synthwave, Homely, Architect's model and Winter evening",
+          "caption": "One house, many styles"
+        },
+        {
+          "src": "/assets/apps/neonplan-3d/2.webp",
+          "alt": "A two-storey house in 3D with a garden house beside it, floor labels showing rooms and lights on, and a floor list on the left",
+          "caption": "The whole property live in 3D"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-25",
+        "summary": "Coverage is thin: a launch thread on the Home Assistant forum with a few replies, and a German blog review of its fork NextFloor that also weighs up NeonPlan. Forum users who tried it were impressed by how much of their house they could recreate. The complaints are about placing doors and the project website being mostly in German.",
+        "praise": [
+          "Detailed recreation of a real house",
+          "Users call it the best 3D view they have seen in Home Assistant",
+          "Seen as the more mature project next to its fork"
+        ],
+        "complaints": [
+          "Doors often land in the wrong orientation and small objects are hard to move",
+          "Much of the website and manual is in German"
+        ],
+        "sources": [
+          {
+            "title": "NeonPlan 3D – draw your home in Home Assistant and control it in a live 3D floor plan",
+            "site": "Home Assistant Community",
+            "url": "https://community.home-assistant.io/t/neonplan-3d-draw-your-home-in-home-assistant-and-control-it-in-a-live-3d-floor-plan-free-hacs-online-demo/1027224",
+            "date": "2026-10-07",
+            "quote": "This is amazing. Tried it yesterday. Thank you so much. This is the best in HA I have Seen until now.",
+            "who": "Chingischan"
+          },
+          {
+            "title": "NeonPlan 3D – draw your home in Home Assistant and control it in a live 3D floor plan",
+            "site": "Home Assistant Community",
+            "url": "https://community.home-assistant.io/t/neonplan-3d-draw-your-home-in-home-assistant-and-control-it-in-a-live-3d-floor-plan-free-hacs-online-demo/1027224",
+            "date": "2026-10-16",
+            "quote": "I’ve been able to recreate my house in great detail, and I’m really impressed with what NeonPlan 3D can do.",
+            "who": "gszatmari"
+          },
+          {
+            "title": "NeonPlan 3D – draw your home in Home Assistant and control it in a live 3D floor plan",
+            "site": "Home Assistant Community",
+            "url": "https://community.home-assistant.io/t/neonplan-3d-draw-your-home-in-home-assistant-and-control-it-in-a-live-3d-floor-plan-free-hacs-online-demo/1027224",
+            "date": "2026-10-21",
+            "quote": "unable to place properly doors as they are most of time in the wrong orientation",
+            "who": "vincen"
+          },
+          {
+            "title": "NextFloor: Gratis-Fork von NeonPlan 3D zeigt euer Haus live in 3D in Home Assistant",
+            "site": "simon42",
+            "url": "https://www.simon42.com/nextfloor-home-assistant-3d-plan/",
+            "date": "2026-11-02",
+            "quote": "Wer ein reiferes Projekt mit Support und deutscher Community sucht, ist beim Original NeonPlan 3D besser aufgehoben.",
+            "who": "Simon Oberstedt"
+          }
+        ]
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit GitHub",
+      "tile": "voice",
+      "added": "2026-11-25",
+      "name": "Lipflow",
+      "slug": "lipflow",
+      "alternative": "Alternative to Wispr Flow (silent)",
+      "description": "Dictation without sound: hold a key, silently mouth your words, and the text appears at your cursor. Reads your lips through the webcam, locally.",
+      "category": "Productivity",
+      "url": "https://github.com/amywork777/lipflow",
+      "source": "https://github.com/amywork777/lipflow",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "maker": "Amy Zhou",
+      "icon": "👄",
+      "longDescription": "Hold the right Option key, mouth what you want to say with no sound, and let go: Lipflow watches your mouth through the webcam, reads your lips with an on-device model and pastes the text into whatever app you're in. First setup takes about eight minutes: it asks for permissions, has you mouth 24 practice sentences and fine-tunes itself to your face and phrasing (and can learn from your Wispr Flow history).\n\nIt is built for Macs first (Apple Silicon for the best results) and also runs on Windows and Linux. An optional cleanup pass with Claude, Codex or a local Ollama model fixes words lip reading gets wrong. Setup is from source with a script, so it suits people comfortable with a terminal.",
+      "builtWithAI": "Checked 2026-11-25: 38 of the repo's 60 commits are co-authored by Claude, and others are by Cursor's agent.",
+      "keywords": [
+        "Wispr Flow",
+        "lip reading",
+        "silent dictation",
+        "speech to text",
+        "voice typing",
+        "dictation"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-25",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit GitHub",
+      "tile": "code",
+      "added": "2026-11-25",
+      "name": "SimRun",
+      "slug": "simrun",
+      "alternative": "Alternative to the iOS Simulator",
+      "description": "Run iPhone apps from Xcode's Simulator builds on your Mac, each in its own ordinary window. No virtual phone to boot.",
+      "category": "Developer tools",
+      "url": "https://github.com/unixzii/SimRun",
+      "source": "https://github.com/unixzii/SimRun",
+      "download": "https://github.com/unixzii/SimRun/releases",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Cyandev (unixzii)",
+      "icon": "▢",
+      "longDescription": "SimRun starts the iOS Simulator build of an app directly, without booting a simulated iPhone, so it is on screen in about half a second. Each app gets a normal resizable Mac window, trackpad gestures become real multi-touch, and launching from the terminal prints the app's output. One click opens or wipes an app's data folder, and a Keychain window shows what apps have saved.\n\nIt needs an Apple Silicon Mac with Xcode and an iOS Simulator runtime. The makers call it an experimental research project: handy for day-to-day UI work, not a replacement for testing in the Simulator or on a device.",
+      "builtWithAI": "Checked 2026-11-25: Claude is credited as co-author on most of the repo's 81 commits (102 Claude co-author lines in all).",
+      "keywords": [
+        "iOS Simulator",
+        "Xcode",
+        "iPhone apps on Mac",
+        "Mac Catalyst",
+        "SwiftUI"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/simrun/1.webp",
+          "alt": "A SwiftUI demo app running in its own Mac window next to SimRun's launcher and view hierarchy inspector",
+          "caption": "An iPhone app in its own Mac window"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-25",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Try it",
+      "tile": "code",
+      "added": "2026-11-25",
+      "name": "waarm64",
+      "slug": "waarm64",
+      "alternative": "Alternative to QEMU / UTM (in the browser)",
+      "description": "A whole 64-bit ARM computer in a browser tab: boots real Linux images with 3D graphics, sound, video and USB. Nothing runs on a server.",
+      "category": "Developer tools",
+      "url": "https://waarm64.com",
+      "source": "https://github.com/gbl08ma/waarm64",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "gbl08ma",
+      "icon": "⌬",
+      "longDescription": "waarm64 emulates arm64 hardware, not an operating system, so unmodified Debian, Arch and Alpine images boot through UEFI as they would in QEMU. Guest code is compiled to WebAssembly while it runs, fast enough for a desktop with a browser inside it. It does up to 8 cores and 16 GiB of memory, OpenGL and Vulkan through WebGL2 and WebGPU, video through the browser's own decoders, sound and microphone, USB passthrough, shared folders, snapshots and networking.\n\nThe site opens on a small machine booting live, with demos of Alpine at a shell and Arch Linux desktops. It needs Chrome, Edge or another Chromium-based browser.",
+      "builtWithAI": "The README says most of the code was written by Claude Opus 5.5, with a minority by Claude Fable 5.2, steered by a human. Checked 2026-11-25: 2,090 of 2,161 commits carry Claude co-author lines.",
+      "keywords": [
+        "QEMU",
+        "UTM",
+        "virtual machine",
+        "Linux in browser",
+        "emulator",
+        "WebAssembly",
+        "arm64",
+        "v86"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/waarm64/1.webp",
+          "alt": "The waarm64 home page: the headline 'A whole 64-bit ARM computer in a browser tab' beside a live Linux machine drawing a graphic and its terminal",
+          "caption": "A Linux machine booting on the home page"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-25",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit GitHub",
+      "tile": "bar",
+      "added": "2026-11-25",
+      "name": "CUPS Admin",
+      "slug": "cups-admin",
+      "alternative": "Replaces the CUPS web interface",
+      "description": "A native Mac app and command-line tool that brings back the printer admin pages Apple removed from macOS 27: queues, jobs and driver options.",
+      "category": "Utilities",
+      "url": "https://github.com/kfattic/cupsadmin",
+      "source": "https://github.com/kfattic/cupsadmin",
+      "download": "https://github.com/kfattic/cupsadmin/releases",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Kurt Fattic (Western Kentucky University)",
+      "icon": "⎙",
+      "longDescription": "macOS 27 turned off the CUPS web page at localhost:631, though printing itself still works. CUPS Admin puts the controls back in a SwiftUI app: list every printer, hold, release, move or cancel jobs, and set a queue's driver options as a form that is applied with lpadmin and read back. A cupsadmin command does the same from the terminal.\n\nIt was built at Western Kentucky University for a fleet of about 1,000 Macs and ships as a signed, notarized installer for macOS 14 and later. The author notes it doesn't yet cover every page of the old web interface.",
+      "builtWithAI": "The README says it was written with Claude. Checked 2026-11-25: all 16 commits are co-authored by Claude.",
+      "keywords": [
+        "CUPS",
+        "printer admin",
+        "localhost:631",
+        "lpadmin",
+        "print queue",
+        "macOS printing"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/cups-admin/1.webp",
+          "alt": "CUPS Admin with a printer list on the left and the Front Office queue's status and held jobs on the right",
+          "caption": "Jobs on a printer"
+        },
+        {
+          "src": "/assets/apps/cups-admin/2.webp",
+          "alt": "CUPS Admin showing a copy room printer's driver options such as media size, duplex and colour mode",
+          "caption": "Driver options as a form"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-25",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit site",
+      "tile": "glance",
+      "added": "2026-11-25",
+      "name": "Aerial",
+      "slug": "aerial-tv",
+      "alternative": "Alternative to stock Android TV home screens",
+      "description": "A calm, Apple TV-style home screen for Android TVs sold in China: your apps and aerial screensavers, with no ads or recommendation feeds.",
+      "category": "TV",
+      "url": "https://aerial.qust.me",
+      "download": "https://github.com/pengchujin/aerial-tv/releases/latest",
+      "source": "https://github.com/pengchujin/aerial-tv",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Android"
+      ],
+      "maker": "pengchujin",
+      "icon": "☁",
+      "longDescription": "Aerial replaces the advert-heavy home screens on Xiaomi, TCL, Skyworth, Sony and other TVs sold in China, and runs on boxes and projectors too. Your favourite apps sit on a glass shelf with everything else below, you can arrange tiles from your phone by scanning a code, and a Control Center gathers inputs, network, volume and brightness. Screensavers play Apple TV's aerial films, your photos or a clock.\n\nIt installs with ADB (no root, nothing removed, and it can be undone), and starts at boot. The main README is in Chinese, with an English version.",
+      "builtWithAI": "Checked 2026-11-25: 920 of the repo's 1,068 commits are co-authored by Claude.",
+      "keywords": [
+        "Android TV launcher",
+        "TV home screen",
+        "Xiaomi TV",
+        "Apple TV style",
+        "no ads",
+        "screensaver"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/aerial-tv/1.webp",
+          "alt": "Aerial's home screen on a TV: a large clock and weather over a city skyline at night, with a row of app tiles on a glass shelf",
+          "caption": "The home screen"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-25",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-25",
+      "name": "Cinderwatch",
+      "slug": "cinderwatch",
+      "alternative": "Inspired by tower defense games",
+      "description": "A 3D isometric tower defense in a single HTML file. An AI commander plays it for you; tap a tower pad to take over.",
+      "category": "Games",
+      "url": "https://kevintngo.github.io/cinderwatch/",
+      "source": "https://github.com/kevintngo/cinderwatch",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "kevintngo",
+      "icon": "🔥",
+      "longDescription": "Firelit towers guard the beacon of a ruined keep against endless waves across five lands, from a mountain pass and a snowfield to a bog, a lava scar and a desert at dusk. Four tower types each have three levels, and twenty kinds of monster bring their own tricks: slimes that split, sappers with powder kegs, wraiths that arrows pass through, necromancers that raise skeletons.\n\nThe game starts by playing itself; take over from the AI commander whenever you like. It runs on desktop and phone, in portrait or landscape.",
+      "builtWithAI": "Checked 2026-11-25: all 10 commits are co-authored by Claude Fable 5.2.",
+      "keywords": [
+        "tower defense",
+        "3D strategy",
+        "browser game",
+        "idle game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/cinderwatch/1.webp",
+          "alt": "A torchlit isometric keep at night with towers firing at a bone giant falling apart on the road",
+          "caption": "Holding the keep"
+        },
+        {
+          "src": "/assets/apps/cinderwatch/2.webp",
+          "alt": "Four views of the same keep in different lands: snow, bog, lava and desert",
+          "caption": "Four of the five lands"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-25",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-25",
+      "name": "Brushwild",
+      "slug": "brushwild",
+      "alternative": "Inspired by action RPGs",
+      "description": "An open-world action RPG drawn in ballpoint and coloured pencil, in your browser on desktop, phone or gamepad. Classes, skill tree, loot and dungeons.",
+      "category": "Games",
+      "url": "https://kevintngo.github.io/procedural-rpg/",
+      "source": "https://github.com/kevintngo/procedural-rpg",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "kevintngo",
+      "icon": "✎",
+      "longDescription": "Pick one of three classes (the sword-and-shield Warden, the spell-casting Emberwright or the bow-wielding Strider), grow a seven-branch skill tree, chase loot through five rarities and clear dungeons across a procedural world. Every pixel is drawn by shaders to look like pen hatching and pencil on cream paper, with night falling as a darker layer of ink.\n\nThe whole game is a single small HTML file. It plays with mouse and keyboard, a gamepad, or touch controls on a phone held either way.",
+      "builtWithAI": "Checked 2026-11-25: all 17 commits are co-authored by Claude (13 by Fable 5.2, 4 by Opus 5.5).",
+      "keywords": [
+        "action RPG",
+        "Diablo-like",
+        "open world",
+        "hand-drawn",
+        "browser game",
+        "loot"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/brushwild/1.webp",
+          "alt": "A pencil-drawn village with orange trees where the player fights a creature, health bars and a skill bar on screen",
+          "caption": "A fight under the trees"
+        },
+        {
+          "src": "/assets/apps/brushwild/2.webp",
+          "alt": "The Brushwild title card over a hand-drawn village of cottages and trees, with a Begin button",
+          "caption": "The title screen"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-25",
+        "none": true
+      }
     }
   ]
 }
