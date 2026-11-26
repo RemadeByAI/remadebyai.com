@@ -12097,6 +12097,602 @@
         "checked": "2026-11-25",
         "none": true
       }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit site",
+      "tile": "",
+      "added": "2026-11-26",
+      "name": "Convert",
+      "slug": "convert",
+      "alternative": "Alternative to CloudConvert",
+      "description": "Right-click any audio, video, image, document, PDF or font in Finder and convert it on your own Mac. Nothing is uploaded.",
+      "category": "Utilities",
+      "url": "https://convert.newtonbuilds.dev",
+      "download": "https://github.com/newtonstudios/convert/releases/latest",
+      "source": "https://github.com/newtonstudios/convert",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "maker": "Elias de Sena (newtonstudios)",
+      "icon": "⇄",
+      "longDescription": "Select files in Finder, pick Quick Actions, then Convert, and a small window offers only the formats that make sense: MP3, FLAC or Opus for audio, MP4, WebM or a GIF for video, HEIC, AVIF or WebP for pictures, PDF or Word for documents, and WOFF2 or TTF for fonts. The new file lands next to the original, and batches run one after another under one progress bar.\n\nAdvanced settings (bitrate, resolution, quality, page size) are remembered per format. Audio and video use ffmpeg, which you install once with Homebrew. The same formats and naming rules also run on Windows (a signed installer) and Linux.",
+      "builtWithAI": "The README says: \"This app is vibe coded. It started as an afternoon of chatting with an AI coding assistant (Claude) and is now built in the open by a growing group of contributors.\" Checked 2026-11-26: 56 of 108 commits are co-authored by Claude.",
+      "keywords": [
+        "file converter",
+        "cloudconvert",
+        "finder quick action",
+        "ffmpeg",
+        "heic to jpg",
+        "pdf to word",
+        "audio converter",
+        "video converter"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/convert/1.webp",
+          "alt": "The Convert window turning an Opus audio file into MP3, with bitrate, sample rate and channel settings",
+          "caption": "Converting an Opus file to MP3"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-26",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit GitHub",
+      "tile": "",
+      "added": "2026-11-26",
+      "name": "MX Options",
+      "slug": "mx-options",
+      "alternative": "Alternative to Logi Options+ (for Linux)",
+      "description": "A settings app for Logitech MX Master mice on Linux: buttons, gestures, the Actions Ring, wheels, haptics and Easy-Switch.",
+      "category": "Utilities",
+      "url": "https://github.com/nictonus/mxoptions",
+      "source": "https://github.com/nictonus/mxoptions",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Linux",
+        "Windows"
+      ],
+      "maker": "nictonus",
+      "icon": "🖱",
+      "longDescription": "Logitech makes no Options+ for Linux, so this fills the gap. Every button takes one of about 70 ready actions, a shortcut, a command or a macro. Gestures fire on swipes in four directions or on sixteen drawn shapes, each with its own vibration. The Actions Ring opens a menu of bubbles around the cursor, with dials you turn with the wheel for volume, tabs or zoom.\n\nIt also sets pointer speed, SmartShift and ratchet force, plays game rumble on the mouse, and has Flow: push the pointer off the screen edge and carry on on a second computer, clipboard included. Built and tested on KDE Plasma 6 with an MX Master 4; GNOME, sway, Hyprland and X11 desktops are handled too, and a Windows build can be made from source. Not affiliated with Logitech.",
+      "builtWithAI": "The README says: \"Every part of this project (the code, the interface, the sounds, the tests and this documentation) was written by Claude, Anthropic's AI model, working in Claude Code. A human, nictonus, directed the work and tried each build on a real MX Master 4.\" Checked 2026-11-26: 13 of 15 commits are co-authored by Claude.",
+      "keywords": [
+        "logitech",
+        "mx master",
+        "logi options",
+        "mouse settings",
+        "gestures",
+        "haptics",
+        "kde plasma",
+        "wayland"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/mx-options/1.webp",
+          "alt": "The Actions Ring editor in MX Options, with a ring of bubble actions around a centre and a list of actions beside it",
+          "caption": "Building an Actions Ring"
+        },
+        {
+          "src": "/assets/apps/mx-options/2.webp",
+          "alt": "The gestures page with a live compass showing a swipe to the left and sliders for swipe distances",
+          "caption": "Gestures and how they are read"
+        },
+        {
+          "src": "/assets/apps/mx-options/3.webp",
+          "alt": "The buttons page with a 3D MX Master mouse and the gesture button highlighted",
+          "caption": "Assigning buttons"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-26",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit GitHub",
+      "tile": "",
+      "added": "2026-11-26",
+      "name": "U2C Firmware Toolkit",
+      "slug": "u2c-firmware-toolkit",
+      "alternative": "Alternative to 8BitDo Ultimate Software (for the Ultimate 2C)",
+      "description": "Makes the 8BitDo Ultimate 2C Wireless show up as a native Xbox controller on a Mac, with rumble over Bluetooth, light control and live settings.",
+      "category": "Games",
+      "url": "https://github.com/arithon-f/8bitdo-ultimate-2c-toolkit",
+      "download": "https://github.com/arithon-f/8bitdo-ultimate-2c-toolkit/releases/latest",
+      "source": "https://github.com/arithon-f/8bitdo-ultimate-2c-toolkit",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "macOS",
+        "Linux"
+      ],
+      "maker": "Carlos Browne (arithon-f)",
+      "icon": "🎮",
+      "longDescription": "Out of the box, macOS sees the Ultimate 2C as a generic device that most Mac games ignore. This app installs 8BitDo's own firmware 1.09 with tweaks you pick, so the controller presents itself as an Xbox controller by cable, over Bluetooth and through the 2.4 GHz dongle. It also adds rumble over Bluetooth, a dimmable Home ring, battery alerts and fewer drop-outs, and lets you change dead zones, trigger ranges and button layout without flashing again.\n\nIt backs up the controller and dongle before writing anything and can restore the backup or the original firmware at any time. Only for the Ultimate 2C on firmware 1.09 and its dongle on 1.03. Modified firmware may void the warranty; the README's disclaimer explains the risks.",
+      "builtWithAI": "The README says: \"This is a vibe-coded project, written with an AI assistant (Opus 5.5).\" Checked 2026-11-26: 225 of 251 commits are co-authored by Claude.",
+      "keywords": [
+        "8bitdo",
+        "ultimate 2c",
+        "controller",
+        "gamepad",
+        "xbox controller",
+        "firmware",
+        "mac gaming",
+        "rumble"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/u2c-firmware-toolkit/1.webp",
+          "alt": "The Firmware tab showing firmware 1.09 with a list of tweaks to switch on, next to backup and restore steps",
+          "caption": "Choosing firmware tweaks"
+        },
+        {
+          "src": "/assets/apps/u2c-firmware-toolkit/2.webp",
+          "alt": "The Diagnostics tab testing a controller connected over Bluetooth, with buttons, sticks and motors",
+          "caption": "Testing the controller"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-26",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit GitHub",
+      "tile": "",
+      "added": "2026-11-26",
+      "name": "HomeRoll",
+      "slug": "homeroll",
+      "alternative": "Alternative to Apple Photos and iCloud Photos",
+      "description": "An iPhone photos app for your own Immich server that looks and feels like Apple's Photos app, with your pictures on hardware you own.",
+      "category": "Media server",
+      "url": "https://github.com/silentprovider423/HomeRoll",
+      "download": "https://github.com/silentprovider423/HomeRoll/releases/latest",
+      "source": "https://github.com/silentprovider423/HomeRoll",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "iOS"
+      ],
+      "maker": "silentprovider423",
+      "icon": "◫",
+      "longDescription": "HomeRoll is an independent client for a self-hosted Immich server, built to feel like Photos on iOS 26: the grid with its zoom levels, the viewer, the editor, memories, search, people and background backup of new shots. The maker uses it every day against a library of about 85,000 photos and videos.\n\nIt isn't on the App Store. You install it with SideStore or AltStore (a free Apple ID works, with a refresh every 7 days), or build it with Xcode. English and German. A macOS sibling, HomeRoll Desktop, shares the same edits. Not affiliated with Apple or Immich.",
+      "builtWithAI": "The README says: \"Built with help from Claude Code: I did the research (Apple's Photos frameworks analysed with rea), the design decisions and daily testing on my own iPhone, a lot of the Swift was written together with it.\" The commits carry no AI trailers (checked 2026-11-26).",
+      "keywords": [
+        "immich",
+        "photos",
+        "icloud photos",
+        "self-hosted",
+        "iphone",
+        "photo backup",
+        "sidestore",
+        "altstore"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/homeroll/1.webp",
+          "alt": "The HomeRoll library grid on an iPhone, full of space and nature photos",
+          "caption": "The library"
+        },
+        {
+          "src": "/assets/apps/homeroll/2.webp",
+          "alt": "A single photo of a sunset open in the HomeRoll viewer, with a filmstrip below",
+          "caption": "The viewer"
+        },
+        {
+          "src": "/assets/apps/homeroll/3.webp",
+          "alt": "The HomeRoll editor adjusting the exposure of a sunset photo",
+          "caption": "Editing a photo"
+        },
+        {
+          "src": "/assets/apps/homeroll/4.webp",
+          "alt": "The Backup and Offline settings, with photo backup switched on",
+          "caption": "Backing up to your own server"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-26",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit GitHub",
+      "tile": "",
+      "added": "2026-11-26",
+      "name": "zest",
+      "slug": "zest",
+      "alternative": "Alternative to Fig and Amazon Q autocomplete",
+      "description": "An autocomplete popup for zsh on macOS: subcommands, options, files and git branches with descriptions, right under your cursor.",
+      "category": "Developer tools",
+      "url": "https://github.com/rostik32/zest",
+      "download": "https://github.com/rostik32/zest/releases/latest",
+      "source": "https://github.com/rostik32/zest",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Rostislav Bardashov",
+      "icon": "⌨",
+      "longDescription": "Fig's popup autocomplete for the terminal was folded into Amazon Q and then Kiro CLI. zest brings the same idea back as a small free app: start typing a command and a popup lists its subcommands, options, files, folders, git branches and npm scripts, with a short description of each.\n\nIt knows about 1,500 commands out of the box and works in Terminal, iTerm2, Ghostty, VS Code and Cursor, taking on your editor's theme where it can. Install it with a one-line script or Homebrew. Needs macOS 14 on Apple silicon and zsh.",
+      "builtWithAI": "Checked 2026-11-26: 31 of 32 commits are co-authored by Claude.",
+      "keywords": [
+        "fig",
+        "amazon q",
+        "kiro",
+        "zsh",
+        "autocomplete",
+        "terminal",
+        "shell completion",
+        "iterm2"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/zest/1.webp",
+          "alt": "A terminal with git checkout typed and the zest popup listing git branches and folders below the cursor",
+          "caption": "Suggesting git branches"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-26",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Visit GitHub",
+      "tile": "",
+      "added": "2026-11-26",
+      "name": "Family Location",
+      "slug": "family-location",
+      "alternative": "Alternative to Life360",
+      "description": "A Life360 replacement inside Home Assistant: places, arrival and departure alerts, trips, speeding and low-battery alerts, check-in and SOS.",
+      "category": "Family",
+      "url": "https://github.com/Ctuna89/HA-Family-Location",
+      "source": "https://github.com/Ctuna89/HA-Family-Location",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Ctuna89",
+      "icon": "📍",
+      "longDescription": "Positions come from the Home Assistant Companion app on each phone, and everything else is worked out in your own Home Assistant: no accounts, no subscription. Add places by typing an address, then choose who gets told when someone arrives or leaves, and for whom (only the kids at school, say). A trip only ends after five minutes without moving, so traffic lights don't cause false arrivals, and people travelling together don't get alerts about each other.\n\nIt also shows who is still, moving or driving, logs trips with distance and top speed, warns about speeding and low batteries, and has check-in and SOS buttons, with a map card for the dashboard. Install it through HACS as a custom repository. English and Spanish.",
+      "builtWithAI": "Checked 2026-11-26: 31 of 34 commits are co-authored by Claude.",
+      "keywords": [
+        "life360",
+        "home assistant",
+        "family locator",
+        "location sharing",
+        "geofence",
+        "hacs",
+        "find my family"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-26",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-26",
+      "name": "Little City",
+      "slug": "little-city",
+      "alternative": "Inspired by Townscaper",
+      "description": "A hand-drawn city builder in your browser: place a few blocks, watch them turn into a town, then watch people move in and live there.",
+      "category": "Games",
+      "url": "https://littlecity.io",
+      "source": "https://github.com/yaoderek/littlecity.io",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Derek Yao",
+      "icon": "⌂",
+      "longDescription": "There are no rules to follow: place blocks on the water and they grow into houses, harbours, castles and lighthouses, all drawn in code with no art files. Then fly down into the streets and watch the town go about its day, from market squares to weddings.\n\nOver 80 special buildings and events are hidden in it (a guide on the site lists them), \"grow a town\" builds a whole one for you, and yes, you can nuke it: they'll build it back. Free, and it works on phones too.",
+      "builtWithAI": "Listed in the awesome-fable-5.2 collection of works built with Claude Fable 5.2. Checked 2026-11-26: 958 of 1,052 commits are co-authored by Claude.",
+      "keywords": [
+        "city builder",
+        "townscaper",
+        "sandbox",
+        "cozy game",
+        "browser game",
+        "town builder"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/little-city/1.webp",
+          "alt": "A hand-drawn island town with a castle, a harbour and a lighthouse on a blue sea",
+          "caption": "Welcome to Little City"
+        },
+        {
+          "src": "/assets/apps/little-city/2.webp",
+          "alt": "Flying low over a town square with a fountain and people at a wedding",
+          "caption": "Fly down into the streets"
+        },
+        {
+          "src": "/assets/apps/little-city/3.webp",
+          "alt": "A whole island town grown by the game on its own",
+          "caption": "Grow a whole new town"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-26",
+        "none": true
+      }
+    },
+    {
+      "group": "indie",
+      "owner": "Independent",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-26",
+      "name": "Lanternfall",
+      "slug": "lanternfall",
+      "alternative": "Inspired by idle RPG battlers",
+      "description": "An idle battler in your browser: a party of heroes holds a lantern-lit line against waves of monsters from the dark.",
+      "category": "Games",
+      "url": "https://loktar00.github.io/lanternfall/",
+      "source": "https://github.com/loktar00/lanternfall",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "loktar00",
+      "icon": "🏮",
+      "longDescription": "Fights run on their own while you pick the party (a warden, a reaver, a fletcher and a lamplighter among them), spend loot and relics to level and re-equip them, and fire a flare at the right moment to light the field and boost the heroes when a wave or a boss gets hard. Game speed goes up to 4x.\n\nThe whole game, models, animation and music included, is one self-contained HTML page built on three.js.",
+      "builtWithAI": "The maker's post, as quoted by the awesome-fable-5.2 list: \"The whole game — animations, models, everything — generated by Fable\" (Claude Fable 5.2). The repo has no licence file and its 2 commits carry no AI trailers (checked 2026-11-26).",
+      "keywords": [
+        "idle game",
+        "auto battler",
+        "rpg",
+        "three.js",
+        "browser game",
+        "tower defense"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/lanternfall/1.webp",
+          "alt": "Four hooded heroes holding a lantern-lit line on a dark moor, with their party cards along the bottom",
+          "caption": "Holding the line at night"
+        },
+        {
+          "src": "/assets/apps/lanternfall/2.webp",
+          "alt": "The heroes facing the Barrow King, a horned boss with a health bar at the top of the screen",
+          "caption": "A boss wave"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-26",
+        "none": true
+      },
+      "license": "No licence (source visible)"
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-26",
+      "name": "Papertrails",
+      "slug": "papertrails",
+      "alternative": "Inspired by pop-up books and walking games",
+      "description": "Walk a paper figure through an endless pop-up paper world, where trees, houses and hills fold up from the ground as you go.",
+      "category": "Games",
+      "url": "https://xikhar.github.io/papertrails/",
+      "source": "https://github.com/xikhar/papertrails",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Shikhar (xikhar)",
+      "icon": "✂",
+      "longDescription": "A calm walking game made of card and paper. As the traveller walks on, the world folds up out of the ground like a pop-up book: autumn forests, villages, desert, snow, and day turning into night, when the village windows light up.\n\nThere's no goal to chase. It runs in the browser on three.js.",
+      "builtWithAI": "The maker's post, as summarised by the awesome-fable-5.2 list, says it was built with Claude Fable 5.2, Opus 5.5 and three.js. The repo's 3 commits carry no AI trailers (checked 2026-11-26).",
+      "keywords": [
+        "walking game",
+        "pop-up book",
+        "paper craft",
+        "cozy game",
+        "three.js",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/papertrails/1.webp",
+          "alt": "A paper traveller among paper-craft autumn trees and cottages",
+          "caption": "Through the paper forest"
+        },
+        {
+          "src": "/assets/apps/papertrails/2.webp",
+          "alt": "The paper village by day, with orange trees and red-roofed houses",
+          "caption": "The village by day"
+        },
+        {
+          "src": "/assets/apps/papertrails/3.webp",
+          "alt": "The paper village at night, its windows lit",
+          "caption": "The village at night"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-26",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-26",
+      "name": "Unsung Vale",
+      "slug": "unsung-vale",
+      "alternative": "Inspired by open-world fantasy RPGs",
+      "description": "A third-person fantasy RPG in your browser: cross a silent valley of mesas and waterfalls and wake its eight Tuning Spires.",
+      "category": "Games",
+      "url": "https://unsung-vale.vercel.app/",
+      "source": "https://github.com/Leonxlnx/unsung-vale",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Leonxlnx",
+      "icon": "♫",
+      "longDescription": "You play the Cantor, a masked wanderer-knight crossing the Vale at golden hour. Break the constructs that guard each spire and wake it, and colour, sound and people return to that part of the valley. The first three spires stand in the inner valley; the other five sit on mesas around the lake, reached by riding strings of light. A full journey with side quests and trials takes about two hours.\n\nEverything you see, terrain, trees, buildings and enemies, is generated by code, with no imported models or textures. Needs a recent Chrome or Edge with WebGL 2.",
+      "builtWithAI": "Listed in the awesome-fable-5.2 collection of works built with Claude Fable 5.2. Checked 2026-11-26: 190 of 191 commits are co-authored by Claude.",
+      "keywords": [
+        "rpg",
+        "open world",
+        "fantasy",
+        "three.js",
+        "browser game",
+        "action adventure"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/unsung-vale/1.webp",
+          "alt": "The caped hero on a balustraded terrace looking out over white-and-gold spires",
+          "caption": "The Dawn Terrace"
+        },
+        {
+          "src": "/assets/apps/unsung-vale/2.webp",
+          "alt": "The hero facing a tall stone construct between pale arches",
+          "caption": "The Stillness at the Crown"
+        },
+        {
+          "src": "/assets/apps/unsung-vale/3.webp",
+          "alt": "A river canyon with a cliffside town and arching strings of light",
+          "caption": "Down the valley"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-26",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-26",
+      "name": "Red Clay Chase",
+      "slug": "red-clay-chase",
+      "alternative": "Inspired by police-chase driving games",
+      "description": "Outrun the police in a convertible on red dirt back roads, in your browser. Five wanted levels, ramming cops and cars that come apart.",
+      "category": "Games",
+      "url": "https://noclipepe.com/chase/",
+      "source": "https://github.com/noclipepe/red-clay-chase",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "noclipepe",
+      "icon": "🚓",
+      "longDescription": "The police play roles: one rams your bumper, two box you in, one gets ahead and brake-checks you. There are five wanted levels, and at five stars a timer starts: survive it and the cops give up. Hoods flip up and tear off, and doors swing open and fly off on side hits.\n\nNo game engine or physics library: driving, crashes and collisions are written from scratch on three.js, and every texture, car, tree and sound is made in code. Touch controls work on phones.",
+      "builtWithAI": "The README says it was \"built entirely by Claude Fable 5.2 from plain chat messages. No code was written by hand\": 28 messages over 3 days, about 9.5 hours and $208 of API time. Checked 2026-11-26: its 1 commit is co-authored by Claude.",
+      "keywords": [
+        "driving game",
+        "police chase",
+        "cars",
+        "three.js",
+        "browser game",
+        "racing"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/red-clay-chase/1.webp",
+          "alt": "A red convertible with two people on a country road beside a red clay cut, under the title Red Clay Chase",
+          "caption": "The title screen"
+        },
+        {
+          "src": "/assets/apps/red-clay-chase/2.webp",
+          "alt": "Police cars chasing the red convertible along a road past a red clay bank",
+          "caption": "The chase"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-26",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-26",
+      "name": "Ink Flight",
+      "slug": "ink-flight",
+      "alternative": "Inspired by relaxing flight games",
+      "description": "Fly a folded paper plane through an explorer's sketchbook that has stood up off the page, in your browser.",
+      "category": "Games",
+      "url": "https://starknightt.github.io/ink-flight/",
+      "source": "https://github.com/StarKnightt/ink-flight",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "StarKnightt",
+      "icon": "✈",
+      "longDescription": "Glide a white paper plane over ink-hatched mountains fading into blue haze, a teal river, a pen-drawn town with terracotta roofs, a bridge, a windmill and a lighthouse on the cliffs, all in ink and light watercolour on old yellowed paper.\n\nPlay with keyboard and mouse. It's also on Wavedash.",
+      "builtWithAI": "Listed in the awesome-fable-5.2 collection of works built with Claude Fable 5.2. Checked 2026-11-26: all 5 commits are co-authored by Claude.",
+      "keywords": [
+        "flight game",
+        "paper plane",
+        "sketchbook",
+        "relaxing game",
+        "three.js",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/ink-flight/1.webp",
+          "alt": "A white paper plane flying over an ink-drawn valley and town",
+          "caption": "Taking off"
+        },
+        {
+          "src": "/assets/apps/ink-flight/2.webp",
+          "alt": "A pen-drawn town and arched bridge in ink and watercolour",
+          "caption": "Over the town"
+        },
+        {
+          "src": "/assets/apps/ink-flight/3.webp",
+          "alt": "A lighthouse on white cliffs above the sea, drawn in ink",
+          "caption": "The lighthouse"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-26",
+        "none": true
+      }
     }
   ]
 }

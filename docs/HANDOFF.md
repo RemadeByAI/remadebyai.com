@@ -1,8 +1,13 @@
 # Handoff notes
 
-Last updated: 2026-11-25 afternoon Central (hunt 13 on branch `claude/project-thread-lmcat2`, 207 apps, waiting for Go live; 197 live as 5d25d59). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
+Last updated: 2026-11-26 Central (hunt 14 on branch `claude/project-thread-nicqqp`, 219 apps, waiting for Go live; 207 live as f283570). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
 
-## Newest: app hunt 13, 207 apps (2026-11-25 afternoon Central, cloud)
+## Newest: app hunt 14, 219 apps (2026-11-26 Central, cloud)
+
+- 12 added on branch `claude/project-thread-nicqqp`: Convert (CloudConvert, local on Mac/Windows/Linux), MX Options (Logi Options+ for Linux), U2C Firmware Toolkit (8BitDo Ultimate 2C on Mac), HomeRoll (Apple Photos-style iPhone app for Immich), zest (Fig autocomplete), Family Location (Life360 in Home Assistant; no screenshot) and the games Little City, Lanternfall (no licence, listed as indie), Papertrails, Unsung Vale, Red Clay Chase and Ink Flight (most found via the awesome-fable-5.2 list). All 12 "What people say": none.
+- Held: PULP (FL Studio-style DAW, no download yet). Full notes: `/mnt/project-files/app-hunt/2026-11-26-hunt-14.md`.
+
+## Earlier: app hunt 13, 207 apps (2026-11-25 afternoon Central, cloud)
 
 - 10 added on branch `claude/project-thread-lmcat2`: Folio (Acrobat Reader), Hadron (CrossOver for Steam games on Apple Silicon; no screenshot), NeonPlan 3D (Home Assistant 3D floor plan, Freemium; chosen over its fork NextFloor), Lipflow (silent Wispr Flow; no screenshot), SimRun (iOS Simulator), waarm64 (ARM VM in a browser), CUPS Admin (CUPS web UI for macOS 27), Aerial (Android TV home screen, 13k stars) and the games Cinderwatch and Brushwild. NeonPlan 3D got "What people say"; the rest "none".
 - Held: couch-tv (7th TV launcher), NeonClipping and ink music (YouTube downloading/streaming), Hand-thesia (no licence), Uno com Escada. Full notes: `/mnt/project-files/app-hunt/2026-11-25-hunt-13.md`.

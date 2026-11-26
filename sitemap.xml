@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://remadebyai.com/</loc><lastmod>2026-11-25</lastmod></url>
-  <url><loc>https://remadebyai.com/apps/</loc><lastmod>2026-11-25</lastmod></url>
-  <url><loc>https://remadebyai.com/categories/</loc><lastmod>2026-11-25</lastmod></url>
-  <url><loc>https://remadebyai.com/new/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://remadebyai.com/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/categories/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/new/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/about/</loc></url>
   <url><loc>https://remadebyai.com/list/</loc></url>
   <url><loc>https://remadebyai.com/badge/</loc></url>
@@ -12,18 +12,18 @@
   <url><loc>https://remadebyai.com/categories/audio/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://remadebyai.com/categories/backup/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://remadebyai.com/categories/business/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://remadebyai.com/categories/developer-tools/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://remadebyai.com/categories/developer-tools/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/categories/documentation/</loc><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://remadebyai.com/categories/email/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://remadebyai.com/categories/family/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://remadebyai.com/categories/family/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/categories/file-sharing/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://remadebyai.com/categories/finance/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://remadebyai.com/categories/games/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://remadebyai.com/categories/games/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/categories/graphics/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://remadebyai.com/categories/health-and-fitness/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://remadebyai.com/categories/home/</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://remadebyai.com/categories/maps-and-gis/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://remadebyai.com/categories/media-server/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://remadebyai.com/categories/media-server/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/categories/messaging/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://remadebyai.com/categories/networking/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://remadebyai.com/categories/office/</loc><lastmod>2026-11-25</lastmod></url>
@@ -34,7 +34,7 @@
   <url><loc>https://remadebyai.com/categories/screen-capture/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://remadebyai.com/categories/translation/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://remadebyai.com/categories/tv/</loc><lastmod>2026-11-25</lastmod></url>
-  <url><loc>https://remadebyai.com/categories/utilities/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://remadebyai.com/categories/utilities/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/categories/video/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://remadebyai.com/apps/inclosemail/</loc><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://remadebyai.com/apps/desktopwiki/</loc><lastmod>2026-11-21</lastmod></url>
@@ -243,4 +243,16 @@
   <url><loc>https://remadebyai.com/apps/aerial-tv/</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://remadebyai.com/apps/cinderwatch/</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://remadebyai.com/apps/brushwild/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/convert/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/mx-options/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/u2c-firmware-toolkit/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/homeroll/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/zest/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/family-location/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/little-city/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/lanternfall/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/papertrails/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/unsung-vale/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/red-clay-chase/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/ink-flight/</loc><lastmod>2026-11-26</lastmod></url>
 </urlset>
