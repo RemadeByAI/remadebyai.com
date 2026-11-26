@@ -1,7 +1,6 @@
-// "List your app" form on the List your app page (/list/, from partials/list.html). The form stays hidden (and the email
-// button stays the only way in) until the form has both data-endpoint
-// (the forms Worker URL) and data-sitekey (the Cloudflare Turnstile site key).
-// When configured, the form is always shown (the page is just for this) and the email button becomes the fallback.
+// "List your app" form on the List your app page (/list/, from partials/list.html). It is the only way to send a request.
+// The form stays hidden until it has both data-endpoint (the forms Worker URL) and data-sitekey (the Cloudflare Turnstile
+// site key); when configured, it is always shown.
 // The Worker lives in forms-worker/; setup steps are in forms-worker/README.md.
 (() => {
   const form = document.getElementById('list-form');
@@ -16,11 +15,6 @@
   const progress = form.querySelector('.form-progress');
   let widgetId = null;
   let turnstileLoading = false;
-
-  // The form is always shown; the email button stays as a secondary way in.
-  const action = document.querySelector('.list-app-action');
-  const emailButton = action && action.querySelector('.button.primary');
-  if (emailButton) { emailButton.classList.remove('primary'); emailButton.textContent = 'Or email us instead'; }
 
   function loadTurnstile() {
     if (turnstileLoading) return;

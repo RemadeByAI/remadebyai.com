@@ -159,12 +159,10 @@ footer { border-top: 1px solid var(--line); background: #0d1310; }
 .about-points a { color: var(--green); }
 @media (max-width: 760px) { .about-grid { grid-template-columns: 1fr; } }
 .list-app { padding-bottom: 70px; }
-.list-app-box { display: grid; grid-template-columns: 1.4fr 1fr; align-items: center; gap: clamp(24px, 5vw, 60px); padding: clamp(25px, 4.3vw, 49px); border: 1px solid #395546; border-radius: 19px; background: linear-gradient(120deg, #142219, #111813 60%); }
+.list-app-box { display: grid; grid-template-columns: 1fr; align-items: center; gap: clamp(24px, 5vw, 60px); padding: clamp(25px, 4.3vw, 49px); border: 1px solid #395546; border-radius: 19px; background: linear-gradient(120deg, #142219, #111813 60%); }
 .list-app h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); font-weight: 800; letter-spacing: -.055em; line-height: 1.1; }
 .list-app h2 + p { margin-top: 14px; color: var(--muted); font-size: 1.05rem; }
-.list-app-action { display: grid; justify-items: start; gap: 10px; }
-.list-app-address { color: var(--muted); font-size: .9rem; }
-.list-app-address a { color: var(--green); }
+.list-app-box > div > p:last-child { max-width: 46rem; }
 /* List your app form (shown by contact.js only when the forms Worker is configured). */
 .list-form { grid-column: 1 / -1; padding-top: clamp(20px, 3vw, 32px); border-top: 1px solid #2c4235; }
 .form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 20px; }
