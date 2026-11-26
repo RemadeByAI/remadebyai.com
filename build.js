@@ -614,6 +614,9 @@ const ALTERNATIVE_TOPICS = [
     intro: 'Replacements for Word, Excel, PowerPoint and Outlook, built with AI. Open your documents, spreadsheets and email without a Microsoft 365 plan.' },
   { slug: 'google-apps', name: 'Google apps', match: /Google/,
     intro: 'Alternatives to Google Docs, Calendar, Contacts, Workspace, Lens and the Google TV home screen, for people who want to rely less on Google.' },
+  // Team wikis: DesktopWiki (EmuKey's own Confluence alternative) leads; Flowplan and Tolaria are team pages and a shared knowledge base.
+  { slug: 'confluence', name: 'Confluence', match: /Confluence/, include: ['flowplan', 'tolaria'], lead: 'desktopwiki',
+    intro: 'Team wikis and knowledge bases built with AI: spaces, page trees and shared docs for a family, a small team or a company, without a Confluence plan.' },
   { slug: 'obsidian-notion', name: 'Obsidian, Notion and Confluence', match: /Obsidian|Notion|Typora|Confluence/,
     intro: 'Notes, wikis and knowledge bases in the spirit of Obsidian, Notion, Confluence and Typora, for one person or a whole team. Most keep your notes as files you own.' },
   { slug: 'figma', name: 'Figma and Illustrator', match: /Figma|Illustrator|Excalidraw|Miro/,
@@ -636,7 +639,9 @@ const PLATFORM_PAGES = {
 function alternativeTopics(apps) {
   const topics = [];
   for (const t of ALTERNATIVE_TOPICS) {
-    const list = apps.filter(a => t.match.test(a.alternative)).sort(byName);
+    // Matches on "alternative", plus any slugs listed in "include"; the "lead" app (if any) is shown first.
+    const list = apps.filter(a => t.match.test(a.alternative) || (t.include || []).includes(a.slug))
+      .sort((a, b) => (b.slug === t.lead) - (a.slug === t.lead) || byName(a, b));
     if (list.length >= MIN_TOPIC_APPS) topics.push({ ...t, apps: list });
     else console.log(`Skipped "alternatives to ${t.name}": only ${list.length} listing(s), needs ${MIN_TOPIC_APPS}.`);
   }
