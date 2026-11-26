@@ -1,7 +1,7 @@
 // "List your app" form on the List your app page (/list/, from partials/list.html). The form stays hidden (and the email
 // button stays the only way in) until the form has both data-endpoint
 // (the forms Worker URL) and data-sitekey (the Cloudflare Turnstile site key).
-// When configured, the form starts open (the page is just for this); a "Hide the form" button collapses it.
+// When configured, the form is always shown (the page is just for this) and the email button becomes the fallback.
 // The Worker lives in forms-worker/; setup steps are in forms-worker/README.md.
 (() => {
   const form = document.getElementById('list-form');
@@ -17,17 +17,10 @@
   let widgetId = null;
   let turnstileLoading = false;
 
-  // Open by default: a toggle button closes and reopens the form.
+  // The form is always shown; the email button stays as a secondary way in.
   const action = document.querySelector('.list-app-action');
   const emailButton = action && action.querySelector('.button.primary');
   if (emailButton) { emailButton.classList.remove('primary'); emailButton.textContent = 'Or email us instead'; }
-  const toggle = document.createElement('button');
-  toggle.type = 'button';
-  toggle.className = 'button primary form-toggle';
-  toggle.setAttribute('aria-controls', 'list-form');
-  toggle.setAttribute('aria-expanded', 'false');
-  toggle.innerHTML = '<span class="form-toggle-label">Fill in the form</span><span class="chevron" aria-hidden="true">▾</span>';
-  if (action) action.insertBefore(toggle, action.firstChild);
 
   function loadTurnstile() {
     if (turnstileLoading) return;
@@ -41,20 +34,14 @@
     document.head.appendChild(script);
   }
 
-  // quiet: open without moving the cursor or scrolling (used on page load, so the header search keeps focus).
-  function setOpen(open, quiet) {
-    form.hidden = !open;
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.querySelector('.form-toggle-label').textContent = open ? 'Hide the form' : 'Fill in the form';
-    if (open) {
-      loadTurnstile();
-      if (quiet) return;
-      form.querySelector('input[name="name"]').focus({ preventScroll: true });
-      form.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
+  // Show the form and load Turnstile. Only move the cursor to it when the link asked for the form (#list-form),
+  // so the header search keeps focus on a normal page load.
+  form.hidden = false;
+  loadTurnstile();
+  if (location.hash === '#list-form') {
+    form.querySelector('input[name="name"]').focus({ preventScroll: true });
+    form.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
-  toggle.addEventListener('click', () => setOpen(form.hidden));
-  setOpen(true, location.hash !== '#list-form');
 
   function say(text, kind) {
     status.textContent = text;
