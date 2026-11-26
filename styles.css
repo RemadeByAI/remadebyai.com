@@ -433,3 +433,4 @@ html[data-theme="light"] .viewer, html[data-theme="light"] .viewer::backdrop { b
 }
 html[data-theme="light"] .buzz-col.bad li::before { color: #c0392b; }
 html[data-theme="light"] .buzz-col.good li::before { color: #2e7d32; }
+.sub-title { margin-top: 44px; font-size: clamp(1.3rem, 2.4vw, 1.7rem); font-weight: 750; letter-spacing: -.03em; }

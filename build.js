@@ -18,7 +18,7 @@ const SITE = 'https://remadebyai.com';
 const NEW_ON_HOME = 6;
 const GROUPS = { emukey: 'EmuKey app', open: 'Open source', indie: 'Independent' }; // indie = closed source, not by EmuKey
 const PLATFORMS = ['Windows', 'macOS', 'Linux', 'Web', 'iOS', 'Android'];
-const GENERATED_DIRS = ['apps', 'categories', 'new', 'about', 'list', 'badge'];
+const GENERATED_DIRS = ['apps', 'categories', 'new', 'about', 'list', 'badge', 'alternatives', 'platforms'];
 
 // Analytics. Both are optional: leave a value empty and that part is left out of every page.
 // - cloudflareToken: the Cloudflare Web Analytics site token for remadebyai.com (page views, visitors,
@@ -209,6 +209,7 @@ function siteAssets() {
     `  <script>(function(){var t='dark';try{if(localStorage.getItem('theme')==='light')t='light'}catch(e){}var d=document.documentElement;d.setAttribute('data-theme',t);if(t==='light'){var m=document.querySelector('meta[name="color-scheme"]');if(m)m.content='light';m=document.querySelector('meta[name="theme-color"]');if(m)m.content='#f5f8f3'}})();</script>`,
     `  <link rel="stylesheet" href="/styles.css?v=${ASSET_VERSION.css}">`,
     `  <script src="/site.js?v=${ASSET_VERSION.site}" defer></script>`,
+    `  <link rel="alternate" type="application/rss+xml" title="RemadeByAI: new apps" href="${SITE}/feed.xml">`,
   ];
   if (ANALYTICS.cloudflareToken) {
     lines.push(`  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='${JSON.stringify({ token: ANALYTICS.cloudflareToken })}'></script>`);
@@ -231,7 +232,7 @@ function header() {
 const footer = () => `<footer>
   <div class="wrap foot">
     <div class="foot-about"><a class="brand" href="/">RemadeBy<em>AI</em></a><p>Familiar software, rebuilt with AI. <em class="foot-note">(A software directory from <a href="https://emukey.com/">EmuKey LLC</a>.)</em></p></div>
-    <nav class="foot-links" aria-label="Footer"><a href="/apps/">All apps</a><a href="/new/">New arrivals</a><a href="/categories/">Categories</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
+    <nav class="foot-links" aria-label="Footer"><a href="/apps/">All apps</a><a href="/new/">New arrivals</a><a href="/categories/">Categories</a><a href="/alternatives/">Alternatives</a><a href="/platforms/">Platforms</a><a href="/about/">About</a><a href="/list/">List your app</a><a href="/feed.xml">RSS feed</a></nav>
   </div>
 </footer>`;
 const foot = `</main>
@@ -327,6 +328,7 @@ function appPage(app, all) {
     ['Made by', esc(app.maker || (app.group === 'emukey' ? app.owner : ''))],
     ['Source code', app.source ? `<a href="${esc(app.source)}" data-track="source" data-app="${app.slug}">${esc(app.source.replace(/^https?:\/\/(www\.)?/, ''))}</a>` : ''],
     ['Listed', esc(formatDate(app.added))],
+    ['See also', (app.topics || []).map(t => `<a href="/alternatives/${t.slug}/">Alternatives to ${esc(t.name)}</a>`).join(', ')],
   ].filter(([, value]) => value);
 
   const actions = [];
@@ -536,6 +538,11 @@ ${sorted.map(a => `      <option value="${a.slug}"${a === first ? ' selected' : 
 ${foot}`;
 }
 
+// Search-friendly title for a category page: "AI-built graphics apps", "AI-built games", "AI-built developer tools".
+function categoryTitle(c) {
+  const lower = c.name.split(' ').map(w => w === w.toUpperCase() ? w : w.toLowerCase()).join(' ');
+  return `AI-built ${c.name === 'Games' ? 'games' : /tools$/i.test(c.name) ? lower : `${lower} apps`}`;
+}
 // Unique search-result text for a category page: how many apps, a few names and what they replace.
 function categoryDescription(c) {
   const sorted = [...c.apps].sort(byNewest);
@@ -592,6 +599,132 @@ function listPage({ canonical, title, description, label, heading, intro, apps, 
   ${cardGrid(apps, 2)}
 </div>
 ${foot}`;
+}
+
+// ---------- landing pages for search ("alternatives to X" and "by platform") ----------
+// Each topic gathers the listings whose "alternative" matches. A topic only gets a page when at least
+// MIN_TOPIC_APPS real listings fit, so there are no thin pages; the build says which topics it skipped.
+const MIN_TOPIC_APPS = 3;
+const ALTERNATIVE_TOPICS = [
+  { slug: 'adobe', name: 'Adobe apps', match: /\bAdobe\b|Photoshop|Lightroom|Illustrator|InDesign|Premiere|After Effects|Acrobat/,
+    intro: 'Photoshop, Lightroom, Premiere Pro, Acrobat and the rest of Creative Cloud, rebuilt with AI. Most of these are free or open source, and none need an Adobe subscription.' },
+  { slug: 'lightroom', name: 'Adobe Lightroom', match: /Lightroom/,
+    intro: 'Photo organising and raw editing without the Lightroom subscription. Some run on your own computer, others work with a self-hosted photo library.' },
+  { slug: 'microsoft-office', name: 'Microsoft Office', match: /Microsoft (Outlook|Word|Excel|PowerPoint|Office|Lens)|Excel/,
+    intro: 'Replacements for Word, Excel, PowerPoint and Outlook, built with AI. Open your documents, spreadsheets and email without a Microsoft 365 plan.' },
+  { slug: 'google-apps', name: 'Google apps', match: /Google/,
+    intro: 'Alternatives to Google Docs, Calendar, Contacts, Workspace, Lens and the Google TV home screen, for people who want to rely less on Google.' },
+  { slug: 'obsidian-notion', name: 'Obsidian, Notion and Typora', match: /Obsidian|Notion|Typora/,
+    intro: 'Note-taking and Markdown apps in the spirit of Obsidian, Notion and Typora. Most keep your notes as plain files on your own computer.' },
+  { slug: 'figma', name: 'Figma and Illustrator', match: /Figma|Illustrator|Excalidraw|Miro/,
+    intro: 'Design, vector drawing and whiteboard tools built with AI, as alternatives to Figma, Illustrator, Excalidraw+ and Miro.' },
+  { slug: 'wispr-flow', name: 'Wispr Flow, Otter.ai and Granola', match: /Wispr|MacWhisper|Otter|Granola/,
+    intro: 'Dictation, transcription and meeting-notes apps. Several run speech recognition on your own computer, so your recordings stay private.' },
+  { slug: 'sonarr-radarr', name: 'Sonarr, Radarr and Overseerr', match: /Sonarr|Radarr|Overseerr/,
+    intro: 'One app in place of the separate *arr tools for your home media server: requests, TV, movies and downloads in a single place.' },
+  { slug: 'bartender', name: 'Bartender and the macOS Dock', match: /Bartender|uBar|macOS Dock/,
+    intro: 'Mac menu bar and Dock tools built with AI: hide menu bar clutter, or swap the Dock for a taskbar.' },
+];
+const PLATFORM_PAGES = {
+  Windows: { slug: 'windows', heading: 'AI-built apps for Windows' },
+  macOS: { slug: 'macos', heading: 'AI-built apps for Mac' },
+  Linux: { slug: 'linux', heading: 'AI-built apps for Linux' },
+  Web: { slug: 'web', heading: 'AI-built web apps', note: 'They run in your browser, so there is nothing to install.' },
+  iOS: { slug: 'ios', heading: 'AI-built apps for iPhone and iPad' },
+  Android: { slug: 'android', heading: 'AI-built apps for Android' },
+};
+function alternativeTopics(apps) {
+  const topics = [];
+  for (const t of ALTERNATIVE_TOPICS) {
+    const list = apps.filter(a => t.match.test(a.alternative)).sort(byName);
+    if (list.length >= MIN_TOPIC_APPS) topics.push({ ...t, apps: list });
+    else console.log(`Skipped "alternatives to ${t.name}": only ${list.length} listing(s), needs ${MIN_TOPIC_APPS}.`);
+  }
+  return topics;
+}
+function platformGroups(apps) {
+  return PLATFORMS.map(p => ({ platform: p, ...PLATFORM_PAGES[p], apps: apps.filter(a => (a.platforms || []).includes(p)).sort(byName) }))
+    .filter(g => g.apps.length >= MIN_TOPIC_APPS);
+}
+// "Page | RemadeByAI", dropping the site name when it would get cut off in search results (same rule as app pages).
+const siteTitle = text => `${text} | RemadeByAI`.length <= 65 ? `${text} | RemadeByAI` : text;
+// "A, B and C" from a list of names.
+const andList = names => names.length > 1 ? `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}` : names[0] || '';
+function topicPage(t) {
+  const n = t.apps.length;
+  const sample = andList([...t.apps].sort(byNewest).slice(0, 3).map(a => a.name));
+  return listPage({
+    canonical: `/alternatives/${t.slug}/`, title: siteTitle(`${n} AI-built alternatives to ${t.name}`),
+    description: `${n} alternatives to ${t.name} built with AI, including ${sample}. ${t.intro}`,
+    jsonLd: [itemList(`AI-built alternatives to ${t.name}`, t.apps), breadcrumbs([['Home', '/'], ['Alternatives', '/alternatives/'], [t.name, `/alternatives/${t.slug}/`]])],
+    label: 'Alternatives', heading: `AI-built alternatives to ${esc(t.name)}`,
+    intro: `${esc(t.intro)} ${n} apps. <a href="/alternatives/">More alternatives</a>`,
+    apps: t.apps,
+  });
+}
+function platformPage(g) {
+  const n = g.apps.length;
+  const games = g.apps.filter(a => a.category === 'Games').length;
+  const plural = (k, word) => `${k} ${word}${k === 1 ? '' : 's'}`;
+  const counts = games ? `${plural(n - games, 'app')} and ${plural(games, 'game')}` : plural(n, 'app');
+  const where = g.platform === 'Web' ? 'for the web' : `for ${g.platform}`;
+  const sample = andList([...g.apps].sort(byNewest).filter(a => a.category !== 'Games').slice(0, 3).map(a => a.name));
+  return listPage({
+    canonical: `/platforms/${g.slug}/`, title: `${g.heading} | RemadeByAI`,
+    description: `${counts} ${where} built with AI, including ${sample}. Alternatives to familiar software, listed on RemadeByAI.`,
+    jsonLd: [itemList(g.heading, g.apps), breadcrumbs([['Home', '/'], ['Platforms', '/platforms/'], [g.platform, `/platforms/${g.slug}/`]])],
+    label: 'Platform', heading: esc(g.heading),
+    intro: `${counts} that run ${g.platform === 'Web' ? 'in a web browser' : `on ${esc(g.platform)}`}.${g.note ? ' ' + esc(g.note) : ''} <a href="/apps/?platform=${encodeURIComponent(g.platform)}">Filter them further</a> or see <a href="/platforms/">other platforms</a>.`,
+    apps: g.apps,
+  });
+}
+// Chip lists for the hubs, the categories page and the home page.
+const topicChips = topics => `<ul class="category-list">\n${topics.map(t =>
+  `  <li><a href="/alternatives/${t.slug}/"><span>${esc(t.name)}</span><small>${t.apps.length}</small></a></li>`).join('\n')}\n</ul>`;
+const platformChips = groups => `<ul class="category-list">\n${groups.map(g =>
+  `  <li><a href="/platforms/${g.slug}/"><span>${esc(g.platform)}</span><small>${g.apps.length}</small></a></li>`).join('\n')}\n</ul>`;
+function hubPage({ canonical, title, description, label, heading, intro, chips }) {
+  return `${head({ title, description, canonical })}
+<div class="wrap list-page">
+  <p class="section-label">✦ ${esc(label)}</p>
+  <h1 class="page-title">${heading}</h1>
+  <p class="page-intro">${intro}</p>
+  ${chips}
+</div>
+${foot}`;
+}
+
+// ---------- RSS feed of the newest listings ----------
+const FEED_ITEMS = 50;
+const xmlEsc = value => String(value ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+function rssFeed(newest) {
+  // Only the day is known; entries listed the same day get minutes apart in file order so readers keep the order.
+  const perDay = {};
+  const items = newest.slice(0, FEED_ITEMS).map(a => {
+    perDay[a.added] = (perDay[a.added] || 0) + 1;
+    return { a, when: new Date(Date.parse(a.added + 'T12:00:00Z') - (perDay[a.added] - 1) * 60000) };
+  });
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>RemadeByAI: new apps</title>
+  <link>${SITE}/new/</link>
+  <atom:link href="${SITE}/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>The newest AI-built apps listed on RemadeByAI: familiar software, rebuilt with AI.</description>
+  <language>en-us</language>
+  <lastBuildDate>${items.length ? items[0].when.toUTCString() : new Date().toUTCString()}</lastBuildDate>
+  <image><url>${SITE}/assets/icon-512.png</url><title>RemadeByAI: new apps</title><link>${SITE}/new/</link></image>
+${items.map(({ a, when }) => `  <item>
+    <title>${xmlEsc(`${a.name}: ${a.alternative}`)}</title>
+    <link>${SITE}/apps/${a.slug}/</link>
+    <guid isPermaLink="true">${SITE}/apps/${a.slug}/</guid>
+    <pubDate>${when.toUTCString()}</pubDate>
+    <category>${xmlEsc(a.category)}</category>
+    <description>${xmlEsc(a.description + ([a.platforms && a.platforms.join(', '), a.price, a.license].some(Boolean) ? ` (${[a.platforms && a.platforms.join(', '), a.price, a.license].filter(Boolean).join(' · ')})` : ''))}</description>
+  </item>`).join('\n')}
+</channel>
+</rss>
+`;
 }
 
 // ---------- home page (only the marked regions change) ----------
@@ -697,6 +830,10 @@ function main() {
   const categories = categoriesOf(apps);
   const newest = [...apps].sort(byNewest);
 
+  const topics = alternativeTopics(apps);
+  const platforms = platformGroups(apps);
+  for (const app of apps) app.topics = topics.filter(t => t.apps.includes(app));
+
   for (const dir of GENERATED_DIRS) fs.rmSync(path.join(ROOT, dir), { recursive: true, force: true });
 
   for (const app of apps) write(`apps/${app.slug}/index.html`, appPage(app, apps));
@@ -707,20 +844,42 @@ function main() {
   <h1 class="page-title">Browse by category</h1>
   <p class="page-intro">${apps.length} apps in ${categories.length} categories.</p>
   ${categoryChips(categories)}
+  <h2 class="sub-title">Alternatives to popular software</h2>
+  ${topicChips(topics)}
+  <h2 class="sub-title">By platform</h2>
+  ${platformChips(platforms)}
 </div>
 ${foot}`);
   for (const c of categories) {
     write(`categories/${c.slug}/index.html`, listPage({
-      canonical: `/categories/${c.slug}/`, title: `${c.name} apps | RemadeByAI`,
+      canonical: `/categories/${c.slug}/`, title: `${categoryTitle(c)} | RemadeByAI`,
       description: categoryDescription(c),
       jsonLd: [itemList(`${c.name} apps`, [...c.apps].sort(byName)), breadcrumbs([['Home', '/'], ['Categories', '/categories/'], [c.name, `/categories/${c.slug}/`]])],
       label: 'Category', heading: esc(c.name), intro: `${c.apps.length} ${c.apps.length === 1 ? 'app' : 'apps'}. <a href="/categories/">All categories</a>`,
       apps: [...c.apps].sort(byName),
     }));
   }
+  write('alternatives/index.html', hubPage({
+    canonical: '/alternatives/', title: 'AI-built alternatives to popular software | RemadeByAI',
+    description: `AI-built alternatives to ${andList(topics.slice(0, 4).map(t => t.name))} and more, gathered from the RemadeByAI directory.`,
+    label: 'Alternatives', heading: 'Alternatives to popular software',
+    intro: `AI-built replacements for the software people know best. Each page lists only apps we've checked. See also <a href="/categories/">categories</a> and <a href="/platforms/">platforms</a>.`,
+    chips: topicChips(topics),
+  }));
+  for (const t of topics) write(`alternatives/${t.slug}/index.html`, topicPage(t));
+  write('platforms/index.html', hubPage({
+    canonical: '/platforms/', title: 'AI-built apps by platform | RemadeByAI',
+    description: `AI-built apps for ${andList(platforms.map(g => g.platform === 'Web' ? 'the web' : g.platform))}: alternatives to familiar software, listed on RemadeByAI.`,
+    label: 'Platforms', heading: 'Browse by platform',
+    intro: `Find apps that run on your device. Many run on more than one. See also <a href="/categories/">categories</a> and <a href="/alternatives/">alternatives</a>.`,
+    chips: platformChips(platforms),
+  }));
+  for (const g of platforms) write(`platforms/${g.slug}/index.html`, platformPage(g));
+  write('feed.xml', rssFeed(newest));
+
   write('new/index.html', listPage({
     canonical: '/new/', title: 'New arrivals | RemadeByAI', description: 'The latest AI-built apps added to RemadeByAI.',
-    label: 'New arrivals', heading: 'Newest apps', intro: 'Every app on RemadeByAI, most recently listed first.',
+    label: 'New arrivals', heading: 'Newest apps', intro: 'Every app on RemadeByAI, most recently listed first. Follow new listings with the <a href="/feed.xml">RSS feed</a>.',
     apps: newest,
   }));
 
@@ -740,6 +899,7 @@ ${foot}`);
   home = replaceRegion(home, 'featured', featured(apps.filter(a => a.featured)));
   home = replaceRegion(home, 'new', cardGrid(newest.slice(0, NEW_ON_HOME)));
   home = replaceRegion(home, 'categories', categoryTiles(categories));
+  home = replaceRegion(home, 'alternatives', topicChips(topics));
   home = replaceRegion(home, 'count', `${apps.length}`);
   home = replaceRegion(home, 'footer', footer());
   write('index.html', home);
@@ -750,7 +910,8 @@ ${foot}`);
   const newestOf = list => list.map(appDate).sort().pop();
   const all = newestOf(apps);
   const urls = [['/', all], ['/apps/', all], ['/categories/', all], ['/new/', newestOf(apps.map(a => ({ added: a.added })))],
-    ['/about/'], ['/list/'], ['/badge/'],
+    ['/about/'], ['/list/'], ['/badge/'], ['/alternatives/', newestOf(topics.flatMap(t => t.apps))], ['/platforms/', all],
+    ...topics.map(t => [`/alternatives/${t.slug}/`, newestOf(t.apps)]), ...platforms.map(g => [`/platforms/${g.slug}/`, newestOf(g.apps)]),
     ...categories.map(c => [`/categories/${c.slug}/`, newestOf(c.apps)]), ...apps.map(a => [`/apps/${a.slug}/`, appDate(a)])];
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -761,7 +922,7 @@ ${urls.map(([u, d]) => `  <url><loc>${SITE}${u}</loc>${d ? `<lastmod>${d}</lastm
   write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /docs/\nDisallow: /clicks-worker/\nDisallow: /forms-worker/\nDisallow: /partials/\n\nSitemap: ${SITE}/sitemap.xml\n`);
   write('404.html', notFoundPage(newest));
 
-  console.log(`Built ${apps.length} app pages, ${categories.length} category pages, new arrivals, home page and sitemap.`);
+  console.log(`Built ${apps.length} app pages, ${categories.length} category pages, ${topics.length} alternatives pages, ${platforms.length} platform pages, new arrivals, RSS feed, home page and sitemap.`);
 }
 
 main();

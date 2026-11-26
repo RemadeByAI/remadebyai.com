@@ -183,6 +183,14 @@ All of this is written by build.js; keep it when editing templates.
 - **Screenshots:** the grid shows a thumbnail at most 960 px wide (`assets/apps/<slug>/thumb/`), linked to the full picture that the viewer opens. Images carry width/height so pages don't jump while loading. **After adding screenshots, run `python3 tools/make-thumbs.py` (needs Pillow), then `node build.js`.** Without a thumbnail the page just uses the full image.
 - **search.json** now loads only when someone uses the search box (click, focus by hand or typing), not on every page load.
 
+## Landing pages and RSS feed (2026-11-26)
+
+- **Alternatives pages** (`/alternatives/` hub plus `/alternatives/<slug>/`): defined in `ALTERNATIVE_TOPICS` in build.js (slug, name, a regex on the `alternative` field, our own one-line intro). A topic only gets a page when at least `MIN_TOPIC_APPS` (3) listings match, so there are no thin pages; the build prints any topic it skipped. New listings join automatically when their "Alternative to" matches. Current topics: Adobe apps, Lightroom, Microsoft Office, Google apps, Obsidian/Notion/Typora, Figma and Illustrator, Wispr Flow/Otter.ai/Granola, Sonarr/Radarr/Overseerr, Bartender and the macOS Dock. To add one, add an entry and rebuild; keep the intro factual for every app it matches.
+- **Platform pages** (`/platforms/` hub plus `/platforms/windows|macos|linux|web|ios|android/`), from each app's `platforms`.
+- **Linked from:** home page (`<!-- build:alternatives -->` region under the categories), the Categories page (two extra chip lists), the footer (Alternatives, Platforms, RSS feed) and app pages ("See also" row in the facts box). All are in sitemap.xml.
+- **Category page titles** now read "AI-built graphics apps | RemadeByAI" (`categoryTitle()`), matching how people search. No separate "Best X apps" pages: we don't rank apps, and they would duplicate the category pages.
+- **RSS feed** at `/feed.xml` (RSS 2.0): the newest 50 listings, from each entry's `added` date (entries added the same day get minutes apart in file order). Every page has a `<link rel="alternate" type="application/rss+xml">` for discovery (in `siteAssets()`), and /new/ links to it. Good for a Buttondown or similar "new this week" email later (they can send from an RSS feed).
+
 ## Build gotcha (fixed 2026-11-22)
 
 - `replaceRegion()` in build.js used a replacement string, so a `$1` inside app text (SuperCmd's "$19.99") was read as a regex group and wrote a stray `<!-- build:cards -->` into the page. It now uses a replacer function. Use functions, not strings, for any new `.replace()` that inserts app text.
