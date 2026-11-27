@@ -1,8 +1,13 @@
 # Handoff notes
 
-Last updated: 2026-11-26 11:55 PM Central (Games section with genres on branch `claude/project-thread-xda8x8`, waiting for Go live). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
+Last updated: 2026-11-27 Central (hunt 15 on branch `claude/project-thread-nbdmlu`, waiting for Go live). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
 
-## Newest: Games section with genres (2026-11-26 late night Central, cloud)
+## Newest: app and games hunt 15, 255 listings (2026-11-27 afternoon Central, cloud)
+
+- 19 added on branch `claude/project-thread-nbdmlu`: apps Monido, HFix Windows 11 Tools, HukukFix Download Manager, No Sleep, Kiln, Focus (slug focus-time-tracker, indie, no licence), FewChat, Haze, Game Launcher for macOS, YAME; games Ironvale (RTS, indie), Valley Ride, Tiny Planet, Cayley, Graveyard Shift, WHITEOUT, Atlantis, BLAMELESS, Pelican Ride. All "What people say": none.
+- Held: closed X-only games from ummydev/awesome-claude-fable-games (What the Water Keeps, Danfo Run, HEAT, Evensong...) since the makers' posts can't be read from the cloud. Notes: `/mnt/project-files/app-hunt/2026-11-27-hunt-15.md`.
+
+## Earlier: Games section with genres (2026-11-26 late night Central, cloud)
 
 - Games are now their own section, apart from apps (owner's ask). `/games/` lists all games A to Z with genre chips, search and filters (genre, platform, price, licence); `/games/<genre>/` has one page per genre. Header, footer, home page (hero button and a "Games by genre" chip block) and Categories page link it. `/categories/games/` is now a noindex redirect stub to `/games/`. "Exploration and open world" was renamed "Open world" (owner, 2026-11-26); `/games/exploration-and-open-world/` redirects to `/games/open-world/`. Home and Categories page headings read "Applications by category" (parallel to "Games by genre").
 - **Data:** every `"category": "Games"` entry needs `"genres"` (one or more names from `GENRES` in build.js; the first is its main genre, used for the card label, breadcrumb and "More X games"). The build refuses a game without genres or with an unknown one. 22 genres, alphabetical: Action, Adventure, Arcade, Card games, Cozy and relaxing, Fighting, Flight, Idle, MMO, Open world, Platformer, Puzzle, Racing and driving, Roguelike, RPG, RTS (added 2026-11-27 at the owner's ask; RTS games also stay in Strategy), Shooter, Simulation, Sports, Story and text, Strategy, Tower defense. A new genre needs an entry in `GENRES` (name, noun for the title, our own one-line intro); genres with no games get no page.

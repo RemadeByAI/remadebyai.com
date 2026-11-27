@@ -9,10 +9,179 @@
   <lastBuildDate>Fri, 27 Nov 2026 12:00:00 GMT</lastBuildDate>
   <image><url>https://remadebyai.com/assets/icon-512.png</url><title>RemadeByAI: new apps</title><link>https://remadebyai.com/new/</link></image>
   <item>
+    <title>Pelican Ride: Inspired by endless runner games</title>
+    <link>https://remadebyai.com/apps/pelican-ride/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/pelican-ride/</guid>
+    <pubDate>Fri, 27 Nov 2026 12:00:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Arcade</category>
+    <description>An endless 3D runner: a helmeted pelican on a vintage bike chases fish along the coast, hits ramps and pulls air tricks. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>BLAMELESS: Inspired by arena shooters</title>
+    <link>https://remadebyai.com/apps/blameless/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/blameless/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:59:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Shooter</category>
+    <category>Action</category>
+    <description>An on-call shooter: at 03:07 the pager goes off, prod is down, and you go into production in person to kill what is crashing it. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Atlantis: Inspired by flying and exploration games</title>
+    <link>https://remadebyai.com/apps/atlantis/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/atlantis/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:58:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Flight</category>
+    <category>Cozy and relaxing</category>
+    <description>Fly through a garden city of white marble, crystal and turquoise canals at golden hour, all made in code in one HTML file. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>WHITEOUT: Inspired by first-person survival horror games</title>
+    <link>https://remadebyai.com/apps/whiteout/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/whiteout/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:57:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Action</category>
+    <category>Adventure</category>
+    <description>A first-person survival horror game at a snowbound polar station: restart three generators and call for rescue while something stalks you. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Graveyard Shift: Inspired by round-based zombie survival modes</title>
+    <link>https://remadebyai.com/apps/graveyard-shift/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/graveyard-shift/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:56:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Shooter</category>
+    <category>Action</category>
+    <description>A round-based zombies shooter at a roadside diner: board up windows, buy weapons off the wall and hold out through the night. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Cayley: Alternative to desktop flight simulators, in a browser tab</title>
+    <link>https://remadebyai.com/apps/cayley/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/cayley/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:55:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Flight</category>
+    <category>Simulation</category>
+    <description>A browser flight simulator with real wing and propeller physics, nine real aircraft, live weather and the whole planet in 3D. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Tiny Planet: Inspired by small-world exploration games</title>
+    <link>https://remadebyai.com/apps/tiny-planet/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/tiny-planet/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:54:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Cozy and relaxing</category>
+    <category>Open world</category>
+    <description>A tiny round world to walk and fly around: sea, beaches, a pine forest, a village, a lighthouse and a windmill, always at sunset on one side. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Valley Ride: Inspired by calm riding and walking games</title>
+    <link>https://remadebyai.com/apps/valley-ride/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/valley-ride/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:53:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Cozy and relaxing</category>
+    <category>Adventure</category>
+    <description>A calm horse ride up a mountain valley to a campfire at sunset, with no score, no enemy and no way to fail. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Ironvale: Inspired by classic real-time strategy games</title>
+    <link>https://remadebyai.com/apps/ironvale/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/ironvale/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:52:00 GMT</pubDate>
+    <category>Games</category>
+    <category>RTS</category>
+    <category>Strategy</category>
+    <description>An original 3D real-time strategy game: gather, build, advance through three ages and defeat the Crimson March, in a story campaign or skirmish. (Web, Windows · Free · No licence (source visible))</description>
+  </item>
+  <item>
+    <title>YAME: Alternative to Mp3tag (for Mac)</title>
+    <link>https://remadebyai.com/apps/yame/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/yame/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:51:00 GMT</pubDate>
+    <category>Audio</category>
+    <description>A small Mac app for editing MP3 tags and cover art, made for music on a USB stick in the car. (macOS · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Game Launcher for macOS: Alternative to Playnite (for Mac)</title>
+    <link>https://remadebyai.com/apps/game-launcher-for-macos/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/game-launcher-for-macos/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:50:00 GMT</pubDate>
+    <category>Gaming tools</category>
+    <description>One Mac app for all your games: native apps, Steam and Windows games in CrossOver, each launched the right way. (macOS · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Haze: Alternative to BOSS Tone Studio (for the KATANA MkII)</title>
+    <link>https://remadebyai.com/apps/haze/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/haze/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:49:00 GMT</pubDate>
+    <category>Audio</category>
+    <description>A tone editor, librarian and practice rig for the BOSS KATANA MkII guitar amp on Linux and Windows. (Linux, Windows · Free · MIT)</description>
+  </item>
+  <item>
+    <title>FewChat: Alternative to Manychat (for Instagram)</title>
+    <link>https://remadebyai.com/apps/fewchat/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/fewchat/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:48:00 GMT</pubDate>
+    <category>Business</category>
+    <description>Self-hosted Instagram DM automation: comment-to-DM, story replies, a visual flow builder, a live inbox and metrics, on your own Cloudflare account. (Web · Free (needs Cloudflare Workers Paid, $5 a month) · MIT)</description>
+  </item>
+  <item>
+    <title>Focus: Alternative to Toggl Track and Timing</title>
+    <link>https://remadebyai.com/apps/focus-time-tracker/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/focus-time-tracker/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:47:00 GMT</pubDate>
+    <category>Productivity</category>
+    <description>A calm, local time tracker for macOS that puts the time you log next to what was actually on your screen. (macOS · Free · No licence (source visible))</description>
+  </item>
+  <item>
+    <title>Kiln: Alternative to Figma and Framer</title>
+    <link>https://remadebyai.com/apps/kiln/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/kiln/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:46:00 GMT</pubDate>
+    <category>Graphics</category>
+    <description>A design canvas made of real HTML and CSS: draw with real flexbox, fonts and effects, then export the same code. (macOS, Windows, Linux, Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>No Sleep: Alternative to Amphetamine and Caffeine</title>
+    <link>https://remadebyai.com/apps/no-sleep/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/no-sleep/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:45:00 GMT</pubDate>
+    <category>Utilities</category>
+    <description>A tiny Mac menu bar app that keeps your Mac awake, lid closed included, with timers and safety cut-outs. (macOS · Free · MIT)</description>
+  </item>
+  <item>
+    <title>HukukFix Download Manager: Alternative to Internet Download Manager</title>
+    <link>https://remadebyai.com/apps/hukukfix-download-manager/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/hukukfix-download-manager/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:44:00 GMT</pubDate>
+    <category>Utilities</category>
+    <description>A free Windows download manager with a Chrome extension: up to 32 connections per file, reliable pause and resume, and video capture. (Windows · Free · MIT)</description>
+  </item>
+  <item>
+    <title>HFix Windows 11 Tools: Alternative to CCleaner and Windows debloat scripts</title>
+    <link>https://remadebyai.com/apps/hfix-windows-11-tools/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/hfix-windows-11-tools/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:43:00 GMT</pubDate>
+    <category>Utilities</category>
+    <description>A free Windows 11 tune-up and debloat tool: turn off telemetry and ads, clean RAM and disk, and watch processes and network use. (Windows · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Monido: Alternative to Kubera and net-worth spreadsheets</title>
+    <link>https://remadebyai.com/apps/monido/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/monido/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:42:00 GMT</pubDate>
+    <category>Finance</category>
+    <description>A self-hosted net-worth and cash-flow tracker for one person or a whole family, entered by hand with no bank connections. (Linux, macOS, Web · Free · MIT)</description>
+  </item>
+  <item>
     <title>Aevum: Inspired by classic age-advancing real-time strategy games</title>
     <link>https://remadebyai.com/apps/aevum/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/aevum/</guid>
-    <pubDate>Fri, 27 Nov 2026 12:00:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:41:00 GMT</pubDate>
     <category>Games</category>
     <category>RTS</category>
     <category>Strategy</category>
@@ -22,7 +191,7 @@
     <title>Imperios 1800–2100: Inspired by classic age-advancing real-time strategy games</title>
     <link>https://remadebyai.com/apps/imperios-1800-2100/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/imperios-1800-2100/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:59:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:40:00 GMT</pubDate>
     <category>Games</category>
     <category>RTS</category>
     <category>Strategy</category>
@@ -32,7 +201,7 @@
     <title>Frontier Command: Inspired by base-building real-time strategy games</title>
     <link>https://remadebyai.com/apps/frontier-command/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/frontier-command/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:58:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:39:00 GMT</pubDate>
     <category>Games</category>
     <category>RTS</category>
     <category>Strategy</category>
@@ -42,7 +211,7 @@
     <title>Wild Fields 1648: Inspired by historical real-time strategy games</title>
     <link>https://remadebyai.com/apps/wild-fields-1648/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/wild-fields-1648/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:57:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:38:00 GMT</pubDate>
     <category>Games</category>
     <category>RTS</category>
     <category>Strategy</category>
@@ -53,7 +222,7 @@
     <title>Bee Garden: Inspired by cozy nature games</title>
     <link>https://remadebyai.com/apps/bee-garden/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/bee-garden/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:56:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:37:00 GMT</pubDate>
     <category>Games</category>
     <category>Cozy and relaxing</category>
     <category>Open world</category>
@@ -63,7 +232,7 @@
     <title>Last Beacon: Inspired by tower defense games</title>
     <link>https://remadebyai.com/apps/last-beacon/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/last-beacon/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:55:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:36:00 GMT</pubDate>
     <category>Games</category>
     <category>Tower defense</category>
     <description>A 3D island tower defense where every turret needs power: wire your defenses to the lighthouse and hold off ten waves from the sea. (Web · Free · MIT)</description>
@@ -72,7 +241,7 @@
     <title>Casa de Gemas: Inspired by cozy hidden-object games</title>
     <link>https://remadebyai.com/apps/casa-de-gemas/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/casa-de-gemas/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:54:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:35:00 GMT</pubDate>
     <category>Games</category>
     <category>Cozy and relaxing</category>
     <category>Puzzle</category>
@@ -82,7 +251,7 @@
     <title>DRIFTWING: Inspired by relaxing flight games</title>
     <link>https://remadebyai.com/apps/driftwing/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/driftwing/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:53:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:34:00 GMT</pubDate>
     <category>Games</category>
     <category>Flight</category>
     <category>Cozy and relaxing</category>
@@ -92,7 +261,7 @@
     <title>Forja Abisal: Inspired by 1990s first-person shooters</title>
     <link>https://remadebyai.com/apps/forja-abisal/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/forja-abisal/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:52:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:33:00 GMT</pubDate>
     <category>Games</category>
     <category>Shooter</category>
     <description>A retro 90s-style first-person shooter for the browser, with maze-like foundry levels, keys, secrets and an automap. (Web · Free · MIT)</description>
@@ -101,7 +270,7 @@
     <title>Tater's Flight Sim: Inspired by desktop flight simulators</title>
     <link>https://remadebyai.com/apps/taters-flight-sim/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/taters-flight-sim/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:51:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:32:00 GMT</pubDate>
     <category>Games</category>
     <category>Flight</category>
     <description>A flight simulator for the browser: fly a Cessna, an F-16, an A-10 or a 747 with real flight physics over farmland, coast and mountains. (Web · Free · MIT)</description>
@@ -110,7 +279,7 @@
     <title>Tempora: Inspired by life simulator games</title>
     <link>https://remadebyai.com/apps/tempora/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/tempora/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:50:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:31:00 GMT</pubDate>
     <category>Games</category>
     <category>Simulation</category>
     <category>Story and text</category>
@@ -120,7 +289,7 @@
     <title>LUMENRIFT: Inspired by tower defense games</title>
     <link>https://remadebyai.com/apps/lumenrift/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/lumenrift/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:49:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:30:00 GMT</pubDate>
     <category>Games</category>
     <category>Tower defense</category>
     <description>A tower defense game: wall off and burn back waves of shadows to keep the last light burning through thirty nights. (Web · Free · CC0 1.0)</description>
@@ -129,7 +298,7 @@
     <title>KAIJU DOKAN!: Inspired by giant-monster destruction games</title>
     <link>https://remadebyai.com/apps/kaiju-dokan/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/kaiju-dokan/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:48:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:29:00 GMT</pubDate>
     <category>Games</category>
     <category>Arcade</category>
     <category>Action</category>
@@ -139,7 +308,7 @@
     <title>NOVA LANCER: Inspired by 3D rail shooters</title>
     <link>https://remadebyai.com/apps/nova-lancer/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/nova-lancer/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:47:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:28:00 GMT</pubDate>
     <category>Games</category>
     <category>Shooter</category>
     <category>Arcade</category>
@@ -149,7 +318,7 @@
     <title>OUT OF THE BOX: Inspired by 3D stealth games</title>
     <link>https://remadebyai.com/apps/out-of-the-box/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/out-of-the-box/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:46:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:27:00 GMT</pubDate>
     <category>Games</category>
     <category>Action</category>
     <category>Adventure</category>
@@ -159,7 +328,7 @@
     <title>The Hourglass City: Inspired by classic point-and-click adventures</title>
     <link>https://remadebyai.com/apps/the-hourglass-city/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/the-hourglass-city/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:45:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:26:00 GMT</pubDate>
     <category>Games</category>
     <category>Adventure</category>
     <category>Puzzle</category>
@@ -169,7 +338,7 @@
     <title>Felt World: Inspired by open-world diorama games</title>
     <link>https://remadebyai.com/apps/felt-world/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/felt-world/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:44:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:25:00 GMT</pubDate>
     <category>Games</category>
     <category>Open world</category>
     <description>An open world that looks like a needle-felted diorama: drive, walk, fly as a felt bird or dive under the sea, in your browser. (Web · Free · MIT)</description>
@@ -302,159 +471,6 @@
     <category>Tower defense</category>
     <category>Idle</category>
     <description>A 3D isometric tower defense in a single HTML file. An AI commander plays it for you; tap a tower pad to take over. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Aerial: Alternative to stock Android TV home screens</title>
-    <link>https://remadebyai.com/apps/aerial-tv/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/aerial-tv/</guid>
-    <pubDate>Wed, 25 Nov 2026 11:58:00 GMT</pubDate>
-    <category>TV</category>
-    <description>A calm, Apple TV-style home screen for Android TVs sold in China: your apps and aerial screensavers, with no ads or recommendation feeds. (Android · Free · MIT)</description>
-  </item>
-  <item>
-    <title>CUPS Admin: Replaces the CUPS web interface</title>
-    <link>https://remadebyai.com/apps/cups-admin/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/cups-admin/</guid>
-    <pubDate>Wed, 25 Nov 2026 11:57:00 GMT</pubDate>
-    <category>Utilities</category>
-    <description>A native Mac app and command-line tool that brings back the printer admin pages Apple removed from macOS 27: queues, jobs and driver options. (macOS · Free · MIT)</description>
-  </item>
-  <item>
-    <title>waarm64: Alternative to QEMU / UTM (in the browser)</title>
-    <link>https://remadebyai.com/apps/waarm64/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/waarm64/</guid>
-    <pubDate>Wed, 25 Nov 2026 11:56:00 GMT</pubDate>
-    <category>Developer tools</category>
-    <description>A whole 64-bit ARM computer in a browser tab: boots real Linux images with 3D graphics, sound, video and USB. Nothing runs on a server. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>SimRun: Alternative to the iOS Simulator</title>
-    <link>https://remadebyai.com/apps/simrun/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/simrun/</guid>
-    <pubDate>Wed, 25 Nov 2026 11:55:00 GMT</pubDate>
-    <category>Developer tools</category>
-    <description>Run iPhone apps from Xcode's Simulator builds on your Mac, each in its own ordinary window. No virtual phone to boot. (macOS · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Lipflow: Alternative to Wispr Flow (silent)</title>
-    <link>https://remadebyai.com/apps/lipflow/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/lipflow/</guid>
-    <pubDate>Wed, 25 Nov 2026 11:54:00 GMT</pubDate>
-    <category>Productivity</category>
-    <description>Dictation without sound: hold a key, silently mouth your words, and the text appears at your cursor. Reads your lips through the webcam, locally. (macOS, Windows, Linux · Free · MIT)</description>
-  </item>
-  <item>
-    <title>NeonPlan 3D: Alternative to floor plan cards for Home Assistant</title>
-    <link>https://remadebyai.com/apps/neonplan-3d/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/neonplan-3d/</guid>
-    <pubDate>Wed, 25 Nov 2026 11:53:00 GMT</pubDate>
-    <category>Home</category>
-    <description>Draw your home inside Home Assistant and control it from a live 3D floor plan: lights glow, blinds move, doors open. Local, no cloud. (Web · Freemium · MIT)</description>
-  </item>
-  <item>
-    <title>Hadron: Alternative to CrossOver (for Steam games)</title>
-    <link>https://remadebyai.com/apps/hadron/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/hadron/</guid>
-    <pubDate>Wed, 25 Nov 2026 11:52:00 GMT</pubDate>
-    <category>Gaming tools</category>
-    <description>Play Windows games from your Steam library on Apple Silicon Macs, straight from Mac Steam. Like Proton for the Mac. Early development. (macOS · Free · BSD-2-Clause)</description>
-  </item>
-  <item>
-    <title>Folio: Alternative to Adobe Acrobat Reader</title>
-    <link>https://remadebyai.com/apps/folio/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/folio/</guid>
-    <pubDate>Wed, 25 Nov 2026 11:51:00 GMT</pubDate>
-    <category>Office</category>
-    <description>A fast, clean PDF reader for Windows, Mac and Linux: tabs, highlights and notes, signing, and optional Ask AI about your documents. No account. (Windows, macOS, Linux · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Stard: Inspired by auto-battler card games</title>
-    <link>https://remadebyai.com/apps/stard/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/stard/</guid>
-    <pubDate>Tue, 24 Nov 2026 12:00:00 GMT</pubDate>
-    <category>Games</category>
-    <category>Card games</category>
-    <description>A browser card battle built from your GitHub stars: every repo you have starred is a card. Build a team and fight other developers' decks. No sign-up. (Web · Free · AGPL-3.0)</description>
-  </item>
-  <item>
-    <title>yami: Alternative to Waybar, Rofi and other desktop shell pieces</title>
-    <link>https://remadebyai.com/apps/yami/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/yami/</guid>
-    <pubDate>Tue, 24 Nov 2026 11:59:00 GMT</pubDate>
-    <category>Utilities</category>
-    <description>A pixel-art desktop for the niri Wayland compositor on Linux: bar, launcher, dock, notifications, lock screen, widgets and settings in one light Rust shell. (Linux · Free · MIT)</description>
-  </item>
-  <item>
-    <title>mirador: Alternative to WTF and desktop dashboard widgets</title>
-    <link>https://remadebyai.com/apps/mirador/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/mirador/</guid>
-    <pubDate>Tue, 24 Nov 2026 11:58:00 GMT</pubDate>
-    <category>Productivity</category>
-    <description>A calm personal dashboard for your terminal: clocks, calendar, weather, a real task list, notes, a market watchlist and live system graphs in one tab. (Windows, macOS, Linux · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Excaliself: Alternative to Excalidraw+ and Miro</title>
-    <link>https://remadebyai.com/apps/excaliself/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/excaliself/</guid>
-    <pubDate>Tue, 24 Nov 2026 11:57:00 GMT</pubDate>
-    <category>Productivity</category>
-    <description>Your team's whiteboard on your own server: the Excalidraw canvas with live collaboration, a shared team space, folders and search. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Lyrimuse: Alternative to LyricsX</title>
-    <link>https://remadebyai.com/apps/lyrimuse/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/lyrimuse/</guid>
-    <pubDate>Tue, 24 Nov 2026 11:56:00 GMT</pubDate>
-    <category>Audio</category>
-    <description>Desktop lyrics for the Mac: word-by-word synced lyrics for the song you are playing, in a floating overlay, the menu bar, a capsule under the notch or a lyrics window. (macOS · Free · GPL-3.0)</description>
-  </item>
-  <item>
-    <title>LibrePaper: Alternative to Overleaf and Google Docs comments</title>
-    <link>https://remadebyai.com/apps/librepaper/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/librepaper/</guid>
-    <pubDate>Tue, 24 Nov 2026 11:55:00 GMT</pubDate>
-    <category>Office</category>
-    <description>Write and review papers together in the browser: LaTeX, Typst, Markdown, Quarto, HTML or Org, with live highlights, comments and suggested edits. (Web, Windows, macOS, Linux · MIT)</description>
-  </item>
-  <item>
-    <title>Dalibre: Alternative to Calibre</title>
-    <link>https://remadebyai.com/apps/dalibre/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/dalibre/</guid>
-    <pubDate>Tue, 24 Nov 2026 11:54:00 GMT</pubDate>
-    <category>Reading</category>
-    <description>A calm, fast desktop e-book library that reads and writes your existing Calibre library. One small native app, no web view. (Windows, macOS, Linux · Free · GPL-3.0)</description>
-  </item>
-  <item>
-    <title>Natel: Alternative to Google Contacts</title>
-    <link>https://remadebyai.com/apps/natel/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/natel/</guid>
-    <pubDate>Tue, 24 Nov 2026 11:53:00 GMT</pubDate>
-    <category>Productivity</category>
-    <description>A small web app for editing the contacts on your own CardDAV server (Baïkal, Radicale, Nextcloud and others) from any browser. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>jOtter: Alternative to Jupyter Notebook and JupyterLab</title>
-    <link>https://remadebyai.com/apps/jotter/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/jotter/</guid>
-    <pubDate>Tue, 24 Nov 2026 11:52:00 GMT</pubDate>
-    <category>Developer tools</category>
-    <description>A fast Jupyter notebook app for the terminal, with vim keys, inline plots and rendered LaTeX. It opens and saves real .ipynb files. (Linux, macOS · Free · MIT or Apache-2.0)</description>
-  </item>
-  <item>
-    <title>rec-rs: Alternative to OBS Studio</title>
-    <link>https://remadebyai.com/apps/rec-rs/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/rec-rs/</guid>
-    <pubDate>Tue, 24 Nov 2026 11:51:00 GMT</pubDate>
-    <category>Screen capture</category>
-    <description>A simple, fast screen and camera recorder for the Mac, made for recording YouTube videos. It records screen, system audio, microphone and webcam into one file and can stream as well. (macOS · Free · MIT or Apache-2.0)</description>
-  </item>
-  <item>
-    <title>Chipload: Alternative to Vectric VCarve and Carbide Create</title>
-    <link>https://remadebyai.com/apps/chipload/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/chipload/</guid>
-    <pubDate>Tue, 24 Nov 2026 11:50:00 GMT</pubDate>
-    <category>3D and CAD</category>
-    <description>Free 2.5D CAM software for CNC routers and mills: bring in a DXF or SVG drawing (or draw in the app), set up cuts, simulate them in 3D and export checked G-code. (Windows, macOS, Linux · Free · GPL-3.0)</description>
   </item>
 </channel>
 </rss>

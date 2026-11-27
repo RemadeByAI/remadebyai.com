@@ -13907,6 +13907,939 @@
         "checked": "2026-11-27",
         "none": true
       }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Visit site",
+      "name": "Monido",
+      "slug": "monido",
+      "alternative": "Alternative to Kubera and net-worth spreadsheets",
+      "description": "A self-hosted net-worth and cash-flow tracker for one person or a whole family, entered by hand with no bank connections.",
+      "category": "Finance",
+      "url": "https://monido.dev",
+      "download": "https://github.com/stanislav-petryashov/monido/releases/latest",
+      "source": "https://github.com/stanislav-petryashov/monido",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Web"
+      ],
+      "maker": "Stanislav Petryashov",
+      "icon": "💰",
+      "longDescription": "Once a month you type in a balance for each account, investment, property and loan, and Monido works out what the family owns after debts, in every currency, and how that changed. It shows real growth after inflation, savings and the savings rate per month, how many months the emergency fund would last, and when you will reach each goal.\n\nIt runs as one Docker container (Node and SQLite), small enough for a Raspberry Pi or a NAS, and works on a phone as an installable web app. An optional Claude advisor can weigh a purchase or a loan against your own numbers. There is a live demo with a made-up family, and the app speaks seven languages.",
+      "builtWithAI": "Checked 2026-11-27: every one of its 197 commits carries Claude co-author lines (280 in all). The README makes no separate statement about it.",
+      "keywords": [
+        "net worth",
+        "budget",
+        "personal finance",
+        "family finance",
+        "self-hosted",
+        "docker",
+        "kubera"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/monido/1.webp",
+          "alt": "The dashboard: everything the family owns and owes in one number",
+          "caption": "Net worth at a glance"
+        },
+        {
+          "src": "/assets/apps/monido/2.webp",
+          "alt": "The month-end wizard asking for a balance per account",
+          "caption": "Closing the month"
+        },
+        {
+          "src": "/assets/apps/monido/3.webp",
+          "alt": "A year of income flowing to savings, spending and loan interest",
+          "caption": "Where the money went"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Download",
+      "name": "HFix Windows 11 Tools",
+      "slug": "hfix-windows-11-tools",
+      "alternative": "Alternative to CCleaner and Windows debloat scripts",
+      "description": "A free Windows 11 tune-up and debloat tool: turn off telemetry and ads, clean RAM and disk, and watch processes and network use.",
+      "category": "Utilities",
+      "url": "https://github.com/saffetcelik/hfix-windows-11-araclari",
+      "download": "https://github.com/saffetcelik/hfix-windows-11-araclari/releases/latest",
+      "source": "https://github.com/saffetcelik/hfix-windows-11-araclari",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "maker": "Saffet Çelik",
+      "icon": "🧰",
+      "longDescription": "HFix turns off Windows telemetry and advertising settings in one click, cleans memory and disk, manages startup programs and services, and keeps an eye on running programs and network use from the tray. Every change is backed up and can be undone, and it can make a restore point first. It deliberately has no switches that weaken security: Defender, Windows Update, CPU protections and UAC stay as they are.\n\nIt is one portable exe that installs itself and also runs on Windows 10 (1809 and later), hiding the settings that exist only on Windows 11. The interface and README are in Turkish, with an English section.",
+      "builtWithAI": "The README says: \"Claude Fable 5.2 ile geliştirildi\" (developed with Claude Fable 5.2), and that the program's code was written with that model. Checked 2026-11-27: all 15 commits are co-authored by Claude.",
+      "keywords": [
+        "debloat",
+        "windows 11",
+        "telemetry",
+        "cleaner",
+        "tune-up",
+        "optimizer",
+        "turkish"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/hfix-windows-11-tools/1.webp",
+          "alt": "HFix with its grouped menu on the left and the speed-up page on the right",
+          "caption": "The Windows speed-up page"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Download",
+      "name": "HukukFix Download Manager",
+      "slug": "hukukfix-download-manager",
+      "alternative": "Alternative to Internet Download Manager",
+      "description": "A free Windows download manager with a Chrome extension: up to 32 connections per file, reliable pause and resume, and video capture.",
+      "category": "Utilities",
+      "url": "https://github.com/saffetcelik/hukukfix-indirme-yoneticisi",
+      "download": "https://github.com/saffetcelik/hukukfix-indirme-yoneticisi/releases/latest",
+      "source": "https://github.com/saffetcelik/hukukfix-indirme-yoneticisi",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "maker": "Saffet Çelik",
+      "icon": "⬇",
+      "longDescription": "Like Internet Download Manager, it splits each file across many connections and keeps every connection busy by splitting the biggest remaining piece when one finishes. Progress is saved every two seconds, so a download picks up where it stopped even after a crash, and a changed file on the server is detected instead of being mixed in.\n\nThe extension hands Chrome, Edge and Brave downloads over with their cookies, and puts a Download button on videos playing in a page (direct files and HLS streams; YouTube, DRM content and live streams are left out on purpose). It has a queue, a speed limit, light and dark themes, signed self-updates, and Turkish and English text.",
+      "builtWithAI": "The README says: \"Claude Fable 5.2 ile geliştirildi\" (developed with Claude Fable 5.2), and that the program's code was written with that model. Checked 2026-11-27: all 9 commits are co-authored by Claude.",
+      "keywords": [
+        "download manager",
+        "idm",
+        "chrome extension",
+        "video downloader",
+        "resume downloads",
+        "turkish"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/hukukfix-download-manager/1.webp",
+          "alt": "The download list with name, size, status, speed and date columns",
+          "caption": "The main window"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Download",
+      "name": "No Sleep",
+      "slug": "no-sleep",
+      "alternative": "Alternative to Amphetamine and Caffeine",
+      "description": "A tiny Mac menu bar app that keeps your Mac awake, lid closed included, with timers and safety cut-outs.",
+      "category": "Utilities",
+      "url": "https://github.com/pi-na/no-sleep",
+      "download": "https://github.com/pi-na/no-sleep/releases/latest",
+      "source": "https://github.com/pi-na/no-sleep",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "pi-na",
+      "icon": "☕",
+      "longDescription": "One toggle stops the Mac sleeping when idle or when you shut the lid. Timers sit right in the menu (15 minutes to 8 hours, or type something like 1h30m or 9am), and it can stay awake only while Claude Code, Codex or T3 Code are working.\n\nSafety cut-outs switch it off if the Mac runs hot for 20 minutes, if the internet has been down too long, or when the battery gets low; it can fall back to your phone's hotspot and dim the screen to black without locking. It is SwiftUI with no dependencies, under 1 MB, for Apple Silicon on macOS 14 and later, in English and Spanish. It isn't notarized yet, so the first launch needs one Terminal command from the README.",
+      "builtWithAI": "Checked 2026-11-27: 24 of its 25 commits are co-authored by Claude.",
+      "keywords": [
+        "keep awake",
+        "caffeine",
+        "amphetamine",
+        "lid closed",
+        "menu bar",
+        "mac"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/no-sleep/1.webp",
+          "alt": "No Sleep's menu bar menu with the toggle and timers",
+          "caption": "The menu"
+        },
+        {
+          "src": "/assets/apps/no-sleep/2.webp",
+          "alt": "The off, timer and offline failsafe states",
+          "caption": "Its states"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Download",
+      "name": "Kiln",
+      "slug": "kiln",
+      "alternative": "Alternative to Figma and Framer",
+      "description": "A design canvas made of real HTML and CSS: draw with real flexbox, fonts and effects, then export the same code.",
+      "category": "Graphics",
+      "url": "https://github.com/splashxmoon/kiln",
+      "download": "https://github.com/splashxmoon/kiln/releases/latest",
+      "source": "https://github.com/splashxmoon/kiln",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux",
+        "Web"
+      ],
+      "maker": "splashxmoon",
+      "icon": "🎨",
+      "longDescription": "Every layer in Kiln is a DOM element: frames are real flexbox, text is real fonts and effects are real CSS, so there is nothing to redraw in code afterwards. Copy any frame as HTML and CSS, React with CSS Modules, React with Tailwind, or Vue, or paste HTML from anywhere and it turns into editable layers.\n\nIt has colour tokens with a consistency check, comments on the canvas and seven GPU shader layers you can export. Coding agents such as Claude Code, Codex and Gemini CLI can connect over MCP and design on the canvas with you. Builds for Mac, Windows and Linux; the web version runs from source. It is an early 0.1 release.",
+      "builtWithAI": "Checked 2026-11-27: 7 of its 11 commits are co-authored by Claude.",
+      "keywords": [
+        "design tool",
+        "figma",
+        "ui design",
+        "html css",
+        "tailwind export",
+        "prototype"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/kiln/1.webp",
+          "alt": "A layer selected on the Kiln canvas beside the React and Tailwind code it exports",
+          "caption": "Canvas and exported code"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "indie",
+      "owner": "Independent",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Download",
+      "name": "Focus",
+      "slug": "focus-time-tracker",
+      "alternative": "Alternative to Toggl Track and Timing",
+      "description": "A calm, local time tracker for macOS that puts the time you log next to what was actually on your screen.",
+      "category": "Productivity",
+      "url": "https://github.com/szmichalczyk/focus-app",
+      "download": "https://github.com/szmichalczyk/focus-app/releases/latest",
+      "source": "https://github.com/szmichalczyk/focus-app",
+      "license": "No licence (source visible)",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "szmichalczyk",
+      "icon": "⏱",
+      "longDescription": "Focus shows two streams side by side: the time you log (projects, entries, billable hours) and the time you spent, meaning which apps, windows, browser tabs and Claude Code or Codex sessions were in front of you. Drag a block of real activity onto the calendar to log it.\n\nThere is a one-line timer bar that also lives in the menu bar, a week calendar where you draw, move and resize entries, and reports per project. Everything stays on your Mac. The download is for Apple Silicon. The repo has no licence file, so the code is visible but not open source.",
+      "builtWithAI": "Checked 2026-11-27: all 11 of its commits are co-authored by Claude. The repo has no licence file.",
+      "keywords": [
+        "time tracker",
+        "toggl",
+        "timing",
+        "billable hours",
+        "activity tracking",
+        "mac"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/focus-time-tracker/1.webp",
+          "alt": "The week calendar with time entries and an activity strip next to each day",
+          "caption": "Week calendar"
+        },
+        {
+          "src": "/assets/apps/focus-time-tracker/2.webp",
+          "alt": "The Activity view showing which apps and windows were in use",
+          "caption": "What the computer saw"
+        },
+        {
+          "src": "/assets/apps/focus-time-tracker/3.webp",
+          "alt": "Reports of hours per project",
+          "caption": "Reports"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Visit GitHub",
+      "name": "FewChat",
+      "slug": "fewchat",
+      "alternative": "Alternative to Manychat (for Instagram)",
+      "description": "Self-hosted Instagram DM automation: comment-to-DM, story replies, a visual flow builder, a live inbox and metrics, on your own Cloudflare account.",
+      "category": "Business",
+      "url": "https://github.com/jasonc00person/fewchat",
+      "source": "https://github.com/jasonc00person/fewchat",
+      "license": "MIT",
+      "price": "Free (needs Cloudflare Workers Paid, $5 a month)",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Jason",
+      "icon": "📫",
+      "longDescription": "Someone comments your keyword on a post or reel and gets your DM with the link in about a second, plus an optional public reply. It also triggers on story replies, story mentions, DM keywords and first messages, and the flow builder lays out buttons, delays, conditions, A/B splits and tags as cards on a canvas.\n\nIt uses Instagram's official API, keeps contacts and conversations in your own database and has no per-contact pricing. Setup takes about 45 minutes, mostly in Meta's developer site, and one command walks you through it. The software is free, but real use needs Cloudflare's Workers Paid plan ($5 a month); optional AI replies are off by default.",
+      "builtWithAI": "Checked 2026-11-27: all 11 of its commits are co-authored by Claude.",
+      "keywords": [
+        "instagram",
+        "dm automation",
+        "manychat",
+        "comment to dm",
+        "marketing",
+        "self-hosted",
+        "cloudflare"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/fewchat/1.webp",
+          "alt": "FewChat's home page with messages, reach, reply rate and top automations (sample data)",
+          "caption": "Home"
+        },
+        {
+          "src": "/assets/apps/fewchat/2.webp",
+          "alt": "The inbox with every conversation, tags and the reply window",
+          "caption": "Inbox"
+        },
+        {
+          "src": "/assets/apps/fewchat/3.webp",
+          "alt": "An automation drawn as cards in the flow builder",
+          "caption": "Flow builder"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Download",
+      "name": "Haze",
+      "slug": "haze",
+      "alternative": "Alternative to BOSS Tone Studio (for the KATANA MkII)",
+      "description": "A tone editor, librarian and practice rig for the BOSS KATANA MkII guitar amp on Linux and Windows.",
+      "category": "Audio",
+      "url": "https://github.com/wiktor-jozwiak/haze",
+      "download": "https://github.com/wiktor-jozwiak/haze/releases",
+      "source": "https://github.com/wiktor-jozwiak/haze",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Linux",
+        "Windows"
+      ],
+      "maker": "Wiktor Jóźwiak",
+      "icon": "🎸",
+      "longDescription": "Haze talks to the amp the way BOSS Tone Studio does, over USB MIDI, and edits every block live, with the chain order, A/B and undo. It adds what Tone Studio never had: a Linux version, a searchable library, setlists, a stage view, and a practice room with drums, a looper and a speed trainer. With no amp plugged in, the same rig plays on the computer through any audio interface.\n\nIt is written in Rust and drawn on the CPU, using about 56 MB of memory. The maker calls it one person's daily amp editor, shared because it works rather than because it is finished; the Windows build is newer and less tested.",
+      "builtWithAI": "The README says Haze is developed with the help of Claude by Anthropic: \"a lot of the code, the tests and this page\". Checked 2026-11-27: none of its 14 commits carry a Claude co-author line.",
+      "keywords": [
+        "boss katana",
+        "guitar amp",
+        "tone editor",
+        "linux audio",
+        "looper",
+        "practice",
+        "rust"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/haze/1.webp",
+          "alt": "The Rig page: the signal chain as pedals, with the amp block open",
+          "caption": "The rig"
+        },
+        {
+          "src": "/assets/apps/haze/2.webp",
+          "alt": "The searchable tone library",
+          "caption": "Library"
+        },
+        {
+          "src": "/assets/apps/haze/3.webp",
+          "alt": "The practice room with drums and a looper",
+          "caption": "Practice room"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Download",
+      "name": "Game Launcher for macOS",
+      "slug": "game-launcher-for-macos",
+      "alternative": "Alternative to Playnite (for Mac)",
+      "description": "One Mac app for all your games: native apps, Steam and Windows games in CrossOver, each launched the right way.",
+      "category": "Gaming tools",
+      "url": "https://github.com/Luiz0604/Universal-Mac-Game-Launcher",
+      "download": "https://github.com/Luiz0604/Universal-Mac-Game-Launcher/releases",
+      "source": "https://github.com/Luiz0604/Universal-Mac-Game-Launcher",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "Luiz0604",
+      "icon": "🕹",
+      "longDescription": "It finds installed Steam games (on the Mac and inside CrossOver bottles) and Mac apps marked as games, and opens each one the right way: Steam starts the game, native apps open directly, and CrossOver opens the right bottle first. Your library has grid and list views, search, favourites, play status, notes, collections and covers from Steam or your own images.\n\nIt also tracks play time, takes screenshots with a key or controller button, backs up save folders, and can be driven with an Xbox, PlayStation or Switch Pro controller in a full-screen mode. Needs macOS 14 or later; it isn't notarised, so the first launch needs a right-click and Open. Brand new (first release 2026-11-27).",
+      "builtWithAI": "The README says the app was \"built with AI assistance (Claude, by Anthropic)\" and directed and tested by its maintainer. Checked 2026-11-27: all 3 commits are co-authored by Claude.",
+      "keywords": [
+        "game launcher",
+        "playnite",
+        "steam",
+        "crossover",
+        "mac gaming",
+        "controller"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Download",
+      "name": "YAME",
+      "slug": "yame",
+      "alternative": "Alternative to Mp3tag (for Mac)",
+      "description": "A small Mac app for editing MP3 tags and cover art, made for music on a USB stick in the car.",
+      "category": "Audio",
+      "url": "https://github.com/tdem2025/YAME",
+      "download": "https://github.com/tdem2025/YAME/releases",
+      "source": "https://github.com/tdem2025/YAME",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "macOS"
+      ],
+      "maker": "tdem2025",
+      "icon": "🎵",
+      "longDescription": "Open a folder or drop MP3s on the window to edit title, artist, album, album artist, track number, year and genre, for one song or many at once. Cover art can be dropped, pasted or taken from a YouTube link's thumbnail, then cropped or fitted to a square and saved as a 500 by 500 baseline JPEG, the format car head units read most reliably.\n\nTrack numbers follow the list by themselves: add or reorder songs and the numbers in the files update. The folder view refreshes as files change in another app.",
+      "builtWithAI": "The README says every line of YAME (the code, tests, icon, build scripts and the README) was written by Claude Opus 5.5 in a single conversation, while a human described what they wanted and tested it.",
+      "keywords": [
+        "mp3 tags",
+        "id3",
+        "cover art",
+        "mp3tag",
+        "car stereo",
+        "mac"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "indie",
+      "owner": "Independent",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Play now",
+      "name": "Ironvale",
+      "slug": "ironvale",
+      "alternative": "Inspired by classic real-time strategy games",
+      "description": "An original 3D real-time strategy game: gather, build, advance through three ages and defeat the Crimson March, in a story campaign or skirmish.",
+      "category": "Games",
+      "genres": [
+        "RTS",
+        "Strategy"
+      ],
+      "url": "https://sharpwizard.github.io/ironvale/",
+      "download": "https://github.com/SharpWizard/ironvale/releases/latest",
+      "source": "https://github.com/SharpWizard/ironvale",
+      "license": "No licence (source visible)",
+      "price": "Free",
+      "platforms": [
+        "Web",
+        "Windows"
+      ],
+      "maker": "SharpWizard",
+      "icon": "⚔",
+      "longDescription": "Play the four-chapter story campaign, The Shattering of Ironvale, or a skirmish on one of five map types, from the Green Vale to the Iron Highlands and the Corsair Coast. You gather resources, build a town, advance through three ages and raise an army.\n\nIt runs in a desktop browser or as one portable Windows exe that works offline, and is made for mouse and keyboard. The 3D models are openly licensed (CC0 and CC-BY) works by other artists. The repo has no licence file, so the code is visible but not open source.",
+      "builtWithAI": "The README says every line was written by Claude Fable 5.2 in Claude Code from 21 short plain-language requests, with no game engine and no hand-written code; the prompts are published in PROMPTS.md. Checked 2026-11-27: all 3 commits are co-authored by Claude.",
+      "keywords": [
+        "rts",
+        "real-time strategy",
+        "campaign",
+        "ages",
+        "three.js",
+        "browser game",
+        "windows game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/ironvale/1.webp",
+          "alt": "A town in the Green Vale",
+          "caption": "Green Vale town"
+        },
+        {
+          "src": "/assets/apps/ironvale/2.webp",
+          "alt": "The full map of the Iron Highlands",
+          "caption": "Iron Highlands"
+        },
+        {
+          "src": "/assets/apps/ironvale/3.webp",
+          "alt": "Windriders in the Primeval Wilds",
+          "caption": "Primeval Wilds"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Play now",
+      "name": "Valley Ride",
+      "slug": "valley-ride",
+      "alternative": "Inspired by calm riding and walking games",
+      "description": "A calm horse ride up a mountain valley to a campfire at sunset, with no score, no enemy and no way to fail.",
+      "category": "Games",
+      "genres": [
+        "Cozy and relaxing",
+        "Adventure"
+      ],
+      "url": "https://starknightt.github.io/valley-ride/",
+      "source": "https://github.com/StarKnightt/valley-ride",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Prasenjit (StarKnightt)",
+      "icon": "🐎",
+      "longDescription": "You ride a bay horse up a 2.5 km trail through meadows and pine woods, past four pairs of lanterns, to a campfire on the summit. The sun sinks as you climb, so you arrive at sunset, and the horse slows to a stop by the fire. Morning, noon, sunset and night are a click away; at night the lanterns light the path and fireflies drift over the meadow.\n\nThe horse's gallop was checked frame by frame against Muybridge's 1878 photographs. It needs a WebGPU browser (current Chrome or Edge on a computer), a keyboard and a mouse, and the first visit downloads about 74 MB.",
+      "builtWithAI": "The README says it was built in two days with Claude Code, with Claude Opus 5.5 for most of it and Claude Fable 5.2 for the rider. Checked 2026-11-27: all 13 commits are co-authored by Claude.",
+      "keywords": [
+        "horse riding",
+        "relaxing game",
+        "webgpu",
+        "three.js",
+        "sunset",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/valley-ride/1.webp",
+          "alt": "The horse at a gallop on the trail",
+          "caption": "At a gallop"
+        },
+        {
+          "src": "/assets/apps/valley-ride/2.webp",
+          "alt": "Lanterns along the trail",
+          "caption": "The lanterns"
+        },
+        {
+          "src": "/assets/apps/valley-ride/3.webp",
+          "alt": "The trail at night under the moon",
+          "caption": "Night ride"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Play now",
+      "name": "Tiny Planet",
+      "slug": "tiny-planet",
+      "alternative": "Inspired by small-world exploration games",
+      "description": "A tiny round world to walk and fly around: sea, beaches, a pine forest, a village, a lighthouse and a windmill, always at sunset on one side.",
+      "category": "Games",
+      "genres": [
+        "Cozy and relaxing",
+        "Open world"
+      ],
+      "url": "https://starknightt.github.io/tiny-planet/",
+      "source": "https://github.com/StarKnightt/tiny-planet",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Prasenjit (StarKnightt)",
+      "icon": "🪐",
+      "longDescription": "Gravity pulls toward the centre, so you can walk all the way round, over the poles and back. The sun stays put while the planet turns, so walking toward the edge of night warms the light to orange, the cottage windows and street lamps come on, and on the night side the lighthouse beam sweeps the sea.\n\nEverything is made in code: terrain, water, grass, trees, buildings, clouds, sky and sound. It needs a keyboard and a mouse.",
+      "builtWithAI": "The README says it was built with Claude Fable 5.2, which wrote the shared core, with six Claude Opus 5.5 subagents building the terrain, forest, village and other parts in parallel. Checked 2026-11-27: all 3 commits are co-authored by Claude.",
+      "keywords": [
+        "tiny planet",
+        "exploration",
+        "relaxing game",
+        "three.js",
+        "procedural",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/tiny-planet/1.webp",
+          "alt": "The village square at dusk",
+          "caption": "Village at dusk"
+        },
+        {
+          "src": "/assets/apps/tiny-planet/2.webp",
+          "alt": "The whole planet seen from space",
+          "caption": "From space"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Play now",
+      "name": "Cayley",
+      "slug": "cayley",
+      "alternative": "Alternative to desktop flight simulators, in a browser tab",
+      "description": "A browser flight simulator with real wing and propeller physics, nine real aircraft, live weather and the whole planet in 3D.",
+      "category": "Games",
+      "genres": [
+        "Flight",
+        "Simulation"
+      ],
+      "url": "https://lauramionel.github.io/cayley-flight-simulator/",
+      "source": "https://github.com/lauramionel/cayley-flight-simulator",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Lionel Mora",
+      "icon": "🛩",
+      "longDescription": "The flight model builds each aircraft from its published geometry, masses, engine and propeller: the wing is a lifting line of 40 strips, the tail flies in the wing's actual wake and the propeller is modelled blade by blade, so stalls, induced drag and roll damping come out of the physics rather than a lookup table. Each of the nine aircraft was flown headlessly against its own handbook, with 213 of 223 checks inside tolerance and the misses published.\n\nIt has a working cockpit, synthesised sound and live weather over real terrain anywhere on Earth. It needs WebGL 2 in Chrome, Edge, Safari or Firefox; a keyboard is enough, and a joystick or gamepad is picked up automatically.",
+      "builtWithAI": "The awesome-claude-fable-games list credits the maker's post saying Claude Fable 5.2 built it overnight. Checked 2026-11-27: all 5 commits are co-authored by Claude.",
+      "keywords": [
+        "flight simulator",
+        "flight physics",
+        "aircraft",
+        "browser game",
+        "real terrain",
+        "joystick"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/cayley/1.webp",
+          "alt": "An aircraft in flight over real terrain",
+          "caption": "In flight"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Play now",
+      "name": "Graveyard Shift",
+      "slug": "graveyard-shift",
+      "alternative": "Inspired by round-based zombie survival modes",
+      "description": "A round-based zombies shooter at a roadside diner: board up windows, buy weapons off the wall and hold out through the night.",
+      "category": "Games",
+      "genres": [
+        "Shooter",
+        "Action"
+      ],
+      "url": "https://zombies.ethanplus.ai",
+      "source": "https://github.com/ethanplusai/zombies",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Ethan (ethanplusai)",
+      "icon": "🧟",
+      "longDescription": "You hold out at a roadside diner and gas station as each round sends more and tougher zombies. Earn points for every hit and kill, spend them to open new areas and buy weapons off the wall, search for loot and get the power back on. There is an optional leaderboard.\n\nIt runs with three.js on WebGL2 with graphics tiers that adapt to the device, plays with mouse and keyboard on a computer or touch controls on a phone, and everything except the key art is generated in code when the page loads.",
+      "builtWithAI": "The README says: \"Built by Fable 5.2, prompted by Ethan.\" Checked 2026-11-27: 2 of its 11 commits carry a Claude co-author line.",
+      "keywords": [
+        "zombies",
+        "round-based",
+        "survival shooter",
+        "fps",
+        "three.js",
+        "browser game",
+        "mobile"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/graveyard-shift/1.webp",
+          "alt": "Graveyard Shift key art: the diner at night",
+          "caption": "Key art"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Play now",
+      "name": "WHITEOUT",
+      "slug": "whiteout",
+      "alternative": "Inspired by first-person survival horror games",
+      "description": "A first-person survival horror game at a snowbound polar station: restart three generators and call for rescue while something stalks you.",
+      "category": "Games",
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "url": "https://elcronos.github.io/whiteout-onefile/",
+      "source": "https://github.com/elcronos/whiteout-onefile",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "elcronos",
+      "icon": "❄",
+      "longDescription": "A blizzard is rising at dusk. Start generators A, B and C in any order, then send the call from the radio hut; if the stalker reaches you, you lose, and holding your flashlight on it for a moment makes it retreat.\n\nThe whole game is one 1.15 MB HTML file with no images, models, textures or audio: every building, snowdrift, light and sound is generated in code. It wants desktop Chrome on a real GPU, or you can download the file and open it locally. The repo also holds the Claude Code skill that made it.",
+      "builtWithAI": "The README says it was built from a one-line prompt by onefile-aaa, a Claude Code skill running Claude Opus 5.5 as a multi-agent workflow. Checked 2026-11-27: 13 of its 15 commits are co-authored by Claude.",
+      "keywords": [
+        "survival horror",
+        "horror game",
+        "first-person",
+        "single html file",
+        "procedural",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/whiteout/1.webp",
+          "alt": "The polar station in the blizzard",
+          "caption": "The station"
+        },
+        {
+          "src": "/assets/apps/whiteout/2.webp",
+          "alt": "Between the buildings at dusk",
+          "caption": "Between the huts"
+        },
+        {
+          "src": "/assets/apps/whiteout/3.webp",
+          "alt": "A generator shed lit by the flashlight",
+          "caption": "Generator"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Play now",
+      "name": "Atlantis",
+      "slug": "atlantis",
+      "alternative": "Inspired by flying and exploration games",
+      "description": "Fly through a garden city of white marble, crystal and turquoise canals at golden hour, all made in code in one HTML file.",
+      "category": "Games",
+      "genres": [
+        "Flight",
+        "Cozy and relaxing"
+      ],
+      "url": "https://noniv.github.io/atlantis/",
+      "source": "https://github.com/Noniv/atlantis",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Noniv",
+      "icon": "🏛",
+      "longDescription": "Concentric rings of canals circle a stepped podium with a 105 m crystal rising out of a crystal lotus, spiral towers, glass domes, villas hidden in flowering trees, a harbour, farmland and limestone mountains. Press Enter and fly anywhere; there are no goals, it is a place to explore.\n\nIt is one 95 KB HTML file that works offline and needs WebGPU (Chrome or Edge on a computer). The prompt and the art bible are published in the repo.",
+      "builtWithAI": "The README says it was built with Claude Code (Fable 5.2), which wrote all of the code; the reference concept art was made with ChatGPT. Checked 2026-11-27: none of its 4 commits carry a Claude co-author line.",
+      "keywords": [
+        "atlantis",
+        "fly-through",
+        "exploration",
+        "webgpu",
+        "procedural city",
+        "single html file"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/atlantis/1.webp",
+          "alt": "The crystal podium with its lotus, cascades and spiral towers",
+          "caption": "The great crystal"
+        },
+        {
+          "src": "/assets/apps/atlantis/2.webp",
+          "alt": "A canal mirroring the city",
+          "caption": "Canals"
+        },
+        {
+          "src": "/assets/apps/atlantis/3.webp",
+          "alt": "An aerial view of the ringed city",
+          "caption": "From above"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Play now",
+      "name": "BLAMELESS",
+      "slug": "blameless",
+      "alternative": "Inspired by arena shooters",
+      "description": "An on-call shooter: at 03:07 the pager goes off, prod is down, and you go into production in person to kill what is crashing it.",
+      "category": "Games",
+      "genres": [
+        "Shooter",
+        "Action"
+      ],
+      "url": "https://blameless.petruha.ge",
+      "source": "https://github.com/Petyok/blameless",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Petyok",
+      "icon": "📟",
+      "longDescription": "Ten incidents across four hosts, one root cause, and nobody else awake. You fight your way through production and it ends with a postmortem written from what you actually did. A joke for anyone who has been on call, and a proper three.js shooter.\n\nIt plays with keyboard and mouse; on a phone you can watch the autopilot and read the leaderboard.",
+      "builtWithAI": "The README says it was all done by Claude Fable 5.2 from one prompt, with the story, look, weapons and soundtrack left to the model. Checked 2026-11-27: its one commit has no Claude co-author line.",
+      "keywords": [
+        "on-call",
+        "devops",
+        "shooter",
+        "three.js",
+        "browser game",
+        "funny"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/blameless/1.webp",
+          "alt": "Four scenes from BLAMELESS",
+          "caption": "Four scenes"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-27",
+      "linkText": "Play now",
+      "name": "Pelican Ride",
+      "slug": "pelican-ride",
+      "alternative": "Inspired by endless runner games",
+      "description": "An endless 3D runner: a helmeted pelican on a vintage bike chases fish along the coast, hits ramps and pulls air tricks.",
+      "category": "Games",
+      "genres": [
+        "Arcade"
+      ],
+      "url": "https://pelicanride.vercel.app",
+      "source": "https://github.com/Xiobio/pelican-ride",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Xony (Xiobio)",
+      "icon": "🐦",
+      "longDescription": "Catch fish to build combos, fill the frenzy bar for a fish rain and double points, and lose a heart on each crash. Fish you catch buy hats, glasses, scarves, paint, trails and boosts in the garage. There are three modes: adventure, a daily challenge on a fixed track, and a relaxed ride that can't be lost, with time and weather settings and an autopilot.\n\nModels, terrain, sky, waves, sound and music are all generated in code. It works with touch buttons and gamepads too, in Chinese and English.",
+      "builtWithAI": "The README says: \"本项目由 Fable 5.2 制作\" (this project was made by Fable 5.2). Checked 2026-11-27: all 4 commits are co-authored by Claude.",
+      "keywords": [
+        "endless runner",
+        "pelican",
+        "bike",
+        "arcade",
+        "three.js",
+        "browser game",
+        "mobile"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/pelican-ride/1.webp",
+          "alt": "The pelican on its bike by the sea",
+          "caption": "Pelican Ride"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
     }
   ]
 }
