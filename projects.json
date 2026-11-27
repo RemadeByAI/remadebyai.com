@@ -5,7 +5,7 @@
       "group": "emukey",
       "owner": "EmuKey LLC",
       "alternative": "Alternative to Microsoft Outlook",
-      "description": "Desktop email for personal inboxes and Microsoft 365 business accounts.",
+      "description": "Desktop email that works like classic Outlook, for Microsoft 365 and Outlook.com.",
       "category": "Email",
       "url": "https://inclosemail.com/",
       "linkText": "Visit site",
@@ -13,7 +13,7 @@
       "tile": "",
       "featured": true,
       "tagline": "An Outlook alternative built for the desktop.",
-      "featureText": "Use it with personal inboxes and Microsoft 365 business accounts. Free for personal email, with paid plans for business accounts.",
+      "featureText": "Mail, calendar, people and tasks laid out like classic Outlook, plus AI agents, Clean Up My Inbox and offline mail during Microsoft 365 outages. Free for personal email, with paid plans for business accounts.",
       "featureLinkText": "Visit InCloseMail",
       "featureArt": "inbox",
       "added": "2026-11-21",
@@ -23,7 +23,7 @@
       ],
       "price": "Freemium",
       "maker": "EmuKey LLC",
-      "longDescription": "InCloseMail was checked against classic Outlook screen by screen: the ribbon, folder pane, reading pane and To-Do Bar, Outlook's keyboard shortcuts and right-click menus, .pst import and export, rules and Quick Steps, calendar, people and tasks, shared mailboxes and Microsoft 365 Groups.\n\nIt adds things Outlook doesn't have: AI agents such as Claude can read and draft mail in the mailboxes you choose, Clean Up My Inbox sorts thousands of messages into groups you can act on at once, you can change any keyboard shortcut, and it keeps working offline during a Microsoft 365 outage.\n\nIt is free forever for Outlook.com, Hotmail, Live and other personal Microsoft accounts. Microsoft 365 work accounts will cost $3 per user per month ($36 a year) after the beta, and are free during it. It runs on 64-bit Windows 10 (version 1809 or later) and Windows 11.",
+      "longDescription": "InCloseMail works like classic Outlook, screen by screen: the ribbon, folder pane, reading pane and To-Do Bar, Outlook's keyboard shortcuts and right-click menus, .pst import and export, Focused Inbox, server-side rules and Quick Steps, S/MIME signed and encrypted mail, and a calendar with the Scheduling Assistant, Room Finder and Teams meetings. People, Microsoft To Do tasks, shared mailboxes with Send As, aliases, Microsoft 365 Groups and profiles are all there, and settings and signatures follow you to other PCs.\n\nIt adds things Outlook doesn't have. AI agents such as Claude (Claude Code connects in one click) can read, translate and draft mail in the mailboxes you choose, and anything they propose changes nothing until you click Apply. Clean Up My Inbox groups likely junk, newsletters, people you never answer and big old messages so you can act on thousands at once, with one Undo. You can remap any keyboard shortcut, run rules on folders of any size, blacklist a sender on every device in one click, see why a message looks suspicious, and get a second look before sending to outside recipients or forgetting an attachment.\n\nThere is also Analytics about your own mail (kept on your PC), Lock InCloseMail with Windows Hello, read-only accounts, Dark Mode that darkens emailed charts, themes and a Theme Editor, sticky Notes shared across your PCs, RSS feeds and a Demo Mode with a sample mailbox. It keeps working offline during a Microsoft 365 outage, and comes in ten languages. IT gets a signed MSI with Group Policy and Intune templates.\n\nIt is free forever for Outlook.com, Hotmail, Live and other personal Microsoft accounts. Microsoft 365 work accounts will cost $3 per user per month ($36 a year) after the beta, and are free during it; one licence covers one person on up to three PCs. The first public beta, version 26.11.2608, came out on November 26, 2026. It runs on 64-bit Windows 10 (version 1809 or later) and Windows 11.",
       "screenshots": [
         {
           "src": "https://inclosemail.com/screenshot.png",
@@ -36,14 +36,29 @@
           "caption": "Dark Mode"
         }
       ],
-      "builtWithAI": "Built largely with Claude Opus 5.5."
+      "builtWithAI": "Built largely with Claude Opus 5.5.",
+      "keywords": [
+        "outlook",
+        "classic outlook",
+        "microsoft 365",
+        "office 365",
+        "outlook.com",
+        "hotmail",
+        "email client",
+        "pst",
+        "calendar",
+        "shared mailbox",
+        "exchange",
+        "ai email",
+        "claude"
+      ]
     },
     {
       "name": "DesktopWiki",
       "group": "emukey",
       "owner": "EmuKey LLC",
       "alternative": "Alternative to self-hosted Confluence",
-      "description": "A wiki for internal docs and team knowledge, with a free single-user tier.",
+      "description": "A private wiki and password manager for a family or small team, running on your own Windows PC.",
       "category": "Documentation",
       "url": "https://desktopwiki.com/",
       "linkText": "Visit site",
@@ -51,7 +66,7 @@
       "tile": "wiki",
       "featured": true,
       "tagline": "A team wiki that runs on your own PC.",
-      "featureText": "Spaces, a page tree and a visual editor, plus a password manager, with no server or cloud account to set up. Free for one person, with paid plans for families and teams.",
+      "featureText": "Spaces, a page tree and a visual editor, plus a shared password manager, a family start page and home network monitoring, with no server or cloud account to set up. Free for one person, with paid plans for families and teams.",
       "featureLinkText": "Visit DesktopWiki",
       "featureArt": "wiki",
       "added": "2026-11-21",
@@ -62,7 +77,7 @@
       ],
       "price": "Freemium",
       "maker": "EmuKey LLC",
-      "longDescription": "DesktopWiki gives a family or small team spaces, a page tree and a visual editor, the way classic team wikis work, plus a password manager for everyone's logins. You install it on one Windows PC, and everyone else opens it in a browser on a phone or another computer.\n\nThere is no server, database or cloud account to set up: the whole wiki lives in one file you can back up by copying it. It can import from Confluence and can be opened up for use away from home.\n\nIt is free for one person. Family (up to 6 people) is $49 a year, Team (up to 18) $99 and Business (up to 60) $199, on sale after the beta, with every feature in every plan. The host PC needs 64-bit Windows 10 (version 1809 or later) or Windows 11.",
+      "longDescription": "DesktopWiki gives a family or small team a private wiki the way classic team wikis work: spaces with a page tree, a visual editor, templates, labels, comments and @mentions, page history with compare and restore, and search that reaches inside PDFs and scanned files. It also has databases with table, board, card and timeline views, whiteboards, diagrams, slides, per-space blogs, approvals, rules, a family calendar, chores with stars and rewards, and export to Word, Markdown or PDF. You install it on one Windows PC, and everyone else opens it in a browser on a phone or another computer.\n\nIt includes a password manager with private and shared vaults (AES-256 and Argon2id), built-in two-step codes, password health checks, emergency access, sharing by link, and import from 1Password, Bitwarden, LastPass, KeePass, Dashlane and browsers. A personal start page brings links, weather, news, countdowns, to-dos and a wall display mode for a tablet. Home network monitoring checks your devices and internet, tells router, line and DNS faults apart, and tracks screen time on kids' PCs, consoles and TVs.\n\nThere is no server, database or cloud account to set up: the whole wiki lives in one file you can back up by copying it, and it does encrypted daily or weekly backups too. It can import Confluence spaces and whole-site backups, plus Word, spreadsheets, Markdown and web pages. A free desktopwiki.net address, Tailscale or port forwarding can open it up for use away from home. It comes in nine languages, and AI agents can connect with read-only access.\n\nIt is free for one person. Family (up to 6 people) is $49 a year, Team (up to 18) $99 and Business (up to 60) $199, on sale after the beta ends on December 31, 2026, with every feature in every plan. Everyone who ran the beta gets their first year of Family free. The host PC needs 64-bit Windows 10 (version 1809 or later), Windows 11 or Windows Server 2019 or later.",
       "screenshots": [
         {
           "src": "https://desktopwiki.com/features/img/wiki-light.png",
@@ -73,9 +88,37 @@
           "src": "https://desktopwiki.com/features/img/wiki-dark.png",
           "alt": "The same DesktopWiki page in dark mode",
           "caption": "Dark mode"
+        },
+        {
+          "src": "https://desktopwiki.com/features/img/passwords-light.webp",
+          "alt": "DesktopWiki's shared Family vault, with the electric company's login open",
+          "caption": "Shared logins"
+        },
+        {
+          "src": "https://desktopwiki.com/features/img/homepage-links-light.webp",
+          "alt": "A DesktopWiki start page with links for email, the bank, news, shopping, bills and school, a bar of widgets and the weather",
+          "caption": "Family start page"
+        },
+        {
+          "src": "https://desktopwiki.com/features/img/network-light.webp",
+          "alt": "DesktopWiki's Network page: the internet is up, with the family's PCs, modem, NAS, camera, TV and printer",
+          "caption": "Home network"
         }
       ],
-      "builtWithAI": "Built largely with Claude Opus 5.5."
+      "builtWithAI": "Built largely with Claude Opus 5.5.",
+      "keywords": [
+        "confluence",
+        "wiki",
+        "knowledge base",
+        "password manager",
+        "1password",
+        "bitwarden",
+        "family organizer",
+        "start page",
+        "home network monitor",
+        "self-hosted",
+        "notion"
+      ]
     },
     {
       "name": "macshot",
