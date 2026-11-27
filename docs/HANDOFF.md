@@ -1,8 +1,13 @@
 # Handoff notes
 
-Last updated: 2026-11-26 Central (hunt 14 on branch `claude/project-thread-nicqqp`, 219 apps, waiting for Go live; 207 live as f283570). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
+Last updated: 2026-11-26 late evening Central (games hunt 6 on branch `claude/project-thread-3qvz0m`, 232 apps, waiting for Go live). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
 
-## Newest: app hunt 14, 219 apps (2026-11-26 Central, cloud)
+## Newest: games hunt 6, 232 apps (2026-11-26 late evening Central, cloud)
+
+- 13 games added on branch `claude/project-thread-3qvz0m` from VibeFin/awesome-opus-5.5-games and theolundqvist/frontier-games: Felt World, The Hourglass City, OUT OF THE BOX, NOVA LANCER, KAIJU DOKAN!, LUMENRIFT, Tempora, Tater's Flight Sim (no hosted build), Forja Abisal, DRIFTWING (no licence, indie), Casa de Gemas, Last Beacon (GPT-6 Astra) and Bee Garden (Astra + Claude). All 13 "What people say": none.
+- Held: Ombres (PolyForm NC), Large Language Mayhem (AI-company mascots), Gogh Strike (no screenshots). Full notes: `/mnt/project-files/app-hunt/2026-11-27-games-6.md`.
+
+## Earlier: app hunt 14, 219 apps (2026-11-26 Central, cloud)
 
 - 12 added on branch `claude/project-thread-nicqqp`: Convert (CloudConvert, local on Mac/Windows/Linux), MX Options (Logi Options+ for Linux), U2C Firmware Toolkit (8BitDo Ultimate 2C on Mac), HomeRoll (Apple Photos-style iPhone app for Immich), zest (Fig autocomplete), Family Location (Life360 in Home Assistant; no screenshot) and the games Little City, Lanternfall (no licence, listed as indie), Papertrails, Unsung Vale, Red Clay Chase and Ink Flight (most found via the awesome-fable-5.2 list). All 12 "What people say": none.
 - Held: PULP (FL Studio-style DAW, no download yet). Full notes: `/mnt/project-files/app-hunt/2026-11-26-hunt-14.md`.
