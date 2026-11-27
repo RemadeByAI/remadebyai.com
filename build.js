@@ -30,11 +30,11 @@ const GENRES = [
   { name: 'Arcade', noun: 'arcade games', intro: 'Short, replayable games you can pick up in a minute: shooters, one-button tappers, boss rushes and high-score chasers.' },
   { name: 'Card games', noun: 'card games', intro: 'Deck builders and card battlers, including one played inside Claude Code and one built from your GitHub stars.' },
   { name: 'Cozy and relaxing', noun: 'cozy games', intro: 'Calm games with no rush and nothing to lose: farming, gardening, gliding, wandering and building little towns.' },
-  { name: 'Exploration and open world', noun: 'open-world games', intro: 'Big places to wander: procedural galaxies, island atolls, felt dioramas and open-world RPGs, most of them right in your browser.' },
   { name: 'Fighting', noun: 'fighting games', intro: 'One-on-one and free-for-all fighters, from a 20-player platform brawler to physics sword duels.' },
   { name: 'Flight', noun: 'flight games', intro: 'Flight simulators with real physics and weather, plus relaxed flying games with paper planes and gliders.' },
   { name: 'Idle', noun: 'idle games', intro: 'Games that keep playing while you watch or step away: auto-battlers, idle roguelites and a factory in your terminal.' },
   { name: 'MMO', noun: 'MMO games', intro: 'Online worlds shared with other players, from a classic-style MMORPG to a 1990s online text adventure rebuilt by its creator.' },
+  { name: 'Open world', noun: 'open-world games', intro: 'Big places to wander: procedural galaxies, island atolls, felt dioramas and open-world RPGs, most of them right in your browser.' },
   { name: 'Platformer', noun: 'platformers', intro: 'Side-scrolling jump-and-run games with pixel art, bosses and a twist on how you move.' },
   { name: 'Puzzle', noun: 'puzzle games', intro: 'Games that make you think: turn-based logic, hidden objects, deductions and a hacking puzzle against a rogue AI.' },
   { name: 'Racing and driving', noun: 'racing games', intro: 'Rally stages, police chases and neon time trials, played in your browser.' },
@@ -921,12 +921,12 @@ function genrePage(g, genres) {
 ${foot}`;
 }
 // The old /categories/games/ address sends visitors to /games/ (GitHub Pages can't redirect on its own).
-function redirectPage(to) {
-  return `${head({ title: 'Games | RemadeByAI', description: 'Games on RemadeByAI have moved to their own section.', canonical: to, noindex: true,
+function redirectPage(to, name = 'Games') {
+  return `${head({ title: `${name} | RemadeByAI`, description: `${name} on RemadeByAI has moved.`, canonical: to, noindex: true,
     scripts: `\n  <meta http-equiv="refresh" content="0; url=${to}">` })}
 <div class="wrap list-page">
-  <h1 class="page-title">Games have moved</h1>
-  <p class="page-intro">Games now have their own section: <a href="${to}">go to Games</a>.</p>
+  <h1 class="page-title">This page has moved</h1>
+  <p class="page-intro"><a href="${to}">Go to ${esc(name)}</a>.</p>
 </div>
 ${foot}`;
 }
@@ -973,7 +973,7 @@ function main() {
   write('categories/index.html', `${head({ title: 'Categories | RemadeByAI', description: 'Browse AI-built apps and alternatives to familiar software by category.', canonical: '/categories/' })}
 <div class="wrap list-page">
   <p class="section-label">✦ Categories</p>
-  <h1 class="page-title">Browse by category</h1>
+  <h1 class="page-title">Applications by category</h1>
   <p class="page-intro">${software.length} apps in ${categories.length} categories, and ${games.length} games in ${genres.length} genres.</p>
   ${categoryChips(categories)}
   <h2 class="sub-title">Games by genre</h2>
@@ -994,6 +994,8 @@ ${foot}`);
     }));
   }
   write('categories/games/index.html', redirectPage('/games/'));
+  // Renamed genres keep their old address working.
+  write('games/exploration-and-open-world/index.html', redirectPage('/games/open-world/', 'Open world games'));
   write('games/index.html', gamesPage(games, genres));
   for (const g of genres) write(`games/${g.slug}/index.html`, genrePage(g, genres));
   write('alternatives/index.html', hubPage({
