@@ -36,8 +36,8 @@
   </script>
 <!-- build:assets -->
   <script>(function(){var t='dark';try{if(localStorage.getItem('theme')==='light')t='light'}catch(e){}var d=document.documentElement;d.setAttribute('data-theme',t);if(t==='light'){var m=document.querySelector('meta[name="color-scheme"]');if(m)m.content='light';m=document.querySelector('meta[name="theme-color"]');if(m)m.content='#f5f8f3'}})();</script>
-  <link rel="stylesheet" href="/styles.css?v=1d27c173f7">
-  <script src="/site.js?v=8af6034e91" defer></script>
+  <link rel="stylesheet" href="/styles.css?v=4209f33d4f">
+  <script src="/site.js?v=787a494c35" defer></script>
   <link rel="alternate" type="application/rss+xml" title="RemadeByAI: new apps" href="https://remadebyai.com/feed.xml">
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"0f5ef649282441df8c6138452124737d"}'></script>
 <!-- /build:assets -->
@@ -51,9 +51,9 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="35" height="35"><span>RemadeBy<em>AI</em><small>.com</small></span></a>
-    <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/new/">New</a><a href="/apps/">All apps</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
+    <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/games/">Games</a><a href="/new/">New</a><a href="/apps/">All apps</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
     <form class="site-search" action="/apps/" method="get" role="search" data-clicks="https://remadebyai-clicks.remadebyai.workers.dev/click">
-      <label><span class="visually-hidden">Search all apps</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
+      <label><span class="visually-hidden">Search all apps and games</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
       <ul class="site-search-results" id="site-search-results" role="listbox" aria-label="Matching apps" hidden></ul>
     </form>
     <button class="theme-toggle" type="button" aria-label="Switch to light mode"><span class="to-light"><span class="icon" aria-hidden="true">☀︎</span><span class="label">Light mode</span></span><span class="to-dark"><span class="icon" aria-hidden="true">☾</span><span class="label">Dark mode</span></span></button>
@@ -65,10 +65,10 @@
     <div class="hero-copy">
       <h1 id="hero-title">Familiar software.<br><em>Rebuilt with AI.</em></h1>
       <p>Discover AI-built apps and independent alternatives to the software you use every day.</p>
-      <div class="hero-actions"><a class="button primary" href="/apps/">Browse all apps</a><a class="button" href="/categories/">Categories</a></div>
+      <div class="hero-actions"><a class="button primary" href="/apps/">Browse all apps</a><a class="button" href="/games/">Games</a><a class="button" href="/categories/">Categories</a></div>
       <p class="hero-stats">
 <!-- build:stats -->
-232 apps in 29 categories
+163 apps in 29 categories · 69 games in 21 genres
 <!-- /build:stats -->
       </p>
     </div>
@@ -125,47 +125,47 @@
     <div class="block-head"><h2 id="new-title">New arrivals</h2><a href="/new/">See all new apps →</a></div>
 <!-- build:new -->
 <div class="cards">
-<article class="card" data-group="open" data-category="games" data-platform="Web" data-price="Free" data-licence="MIT" data-search="bee garden inspired by cozy nature games a first-person watercolor meadow game: forage as a honeybee for five summers and shape the meadow you come back to. games open source lynn cherny (arnicas) web mit free bee game nature game cozy game watercolor three.js browser game">
+<article class="card" data-group="open" data-category="games" data-genre="cozy-and-relaxing|exploration-and-open-world" data-platform="Web" data-price="Free" data-licence="MIT" data-search="bee garden inspired by cozy nature games a first-person watercolor meadow game: forage as a honeybee for five summers and shape the meadow you come back to. games cozy and relaxing exploration and open world open source lynn cherny (arnicas) web mit free bee game nature game cozy game watercolor three.js browser game">
   <div class="card-top"><span class="tile" aria-hidden="true">🐝</span><small>Open source</small></div>
   <h3 class="card-title"><a class="card-link" href="/apps/bee-garden/">Bee Garden</a></h3>
   <p class="alternative">Inspired by cozy nature games</p>
   <p>A first-person watercolor meadow game: forage as a honeybee for five summers and shape the meadow you come back to.</p>
-  <div class="card-bottom"><a class="card-category" href="/categories/games/">Games</a><span class="card-more" aria-hidden="true">Details →</span></div>
+  <div class="card-bottom"><a class="card-category" href="/games/cozy-and-relaxing/">Cozy and relaxing</a><span class="card-more" aria-hidden="true">Details →</span></div>
 </article>
-<article class="card" data-group="open" data-category="games" data-platform="Web" data-price="Free" data-licence="MIT" data-search="last beacon inspired by tower defense games a 3d island tower defense where every turret needs power: wire your defenses to the lighthouse and hold off ten waves from the sea. games open source stackloomdev web mit free tower defense strategy game lighthouse three.js browser game">
+<article class="card" data-group="open" data-category="games" data-genre="tower-defense" data-platform="Web" data-price="Free" data-licence="MIT" data-search="last beacon inspired by tower defense games a 3d island tower defense where every turret needs power: wire your defenses to the lighthouse and hold off ten waves from the sea. games tower defense open source stackloomdev web mit free tower defense strategy game lighthouse three.js browser game">
   <div class="card-top"><span class="tile" aria-hidden="true">🗼</span><small>Open source</small></div>
   <h3 class="card-title"><a class="card-link" href="/apps/last-beacon/">Last Beacon</a></h3>
   <p class="alternative">Inspired by tower defense games</p>
   <p>A 3D island tower defense where every turret needs power: wire your defenses to the lighthouse and hold off ten waves from the sea.</p>
-  <div class="card-bottom"><a class="card-category" href="/categories/games/">Games</a><span class="card-more" aria-hidden="true">Details →</span></div>
+  <div class="card-bottom"><a class="card-category" href="/games/tower-defense/">Tower defense</a><span class="card-more" aria-hidden="true">Details →</span></div>
 </article>
-<article class="card" data-group="open" data-category="games" data-platform="Web" data-price="Free" data-licence="MIT" data-search="casa de gemas inspired by cozy hidden-object games a tiny watercolor garden to explore: water the plants, shake the branches and find each season's hidden gems with oli the owl. games open source deepujain web mit free cozy game hidden object garden watercolor kids browser game">
+<article class="card" data-group="open" data-category="games" data-genre="cozy-and-relaxing|puzzle" data-platform="Web" data-price="Free" data-licence="MIT" data-search="casa de gemas inspired by cozy hidden-object games a tiny watercolor garden to explore: water the plants, shake the branches and find each season's hidden gems with oli the owl. games cozy and relaxing puzzle open source deepujain web mit free cozy game hidden object garden watercolor kids browser game">
   <div class="card-top"><span class="tile" aria-hidden="true">🏡</span><small>Open source</small></div>
   <h3 class="card-title"><a class="card-link" href="/apps/casa-de-gemas/">Casa de Gemas</a></h3>
   <p class="alternative">Inspired by cozy hidden-object games</p>
   <p>A tiny watercolor garden to explore: water the plants, shake the branches and find each season's hidden gems with Oli the owl.</p>
-  <div class="card-bottom"><a class="card-category" href="/categories/games/">Games</a><span class="card-more" aria-hidden="true">Details →</span></div>
+  <div class="card-bottom"><a class="card-category" href="/games/cozy-and-relaxing/">Cozy and relaxing</a><span class="card-more" aria-hidden="true">Details →</span></div>
 </article>
-<article class="card" data-group="indie" data-category="games" data-platform="Web" data-price="Free" data-licence="" data-search="driftwing inspired by relaxing flight games a calm flying game over an endless world made up as you go, with an ai copilot called wren along for the ride. games independent kylebuildsai web no licence (source visible) free flight game glider procedural world relaxing game three.js browser game">
+<article class="card" data-group="indie" data-category="games" data-genre="flight|cozy-and-relaxing" data-platform="Web" data-price="Free" data-licence="" data-search="driftwing inspired by relaxing flight games a calm flying game over an endless world made up as you go, with an ai copilot called wren along for the ride. games flight cozy and relaxing independent kylebuildsai web no licence (source visible) free flight game glider procedural world relaxing game three.js browser game">
   <div class="card-top"><span class="tile" aria-hidden="true">🪂</span><small>Independent</small></div>
   <h3 class="card-title"><a class="card-link" href="/apps/driftwing/">DRIFTWING</a></h3>
   <p class="alternative">Inspired by relaxing flight games</p>
   <p>A calm flying game over an endless world made up as you go, with an AI copilot called WREN along for the ride.</p>
-  <div class="card-bottom"><a class="card-category" href="/categories/games/">Games</a><span class="card-more" aria-hidden="true">Details →</span></div>
+  <div class="card-bottom"><a class="card-category" href="/games/flight/">Flight</a><span class="card-more" aria-hidden="true">Details →</span></div>
 </article>
-<article class="card" data-group="open" data-category="games" data-platform="Web" data-price="Free" data-licence="MIT" data-search="forja abisal inspired by 1990s first-person shooters a retro 90s-style first-person shooter for the browser, with maze-like foundry levels, keys, secrets and an automap. games open source carte1972 web mit free fps retro shooter boomer shooter three.js spanish browser game">
+<article class="card" data-group="open" data-category="games" data-genre="shooter" data-platform="Web" data-price="Free" data-licence="MIT" data-search="forja abisal inspired by 1990s first-person shooters a retro 90s-style first-person shooter for the browser, with maze-like foundry levels, keys, secrets and an automap. games shooter open source carte1972 web mit free fps retro shooter boomer shooter three.js spanish browser game">
   <div class="card-top"><span class="tile" aria-hidden="true">🔥</span><small>Open source</small></div>
   <h3 class="card-title"><a class="card-link" href="/apps/forja-abisal/">Forja Abisal</a></h3>
   <p class="alternative">Inspired by 1990s first-person shooters</p>
   <p>A retro 90s-style first-person shooter for the browser, with maze-like foundry levels, keys, secrets and an automap.</p>
-  <div class="card-bottom"><a class="card-category" href="/categories/games/">Games</a><span class="card-more" aria-hidden="true">Details →</span></div>
+  <div class="card-bottom"><a class="card-category" href="/games/shooter/">Shooter</a><span class="card-more" aria-hidden="true">Details →</span></div>
 </article>
-<article class="card" data-group="open" data-category="games" data-platform="Web" data-price="Free" data-licence="MIT" data-search="tater's flight sim inspired by desktop flight simulators a flight simulator for the browser: fly a cessna, an f-16, an a-10 or a 747 with real flight physics over farmland, coast and mountains. games open source jared tate web mit free flight simulator flight sim jets airliner three.js browser game">
+<article class="card" data-group="open" data-category="games" data-genre="flight" data-platform="Web" data-price="Free" data-licence="MIT" data-search="tater's flight sim inspired by desktop flight simulators a flight simulator for the browser: fly a cessna, an f-16, an a-10 or a 747 with real flight physics over farmland, coast and mountains. games flight open source jared tate web mit free flight simulator flight sim jets airliner three.js browser game">
   <div class="card-top"><span class="tile" aria-hidden="true">✈</span><small>Open source</small></div>
   <h3 class="card-title"><a class="card-link" href="/apps/taters-flight-sim/">Tater's Flight Sim</a></h3>
   <p class="alternative">Inspired by desktop flight simulators</p>
   <p>A flight simulator for the browser: fly a Cessna, an F-16, an A-10 or a 747 with real flight physics over farmland, coast and mountains.</p>
-  <div class="card-bottom"><a class="card-category" href="/categories/games/">Games</a><span class="card-more" aria-hidden="true">Details →</span></div>
+  <div class="card-bottom"><a class="card-category" href="/games/flight/">Flight</a><span class="card-more" aria-hidden="true">Details →</span></div>
 </article>
 </div>
 <!-- /build:new -->
@@ -185,7 +185,7 @@
   <li><a href="/categories/family/"><span class="tile glance" aria-hidden="true">☺</span><span class="cat-name">Family</span><small>5 apps</small><span class="cat-sample">BrainRotGuard, Family Location, Parenthèse and more</span></a></li>
   <li><a href="/categories/file-sharing/"><span class="tile capture" aria-hidden="true">➤</span><span class="cat-name">File sharing</span><small>3 apps</small><span class="cat-sample">Faro, Ferry, SkySend</span></a></li>
   <li><a href="/categories/finance/"><span class="tile" aria-hidden="true">€</span><span class="cat-name">Finance</span><small>3 apps</small><span class="cat-sample">GiroCrab, Haben, Pic2Sheet</span></a></li>
-  <li><a href="/categories/games/"><span class="tile glance" aria-hidden="true">⚔</span><span class="cat-name">Games</span><small>72 apps</small><span class="cat-sample">38-0-0, A Game About Capybaras Delivering Food, AI WORMS and more</span></a></li>
+  <li><a href="/categories/gaming-tools/"><span class="tile wiki" aria-hidden="true">◈</span><span class="cat-name">Gaming tools</span><small>3 apps</small><span class="cat-sample">Game Glance, Hadron, U2C Firmware Toolkit</span></a></li>
   <li><a href="/categories/graphics/"><span class="tile glance" aria-hidden="true">◐</span><span class="cat-name">Graphics</span><small>11 apps</small><span class="cat-sample">Compositor, desigma, DesignCraft and more</span></a></li>
   <li><a href="/categories/health-and-fitness/"><span class="tile" aria-hidden="true">✦</span><span class="cat-name">Health and fitness</span><small>3 apps</small><span class="cat-sample">Dorso, GymCoach, openGym</span></a></li>
   <li><a href="/categories/home/"><span class="tile capture" aria-hidden="true">⌂</span><span class="cat-name">Home</span><small>5 apps</small><span class="cat-sample">Merran, micasa, NeonPlan 3D and more</span></a></li>
@@ -206,6 +206,35 @@
 </ul>
 <!-- /build:categories -->
   </section>
+  <section class="wrap home-block" id="games" aria-labelledby="games-title">
+    <div class="block-head"><h2 id="games-title">Games by genre</h2><a href="/games/">All games →</a></div>
+<!-- build:games -->
+<ul class="category-list genre-list">
+  <li><a href="/games/action/"><span>Action</span><small>9</small></a></li>
+  <li><a href="/games/adventure/"><span>Adventure</span><small>4</small></a></li>
+  <li><a href="/games/arcade/"><span>Arcade</span><small>7</small></a></li>
+  <li><a href="/games/card-games/"><span>Card games</span><small>3</small></a></li>
+  <li><a href="/games/cozy-and-relaxing/"><span>Cozy and relaxing</span><small>11</small></a></li>
+  <li><a href="/games/exploration-and-open-world/"><span>Exploration and open world</span><small>9</small></a></li>
+  <li><a href="/games/fighting/"><span>Fighting</span><small>3</small></a></li>
+  <li><a href="/games/flight/"><span>Flight</span><small>7</small></a></li>
+  <li><a href="/games/idle/"><span>Idle</span><small>5</small></a></li>
+  <li><a href="/games/mmo/"><span>MMO</span><small>2</small></a></li>
+  <li><a href="/games/platformer/"><span>Platformer</span><small>2</small></a></li>
+  <li><a href="/games/puzzle/"><span>Puzzle</span><small>5</small></a></li>
+  <li><a href="/games/racing-and-driving/"><span>Racing and driving</span><small>3</small></a></li>
+  <li><a href="/games/roguelike/"><span>Roguelike</span><small>4</small></a></li>
+  <li><a href="/games/rpg/"><span>RPG</span><small>10</small></a></li>
+  <li><a href="/games/shooter/"><span>Shooter</span><small>4</small></a></li>
+  <li><a href="/games/simulation/"><span>Simulation</span><small>10</small></a></li>
+  <li><a href="/games/sports/"><span>Sports</span><small>3</small></a></li>
+  <li><a href="/games/story-and-text/"><span>Story and text</span><small>5</small></a></li>
+  <li><a href="/games/strategy/"><span>Strategy</span><small>6</small></a></li>
+  <li><a href="/games/tower-defense/"><span>Tower defense</span><small>5</small></a></li>
+</ul>
+<!-- /build:games -->
+  </section>
+
   <section class="wrap home-block" id="alternatives" aria-labelledby="alternatives-title">
     <div class="block-head"><h2 id="alternatives-title">Alternatives to popular software</h2><a href="/alternatives/">All alternatives →</a></div>
 <!-- build:alternatives -->
@@ -226,7 +255,7 @@
   <section class="wrap home-block home-cta" aria-label="More">
     <a class="cta-card" href="/apps/"><span class="section-label">✦ All apps</span><strong>See every app, A to Z</strong><span>Search and filter all
 <!-- build:count -->
-232
+163
 <!-- /build:count -->
       apps by category, platform, price and licence.</span><span class="cta-go">Browse all apps →</span></a>
     <a class="cta-card" href="/list/"><span class="section-label">✦ List your app</span><strong>Made something that belongs here?</strong><span>Built a working alternative to familiar software, with AI as part of how it gets made? Send it our way.</span><span class="cta-go">List your app →</span></a>
@@ -236,7 +265,7 @@
 <footer>
   <div class="wrap foot">
     <div class="foot-about"><a class="brand" href="/">RemadeBy<em>AI</em></a><p>Familiar software, rebuilt with AI. <em class="foot-note">(A software directory from <a href="https://emukey.com/" target="_blank" rel="noopener">EmuKey LLC</a>.)</em></p></div>
-    <nav class="foot-links" aria-label="Footer"><a href="/apps/">All apps</a><a href="/new/">New arrivals</a><a href="/categories/">Categories</a><a href="/alternatives/">Alternatives</a><a href="/platforms/">Platforms</a><a href="/about/">About</a><a href="/list/">List your app</a><a href="/feed.xml">RSS feed</a></nav>
+    <nav class="foot-links" aria-label="Footer"><a href="/apps/">All apps</a><a href="/games/">Games</a><a href="/new/">New arrivals</a><a href="/categories/">Categories</a><a href="/alternatives/">Alternatives</a><a href="/platforms/">Platforms</a><a href="/about/">About</a><a href="/list/">List your app</a><a href="/feed.xml">RSS feed</a></nav>
   </div>
 </footer>
 <!-- /build:footer -->

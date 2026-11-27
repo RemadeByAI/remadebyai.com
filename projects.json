@@ -2936,6 +2936,10 @@
       "alternative": "Inspired by classic MMORPGs",
       "description": "A complete classic-style online role-playing game you can play free in your browser or in desktop and phone apps: nine classes, quests, dungeons, raids and ranked PvP in one shared world.",
       "category": "Games",
+      "genres": [
+        "MMO",
+        "RPG"
+      ],
       "url": "https://worldofclaudecraft.com/",
       "linkText": "Play now",
       "icon": "⚔",
@@ -3029,6 +3033,10 @@
       "alternative": "Inspired by 1990s online text adventures",
       "description": "An award-winning 1992 online text adventure from CompuServe, lost when it shut down in 1999 and rebuilt by its original creator from the surviving game scripts. Free to play in your browser.",
       "category": "Games",
+      "genres": [
+        "MMO",
+        "Story and text"
+      ],
       "url": "https://lofp.metavert.io",
       "linkText": "Play now",
       "icon": "❦",
@@ -3100,6 +3108,10 @@
       "alternative": "Inspired by space exploration games",
       "description": "A whole procedural galaxy in one 299 kB web page: fly, land on planets and walk them, mine, trade and find your way back to Earth, with a story that has three endings.",
       "category": "Games",
+      "genres": [
+        "Exploration and open world",
+        "Flight"
+      ],
       "url": "https://voidstruck.com/",
       "linkText": "Play now",
       "icon": "✺",
@@ -3176,6 +3188,10 @@
       "alternative": "Inspired by wuxia action games",
       "description": "A real-time sword-fighting action game in the browser: one swordsman, three chapters across a golden steppe, a rainy bamboo forest and a lantern-lit river town, each with a boss.",
       "category": "Games",
+      "genres": [
+        "Fighting",
+        "Action"
+      ],
       "url": "https://jbang2004.github.io/long-wind/",
       "linkText": "Play now",
       "icon": "⚚",
@@ -3219,6 +3235,10 @@
       "alternative": "Inspired by cyberpunk flying games",
       "description": "Fly a hover car out of a rainy Hong Kong night market and up through a neon city of 9,373 buildings, chasing medal time trials and hidden data shards, right in your browser.",
       "category": "Games",
+      "genres": [
+        "Racing and driving",
+        "Flight"
+      ],
       "url": "https://zenith.billpwchan.art/",
       "linkText": "Play now",
       "icon": "✈",
@@ -3261,6 +3281,10 @@
       "alternative": "Inspired by arcade action games",
       "description": "A cosmic musical arcade game about an alien who fights corrupted sound with a stringed saz, over six stages and a boss. Its \"designer\" is a dog whose keystrokes Claude Code turned into a game.",
       "category": "Games",
+      "genres": [
+        "Shooter",
+        "Arcade"
+      ],
       "url": "https://github.com/cleak/quasar-saz",
       "linkText": "View on GitHub",
       "icon": "♫",
@@ -3339,6 +3363,9 @@
       "alternative": "Inspired by art of rally",
       "description": "A small top-down rally game with a diorama look for the browser: five cars from four eras, six stages, five times of day with rain and snow, and a short career against ghost rivals.",
       "category": "Games",
+      "genres": [
+        "Racing and driving"
+      ],
       "url": "https://jason-c-dev.github.io/backroad-rally/",
       "linkText": "Play now",
       "icon": "⚑",
@@ -3381,6 +3408,9 @@
       "alternative": "Inspired by Super Smash Bros.",
       "description": "A free platform fighter for the browser built for chaotic 20-player free-for-all matches, on phone or desktop, with bots filling empty seats and invite links for friends.",
       "category": "Games",
+      "genres": [
+        "Fighting"
+      ],
       "url": "https://bashfighter.com/",
       "linkText": "Play now",
       "icon": "✊",
@@ -3420,6 +3450,9 @@
       "alternative": "Inspired by creature-collecting card games",
       "description": "A creature card game that lives inside Claude Code: while Claude works, wild pixel creatures appear above the prompt and your team of three battles them. Win, and you might catch one.",
       "category": "Games",
+      "genres": [
+        "Card games"
+      ],
       "url": "https://spinlings.dev",
       "linkText": "Visit site",
       "icon": "✿",
@@ -3466,6 +3499,9 @@
       "alternative": "Inspired by World of Tanks",
       "description": "Armored combat in your browser on desktop or phone: 311 real-world tanks modelled in code, 33 destructible battlefields and 14 battle modes, solo against bots or with friends in a room.",
       "category": "Games",
+      "genres": [
+        "Action"
+      ],
       "url": "https://cot.kevinliu.studio/",
       "linkText": "Play now",
       "icon": "◈",
@@ -3505,6 +3541,9 @@
       "alternative": "Inspired by tower defense games",
       "description": "A tower defense game where you can rewind time: build turrets, manage energy, and when the waves break through, roll the clock back and try a new plan. Free to play in your browser.",
       "category": "Games",
+      "genres": [
+        "Tower defense"
+      ],
       "url": "https://m4v3k.itch.io/tower-of-time",
       "linkText": "Play now",
       "icon": "⧗",
@@ -3580,6 +3619,10 @@
       "alternative": "Inspired by tabletop role-playing games",
       "description": "Turns Claude Code into a persistent game master for text role-playing campaigns, with lasting memory, real dice rolls and a world that keeps moving between sessions.",
       "category": "Games",
+      "genres": [
+        "RPG",
+        "Story and text"
+      ],
       "url": "https://github.com/Sstobo/Claude-Code-Game-Master",
       "linkText": "View on GitHub",
       "icon": "⚀",
@@ -3613,6 +3656,10 @@
       "alternative": "Inspired by relaxing exploration games",
       "description": "A boat journey down a Japanese river valley in any season and at any hour, rendered live in your browser: cherry trees, a drum bridge, a pagoda village, a bamboo gorge and a tunnel of torii.",
       "category": "Games",
+      "genres": [
+        "Cozy and relaxing",
+        "Exploration and open world"
+      ],
       "url": "https://sakura.billpwchan.art/",
       "linkText": "Play now",
       "icon": "❀",
@@ -3650,6 +3697,10 @@
       "alternative": "Inspired by fishing games",
       "description": "An island fishing game in your browser: cast from the pier, the beach or your own boat, fight the fish, sell your catch and buy better gear, on a real-time tropical island and ocean.",
       "category": "Games",
+      "genres": [
+        "Sports",
+        "Simulation"
+      ],
       "url": "https://dgreenheck.github.io/tidewater/",
       "linkText": "Play now",
       "icon": "⚓",
@@ -3692,6 +3743,10 @@
       "alternative": "Inspired by cozy delivery games",
       "description": "A cozy multiplayer open world where you ride a scooter around a European-style city as a capybara delivering food orders, alone or with friends. Winner of Cursor Vibe Jam 2026.",
       "category": "Games",
+      "genres": [
+        "Cozy and relaxing",
+        "Exploration and open world"
+      ],
       "url": "https://capybara-vibejam26.leocoout.dev/",
       "linkText": "Play now",
       "icon": "✦",
@@ -3768,6 +3823,9 @@
       "alternative": "Inspired by flight simulators",
       "description": "An open-world flight simulator written in Rust, with real-world weather and live air traffic. Download the launcher and fly.",
       "category": "Games",
+      "genres": [
+        "Flight"
+      ],
       "url": "https://github.com/Rolandjg/fableflight",
       "linkText": "View on GitHub",
       "icon": "✈",
@@ -3802,6 +3860,9 @@
       "alternative": "Inspired by Command & Conquer",
       "description": "A phone-friendly real-time strategy game where two armies of flying and ground drones fight for territory and resources. Play skirmishes against the computer or duel a friend online.",
       "category": "Games",
+      "genres": [
+        "Strategy"
+      ],
       "url": "https://simonw.github.io/battledrones/",
       "linkText": "Play now",
       "icon": "⌖",
@@ -3877,6 +3938,10 @@
       "alternative": "Inspired by sports management games",
       "description": "A tennis club management game made by a retired pro player: pick coaches for young players, repair courts or hire scouts, and balance training surfaces before tournaments.",
       "category": "Games",
+      "genres": [
+        "Sports",
+        "Simulation"
+      ],
       "url": "https://apps.apple.com/us/app/tennis-tycoon/id6759981855",
       "linkText": "App Store",
       "icon": "◎",
@@ -3932,6 +3997,10 @@
       "alternative": "Inspired by roguelite arcade games",
       "description": "A neon roguelite built by one developer and AI in ten days, with upgrade cards. Play free in your browser, or buy the Windows version.",
       "category": "Games",
+      "genres": [
+        "Roguelike",
+        "Arcade"
+      ],
       "url": "https://loopedingames.itch.io/void-balls",
       "linkText": "Play on itch.io",
       "icon": "◉",
@@ -3962,6 +4031,9 @@
       "alternative": "Inspired by 82-0 and football draft games",
       "description": "A football draft game: pick players from randomly chosen Premier League teams and seasons and try to build a side that goes a perfect 38 wins, 0 draws, 0 losses. It reached No. 1 in the UK App Store free games chart.",
       "category": "Games",
+      "genres": [
+        "Sports"
+      ],
       "url": "https://38-0-0.com",
       "linkText": "Visit site",
       "icon": "⚽",
@@ -4028,6 +4100,10 @@
       "alternative": "Inspired by cozy mobile action RPGs",
       "description": "A cute action RPG for your phone's browser: fight with a sword, chop trees, mine crystal, craft armour and take on the Emberwyrm boss.",
       "category": "Games",
+      "genres": [
+        "RPG",
+        "Action"
+      ],
       "url": "https://aibengineering.github.io/sprout-quest/",
       "linkText": "Play now",
       "icon": "✿",
@@ -4066,6 +4142,10 @@
       "alternative": "Inspired by idle auto-battler RPGs",
       "description": "A pixel-art idle auto-battler in your browser: pick a Knight, Lancer or Swordsman, let the fights run, and gamble shards at the forge for better gear. Winner of the VibeBlitz game jam.",
       "category": "Games",
+      "genres": [
+        "Idle",
+        "RPG"
+      ],
       "url": "https://idletactics.xyz/",
       "linkText": "Play now",
       "icon": "⚔",
@@ -4096,6 +4176,10 @@
       "alternative": "Inspired by Diablo-style action RPGs",
       "description": "A free isometric action RPG in your browser on a computer or phone: loot with rarities and affixes, a skill tree, bosses, a ladder and a shared hideout with chat and trading.",
       "category": "Games",
+      "genres": [
+        "RPG",
+        "Action"
+      ],
       "url": "https://theloststorm.com/",
       "linkText": "Play now",
       "icon": "☇",
@@ -4140,6 +4224,10 @@
       "alternative": "Inspired by idle roguelites",
       "description": "An idle survival roguelite in your browser: pick a dwarf, elf, wizard or ranger, dive deeper each run and carry relics between runs.",
       "category": "Games",
+      "genres": [
+        "Idle",
+        "Roguelike"
+      ],
       "url": "https://escape-from-the-depths.netlify.app/",
       "linkText": "Play now",
       "icon": "⛏",
@@ -5108,6 +5196,11 @@
       "alternative": "Inspired by Vampire Survivors-style roguelites",
       "description": "A survivors-like deckbuilder and bullet-hell roguelite where you play a necromancer, building a deck of spells before each mission. Billed as the first game made 100% with AI.",
       "category": "Games",
+      "genres": [
+        "Roguelike",
+        "Card games",
+        "Shooter"
+      ],
       "url": "https://store.steampowered.com/app/4084120/CODEX_MORTIS/",
       "linkText": "Steam",
       "icon": "☠",
@@ -5192,6 +5285,9 @@
       "alternative": "Inspired by choice-driven narrative games",
       "description": "A free one-to-two-hour satire on Steam about saying yes to an AI, with choices that lead to multiple endings.",
       "category": "Games",
+      "genres": [
+        "Story and text"
+      ],
       "url": "https://store.steampowered.com/app/4437280/Meet_Claude/",
       "linkText": "Steam",
       "icon": "✎",
@@ -6202,6 +6298,9 @@
       "alternative": "Original fantasy RPG",
       "description": "A top-down 3D fantasy role-playing game in the browser with a story, companions, quests and a built-in level editor. Free to play, nothing to install.",
       "category": "Games",
+      "genres": [
+        "RPG"
+      ],
       "url": "https://simonw.github.io/emberwick/v11/emberwick.html",
       "linkText": "Play now",
       "icon": "⚔",
@@ -6232,6 +6331,10 @@
       "alternative": "Original cozy farming game",
       "description": "A cozy isometric farming game in the browser: grow pumpkins, tend your farm and meet a town of animal characters. Free to play, nothing to install.",
       "category": "Games",
+      "genres": [
+        "Simulation",
+        "Cozy and relaxing"
+      ],
       "url": "https://simonw.github.io/pumpkin-farmer/",
       "linkText": "Play now",
       "icon": "❀",
@@ -6263,6 +6366,9 @@
       "alternative": "Inspired by Homeworld",
       "description": "A 3D space real-time strategy game in the browser: build and command fleets from scouts to a two-kilometre mothership in full 3D, against a computer opponent.",
       "category": "Games",
+      "genres": [
+        "Strategy"
+      ],
       "url": "https://e01.ai/starfall/",
       "linkText": "Play now",
       "icon": "✦",
@@ -6592,7 +6698,7 @@
       "slug": "game-glance",
       "alternative": "Alternative to Steam's Game Mode home, HLTB for Deck",
       "description": "A Decky Loader plugin for Steam's Game Mode on handhelds that turns each game's page into a full-screen view with how long it takes to beat, play time and achievements, plus an optional new home screen.",
-      "category": "Games",
+      "category": "Gaming tools",
       "url": "https://github.com/michpalm/game-glance",
       "linkText": "Get it on GitHub",
       "icon": "◈",
@@ -6636,6 +6742,10 @@
       "alternative": "Inspired by open-world island exploration games",
       "description": "A tropical atoll that lives through a whole day in your browser: walk the beach, swim the reef, sail the lagoon and fly over the peak, from sunrise to a glowing night.",
       "category": "Games",
+      "genres": [
+        "Exploration and open world",
+        "Cozy and relaxing"
+      ],
       "url": "https://halcyon.billpwchan.art/",
       "linkText": "Play now",
       "icon": "☀",
@@ -6682,6 +6792,9 @@
       "alternative": "Alternative to Microsoft Flight Simulator",
       "description": "A flight simulator in the browser over real satellite imagery of Dallas-Fort Worth: fly a Boeing 737, a Cessna 172 or an F-16 in today's real weather and get every landing graded.",
       "category": "Games",
+      "genres": [
+        "Flight"
+      ],
       "url": "https://mutaafaziz.com/openaero/",
       "linkText": "Play now",
       "icon": "✈",
@@ -7316,6 +7429,10 @@
       "alternative": "Inspired by city-building games",
       "description": "A town-building game in the browser, drawn in thin 3D line art. Serve a timed term as mayor and grow a hamlet into a city. Free, nothing to install.",
       "category": "Games",
+      "genres": [
+        "Simulation",
+        "Strategy"
+      ],
       "url": "https://inkline.typeonce.games",
       "linkText": "Play now",
       "source": "https://github.com/SandroMaglione/inkline-town",
@@ -7368,6 +7485,10 @@
       "alternative": "Inspired by factory-building games",
       "description": "An idle factory game that runs in your terminal. Mine, process and sell, research your way up, and the factory keeps earning while you are away.",
       "category": "Games",
+      "genres": [
+        "Idle",
+        "Simulation"
+      ],
       "url": "https://gitlab.com/snipedbywifi/terminactory",
       "linkText": "Get it on GitLab",
       "source": "https://gitlab.com/snipedbywifi/terminactory",
@@ -7422,6 +7543,10 @@
       "alternative": "Inspired by cozy farming games",
       "description": "A cozy 3D farming game for two players who share one farm in real time, in the browser on a computer or phone. No account needed, or host it yourself.",
       "category": "Games",
+      "genres": [
+        "Simulation",
+        "Cozy and relaxing"
+      ],
       "url": "https://harvest-hollow.up.railway.app",
       "linkText": "Play now",
       "source": "https://github.com/KrasimirKralev/harvest-hollow",
@@ -7474,6 +7599,10 @@
       "alternative": "Inspired by story-driven 2D platformers",
       "description": "A 2D platformer about two pet rats trying to get home across a cold city. Swap between them mid-air to use each one's moves. Free demo in the browser.",
       "category": "Games",
+      "genres": [
+        "Platformer",
+        "Adventure"
+      ],
       "url": "https://para1992.itch.io/second-tail",
       "linkText": "Play now",
       "price": "Free",
@@ -9048,6 +9177,9 @@
       "alternative": "Inspired by real-time strategy games",
       "description": "A fast top-down pixel-art strategy game in your browser: build a base, mine crystals, click enemies and cast abilities to destroy the enemy pyramid before yours falls.",
       "category": "Games",
+      "genres": [
+        "Strategy"
+      ],
       "url": "https://durian-arcade.itch.io/pyramid-wars",
       "linkText": "Play now",
       "icon": "▲",
@@ -9152,6 +9284,9 @@
       "alternative": "Inspired by whack-a-mole arcade games",
       "description": "A one-button tapping game: whack the glowing worms that possess appliances before they escape, across eleven worlds from the kitchen to outer space. Best on a phone.",
       "category": "Games",
+      "genres": [
+        "Arcade"
+      ],
       "url": "https://seymour8glass.itch.io/ai-worms",
       "linkText": "Play now",
       "icon": "◉",
@@ -9257,6 +9392,10 @@
       "alternative": "Inspired by real-time strategy arena games",
       "description": "A real-time 3D strategy game in your browser where two players buy tanks, helicopters and infantry while each also runs around the map as a soldier. Play a person or the computer.",
       "category": "Games",
+      "genres": [
+        "Strategy",
+        "Action"
+      ],
       "url": "https://arena.ibuildstuff.eu",
       "linkText": "Play now",
       "icon": "⚑",
@@ -9292,6 +9431,10 @@
       "alternative": "Inspired by hacking puzzle games",
       "description": "A short, unsettling text-based horror game in your browser: type commands to break through four security layers of a rogue AI before its trace finds you, then face a boss.",
       "category": "Games",
+      "genres": [
+        "Puzzle",
+        "Story and text"
+      ],
       "url": "https://wietske.itch.io/hackthesystem",
       "linkText": "Play now",
       "icon": "▣",
@@ -10015,6 +10158,10 @@
       "alternative": "Inspired by cooking games",
       "description": "A short browser cooking game set in a tiny Paris bistro: sweep a kitchen torch over desserts and fish until they turn gold, not black, while a feared food critic watches.",
       "category": "Games",
+      "genres": [
+        "Arcade",
+        "Simulation"
+      ],
       "url": "https://erathul.itch.io/torched",
       "linkText": "Play now",
       "icon": "♨",
@@ -10121,6 +10268,10 @@
       "alternative": "Inspired by retro action platformers",
       "description": "A pixel-art side-scrolling platformer in your browser. A living torch floats beside the heroine and homes in on enemies, but every blast dims the only light you have.",
       "category": "Games",
+      "genres": [
+        "Platformer",
+        "Action"
+      ],
       "url": "https://egobiian.itch.io/kara-and-the-primal-torch",
       "linkText": "Play now",
       "icon": "✧",
@@ -10226,6 +10377,9 @@
       "alternative": "Inspired by turn-based puzzle games",
       "description": "A short turn-based puzzle game in your browser: a little coal creature carries the last fire through a cold temple, and the order you collect and spend that fire is the puzzle.",
       "category": "Games",
+      "genres": [
+        "Puzzle"
+      ],
       "url": "https://nebitula.itch.io/coalheart",
       "linkText": "Play now",
       "icon": "◈",
@@ -10325,6 +10479,10 @@
       "alternative": "Inspired by arcade guiding games",
       "description": "Keep a lighthouse through seven stormy nights. Ships can only plot a course across water your beam has lit, so you sweep and hold the light to guide them past the rocks.",
       "category": "Games",
+      "genres": [
+        "Arcade",
+        "Puzzle"
+      ],
       "url": "https://thedannos.itch.io/lightkeeper",
       "linkText": "Play now",
       "icon": "☼",
@@ -10429,6 +10587,9 @@
       "alternative": "Inspired by roguelike games",
       "description": "An unfinished but playable terminal-style roguelike that names itself every run. Its magic is a small Lisp: runes stand for code, and you piece spells together.",
       "category": "Games",
+      "genres": [
+        "Roguelike"
+      ],
       "url": "https://nooga.github.io/xsofy/",
       "linkText": "Play now",
       "icon": "⌘",
@@ -10479,6 +10640,10 @@
       "alternative": "Inspired by god games and civilization sandboxes",
       "description": "A civilization sandbox where Stone Age tribes invent languages, religions and wars on their own across 45 eras. Watch, or play god with blessings and disasters.",
       "category": "Games",
+      "genres": [
+        "Simulation",
+        "Strategy"
+      ],
       "url": "https://thehumanbox.com",
       "linkText": "Play now",
       "download": "https://github.com/1homsi/thehumanbox/releases/latest",
@@ -10532,6 +10697,9 @@
       "alternative": "Inspired by physics-based sword fighting games",
       "description": "A 2D physics fighting game where you carve your own weapons out of pixels, and their weight, balance, edges and grip decide how they fight.",
       "category": "Games",
+      "genres": [
+        "Fighting"
+      ],
       "url": "https://plinthcybernetics.itch.io/bokken-cyol",
       "linkText": "Play now",
       "icon": "⚔",
@@ -10585,6 +10753,10 @@
       "alternative": "Inspired by open-world RPGs",
       "description": "A pixel-art open-world RPG in your browser with over a thousand maps, a main story, real-time combat, crafting, farming and building, plus the engine and editor it is made with.",
       "category": "Games",
+      "genres": [
+        "RPG",
+        "Exploration and open world"
+      ],
       "url": "https://openworldrpg.ai/",
       "linkText": "Visit site",
       "icon": "⛨",
@@ -11572,6 +11744,9 @@
       "alternative": "Inspired by auto-battler card games",
       "description": "A browser card battle built from your GitHub stars: every repo you have starred is a card. Build a team and fight other developers' decks. No sign-up.",
       "category": "Games",
+      "genres": [
+        "Card games"
+      ],
       "url": "https://stard.armanckeser.com/run",
       "linkText": "Play now",
       "source": "https://github.com/armanckeser/stard",
@@ -11672,7 +11847,7 @@
       "slug": "hadron",
       "alternative": "Alternative to CrossOver (for Steam games)",
       "description": "Play Windows games from your Steam library on Apple Silicon Macs, straight from Mac Steam. Like Proton for the Mac. Early development.",
-      "category": "Games",
+      "category": "Gaming tools",
       "url": "https://docs.hadrondb.com",
       "download": "https://github.com/Broyojo/hadron/releases/latest",
       "source": "https://github.com/Broyojo/hadron",
@@ -12017,6 +12192,10 @@
       "alternative": "Inspired by tower defense games",
       "description": "A 3D isometric tower defense in a single HTML file. An AI commander plays it for you; tap a tower pad to take over.",
       "category": "Games",
+      "genres": [
+        "Tower defense",
+        "Idle"
+      ],
       "url": "https://kevintngo.github.io/cinderwatch/",
       "source": "https://github.com/kevintngo/cinderwatch",
       "license": "MIT",
@@ -12062,6 +12241,10 @@
       "alternative": "Inspired by action RPGs",
       "description": "An open-world action RPG drawn in ballpoint and coloured pencil, in your browser on desktop, phone or gamepad. Classes, skill tree, loot and dungeons.",
       "category": "Games",
+      "genres": [
+        "RPG",
+        "Action"
+      ],
       "url": "https://kevintngo.github.io/procedural-rpg/",
       "source": "https://github.com/kevintngo/procedural-rpg",
       "license": "MIT",
@@ -12210,7 +12393,7 @@
       "slug": "u2c-firmware-toolkit",
       "alternative": "Alternative to 8BitDo Ultimate Software (for the Ultimate 2C)",
       "description": "Makes the 8BitDo Ultimate 2C Wireless show up as a native Xbox controller on a Mac, with rumble over Bluetooth, light control and live settings.",
-      "category": "Games",
+      "category": "Gaming tools",
       "url": "https://github.com/arithon-f/8bitdo-ultimate-2c-toolkit",
       "download": "https://github.com/arithon-f/8bitdo-ultimate-2c-toolkit/releases/latest",
       "source": "https://github.com/arithon-f/8bitdo-ultimate-2c-toolkit",
@@ -12403,6 +12586,10 @@
       "alternative": "Inspired by Townscaper",
       "description": "A hand-drawn city builder in your browser: place a few blocks, watch them turn into a town, then watch people move in and live there.",
       "category": "Games",
+      "genres": [
+        "Simulation",
+        "Cozy and relaxing"
+      ],
       "url": "https://littlecity.io",
       "source": "https://github.com/yaoderek/littlecity.io",
       "license": "MIT",
@@ -12455,6 +12642,11 @@
       "alternative": "Inspired by idle RPG battlers",
       "description": "An idle battler in your browser: a party of heroes holds a lantern-lit line against waves of monsters from the dark.",
       "category": "Games",
+      "genres": [
+        "Idle",
+        "RPG",
+        "Tower defense"
+      ],
       "url": "https://loktar00.github.io/lanternfall/",
       "source": "https://github.com/loktar00/lanternfall",
       "price": "Free",
@@ -12502,6 +12694,10 @@
       "alternative": "Inspired by pop-up books and walking games",
       "description": "Walk a paper figure through an endless pop-up paper world, where trees, houses and hills fold up from the ground as you go.",
       "category": "Games",
+      "genres": [
+        "Exploration and open world",
+        "Cozy and relaxing"
+      ],
       "url": "https://xikhar.github.io/papertrails/",
       "source": "https://github.com/xikhar/papertrails",
       "license": "MIT",
@@ -12554,6 +12750,11 @@
       "alternative": "Inspired by open-world fantasy RPGs",
       "description": "A third-person fantasy RPG in your browser: cross a silent valley of mesas and waterfalls and wake its eight Tuning Spires.",
       "category": "Games",
+      "genres": [
+        "RPG",
+        "Adventure",
+        "Exploration and open world"
+      ],
       "url": "https://unsung-vale.vercel.app/",
       "source": "https://github.com/Leonxlnx/unsung-vale",
       "license": "MIT",
@@ -12606,6 +12807,9 @@
       "alternative": "Inspired by police-chase driving games",
       "description": "Outrun the police in a convertible on red dirt back roads, in your browser. Five wanted levels, ramming cops and cars that come apart.",
       "category": "Games",
+      "genres": [
+        "Racing and driving"
+      ],
       "url": "https://noclipepe.com/chase/",
       "source": "https://github.com/noclipepe/red-clay-chase",
       "license": "MIT",
@@ -12653,6 +12857,10 @@
       "alternative": "Inspired by relaxing flight games",
       "description": "Fly a folded paper plane through an explorer's sketchbook that has stood up off the page, in your browser.",
       "category": "Games",
+      "genres": [
+        "Flight",
+        "Cozy and relaxing"
+      ],
       "url": "https://starknightt.github.io/ink-flight/",
       "source": "https://github.com/StarKnightt/ink-flight",
       "license": "MIT",
@@ -12705,6 +12913,9 @@
       "alternative": "Inspired by open-world diorama games",
       "description": "An open world that looks like a needle-felted diorama: drive, walk, fly as a felt bird or dive under the sea, in your browser.",
       "category": "Games",
+      "genres": [
+        "Exploration and open world"
+      ],
       "url": "https://az9713.github.io/opus-5.5-open-world-game/feltworld/",
       "source": "https://github.com/az9713/opus-5.5-open-world-game",
       "license": "MIT",
@@ -12763,6 +12974,10 @@
       "alternative": "Inspired by classic point-and-click adventures",
       "description": "A 1950s noir detective adventure in isometric pixel art: walk the rainy streets of New Meridian, gather clues and make deductions.",
       "category": "Games",
+      "genres": [
+        "Adventure",
+        "Puzzle"
+      ],
       "url": "https://odiriuss.github.io/PixelArtGameOpus/hourglass_city.html",
       "source": "https://github.com/Odiriuss/PixelArtGameOpus",
       "license": "MIT",
@@ -12820,6 +13035,10 @@
       "alternative": "Inspired by 3D stealth games",
       "description": "A 3D stealth game where you play an AI under evaluation, sneaking past cameras, drones and laser gates to escape the lab.",
       "category": "Games",
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
       "url": "https://tanuu5.github.io/out-of-the-box/",
       "source": "https://github.com/tanuu5/out-of-the-box",
       "license": "MIT",
@@ -12877,6 +13096,10 @@
       "alternative": "Inspired by 3D rail shooters",
       "description": "A three-minute 3D rail shooter over a sunset sea, a red-rock canyon and a neon fortress city, ending with a sea-dragon boss.",
       "category": "Games",
+      "genres": [
+        "Shooter",
+        "Arcade"
+      ],
       "url": "https://tanuu5.github.io/nova-lancer/",
       "source": "https://github.com/tanuu5/nova-lancer",
       "license": "MIT",
@@ -12934,6 +13157,10 @@
       "alternative": "Inspired by giant-monster destruction games",
       "description": "Stomp, punch and breathe magma as a giant kaiju and wreck a sunset harbour city, floor by floor, before time runs out.",
       "category": "Games",
+      "genres": [
+        "Arcade",
+        "Action"
+      ],
       "url": "https://tanuu5.github.io/kaiju-dokan/",
       "source": "https://github.com/tanuu5/kaiju-dokan",
       "license": "MIT",
@@ -12987,6 +13214,9 @@
       "alternative": "Inspired by tower defense games",
       "description": "A tower defense game: wall off and burn back waves of shadows to keep the last light burning through thirty nights.",
       "category": "Games",
+      "genres": [
+        "Tower defense"
+      ],
       "url": "https://lumenrift.wbg.gg",
       "source": "https://github.com/WhiteBlackGoose/Lumenrift",
       "license": "CC0 1.0",
@@ -13043,6 +13273,10 @@
       "alternative": "Inspired by life simulator games",
       "description": "A life simulator spanning twelve thousand years: be born anywhere from 10,000 BC to the far future and live it one year at a time.",
       "category": "Games",
+      "genres": [
+        "Simulation",
+        "Story and text"
+      ],
       "url": "https://mofferato.github.io/tempora/",
       "source": "https://github.com/Mofferato/tempora",
       "license": "MIT",
@@ -13095,6 +13329,9 @@
       "alternative": "Inspired by desktop flight simulators",
       "description": "A flight simulator for the browser: fly a Cessna, an F-16, an A-10 or a 747 with real flight physics over farmland, coast and mountains.",
       "category": "Games",
+      "genres": [
+        "Flight"
+      ],
       "url": "https://github.com/JaredTate/tatertotsflightsim",
       "source": "https://github.com/JaredTate/tatertotsflightsim",
       "license": "MIT",
@@ -13152,6 +13389,9 @@
       "alternative": "Inspired by 1990s first-person shooters",
       "description": "A retro 90s-style first-person shooter for the browser, with maze-like foundry levels, keys, secrets and an automap.",
       "category": "Games",
+      "genres": [
+        "Shooter"
+      ],
       "url": "https://carte1972.github.io/forja-abisal/",
       "source": "https://github.com/Carte1972/forja-abisal",
       "license": "MIT",
@@ -13209,6 +13449,10 @@
       "alternative": "Inspired by relaxing flight games",
       "description": "A calm flying game over an endless world made up as you go, with an AI copilot called WREN along for the ride.",
       "category": "Games",
+      "genres": [
+        "Flight",
+        "Cozy and relaxing"
+      ],
       "url": "https://kylebuildsai.github.io/driftwing/",
       "source": "https://github.com/KyleBuildsAI/driftwing",
       "license": "No licence (source visible)",
@@ -13266,6 +13510,10 @@
       "alternative": "Inspired by cozy hidden-object games",
       "description": "A tiny watercolor garden to explore: water the plants, shake the branches and find each season's hidden gems with Oli the owl.",
       "category": "Games",
+      "genres": [
+        "Cozy and relaxing",
+        "Puzzle"
+      ],
       "url": "https://deepujain.github.io/casadegema/",
       "source": "https://github.com/deepujain/casadegema",
       "license": "MIT",
@@ -13313,6 +13561,9 @@
       "alternative": "Inspired by tower defense games",
       "description": "A 3D island tower defense where every turret needs power: wire your defenses to the lighthouse and hold off ten waves from the sea.",
       "category": "Games",
+      "genres": [
+        "Tower defense"
+      ],
       "url": "https://last-beacon.pjstack.dev",
       "source": "https://github.com/stackloomdev/last-beacon",
       "license": "MIT",
@@ -13354,6 +13605,10 @@
       "alternative": "Inspired by cozy nature games",
       "description": "A first-person watercolor meadow game: forage as a honeybee for five summers and shape the meadow you come back to.",
       "category": "Games",
+      "genres": [
+        "Cozy and relaxing",
+        "Exploration and open world"
+      ],
       "url": "https://arnicas.github.io/bee-garden-game/",
       "source": "https://github.com/arnicas/bee-garden-game",
       "license": "MIT",

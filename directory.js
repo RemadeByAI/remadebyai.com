@@ -1,4 +1,4 @@
-// Search and filters for the "All apps" list at /apps/ (written by build.js).
+// Search and filters for the "All apps" list at /apps/ and the games list at /games/ (both written by build.js).
 // The cards themselves are plain HTML written by build.js from projects.json, so the list works without JavaScript;
 // this script only hides and shows them. To add an app, edit projects.json and run "node build.js".
 // Each <select data-filter="NAME"> matches the card's data-NAME attribute (a "|"-separated list).
@@ -13,6 +13,10 @@ const selects = [...filters.querySelectorAll('select[data-filter]')];
 const cards = [...document.querySelectorAll('#all-apps .card')];
 const count = filters.querySelector('.count');
 const empty = document.querySelector('.empty');
+const noun = count.dataset.noun || 'app';
+// "Looking for a game? Search the games": shown while a search is typed, carrying the search to the other list.
+const also = document.querySelector('.also');
+const alsoLink = also && also.querySelector('a');
 let group = 'all';
 
 function update({ keepUrl = false } = {}) {
@@ -27,8 +31,13 @@ function update({ keepUrl = false } = {}) {
     if (show) visible += 1;
   }
   for (const button of groupButtons) button.setAttribute('aria-pressed', String(button.dataset.group === group));
-  count.textContent = visible === cards.length ? `${visible} apps`
-    : `${visible} of ${cards.length} ${cards.length === 1 ? 'app' : 'apps'}`;
+  count.textContent = visible === cards.length ? `${visible} ${noun}s`
+    : `${visible} of ${cards.length} ${cards.length === 1 ? noun : noun + 's'}`;
+  if (also) {
+    const q = searchInput.value.trim();
+    also.hidden = !q;
+    alsoLink.href = alsoLink.dataset.also + (q ? `?q=${encodeURIComponent(q)}` : '');
+  }
   empty.hidden = visible > 0;
   if (!keepUrl) saveToUrl(active);
 }
@@ -55,7 +64,7 @@ document.querySelector('#reset').addEventListener('click', () => {
   searchInput.focus();
 });
 
-// The header search box (site.js) calls this on /apps/ instead of reloading the page.
+// The header search box (site.js) calls this on /apps/ and /games/ instead of reloading the page.
 window.rbaShowSearch = query => {
   searchInput.value = query;
   update();

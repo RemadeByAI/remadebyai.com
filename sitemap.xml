@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://remadebyai.com/</loc><lastmod>2026-11-27</lastmod></url>
-  <url><loc>https://remadebyai.com/apps/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/games/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://remadebyai.com/categories/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://remadebyai.com/new/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://remadebyai.com/about/</loc></url>
@@ -25,6 +26,27 @@
   <url><loc>https://remadebyai.com/platforms/web/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://remadebyai.com/platforms/ios/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/platforms/android/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://remadebyai.com/games/action/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/games/adventure/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/games/arcade/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/games/card-games/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://remadebyai.com/games/cozy-and-relaxing/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/games/exploration-and-open-world/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/games/fighting/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://remadebyai.com/games/flight/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/games/idle/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/games/mmo/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://remadebyai.com/games/platformer/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://remadebyai.com/games/puzzle/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/games/racing-and-driving/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/games/roguelike/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://remadebyai.com/games/rpg/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/games/shooter/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/games/simulation/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/games/sports/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://remadebyai.com/games/story-and-text/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/games/strategy/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://remadebyai.com/games/tower-defense/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://remadebyai.com/categories/3d-and-cad/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://remadebyai.com/categories/3d-printing/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://remadebyai.com/categories/audio/</loc><lastmod>2026-11-24</lastmod></url>
@@ -36,7 +58,7 @@
   <url><loc>https://remadebyai.com/categories/family/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/categories/file-sharing/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://remadebyai.com/categories/finance/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://remadebyai.com/categories/games/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/categories/gaming-tools/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/categories/graphics/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://remadebyai.com/categories/health-and-fitness/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://remadebyai.com/categories/home/</loc><lastmod>2026-11-25</lastmod></url>

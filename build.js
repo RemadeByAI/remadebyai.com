@@ -18,7 +18,37 @@ const SITE = 'https://remadebyai.com';
 const NEW_ON_HOME = 6;
 const GROUPS = { emukey: 'EmuKey app', open: 'Open source', indie: 'Independent' }; // indie = closed source, not by EmuKey
 const PLATFORMS = ['Windows', 'macOS', 'Linux', 'Web', 'iOS', 'Android'];
-const GENERATED_DIRS = ['apps', 'categories', 'new', 'about', 'list', 'badge', 'alternatives', 'platforms'];
+const GENERATED_DIRS = ['apps', 'categories', 'new', 'about', 'list', 'badge', 'alternatives', 'platforms', 'games'];
+
+// Games are their own section (/games/), apart from the app categories. Every entry with category "Games"
+// lists one or more of these genres in "genres"; the first one is its main genre (card label, "More in").
+// noun: how page titles name the genre ("AI-built RPGs"). intro: our own one-line description.
+const GAMES = 'Games';
+const GENRES = [
+  { name: 'Action', noun: 'action games', intro: 'Real-time games where quick hands matter: sword fights, tank battles, loot-heavy action RPGs and a kaiju on the loose.' },
+  { name: 'Adventure', noun: 'adventure games', intro: 'Story-led games about exploring, sneaking and solving your way forward, from a noir detective case to two pet rats finding their way home.' },
+  { name: 'Arcade', noun: 'arcade games', intro: 'Short, replayable games you can pick up in a minute: shooters, one-button tappers, boss rushes and high-score chasers.' },
+  { name: 'Card games', noun: 'card games', intro: 'Deck builders and card battlers, including one played inside Claude Code and one built from your GitHub stars.' },
+  { name: 'Cozy and relaxing', noun: 'cozy games', intro: 'Calm games with no rush and nothing to lose: farming, gardening, gliding, wandering and building little towns.' },
+  { name: 'Exploration and open world', noun: 'open-world games', intro: 'Big places to wander: procedural galaxies, island atolls, felt dioramas and open-world RPGs, most of them right in your browser.' },
+  { name: 'Fighting', noun: 'fighting games', intro: 'One-on-one and free-for-all fighters, from a 20-player platform brawler to physics sword duels.' },
+  { name: 'Flight', noun: 'flight games', intro: 'Flight simulators with real physics and weather, plus relaxed flying games with paper planes and gliders.' },
+  { name: 'Idle', noun: 'idle games', intro: 'Games that keep playing while you watch or step away: auto-battlers, idle roguelites and a factory in your terminal.' },
+  { name: 'MMO', noun: 'MMO games', intro: 'Online worlds shared with other players, from a classic-style MMORPG to a 1990s online text adventure rebuilt by its creator.' },
+  { name: 'Platformer', noun: 'platformers', intro: 'Side-scrolling jump-and-run games with pixel art, bosses and a twist on how you move.' },
+  { name: 'Puzzle', noun: 'puzzle games', intro: 'Games that make you think: turn-based logic, hidden objects, deductions and a hacking puzzle against a rogue AI.' },
+  { name: 'Racing and driving', noun: 'racing games', intro: 'Rally stages, police chases and neon time trials, played in your browser.' },
+  { name: 'Roguelike', noun: 'roguelikes', intro: 'Roguelikes and roguelites: every run is different, death sends you back to the start, and what you learn carries over.' },
+  { name: 'RPG', noun: 'RPGs', intro: 'Role-playing games with quests, classes, loot and stories, from cute mobile RPGs to open worlds and a Claude Code game master.' },
+  { name: 'Shooter', noun: 'shooters', intro: 'Bullet hells, rail shooters and a retro 90s first-person shooter.' },
+  { name: 'Simulation', noun: 'simulation games', intro: 'Run a farm, a town, a tennis club, a factory or a whole civilisation, or live a life one year at a time.' },
+  { name: 'Sports', noun: 'sports games', intro: 'Football drafts, tennis management and island fishing.' },
+  { name: 'Story and text', noun: 'story and text games', intro: 'Games told mostly in words: text adventures, choice-driven stories, a life simulator and an AI game master.' },
+  { name: 'Strategy', noun: 'strategy games', intro: 'Real-time strategy, space fleets, city building and god games, against the computer or a friend.' },
+  { name: 'Tower defense', noun: 'tower defense games', intro: 'Build defences and hold the line against waves, with twists like rewinding time or wiring every turret to a lighthouse.' },
+].map(g => ({ ...g, slug: g.name.toLowerCase().replace(/[^a-z0-9]+/g, '-') })); // same as slugify() below
+const GENRE_BY_NAME = new Map(GENRES.map(g => [g.name, g]));
+const isGame = app => app.category === GAMES;
 
 // Analytics. Both are optional: leave a value empty and that part is left out of every page.
 // - cloudflareToken: the Cloudflare Web Analytics site token for remadebyai.com (page views, visitors,
@@ -146,10 +176,15 @@ function load() {
         if (src.quote && src.quote.split(/\s+/).length > 40) problems.push(`${where}: keep whatPeopleSay quotes short (40 words max).`);
       }
     }
+    if (app.category === GAMES) {
+      if (!(app.genres || []).length) problems.push(`${where}: games need "genres" (one or more of ${GENRES.map(g => g.name).join(', ')}).`);
+      for (const g of app.genres || []) if (!GENRE_BY_NAME.has(g)) problems.push(`${where}: genre "${g}" should be one of ${GENRES.map(x => x.name).join(', ')}.`);
+    } else if (app.genres) problems.push(`${where}: only games (category "Games") have "genres".`);
     const slug = app.slug || slugify(app.name || '');
     if (slugs.has(slug)) problems.push(`${where}: slug "${slug}" is used twice. Give one of them its own "slug".`);
     slugs.add(slug);
-    return { ...app, slug, order: index, categorySlug: slugify(app.category || '') };
+    const genres = (app.genres || []).map(g => GENRE_BY_NAME.get(g)).filter(Boolean);
+    return { ...app, slug, order: index, categorySlug: slugify(app.category || ''), genreList: genres };
   });
   if (problems.length) {
     console.error('projects.json has problems, nothing was built:\n  - ' + problems.join('\n  - '));
@@ -220,9 +255,9 @@ function header() {
   return `<header>
   <div class="wrap nav">
     <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="35" height="35"><span>RemadeBy<em>AI</em><small>.com</small></span></a>
-    <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/new/">New</a><a href="/apps/">All apps</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
+    <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/games/">Games</a><a href="/new/">New</a><a href="/apps/">All apps</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
     <form class="site-search" action="/apps/" method="get" role="search"${ANALYTICS.clicksEndpoint ? ` data-clicks="${esc(ANALYTICS.clicksEndpoint)}"` : ''}>
-      <label><span class="visually-hidden">Search all apps</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
+      <label><span class="visually-hidden">Search all apps and games</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
       <ul class="site-search-results" id="site-search-results" role="listbox" aria-label="Matching apps" hidden></ul>
     </form>
     <button class="theme-toggle" type="button" aria-label="Switch to light mode"><span class="to-light"><span class="icon" aria-hidden="true">☀\uFE0E</span><span class="label">Light mode</span></span><span class="to-dark"><span class="icon" aria-hidden="true">☾</span><span class="label">Dark mode</span></span></button>
@@ -232,7 +267,7 @@ function header() {
 const footer = () => `<footer>
   <div class="wrap foot">
     <div class="foot-about"><a class="brand" href="/">RemadeBy<em>AI</em></a><p>Familiar software, rebuilt with AI. <em class="foot-note">(A software directory from <a href="https://emukey.com/">EmuKey LLC</a>.)</em></p></div>
-    <nav class="foot-links" aria-label="Footer"><a href="/apps/">All apps</a><a href="/new/">New arrivals</a><a href="/categories/">Categories</a><a href="/alternatives/">Alternatives</a><a href="/platforms/">Platforms</a><a href="/about/">About</a><a href="/list/">List your app</a><a href="/feed.xml">RSS feed</a></nav>
+    <nav class="foot-links" aria-label="Footer"><a href="/apps/">All apps</a><a href="/games/">Games</a><a href="/new/">New arrivals</a><a href="/categories/">Categories</a><a href="/alternatives/">Alternatives</a><a href="/platforms/">Platforms</a><a href="/about/">About</a><a href="/list/">List your app</a><a href="/feed.xml">RSS feed</a></nav>
   </div>
 </footer>`;
 const foot = `</main>
@@ -249,16 +284,21 @@ function externalLabel(app) {
 }
 
 // One card. data-* attributes feed the search and filters in directory.js.
+// Where a card's label links: an app's category, or a game's main genre.
+const sectionLink = app => isGame(app)
+  ? { href: `/games/${app.genreList[0].slug}/`, text: app.genreList[0].name }
+  : { href: `/categories/${app.categorySlug}/`, text: app.category };
 function card(app, level = 3) {
-  const search = [app.name, app.alternative, app.description, app.category, app.owner, app.maker, ...(app.platforms || []), app.license, app.price, ...(app.keywords || [])]
+  const search = [app.name, app.alternative, app.description, app.category, ...app.genreList.map(g => g.name), app.owner, app.maker, ...(app.platforms || []), app.license, app.price, ...(app.keywords || [])]
     .filter(Boolean).join(' ').toLowerCase();
   const list = values => esc(values.join('|'));
-  return `<article class="card" data-group="${esc(app.group)}" data-category="${esc(app.categorySlug)}" data-platform="${list(app.platforms || [])}" data-price="${list(priceTags(app))}" data-licence="${list(licenceTags(app))}" data-search="${esc(search)}">
+  const label = sectionLink(app);
+  return `<article class="card" data-group="${esc(app.group)}" data-category="${esc(app.categorySlug)}"${isGame(app) ? ` data-genre="${list(app.genreList.map(g => g.slug))}"` : ''} data-platform="${list(app.platforms || [])}" data-price="${list(priceTags(app))}" data-licence="${list(licenceTags(app))}" data-search="${esc(search)}">
   <div class="card-top">${tile(app)}<small>${esc(app.owner)}</small></div>
   <h${level} class="card-title"><a class="card-link" href="/apps/${app.slug}/">${esc(app.name)}</a></h${level}>
   <p class="alternative">${esc(app.alternative)}</p>
   <p>${esc(app.description)}</p>
-  <div class="card-bottom"><a class="card-category" href="/categories/${app.categorySlug}/">${esc(app.category)}</a><span class="card-more" aria-hidden="true">Details →</span></div>
+  <div class="card-bottom"><a class="card-category" href="${label.href}">${esc(label.text)}</a><span class="card-more" aria-hidden="true">Details →</span></div>
 </article>`;
 }
 // level: the heading level of each card's name (2 on pages where the cards sit right under the h1).
@@ -296,6 +336,7 @@ const APP_CATEGORY = {
   'Maps and GIS': 'TravelApplication', Networking: 'UtilitiesApplication', Games: 'GameApplication', 'Media server': 'MultimediaApplication',
   Family: 'LifestyleApplication', Translation: 'ReferenceApplication', 'File sharing': 'UtilitiesApplication', Backup: 'UtilitiesApplication',
   '3D printing': 'DesignApplication', 'Science and space': 'EducationalApplication', Finance: 'FinanceApplication', Passwords: 'SecurityApplication',
+  'Gaming tools': 'GameApplication',
 };
 // Price for structured data, only when we know it: free apps cost 0, and an exact price stated in "price" is used.
 function appOffers(app) {
@@ -319,7 +360,9 @@ function shotFigure(s) {
 }
 function appPage(app, all) {
   const facts = [
-    ['Category', `<a href="/categories/${app.categorySlug}/">${esc(app.category)}</a>`],
+    isGame(app)
+      ? [app.genreList.length > 1 ? 'Genres' : 'Genre', app.genreList.map(g => `<a href="/games/${g.slug}/">${esc(g.name)}</a>`).join(', ')]
+      : ['Category', `<a href="/categories/${app.categorySlug}/">${esc(app.category)}</a>`],
     // Games say "Inspired by X" instead of "Alternative to X"; the facts row follows suit.
     [/^Inspired by\s/i.test(app.alternative) ? 'Inspired by' : 'Replaces', esc(app.alternative.replace(/^(Alternative to|Inspired by)\s*/i, ''))],
     ['Platforms', esc((app.platforms || []).join(', '))],
@@ -355,10 +398,15 @@ function appPage(app, all) {
 
   const buzz = whatPeopleSay(app);
 
-  const related = all.filter(a => a.categorySlug === app.categorySlug && a.slug !== app.slug).sort(byNewest).slice(0, 3);
+  // Games: more in the same main genre (topped up from the game's other genres); apps: more in the same category.
+  const main = app.genreList[0];
+  const related = isGame(app)
+    ? [...all.filter(a => a.slug !== app.slug && a.genreList[0] === main).sort(byNewest),
+       ...all.filter(a => a.slug !== app.slug && a.genreList[0] !== main && a.genreList.some(g => app.genreList.includes(g))).sort(byNewest)].slice(0, 3)
+    : all.filter(a => a.categorySlug === app.categorySlug && a.slug !== app.slug).sort(byNewest).slice(0, 3);
   const relatedHtml = related.length ? `
   <section class="app-section" aria-labelledby="related-title">
-    <h2 id="related-title">More in ${esc(app.category)}</h2>
+    <h2 id="related-title">${isGame(app) ? `More ${esc(main.noun)}` : `More in ${esc(app.category)}`}</h2>
     ${cardGrid(related)}
   </section>` : '';
 
@@ -371,9 +419,10 @@ function appPage(app, all) {
   const preview = firstLocal ? { src: firstLocal.src, ...imageSize(firstLocal.src), alt: firstLocal.alt } : OG_DEFAULT;
   const offers = appOffers(app);
   const software = {
-    '@context': 'https://schema.org', '@type': 'SoftwareApplication', '@id': `${page}#app`, name: app.name,
+    '@context': 'https://schema.org', '@type': isGame(app) ? 'VideoGame' : 'SoftwareApplication', '@id': `${page}#app`, name: app.name,
     description: app.description, applicationCategory: APP_CATEGORY[app.category] || 'UtilitiesApplication',
-    applicationSubCategory: app.category, url: app.url, mainEntityOfPage: page,
+    applicationSubCategory: isGame(app) ? main.name : app.category, url: app.url, mainEntityOfPage: page,
+    ...(isGame(app) ? { genre: app.genreList.map(g => g.name) } : {}),
     ...(app.platforms ? { operatingSystem: app.platforms.join(', ') } : {}),
     ...(app.license ? { license: app.license } : {}),
     ...(app.download ? { downloadUrl: app.download } : {}),
@@ -385,11 +434,14 @@ function appPage(app, all) {
     ...(app.review && app.group !== 'emukey' ? { review: { '@type': 'Review', datePublished: app.review.date,
       reviewBody: app.review.body, author: { '@type': 'Organization', name: app.review.author || 'RemadeByAI' } } } : {}),
   };
-  const crumbs = breadcrumbs([['Home', '/'], [app.category, `/categories/${app.categorySlug}/`], [app.name, `/apps/${app.slug}/`]]);
+  const trail = isGame(app)
+    ? [['Games', '/games/'], [main.name, `/games/${main.slug}/`]]
+    : [[app.category, `/categories/${app.categorySlug}/`]];
+  const crumbs = breadcrumbs([['Home', '/'], ...trail, [app.name, `/apps/${app.slug}/`]]);
   return `${head({ title, description: `${app.name}, ${app.alternative.charAt(0).toLowerCase()}${app.alternative.slice(1)}. ${app.description}`,
     canonical: `/apps/${app.slug}/`, image: preview, jsonLd: [software, crumbs] })}
 <div class="wrap app-page">
-  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/categories/${app.categorySlug}/">${esc(app.category)}</a> / <span>${esc(app.name)}</span></nav>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / ${trail.map(([name, url]) => `<a href="${url}">${esc(name)}</a> / `).join('')}<span>${esc(app.name)}</span></nav>
   <section class="app-hero" aria-labelledby="app-title">
     <div>
       <div class="app-title-row">${tile(app)}<small class="owner">${esc(GROUPS[app.group])}</small></div>
@@ -667,21 +719,30 @@ function topicPage(t) {
     apps: t.apps,
   });
 }
+// Platform pages list the apps first, then the games, each A to Z under its own heading.
 function platformPage(g) {
   const n = g.apps.length;
-  const games = g.apps.filter(a => a.category === 'Games').length;
-  const plural = (k, word) => `${k} ${word}${k === 1 ? '' : 's'}`;
-  const counts = games ? `${plural(n - games, 'app')} and ${plural(games, 'game')}` : plural(n, 'app');
+  const apps = g.apps.filter(a => !isGame(a));
+  const games = g.apps.filter(isGame);
+  const counts = games.length ? `${plural(apps.length, 'app')} and ${plural(games.length, 'game')}` : plural(n, 'app');
   const where = g.platform === 'Web' ? 'for the web' : `for ${g.platform}`;
-  const sample = andList([...g.apps].sort(byNewest).filter(a => a.category !== 'Games').slice(0, 3).map(a => a.name));
-  return listPage({
-    canonical: `/platforms/${g.slug}/`, title: `${g.heading} | RemadeByAI`,
+  const sample = andList([...apps].sort(byNewest).slice(0, 3).map(a => a.name));
+  const block = (id, title, list, more) => list.length ? `
+  <section class="app-section" aria-labelledby="${id}">
+    <div class="block-head"><h2 id="${id}">${title} <small class="muted">${list.length}</small></h2>${more}</div>
+    ${cardGrid(list)}
+  </section>` : '';
+  return `${head({ title: `${g.heading} | RemadeByAI`, canonical: `/platforms/${g.slug}/`,
     description: `${counts} ${where} built with AI, including ${sample}. Alternatives to familiar software, listed on RemadeByAI.`,
-    jsonLd: [itemList(g.heading, g.apps), breadcrumbs([['Home', '/'], ['Platforms', '/platforms/'], [g.platform, `/platforms/${g.slug}/`]])],
-    label: 'Platform', heading: esc(g.heading),
-    intro: `${counts} that run ${g.platform === 'Web' ? 'in a web browser' : `on ${esc(g.platform)}`}.${g.note ? ' ' + esc(g.note) : ''} <a href="/apps/?platform=${encodeURIComponent(g.platform)}">Filter them further</a> or see <a href="/platforms/">other platforms</a>.`,
-    apps: g.apps,
-  });
+    jsonLd: [itemList(g.heading, [...apps, ...games]), breadcrumbs([['Home', '/'], ['Platforms', '/platforms/'], [g.platform, `/platforms/${g.slug}/`]])] })}
+<div class="wrap list-page">
+  <p class="section-label">✦ Platform</p>
+  <h1 class="page-title">${esc(g.heading)}</h1>
+  <p class="page-intro">${counts} that run ${g.platform === 'Web' ? 'in a web browser' : `on ${esc(g.platform)}`}.${g.note ? ' ' + esc(g.note) : ''} See <a href="/platforms/">other platforms</a>.</p>
+  ${block('platform-apps', 'Apps', apps, `<a href="/apps/?platform=${encodeURIComponent(g.platform)}">Filter these apps →</a>`)}
+  ${block('platform-games', 'Games', games, `<a href="/games/?platform=${encodeURIComponent(g.platform)}">Filter these games →</a>`)}
+</div>
+${foot}`;
 }
 // Chip lists for the hubs, the categories page and the home page.
 const topicChips = topics => `<ul class="category-list">\n${topics.map(t =>
@@ -724,7 +785,7 @@ ${items.map(({ a, when }) => `  <item>
     <link>${SITE}/apps/${a.slug}/</link>
     <guid isPermaLink="true">${SITE}/apps/${a.slug}/</guid>
     <pubDate>${when.toUTCString()}</pubDate>
-    <category>${xmlEsc(a.category)}</category>
+    <category>${xmlEsc(a.category)}</category>${a.genreList.map(g => `\n    <category>${xmlEsc(g.name)}</category>`).join('')}
     <description>${xmlEsc(a.description + ([a.platforms && a.platforms.join(', '), a.price, a.license].some(Boolean) ? ` (${[a.platforms && a.platforms.join(', '), a.price, a.license].filter(Boolean).join(' · ')})` : ''))}</description>
   </item>`).join('\n')}
 </channel>
@@ -768,9 +829,10 @@ function featured(apps) {
     ${articles}${pick}
   </section>`;
 }
-function filterOptions(categories, apps) {
+// sections: the categories (All apps) or genres (Games) for the first drop-down; key is the card's data-* name.
+function filterOptions(sections, apps, { key = 'category', label = 'Category', any = 'All categories' } = {}) {
   const platforms = PLATFORMS.filter(p => apps.some(a => (a.platforms || []).includes(p)));
-  const cat = `<label class="select"><span class="visually-hidden">Category</span><select data-filter="category"><option value="">All categories</option>${categories.map(c => `<option value="${c.slug}">${esc(c.name)}</option>`).join('')}</select></label>`;
+  const cat = `<label class="select"><span class="visually-hidden">${label}</span><select data-filter="${key}"><option value="">${any}</option>${sections.map(c => `<option value="${c.slug}">${esc(c.name)}</option>`).join('')}</select></label>`;
   const plat = platforms.length ? `<label class="select"><span class="visually-hidden">Platform</span><select data-filter="platform"><option value="">Any platform</option>${platforms.map(p => `<option>${p}</option>`).join('')}</select></label>` : '';
   const used = (tagger, order) => order.filter(v => apps.some(a => tagger(a).includes(v)));
   const select = (name, label, any, values) => values.length
@@ -781,31 +843,91 @@ function filterOptions(categories, apps) {
   return cat + plat + price + licence;
 }
 
-// All apps (/apps/): the full A to Z list with search and filters (directory.js). Kept off the home page.
-function allAppsPage(apps, categories) {
-  const az = [...apps].sort(byName);
-  return `${head({ title: 'All apps | RemadeByAI', description: 'Every AI-built app and alternative to familiar software on RemadeByAI, A to Z, with search and filters.', canonical: '/apps/',
-    scripts: `\n  <script src="/directory.js?v=${ASSET_VERSION.js}" defer></script>` })}
+// A searchable, filterable A to Z list (directory.js): All apps at /apps/ and the games list on /games/.
+// noun: "app" or "game" for the counter. also: the other list, offered when a search is typed
+// (the header search box sends every search to /apps/, and games live on /games/).
+function directoryPage({ canonical, title, description, label, heading, intro, items, groups, filters, noun, also, before = '', jsonLd = [] }) {
+  const az = [...items].sort(byName);
+  return `${head({ title, description, canonical, jsonLd, scripts: `\n  <script src="/directory.js?v=${ASSET_VERSION.js}" defer></script>` })}
 <section class="wrap directory list-page" id="directory" aria-labelledby="directory-title">
-  <p class="section-label">✦ All apps</p>
+  <p class="section-label">✦ ${esc(label)}</p>
   <div class="directory-top">
-    <div><h1 class="page-title" id="directory-title">All apps</h1><p>EmuKey apps and independent open-source picks, A to Z. <a href="/categories/">Browse by category</a> or see what's <a href="/new/">new</a>.</p></div>
-    <label class="search" hidden><span class="visually-hidden">Search apps</span><input type="search" placeholder="Filter this list"></label>
+    <div><h1 class="page-title" id="directory-title">${heading}</h1><p>${intro}</p></div>
+    <label class="search" hidden><span class="visually-hidden">Search ${noun}s</span><input type="search" placeholder="Filter this list"></label>
   </div>
+  ${before}
   <div class="filters" hidden>
-    <div class="filter-group" role="group" aria-label="Filter apps">
-      <button type="button" data-group="all" aria-pressed="true">All apps</button>
-      <button type="button" data-group="emukey" aria-pressed="false">EmuKey apps</button>
-      <button type="button" data-group="open" aria-pressed="false">Open source</button>
-      ${filterOptions(categories, apps)}
+    <div class="filter-group" role="group" aria-label="Filter ${noun}s">
+      ${groups.map(([value, text], i) => `<button type="button" data-group="${value}" aria-pressed="${i ? 'false' : 'true'}">${text}</button>`).join('\n      ')}
+      ${filters}
     </div>
-    <span class="count" role="status">${apps.length} apps</span>
+    <span class="count" role="status" data-noun="${noun}">${items.length} ${noun}s</span>
   </div>
+  <p class="also" hidden><a href="${also.href}" data-also="${also.href}">${esc(also.text)}</a></p>
   <div class="cards" id="all-apps">
 ${az.map(a => card(a, 2)).join('\n')}
   </div>
-  <div class="empty" hidden><strong>No matching apps</strong><p>Try a different search or reset the filters.</p><button class="button" type="button" id="reset">Reset filters</button></div>
+  <div class="empty" hidden><strong>No matching ${noun}s</strong><p>Try a different search or reset the filters.</p><button class="button" type="button" id="reset">Reset filters</button></div>
 </section>
+${foot}`;
+}
+// All apps (/apps/): every app (not games), A to Z with search and filters. Kept off the home page.
+function allAppsPage(apps, categories) {
+  return directoryPage({
+    canonical: '/apps/', title: 'All apps | RemadeByAI', label: 'All apps', heading: 'All apps', noun: 'app',
+    description: 'Every AI-built app and alternative to familiar software on RemadeByAI, A to Z, with search and filters.',
+    intro: `EmuKey apps and independent open-source picks, A to Z. <a href="/categories/">Browse by category</a> or see what's <a href="/new/">new</a>. Games have <a href="/games/">their own section</a>.`,
+    items: apps, groups: [['all', 'All apps'], ['emukey', 'EmuKey apps'], ['open', 'Open source']],
+    filters: filterOptions(categories, apps), also: { href: '/games/', text: 'Looking for a game? Search the games' },
+  });
+}
+
+// ---------- games (/games/ and /games/<genre>/) ----------
+function genresOf(games) {
+  return GENRES.map(g => ({ ...g, apps: games.filter(a => a.genreList.includes(g)).sort(byName) })).filter(g => g.apps.length);
+}
+const plural = (k, word) => `${k} ${word}${k === 1 ? '' : 's'}`;
+const genreChips = genres => `<ul class="category-list genre-list">\n${genres.map(g =>
+  `  <li><a href="/games/${g.slug}/"><span>${esc(g.name)}</span><small>${g.apps.length}</small></a></li>`).join('\n')}\n</ul>`;
+function gamesPage(games, genres) {
+  const n = games.length;
+  return directoryPage({
+    canonical: '/games/', title: siteTitle(`${n} AI-built games to play`), label: 'Games', heading: 'Games', noun: 'game',
+    description: `${n} original games built with AI, in ${genres.length} genres from ${andList(genres.slice(0, 4).map(g => g.name))} to ${genres[genres.length - 1].name}. Most are free and play in your browser.`,
+    intro: `${n} original games made with AI, most of them free and playable in your browser. Pick a genre, or search and filter the whole list. Tools for gamers are under <a href="/categories/gaming-tools/">Gaming tools</a>.`,
+    before: `<h2 class="sub-title">Genres</h2>\n  ${genreChips(genres)}\n  <h2 class="sub-title">All games, A to Z</h2>`,
+    items: games, groups: [['all', 'All games'], ['open', 'Open source']],
+    filters: filterOptions(genres, games, { key: 'genre', label: 'Genre', any: 'All genres' }),
+    also: { href: '/apps/', text: 'Looking for an app? Search the apps' },
+    jsonLd: [itemList('AI-built games', [...games].sort(byName)), breadcrumbs([['Home', '/'], ['Games', '/games/']])],
+  });
+}
+function genrePage(g, genres) {
+  const n = g.apps.length;
+  const sample = andList([...g.apps].sort(byNewest).slice(0, 3).map(a => a.name));
+  const others = genres.filter(x => x !== g);
+  return `${head({ title: siteTitle(`AI-built ${g.noun}`), canonical: `/games/${g.slug}/`,
+    description: `${plural(n, g.noun === 'RPGs' ? 'RPG' : 'game')} built with AI${n > 1 ? `, including ${sample}` : `: ${sample}`}. ${g.intro}`,
+    jsonLd: [itemList(`AI-built ${g.noun}`, g.apps), breadcrumbs([['Home', '/'], ['Games', '/games/'], [g.name, `/games/${g.slug}/`]])] })}
+<div class="wrap list-page">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/games/">Games</a> / <span>${esc(g.name)}</span></nav>
+  <p class="section-label">✦ Game genre</p>
+  <h1 class="page-title">${esc(g.name)}</h1>
+  <p class="page-intro">${esc(g.intro)} ${plural(n, 'game')}. <a href="/games/">All games</a></p>
+  ${cardGrid(g.apps, 2)}
+  <h2 class="sub-title">Other genres</h2>
+  ${genreChips(others)}
+</div>
+${foot}`;
+}
+// The old /categories/games/ address sends visitors to /games/ (GitHub Pages can't redirect on its own).
+function redirectPage(to) {
+  return `${head({ title: 'Games | RemadeByAI', description: 'Games on RemadeByAI have moved to their own section.', canonical: to, noindex: true,
+    scripts: `\n  <meta http-equiv="refresh" content="0; url=${to}">` })}
+<div class="wrap list-page">
+  <h1 class="page-title">Games have moved</h1>
+  <p class="page-intro">Games now have their own section: <a href="${to}">go to Games</a>.</p>
+</div>
 ${foot}`;
 }
 // About (/about/) and List your app (/list/): hand-edited bodies in partials/, wrapped in the site shell.
@@ -821,8 +943,9 @@ function searchIndex(apps) {
     apps: [...apps].sort(byName).map(a => ({
       n: a.name, u: `/apps/${a.slug}/`, r: a.alternative.replace(/^(Alternative to|Inspired by)\s*/i, ''),
       ...(/^Inspired by\s/i.test(a.alternative) ? { i: 1 } : {}),
-      ...(a.keywords ? { k: a.keywords.join(' ') } : {}),
-      c: a.category, m: a.maker || a.owner, p: a.platforms || [], d: a.description,
+      ...(isGame(a) ? { g: 1 } : {}),
+      ...(a.keywords || a.genres ? { k: [...(a.keywords || []), ...a.genreList.map(g => g.name)].join(' ') } : {}),
+      c: isGame(a) ? `Game · ${a.genreList[0].name}` : a.category, m: a.maker || a.owner, p: a.platforms || [], d: a.description,
       $: priceTags(a), l: licenceTags(a), o: a.group === 'open',
     })),
   });
@@ -832,10 +955,14 @@ function searchIndex(apps) {
 function main() {
   const apps = load();
   ASSET_VERSION = { css: hash('styles.css'), js: hash('directory.js'), contact: hash('contact.js'), site: hash('site.js') };
-  const categories = categoriesOf(apps);
+  // Games are their own section; categories, All apps and the alternatives pages are for apps only.
+  const software = apps.filter(a => !isGame(a));
+  const games = apps.filter(isGame);
+  const categories = categoriesOf(software);
+  const genres = genresOf(games);
   const newest = [...apps].sort(byNewest);
 
-  const topics = alternativeTopics(apps);
+  const topics = alternativeTopics(software);
   const platforms = platformGroups(apps);
   for (const app of apps) app.topics = topics.filter(t => t.apps.includes(app));
 
@@ -847,8 +974,10 @@ function main() {
 <div class="wrap list-page">
   <p class="section-label">✦ Categories</p>
   <h1 class="page-title">Browse by category</h1>
-  <p class="page-intro">${apps.length} apps in ${categories.length} categories.</p>
+  <p class="page-intro">${software.length} apps in ${categories.length} categories, and ${games.length} games in ${genres.length} genres.</p>
   ${categoryChips(categories)}
+  <h2 class="sub-title">Games by genre</h2>
+  ${genreChips(genres)}
   <h2 class="sub-title">Alternatives to popular software</h2>
   ${topicChips(topics)}
   <h2 class="sub-title">By platform</h2>
@@ -864,6 +993,9 @@ ${foot}`);
       apps: [...c.apps].sort(byName),
     }));
   }
+  write('categories/games/index.html', redirectPage('/games/'));
+  write('games/index.html', gamesPage(games, genres));
+  for (const g of genres) write(`games/${g.slug}/index.html`, genrePage(g, genres));
   write('alternatives/index.html', hubPage({
     canonical: '/alternatives/', title: 'AI-built alternatives to popular software | RemadeByAI',
     description: `AI-built alternatives to ${andList(topics.slice(0, 4).map(t => t.name))} and more, gathered from the RemadeByAI directory.`,
@@ -884,11 +1016,11 @@ ${foot}`);
 
   write('new/index.html', listPage({
     canonical: '/new/', title: 'New arrivals | RemadeByAI', description: 'The latest AI-built apps added to RemadeByAI.',
-    label: 'New arrivals', heading: 'Newest apps', intro: 'Every app on RemadeByAI, most recently listed first. Follow new listings with the <a href="/feed.xml">RSS feed</a>.',
+    label: 'New arrivals', heading: 'Newest apps and games', intro: 'Every app and game on RemadeByAI, most recently listed first. Follow new listings with the <a href="/feed.xml">RSS feed</a>.',
     apps: newest,
   }));
 
-  write('apps/index.html', allAppsPage(apps, categories));
+  write('apps/index.html', allAppsPage(software, categories));
   write('about/index.html', partialPage({ canonical: '/about/', title: 'About | RemadeByAI', partial: 'about.html',
     description: 'RemadeByAI is a directory from EmuKey LLC of practical software that rebuilds familiar tools with AI.' }));
   write('badge/index.html', badgePage(apps));
@@ -900,12 +1032,13 @@ ${foot}`);
   home = replaceRegion(home, 'assets', siteAssets());
   home = replaceRegion(home, 'jsonld', '  ' + jsonLdTag(siteJsonLd(apps)));
   home = replaceRegion(home, 'header', header());
-  home = replaceRegion(home, 'stats', `${apps.length} apps in ${categories.length} categories`);
+  home = replaceRegion(home, 'stats', `${software.length} apps in ${categories.length} categories · ${games.length} games in ${genres.length} genres`);
   home = replaceRegion(home, 'featured', featured(apps.filter(a => a.featured)));
   home = replaceRegion(home, 'new', cardGrid(newest.slice(0, NEW_ON_HOME)));
   home = replaceRegion(home, 'categories', categoryTiles(categories));
+  home = replaceRegion(home, 'games', genreChips(genres));
   home = replaceRegion(home, 'alternatives', topicChips(topics));
-  home = replaceRegion(home, 'count', `${apps.length}`);
+  home = replaceRegion(home, 'count', `${software.length}`);
   home = replaceRegion(home, 'footer', footer());
   write('index.html', home);
   write('search.json', searchIndex(apps));
@@ -914,10 +1047,10 @@ ${foot}`);
   const appDate = a => [a.added, a.review && a.review.date, a.whatPeopleSay && a.whatPeopleSay.checked].filter(Boolean).sort().pop();
   const newestOf = list => list.map(appDate).sort().pop();
   const all = newestOf(apps);
-  const urls = [['/', all], ['/apps/', all], ['/categories/', all], ['/new/', newestOf(apps.map(a => ({ added: a.added })))],
+  const urls = [['/', all], ['/apps/', newestOf(software)], ['/games/', newestOf(games)], ['/categories/', all], ['/new/', newestOf(apps.map(a => ({ added: a.added })))],
     ['/about/'], ['/list/'], ['/badge/'], ['/alternatives/', newestOf(topics.flatMap(t => t.apps))], ['/platforms/', all],
     ...topics.map(t => [`/alternatives/${t.slug}/`, newestOf(t.apps)]), ...platforms.map(g => [`/platforms/${g.slug}/`, newestOf(g.apps)]),
-    ...categories.map(c => [`/categories/${c.slug}/`, newestOf(c.apps)]), ...apps.map(a => [`/apps/${a.slug}/`, appDate(a)])];
+    ...genres.map(g => [`/games/${g.slug}/`, newestOf(g.apps)]), ...categories.map(c => [`/categories/${c.slug}/`, newestOf(c.apps)]), ...apps.map(a => [`/apps/${a.slug}/`, appDate(a)])];
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(([u, d]) => `  <url><loc>${SITE}${u}</loc>${d ? `<lastmod>${d}</lastmod>` : ''}</url>`).join('\n')}
@@ -927,7 +1060,7 @@ ${urls.map(([u, d]) => `  <url><loc>${SITE}${u}</loc>${d ? `<lastmod>${d}</lastm
   write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /docs/\nDisallow: /clicks-worker/\nDisallow: /forms-worker/\nDisallow: /partials/\n\nSitemap: ${SITE}/sitemap.xml\n`);
   write('404.html', notFoundPage(newest));
 
-  console.log(`Built ${apps.length} app pages, ${categories.length} category pages, ${topics.length} alternatives pages, ${platforms.length} platform pages, new arrivals, RSS feed, home page and sitemap.`);
+  console.log(`Built ${apps.length} app pages (${games.length} games), ${categories.length} category pages, ${genres.length} game genre pages, ${topics.length} alternatives pages, ${platforms.length} platform pages, new arrivals, RSS feed, home page and sitemap.`);
 }
 
 main();

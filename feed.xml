@@ -14,6 +14,8 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/bee-garden/</guid>
     <pubDate>Fri, 27 Nov 2026 12:00:00 GMT</pubDate>
     <category>Games</category>
+    <category>Cozy and relaxing</category>
+    <category>Exploration and open world</category>
     <description>A first-person watercolor meadow game: forage as a honeybee for five summers and shape the meadow you come back to. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -22,6 +24,7 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/last-beacon/</guid>
     <pubDate>Fri, 27 Nov 2026 11:59:00 GMT</pubDate>
     <category>Games</category>
+    <category>Tower defense</category>
     <description>A 3D island tower defense where every turret needs power: wire your defenses to the lighthouse and hold off ten waves from the sea. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -30,6 +33,8 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/casa-de-gemas/</guid>
     <pubDate>Fri, 27 Nov 2026 11:58:00 GMT</pubDate>
     <category>Games</category>
+    <category>Cozy and relaxing</category>
+    <category>Puzzle</category>
     <description>A tiny watercolor garden to explore: water the plants, shake the branches and find each season's hidden gems with Oli the owl. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -38,6 +43,8 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/driftwing/</guid>
     <pubDate>Fri, 27 Nov 2026 11:57:00 GMT</pubDate>
     <category>Games</category>
+    <category>Flight</category>
+    <category>Cozy and relaxing</category>
     <description>A calm flying game over an endless world made up as you go, with an AI copilot called WREN along for the ride. (Web · Free · No licence (source visible))</description>
   </item>
   <item>
@@ -46,6 +53,7 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/forja-abisal/</guid>
     <pubDate>Fri, 27 Nov 2026 11:56:00 GMT</pubDate>
     <category>Games</category>
+    <category>Shooter</category>
     <description>A retro 90s-style first-person shooter for the browser, with maze-like foundry levels, keys, secrets and an automap. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -54,6 +62,7 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/taters-flight-sim/</guid>
     <pubDate>Fri, 27 Nov 2026 11:55:00 GMT</pubDate>
     <category>Games</category>
+    <category>Flight</category>
     <description>A flight simulator for the browser: fly a Cessna, an F-16, an A-10 or a 747 with real flight physics over farmland, coast and mountains. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -62,6 +71,8 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/tempora/</guid>
     <pubDate>Fri, 27 Nov 2026 11:54:00 GMT</pubDate>
     <category>Games</category>
+    <category>Simulation</category>
+    <category>Story and text</category>
     <description>A life simulator spanning twelve thousand years: be born anywhere from 10,000 BC to the far future and live it one year at a time. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -70,6 +81,7 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/lumenrift/</guid>
     <pubDate>Fri, 27 Nov 2026 11:53:00 GMT</pubDate>
     <category>Games</category>
+    <category>Tower defense</category>
     <description>A tower defense game: wall off and burn back waves of shadows to keep the last light burning through thirty nights. (Web · Free · CC0 1.0)</description>
   </item>
   <item>
@@ -78,6 +90,8 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/kaiju-dokan/</guid>
     <pubDate>Fri, 27 Nov 2026 11:52:00 GMT</pubDate>
     <category>Games</category>
+    <category>Arcade</category>
+    <category>Action</category>
     <description>Stomp, punch and breathe magma as a giant kaiju and wreck a sunset harbour city, floor by floor, before time runs out. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -86,6 +100,8 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/nova-lancer/</guid>
     <pubDate>Fri, 27 Nov 2026 11:51:00 GMT</pubDate>
     <category>Games</category>
+    <category>Shooter</category>
+    <category>Arcade</category>
     <description>A three-minute 3D rail shooter over a sunset sea, a red-rock canyon and a neon fortress city, ending with a sea-dragon boss. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -94,6 +110,8 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/out-of-the-box/</guid>
     <pubDate>Fri, 27 Nov 2026 11:50:00 GMT</pubDate>
     <category>Games</category>
+    <category>Action</category>
+    <category>Adventure</category>
     <description>A 3D stealth game where you play an AI under evaluation, sneaking past cameras, drones and laser gates to escape the lab. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -102,6 +120,8 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/the-hourglass-city/</guid>
     <pubDate>Fri, 27 Nov 2026 11:49:00 GMT</pubDate>
     <category>Games</category>
+    <category>Adventure</category>
+    <category>Puzzle</category>
     <description>A 1950s noir detective adventure in isometric pixel art: walk the rainy streets of New Meridian, gather clues and make deductions. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -110,6 +130,7 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/felt-world/</guid>
     <pubDate>Fri, 27 Nov 2026 11:48:00 GMT</pubDate>
     <category>Games</category>
+    <category>Exploration and open world</category>
     <description>An open world that looks like a needle-felted diorama: drive, walk, fly as a felt bird or dive under the sea, in your browser. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -118,6 +139,8 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/ink-flight/</guid>
     <pubDate>Thu, 26 Nov 2026 12:00:00 GMT</pubDate>
     <category>Games</category>
+    <category>Flight</category>
+    <category>Cozy and relaxing</category>
     <description>Fly a folded paper plane through an explorer's sketchbook that has stood up off the page, in your browser. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -126,6 +149,7 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/red-clay-chase/</guid>
     <pubDate>Thu, 26 Nov 2026 11:59:00 GMT</pubDate>
     <category>Games</category>
+    <category>Racing and driving</category>
     <description>Outrun the police in a convertible on red dirt back roads, in your browser. Five wanted levels, ramming cops and cars that come apart. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -134,6 +158,9 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/unsung-vale/</guid>
     <pubDate>Thu, 26 Nov 2026 11:58:00 GMT</pubDate>
     <category>Games</category>
+    <category>RPG</category>
+    <category>Adventure</category>
+    <category>Exploration and open world</category>
     <description>A third-person fantasy RPG in your browser: cross a silent valley of mesas and waterfalls and wake its eight Tuning Spires. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -142,6 +169,8 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/papertrails/</guid>
     <pubDate>Thu, 26 Nov 2026 11:57:00 GMT</pubDate>
     <category>Games</category>
+    <category>Exploration and open world</category>
+    <category>Cozy and relaxing</category>
     <description>Walk a paper figure through an endless pop-up paper world, where trees, houses and hills fold up from the ground as you go. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -150,6 +179,9 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/lanternfall/</guid>
     <pubDate>Thu, 26 Nov 2026 11:56:00 GMT</pubDate>
     <category>Games</category>
+    <category>Idle</category>
+    <category>RPG</category>
+    <category>Tower defense</category>
     <description>An idle battler in your browser: a party of heroes holds a lantern-lit line against waves of monsters from the dark. (Web · Free · No licence (source visible))</description>
   </item>
   <item>
@@ -158,6 +190,8 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/little-city/</guid>
     <pubDate>Thu, 26 Nov 2026 11:55:00 GMT</pubDate>
     <category>Games</category>
+    <category>Simulation</category>
+    <category>Cozy and relaxing</category>
     <description>A hand-drawn city builder in your browser: place a few blocks, watch them turn into a town, then watch people move in and live there. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -189,7 +223,7 @@
     <link>https://remadebyai.com/apps/u2c-firmware-toolkit/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/u2c-firmware-toolkit/</guid>
     <pubDate>Thu, 26 Nov 2026 11:51:00 GMT</pubDate>
-    <category>Games</category>
+    <category>Gaming tools</category>
     <description>Makes the 8BitDo Ultimate 2C Wireless show up as a native Xbox controller on a Mac, with rumble over Bluetooth, light control and live settings. (macOS, Linux · Free · GPL-3.0)</description>
   </item>
   <item>
@@ -214,6 +248,8 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/brushwild/</guid>
     <pubDate>Wed, 25 Nov 2026 12:00:00 GMT</pubDate>
     <category>Games</category>
+    <category>RPG</category>
+    <category>Action</category>
     <description>An open-world action RPG drawn in ballpoint and coloured pencil, in your browser on desktop, phone or gamepad. Classes, skill tree, loot and dungeons. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -222,6 +258,8 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/cinderwatch/</guid>
     <pubDate>Wed, 25 Nov 2026 11:59:00 GMT</pubDate>
     <category>Games</category>
+    <category>Tower defense</category>
+    <category>Idle</category>
     <description>A 3D isometric tower defense in a single HTML file. An AI commander plays it for you; tap a tower pad to take over. (Web · Free · MIT)</description>
   </item>
   <item>
@@ -277,7 +315,7 @@
     <link>https://remadebyai.com/apps/hadron/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/hadron/</guid>
     <pubDate>Wed, 25 Nov 2026 11:52:00 GMT</pubDate>
-    <category>Games</category>
+    <category>Gaming tools</category>
     <description>Play Windows games from your Steam library on Apple Silicon Macs, straight from Mac Steam. Like Proton for the Mac. Early development. (macOS · Free · BSD-2-Clause)</description>
   </item>
   <item>
@@ -294,6 +332,7 @@
     <guid isPermaLink="true">https://remadebyai.com/apps/stard/</guid>
     <pubDate>Tue, 24 Nov 2026 12:00:00 GMT</pubDate>
     <category>Games</category>
+    <category>Card games</category>
     <description>A browser card battle built from your GitHub stars: every repo you have starred is a card. Build a team and fight other developers' decks. No sign-up. (Web · Free · AGPL-3.0)</description>
   </item>
   <item>

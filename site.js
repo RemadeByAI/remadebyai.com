@@ -1,7 +1,8 @@
 // Loaded on every page of remadebyai.com. Three jobs (plus the screenshot viewer):
 // 1. The search box in the header (focused on page load on computers with a mouse): suggests matching apps as you type, from /search.json (written by
-//    build.js). Enter shows every match in the All apps list (/apps/?q=...). Without JavaScript the box is a
-//    plain form that opens /apps/?q=..., which directory.js filters.
+//    build.js). Enter shows every match in the All apps list (/apps/?q=...) or, when most matches are games,
+//    in the games list (/games/?q=...). Without JavaScript the box is a plain form that opens /apps/?q=...,
+//    which directory.js filters.
 // 2. Click counting: links with data-track (Download, Visit site, Source code, featured buttons) send a
 //    small anonymous ping to the clicks Worker named in the header form's data-clicks attribute. No
 //    cookies, nothing about the visitor; just which app, which button and which page. Set in build.js.
@@ -47,7 +48,8 @@
   }
 
   const escape = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  const allUrl = query => `/apps/?q=${encodeURIComponent(query)}`;
+  const allUrl = (query, base = '/apps/') => `${base}?q=${encodeURIComponent(query)}`;
+  let bestList = '/apps/'; // where Enter sends a search: the list with more matches (games have their own list)
 
   function render() {
     const query = input.value.trim();
@@ -55,10 +57,13 @@
     const found = search(query);
     const shown = found.slice(0, 7);
     items = shown.map(app => ({ url: app.u, html: `<strong>${escape(app.n)}</strong><span>${app.i ? 'Inspired by' : 'Replaces'} ${escape(app.r)} · ${escape(app.c)}</span>` }));
-    items.push({
-      url: allUrl(query), all: true,
-      html: found.length ? `<span>See all ${found.length} ${found.length === 1 ? 'match' : 'matches'} in the app list →</span>` : `<span>No apps match "${escape(query)}"</span>`,
-    });
+    const games = found.filter(app => app.g).length;
+    const apps = found.length - games;
+    const here = location.pathname === '/games/' ? '/games/' : '/apps/';
+    bestList = games > apps || (here === '/games/' && games) ? '/games/' : '/apps/';
+    if (apps) items.push({ url: allUrl(query, '/apps/'), all: '/apps/', html: `<span>See all ${apps} matching ${apps === 1 ? 'app' : 'apps'} →</span>` });
+    if (games) items.push({ url: allUrl(query, '/games/'), all: '/games/', html: `<span>See all ${games} matching ${games === 1 ? 'game' : 'games'} →</span>` });
+    if (!found.length) items.push({ url: allUrl(query, here), all: here, html: `<span>No apps or games match "${escape(query)}"</span>` });
     active = -1;
     list.innerHTML = items.map((item, i) =>
       `<li role="option" id="ss-${i}" aria-selected="false"${item.all ? ' class="all"' : ''}><a href="${escape(item.url)}" tabindex="-1">${item.html}</a></li>`).join('');
@@ -79,10 +84,10 @@
     [...list.children].forEach((li, i) => li.setAttribute('aria-selected', String(i === active)));
     input.setAttribute('aria-activedescendant', `ss-${active}`);
   }
-  function showAll(query) {
+  function showAll(query, base = bestList) {
     close();
-    if (window.rbaShowSearch && location.pathname === '/apps/') window.rbaShowSearch(query);
-    else location.href = allUrl(query);
+    if (window.rbaShowSearch && location.pathname === base) window.rbaShowSearch(query);
+    else location.href = allUrl(query, base);
   }
 
   let quietFocus = false; // true while the page itself focuses the box on load (see below)
@@ -98,13 +103,14 @@
   form.addEventListener('submit', event => {
     event.preventDefault();
     const query = input.value.trim();
-    if (active >= 0 && items[active] && !items[active].all) location.href = items[active].url;
+    if (active >= 0 && items[active]) { if (items[active].all) showAll(query, items[active].all); else location.href = items[active].url; }
     else if (query) showAll(query);
   });
   list.addEventListener('click', event => {
     const link = event.target.closest('a');
     if (!link) return;
-    if (link.parentElement.classList.contains('all')) { event.preventDefault(); showAll(input.value.trim()); }
+    const item = items[[...list.children].indexOf(link.parentElement)];
+    if (item && item.all) { event.preventDefault(); showAll(input.value.trim(), item.all); }
   });
   document.addEventListener('click', event => { if (!form.contains(event.target)) close(); });
   form.addEventListener('focusout', () => setTimeout(() => { if (!form.contains(document.activeElement)) close(); }, 150));

@@ -1,8 +1,15 @@
 # Handoff notes
 
-Last updated: 2026-11-26 late evening Central (games hunt 6 on branch `claude/project-thread-3qvz0m`, 232 apps, waiting for Go live). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
+Last updated: 2026-11-26 11:55 PM Central (Games section with genres on branch `claude/project-thread-xda8x8`, waiting for Go live). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
 
-## Newest: games hunt 6, 232 apps (2026-11-26 late evening Central, cloud)
+## Newest: Games section with genres (2026-11-26 late night Central, cloud)
+
+- Games are now their own section, apart from apps (owner's ask). `/games/` lists all games A to Z with genre chips, search and filters (genre, platform, price, licence); `/games/<genre>/` has one page per genre. Header, footer, home page (hero button and a "Games by genre" chip block) and Categories page link it. `/categories/games/` is now a noindex redirect stub to `/games/`.
+- **Data:** every `"category": "Games"` entry needs `"genres"` (one or more names from `GENRES` in build.js; the first is its main genre, used for the card label, breadcrumb and "More X games"). The build refuses a game without genres or with an unknown one. 21 genres, alphabetical: Action, Adventure, Arcade, Card games, Cozy and relaxing, Exploration and open world, Fighting, Flight, Idle, MMO, Platformer, Puzzle, Racing and driving, Roguelike, RPG, Shooter, Simulation, Sports, Story and text, Strategy, Tower defense. A new genre needs an entry in `GENRES` (name, noun for the title, our own one-line intro); genres with no games get no page.
+- Game Glance, Hadron and U2C Firmware Toolkit (tools, not games) moved to a new app category **Gaming tools**, linked from /games/. Now 163 apps in 29 categories and 69 games in 21 genres.
+- All apps (`/apps/`), Categories and the alternatives pages are apps only; /new/, the RSS feed (genres added as extra `<category>` tags), badge page and platform pages cover both (platform pages show an Apps block, then a Games block). Game pages use schema.org `VideoGame` with `genre`. Header search suggestions offer "See all N matching apps" and/or "games"; Enter goes to whichever list has more matches; both lists show a "search the other list" link while a search is typed. Previews: `/mnt/project-files/previews/games-section/`.
+
+## Earlier: games hunt 6, 232 apps (2026-11-26 late evening Central, cloud)
 
 - 13 games added on branch `claude/project-thread-3qvz0m` from VibeFin/awesome-opus-5.5-games and theolundqvist/frontier-games: Felt World, The Hourglass City, OUT OF THE BOX, NOVA LANCER, KAIJU DOKAN!, LUMENRIFT, Tempora, Tater's Flight Sim (no hosted build), Forja Abisal, DRIFTWING (no licence, indie), Casa de Gemas, Last Beacon (GPT-6 Astra) and Bee Garden (Astra + Claude). All 13 "What people say": none.
 - Held: Ombres (PolyForm NC), Large Language Mayhem (AI-company mascots), Gogh Strike (no screenshots). Full notes: `/mnt/project-files/app-hunt/2026-11-27-games-6.md`.
