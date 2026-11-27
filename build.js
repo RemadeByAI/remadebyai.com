@@ -40,6 +40,7 @@ const GENRES = [
   { name: 'Racing and driving', noun: 'racing games', intro: 'Rally stages, police chases and neon time trials, played in your browser.' },
   { name: 'Roguelike', noun: 'roguelikes', intro: 'Roguelikes and roguelites: every run is different, death sends you back to the start, and what you learn carries over.' },
   { name: 'RPG', noun: 'RPGs', intro: 'Role-playing games with quests, classes, loot and stories, from cute mobile RPGs to open worlds and a Claude Code game master.' },
+  { name: 'RTS', noun: 'real-time strategy games', intro: 'Real-time strategy: gather resources, build a base and command an army, from drone skirmishes and space fleets to Cossack towns and five ages of empire.' },
   { name: 'Shooter', noun: 'shooters', intro: 'Bullet hells, rail shooters and a retro 90s first-person shooter.' },
   { name: 'Simulation', noun: 'simulation games', intro: 'Run a farm, a town, a tennis club, a factory or a whole civilisation, or live a life one year at a time.' },
   { name: 'Sports', noun: 'sports games', intro: 'Football drafts, tennis management and island fishing.' },

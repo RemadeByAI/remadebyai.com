@@ -3904,6 +3904,7 @@
       "description": "A phone-friendly real-time strategy game where two armies of flying and ground drones fight for territory and resources. Play skirmishes against the computer or duel a friend online.",
       "category": "Games",
       "genres": [
+        "RTS",
         "Strategy"
       ],
       "url": "https://simonw.github.io/battledrones/",
@@ -6410,6 +6411,7 @@
       "description": "A 3D space real-time strategy game in the browser: build and command fleets from scouts to a two-kilometre mothership in full 3D, against a computer opponent.",
       "category": "Games",
       "genres": [
+        "RTS",
         "Strategy"
       ],
       "url": "https://e01.ai/starfall/",
@@ -9221,6 +9223,7 @@
       "description": "A fast top-down pixel-art strategy game in your browser: build a base, mine crystals, click enemies and cast abilities to destroy the enemy pyramid before yours falls.",
       "category": "Games",
       "genres": [
+        "RTS",
         "Strategy"
       ],
       "url": "https://durian-arcade.itch.io/pyramid-wars",
@@ -9436,6 +9439,7 @@
       "description": "A real-time 3D strategy game in your browser where two players buy tanks, helicopters and infantry while each also runs around the map as a soldier. Play a person or the computer.",
       "category": "Games",
       "genres": [
+        "RTS",
         "Strategy",
         "Action"
       ],
@@ -13710,6 +13714,7 @@
       "description": "A real-time strategy game on the Ukrainian steppe in 1648: raise a Cossack town, farm, gather, train an army and beat the AI.",
       "category": "Games",
       "genres": [
+        "RTS",
         "Strategy",
         "Simulation"
       ],
@@ -13762,6 +13767,7 @@
       "description": "A stylized 3D real-time strategy game: harvest, build a base, train an army and fight across river maps, on desktop, phone or tablet.",
       "category": "Games",
       "genres": [
+        "RTS",
         "Strategy"
       ],
       "url": "https://buicongnguyen.github.io/3d_astra/",
@@ -13812,6 +13818,7 @@
       "description": "A real-time strategy game through five ages from 1800 to 2100, from steam to synthesis, with every texture, model and tune generated in code.",
       "category": "Games",
       "genres": [
+        "RTS",
         "Strategy"
       ],
       "url": "https://github.com/alandaitch/imperios-1800-2100",
@@ -13873,6 +13880,7 @@
       "description": "An original 3D real-time strategy game in the browser: build a village and lead it through five ages, from the Stone Age to the Industrial Age.",
       "category": "Games",
       "genres": [
+        "RTS",
         "Strategy"
       ],
       "url": "https://aevum-8clf.onrender.com",
