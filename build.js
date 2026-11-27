@@ -877,8 +877,8 @@ function allAppsPage(apps, categories) {
   return directoryPage({
     canonical: '/apps/', title: 'All apps | RemadeByAI', label: 'All apps', heading: 'All apps', noun: 'app',
     description: 'Every AI-built app and alternative to familiar software on RemadeByAI, A to Z, with search and filters.',
-    intro: `EmuKey apps and independent open-source picks, A to Z. <a href="/categories/">Browse by category</a> or see what's <a href="/new/">new</a>. Games have <a href="/games/">their own section</a>.`,
-    items: apps, groups: [['all', 'All apps'], ['emukey', 'EmuKey apps'], ['open', 'Open source']],
+    intro: `Every app in the directory, A to Z. <a href="/categories/">Browse by category</a> or see what's <a href="/new/">new</a>. Games have <a href="/games/">their own section</a>.`,
+    items: apps, groups: [['all', 'All apps'], ['open', 'Open source']],
     filters: filterOptions(categories, apps), also: { href: '/games/', text: 'Looking for a game? Search the games' },
   });
 }
