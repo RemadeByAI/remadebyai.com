@@ -9,10 +9,47 @@
   <lastBuildDate>Fri, 27 Nov 2026 12:00:00 GMT</lastBuildDate>
   <image><url>https://remadebyai.com/assets/icon-512.png</url><title>RemadeByAI: new apps</title><link>https://remadebyai.com/new/</link></image>
   <item>
+    <title>Aevum: Inspired by classic age-advancing real-time strategy games</title>
+    <link>https://remadebyai.com/apps/aevum/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/aevum/</guid>
+    <pubDate>Fri, 27 Nov 2026 12:00:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Strategy</category>
+    <description>An original 3D real-time strategy game in the browser: build a village and lead it through five ages, from the Stone Age to the Industrial Age. (Web · Free · AGPL-3.0)</description>
+  </item>
+  <item>
+    <title>Imperios 1800–2100: Inspired by classic age-advancing real-time strategy games</title>
+    <link>https://remadebyai.com/apps/imperios-1800-2100/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/imperios-1800-2100/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:59:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Strategy</category>
+    <description>A real-time strategy game through five ages from 1800 to 2100, from steam to synthesis, with every texture, model and tune generated in code. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Frontier Command: Inspired by base-building real-time strategy games</title>
+    <link>https://remadebyai.com/apps/frontier-command/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/frontier-command/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:58:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Strategy</category>
+    <description>A stylized 3D real-time strategy game: harvest, build a base, train an army and fight across river maps, on desktop, phone or tablet. (Web · Free · All rights reserved (free to play, source visible))</description>
+  </item>
+  <item>
+    <title>Wild Fields 1648: Inspired by historical real-time strategy games</title>
+    <link>https://remadebyai.com/apps/wild-fields-1648/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/wild-fields-1648/</guid>
+    <pubDate>Fri, 27 Nov 2026 11:57:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Strategy</category>
+    <category>Simulation</category>
+    <description>A real-time strategy game on the Ukrainian steppe in 1648: raise a Cossack town, farm, gather, train an army and beat the AI. (Web · Free · MIT)</description>
+  </item>
+  <item>
     <title>Bee Garden: Inspired by cozy nature games</title>
     <link>https://remadebyai.com/apps/bee-garden/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/bee-garden/</guid>
-    <pubDate>Fri, 27 Nov 2026 12:00:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:56:00 GMT</pubDate>
     <category>Games</category>
     <category>Cozy and relaxing</category>
     <category>Open world</category>
@@ -22,7 +59,7 @@
     <title>Last Beacon: Inspired by tower defense games</title>
     <link>https://remadebyai.com/apps/last-beacon/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/last-beacon/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:59:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:55:00 GMT</pubDate>
     <category>Games</category>
     <category>Tower defense</category>
     <description>A 3D island tower defense where every turret needs power: wire your defenses to the lighthouse and hold off ten waves from the sea. (Web · Free · MIT)</description>
@@ -31,7 +68,7 @@
     <title>Casa de Gemas: Inspired by cozy hidden-object games</title>
     <link>https://remadebyai.com/apps/casa-de-gemas/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/casa-de-gemas/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:58:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:54:00 GMT</pubDate>
     <category>Games</category>
     <category>Cozy and relaxing</category>
     <category>Puzzle</category>
@@ -41,7 +78,7 @@
     <title>DRIFTWING: Inspired by relaxing flight games</title>
     <link>https://remadebyai.com/apps/driftwing/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/driftwing/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:57:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:53:00 GMT</pubDate>
     <category>Games</category>
     <category>Flight</category>
     <category>Cozy and relaxing</category>
@@ -51,7 +88,7 @@
     <title>Forja Abisal: Inspired by 1990s first-person shooters</title>
     <link>https://remadebyai.com/apps/forja-abisal/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/forja-abisal/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:56:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:52:00 GMT</pubDate>
     <category>Games</category>
     <category>Shooter</category>
     <description>A retro 90s-style first-person shooter for the browser, with maze-like foundry levels, keys, secrets and an automap. (Web · Free · MIT)</description>
@@ -60,7 +97,7 @@
     <title>Tater's Flight Sim: Inspired by desktop flight simulators</title>
     <link>https://remadebyai.com/apps/taters-flight-sim/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/taters-flight-sim/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:55:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:51:00 GMT</pubDate>
     <category>Games</category>
     <category>Flight</category>
     <description>A flight simulator for the browser: fly a Cessna, an F-16, an A-10 or a 747 with real flight physics over farmland, coast and mountains. (Web · Free · MIT)</description>
@@ -69,7 +106,7 @@
     <title>Tempora: Inspired by life simulator games</title>
     <link>https://remadebyai.com/apps/tempora/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/tempora/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:54:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:50:00 GMT</pubDate>
     <category>Games</category>
     <category>Simulation</category>
     <category>Story and text</category>
@@ -79,7 +116,7 @@
     <title>LUMENRIFT: Inspired by tower defense games</title>
     <link>https://remadebyai.com/apps/lumenrift/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/lumenrift/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:53:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:49:00 GMT</pubDate>
     <category>Games</category>
     <category>Tower defense</category>
     <description>A tower defense game: wall off and burn back waves of shadows to keep the last light burning through thirty nights. (Web · Free · CC0 1.0)</description>
@@ -88,7 +125,7 @@
     <title>KAIJU DOKAN!: Inspired by giant-monster destruction games</title>
     <link>https://remadebyai.com/apps/kaiju-dokan/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/kaiju-dokan/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:52:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:48:00 GMT</pubDate>
     <category>Games</category>
     <category>Arcade</category>
     <category>Action</category>
@@ -98,7 +135,7 @@
     <title>NOVA LANCER: Inspired by 3D rail shooters</title>
     <link>https://remadebyai.com/apps/nova-lancer/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/nova-lancer/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:51:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:47:00 GMT</pubDate>
     <category>Games</category>
     <category>Shooter</category>
     <category>Arcade</category>
@@ -108,7 +145,7 @@
     <title>OUT OF THE BOX: Inspired by 3D stealth games</title>
     <link>https://remadebyai.com/apps/out-of-the-box/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/out-of-the-box/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:50:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:46:00 GMT</pubDate>
     <category>Games</category>
     <category>Action</category>
     <category>Adventure</category>
@@ -118,7 +155,7 @@
     <title>The Hourglass City: Inspired by classic point-and-click adventures</title>
     <link>https://remadebyai.com/apps/the-hourglass-city/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/the-hourglass-city/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:49:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:45:00 GMT</pubDate>
     <category>Games</category>
     <category>Adventure</category>
     <category>Puzzle</category>
@@ -128,7 +165,7 @@
     <title>Felt World: Inspired by open-world diorama games</title>
     <link>https://remadebyai.com/apps/felt-world/</link>
     <guid isPermaLink="true">https://remadebyai.com/apps/felt-world/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:48:00 GMT</pubDate>
+    <pubDate>Fri, 27 Nov 2026 11:44:00 GMT</pubDate>
     <category>Games</category>
     <category>Open world</category>
     <description>An open world that looks like a needle-felted diorama: drive, walk, fly as a felt bird or dive under the sea, in your browser. (Web · Free · MIT)</description>
@@ -414,38 +451,6 @@
     <pubDate>Tue, 24 Nov 2026 11:50:00 GMT</pubDate>
     <category>3D and CAD</category>
     <description>Free 2.5D CAM software for CNC routers and mills: bring in a DXF or SVG drawing (or draw in the app), set up cuts, simulate them in 3D and export checked G-code. (Windows, macOS, Linux · Free · GPL-3.0)</description>
-  </item>
-  <item>
-    <title>Tungsten Edge: Alternative to uBar and the macOS Dock</title>
-    <link>https://remadebyai.com/apps/tungsten-edge/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/tungsten-edge/</guid>
-    <pubDate>Tue, 24 Nov 2026 11:49:00 GMT</pubDate>
-    <category>Utilities</category>
-    <description>A per-window taskbar for the Mac: every open window gets its own card at the bottom of the screen, one click away, the way the Windows taskbar works. (macOS · Free · GPL-3.0)</description>
-  </item>
-  <item>
-    <title>desigma: Alternative to Figma</title>
-    <link>https://remadebyai.com/apps/desigma/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/desigma/</guid>
-    <pubDate>Tue, 24 Nov 2026 11:48:00 GMT</pubDate>
-    <category>Graphics</category>
-    <description>A free, offline interface design app written in Rust, with frames, auto layout, components, prototyping and live collaboration. It opens Figma files. (Windows, macOS, Linux · Free · Apache-2.0)</description>
-  </item>
-  <item>
-    <title>Podium: Alternative to the classic iPod</title>
-    <link>https://remadebyai.com/apps/podium/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/podium/</guid>
-    <pubDate>Tue, 24 Nov 2026 11:47:00 GMT</pubDate>
-    <category>Audio</category>
-    <description>An Android music player built around a click wheel, styled after classic iPods. Plays your own music library, with Cover Flow, synced lyrics and lots of finishes to choose from. (Android · Free · GPL-3.0)</description>
-  </item>
-  <item>
-    <title>Roxel: Alternative to MagicaVoxel</title>
-    <link>https://remadebyai.com/apps/roxel/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/roxel/</guid>
-    <pubDate>Tue, 24 Nov 2026 11:46:00 GMT</pubDate>
-    <category>3D and CAD</category>
-    <description>A lightweight desktop voxel editor for building small 3D scenes out of cubes, with import and export for MagicaVoxel, Goxel, OBJ and glTF files. (Windows, macOS, Linux · Free · MIT)</description>
   </item>
 </channel>
 </rss>

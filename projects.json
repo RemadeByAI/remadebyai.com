@@ -13697,6 +13697,208 @@
         "checked": "2026-11-27",
         "none": true
       }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "Wild Fields 1648",
+      "slug": "wild-fields-1648",
+      "alternative": "Inspired by historical real-time strategy games",
+      "description": "A real-time strategy game on the Ukrainian steppe in 1648: raise a Cossack town, farm, gather, train an army and beat the AI.",
+      "category": "Games",
+      "genres": [
+        "Strategy",
+        "Simulation"
+      ],
+      "url": "https://0xinsiderhq.github.io/wild-fields-1648/",
+      "source": "https://github.com/0xInsiderhq/wild-fields-1648",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "0xInsiderhq",
+      "icon": "🌾",
+      "longDescription": "Raise a Cossack town on the steppe: farm, fell forests, quarry stone and mine gold, then train pikemen, musketeers, Cossack horse and more to take on AI opponents that build, gather, research and attack on their own.\n\nThe details are what stand out: wheat that grows and ripens, paths that wear into the ground where peasants walk, trees that fall and leave stumps, burnt buildings that leave ruins, and people and horses with proper walking and galloping animation. It uses 20 free photo-scanned models from Poly Haven, and all the sound is synthesized in code. It runs in one desktop browser tab.",
+      "builtWithAI": "The README says the game was \"written by Claude Opus 5.5\", directed by the maker, and that Claude itself found and downloaded the Poly Haven models by driving a browser. Only 1 of its 3 commits carries a Claude trailer (checked 2026-11-27).",
+      "keywords": [
+        "rts",
+        "real-time strategy",
+        "base building",
+        "historical",
+        "cossack",
+        "three.js",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/wild-fields-1648/1.webp",
+          "alt": "A regiment marching through a Cossack village with a windmill and wheat fields",
+          "caption": "A Cossack village"
+        },
+        {
+          "src": "/assets/apps/wild-fields-1648/2.webp",
+          "alt": "A collage of soldiers, cavalry, cannons and a burning village",
+          "caption": "Battles and villages"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "indie",
+      "owner": "Independent",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "Frontier Command",
+      "slug": "frontier-command",
+      "alternative": "Inspired by base-building real-time strategy games",
+      "description": "A stylized 3D real-time strategy game: harvest, build a base, train an army and fight across river maps, on desktop, phone or tablet.",
+      "category": "Games",
+      "genres": [
+        "Strategy"
+      ],
+      "url": "https://buicongnguyen.github.io/3d_astra/",
+      "source": "https://github.com/buicongnguyen/3d_astra",
+      "license": "All rights reserved (free to play, source visible)",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Bui Cong Nguyen (Solluxlabs)",
+      "icon": "🏰",
+      "longDescription": "An original 3D RTS about economic base building and tactical unit combat. Harvest resources, put up buildings, train units and push the enemy back across maps like the Meridian Riverlands, with bridges, fords and varied ground. Army colours and settings are saved.\n\nNew players can start with Training, eight guided lessons on selecting, moving, harvesting, building, producing, attacking and pulling back. It plays on desktop with keyboard shortcuts, or on a phone or tablet with tap, drag and pinch controls. The maker also publishes the full prompt used to build the game.",
+      "builtWithAI": "The repo publishes the complete game-building prompt, and its name refers to GPT-6 Astra. Checked 2026-11-27: 674 of its 823 commits are co-authored by Claude. The code is not open source; the licence lets you play the official game only.",
+      "keywords": [
+        "rts",
+        "real-time strategy",
+        "base building",
+        "three.js",
+        "mobile game",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/frontier-command/1.webp",
+          "alt": "A base by a river with the command core and a mission panel",
+          "caption": "Meridian Riverlands"
+        },
+        {
+          "src": "/assets/apps/frontier-command/2.webp",
+          "alt": "A command core on a plateau with its build menu open",
+          "caption": "Obsidian Highlands"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Get it on GitHub",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "Imperios 1800–2100",
+      "slug": "imperios-1800-2100",
+      "alternative": "Inspired by classic age-advancing real-time strategy games",
+      "description": "A real-time strategy game through five ages from 1800 to 2100, from steam to synthesis, with every texture, model and tune generated in code.",
+      "category": "Games",
+      "genres": [
+        "Strategy"
+      ],
+      "url": "https://github.com/alandaitch/imperios-1800-2100",
+      "source": "https://github.com/alandaitch/imperios-1800-2100",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Alan Daitch",
+      "icon": "🏭",
+      "longDescription": "Build a village and advance it through five ages, each opening new buildings and units: the Steam age (1800-1870) with settlers, militia and palisades, the Electric age with foundries, markets and artillery, the Atomic age with armour and concrete, and on to 2100.\n\nThere are no image, model, sound or font files at all: every PBR texture, mesh, shot and bar of music is generated in code from a seed, so the first start takes about 40 seconds while it builds the textures. There is no hosted version: you run it yourself with Node.js (npm run dev). The game is in Spanish.",
+      "builtWithAI": "Checked 2026-11-27: all 3 commits are co-authored by Claude, and the repo includes Claude Code project settings. The README documents the rounds of agent review used to tune the look.",
+      "keywords": [
+        "rts",
+        "real-time strategy",
+        "ages",
+        "procedural",
+        "three.js",
+        "spanish",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/imperios-1800-2100/1.webp",
+          "alt": "A Steam age village with houses and workers by a pond",
+          "caption": "A Steam age village"
+        },
+        {
+          "src": "/assets/apps/imperios-1800-2100/2.webp",
+          "alt": "A village of wooden houses near the coast",
+          "caption": "Early village"
+        },
+        {
+          "src": "/assets/apps/imperios-1800-2100/3.webp",
+          "alt": "Blue-roofed buildings among trees in the Atomic age",
+          "caption": "The Atomic age"
+        },
+        {
+          "src": "/assets/apps/imperios-1800-2100/4.webp",
+          "alt": "A town at night with lit windows",
+          "caption": "Night"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "Aevum",
+      "slug": "aevum",
+      "alternative": "Inspired by classic age-advancing real-time strategy games",
+      "description": "An original 3D real-time strategy game in the browser: build a village and lead it through five ages, from the Stone Age to the Industrial Age.",
+      "category": "Games",
+      "genres": [
+        "Strategy"
+      ],
+      "url": "https://aevum-8clf.onrender.com",
+      "source": "https://github.com/flickrz/aevum-rts",
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "flickrz",
+      "icon": "🏛",
+      "longDescription": "Build a village, gather resources, raise an army and knock down your rival across five ages, from the Stone Age to the Industrial Age. Play against the computer or a friend online, with a sandbox setup and spectators.\n\nIt runs in the browser with Three.js and no build step; you can also run it yourself with Node.js. The game text is in Turkish. It is very new and updated often.",
+      "builtWithAI": "Checked 2026-11-27: 165 of its 234 commits are co-authored by Claude.",
+      "keywords": [
+        "rts",
+        "real-time strategy",
+        "ages",
+        "multiplayer",
+        "three.js",
+        "turkish",
+        "browser game"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
     }
   ]
 }
