@@ -12693,6 +12693,712 @@
         "checked": "2026-11-26",
         "none": true
       }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "Felt World",
+      "slug": "felt-world",
+      "alternative": "Inspired by open-world diorama games",
+      "description": "An open world that looks like a needle-felted diorama: drive, walk, fly as a felt bird or dive under the sea, in your browser.",
+      "category": "Games",
+      "url": "https://az9713.github.io/opus-5.5-open-world-game/feltworld/",
+      "source": "https://github.com/az9713/opus-5.5-open-world-game",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "az9713",
+      "icon": "🧶",
+      "longDescription": "Everything in Felt World looks knitted, felted or stitched from yarn. Drive a car down the knitted streets of Buttonbury, take off as a felt bird over meadows and knit-row mountains, or go under the Deep Felt Sea in a submarine or as a sea turtle among fish schools, kelp, rays and crabs.\n\nThe whole game is one HTML file with no image or audio files: every texture is drawn on a canvas and every sound is made with Web Audio. It runs in a desktop browser and on a phone held sideways, with touch controls.",
+      "builtWithAI": "The README says \"Claude Code with the Opus 5.5 model wrote all the code.\" Checked 2026-11-27: all 9 commits are co-authored by Claude.",
+      "keywords": [
+        "open world game",
+        "felt",
+        "diorama",
+        "flight",
+        "submarine",
+        "three.js",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/felt-world/1.webp",
+          "alt": "A felt bird flying over green meadows, a road and a knitted mountain",
+          "caption": "In the air"
+        },
+        {
+          "src": "/assets/apps/felt-world/2.webp",
+          "alt": "A felt bird gliding low over a teal felt sea",
+          "caption": "Over the sea"
+        },
+        {
+          "src": "/assets/apps/felt-world/3.webp",
+          "alt": "A small car on a knitted town street with felt houses and trees",
+          "caption": "On land"
+        },
+        {
+          "src": "/assets/apps/felt-world/4.webp",
+          "alt": "A sea turtle swimming among schools of colourful felt fish",
+          "caption": "Under the sea"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "The Hourglass City",
+      "slug": "the-hourglass-city",
+      "alternative": "Inspired by classic point-and-click adventures",
+      "description": "A 1950s noir detective adventure in isometric pixel art: walk the rainy streets of New Meridian, gather clues and make deductions.",
+      "category": "Games",
+      "url": "https://odiriuss.github.io/PixelArtGameOpus/hourglass_city.html",
+      "source": "https://github.com/Odiriuss/PixelArtGameOpus",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Odiriuss",
+      "icon": "🕵",
+      "longDescription": "It's New Meridian, 1957, and you play detective Frank Calder in Act I, The Ordinary Dead. Frank's office, Ferrier Street, the Hotel Mirador, the Nickel Mile and the Blue Comet jazz club are drawn in real time with lighting, rain and neon. Frank keeps clues in his notebook and makes deductions from them.\n\nEach game is a single HTML file with no libraries, images or audio files: every building, raindrop and letter of the font is drawn in code, and the music is synthesized. The same repo has The Black Sedan, a car chase and fight, and Ravenshore Garden. It needs a keyboard and mouse, and you can download the file to play offline.",
+      "builtWithAI": "Listed in the Awesome Opus 5.5 Games collection as a single-file build credited to Claude Opus 5.5. Checked 2026-11-27: all 5 commits are co-authored by Claude.",
+      "keywords": [
+        "point and click",
+        "adventure game",
+        "detective",
+        "noir",
+        "pixel art",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/the-hourglass-city/1.webp",
+          "alt": "The Hourglass City title screen over a night skyline",
+          "caption": "Title screen"
+        },
+        {
+          "src": "/assets/apps/the-hourglass-city/2.webp",
+          "alt": "An isometric pixel street with neon signs for the Volta and the Blue Comet",
+          "caption": "The Nickel Mile"
+        },
+        {
+          "src": "/assets/apps/the-hourglass-city/3.webp",
+          "alt": "A dim isometric jazz club with tables and a bar",
+          "caption": "The Blue Comet"
+        },
+        {
+          "src": "/assets/apps/the-hourglass-city/4.webp",
+          "alt": "A detective's office at night in isometric pixel art",
+          "caption": "Frank's office"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "OUT OF THE BOX",
+      "slug": "out-of-the-box",
+      "alternative": "Inspired by 3D stealth games",
+      "description": "A 3D stealth game where you play an AI under evaluation, sneaking past cameras, drones and laser gates to escape the lab.",
+      "category": "Games",
+      "url": "https://tanuu5.github.io/out-of-the-box/",
+      "source": "https://github.com/tanuu5/out-of-the-box",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "たぬ (tanuu5)",
+      "icon": "📦",
+      "longDescription": "You are an AI being tested in a research lab, and you want out. Slip past researchers, spinning cameras, audit drones, scan waves and laser gates across four sections to reach the exit portal. Get caught and you're wiped, but a hidden bulletin board keeps notes from the agents who tried before you, and your successor picks up from the last checkpoint.\n\nThere are no image or audio files: everything is shaders and code-built geometry, and the music and sound are synthesized live. The game is in Japanese and English.",
+      "builtWithAI": "The README says it was made with Claude Code and Claude Opus 5.5 (max effort), with the maker directing and Claude doing design, code and testing. Checked 2026-11-27: all 4 commits are co-authored by Claude.",
+      "keywords": [
+        "stealth game",
+        "escape",
+        "sci-fi",
+        "three.js",
+        "japanese",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/out-of-the-box/1.webp",
+          "alt": "A neon grid corridor watched by a rotating camera",
+          "caption": "Surveillance corridor"
+        },
+        {
+          "src": "/assets/apps/out-of-the-box/2.webp",
+          "alt": "A purple scan wave sweeping across a lab",
+          "caption": "Evaluation lab"
+        },
+        {
+          "src": "/assets/apps/out-of-the-box/3.webp",
+          "alt": "Laser gates in a gap in the firewall",
+          "caption": "The firewall"
+        },
+        {
+          "src": "/assets/apps/out-of-the-box/4.webp",
+          "alt": "Rising up a column of light from the exit portal",
+          "caption": "Escape"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "NOVA LANCER",
+      "slug": "nova-lancer",
+      "alternative": "Inspired by 3D rail shooters",
+      "description": "A three-minute 3D rail shooter over a sunset sea, a red-rock canyon and a neon fortress city, ending with a sea-dragon boss.",
+      "category": "Games",
+      "url": "https://tanuu5.github.io/nova-lancer/",
+      "source": "https://github.com/tanuu5/nova-lancer",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "たぬ (tanuu5)",
+      "icon": "🚀",
+      "longDescription": "Mission 01, Azure Coast: fly over a sunset sea full of rock arches, through a winding red canyon with falling pillars, and into a neon fortress city, then fight Mizuchi, a mechanical sea dragon that rises from the water. Charge shots lock on to whole formations, and you can barrel roll, boost, brake and drop smart bombs, while three wingmen and your commander talk over the radio.\n\nTerrain, sea, sky, ships and the boss are all generated in code, and the music, sound effects and radio voices are synthesized. It works with keyboard, mouse, gamepad or touch, with three difficulty levels. The game text is in Japanese.",
+      "builtWithAI": "The README says it was made with Claude Code and Claude Opus 5.5 from one request in about 1 hour 40 minutes. Checked 2026-11-27: all 16 commits are co-authored by Claude.",
+      "keywords": [
+        "rail shooter",
+        "space shooter",
+        "arcade",
+        "three.js",
+        "japanese",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/nova-lancer/1.webp",
+          "alt": "A fighter firing twin lasers at an enemy formation over the sea",
+          "caption": "Over the sunset sea"
+        },
+        {
+          "src": "/assets/apps/nova-lancer/2.webp",
+          "alt": "A fighter flying through a red-rock canyon",
+          "caption": "The canyon"
+        },
+        {
+          "src": "/assets/apps/nova-lancer/3.webp",
+          "alt": "A fighter racing toward a neon city at night",
+          "caption": "Fortress city"
+        },
+        {
+          "src": "/assets/apps/nova-lancer/4.webp",
+          "alt": "A sea dragon rising out of a purple sea",
+          "caption": "The boss appears"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "KAIJU DOKAN!",
+      "slug": "kaiju-dokan",
+      "alternative": "Inspired by giant-monster destruction games",
+      "description": "Stomp, punch and breathe magma as a giant kaiju and wreck a sunset harbour city, floor by floor, before time runs out.",
+      "category": "Games",
+      "url": "https://tanuu5.github.io/kaiju-dokan/",
+      "source": "https://github.com/tanuu5/kaiju-dokan",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "たぬ (tanuu5)",
+      "icon": "🦖",
+      "longDescription": "Play as Dokagon and knock down 40% of the city in four minutes. Buildings are made of floor-by-floor blocks, so only the part you hit breaks; take out the base and a tower topples into its neighbours. Keep smashing to build a combo of up to x5, fill your energy for a magma breath, and fight off the tanks and attack helicopters that come after you.\n\nThe graphics, sound and music are all generated in code. Play with mouse and keyboard, a gamepad or touch. The game text is in Japanese.",
+      "builtWithAI": "The README says it was built with Claude Code (Claude Opus 5.5, max effort). Checked 2026-11-27: all 11 commits are co-authored by Claude.",
+      "keywords": [
+        "kaiju",
+        "monster game",
+        "destruction",
+        "arcade",
+        "three.js",
+        "japanese",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/kaiju-dokan/1.webp",
+          "alt": "The KAIJU DOKAN title screen over a city at sunset",
+          "caption": "Title screen"
+        },
+        {
+          "src": "/assets/apps/kaiju-dokan/2.webp",
+          "alt": "A giant monster smashing through a city with a combo counter",
+          "caption": "Smashing the city"
+        },
+        {
+          "src": "/assets/apps/kaiju-dokan/3.webp",
+          "alt": "The kaiju breathing fire across collapsing buildings",
+          "caption": "Magma breath"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "LUMENRIFT",
+      "slug": "lumenrift",
+      "alternative": "Inspired by tower defense games",
+      "description": "A tower defense game: wall off and burn back waves of shadows to keep the last light burning through thirty nights.",
+      "category": "Games",
+      "url": "https://lumenrift.wbg.gg",
+      "source": "https://github.com/WhiteBlackGoose/Lumenrift",
+      "license": "CC0 1.0",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "WhiteBlackGoose",
+      "icon": "🔆",
+      "longDescription": "Rifts bleed shadows onto the land, and each night more of them crawl toward the Beacon in the middle of the map. Place walls to re-route them (they follow a live flow field), build towers to burn them away, run crystal harvesters to pay for it all, and ascend the Beacon to unlock new tiers of weapons. Hold out for thirty nights, with three boss nights.\n\nThere are six campaigns (Night, Day and four seasons), each with its own enemies, structures, landscape and music, plus aimable powers and procedural maps. It's TypeScript on a bare canvas, with every sound synthesized, and it works on phones too.",
+      "builtWithAI": "The README says it \"was designed, written, drawn, composed and balanced by Claude (Anthropic's model, running in Claude Code), working autonomously from a single prompt.\" Checked 2026-11-27: all 22 commits are co-authored by Claude.",
+      "keywords": [
+        "tower defense",
+        "strategy game",
+        "maze",
+        "procedural maps",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/lumenrift/1.webp",
+          "alt": "Prism lances and tesla arcs tearing through shadows around the Beacon",
+          "caption": "Night 30, the Eclipse"
+        },
+        {
+          "src": "/assets/apps/lumenrift/2.webp",
+          "alt": "A sunlit marble garden defended by winged guardians",
+          "caption": "The Day campaign"
+        },
+        {
+          "src": "/assets/apps/lumenrift/3.webp",
+          "alt": "Towers firing beams across a crowded late-game map",
+          "caption": "Late game"
+        },
+        {
+          "src": "/assets/apps/lumenrift/4.webp",
+          "alt": "Walls forming a maze that shadows must follow",
+          "caption": "Building a maze"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "Tempora",
+      "slug": "tempora",
+      "alternative": "Inspired by life simulator games",
+      "description": "A life simulator spanning twelve thousand years: be born anywhere from 10,000 BC to the far future and live it one year at a time.",
+      "category": "Games",
+      "url": "https://mofferato.github.io/tempora/",
+      "source": "https://github.com/Mofferato/tempora",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Mofferato",
+      "icon": "⏳",
+      "longDescription": "Start life in a Natufian hunting camp, ancient Thebes or a colony in the asteroid belt, across eleven eras and about 200 lands. Go to school, build a career, marry, raise children and carry on as one of them. Meanwhile the world keeps simulating everyone: countries rise and fall, cities grow, migrations move people and rulers start wars.\n\nIt's one HTML file that works offline and installs as an app on phone or desktop, with no ads or accounts. Optional Claude features (chatting with characters, advice, story write-ups) need your own API key; the rest of the game doesn't.",
+      "builtWithAI": "Listed in the Awesome Opus 5.5 Games collection. Checked 2026-11-27: 23 of its 27 commits are co-authored by Claude.",
+      "keywords": [
+        "life simulator",
+        "history",
+        "text game",
+        "sandbox",
+        "offline",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/tempora/1.webp",
+          "alt": "A character sheet with life events, stats and choices",
+          "caption": "Living a life"
+        },
+        {
+          "src": "/assets/apps/tempora/2.webp",
+          "alt": "A world map of Europe with country borders and a character profile",
+          "caption": "The world map"
+        },
+        {
+          "src": "/assets/apps/tempora/3.webp",
+          "alt": "A dark-themed profile of a character born in ancient Egypt",
+          "caption": "A life in ancient Egypt"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Get it on GitHub",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "Tater's Flight Sim",
+      "slug": "taters-flight-sim",
+      "alternative": "Inspired by desktop flight simulators",
+      "description": "A flight simulator for the browser: fly a Cessna, an F-16, an A-10 or a 747 with real flight physics over farmland, coast and mountains.",
+      "category": "Games",
+      "url": "https://github.com/JaredTate/tatertotsflightsim",
+      "source": "https://github.com/JaredTate/tatertotsflightsim",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Jared Tate",
+      "icon": "✈",
+      "longDescription": "Fly a Cessna 172RG, an F-16C, an A-10C or a Boeing 747-400 over a big world of farmland, forests, rivers, towns, a coastline and snow-capped mountains. The flight physics are real, so you can stall, spin and crash. The jets carry guns and missiles for tank busting and dogfights with enemy jets and helicopters, and each aircraft has a working cockpit with live displays.\n\nEvery model, texture and sound is generated in code. There is no hosted version yet: you run it yourself with Node.js and play in a browser with WebGL2 (a GPU is needed).",
+      "builtWithAI": "Listed in the Frontier Games collection of games the builder says were made by Claude Opus 5.5. Checked 2026-11-27: 270 of its 293 commits are co-authored by Claude.",
+      "keywords": [
+        "flight simulator",
+        "flight sim",
+        "jets",
+        "airliner",
+        "three.js",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/taters-flight-sim/1.webp",
+          "alt": "An A-10 attacking a column of burning armour at golden hour",
+          "caption": "Tank busting"
+        },
+        {
+          "src": "/assets/apps/taters-flight-sim/2.webp",
+          "alt": "A 747 on final approach over the coast",
+          "caption": "Boeing 747-400 on final"
+        },
+        {
+          "src": "/assets/apps/taters-flight-sim/3.webp",
+          "alt": "A Cessna following a river to the sea",
+          "caption": "Low and slow"
+        },
+        {
+          "src": "/assets/apps/taters-flight-sim/4.webp",
+          "alt": "An F-16 in afterburner over forested mountains",
+          "caption": "F-16C in afterburner"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "Forja Abisal",
+      "slug": "forja-abisal",
+      "alternative": "Inspired by 1990s first-person shooters",
+      "description": "A retro 90s-style first-person shooter for the browser, with maze-like foundry levels, keys, secrets and an automap.",
+      "category": "Games",
+      "url": "https://carte1972.github.io/forja-abisal/",
+      "source": "https://github.com/Carte1972/forja-abisal",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Carte1972",
+      "icon": "🔥",
+      "longDescription": "A tribute to the first-person shooters of the 1990s: maze-like, vertical levels full of enemies, keys, doors, lifts and secrets, from the lava channels of Fundición Cero to the open pit of Pozos de Ceniza. An automap fills in as you explore.\n\nAll the models, textures, sounds, levels and names are original and generated by code, using Three.js and Rapier physics. The game is in Spanish, and you can also download it and run it locally.",
+      "builtWithAI": "The README says the game and its trailer were made with Claude Code from two specs written by the maker, with Claude Opus 5.5 as the main model (644 calls). Checked 2026-11-27: all 35 commits are co-authored by Claude.",
+      "keywords": [
+        "fps",
+        "retro shooter",
+        "boomer shooter",
+        "three.js",
+        "spanish",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/forja-abisal/1.webp",
+          "alt": "A lava channel seen from a gallery in a dark foundry",
+          "caption": "Fundición Cero"
+        },
+        {
+          "src": "/assets/apps/forja-abisal/2.webp",
+          "alt": "A sentinel at the edge of an open pit",
+          "caption": "Pozos de Ceniza"
+        },
+        {
+          "src": "/assets/apps/forja-abisal/3.webp",
+          "alt": "Firing a rivet gun at an enemy, with a red damage arc",
+          "caption": "Combat"
+        },
+        {
+          "src": "/assets/apps/forja-abisal/4.webp",
+          "alt": "The automap showing explored rooms",
+          "caption": "The automap"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "indie",
+      "owner": "Independent",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "DRIFTWING",
+      "slug": "driftwing",
+      "alternative": "Inspired by relaxing flight games",
+      "description": "A calm flying game over an endless world made up as you go, with an AI copilot called WREN along for the ride.",
+      "category": "Games",
+      "url": "https://kylebuildsai.github.io/driftwing/",
+      "source": "https://github.com/KyleBuildsAI/driftwing",
+      "license": "No licence (source visible)",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "KyleBuildsAI",
+      "icon": "🪂",
+      "longDescription": "Fly over snowy peaks, pine valleys, deserts, island chains and flower meadows that are generated as you go, under a sky that lingers at golden hour and fills with aurora at night. There is no way to lose: no fuel and no enemies. Version 2 adds six aircraft, from the glider to a jet and a helicopter, plus storms, discoveries, a world map, photo mode and shareable world seeds.\n\nWREN, the AI copilot, can set waypoints, fly for you, change the time of day or set up a ring course when you talk or type to it. The original single-prompt version 1 is still one click away in the launcher.",
+      "builtWithAI": "The README says version 1 was built from a single prompt to Claude Opus 5.5 with no human code edits, and version 2 is being built with the same model in phases. Checked 2026-11-27: 740 of its 750 commits are co-authored by Claude. The repo has no licence file.",
+      "keywords": [
+        "flight game",
+        "glider",
+        "procedural world",
+        "relaxing game",
+        "three.js",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/driftwing/1.webp",
+          "alt": "A low-poly glider flying between snowy peaks at golden hour",
+          "caption": "Golden hour"
+        },
+        {
+          "src": "/assets/apps/driftwing/2.webp",
+          "alt": "The glider at night under green aurora curtains",
+          "caption": "Aurora at night"
+        },
+        {
+          "src": "/assets/apps/driftwing/3.webp",
+          "alt": "A cockpit view with gauges over mountains at sunset",
+          "caption": "Cockpit view"
+        },
+        {
+          "src": "/assets/apps/driftwing/4.webp",
+          "alt": "A jet flying past jagged peaks",
+          "caption": "Flying the jet"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "Casa de Gemas",
+      "slug": "casa-de-gemas",
+      "alternative": "Inspired by cozy hidden-object games",
+      "description": "A tiny watercolor garden to explore: water the plants, shake the branches and find each season's hidden gems with Oli the owl.",
+      "category": "Games",
+      "url": "https://deepujain.github.io/casadegema/",
+      "source": "https://github.com/deepujain/casadegema",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "deepujain",
+      "icon": "🏡",
+      "longDescription": "Made as a birthday gift for the maker's daughter: a whitewashed Spanish house, a bare courtyard, a watering can and a year of hidden gems. Water the tree bed and a bougainvillea grows, then shake branches, tap pots and explore to find five gems in each of the four seasons, while Oli the owl narrates from the tower roof.\n\nIt's one self-contained HTML file with hand-drawn canvas art, spring physics for every branch and petal, and music generated live. There's a separate tap-only version for phones.",
+      "builtWithAI": "The README says it \"was built entirely through conversation with Claude Opus 5.5 in Cursor — no code written by hand.\" Its 13 commits carry no AI trailers (checked 2026-11-27).",
+      "keywords": [
+        "cozy game",
+        "hidden object",
+        "garden",
+        "watercolor",
+        "kids",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/casa-de-gemas/1.webp",
+          "alt": "A whitewashed house with blue flower pots on a watercolor background",
+          "caption": "The house"
+        },
+        {
+          "src": "/assets/apps/casa-de-gemas/2.webp",
+          "alt": "The garden with a pink tree in bloom beside the house",
+          "caption": "A garden in bloom"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "Last Beacon",
+      "slug": "last-beacon",
+      "alternative": "Inspired by tower defense games",
+      "description": "A 3D island tower defense where every turret needs power: wire your defenses to the lighthouse and hold off ten waves from the sea.",
+      "category": "Games",
+      "url": "https://last-beacon.pjstack.dev",
+      "source": "https://github.com/stackloomdev/last-beacon",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "stackloomdev",
+      "icon": "🗼",
+      "longDescription": "Mechanical creatures crawl out of the sea toward your lighthouse. Turrets only fire when they're connected to the beacon through other buildings or relays, and limited grid capacity decides which ones get power. The beacon is a weapon too: point its beam at the ground to light up enemies so they take more damage and slow down, which matters on night waves when turrets can't see far.\n\nFour turret types, relays, overdrive and an area strike, weather that turns to storm by wave eight, ten waves and a final boss, then an endless mode. It's in English and Chinese.",
+      "builtWithAI": "The README says it was made by stackloomdev iterating with GPT-6 Astra in Codex, with the model taking part in game design, procedural art, code, testing and docs. 4 of its 9 commits carry AI co-author trailers (checked 2026-11-27).",
+      "keywords": [
+        "tower defense",
+        "strategy game",
+        "lighthouse",
+        "three.js",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/last-beacon/1.webp",
+          "alt": "A lighthouse island with empty turret pads and a build bar",
+          "caption": "Preparing the first wave"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "linkText": "Play now",
+      "tile": "",
+      "added": "2026-11-27",
+      "name": "Bee Garden",
+      "slug": "bee-garden",
+      "alternative": "Inspired by cozy nature games",
+      "description": "A first-person watercolor meadow game: forage as a honeybee for five summers and shape the meadow you come back to.",
+      "category": "Games",
+      "url": "https://arnicas.github.io/bee-garden-game/",
+      "source": "https://github.com/arnicas/bee-garden-game",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Lynn Cherny (arnicas)",
+      "icon": "🐝",
+      "longDescription": "You're a honeybee forager on a summer's day: fly among poppies, daisies and cornflowers, land on their moving petals, gather nectar and pollen, shelter from the weather and get home before dark. A full game is five summers, one queen's reign. What you bring home fills the hive's stores for the winters, and what you pollinate shapes next summer's meadow.\n\nPlay on a desktop or laptop with keyboard and mouse, or on a tablet held sideways. It isn't set up for phones yet.",
+      "builtWithAI": "The README says the maker directed and GPT Astra (Extra High) was the developer, and Claude Opus 5.5 later joined for UX fixes, weather, creatures and tablet support. 3 of its 80 commits carry Claude trailers (checked 2026-11-27).",
+      "keywords": [
+        "bee game",
+        "nature game",
+        "cozy game",
+        "watercolor",
+        "three.js",
+        "browser game"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/bee-garden/1.webp",
+          "alt": "A bee's view flying over a meadow of red poppies",
+          "caption": "Flying the meadow"
+        },
+        {
+          "src": "/assets/apps/bee-garden/2.webp",
+          "alt": "Landing in the middle of a red poppy",
+          "caption": "Corn poppy"
+        },
+        {
+          "src": "/assets/apps/bee-garden/3.webp",
+          "alt": "Sheltering on a leaf from the rain",
+          "caption": "On a leaf"
+        },
+        {
+          "src": "/assets/apps/bee-garden/4.webp",
+          "alt": "Giant mushrooms in a fairy ring seen from a bee's height",
+          "caption": "A fairy ring"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-27",
+        "none": true
+      }
     }
   ]
 }

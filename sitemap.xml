@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://remadebyai.com/</loc><lastmod>2026-11-26</lastmod></url>
-  <url><loc>https://remadebyai.com/apps/</loc><lastmod>2026-11-26</lastmod></url>
-  <url><loc>https://remadebyai.com/categories/</loc><lastmod>2026-11-26</lastmod></url>
-  <url><loc>https://remadebyai.com/new/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/categories/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/new/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://remadebyai.com/about/</loc></url>
   <url><loc>https://remadebyai.com/list/</loc></url>
   <url><loc>https://remadebyai.com/badge/</loc></url>
   <url><loc>https://remadebyai.com/alternatives/</loc><lastmod>2026-11-25</lastmod></url>
-  <url><loc>https://remadebyai.com/platforms/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/platforms/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://remadebyai.com/alternatives/adobe/</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://remadebyai.com/alternatives/lightroom/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://remadebyai.com/alternatives/microsoft-office/</loc><lastmod>2026-11-23</lastmod></url>
@@ -22,7 +22,7 @@
   <url><loc>https://remadebyai.com/platforms/windows/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/platforms/macos/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/platforms/linux/</loc><lastmod>2026-11-26</lastmod></url>
-  <url><loc>https://remadebyai.com/platforms/web/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/platforms/web/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://remadebyai.com/platforms/ios/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/platforms/android/</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://remadebyai.com/categories/3d-and-cad/</loc><lastmod>2026-11-24</lastmod></url>
@@ -36,7 +36,7 @@
   <url><loc>https://remadebyai.com/categories/family/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/categories/file-sharing/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://remadebyai.com/categories/finance/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://remadebyai.com/categories/games/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/categories/games/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://remadebyai.com/categories/graphics/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://remadebyai.com/categories/health-and-fitness/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://remadebyai.com/categories/home/</loc><lastmod>2026-11-25</lastmod></url>
@@ -273,4 +273,17 @@
   <url><loc>https://remadebyai.com/apps/unsung-vale/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/apps/red-clay-chase/</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://remadebyai.com/apps/ink-flight/</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/felt-world/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/the-hourglass-city/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/out-of-the-box/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/nova-lancer/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/kaiju-dokan/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/lumenrift/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/tempora/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/taters-flight-sim/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/forja-abisal/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/driftwing/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/casa-de-gemas/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/last-beacon/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://remadebyai.com/apps/bee-garden/</loc><lastmod>2026-11-27</lastmod></url>
 </urlset>
