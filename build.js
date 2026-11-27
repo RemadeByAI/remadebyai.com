@@ -973,10 +973,12 @@ function main() {
   write('categories/index.html', `${head({ title: 'Categories | RemadeByAI', description: 'Browse AI-built apps and alternatives to familiar software by category.', canonical: '/categories/' })}
 <div class="wrap list-page">
   <p class="section-label">✦ Categories</p>
-  <h1 class="page-title">Applications by category</h1>
-  <p class="page-intro">${software.length} apps in ${categories.length} categories, and ${games.length} games in ${genres.length} genres.</p>
+  <h1 class="page-title">Browse apps and games</h1>
+  <h2 class="sub-title">Applications by category</h2>
+  <p class="sub-count">${software.length} apps in ${categories.length} categories. <a href="/apps/">All apps</a></p>
   ${categoryChips(categories)}
   <h2 class="sub-title">Games by genre</h2>
+  <p class="sub-count">${games.length} games in ${genres.length} genres. <a href="/games/">All games</a></p>
   ${genreChips(genres)}
   <h2 class="sub-title">Alternatives to popular software</h2>
   ${topicChips(topics)}
