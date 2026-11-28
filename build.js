@@ -800,34 +800,38 @@ function replaceRegion(html, name, content) {
   if (!re.test(html)) { console.error(`index.html is missing the <!-- build:${name} --> markers.`); process.exit(1); }
   return html.replace(re, (_, open, close) => `${open}\n${content}\n${close}`);
 }
-// Every entry with "featured": true takes a turn: all are rendered, the first is shown
-// without JavaScript, and a tiny inline script shows one at random on each page load.
+// Every entry with "featured": true gets its own card, side by side (stacked on phones).
+// Without JavaScript they show in projects.json order; a tiny inline script shuffles the
+// order on each page load so a different one leads now and then.
 function featured(apps) {
   if (!apps.length) return '';
-  const articles = apps.map((app, i) => {
+  const articles = apps.map(app => {
     let art = '';
     if (app.featureArt) {
       const file = path.join(ROOT, 'partials', `art-${app.featureArt}.html`);
       if (fs.existsSync(file)) art = fs.readFileSync(file, 'utf8').trim();
     }
-    return `<article class="feature" data-feature${i ? ' hidden' : ''} aria-labelledby="featured-${app.slug}">
-      <div class="feature-copy">
-        ${tile(app)}
-        <h2 id="featured-${app.slug}">${esc(app.name)}</h2>
-        <p class="lede">${esc(app.tagline || app.alternative)}</p>
-        <p>${esc(app.featureText || app.description)}</p>
-        <div class="feature-actions"><a class="button primary" href="${esc(app.url)}" data-track="featured" data-app="${app.slug}">${esc(app.featureLinkText || 'Visit ' + app.name)}</a><a class="button" href="/apps/${app.slug}/">Details</a></div>
-        <small class="owner">By ${esc(app.owner)}</small>
-      </div>
-      ${art}
-    </article>`;
-  }).join('\n    ');
-  const pick = apps.length > 1
-    ? `\n    <script>(function(){var f=document.querySelectorAll('#featured [data-feature]'),n=Math.floor(Math.random()*f.length);for(var i=0;i<f.length;i++)f[i].hidden=i!==n;})();</script>`
+    return `<article class="feature" data-feature aria-labelledby="featured-${app.slug}">
+        <div class="feature-copy">
+          ${tile(app)}
+          <h2 id="featured-${app.slug}">${esc(app.name)}</h2>
+          <p class="lede">${esc(app.tagline || app.alternative)}</p>
+          <p>${esc(app.featureText || app.description)}</p>
+          <div class="feature-actions"><a class="button primary" href="${esc(app.url)}" data-track="featured" data-app="${app.slug}">${esc(app.featureLinkText || 'Visit ' + app.name)}</a><a class="button" href="/apps/${app.slug}/">Details</a></div>
+          <small class="owner">By ${esc(app.owner)}</small>
+        </div>
+        ${art}
+      </article>`;
+  }).join('\n      ');
+  const shuffle = apps.length > 1
+    ? `\n    <script>(function(){var g=document.querySelector('#featured .feature-grid'),f=[].slice.call(g.children);for(var i=f.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=f[i];f[i]=f[j];f[j]=t;}f.forEach(function(a){g.appendChild(a);});})();</script>`
     : '';
-  return `<section class="wrap" id="featured" aria-label="Featured project">
-    <p class="section-label">✦ Featured project</p>
-    ${articles}${pick}
+  const label = apps.length > 1 ? 'Featured projects' : 'Featured project';
+  return `<section class="wrap" id="featured" aria-label="${label}">
+    <p class="section-label">✦ ${label}</p>
+    <div class="feature-grid${apps.length > 1 ? ' pair' : ''}">
+      ${articles}
+    </div>${shuffle}
   </section>`;
 }
 // sections: the categories (All apps) or genres (Games) for the first drop-down; key is the card's data-* name.
