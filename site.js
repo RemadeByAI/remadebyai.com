@@ -5,7 +5,8 @@
 //    which directory.js filters.
 // 2. Click counting: links with data-track (Download, Visit site, Source code, featured buttons) send a
 //    small anonymous ping to the clicks Worker named in the header form's data-clicks attribute. No
-//    cookies, nothing about the visitor; just which app, which button and which page. Set in build.js.
+//    cookies; just which app, which button, which page, and which outside site (referrer, landing page,
+//    utm tags) started the visit. Set in build.js.
 // 3. The light/dark mode button in the header (last block).
 (() => {
   const form = document.querySelector('.site-search');
@@ -140,11 +141,29 @@
           .catch(() => { try { navigator.sendBeacon && navigator.sendBeacon(endpoint, new Blob([body], { type: 'text/plain' })); } catch { /* ignore */ } });
       } catch { /* never block the link */ }
     };
+    // Where this visit came from (2026-11-28): on the first page of a visit, remember the outside page
+    // that sent the visitor (document.referrer, without its ?query or #hash), the page they landed on and
+    // any utm_ tags, in sessionStorage for this tab only. Each counted click carries it, so the stats page
+    // can show which sites lead to clicks. Nothing else about the visitor is kept.
+    const cut = (v, n) => String(v || '').slice(0, n);
+    let visit = null;
+    try { visit = JSON.parse(sessionStorage.getItem('rba-visit') || 'null'); } catch { /* blocked */ }
+    if (!visit) {
+      let ref = '';
+      try {
+        const r = new URL(document.referrer);
+        if (/^https?:$/.test(r.protocol) && !/(^|\.)remadebyai\.com$/.test(r.hostname)) ref = r.origin + r.pathname;
+      } catch { /* no referrer */ }
+      const q = new URLSearchParams(location.search);
+      visit = { ref: cut(ref, 200), landing: cut(location.pathname, 120) };
+      for (const k of ['source', 'medium', 'campaign']) if (q.get('utm_' + k)) visit['utm_' + k] = cut(q.get('utm_' + k), 60);
+      try { sessionStorage.setItem('rba-visit', JSON.stringify(visit)); } catch { /* blocked */ }
+    }
     const count = event => {
       if (event.type === 'auxclick' && event.button !== 1) return;
       const link = event.target.closest('a[data-track]');
       if (!link) return;
-      send(JSON.stringify({ app: link.dataset.app || '', kind: link.dataset.track, page: location.pathname }));
+      send(JSON.stringify({ app: link.dataset.app || '', kind: link.dataset.track, page: cut(location.pathname, 120), ...visit }));
     };
     document.addEventListener('click', count, { capture: true });
     document.addEventListener('auxclick', count, { capture: true }); // middle-click opens a new tab

@@ -7,8 +7,13 @@ visitor leaves the site. No dependencies, one file: `src/index.js`.
 
 How it works: `site.js` on every page sends a tiny `navigator.sendBeacon` POST to
 `<worker>/click` with `{ app, kind, page }`. The link opens normally; the ping
-never delays it. Nothing about the visitor is stored (no IP, no cookie), only
-counts per app, button and day in Workers KV.
+never delays it. Nothing that identifies the visitor is stored (no IP, no cookie): counts per
+app, button and day, plus (since 2026-11-28) one 90-day log entry per click with
+where the visit came from: the outside page that referred it (no query string),
+the first page of the visit and any utm_source/medium/campaign tags. The stats
+page shows Top referrers, Campaigns, Landing pages and Recent clicks (Central time)
+for the last 30 days. Each click is now 3 KV writes (about 330 clicks a day on
+the free plan).
 
 See the numbers at `<worker>/stats?key=<STATS_KEY>` (add `&format=json` for JSON):
 one row per app, last 30 days and all time.
