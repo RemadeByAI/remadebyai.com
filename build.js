@@ -819,7 +819,6 @@ function featured(apps) {
           <p class="lede">${esc(app.tagline || app.alternative)}</p>
           <p>${esc(app.featureText || app.description)}</p>
           <div class="feature-actions"><a class="button primary" href="${esc(app.url)}" data-track="featured" data-app="${app.slug}">${esc(app.featureLinkText || 'Visit ' + app.name)}</a><a class="button" href="/apps/${app.slug}/">Details</a></div>
-          <small class="owner">By ${esc(app.owner)}</small>
         </div>
       </article>`;
   }).join('\n      ');
