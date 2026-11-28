@@ -162,7 +162,6 @@ footer { border-top: 1px solid var(--line); background: #0d1310; }
 .list-app-box { display: grid; grid-template-columns: 1fr; align-items: center; gap: clamp(24px, 5vw, 60px); padding: clamp(25px, 4.3vw, 49px); border: 1px solid #395546; border-radius: 19px; background: linear-gradient(120deg, #142219, #111813 60%); }
 .list-app h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); font-weight: 800; letter-spacing: -.055em; line-height: 1.1; }
 .list-app h2 + p { margin-top: 14px; color: var(--muted); font-size: 1.05rem; }
-.list-app-box > div > p:last-child { max-width: 46rem; }
 /* List your app form (shown by contact.js only when the forms Worker is configured). */
 .list-form { grid-column: 1 / -1; padding-top: clamp(20px, 3vw, 32px); border-top: 1px solid #2c4235; }
 .form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 20px; }
@@ -253,18 +252,18 @@ html[data-theme="light"] .feature-grid.pair .inbox-art { border-color: #c9d8cc; 
 .app-section { margin-top: 44px; }
 .app-section > h2 { font-size: clamp(1.6rem, 2.8vw, 2.1rem); font-weight: 800; letter-spacing: -.05em; }
 .app-section .cards { margin-top: 16px; }
-.prose { max-width: 720px; margin-top: 12px; }
+.prose { margin-top: 12px; }
 .prose p + p { margin-top: 12px; }
-.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); gap: 12px; margin-top: 16px; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr)); gap: 12px; margin-top: 16px; }
 .shots figure { position: relative; }
 .shots img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 12px; }
 .shots figcaption { position: static; margin-top: 6px; }
-.review { max-width: 760px; margin-top: 14px; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+.review { margin-top: 14px; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
 .review p + p { margin-top: 10px; }
 .review-verdict { color: var(--green); font-size: 1.15rem; font-weight: 700; }
 .review-meta { color: var(--muted); font: .78rem var(--mono); }
 /* "What people say": compiled from public discussion */
-.buzz { max-width: 960px; margin-top: 14px; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+.buzz { margin-top: 14px; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
 .buzz .prose p + p { margin-top: 10px; }
 .buzz h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
 .buzz-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 14px 28px; margin-top: 18px; }
@@ -344,14 +343,14 @@ html.viewer-open { overflow: hidden; }
   .viewer-frame img { max-height: calc(100dvh - 56px - 76px - 40px); }
 }
 /* "Listed on RemadeByAI" badge: the small box at the bottom of app pages and the /badge/ page. */
-.badge-box { max-width: 760px; margin-top: 44px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.badge-box { margin-top: 44px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
 .badge-box summary { padding: 12px 16px; color: var(--muted); cursor: pointer; font-size: .92rem; }
 .badge-box summary:hover, .badge-box[open] summary { color: var(--green); }
 .badge-body { padding: 2px 16px 16px; }
 .badge-body > .muted { margin-top: 12px; font-size: .9rem; }
 .badge-previews { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 4px; }
 .badge-previews img, .badge-samples img { display: block; max-width: 100%; height: auto; }
-.snippet { max-width: 760px; margin-top: 12px; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.snippet { margin-top: 12px; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
 .snippet-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 6px 8px 6px 12px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
 .snippet pre { margin: 0; padding: 10px 12px; overflow-x: auto; background: var(--bg); font: .8rem/1.5 var(--mono); white-space: pre-wrap; word-break: break-all; }
 .copy { min-height: 28px; padding: 0 10px; border: 1px solid #3b5141; border-radius: 6px; background: transparent; color: var(--green); cursor: pointer; font-size: .8rem; font-weight: 700; }
