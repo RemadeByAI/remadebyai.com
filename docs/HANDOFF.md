@@ -1,8 +1,13 @@
 # Handoff notes
 
-Last updated: 2026-11-27 Central (hunt 15 on branch `claude/project-thread-nbdmlu`, waiting for Go live). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
+Last updated: 2026-11-28 Central (hunt 16 on branch `claude/project-thread-3q44b1`, waiting for Go live). Read this first when picking up work on the site. The newest session's summary is right below; older history is under Ideas and Open items.
 
-## Newest: app and games hunt 15, 255 listings (2026-11-27 afternoon Central, cloud)
+## Newest: app and games hunt 16, 272 listings (2026-11-28 early morning Central, cloud)
+
+- 17 added on branch `claude/project-thread-3q44b1`: apps PDF4Free (Acrobat Pro), Taskbar Timer, Jewelcase (Gaming tools), Free Physical Modeling Synth, trymesh (Fusion POC), Hylly, BannedBrowser, Lucrometro, Wisp Player; games Tumblebuds (indie), Clanker Racing, PaletteRider (indie), Summer Festival, Per My Last Email (indie), Shanhe, Abyssal Garden, Aurora Courier. All "What people say": none. 7 have no screenshots (github.io blocked from the cloud).
+- Held: Lumivox (yt-dlp YouTube downloads), greekk synth, Fruit Fling, Midnight Grid, Valdoria MMO. Notes: `/mnt/project-files/app-hunt/2026-11-28-hunt-16.md`.
+
+## Earlier: app and games hunt 15, 255 listings (2026-11-27 afternoon Central, cloud)
 
 - 19 added on branch `claude/project-thread-nbdmlu`: apps Monido, HFix Windows 11 Tools, HukukFix Download Manager, No Sleep, Kiln, Focus (slug focus-time-tracker, indie, no licence), FewChat, Haze, Game Launcher for macOS, YAME; games Ironvale (RTS, indie), Valley Ride, Tiny Planet, Cayley, Graveyard Shift, WHITEOUT, Atlantis, BLAMELESS, Pelican Ride. All "What people say": none.
 - Held: closed X-only games from ummydev/awesome-claude-fable-games (What the Water Keeps, Danfo Run, HEAT, Evensong...) since the makers' posts can't be read from the cloud. Notes: `/mnt/project-files/app-hunt/2026-11-27-hunt-15.md`.

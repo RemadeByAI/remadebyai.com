@@ -14840,6 +14840,805 @@
         "checked": "2026-11-27",
         "none": true
       }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "Download",
+      "name": "PDF4Free",
+      "slug": "pdf4free",
+      "alternative": "Alternative to Adobe Acrobat Pro",
+      "description": "A free Windows PDF viewer and editor modelled on Acrobat Pro's tool set: edit, comment, organise, convert, OCR, fill and design forms, redact and sign.",
+      "category": "Office",
+      "url": "https://github.com/Raed-DevJourney/PDF4Free",
+      "download": "https://github.com/Raed-DevJourney/PDF4Free/releases/latest",
+      "source": "https://github.com/Raed-DevJourney/PDF4Free",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "maker": "Raed (Raed-DevJourney)",
+      "icon": "📄",
+      "longDescription": "PDF4Free took the tool set of Adobe Acrobat Pro as its checklist and built each area with open-source parts on .NET 10. It opens several documents in tabs, edits text one line at a time, adds pictures, links, watermarks, headers and Bates numbers, and has the usual comment tools. Pages can be reordered, split, combined and inserted, and files can be created from images, Office documents, web pages or a scanner.\n\nIt exports to Word, Excel, PowerPoint and images, runs OCR with the engine built into Windows, fills and designs forms, compares two PDFs word by word, encrypts with AES-256, redacts permanently and adds handwritten or certificate signatures. The README has an honest table of what matches Acrobat Pro and what is only partly there. The installer is not code-signed, so SmartScreen may warn the first time.",
+      "builtWithAI": "The README says it was \"created completely by Claude Fable 5.2\", from the research and architecture to the code, icon, installer and README, with no line written by hand. Checked 2026-11-28: all 3 commits carry Claude co-author lines.",
+      "keywords": [
+        "pdf editor",
+        "acrobat",
+        "pdf forms",
+        "ocr",
+        "redact",
+        "sign pdf",
+        "windows"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/pdf4free/1.webp",
+          "alt": "A purchase order form being filled in",
+          "caption": "Filling in a form"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "Download",
+      "name": "Taskbar Timer",
+      "slug": "taskbar-timer",
+      "alternative": "Alternative to the Windows Clock app timers",
+      "description": "Countdown timers for Windows 11 that sit right on the taskbar as small live pills, with Pomodoro, count-to-a-time and repeating alarms.",
+      "category": "Productivity",
+      "url": "https://github.com/zulfadlyy/taskbar-timer",
+      "download": "https://github.com/zulfadlyy/taskbar-timer/releases/latest",
+      "source": "https://github.com/zulfadlyy/taskbar-timer",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "maker": "zulfadlyy",
+      "icon": "⏲️",
+      "longDescription": "Each running timer shows on the taskbar next to the tray icons, with a progress bar in its own colour, so you can see what is left without opening anything. Up to ten can run at once, each with a label. There are four modes: a plain duration, counting down to a clock time, Pomodoro focus and break cycles, and alarms that repeat on chosen days.\n\nType 2, 5, Enter for 25 minutes, or use the arrows and mouse wheel. A timer turns amber near the end and flashes red when done, with a Windows notification and a sound (four built in, or your own WAV). Global hotkeys open the panel and pause everything. It is one small .exe built with the C# compiler that ships with Windows and follows light and dark mode.",
+      "builtWithAI": "The README says the whole project, code, build script, screenshots and README, was written by Claude in Claude Code, with the owner describing features and testing. Checked 2026-11-28: all 3 commits carry Claude co-author lines.",
+      "keywords": [
+        "timer",
+        "countdown",
+        "pomodoro",
+        "alarm",
+        "taskbar",
+        "windows 11"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/taskbar-timer/1.webp",
+          "alt": "Three timers counting down on the taskbar",
+          "caption": "On the taskbar"
+        },
+        {
+          "src": "/assets/apps/taskbar-timer/2.webp",
+          "alt": "The timer panel with running timers",
+          "caption": "The timer panel"
+        },
+        {
+          "src": "/assets/apps/taskbar-timer/3.webp",
+          "alt": "The Pomodoro tab",
+          "caption": "Pomodoro"
+        },
+        {
+          "src": "/assets/apps/taskbar-timer/4.webp",
+          "alt": "The settings window",
+          "caption": "Settings"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "Download",
+      "name": "Jewelcase",
+      "slug": "jewelcase",
+      "alternative": "Alternative to iTunes-style syncing for Android gaming handhelds",
+      "description": "A Linux desktop app that manages an Android retro handheld the way iTunes managed an iPod: tick the games that belong on it and press Sync.",
+      "category": "Gaming tools",
+      "url": "https://github.com/lmcastaneda/jewelcase",
+      "download": "https://github.com/lmcastaneda/jewelcase/releases",
+      "source": "https://github.com/lmcastaneda/jewelcase",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "maker": "Luis Castaneda",
+      "icon": "💎",
+      "longDescription": "Your game library lives on the PC; plug in the handheld and Jewelcase shows everything in one list with size, play count and play time. A tick means the game should be on the device, and Sync makes it so. There is a cover-art grid, smart lists such as Never Played and Largest on Device, and an inbox that works out which system a new download is for and converts archives to CHD or RVZ where the handheld uses them.\n\nIt also shows which emulators are installed and which one ES-DE uses for each system, checks for the BIOS files they need, backs up saves and save states whenever the handheld is connected, and shows battery and storage. It was built for an Anbernic RG477V running ES-DE but should work with any Android handheld that keeps games in per-system folders. It ships as an AppImage and needs adb. You bring your own games.",
+      "builtWithAI": "The README says Jewelcase \"was written entirely by Claude\"; a person decided what it should do and tested it on their handheld but wrote none of the code, and docs/how-this-was-built.md tells the story. Checked 2026-11-28: 2 of 16 commits carry Claude co-author lines.",
+      "keywords": [
+        "retro handheld",
+        "anbernic",
+        "es-de",
+        "emulation",
+        "rom sync",
+        "android",
+        "itunes"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "Play now",
+      "name": "Free Physical Modeling Synth",
+      "slug": "free-physical-modeling-synth",
+      "alternative": "Alternative to Pianoteq and other physical-modeling instruments",
+      "description": "Physically modelled piano, strings, winds, mallets and drums that run in the browser with no samples, and play MIDI files too.",
+      "category": "Audio",
+      "url": "https://toritan123.github.io/free-physical-modeling-synth/",
+      "source": "https://github.com/Toritan123/free-physical-modeling-synth",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Toritan",
+      "icon": "🎹",
+      "longDescription": "Every note is calculated sample by sample inside the browser's AudioWorklet: a hammer striking stiff, slightly inharmonic strings for the piano, plucked strings with a body for guitar, koto, harp and shamisen, bowed strings for violin and cello, air jets and reeds for flute, clarinet and trumpet, and resonators for marimba, vibraphone and bells. There are no recordings in it.\n\nPlay with the on-screen keys or the computer keyboard, change brightness, decay and reverb, or turn on a headphone 3D mode that puts the piano about a metre in front of you. Drop a General MIDI file on the page and it is played with all 128 GM sounds and the drum kit mapped to the models. The piano was tuned against Steinway and Yamaha recordings and the drums against an open drum sample set. The page is in Japanese with an English summary.",
+      "builtWithAI": "The README says the code was written by Claude in Claude Code, with the author playing it by ear many times and Claude tracing each complaint against real piano recordings to fix it. Checked 2026-11-28: 8 of 12 commits carry Claude co-author lines.",
+      "keywords": [
+        "piano",
+        "synthesizer",
+        "physical modeling",
+        "midi player",
+        "web audio",
+        "pianoteq"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "View source",
+      "name": "trymesh",
+      "slug": "trymesh",
+      "alternative": "Alternative to Autodesk Fusion (proof of concept)",
+      "description": "A proof-of-concept parametric 3D CAD editor in the browser, with constraint-solved sketches, an editable feature timeline and an MCP server so an AI can model too.",
+      "category": "3D and CAD",
+      "url": "https://github.com/lksv/trymesh",
+      "source": "https://github.com/lksv/trymesh",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Lukas Svoboda",
+      "icon": "📐",
+      "longDescription": "Sketches made of lines, arcs, circles and splines are held by constraints and dimensions that can use named parameters, and the editor tells you when a sketch is under- or over-constrained. Sketches become solids by extrude, revolve, holes from hardware catalogues, fillets, chamfers, patterns and booleans, all recorded on a timeline you can edit anywhere and recompute.\n\nIt can measure, section, find the gap or interference between bodies, check prints and export STL, 3MF, DXF, SVG, a parts list and robot-simulator formats, and it can convert Onshape Part Studio models. Solids are triangle meshes, not B-rep. There is no hosted version: you clone it and run it with pnpm.",
+      "builtWithAI": "The README calls it an experiment in how far one can get with Claude Fable 5.2: Fable did the architecture and design reviews and Opus 5.5 much of the code, with the owner setting goals and approving libraries. Checked 2026-11-28: 511 of 564 commits carry Claude co-author lines.",
+      "keywords": [
+        "cad",
+        "parametric",
+        "fusion 360",
+        "onshape",
+        "3d modeling",
+        "mcp",
+        "stl"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "See it",
+      "name": "Hylly",
+      "slug": "hylly",
+      "alternative": "Alternative to Calibre-Web and Kavita for books you bought",
+      "description": "A home library for the DRM-free e-books, comics and RPG books you own: it downloads them from the shops, keeps them safe and serves them to your reading apps.",
+      "category": "Reading",
+      "url": "https://janisc.github.io/hylly/",
+      "source": "https://github.com/janisc/hylly",
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "maker": "janisc",
+      "icon": "📚",
+      "longDescription": "Hylly (Finnish for shelf) lists everything you own on Humble Bundle, StoryBundle, DriveThruRPG and itch.io and downloads it into one folder, checking every file against the shop's checksum so a sign-in page is never kept as a book. It finds covers and details, and you can add your own files too.\n\nIt then serves the library to your browser, with a reader, and to reading apps over OPDS, so phones, tablets and e-ink readers can browse it like a bookshop and download just the books they want. It can alert your phone through ntfy and verify that files are still intact. It is a small Python command-line toolbox installed with uv; it comes with notes and skills so an AI assistant can help set it up.",
+      "builtWithAI": "The README says \"it is built by AI: its code, tests and documentation were written by Claude.\" Checked 2026-11-28: all 13 commits carry Claude co-author lines.",
+      "keywords": [
+        "ebook library",
+        "opds",
+        "humble bundle",
+        "comics",
+        "self-hosted",
+        "calibre"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/hylly/1.webp",
+          "alt": "The library of books on a desktop browser",
+          "caption": "The library"
+        },
+        {
+          "src": "/assets/apps/hylly/2.webp",
+          "alt": "Reading a book in the browser",
+          "caption": "The reader"
+        },
+        {
+          "src": "/assets/apps/hylly/3.webp",
+          "alt": "The library on an iPhone",
+          "caption": "On a phone"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "Download",
+      "name": "BannedBrowser",
+      "slug": "bannedbrowser",
+      "alternative": "Alternative to Chrome-engine browsers (an engine written from scratch)",
+      "description": "A web browser built from scratch in Rust with its own layout and JavaScript engine, good today for simple and old-web sites.",
+      "category": "Utilities",
+      "url": "https://github.com/NepuOverfl0w/BannedBrowser",
+      "download": "https://github.com/NepuOverfl0w/BannedBrowser/releases",
+      "source": "https://github.com/NepuOverfl0w/BannedBrowser",
+      "license": "MIT or Apache-2.0",
+      "price": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "maker": "NepuOverfl0w",
+      "icon": "🌐",
+      "longDescription": "BannedBrowser borrows no engine: HTML parsing, CSS, layout and painting are its own. Version 0.1.0 renders example.com, theoldnet.com and archived 1990s sites well, with tables, font tags, GIFs, dark mode and a new-tab page drawn by the engine itself.\n\nThe main branch has since added forms, a saved profile, an HTTP cache, HTTP/2 and its own JavaScript engine with the DOM, events, fetch, storage, workers and Canvas 2D. It has no bookmarks or sandboxing yet, so treat it as a fascinating experiment rather than a daily browser. PROGRESS.md lists honestly what works.",
+      "builtWithAI": "Checked 2026-11-28: all 164 commits carry Claude co-author lines, and the README describes developing it in a Claude Code cloud VM.",
+      "keywords": [
+        "web browser",
+        "rust",
+        "browser engine",
+        "old web",
+        "from scratch"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/bannedbrowser/1.webp",
+          "alt": "theoldnet.com rendered by the browser's own engine",
+          "caption": "The old web"
+        },
+        {
+          "src": "/assets/apps/bannedbrowser/2.webp",
+          "alt": "example.com in dark mode",
+          "caption": "Dark mode"
+        },
+        {
+          "src": "/assets/apps/bannedbrowser/3.webp",
+          "alt": "The new-tab page",
+          "caption": "New tab"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "Download",
+      "name": "Lucrometro",
+      "slug": "lucrometro",
+      "alternative": "Alternative to justETF and broker watchlist apps",
+      "description": "A small Android app to check a short list of ETFs and Borsa Italiana stocks a few times a day, with no account and no server.",
+      "category": "Finance",
+      "url": "https://github.com/giovanniRodighiero/Lucrometro",
+      "download": "https://github.com/giovanniRodighiero/Lucrometro/releases/latest",
+      "source": "https://github.com/giovanniRodighiero/Lucrometro",
+      "license": "AGPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Android"
+      ],
+      "maker": "Giovanni Rodighiero",
+      "icon": "📈",
+      "longDescription": "A watchlist shows each ticker's last price and today's change. Tap one for its chart, from today's session back to its full history, and add your average buy price to see how far it has moved, marked on the chart. While the market is open the details screen can refresh every 15 seconds.\n\nEverything stays on the phone. When a price can't be fetched the app says so and shows the last quote as stale rather than wrong data. It is in English and Italian, is not on Google Play, and installs as a signed APK (Obtainium can keep it updated).",
+      "builtWithAI": "The README says it \"was built entirely by AI coding agents\": all code, tests, docs and commits by Claude Code agents (Opus, Sonnet and Haiku), with the maker making product and design decisions. Checked 2026-11-28: 123 of 124 commits carry Claude co-author lines.",
+      "keywords": [
+        "etf",
+        "stocks",
+        "borsa italiana",
+        "watchlist",
+        "android",
+        "investing"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/lucrometro/1.webp",
+          "alt": "The watchlist with prices and day changes",
+          "caption": "Watchlist"
+        },
+        {
+          "src": "/assets/apps/lucrometro/2.webp",
+          "alt": "A ticker's chart and personal position",
+          "caption": "Details"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "Download",
+      "name": "Wisp Player",
+      "slug": "wisp-player",
+      "alternative": "Alternative to foobar2000 and MusicBee",
+      "description": "A featherweight gapless music player for local files on Windows, using about 10 MB of RAM, with synced lyrics and 35 themes.",
+      "category": "Audio",
+      "url": "https://github.com/DividedsWhimsicalVHS/WispPlayer",
+      "download": "https://github.com/DividedsWhimsicalVHS/WispPlayer/releases/latest",
+      "source": "https://github.com/DividedsWhimsicalVHS/WispPlayer",
+      "license": "GPL-3.0",
+      "price": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "maker": "DividedsWhimsicalVHS",
+      "icon": "📼",
+      "longDescription": "Wisp plays MP3, FLAC, WAV, AAC, Vorbis, Opus, ALAC and AIFF, plus the sound of video files, with sample-exact gapless hand-over, ReplayGain and smooth fades that never click. Its audio thread never waits on the interface, and it reopens the output device on its own if it disappears.\n\nThe library scans folders in the background and offers songs, albums and artists views, accent-insensitive search, a queue and playlists. The look borrows from Apple Music, with an artwork-tinted backdrop and synced lyrics, and there are 35 themes from Nord to Windows 95. A careful tag editor lets you pick the right album match before anything is saved. It is written in Rust with no WebView; only Windows is built so far.",
+      "builtWithAI": "The README says it was \"designed and written by Claude\". Checked 2026-11-28: its one commit carries a Claude co-author line.",
+      "keywords": [
+        "music player",
+        "gapless",
+        "flac",
+        "lyrics",
+        "foobar2000",
+        "winamp",
+        "rust"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "indie",
+      "owner": "Indie",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "Play now",
+      "name": "Tumblebuds",
+      "slug": "tumblebuds",
+      "alternative": "Inspired by guide-the-crowd puzzle games",
+      "description": "A small 3D puzzle game for phones and computers: give a sleepy marching crew the skills to find its way home through Honeydew Hollow.",
+      "category": "Games",
+      "genres": [
+        "Puzzle",
+        "Cozy and relaxing"
+      ],
+      "url": "https://johnnyffm.github.io/tumblebuds/",
+      "source": "https://github.com/johnnyffm/tumblebuds",
+      "license": "All rights reserved",
+      "price": "Free",
+      "platforms": [
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "maker": "JohnnyFFM (Mossbell Games)",
+      "icon": "🌱",
+      "longDescription": "Twenty sleepy buds march along a winding 3D path, and you hand out skills so they get past gaps, walls and drops and reach home. It has a world map, three camera views, voiced lines and a see-through outline for buds hidden behind scenery.\n\nIt plays in a phone or desktop browser and can be installed from the browser menu to run full screen and offline. The source is public so it can be hosted, but no licence is granted to reuse it.",
+      "builtWithAI": "The awesome-ai-games list names Claude Code and Claude Fable 5.2. Checked 2026-11-28: all 59 commits carry Claude Fable 5.2 co-author lines.",
+      "keywords": [
+        "puzzle game",
+        "lemmings-like",
+        "3d puzzle",
+        "browser game",
+        "mobile game"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "Play now",
+      "name": "Clanker Racing",
+      "slug": "clanker-racing",
+      "alternative": "Inspired by 1990s off-road arcade racers",
+      "description": "A chunky retro off-road racer in the browser: beat five rivals on about two dozen silly tracks, from a dirt canyon to Mars.",
+      "category": "Games",
+      "genres": [
+        "Racing and driving",
+        "Arcade"
+      ],
+      "url": "https://thingsbyfilip.github.io/clanker-racing/",
+      "source": "https://github.com/thingsbyfilip/clanker-racing",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Filip Skwarski",
+      "icon": "🏁",
+      "longDescription": "Flat-shaded 240-line graphics, uneven terrain, no barriers and limited nitrous: you can drive off the track and explore, and take shortcuts if you dare. The five AI drivers use the same physics as you, brake for bends, take shortcuts, use nitrous on straights and, on harder settings, try to block and bump you. Tracks include a river crossing, a lava bridge, a frozen lake and Tranquility Base with Earthrise.\n\nIt is plain JavaScript and WebGL 1 with no libraries or server, so you can also download it and open index.html. Keyboard, mouse and gamepad work; phones technically work too.",
+      "builtWithAI": "The README says it was \"coded by Claude Opus 5.5, based on vibes by Filip Skwarski\". Checked 2026-11-28: all 6 commits carry Claude co-author lines.",
+      "keywords": [
+        "racing game",
+        "off-road",
+        "retro 3d",
+        "browser game",
+        "webgl"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/clanker-racing/1.webp",
+          "alt": "Racing across a river crossing",
+          "caption": "Fistful of Gravel"
+        },
+        {
+          "src": "/assets/apps/clanker-racing/2.webp",
+          "alt": "Cars crossing a bridge over lava",
+          "caption": "Volcanic Island"
+        },
+        {
+          "src": "/assets/apps/clanker-racing/3.webp",
+          "alt": "Racing on the Moon with Earth in the sky",
+          "caption": "Tranquility Base"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "indie",
+      "owner": "Indie",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "Play now",
+      "name": "PaletteRider",
+      "slug": "paletterider",
+      "alternative": "Inspired by calm exploration games",
+      "description": "Ride a bicycle through famous paintings turned into small 3D towns, from Klee's Castle and Sun to Van Gogh's Café Terrace at Night.",
+      "category": "Games",
+      "genres": [
+        "Cozy and relaxing",
+        "Adventure"
+      ],
+      "url": "https://aashishgtbit.github.io/PaletteRider/",
+      "source": "https://github.com/aashishgtbit/PaletteRider",
+      "license": "No licence stated",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Aashish Tiwari",
+      "icon": "🚲",
+      "longDescription": "Each chapter turns a real artwork into a little city you ride through. In Klee's patchwork town you collect fallen suns and bring them to the castle; in Van Gogh's Arles you carry stars back to the glowing café and watch them return to the sky; in Monet's Giverny you gather flowers by the lily pond; and in Hodler's Jungfrau you ride the real Lauterbrunnen valley, built from map and elevation data.\n\nGet your load home before dawn and land your jumps cleanly, or half of it slips away. The paintings are public-domain reproductions.",
+      "builtWithAI": "The awesome-ai-games list names Claude Fable 5.2. Checked 2026-11-28: all 15 commits carry Claude co-author lines (Fable 5.2 and Opus 5.5).",
+      "keywords": [
+        "bicycle game",
+        "paintings",
+        "van gogh",
+        "monet",
+        "art game",
+        "three.js"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "Play now",
+      "name": "Summer Festival",
+      "slug": "summer-festival",
+      "alternative": "Inspired by cozy slice-of-life games",
+      "description": "Walk an anime-style seaside town on the night of its summer festival: scoop a goldfish, win the ring toss and stay for the fireworks.",
+      "category": "Games",
+      "genres": [
+        "Cozy and relaxing",
+        "Adventure"
+      ],
+      "url": "https://starknightt.github.io/summer-festival/",
+      "source": "https://github.com/StarKnightt/summer-festival",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Prasenjit (StarKnightt)",
+      "icon": "🏮",
+      "longDescription": "You play a girl in a summer yukata on a street of food and game stalls under paper lanterns. Scoop a goldfish, buy a candy apple, win the ring toss, pick a mask and light a lantern, and when all five are done the fireworks go up over the sea. There is no score, no timer and no way to fail.\n\nThe town is busy around you: groups of festival-goers stop to chat, stall keepers call out, a dog follows you for a while. Morning, day, sunset and night are a click away. It needs a WebGPU browser (current Chrome or Edge on a computer), a keyboard and mouse, and about 11 MB on first load. By the maker of Valley Ride.",
+      "builtWithAI": "The README says it was built with Claude Code, with models made in Blender by scripts, and the prompts are published in PROMPTS.md. Checked 2026-11-28: all 7 commits carry Claude co-author lines.",
+      "keywords": [
+        "anime game",
+        "summer festival",
+        "cozy game",
+        "webgpu",
+        "fireworks",
+        "yukata"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/summer-festival/1.webp",
+          "alt": "The festival street at night under lanterns",
+          "caption": "Night on the street"
+        },
+        {
+          "src": "/assets/apps/summer-festival/2.webp",
+          "alt": "Scooping goldfish at a stall",
+          "caption": "Goldfish scooping"
+        },
+        {
+          "src": "/assets/apps/summer-festival/3.webp",
+          "alt": "The street in the morning",
+          "caption": "Morning"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "indie",
+      "owner": "Indie",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "Play now",
+      "name": "Per My Last Email",
+      "slug": "per-my-last-email",
+      "alternative": "Inspired by choice-driven story card games",
+      "description": "A satirical office survival game: get through 12 weeks under a workplace bully, keep receipts and decide whether to speak up.",
+      "category": "Games",
+      "genres": [
+        "Story and text",
+        "Simulation"
+      ],
+      "url": "https://per-my-last-email-sigma.vercel.app",
+      "source": "https://github.com/pinpingpong/per-my-last-email",
+      "license": "No licence stated",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "pinpingpong",
+      "icon": "📧",
+      "longDescription": "You work at the fictional Celestial Pte Ltd, and Marcus is making your life hard. Over 49 story events in four acts you juggle sanity, performance, reputation and allies, collect evidence in a log, and watch a hidden strikes meter. Eight endings wait at the end, with a gallery to collect them, plus a top-down stealth minigame.\n\nA run takes about 15 minutes on a phone or computer. All the art is hand-written SVG, with no image files.",
+      "builtWithAI": "The README ends \"Built with Claude Code.\" Checked 2026-11-28: all 6 commits carry Claude co-author lines.",
+      "keywords": [
+        "office game",
+        "workplace",
+        "choices",
+        "story game",
+        "satire"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/per-my-last-email/1.webp",
+          "alt": "The title screen",
+          "caption": "Title"
+        },
+        {
+          "src": "/assets/apps/per-my-last-email/2.webp",
+          "alt": "An office event card mid-game",
+          "caption": "Mid-game"
+        },
+        {
+          "src": "/assets/apps/per-my-last-email/3.webp",
+          "alt": "The stealth minigame",
+          "caption": "Escape to Nebula"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "View source",
+      "name": "Shanhe",
+      "slug": "shanhe",
+      "alternative": "Inspired by turn-based 4X strategy games",
+      "description": "A turn-based 4X strategy game on the real terrain of East Asia, with fifty fictional nations and xiangqi-style pieces on a sand-table map.",
+      "category": "Games",
+      "genres": [
+        "Strategy"
+      ],
+      "url": "https://github.com/nervouna/shanhe",
+      "source": "https://github.com/nervouna/shanhe",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "nervouna",
+      "icon": "⛰️",
+      "longDescription": "Fifty fictional nations follow real province-level borders across East Asia, Siberia and Southeast Asia, each taking its flavour from its place. A whole 150-turn game can already be played against the AI, with cities, combat, war and peace, a tech tree and three ways to win. Terrain comes from public elevation data and everything else is drawn by shaders, with no model or texture files.\n\nIt is early: policies, diplomacy, trade and national traits are still to come, and there is no hosted build yet, so you clone it and run it with Node 24. The interface is in Chinese and English.",
+      "builtWithAI": "The README says the whole game, from design to code, is written by Claude (Fable) with a human owner making product decisions; Claude subagents deliver the work as pull requests. Checked 2026-11-28: the 32 commits are merged pull requests and carry no co-author lines, so this rests on the README.",
+      "keywords": [
+        "4x",
+        "strategy game",
+        "east asia",
+        "xiangqi",
+        "turn-based",
+        "webgpu"
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "Download",
+      "name": "Abyssal Garden",
+      "slug": "abyssal-garden",
+      "alternative": "Inspired by underwater exploration games",
+      "description": "Swim through a dreamy underwater world of kelp forests, sunbeams, a sunken ship and manta rays, all in one 96 KB HTML file.",
+      "category": "Games",
+      "genres": [
+        "Open world",
+        "Cozy and relaxing"
+      ],
+      "url": "https://noniv.github.io/abyssal-garden/",
+      "download": "https://github.com/noniv/abyssal-garden/blob/main/index.html",
+      "source": "https://github.com/noniv/abyssal-garden",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Maksymilian Dendura",
+      "icon": "🐋",
+      "longDescription": "Swim freely through towering kelp that sways in the current, light rays falling through a rippling surface onto the sand, a wooden shipwreck, a giant stone whale tail, rock arches and a purple grotto, while manta rays and schools of fish drift past. The soundscape of rumbles, distant whale calls and chimes is made up as you listen.\n\nThere are no images, models or sound files: it is all code in one file that works offline. It needs WebGPU, so use Chrome or Edge on a computer.",
+      "builtWithAI": "The prompt that built it is in the repository (prompt.txt), and the awesome-ai-games list names Claude Fable 5.2. The commits carry no co-author lines.",
+      "keywords": [
+        "underwater",
+        "kelp forest",
+        "relaxing",
+        "webgpu",
+        "single file",
+        "exploration"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/abyssal-garden/1.webp",
+          "alt": "A stone whale tail in the kelp with a manta ray",
+          "caption": "Whale fluke"
+        },
+        {
+          "src": "/assets/apps/abyssal-garden/2.webp",
+          "alt": "The sunken ship",
+          "caption": "Shipwreck"
+        },
+        {
+          "src": "/assets/apps/abyssal-garden/3.webp",
+          "alt": "The purple grotto",
+          "caption": "Purple grotto"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
+    },
+    {
+      "group": "open",
+      "owner": "Open source",
+      "tile": "",
+      "added": "2026-11-28",
+      "linkText": "Play now",
+      "name": "Aurora Courier",
+      "slug": "aurora-courier",
+      "alternative": "Inspired by endless flying games",
+      "description": "Carry glowing lanterns across the northern sky; every gold ring you fly through turns the whole world into one of 473 art styles.",
+      "category": "Games",
+      "genres": [
+        "Arcade",
+        "Flight"
+      ],
+      "url": "https://punitpritam788.github.io/Aurora-Courier/",
+      "source": "https://github.com/Punitpritam788/Aurora-Courier",
+      "license": "MIT",
+      "price": "Free",
+      "platforms": [
+        "Web"
+      ],
+      "maker": "Punit Pritam",
+      "icon": "✨",
+      "longDescription": "You fly a small courier ship through the northern lights, bringing lanterns to a mountain village before dawn. Each gold ring is a portal: sky, rocks, lights and even the music snap into a new style, from pixel art and woodblock prints to neon wireframes, oil paint and synthwave.\n\nIt is calm but quick, with two modes and four endings, cutscenes and procedural music. It is one HTML file with nothing to download or install.",
+      "builtWithAI": "The README says the whole project, game, art styles, music, cutscenes, trailer and README, \"was built by Claude Sonnet 5.5\" on the free plan, and lists the prompts. Checked 2026-11-28: 18 of 19 commits carry Claude co-author lines.",
+      "keywords": [
+        "flying game",
+        "art styles",
+        "endless runner",
+        "northern lights",
+        "three.js",
+        "single file"
+      ],
+      "screenshots": [
+        {
+          "src": "/assets/apps/aurora-courier/1.webp",
+          "alt": "The title card",
+          "caption": "Aurora Courier"
+        },
+        {
+          "src": "/assets/apps/aurora-courier/2.webp",
+          "alt": "Flying through the northern sky",
+          "caption": "Northern sky"
+        },
+        {
+          "src": "/assets/apps/aurora-courier/3.webp",
+          "alt": "A gold ring opening into a new art style",
+          "caption": "A new style"
+        }
+      ],
+      "whatPeopleSay": {
+        "checked": "2026-11-28",
+        "none": true
+      }
     }
   ]
 }

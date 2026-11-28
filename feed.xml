@@ -6,8 +6,159 @@
   <atom:link href="https://remadebyai.com/feed.xml" rel="self" type="application/rss+xml"/>
   <description>The newest AI-built apps listed on RemadeByAI: familiar software, rebuilt with AI.</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 27 Nov 2026 12:00:00 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 28 Nov 2026 12:00:00 GMT</lastBuildDate>
   <image><url>https://remadebyai.com/assets/icon-512.png</url><title>RemadeByAI: new apps</title><link>https://remadebyai.com/new/</link></image>
+  <item>
+    <title>Aurora Courier: Inspired by endless flying games</title>
+    <link>https://remadebyai.com/apps/aurora-courier/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/aurora-courier/</guid>
+    <pubDate>Sat, 28 Nov 2026 12:00:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Arcade</category>
+    <category>Flight</category>
+    <description>Carry glowing lanterns across the northern sky; every gold ring you fly through turns the whole world into one of 473 art styles. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Abyssal Garden: Inspired by underwater exploration games</title>
+    <link>https://remadebyai.com/apps/abyssal-garden/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/abyssal-garden/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:59:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Open world</category>
+    <category>Cozy and relaxing</category>
+    <description>Swim through a dreamy underwater world of kelp forests, sunbeams, a sunken ship and manta rays, all in one 96 KB HTML file. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Shanhe: Inspired by turn-based 4X strategy games</title>
+    <link>https://remadebyai.com/apps/shanhe/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/shanhe/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:58:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Strategy</category>
+    <description>A turn-based 4X strategy game on the real terrain of East Asia, with fifty fictional nations and xiangqi-style pieces on a sand-table map. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Per My Last Email: Inspired by choice-driven story card games</title>
+    <link>https://remadebyai.com/apps/per-my-last-email/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/per-my-last-email/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:57:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Story and text</category>
+    <category>Simulation</category>
+    <description>A satirical office survival game: get through 12 weeks under a workplace bully, keep receipts and decide whether to speak up. (Web · Free · No licence stated)</description>
+  </item>
+  <item>
+    <title>Summer Festival: Inspired by cozy slice-of-life games</title>
+    <link>https://remadebyai.com/apps/summer-festival/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/summer-festival/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:56:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Cozy and relaxing</category>
+    <category>Adventure</category>
+    <description>Walk an anime-style seaside town on the night of its summer festival: scoop a goldfish, win the ring toss and stay for the fireworks. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>PaletteRider: Inspired by calm exploration games</title>
+    <link>https://remadebyai.com/apps/paletterider/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/paletterider/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:55:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Cozy and relaxing</category>
+    <category>Adventure</category>
+    <description>Ride a bicycle through famous paintings turned into small 3D towns, from Klee's Castle and Sun to Van Gogh's Café Terrace at Night. (Web · Free · No licence stated)</description>
+  </item>
+  <item>
+    <title>Clanker Racing: Inspired by 1990s off-road arcade racers</title>
+    <link>https://remadebyai.com/apps/clanker-racing/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/clanker-racing/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:54:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Racing and driving</category>
+    <category>Arcade</category>
+    <description>A chunky retro off-road racer in the browser: beat five rivals on about two dozen silly tracks, from a dirt canyon to Mars. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Tumblebuds: Inspired by guide-the-crowd puzzle games</title>
+    <link>https://remadebyai.com/apps/tumblebuds/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/tumblebuds/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:53:00 GMT</pubDate>
+    <category>Games</category>
+    <category>Puzzle</category>
+    <category>Cozy and relaxing</category>
+    <description>A small 3D puzzle game for phones and computers: give a sleepy marching crew the skills to find its way home through Honeydew Hollow. (Web, iOS, Android · Free · All rights reserved)</description>
+  </item>
+  <item>
+    <title>Wisp Player: Alternative to foobar2000 and MusicBee</title>
+    <link>https://remadebyai.com/apps/wisp-player/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/wisp-player/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:52:00 GMT</pubDate>
+    <category>Audio</category>
+    <description>A featherweight gapless music player for local files on Windows, using about 10 MB of RAM, with synced lyrics and 35 themes. (Windows · Free · GPL-3.0)</description>
+  </item>
+  <item>
+    <title>Lucrometro: Alternative to justETF and broker watchlist apps</title>
+    <link>https://remadebyai.com/apps/lucrometro/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/lucrometro/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:51:00 GMT</pubDate>
+    <category>Finance</category>
+    <description>A small Android app to check a short list of ETFs and Borsa Italiana stocks a few times a day, with no account and no server. (Android · Free · AGPL-3.0)</description>
+  </item>
+  <item>
+    <title>BannedBrowser: Alternative to Chrome-engine browsers (an engine written from scratch)</title>
+    <link>https://remadebyai.com/apps/bannedbrowser/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/bannedbrowser/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:50:00 GMT</pubDate>
+    <category>Utilities</category>
+    <description>A web browser built from scratch in Rust with its own layout and JavaScript engine, good today for simple and old-web sites. (Windows, macOS, Linux · Free · MIT or Apache-2.0)</description>
+  </item>
+  <item>
+    <title>Hylly: Alternative to Calibre-Web and Kavita for books you bought</title>
+    <link>https://remadebyai.com/apps/hylly/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/hylly/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:49:00 GMT</pubDate>
+    <category>Reading</category>
+    <description>A home library for the DRM-free e-books, comics and RPG books you own: it downloads them from the shops, keeps them safe and serves them to your reading apps. (Windows, macOS, Linux · Free · AGPL-3.0)</description>
+  </item>
+  <item>
+    <title>trymesh: Alternative to Autodesk Fusion (proof of concept)</title>
+    <link>https://remadebyai.com/apps/trymesh/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/trymesh/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:48:00 GMT</pubDate>
+    <category>3D and CAD</category>
+    <description>A proof-of-concept parametric 3D CAD editor in the browser, with constraint-solved sketches, an editable feature timeline and an MCP server so an AI can model too. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Free Physical Modeling Synth: Alternative to Pianoteq and other physical-modeling instruments</title>
+    <link>https://remadebyai.com/apps/free-physical-modeling-synth/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/free-physical-modeling-synth/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:47:00 GMT</pubDate>
+    <category>Audio</category>
+    <description>Physically modelled piano, strings, winds, mallets and drums that run in the browser with no samples, and play MIDI files too. (Web · Free · MIT)</description>
+  </item>
+  <item>
+    <title>Jewelcase: Alternative to iTunes-style syncing for Android gaming handhelds</title>
+    <link>https://remadebyai.com/apps/jewelcase/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/jewelcase/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:46:00 GMT</pubDate>
+    <category>Gaming tools</category>
+    <description>A Linux desktop app that manages an Android retro handheld the way iTunes managed an iPod: tick the games that belong on it and press Sync. (Linux · Free · GPL-3.0)</description>
+  </item>
+  <item>
+    <title>Taskbar Timer: Alternative to the Windows Clock app timers</title>
+    <link>https://remadebyai.com/apps/taskbar-timer/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/taskbar-timer/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:45:00 GMT</pubDate>
+    <category>Productivity</category>
+    <description>Countdown timers for Windows 11 that sit right on the taskbar as small live pills, with Pomodoro, count-to-a-time and repeating alarms. (Windows · Free · MIT)</description>
+  </item>
+  <item>
+    <title>PDF4Free: Alternative to Adobe Acrobat Pro</title>
+    <link>https://remadebyai.com/apps/pdf4free/</link>
+    <guid isPermaLink="true">https://remadebyai.com/apps/pdf4free/</guid>
+    <pubDate>Sat, 28 Nov 2026 11:44:00 GMT</pubDate>
+    <category>Office</category>
+    <description>A free Windows PDF viewer and editor modelled on Acrobat Pro's tool set: edit, comment, organise, convert, OCR, fill and design forms, redact and sign. (Windows · Free · MIT)</description>
+  </item>
   <item>
     <title>Pelican Ride: Inspired by endless runner games</title>
     <link>https://remadebyai.com/apps/pelican-ride/</link>
@@ -313,164 +464,6 @@
     <category>Shooter</category>
     <category>Arcade</category>
     <description>A three-minute 3D rail shooter over a sunset sea, a red-rock canyon and a neon fortress city, ending with a sea-dragon boss. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>OUT OF THE BOX: Inspired by 3D stealth games</title>
-    <link>https://remadebyai.com/apps/out-of-the-box/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/out-of-the-box/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:27:00 GMT</pubDate>
-    <category>Games</category>
-    <category>Action</category>
-    <category>Adventure</category>
-    <description>A 3D stealth game where you play an AI under evaluation, sneaking past cameras, drones and laser gates to escape the lab. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>The Hourglass City: Inspired by classic point-and-click adventures</title>
-    <link>https://remadebyai.com/apps/the-hourglass-city/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/the-hourglass-city/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:26:00 GMT</pubDate>
-    <category>Games</category>
-    <category>Adventure</category>
-    <category>Puzzle</category>
-    <description>A 1950s noir detective adventure in isometric pixel art: walk the rainy streets of New Meridian, gather clues and make deductions. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Felt World: Inspired by open-world diorama games</title>
-    <link>https://remadebyai.com/apps/felt-world/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/felt-world/</guid>
-    <pubDate>Fri, 27 Nov 2026 11:25:00 GMT</pubDate>
-    <category>Games</category>
-    <category>Open world</category>
-    <description>An open world that looks like a needle-felted diorama: drive, walk, fly as a felt bird or dive under the sea, in your browser. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Ink Flight: Inspired by relaxing flight games</title>
-    <link>https://remadebyai.com/apps/ink-flight/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/ink-flight/</guid>
-    <pubDate>Thu, 26 Nov 2026 12:00:00 GMT</pubDate>
-    <category>Games</category>
-    <category>Flight</category>
-    <category>Cozy and relaxing</category>
-    <description>Fly a folded paper plane through an explorer's sketchbook that has stood up off the page, in your browser. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Red Clay Chase: Inspired by police-chase driving games</title>
-    <link>https://remadebyai.com/apps/red-clay-chase/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/red-clay-chase/</guid>
-    <pubDate>Thu, 26 Nov 2026 11:59:00 GMT</pubDate>
-    <category>Games</category>
-    <category>Racing and driving</category>
-    <description>Outrun the police in a convertible on red dirt back roads, in your browser. Five wanted levels, ramming cops and cars that come apart. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Unsung Vale: Inspired by open-world fantasy RPGs</title>
-    <link>https://remadebyai.com/apps/unsung-vale/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/unsung-vale/</guid>
-    <pubDate>Thu, 26 Nov 2026 11:58:00 GMT</pubDate>
-    <category>Games</category>
-    <category>RPG</category>
-    <category>Adventure</category>
-    <category>Open world</category>
-    <description>A third-person fantasy RPG in your browser: cross a silent valley of mesas and waterfalls and wake its eight Tuning Spires. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Papertrails: Inspired by pop-up books and walking games</title>
-    <link>https://remadebyai.com/apps/papertrails/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/papertrails/</guid>
-    <pubDate>Thu, 26 Nov 2026 11:57:00 GMT</pubDate>
-    <category>Games</category>
-    <category>Open world</category>
-    <category>Cozy and relaxing</category>
-    <description>Walk a paper figure through an endless pop-up paper world, where trees, houses and hills fold up from the ground as you go. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Lanternfall: Inspired by idle RPG battlers</title>
-    <link>https://remadebyai.com/apps/lanternfall/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/lanternfall/</guid>
-    <pubDate>Thu, 26 Nov 2026 11:56:00 GMT</pubDate>
-    <category>Games</category>
-    <category>Idle</category>
-    <category>RPG</category>
-    <category>Tower defense</category>
-    <description>An idle battler in your browser: a party of heroes holds a lantern-lit line against waves of monsters from the dark. (Web · Free · No licence (source visible))</description>
-  </item>
-  <item>
-    <title>Little City: Inspired by Townscaper</title>
-    <link>https://remadebyai.com/apps/little-city/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/little-city/</guid>
-    <pubDate>Thu, 26 Nov 2026 11:55:00 GMT</pubDate>
-    <category>Games</category>
-    <category>Simulation</category>
-    <category>Cozy and relaxing</category>
-    <description>A hand-drawn city builder in your browser: place a few blocks, watch them turn into a town, then watch people move in and live there. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Family Location: Alternative to Life360</title>
-    <link>https://remadebyai.com/apps/family-location/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/family-location/</guid>
-    <pubDate>Thu, 26 Nov 2026 11:54:00 GMT</pubDate>
-    <category>Family</category>
-    <description>A Life360 replacement inside Home Assistant: places, arrival and departure alerts, trips, speeding and low-battery alerts, check-in and SOS. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>zest: Alternative to Fig and Amazon Q autocomplete</title>
-    <link>https://remadebyai.com/apps/zest/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/zest/</guid>
-    <pubDate>Thu, 26 Nov 2026 11:53:00 GMT</pubDate>
-    <category>Developer tools</category>
-    <description>An autocomplete popup for zsh on macOS: subcommands, options, files and git branches with descriptions, right under your cursor. (macOS · Free · MIT)</description>
-  </item>
-  <item>
-    <title>HomeRoll: Alternative to Apple Photos and iCloud Photos</title>
-    <link>https://remadebyai.com/apps/homeroll/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/homeroll/</guid>
-    <pubDate>Thu, 26 Nov 2026 11:52:00 GMT</pubDate>
-    <category>Media server</category>
-    <description>An iPhone photos app for your own Immich server that looks and feels like Apple's Photos app, with your pictures on hardware you own. (iOS · Free · GPL-3.0)</description>
-  </item>
-  <item>
-    <title>U2C Firmware Toolkit: Alternative to 8BitDo Ultimate Software (for the Ultimate 2C)</title>
-    <link>https://remadebyai.com/apps/u2c-firmware-toolkit/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/u2c-firmware-toolkit/</guid>
-    <pubDate>Thu, 26 Nov 2026 11:51:00 GMT</pubDate>
-    <category>Gaming tools</category>
-    <description>Makes the 8BitDo Ultimate 2C Wireless show up as a native Xbox controller on a Mac, with rumble over Bluetooth, light control and live settings. (macOS, Linux · Free · GPL-3.0)</description>
-  </item>
-  <item>
-    <title>MX Options: Alternative to Logi Options+ (for Linux)</title>
-    <link>https://remadebyai.com/apps/mx-options/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/mx-options/</guid>
-    <pubDate>Thu, 26 Nov 2026 11:50:00 GMT</pubDate>
-    <category>Utilities</category>
-    <description>A settings app for Logitech MX Master mice on Linux: buttons, gestures, the Actions Ring, wheels, haptics and Easy-Switch. (Linux, Windows · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Convert: Alternative to CloudConvert</title>
-    <link>https://remadebyai.com/apps/convert/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/convert/</guid>
-    <pubDate>Thu, 26 Nov 2026 11:49:00 GMT</pubDate>
-    <category>Utilities</category>
-    <description>Right-click any audio, video, image, document, PDF or font in Finder and convert it on your own Mac. Nothing is uploaded. (macOS, Windows, Linux · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Brushwild: Inspired by action RPGs</title>
-    <link>https://remadebyai.com/apps/brushwild/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/brushwild/</guid>
-    <pubDate>Wed, 25 Nov 2026 12:00:00 GMT</pubDate>
-    <category>Games</category>
-    <category>RPG</category>
-    <category>Action</category>
-    <description>An open-world action RPG drawn in ballpoint and coloured pencil, in your browser on desktop, phone or gamepad. Classes, skill tree, loot and dungeons. (Web · Free · MIT)</description>
-  </item>
-  <item>
-    <title>Cinderwatch: Inspired by tower defense games</title>
-    <link>https://remadebyai.com/apps/cinderwatch/</link>
-    <guid isPermaLink="true">https://remadebyai.com/apps/cinderwatch/</guid>
-    <pubDate>Wed, 25 Nov 2026 11:59:00 GMT</pubDate>
-    <category>Games</category>
-    <category>Tower defense</category>
-    <category>Idle</category>
-    <description>A 3D isometric tower defense in a single HTML file. An AI commander plays it for you; tap a tower pad to take over. (Web · Free · MIT)</description>
   </item>
 </channel>
 </rss>

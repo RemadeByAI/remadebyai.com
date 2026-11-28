@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d0b">
+  <meta name="color-scheme" content="dark">
+  <meta name="darkreader-lock">
+  <title>trymesh: Alternative to Autodesk Fusion (proof of concept)</title>
+  <meta name="description" content="trymesh, alternative to Autodesk Fusion (proof of concept). A proof-of-concept parametric 3D CAD editor in the browser, with constraint-solved sketches…">
+  <link rel="canonical" href="https://remadebyai.com/apps/trymesh/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RemadeByAI">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="trymesh: Alternative to Autodesk Fusion (proof of concept)">
+  <meta property="og:description" content="trymesh, alternative to Autodesk Fusion (proof of concept). A proof-of-concept parametric 3D CAD editor in the browser, with constraint-solved sketches…">
+  <meta property="og:url" content="https://remadebyai.com/apps/trymesh/">
+  <meta property="og:image" content="https://remadebyai.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="RemadeByAI logo with the tagline Familiar software. Rebuilt with AI.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="trymesh: Alternative to Autodesk Fusion (proof of concept)">
+  <meta name="twitter:description" content="trymesh, alternative to Autodesk Fusion (proof of concept). A proof-of-concept parametric 3D CAD editor in the browser, with constraint-solved sketches…">
+  <meta name="twitter:image" content="https://remadebyai.com/assets/og-image.png">
+  <meta name="twitter:image:alt" content="RemadeByAI logo with the tagline Familiar software. Rebuilt with AI.">
+  <script>(function(){var t='dark';try{if(localStorage.getItem('theme')==='light')t='light'}catch(e){}var d=document.documentElement;d.setAttribute('data-theme',t);if(t==='light'){var m=document.querySelector('meta[name="color-scheme"]');if(m)m.content='light';m=document.querySelector('meta[name="theme-color"]');if(m)m.content='#f5f8f3'}})();</script>
+  <link rel="stylesheet" href="/styles.css?v=27af9f595e">
+  <script src="/site.js?v=44c8a7ff7e" defer></script>
+  <link rel="alternate" type="application/rss+xml" title="RemadeByAI: new apps" href="https://remadebyai.com/feed.xml">
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"0f5ef649282441df8c6138452124737d"}'></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","@id":"https://remadebyai.com/apps/trymesh/#app","name":"trymesh","description":"A proof-of-concept parametric 3D CAD editor in the browser, with constraint-solved sketches, an editable feature timeline and an MCP server so an AI can model too.","applicationCategory":"DesignApplication","applicationSubCategory":"3D and CAD","url":"https://github.com/lksv/trymesh","mainEntityOfPage":"https://remadebyai.com/apps/trymesh/","operatingSystem":"Web","license":"MIT","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"Lukas Svoboda"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://remadebyai.com/"},{"@type":"ListItem","position":2,"name":"3D and CAD","item":"https://remadebyai.com/categories/3d-and-cad/"},{"@type":"ListItem","position":3,"name":"trymesh","item":"https://remadebyai.com/apps/trymesh/"}]}</script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="35" height="35"><span>RemadeBy<em>AI</em><small>.com</small></span></a>
+    <nav aria-label="Main navigation"><a href="/categories/">Categories</a><a href="/games/">Games</a><a href="/new/">New</a><a href="/apps/">All apps</a><a href="/about/">About</a><a href="/list/">List your app</a></nav>
+    <form class="site-search" action="/apps/" method="get" role="search" data-clicks="https://remadebyai-clicks.remadebyai.workers.dev/click">
+      <label><span class="visually-hidden">Search all apps and games</span><input type="search" name="q" placeholder="Search apps, e.g. Photoshop" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false"></label>
+      <ul class="site-search-results" id="site-search-results" role="listbox" aria-label="Matching apps" hidden></ul>
+    </form>
+    <button class="theme-toggle" type="button" aria-label="Switch to light mode"><span class="to-light"><span class="icon" aria-hidden="true">☀︎</span><span class="label">Light mode</span></span><span class="to-dark"><span class="icon" aria-hidden="true">☾</span><span class="label">Dark mode</span></span></button>
+  </div>
+</header>
+<main id="main">
+<div class="wrap app-page">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/categories/3d-and-cad/">3D and CAD</a> / <span>trymesh</span></nav>
+  <section class="app-hero" aria-labelledby="app-title">
+    <div>
+      <div class="app-title-row"><span class="tile" aria-hidden="true">📐</span><small class="owner">Open source</small></div>
+      <h1 id="app-title">trymesh</h1>
+      <p class="lede">Alternative to Autodesk Fusion (proof of concept)</p>
+      <p class="app-summary">A proof-of-concept parametric 3D CAD editor in the browser, with constraint-solved sketches, an editable feature timeline and an MCP server so an AI can model too.</p>
+      <div class="app-actions"><a class="button primary" href="https://github.com/lksv/trymesh" data-track="site" data-app="trymesh" target="_blank" rel="noopener">View source</a></div>
+    </div>
+    <dl class="facts">
+      <div><dt>Category</dt><dd><a href="/categories/3d-and-cad/">3D and CAD</a></dd></div>
+      <div><dt>Replaces</dt><dd>Autodesk Fusion (proof of concept)</dd></div>
+      <div><dt>Platforms</dt><dd>Web</dd></div>
+      <div><dt>Licence</dt><dd>MIT</dd></div>
+      <div><dt>Price</dt><dd>Free</dd></div>
+      <div><dt>Made by</dt><dd>Lukas Svoboda</dd></div>
+      <div><dt>Source code</dt><dd><a href="https://github.com/lksv/trymesh" data-track="source" data-app="trymesh" target="_blank" rel="noopener">github.com/lksv/trymesh</a></dd></div>
+      <div><dt>Listed</dt><dd>November 28, 2026</dd></div>
+    </dl>
+  </section>
+  <section class="app-section" aria-labelledby="about-app-title"><h2 id="about-app-title">About trymesh</h2><div class="prose"><p>Sketches made of lines, arcs, circles and splines are held by constraints and dimensions that can use named parameters, and the editor tells you when a sketch is under- or over-constrained. Sketches become solids by extrude, revolve, holes from hardware catalogues, fillets, chamfers, patterns and booleans, all recorded on a timeline you can edit anywhere and recompute.</p>
+<p>It can measure, section, find the gap or interference between bodies, check prints and export STL, 3MF, DXF, SVG, a parts list and robot-simulator formats, and it can convert Onshape Part Studio models. Solids are triangle meshes, not B-rep. There is no hosted version: you clone it and run it with pnpm.</p></div></section>
+  
+  <section class="app-section" aria-labelledby="built-title">
+    <h2 id="built-title">How it was built with AI</h2>
+    <div class="prose"><p>The README calls it an experiment in how far one can get with Claude Fable 5.2: Fable did the architecture and design reviews and Opus 5.5 much of the code, with the owner setting goals and approving libraries. Checked 2026-11-28: 511 of 564 commits carry Claude co-author lines.</p></div>
+  </section>
+  
+  <section class="app-section" aria-labelledby="buzz-title">
+    <h2 id="buzz-title">What people say</h2>
+    <p class="muted">No outside reviews of trymesh yet. We last checked November 28, 2026.</p>
+  </section>
+  <section class="app-section" aria-labelledby="review-title">
+    <h2 id="review-title">Our review</h2>
+    <p class="muted">We haven't reviewed trymesh yet.</p>
+  </section>
+  
+  <section class="app-section" aria-labelledby="related-title">
+    <h2 id="related-title">More in 3D and CAD</h2>
+    <div class="cards">
+<article class="card" data-group="open" data-category="3d-and-cad" data-platform="Windows|macOS|Linux" data-price="Free" data-licence="GPL-3.0" data-search="chipload alternative to vectric vcarve and carbide create free 2.5d cam software for cnc routers and mills: bring in a dxf or svg drawing (or draw in the app), set up cuts, simulate them in 3d and export checked g-code. 3d and cad open source gustav näslund windows macos linux gpl-3.0 free cam cnc g-code vcarve vectric aspire carbide create easel fusion 360 cam router v-carve grbl shapeoko">
+  <div class="card-top"><span class="tile" aria-hidden="true">⚙</span><small>Open source</small></div>
+  <h3 class="card-title"><a class="card-link" href="/apps/chipload/">Chipload</a></h3>
+  <p class="alternative">Alternative to Vectric VCarve and Carbide Create</p>
+  <p>Free 2.5D CAM software for CNC routers and mills: bring in a DXF or SVG drawing (or draw in the app), set up cuts, simulate them in 3D and export checked G-code.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/3d-and-cad/">3D and CAD</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="3d-and-cad" data-platform="Windows|macOS|Linux" data-price="Free" data-licence="MIT" data-search="roxel alternative to magicavoxel a lightweight desktop voxel editor for building small 3d scenes out of cubes, with import and export for magicavoxel, goxel, obj and gltf files. 3d and cad open source daniel marino windows macos linux mit free voxel editor magicavoxel goxel voxel art vox 3d pixel art qubicle">
+  <div class="card-top"><span class="tile" aria-hidden="true">▧</span><small>Open source</small></div>
+  <h3 class="card-title"><a class="card-link" href="/apps/roxel/">Roxel</a></h3>
+  <p class="alternative">Alternative to MagicaVoxel</p>
+  <p>A lightweight desktop voxel editor for building small 3D scenes out of cubes, with import and export for MagicaVoxel, Goxel, OBJ and glTF files.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/3d-and-cad/">3D and CAD</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+<article class="card" data-group="open" data-category="3d-and-cad" data-platform="Windows|macOS|Linux|Web" data-price="Free" data-licence="Apache-2.0" data-search="solidcraft alternative to solidworks and fusion 360 a free parametric 3d cad app: sketch, constrain and build solids on a feature timeline, then change a dimension and watch the model rebuild. for windows, mac, linux and the web. 3d and cad open source tangency labs windows macos linux web apache-2.0 free">
+  <div class="card-top"><span class="tile code" aria-hidden="true">⬢</span><small>Open source</small></div>
+  <h3 class="card-title"><a class="card-link" href="/apps/solidcraft/">SolidCraft</a></h3>
+  <p class="alternative">Alternative to SolidWorks and Fusion 360</p>
+  <p>A free parametric 3D CAD app: sketch, constrain and build solids on a feature timeline, then change a dimension and watch the model rebuild. For Windows, Mac, Linux and the web.</p>
+  <div class="card-bottom"><a class="card-category" href="/categories/3d-and-cad/">3D and CAD</a><span class="card-more" aria-hidden="true">Details →</span></div>
+</article>
+</div>
+  </section>
+  
+  <details class="badge-box">
+    <summary>Made trymesh? Add a “Listed on RemadeByAI” badge to your README</summary>
+    <div class="badge-body">
+      <p class="badge-previews"><img src="/assets/badge/listed-dark.svg" alt="Listed on RemadeByAI (dark)" width="172" height="28"> <img src="/assets/badge/listed-light.svg" alt="Listed on RemadeByAI (light)" width="172" height="28"></p>
+      <div class="snippet"><div class="snippet-head"><span>Markdown, dark badge</span><button class="copy" type="button" data-copy>Copy</button></div><pre><code>[![Listed on RemadeByAI](https://remadebyai.com/assets/badge/listed-dark.svg)](https://remadebyai.com/apps/trymesh/)</code></pre></div>
+      <div class="snippet"><div class="snippet-head"><span>Markdown, light badge</span><button class="copy" type="button" data-copy>Copy</button></div><pre><code>[![Listed on RemadeByAI](https://remadebyai.com/assets/badge/listed-light.svg)](https://remadebyai.com/apps/trymesh/)</code></pre></div>
+      <p class="muted">Want it to follow the reader's light or dark mode on GitHub? See <a href="/badge/?app=trymesh">the badge page</a>.</p>
+    </div>
+  </details>
+</div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div class="foot-about"><a class="brand" href="/">RemadeBy<em>AI</em></a><p>Familiar software, rebuilt with AI. <em class="foot-note">(A software directory from <a href="https://emukey.com/" target="_blank" rel="noopener">EmuKey LLC</a>.)</em></p></div>
+    <nav class="foot-links" aria-label="Footer"><a href="/apps/">All apps</a><a href="/games/">Games</a><a href="/new/">New arrivals</a><a href="/categories/">Categories</a><a href="/alternatives/">Alternatives</a><a href="/platforms/">Platforms</a><a href="/about/">About</a><a href="/list/">List your app</a><a href="/feed.xml">RSS feed</a></nav>
+  </div>
+</footer>
+</body>
+</html>
