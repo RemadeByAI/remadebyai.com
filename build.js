@@ -813,6 +813,7 @@ function featured(apps) {
     }
     return `<article class="feature" data-feature aria-labelledby="featured-${app.slug}">
         <div class="feature-copy">
+          ${art}
           ${tile(app)}
           <h2 id="featured-${app.slug}">${esc(app.name)}</h2>
           <p class="lede">${esc(app.tagline || app.alternative)}</p>
@@ -820,7 +821,6 @@ function featured(apps) {
           <div class="feature-actions"><a class="button primary" href="${esc(app.url)}" data-track="featured" data-app="${app.slug}">${esc(app.featureLinkText || 'Visit ' + app.name)}</a><a class="button" href="/apps/${app.slug}/">Details</a></div>
           <small class="owner">By ${esc(app.owner)}</small>
         </div>
-        ${art}
       </article>`;
   }).join('\n      ');
   const shuffle = apps.length > 1

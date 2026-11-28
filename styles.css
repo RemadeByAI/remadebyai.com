@@ -210,15 +210,18 @@ footer { border-top: 1px solid var(--line); background: #0d1310; }
 .category-list small { min-width: 28px; padding: 2px 8px; border-radius: 20px; background: #1c2b20; color: var(--muted); font: .78rem var(--mono); text-align: center; }
 .select select { min-height: 38px; padding: 0 30px 0 13px; border: 1px solid #354b3d; border-radius: 24px; background: #121a15; color: var(--muted); font: inherit; font-size: .88rem; cursor: pointer; }
 .feature-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 19px; }
-/* Two featured cards side by side (stacked below 860px); each card is copy over art. */
+/* Two featured cards side by side (stacked below 860px); a small picture floats in the
+   upper right of each card and the text wraps around it. */
 .feature-grid.pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-.feature-grid.pair .feature { grid-template-columns: 1fr; grid-template-rows: 1fr auto; min-height: 0; }
-.feature-grid.pair .feature-copy { padding: clamp(22px, 2.6vw, 34px); }
-.feature-grid.pair .feature h2 { font-size: clamp(1.9rem, 2.7vw, 2.45rem); }
-.feature-grid.pair .feature .lede { font-size: 1.05rem; }
-.feature-grid.pair .inbox-art { border-left: 0; border-top: 1px solid #34493a; padding: 24px 20px 34px; }
-.feature-grid.pair .mail-window { max-width: 420px; transform: perspective(950px) rotateX(5deg); }
+.feature-grid.pair .feature { display: block; min-height: 0; }
+.feature-grid.pair .feature-copy { display: flow-root; padding: clamp(20px, 2.2vw, 28px); }
+.feature-grid.pair .feature h2 { font-size: clamp(1.7rem, 2.3vw, 2.1rem); }
+.feature-grid.pair .feature .lede { font-size: 1.02rem; }
+.feature-grid.pair .inbox-art { float: right; width: min(46%, 250px); margin: 0 0 12px 18px; padding: 12px 10px; border: 1px solid #34493a; border-radius: 12px; }
+.feature-grid.pair .mail-window { zoom: .52; max-width: none; transform: none; box-shadow: 0 12px 30px #0009; }
+.feature-grid.pair figcaption { display: none; }
 html[data-theme="light"] .feature-grid.pair .inbox-art { border-color: #c9d8cc; }
+@media (max-width: 470px) { .feature-grid.pair .inbox-art { width: 44%; margin-left: 12px; } .feature-grid.pair .mail-window { zoom: .4; } }
 @media (max-width: 860px) { .feature-grid.pair { grid-template-columns: 1fr; } }
 .feature .feature-actions .button { margin-top: 0; }
 .muted { color: var(--muted); }
